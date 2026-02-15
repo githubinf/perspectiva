@@ -6,6 +6,7 @@ export interface Book {
   coverUrl: string;
   category: string;
   amazonUrl: string;
+  buttonLabel?: string;
 }
 
 export interface NavItem {
