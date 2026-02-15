@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative pt-40 pb-20 md:pt-56 md:pb-32 overflow-hidden bg-white">
+    <section className="relative pt-20 pb-20 md:pt-28 md:pb-32 overflow-hidden bg-white">
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[#dae7df]/30 -skew-x-12 -z-10 translate-x-1/3"></div>
       
       <div className="max-w-5xl mx-auto px-6">

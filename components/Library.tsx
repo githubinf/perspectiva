@@ -4,7 +4,7 @@ import { FEATURED_BOOKS } from '../constants';
 
 const Library: React.FC = () => {
   return (
-    <section id="biblioteca" className="py-24 md:py-40 bg-white">
+    <section id="biblioteca" className="pt-12 pb-24 md:pt-20 md:pb-40 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">

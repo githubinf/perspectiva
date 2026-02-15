@@ -3,7 +3,7 @@ import React from 'react';
 
 const Manifesto: React.FC = () => {
   return (
-    <section id="nosotros" className="py-24 md:py-40 bg-[#dae7df]/40">
+    <section id="nosotros" className="pt-12 pb-24 md:pt-20 md:pb-40 bg-[#dae7df]/40">
       <div className="max-w-4xl mx-auto px-6">
         <div className="space-y-10">
           <h2 className="text-3xl md:text-6xl font-bold leading-tight text-[#174532]">

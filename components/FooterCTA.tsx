@@ -3,7 +3,7 @@ import React from 'react';
 
 const FooterCTA: React.FC = () => {
   return (
-    <section className="py-32 md:py-56 bg-white text-center px-6 relative overflow-hidden">
+    <section className="pt-16 pb-16 md:pt-28 md:pb-28 bg-white text-center px-6 relative overflow-hidden">
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-1/2 bg-[#dae7df]/20 -z-10 rounded-t-[100%] blur-3xl"></div>
       
       <div className="max-w-4xl mx-auto relative">

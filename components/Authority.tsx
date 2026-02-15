@@ -3,7 +3,7 @@ import React from 'react';
 
 const Authority: React.FC = () => {
   return (
-    <section className="py-32 bg-[#174532] text-white overflow-hidden relative">
+    <section className="pt-16 pb-32 bg-[#174532] text-white overflow-hidden relative">
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
         <span className="absolute -top-10 -left-10 text-[25rem] font-black text-white/[0.03] serif italic leading-none select-none">
           8+
