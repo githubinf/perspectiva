@@ -14,9 +14,10 @@ const Hero: React.FC = () => {
           </span>
         </div>
         
-        <h1 className="text-4xl md:text-8xl font-bold leading-[1.05] mb-10 animate-slide-up text-[#174532]">
+        <h1 className="text-2xl md:text-6xl font-bold leading-tight mb-10 animate-slide-up text-[#174532]">
           Cambia tu forma de ver. <br />
-          <span className="italic serif text-[#4db380]">Cambia tus resultados.</span>
+          <span className="italic serif text-[#4db380]">Cambia tus resultados.</span> <br />
+          <span className="text-[#174532]/90">Construye sistemas digitales que generen ingresos reales.</span>
         </h1>
         
         <div className="grid md:grid-cols-12 gap-12 items-start">
@@ -27,15 +28,20 @@ const Hero: React.FC = () => {
               Desde blogging y afiliados hasta inteligencia artificial y crecimiento personal, en FG Perspectiva reunimos 
               conocimiento aplicado, métodos probados y perspectivas claras que convierten ideas en acción.
             </p>
-            <p className="text-[#174532] font-medium italic mb-10 border-l-4 border-[#f4b925] pl-8 py-2 text-lg">
-              No publicamos teoría. Creamos caminos.
-            </p>
+            <div className="mb-10">
+              <p className="text-[#174532] font-medium border-l-4 border-[#f4b925] pl-8 py-2 text-lg leading-relaxed">
+                <span className="italic">No publicamos teoría. Creamos caminos.</span> 
+                <span className="text-[#1b1b1b]/60 text-sm font-normal ml-2 block sm:inline">
+                  Diseñado para emprendedores digitales, creadores y profesionales que quieren construir activos reales, no perseguir tácticas.
+                </span>
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-6">
               <a 
                 href="#biblioteca" 
                 className="inline-flex items-center justify-center px-10 py-5 bg-[#174532] text-white font-bold text-xs uppercase tracking-[0.25em] hover:bg-[#1f513a] transition-all hover:-translate-y-1 shadow-2xl shadow-[#174532]/20 rounded-sm"
               >
-                👉 Explorar la biblioteca
+                👉 Empezar a construir activos
               </a>
             </div>
           </div>
