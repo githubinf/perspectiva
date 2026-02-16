@@ -15,7 +15,9 @@ const Library: React.FC = () => {
             </p>
           </div>
           <a 
-            href="#" 
+            href="https://perspectiva-biblioteca.vercel.app/" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-[10px] uppercase tracking-[0.3em] font-black text-[#174532] border-b-4 border-[#f4b925] pb-2 hover:border-[#174532] transition-all inline-block"
           >
             Ver todo el catálogo
