@@ -1,12 +1,12 @@
 
 import React from 'react';
-import Layout from './components/Layout';
-import Hero from './components/Hero';
-import Manifesto from './components/Manifesto';
-import Features from './components/Features';
-import Library from './components/Library';
-import Authority from './components/Authority';
-import FooterCTA from './components/FooterCTA';
+import Layout from './components/Layout.tsx';
+import Hero from './components/Hero.tsx';
+import Manifesto from './components/Manifesto.tsx';
+import Features from './components/Features.tsx';
+import Library from './components/Library.tsx';
+import Authority from './components/Authority.tsx';
+import FooterCTA from './components/FooterCTA.tsx';
 
 const App: React.FC = () => {
   return (

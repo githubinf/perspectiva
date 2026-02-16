@@ -1,5 +1,5 @@
 
-import { Book, NavItem } from './types';
+import { Book, NavItem } from './types.ts';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Biblioteca', href: '#biblioteca' },

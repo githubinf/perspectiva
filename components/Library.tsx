@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FEATURED_BOOKS } from '../constants';
+import { FEATURED_BOOKS } from '../constants.tsx';
 
 const Library: React.FC = () => {
   return (
@@ -20,7 +20,7 @@ const Library: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24">
-          {FEATURED_BOOKS.map((route) => (
+          {FEATURED_BOOKS.map((route: any) => (
             <article key={route.id} className="group flex flex-col h-full">
               <div className="overflow-hidden bg-[#dae7df]/20 mb-8 relative shadow-sm border border-[#dae7df]/50 transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-1 rounded-sm">
                 <img 
