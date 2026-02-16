@@ -14,10 +14,8 @@ const Hero: React.FC = () => {
           </span>
         </div>
         
-        <h1 className="text-2xl md:text-6xl font-bold leading-tight mb-10 animate-slide-up text-[#174532]">
-          Cambia tu forma de ver. <br />
-          <span className="italic serif text-[#4db380]">Cambia tus resultados.</span> <br />
-          <span className="text-[#174532]/90">Construye sistemas digitales que generen ingresos reales.</span>
+        <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold leading-tight mb-10 animate-slide-up text-[#174532]">
+          Cambia tu forma de ver. Cambia tus resultados. <span className="italic serif text-[#4db380]">Construye sistemas digitales que generen ingresos reales.</span>
         </h1>
         
         <div className="grid md:grid-cols-12 gap-12 items-start">
