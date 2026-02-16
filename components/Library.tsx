@@ -32,6 +32,7 @@ const Library: React.FC = () => {
                   src={book.coverUrl} 
                   alt={book.title}
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-[#174532]/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="absolute top-4 left-4">
@@ -52,7 +53,7 @@ const Library: React.FC = () => {
                   {book.description}
                 </div>
                 <button className="mt-auto text-[10px] font-bold uppercase tracking-[0.3em] text-[#174532] flex items-center gap-3 group-hover:gap-6 transition-all group-hover:text-[#4db380] text-left border-b border-transparent group-hover:border-[#4db380] pb-2 w-fit">
-                  {book.buttonLabel || <>Explorar en Amazon <span className="text-xl">→</span></>}
+                  {book.buttonLabel || "Explorar en Amazon →"}
                 </button>
               </div>
             </article>

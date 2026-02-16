@@ -8,7 +8,7 @@ import Library from './components/Library';
 import Authority from './components/Authority';
 import FooterCTA from './components/FooterCTA';
 
-function App() {
+const App: React.FC = () => {
   return (
     <Layout>
       <Hero />
@@ -19,6 +19,6 @@ function App() {
       <FooterCTA />
     </Layout>
   );
-}
+};
 
 export default App;
