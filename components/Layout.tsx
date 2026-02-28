@@ -35,9 +35,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                <div>
                   <h4 className="text-white text-[10px] uppercase tracking-widest font-black mb-6">Navegación</h4>
                   <ul className="space-y-4 text-sm">
-                    <li><a href="#" className="hover:text-[#4db380] transition-colors">Biblioteca</a></li>
-                    <li><a href="#" className="hover:text-[#4db380] transition-colors">Sistemas</a></li>
-                    <li><a href="#" className="hover:text-[#4db380] transition-colors">Sobre nosotros</a></li>
+                    <li><a href="#biblioteca" className="hover:text-[#4db380] transition-colors">Biblioteca</a></li>
+                    <li><a href="#sistemas" className="hover:text-[#4db380] transition-colors">Sistemas</a></li>
+                    <li><a href="#nosotros" className="hover:text-[#4db380] transition-colors">Sobre nosotros</a></li>
                   </ul>
                </div>
                <div>

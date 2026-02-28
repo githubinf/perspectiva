@@ -28,10 +28,7 @@ const Hero: React.FC = () => {
             </p>
             <div className="mb-10">
               <p className="text-[#174532] font-medium border-l-4 border-[#f4b925] pl-8 py-2 text-lg leading-relaxed">
-                <span className="italic">No publicamos teoría. Creamos caminos.</span> 
-                <span className="text-[#1b1b1b]/60 text-sm font-normal ml-2 block sm:inline">
-                  Diseñado para emprendedores digitales, creadores y profesionales que quieren construir activos reales, no perseguir tácticas.
-                </span>
+                No publicamos teoría. Creamos caminos. Diseñado para emprendedores digitales, creadores y profesionales que quieren construir activos reales, no perseguir tácticas.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-6">

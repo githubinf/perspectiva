@@ -24,7 +24,7 @@ export const FEATURED_BOOKS: any[] = [
       },
       {
         title: 'Mi Blog y los Programas de Afiliados',
-        description: 'Aprende a convertir contenido en ingresos de forma ordenada and sostenible.',
+        description: 'Aprende a convertir contenido en ingresos de forma ordenada y sostenible.',
         url: 'https://amzn.to/3PXiwYW',
         coverUrl: 'https://i.ibb.co/gFByygV3/4-mi-blog-y-los-programas-de-afiliados-libro-400.jpg'
       },

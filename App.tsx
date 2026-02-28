@@ -5,6 +5,7 @@ import Hero from './components/Hero.tsx';
 import Manifesto from './components/Manifesto.tsx';
 import Features from './components/Features.tsx';
 import Library from './components/Library.tsx';
+import Systems from './components/Systems.tsx';
 import Authority from './components/Authority.tsx';
 import FooterCTA from './components/FooterCTA.tsx';
 
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       <Manifesto />
       <Features />
       <Library />
+      <Systems />
       <Authority />
       <FooterCTA />
     </Layout>
