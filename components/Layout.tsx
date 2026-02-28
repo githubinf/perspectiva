@@ -23,12 +23,22 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 Construimos puentes entre la idea y el activo digital.
               </p>
               <div className="flex gap-4">
-                <div className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#4db380] transition-colors cursor-pointer">
+                <a 
+                  href="https://x.com/Dineroenblog" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#4db380] transition-colors cursor-pointer"
+                >
                    <span className="text-white font-bold text-xs">X</span>
-                </div>
-                <div className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#4db380] transition-colors cursor-pointer">
-                   <span className="text-white font-bold text-xs">In</span>
-                </div>
+                </a>
+                <a 
+                  href="https://es.pinterest.com/ganardineroblog/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#4db380] transition-colors cursor-pointer"
+                >
+                   <span className="text-white font-bold text-xs">P</span>
+                </a>
               </div>
             </div>
             <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
@@ -37,7 +47,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   <ul className="space-y-4 text-sm">
                     <li><a href="#biblioteca" className="hover:text-[#4db380] transition-colors">Biblioteca</a></li>
                     <li><a href="#sistemas" className="hover:text-[#4db380] transition-colors">Sistemas</a></li>
-                    <li><a href="#nosotros" className="hover:text-[#4db380] transition-colors">Sobre nosotros</a></li>
+                    <li><a href="#sobre-fg-perspectiva" className="hover:text-[#4db380] transition-colors">Sobre nosotros</a></li>
                     <li><a href="#blog" className="hover:text-[#4db380] transition-colors">Blog</a></li>
                   </ul>
                </div>

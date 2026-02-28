@@ -3,7 +3,7 @@ import { Book, NavItem } from './types.ts';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Sistemas', href: '#sistemas' },
-  { label: 'Sobre la editorial', href: '#nosotros' },
+  { label: 'Sobre la editorial', href: '#sobre-fg-perspectiva' },
   { label: 'Contacto', href: '#contacto' },
 ];
 

@@ -3,7 +3,7 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="nosotros" className="py-20 bg-white">
+    <section id="sobre-fg-perspectiva" className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-6">
         <div className="border border-[#174532]/10 p-8 md:p-12 relative overflow-hidden bg-[#dae7df]/10">
           {/* Decorative element */}
