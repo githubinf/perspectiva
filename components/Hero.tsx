@@ -43,9 +43,11 @@ const Hero: React.FC = () => {
           <div className="md:col-span-5 hidden md:block">
              <div className="aspect-[4/5] bg-[#dae7df] rounded-sm relative overflow-hidden shadow-2xl group">
                <img 
-                 src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=800" 
+                 src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=1200" 
                  alt="Perspective and Systems" 
                  className="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
+                 fetchPriority="high"
+                 decoding="async"
                />
                <div className="absolute inset-0 bg-gradient-to-t from-[#174532]/60 to-transparent mix-blend-multiply"></div>
                <div className="absolute bottom-6 left-6 right-6">

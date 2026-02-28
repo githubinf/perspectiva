@@ -2,7 +2,6 @@
 import { Book, NavItem } from './types.ts';
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Biblioteca', href: '#biblioteca' },
   { label: 'Sistemas', href: '#sistemas' },
   { label: 'Sobre la editorial', href: '#nosotros' },
   { label: 'Contacto', href: '#contacto' },
@@ -14,7 +13,7 @@ export const FEATURED_BOOKS: any[] = [
     title: '📚 Fundamentos digitales',
     category: 'Iniciación',
     intro: 'Para quienes quieren construir su primer activo online con bases sólidas y una estructura que escale.',
-    coverUrl: 'https://i.ibb.co/Y4kgyF37/fundamentos-digitales-categoria.png',
+    coverUrl: 'https://i.ibb.co/p6SHyqBW/fundamentos-digitales-categoria.png',
     books: [
       {
         title: 'Cómo crear un Blog optimizado',
@@ -41,7 +40,7 @@ export const FEATURED_BOOKS: any[] = [
     title: '💰 Monetización y afiliación',
     category: 'Ingresos',
     intro: 'Estrategias prácticas para transformar tráfico e ideas en ingresos reales y sistemas sostenibles.',
-    coverUrl: 'https://i.ibb.co/Kcc6QDRB/monetizacion-y-afiliacion-categoria.png',
+    coverUrl: 'https://i.ibb.co/whft6kKb/monetizacion-y-afiliacion-categoria.png',
     books: [
       {
         title: 'Dominando el marketing de afiliados',
@@ -80,7 +79,7 @@ export const FEATURED_BOOKS: any[] = [
     title: '🤖 Inteligencia Artificial aplicada',
     category: 'Tecnología',
     intro: 'Cómo integrar IA en tus procesos digitales para crear más rápido, decidir mejor y escalar con menos esfuerzo.',
-    coverUrl: 'https://i.ibb.co/mxxgf69/inteligencia-artificial-aplicada-categoria.png',
+    coverUrl: 'https://i.ibb.co/ym9cL2rD/inteligencia-artificial-aplicada-categoria.png',
     books: [
       {
         title: 'Cómo ganar dinero con CHATGPT',
@@ -113,7 +112,7 @@ export const FEATURED_BOOKS: any[] = [
     title: '🚀 Tráfico, contenidos y crecimiento',
     category: 'Crecimiento',
     intro: 'Métodos probados para atraer visitantes cualificados y convertir contenido en crecimiento constante.',
-    coverUrl: 'https://i.ibb.co/MxMz9FM9/trafico-contenidos-y-crecimiento-categoria.png',
+    coverUrl: 'https://i.ibb.co/dJ5D1987/trafico-contenidos-y-crecimiento-categoria.png',
     books: [
       {
         title: 'Ideas y consejos de Tráfico Web',
@@ -146,7 +145,7 @@ export const FEATURED_BOOKS: any[] = [
     title: '🧠 Mentalidad y creación',
     category: 'Mindset',
     intro: 'Desarrollo personal, enfoque creativo y mentalidad estratégica para sostener cualquier proyecto digital.',
-    coverUrl: 'https://i.ibb.co/67MWhJqP/mentalidad-y-creacion-categoria.png',
+    coverUrl: 'https://i.ibb.co/xtbJZf7c/mentalidad-y-creacion-categoria.png',
     books: [
       {
         title: 'El Vendedor hipnótico',

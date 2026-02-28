@@ -4,7 +4,7 @@ import { FEATURED_BOOKS } from '../constants.tsx';
 
 const Library: React.FC = () => {
   return (
-    <section id="biblioteca" className="pt-12 pb-24 md:pt-20 md:pb-40 bg-white">
+    <section id="biblioteca" className="pt-12 pb-12 md:pt-20 md:pb-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-24 gap-8">
           <div className="max-w-2xl">
@@ -28,6 +28,7 @@ const Library: React.FC = () => {
                   alt={route.title}
                   className="w-full h-auto block transition-all duration-700 group-hover:scale-105"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-[#174532]/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
@@ -53,6 +54,7 @@ const Library: React.FC = () => {
                             alt={book.title} 
                             className="w-full h-auto object-cover"
                             loading="lazy"
+                            decoding="async"
                           />
                         </div>
                       )}

@@ -38,22 +38,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     <li><a href="#biblioteca" className="hover:text-[#4db380] transition-colors">Biblioteca</a></li>
                     <li><a href="#sistemas" className="hover:text-[#4db380] transition-colors">Sistemas</a></li>
                     <li><a href="#nosotros" className="hover:text-[#4db380] transition-colors">Sobre nosotros</a></li>
-                  </ul>
-               </div>
-               <div>
-                  <h4 className="text-white text-[10px] uppercase tracking-widest font-black mb-6">Recursos</h4>
-                  <ul className="space-y-4 text-sm">
-                    <li><a href="#" className="hover:text-[#4db380] transition-colors">Blog</a></li>
-                    <li><a href="#" className="hover:text-[#4db380] transition-colors">Guías Gratuitas</a></li>
-                    <li><a href="#" className="hover:text-[#4db380] transition-colors">Amazon Store</a></li>
-                  </ul>
-               </div>
-               <div>
-                  <h4 className="text-white text-[10px] uppercase tracking-widest font-black mb-6">Legal</h4>
-                  <ul className="space-y-4 text-sm">
-                    <li><a href="#" className="hover:text-[#4db380] transition-colors">Privacidad</a></li>
-                    <li><a href="#" className="hover:text-[#4db380] transition-colors">Términos</a></li>
-                    <li><a href="#" className="hover:text-[#4db380] transition-colors">Cookies</a></li>
+                    <li><a href="#blog" className="hover:text-[#4db380] transition-colors">Blog</a></li>
                   </ul>
                </div>
             </div>

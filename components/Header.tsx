@@ -80,7 +80,7 @@ const Header: React.FC = () => {
               className="block w-full text-center bg-[#174532] text-white py-5 text-xs uppercase tracking-[0.3em] font-black"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Explorar biblioteca
+              Explorar
             </a>
           </div>
         </div>

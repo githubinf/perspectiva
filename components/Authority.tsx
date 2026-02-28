@@ -29,6 +29,8 @@ const Authority: React.FC = () => {
                   src="https://i.ibb.co/XkxVB4VJ/6-300x300.jpg" 
                   alt="Francisco González" 
                   className="grayscale hover:grayscale-0 transition-all duration-500 w-full h-full object-cover" 
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="space-y-1">

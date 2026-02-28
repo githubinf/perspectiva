@@ -3,7 +3,7 @@ import React from 'react';
 
 const Systems: React.FC = () => {
   return (
-    <section id="sistemas" className="py-24 md:py-40 bg-[#dae7df]/20">
+    <section id="sistemas" className="pt-12 pb-6 md:pt-20 md:pb-10 bg-[#dae7df]/20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="mb-24">
@@ -92,7 +92,7 @@ const Systems: React.FC = () => {
         </div>
 
         {/* Types of Systems */}
-        <div className="mb-32">
+        <div className="mb-16">
           <div className="text-center mb-16">
             <h3 className="text-3xl font-bold text-[#174532] mb-4">Tipos de sistemas que trabajamos</h3>
             <p className="text-[#1b1b1b]/50 italic">Modelos escalables con lógica estructural</p>
@@ -207,7 +207,7 @@ const Systems: React.FC = () => {
            </div>
         </div>
 
-        <div className="mt-20 text-center">
+        <div className="mt-5 text-center">
            <p className="text-[#174532] font-black text-[10px] uppercase tracking-[0.5em] opacity-30">FG Perspectiva — Diseño de Activos</p>
         </div>
       </div>
