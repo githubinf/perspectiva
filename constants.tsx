@@ -19,13 +19,73 @@ export const FEATURED_BOOKS: any[] = [
         title: 'Cómo crear un Blog optimizado',
         description: 'Construye tu primer activo digital desde cero, con estructura y visión a largo plazo.',
         url: 'https://amzn.to/3ZXWB8q',
-        coverUrl: 'https://i.ibb.co/q3TTrp45/1-como-crear-un-blog-optimizado-libro-400.jpg'
+        coverUrl: 'https://i.ibb.co/q3TTrp45/1-como-crear-un-blog-optimizado-libro-400.jpg',
+        purchaseOptions: [
+          { 
+            platform: 'Amazon', 
+            url: 'https://amzn.to/3ZXWB8q', 
+            logo: 'https://logo.clearbit.com/amazon.com',
+            emoji: '🛒',
+            cta: 'Comprar en Amazon'
+          },
+          { 
+            platform: 'Lulu', 
+            url: 'https://www.lulu.com/es/shop/francisco-gonzalez/c%C3%B3mo-crear-un-blog-optimizado/ebook/product-9pqk7n.html?page=1&pageSize=4', 
+            logo: 'https://logo.clearbit.com/lulu.com',
+            emoji: '📚',
+            cta: 'Ver en Lulu'
+          },
+          { 
+            platform: 'Clickbank', 
+            url: 'https://bloggingopt.lovable.app/', 
+            logo: 'https://logo.clearbit.com/clickbank.com',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          },
+          { 
+            platform: 'Payhip', 
+            url: 'https://payhip.com/b/w8feQ', 
+            logo: 'https://logo.clearbit.com/payhip.com',
+            emoji: '💎',
+            cta: 'Descarga Directa'
+          }
+        ]
       },
       {
         title: 'Mi Blog y los Programas de Afiliados',
         description: 'Aprende a convertir contenido en ingresos de forma ordenada y sostenible.',
         url: 'https://amzn.to/3PXiwYW',
-        coverUrl: 'https://i.ibb.co/gFByygV3/4-mi-blog-y-los-programas-de-afiliados-libro-400.jpg'
+        coverUrl: 'https://i.ibb.co/gFByygV3/4-mi-blog-y-los-programas-de-afiliados-libro-400.jpg',
+        purchaseOptions: [
+          { 
+            platform: 'Amazon', 
+            url: 'https://amzn.to/3PXiwYW', 
+            logo: 'https://logo.clearbit.com/amazon.com',
+            emoji: '🛒',
+            cta: 'Comprar en Amazon'
+          },
+          { 
+            platform: 'Lulu', 
+            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/mi-blog-y-los-programas-de-afiliados/ebook/product-zmwkppj.html', 
+            logo: 'https://logo.clearbit.com/lulu.com',
+            emoji: '📚',
+            cta: 'Ver en Lulu'
+          },
+          { 
+            platform: 'Clickbank', 
+            url: 'https://miblogafiliados.vercel.app/', 
+            logo: 'https://logo.clearbit.com/clickbank.com',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          },
+          { 
+            platform: 'Draft2Digital', 
+            url: 'https://books2read.com/u/mdJkDR', 
+            logo: 'https://logo.clearbit.com/draft2digital.com',
+            emoji: '📖',
+            cta: 'Ver en Draft2Digital'
+          }
+        ]
       },
       {
         title: 'Guía Completa de Inbound Marketing',
@@ -46,7 +106,23 @@ export const FEATURED_BOOKS: any[] = [
         title: 'Dominando el marketing de afiliados',
         description: 'Estrategias para generar ingresos recomendando productos.',
         url: 'https://amzn.to/46AasVc',
-        coverUrl: 'https://i.ibb.co/848rmyCx/3-marketing-de-afiliados-libro-400.jpg'
+        coverUrl: 'https://i.ibb.co/848rmyCx/3-marketing-de-afiliados-libro-400.jpg',
+        purchaseOptions: [
+          { 
+            platform: 'Amazon', 
+            url: 'https://amzn.to/46AasVc', 
+            logo: 'https://logo.clearbit.com/amazon.com',
+            emoji: '🛒',
+            cta: 'Comprar en Amazon'
+          },
+          { 
+            platform: 'Clickbank', 
+            url: 'https://dominando-el-marketing-de-afiliados.vercel.app/', 
+            logo: 'https://logo.clearbit.com/clickbank.com',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          }
+        ]
       },
       {
         title: 'Marketing CPA Para Emprendedores y Profesionales Digitales',
@@ -58,19 +134,88 @@ export const FEATURED_BOOKS: any[] = [
         title: 'Cpa Marketing Fórmula Smartlink',
         description: 'Optimización avanzada de enlaces inteligentes.',
         url: 'https://amzn.to/3PF2oMd',
-        coverUrl: 'https://i.ibb.co/fV1pc13f/6-cpa-marketing-smartlink-libro-400.jpg'
+        coverUrl: 'https://i.ibb.co/fV1pc13f/6-cpa-marketing-smartlink-libro-400.jpg',
+        purchaseOptions: [
+          { 
+            platform: 'Amazon', 
+            url: 'https://amzn.to/3PF2oMd', 
+            logo: 'https://logo.clearbit.com/amazon.com',
+            emoji: '🛒',
+            cta: 'Comprar en Amazon'
+          },
+          { 
+            platform: 'Clickbank', 
+            url: 'https://cpamarketingformula.vercel.app/', 
+            logo: 'https://logo.clearbit.com/clickbank.com',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          }
+        ]
       },
       {
         title: 'Dinero con Clickbank en minutos',
         description: 'Venta de infoproductos a escala global.',
         url: 'https://amzn.to/46yludn',
-        coverUrl: 'https://i.ibb.co/YBzVsvGZ/2-dinero-con-clickbank-libro-400.jpg'
+        coverUrl: 'https://i.ibb.co/YBzVsvGZ/2-dinero-con-clickbank-libro-400.jpg',
+        purchaseOptions: [
+          { 
+            platform: 'Amazon', 
+            url: 'https://amzn.to/46yludn', 
+            logo: 'https://logo.clearbit.com/amazon.com',
+            emoji: '🛒',
+            cta: 'Comprar en Amazon'
+          },
+          { 
+            platform: 'Lulu', 
+            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/dinero-con-clickbank/ebook/product-958dkwn.html', 
+            logo: 'https://logo.clearbit.com/lulu.com',
+            emoji: '📚',
+            cta: 'Ver en Lulu'
+          },
+          { 
+            platform: 'Clickbank', 
+            url: 'https://dineroconclk.vercel.app/', 
+            logo: 'https://logo.clearbit.com/clickbank.com',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          }
+        ]
       },
       {
         title: 'Tips de Marketing para Afiliados',
         description: 'Consejos accionables para maximizar conversiones.',
         url: 'https://amzn.to/405AkFR',
-        coverUrl: 'https://i.ibb.co/5hqN1ycg/5-tips-de-marketing-para-afiliados-libro-400.jpg'
+        coverUrl: 'https://i.ibb.co/5hqN1ycg/5-tips-de-marketing-para-afiliados-libro-400.jpg',
+        purchaseOptions: [
+          { 
+            platform: 'Amazon', 
+            url: 'https://amzn.to/405AkFR', 
+            logo: 'https://logo.clearbit.com/amazon.com',
+            emoji: '🛒',
+            cta: 'Comprar en Amazon'
+          },
+          { 
+            platform: 'Lulu', 
+            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/tips-de-marketing-para-afiliados/ebook/product-jej9vm4.html', 
+            logo: 'https://logo.clearbit.com/lulu.com',
+            emoji: '📚',
+            cta: 'Ver en Lulu'
+          },
+          { 
+            platform: 'Clickbank', 
+            url: 'https://tips-marketing-de-afiliados.vercel.app/', 
+            logo: 'https://logo.clearbit.com/clickbank.com',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          },
+          { 
+            platform: 'Draft2Digital', 
+            url: 'https://books2read.com/u/m28gXr', 
+            logo: 'https://logo.clearbit.com/draft2digital.com',
+            emoji: '📖',
+            cta: 'Ver en Draft2Digital'
+          }
+        ]
       }
     ]
   },

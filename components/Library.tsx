@@ -1,8 +1,20 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { FEATURED_BOOKS } from '../constants.tsx';
+import PurchaseModal from './PurchaseModal.tsx';
 
 const Library: React.FC = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedBook, setSelectedBook] = useState<any>(null);
+
+  const handleBookClick = (e: React.MouseEvent, book: any) => {
+    if (book.purchaseOptions && book.purchaseOptions.length > 0) {
+      e.preventDefault();
+      setSelectedBook(book);
+      setModalOpen(true);
+    }
+  };
+
   return (
     <section id="biblioteca" className="pt-12 pb-12 md:pt-20 md:pb-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
@@ -59,14 +71,12 @@ const Library: React.FC = () => {
                         </div>
                       )}
                       <div className="flex-grow pt-1">
-                        <a 
-                          href={book.url} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="block mb-2 text-sm md:text-base font-bold text-[#174532] hover:text-[#4db380] transition-colors leading-snug"
+                        <div 
+                          onClick={(e) => handleBookClick(e, book)}
+                          className="block mb-2 text-sm md:text-base font-bold text-[#174532] hover:text-[#4db380] transition-colors leading-snug cursor-pointer"
                         >
                           👉 {book.title}
-                        </a>
+                        </div>
                         <p className="text-[11px] md:text-xs text-[#1b1b1b]/50 leading-relaxed font-light italic">
                           {book.description}
                         </p>
@@ -79,6 +89,13 @@ const Library: React.FC = () => {
           ))}
         </div>
       </div>
+
+      <PurchaseModal 
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        bookTitle={selectedBook?.title || ''}
+        purchaseOptions={selectedBook?.purchaseOptions || []}
+      />
     </section>
   );
 };
