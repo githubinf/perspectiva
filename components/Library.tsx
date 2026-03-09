@@ -61,10 +61,7 @@ const Library: React.FC = () => {
                     <div key={idx} className="group/book flex gap-4 md:gap-6 items-start">
                       {book.coverUrl && (
                         book.purchaseOptions && book.purchaseOptions.length > 0 ? (
-                          <div 
-                            onClick={(e) => handleBookClick(e, book)}
-                            className="w-20 md:w-24 flex-shrink-0 shadow-md border border-[#dae7df]/30 overflow-hidden group-hover/book:shadow-xl transition-shadow duration-300 rounded-sm bg-white cursor-pointer"
-                          >
+                          <div className="w-20 md:w-24 flex-shrink-0 shadow-md border border-[#dae7df]/30 overflow-hidden rounded-sm bg-white">
                             <img 
                               src={book.coverUrl} 
                               alt={book.title} 
@@ -92,7 +89,10 @@ const Library: React.FC = () => {
                       )}
                       <div className="flex-grow pt-1">
                         {book.purchaseOptions && book.purchaseOptions.length > 0 ? (
-                          <div className="block mb-2 text-sm md:text-base font-bold text-[#174532] leading-snug">
+                          <div 
+                            onClick={(e) => handleBookClick(e, book)}
+                            className="block mb-2 text-sm md:text-base font-bold text-[#174532] hover:text-[#4db380] transition-colors leading-snug cursor-pointer"
+                          >
                             👉 {book.title}
                           </div>
                         ) : (
