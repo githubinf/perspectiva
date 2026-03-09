@@ -60,23 +60,51 @@ const Library: React.FC = () => {
                   {route.books.map((book: any, idx: number) => (
                     <div key={idx} className="group/book flex gap-4 md:gap-6 items-start">
                       {book.coverUrl && (
-                        <div className="w-20 md:w-24 flex-shrink-0 shadow-md border border-[#dae7df]/30 overflow-hidden group-hover/book:shadow-xl transition-shadow duration-300 rounded-sm bg-white">
-                          <img 
-                            src={book.coverUrl} 
-                            alt={book.title} 
-                            className="w-full h-auto object-cover"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        </div>
+                        book.purchaseOptions && book.purchaseOptions.length > 0 ? (
+                          <div 
+                            onClick={(e) => handleBookClick(e, book)}
+                            className="w-20 md:w-24 flex-shrink-0 shadow-md border border-[#dae7df]/30 overflow-hidden group-hover/book:shadow-xl transition-shadow duration-300 rounded-sm bg-white cursor-pointer"
+                          >
+                            <img 
+                              src={book.coverUrl} 
+                              alt={book.title} 
+                              className="w-full h-auto object-cover"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </div>
+                        ) : (
+                          <a 
+                            href={book.url}
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            className="w-20 md:w-24 flex-shrink-0 shadow-md border border-[#dae7df]/30 overflow-hidden group-hover/book:shadow-xl transition-shadow duration-300 rounded-sm bg-white cursor-pointer"
+                          >
+                            <img 
+                              src={book.coverUrl} 
+                              alt={book.title} 
+                              className="w-full h-auto object-cover"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </a>
+                        )
                       )}
                       <div className="flex-grow pt-1">
-                        <div 
-                          onClick={(e) => handleBookClick(e, book)}
-                          className="block mb-2 text-sm md:text-base font-bold text-[#174532] hover:text-[#4db380] transition-colors leading-snug cursor-pointer"
-                        >
-                          👉 {book.title}
-                        </div>
+                        {book.purchaseOptions && book.purchaseOptions.length > 0 ? (
+                          <div className="block mb-2 text-sm md:text-base font-bold text-[#174532] leading-snug">
+                            👉 {book.title}
+                          </div>
+                        ) : (
+                          <a 
+                            href={book.url}
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            className="block mb-2 text-sm md:text-base font-bold text-[#174532] hover:text-[#4db380] transition-colors leading-snug cursor-pointer"
+                          >
+                            👉 {book.title}
+                          </a>
+                        )}
                         <p className="text-[11px] md:text-xs text-[#1b1b1b]/50 leading-relaxed font-light italic">
                           {book.description}
                         </p>

@@ -26,7 +26,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <a 
                   href="https://x.com/Dineroenblog" 
                   target="_blank" 
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#4db380] transition-colors cursor-pointer"
                 >
                    <span className="text-white font-bold text-xs">X</span>
@@ -34,7 +34,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <a 
                   href="https://es.pinterest.com/ganardineroblog/" 
                   target="_blank" 
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#4db380] transition-colors cursor-pointer"
                 >
                    <span className="text-white font-bold text-xs">P</span>

@@ -60,7 +60,7 @@ const PurchaseModal: React.FC<PurchaseModalProps> = ({ isOpen, onClose, bookTitl
                 key={index}
                 href={option.url}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="flex items-center justify-between p-4 rounded-xl border border-[#dae7df] hover:border-[#4db380] hover:bg-[#dae7df]/10 transition-all group"
               >
                 <div className="flex items-center gap-4">
