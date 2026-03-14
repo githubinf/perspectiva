@@ -70,6 +70,8 @@ const PurchaseModal: React.FC<PurchaseModalProps> = ({ isOpen, onClose, bookTitl
                         src={option.logo} 
                         alt={option.platform} 
                         className="w-full h-full object-contain"
+                        loading="lazy"
+                        decoding="async"
                         referrerPolicy="no-referrer"
                       />
                     ) : (

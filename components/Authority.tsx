@@ -31,6 +31,7 @@ const Authority: React.FC = () => {
                   className="grayscale hover:grayscale-0 transition-all duration-500 w-full h-full object-cover" 
                   loading="lazy"
                   decoding="async"
+                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="space-y-1">

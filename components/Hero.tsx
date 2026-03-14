@@ -48,6 +48,7 @@ const Hero: React.FC = () => {
                  className="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
                  fetchPriority="high"
                  decoding="async"
+                 referrerPolicy="no-referrer"
                />
                <div className="absolute inset-0 bg-gradient-to-t from-[#174532]/60 to-transparent mix-blend-multiply"></div>
                <div className="absolute bottom-6 left-6 right-6">

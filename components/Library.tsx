@@ -41,6 +41,7 @@ const Library: React.FC = () => {
                   className="w-full h-auto block transition-all duration-700 group-hover:scale-105"
                   loading="lazy"
                   decoding="async"
+                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-[#174532]/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
@@ -68,6 +69,7 @@ const Library: React.FC = () => {
                               className="w-full h-auto object-cover"
                               loading="lazy"
                               decoding="async"
+                              referrerPolicy="no-referrer"
                             />
                           </div>
                         ) : (
@@ -83,6 +85,7 @@ const Library: React.FC = () => {
                               className="w-full h-auto object-cover"
                               loading="lazy"
                               decoding="async"
+                              referrerPolicy="no-referrer"
                             />
                           </a>
                         )
