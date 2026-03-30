@@ -84,6 +84,13 @@ export const FEATURED_BOOKS: BookCategory[] = [
             logo: 'https://i.ibb.co/TDgFD1mx/draft2digital-logo.jpg',
             emoji: '📖',
             cta: 'Ver en Draft2Digital'
+          },
+          { 
+            platform: 'Payhip', 
+            url: 'https://payhip.com/b/hYfbn', 
+            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            emoji: '💎',
+            cta: 'Descarga Directa'
           }
         ]
       },
