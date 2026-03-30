@@ -121,6 +121,13 @@ export const FEATURED_BOOKS: any[] = [
             logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
+          },
+          { 
+            platform: 'Payhip', 
+            url: 'https://payhip.com/b/mQwHe', 
+            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            emoji: '💎',
+            cta: 'Descarga Directa'
           }
         ]
       },
@@ -178,6 +185,13 @@ export const FEATURED_BOOKS: any[] = [
             logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
+          },
+          { 
+            platform: 'Payhip', 
+            url: 'https://payhip.com/b/DIuAq', 
+            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            emoji: '💎',
+            cta: 'Descarga Directa'
           }
         ]
       },
