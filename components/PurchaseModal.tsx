@@ -25,6 +25,21 @@ const PurchaseModal: React.FC<PurchaseModalProps> = ({ isOpen, onClose, bookTitl
 
   if (!isOpen) return null;
 
+  // Priority order for platforms
+  const platformPriority: Record<string, number> = {
+    'Amazon': 1,
+    'Clickbank': 2,
+    'Draft2Digital': 3,
+    'Payhip': 4,
+    'Lulu': 5
+  };
+
+  const sortedOptions = [...purchaseOptions].sort((a, b) => {
+    const priorityA = platformPriority[a.platform] || 99;
+    const priorityB = platformPriority[b.platform] || 99;
+    return priorityA - priorityB;
+  });
+
   return (
     <AnimatePresence>
       <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 overflow-y-auto">
@@ -60,7 +75,7 @@ const PurchaseModal: React.FC<PurchaseModalProps> = ({ isOpen, onClose, bookTitl
 
           {/* Options List - Scrollable */}
           <div className="p-5 md:p-6 space-y-3 md:space-y-4 overflow-y-auto custom-scrollbar">
-            {purchaseOptions.map((option, index) => (
+            {sortedOptions.map((option, index) => (
               <a
                 key={index}
                 href={option.url}
