@@ -2,14 +2,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, ExternalLink, ShoppingCart } from 'lucide-react';
-
-interface PurchaseOption {
-  platform: string;
-  url: string;
-  logo?: string;
-  emoji?: string;
-  cta?: string;
-}
+import { PurchaseOption } from '../types.ts';
 
 interface PurchaseModalProps {
   isOpen: boolean;

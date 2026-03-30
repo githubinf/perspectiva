@@ -1,5 +1,5 @@
 
-import { Book, NavItem } from './types.ts';
+import { BookCategory, NavItem } from './types.ts';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Sistemas', href: '#sistemas' },
@@ -7,7 +7,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Contacto', href: '#contacto' },
 ];
 
-export const FEATURED_BOOKS: any[] = [
+export const FEATURED_BOOKS: BookCategory[] = [
   {
     id: '1',
     title: '📚 Fundamentos digitales',

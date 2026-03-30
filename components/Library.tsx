@@ -2,12 +2,13 @@
 import React, { useState } from 'react';
 import { FEATURED_BOOKS } from '../constants.tsx';
 import PurchaseModal from './PurchaseModal.tsx';
+import { BookCategory, BookItem } from '../types.ts';
 
 const Library: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [selectedBook, setSelectedBook] = useState<any>(null);
+  const [selectedBook, setSelectedBook] = useState<BookItem | null>(null);
 
-  const handleBookClick = (e: React.MouseEvent, book: any) => {
+  const handleBookClick = (e: React.MouseEvent, book: BookItem) => {
     if (book.purchaseOptions && book.purchaseOptions.length > 0) {
       e.preventDefault();
       setSelectedBook(book);
@@ -32,7 +33,7 @@ const Library: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24">
-          {FEATURED_BOOKS.map((route: any) => (
+          {FEATURED_BOOKS.map((route: BookCategory) => (
             <article key={route.id} className="group flex flex-col h-full">
               <div className="overflow-hidden bg-[#dae7df]/20 mb-8 relative shadow-sm border border-[#dae7df]/50 transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-1 rounded-sm">
                 <img 
@@ -58,7 +59,7 @@ const Library: React.FC = () => {
                 </p>
                 
                 <div className="space-y-10">
-                  {route.books.map((book: any, idx: number) => (
+                  {route.books.map((book: BookItem, idx: number) => (
                     <div key={idx} className="group/book flex gap-4 md:gap-6 items-start">
                       {book.coverUrl && (
                         book.purchaseOptions && book.purchaseOptions.length > 0 ? (

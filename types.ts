@@ -1,12 +1,27 @@
 
-export interface Book {
-  id: string;
+export interface PurchaseOption {
+  platform: string;
+  url: string;
+  logo?: string;
+  emoji?: string;
+  cta?: string;
+}
+
+export interface BookItem {
   title: string;
   description: string;
-  coverUrl: string;
+  url: string;
+  coverUrl?: string;
+  purchaseOptions?: PurchaseOption[];
+}
+
+export interface BookCategory {
+  id: string;
+  title: string;
   category: string;
-  amazonUrl: string;
-  buttonLabel?: string;
+  intro: string;
+  coverUrl: string;
+  books: BookItem[];
 }
 
 export interface NavItem {
