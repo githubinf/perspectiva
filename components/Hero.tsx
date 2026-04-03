@@ -49,6 +49,8 @@ const Hero: React.FC = () => {
                  fetchPriority="high"
                  decoding="async"
                  referrerPolicy="no-referrer"
+                 width={1200}
+                 height={1500}
                />
                <div className="absolute inset-0 bg-gradient-to-t from-[#174532]/60 to-transparent mix-blend-multiply"></div>
                <div className="absolute bottom-6 left-6 right-6">

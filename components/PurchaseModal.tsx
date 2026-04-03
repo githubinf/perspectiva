@@ -93,6 +93,8 @@ const PurchaseModal: React.FC<PurchaseModalProps> = ({ isOpen, onClose, bookTitl
                         loading="lazy"
                         decoding="async"
                         referrerPolicy="no-referrer"
+                        width={48}
+                        height={48}
                       />
                     ) : (
                       <ShoppingCart size={18} className="text-[#174532]" />

@@ -43,6 +43,8 @@ const Library: React.FC = () => {
                   loading="lazy"
                   decoding="async"
                   referrerPolicy="no-referrer"
+                  width={800}
+                  height={450}
                 />
                 <div className="absolute inset-0 bg-[#174532]/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
@@ -71,6 +73,8 @@ const Library: React.FC = () => {
                               loading="lazy"
                               decoding="async"
                               referrerPolicy="no-referrer"
+                              width={400}
+                              height={580}
                             />
                           </div>
                         ) : (
@@ -87,6 +91,8 @@ const Library: React.FC = () => {
                               loading="lazy"
                               decoding="async"
                               referrerPolicy="no-referrer"
+                              width={400}
+                              height={580}
                             />
                           </a>
                         )

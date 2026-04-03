@@ -142,7 +142,30 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Marketing CPA Para Emprendedores y Profesionales Digitales',
         description: 'Domina el modelo de Coste Por Acción.',
         url: 'https://marketing-cpa.lovable.app/',
-        coverUrl: 'https://i.ibb.co/7dSL7Mc3/21-marketing-cpa-libro-400-2.jpg'
+        coverUrl: 'https://i.ibb.co/wrdHNtFn/marketing-cpa-para-emprendedores.png',
+        purchaseOptions: [
+          { 
+            platform: 'Clickbank', 
+            url: 'https://marketing-cpa.lovable.app/', 
+            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          },
+          { 
+            platform: 'Payhip', 
+            url: 'https://payhip.com/b/6PclQ', 
+            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            emoji: '💎',
+            cta: 'Descarga Directa'
+          },
+          { 
+            platform: 'Ko-fi', 
+            url: 'https://ko-fi.com/s/48931def16', 
+            logo: 'https://i.ibb.co/2r0C36C/ko-fi-logo.jpg',
+            emoji: '☕',
+            cta: 'Comprar en Ko-fi'
+          }
+        ]
       },
       {
         title: 'Cpa Marketing Fórmula Smartlink',
@@ -331,7 +354,51 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'El Vendedor hipnótico',
         description: 'Mejora tu persuasión conectando emocionalmente con tus clientes.',
         url: 'https://amzn.to/3LZRdvV',
-        coverUrl: 'https://i.ibb.co/20bRD4Gt/8-el-vendedor-hipnotico-libro-400.jpg'
+        coverUrl: 'https://i.ibb.co/20bRD4Gt/8-el-vendedor-hipnotico-libro-400.jpg',
+        purchaseOptions: [
+          { 
+            platform: 'Amazon', 
+            url: 'https://amzn.to/3LZRdvV', 
+            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            emoji: '🛒',
+            cta: 'Comprar en Amazon'
+          },
+          { 
+            platform: 'Clickbank', 
+            url: 'https://elvendedorhipnotico.vercel.app/', 
+            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          },
+          { 
+            platform: 'Draft2Digital', 
+            url: 'https://books2read.com/u/4A85vk', 
+            logo: 'https://i.ibb.co/TDgFD1mx/draft2digital-logo.jpg',
+            emoji: '📖',
+            cta: 'Ver en Draft2Digital'
+          },
+          { 
+            platform: 'Payhip', 
+            url: 'https://payhip.com/b/JWv4w', 
+            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            emoji: '💎',
+            cta: 'Descarga Directa'
+          },
+          { 
+            platform: 'Lulu', 
+            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/el-vendedor-hipn%C3%B3tico/ebook/product-84j9eep.html', 
+            logo: 'https://i.ibb.co/nq0QhxZR/lulu-logo.jpg',
+            emoji: '📚',
+            cta: 'Ver en Lulu'
+          },
+          { 
+            platform: 'Google Play', 
+            url: 'https://play.google.com/store/books/details/Francisco_Gonz%C3%A1lez_El_Vendedor_Hipn%C3%B3tico?id=ViOdEQAAQBAJ', 
+            logo: 'https://i.ibb.co/snCJXvX/google-play-logo.jpg',
+            emoji: '📱',
+            cta: 'Ver en Google Play'
+          }
+        ]
       },
       {
         title: 'El arte de atraer la abundancia',
@@ -349,13 +416,59 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Cómo crear Ebooks (de no ficción)',
         description: 'Diseña ebooks útiles que aporten valor y generen ingresos.',
         url: 'https://amzn.to/3xfCrNa',
-        coverUrl: 'https://i.ibb.co/MxcXwpc4/9-como-crear-ebooks-de-no-ficcion-libro-400.jpg'
+        coverUrl: 'https://i.ibb.co/MxcXwpc4/9-como-crear-ebooks-de-no-ficcion-libro-400.jpg',
+        purchaseOptions: [
+          { 
+            platform: 'Amazon', 
+            url: 'https://amzn.to/3xfCrNa', 
+            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            emoji: '🛒',
+            cta: 'Comprar en Amazon'
+          },
+          { 
+            platform: 'Clickbank', 
+            url: 'https://comocrearebooksdeno-ficcion.vercel.app', 
+            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          },
+          { 
+            platform: 'Payhip', 
+            url: 'https://payhip.com/b/DwRge', 
+            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            emoji: '💎',
+            cta: 'Descarga Directa'
+          }
+        ]
       },
       {
         title: 'Ebook en 24 horas',
         description: 'Lanza tu primer ebook rápidamente con un proceso simplificado.',
-        url: 'https://amzn.to/3TqQl6o',
-        coverUrl: 'https://i.ibb.co/60xyxf7V/10-ebook-en-24-horas-libro-400.jpg'
+        url: 'https://amzn.to/3xfCrNa',
+        coverUrl: 'https://i.ibb.co/TMFmSZxG/ebook-en-24-horas-no-ficcion.png',
+        purchaseOptions: [
+          { 
+            platform: 'Amazon', 
+            url: 'https://amzn.to/3xfCrNa', 
+            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            emoji: '🛒',
+            cta: 'Comprar en Amazon'
+          },
+          { 
+            platform: 'Clickbank', 
+            url: 'https://ebook24.vercel.app/', 
+            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          },
+          { 
+            platform: 'Payhip', 
+            url: 'https://payhip.com/b/8prkL', 
+            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            emoji: '💎',
+            cta: 'Descarga Directa'
+          }
+        ]
       }
     ]
   }
