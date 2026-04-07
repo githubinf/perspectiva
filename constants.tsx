@@ -98,7 +98,30 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Guía Completa de Inbound Marketing',
         description: 'Atrae clientes con contenido estratégico, sin depender de interrupciones.',
         url: 'https://amzn.to/48SDeBV',
-        coverUrl: 'https://i.ibb.co/zHr8q3CN/11-guia-inbound-marketing-libro-400.jpg'
+        coverUrl: 'https://i.ibb.co/Sp4GnWM/guia-inbound-marketing.png',
+        purchaseOptions: [
+          { 
+            platform: 'Amazon', 
+            url: 'https://amzn.to/48SDeBV', 
+            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            emoji: '🛒',
+            cta: 'Comprar en Amazon'
+          },
+          { 
+            platform: 'Clickbank', 
+            url: 'https://inboundinboundmarketing.vercel.app', 
+            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          },
+          { 
+            platform: 'Payhip', 
+            url: 'https://payhip.com/b/dvPDj', 
+            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            emoji: '💎',
+            cta: 'Descarga Directa'
+          }
+        ]
       }
     ]
   },
