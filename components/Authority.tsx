@@ -32,6 +32,8 @@ const Authority: React.FC = () => {
                   loading="lazy"
                   decoding="async"
                   referrerPolicy="no-referrer"
+                  width={300}
+                  height={300}
                 />
               </div>
               <div className="space-y-1">

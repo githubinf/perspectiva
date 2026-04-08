@@ -48,7 +48,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     <li><a href="#biblioteca" className="hover:text-[#4db380] transition-colors">Biblioteca</a></li>
                     <li><a href="#sistemas" className="hover:text-[#4db380] transition-colors">Sistemas</a></li>
                     <li><a href="#sobre-fg-perspectiva" className="hover:text-[#4db380] transition-colors">Sobre nosotros</a></li>
-                    <li><a href="#blog" className="hover:text-[#4db380] transition-colors">Blog</a></li>
+                    <li><a href="https://despertarindomable.blogspot.com/" target="_blank" rel="noopener noreferrer nofollow" className="hover:text-[#4db380] transition-colors">Blog</a></li>
                   </ul>
                </div>
             </div>
