@@ -9,6 +9,50 @@ export const NAV_ITEMS: NavItem[] = [
 
 export const FEATURED_BOOKS: BookCategory[] = [
   {
+    id: 'star',
+    title: '🌟 PRODUCTO ESTRELLA (Origen de toda la colección)',
+    category: 'Origen',
+    intro: 'La base de todo. Desde este método nacen el resto de libros de la biblioteca FG Perspectiva.',
+    coverUrl: 'https://i.ibb.co/84zjNS6T/producto-estrella-plr.png',
+    books: [
+      {
+        title: 'Experto en PLR premium: El Sistema Paso a Paso para Crear Infoproductos Rentables que venden.',
+        description: 'Aprende a crear, modificar y vender infoproductos con PLR profesional, incluso sin ser experto. Herramientas Digitales Actuales.',
+        url: 'https://www.amazon.com/dp/B0GWZQPNT2',
+        coverUrl: 'https://i.ibb.co/QFGfhgGL/25-experto-en-plr-producto-400.jpg',
+        purchaseOptions: [
+          { 
+            platform: 'Amazon', 
+            url: 'https://www.amazon.com/dp/B0GWZQPNT2', 
+            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            emoji: '🛒',
+            cta: 'Comprar en Amazon'
+          },
+          { 
+            platform: 'Clickbank', 
+            url: 'https://expertoplrpremium.vercel.app/', 
+            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          },
+          { 
+            platform: 'Jvzoo', 
+            url: 'https://experto-en-plr--fjgjavier.replit.app/', 
+            emoji: '🚀',
+            cta: 'Ver en Jvzoo'
+          },
+          { 
+            platform: 'Payhip', 
+            url: 'https://payhip.com/b/QhoMJ', 
+            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            emoji: '💎',
+            cta: 'Descarga Directa'
+          }
+        ]
+      }
+    ]
+  },
+  {
     id: '1',
     title: '📚 Fundamentos digitales',
     category: 'Iniciación',
