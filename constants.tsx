@@ -355,7 +355,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Cómo ganar dinero con CHATGPT',
         description: 'Aplica ChatGPT a proyectos reales y crea flujos de ingresos asistidos por IA.',
         url: 'https://amzn.to/3Q13TUi',
-        coverUrl: 'https://i.ibb.co/s9kNwj06/12-dinero-con-chatgpt-libro-400.jpg',
+        coverUrl: 'https://i.ibb.co/LDrzycGZ/como-ganar-dinero-con-chatgpt.png',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
