@@ -264,10 +264,10 @@ export const FEATURED_BOOKS: BookCategory[] = [
         ]
       },
       {
-        title: 'Dinero con Clickbank en minutos',
-        description: 'Venta de infoproductos a escala global.',
+        title: 'Dinero con Clickbank',
+        description: 'Cómo elegir productos rentables, promocionarlos y construir tu primer negocio de afiliados',
         url: 'https://amzn.to/46yludn',
-        coverUrl: 'https://i.ibb.co/YBzVsvGZ/2-dinero-con-clickbank-libro-400.jpg',
+        coverUrl: 'https://i.ibb.co/jZvBdz9f/2-dinero-con-clickbank-libro-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
@@ -411,7 +411,30 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Ideas y consejos de Tráfico Web',
         description: 'Aprende a atraer visitantes de forma constante con métodos probados.',
         url: 'https://amzn.to/3Flv3QS',
-        coverUrl: 'https://i.ibb.co/7dKDNLZG/13-ideas-y-consejos-de-trafico-web-libro-400.jpg'
+        coverUrl: 'https://i.ibb.co/7dKDNLZG/13-ideas-y-consejos-de-trafico-web-libro-400.jpg',
+        purchaseOptions: [
+          { 
+            platform: 'Amazon', 
+            url: 'https://amzn.to/3Flv3QS', 
+            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            emoji: '🛒',
+            cta: 'Comprar en Amazon'
+          },
+          { 
+            platform: 'Clickbank', 
+            url: 'https://traficoweb.vercel.app/', 
+            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          },
+          { 
+            platform: 'Payhip', 
+            url: 'https://payhip.com/b/kyY9j', 
+            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            emoji: '💎',
+            cta: 'Descarga Directa'
+          }
+        ]
       },
       {
         title: 'Ideas Maestras de Tráfico Web',
@@ -491,10 +514,33 @@ export const FEATURED_BOOKS: BookCategory[] = [
         ]
       },
       {
-        title: 'El arte de atraer la abundancia',
-        description: 'Trabaja tu mentalidad para crear oportunidades desde dentro hacia fuera.',
+        title: 'El Arte de Atraer la Abundancia',
+        description: 'Despierta tu potencial ilimitado y crea una vida de riqueza, éxito y plenitud total',
         url: 'https://amzn.to/3XCLjVW',
-        coverUrl: 'https://i.ibb.co/8nLGZsX4/14-el-arte-de-atraer-la-abundancia-ebook-libro-400.jpg'
+        coverUrl: 'https://i.ibb.co/Jw33pVGT/El-arte-de-atraer-la-abundancia.png',
+        purchaseOptions: [
+          { 
+            platform: 'Amazon', 
+            url: 'https://amzn.to/3XCLjVW', 
+            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            emoji: '🛒',
+            cta: 'Comprar en Amazon'
+          },
+          { 
+            platform: 'Clickbank', 
+            url: 'https://abundancia-arte.vercel.app/ ', 
+            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          },
+          { 
+            platform: 'Payhip', 
+            url: 'https://payhip.com/b/VJNwa', 
+            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            emoji: '💎',
+            cta: 'Descarga Directa'
+          }
+        ]
       },
       {
         title: 'De la Pluma al Dinero',
@@ -533,7 +579,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
       },
       {
         title: 'Ebook en 24 horas',
-        description: 'Lanza tu primer ebook rápidamente con un proceso simplificado.',
+        description: 'Cómo escribir un ebook de no ficción y publicarlo en tiempo récord (menos de 24 horas) ¿Te atreves?',
         url: 'https://amzn.to/3xfCrNa',
         coverUrl: 'https://i.ibb.co/TMFmSZxG/ebook-en-24-horas-no-ficcion.png',
         purchaseOptions: [
