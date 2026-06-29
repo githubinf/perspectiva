@@ -91,7 +91,7 @@ const BookItemRow: React.FC<BookItemRowProps> = ({ book, onBookClick }) => {
             👉 <span className="text-xs md:text-sm bg-[#4db380]/15 text-[#174532] px-1.5 py-0.5 rounded-sm mr-1.5 font-extrabold inline-block align-middle">[Clic Aquí para comprar]</span>{book.title}
           </a>
         )}
-        <p className="text-sm md:text-[15px] text-[#1b1b1b]/60 leading-relaxed font-light italic mb-4 max-w-xl">
+        <p className="text-sm md:text-[15px] text-[#1b1b1b]/60 leading-relaxed font-light italic mb-4 max-w-3xl">
           {book.description}
         </p>
 
@@ -276,14 +276,14 @@ const Library: React.FC = () => {
             >
               <div className="flex flex-col items-center">
                 {/* Center route title and intro */}
-                <div className="text-center max-w-3xl mx-auto mb-12">
+                <div className="text-center max-w-4xl w-full mx-auto mb-12">
                   <span className="text-[11px] uppercase tracking-[0.3em] text-[#4db380] font-black mb-3 block">
                     RUTA: {route.category}
                   </span>
                   <h3 className="text-2xl md:text-4xl font-extrabold text-[#174532] leading-tight mb-4">
                     {route.title}
                   </h3>
-                  <p className="text-[#1b1b1b]/70 text-base md:text-lg leading-relaxed font-light italic max-w-2xl mx-auto">
+                  <p className="text-[#1b1b1b]/70 text-base md:text-lg leading-relaxed font-light italic max-w-3xl mx-auto">
                     {route.intro}
                   </p>
 
@@ -304,7 +304,7 @@ const Library: React.FC = () => {
                 </div>
 
                 {/* Books List beneath, stacked sequentially */}
-                <div className="w-full max-w-2xl space-y-10">
+                <div className="w-full max-w-4xl space-y-12">
                   {route.books.map((book: BookItem, idx: number) => (
                     <BookItemRow key={idx} book={book} onBookClick={handleBookClick} />
                   ))}
