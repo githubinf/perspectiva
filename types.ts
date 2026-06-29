@@ -8,11 +8,13 @@ export interface PurchaseOption {
 }
 
 export interface BookItem {
+  id?: string;
   title: string;
   description: string;
   url: string;
   coverUrl?: string;
   purchaseOptions?: PurchaseOption[];
+  extraInfo?: string[];
 }
 
 export interface BookCategory {
