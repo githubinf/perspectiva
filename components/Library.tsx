@@ -35,10 +35,13 @@ const BookItemRow: React.FC<BookItemRowProps> = ({ book, onBookClick }) => {
   }, [book.id]);
 
   return (
-    <div id={book.id} className="group/book flex gap-4 md:gap-6 items-start scroll-mt-24">
+    <div id={book.id} className="group/book flex flex-col items-center text-center w-full bg-white border border-[#dae7df]/35 hover:border-[#4db380]/40 rounded-xl p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-300 scroll-mt-24">
       {book.coverUrl && (
         book.purchaseOptions && book.purchaseOptions.length > 0 ? (
-          <div className="w-40 md:w-48 flex-shrink-0 shadow-md border border-[#dae7df]/30 overflow-hidden rounded-sm bg-white">
+          <div 
+            onClick={(e) => onBookClick(e, book)}
+            className="w-36 md:w-44 flex-shrink-0 shadow-md border border-[#dae7df]/30 overflow-hidden rounded-sm bg-white mb-6 hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+          >
             <img 
               src={book.coverUrl} 
               alt={book.title} 
@@ -55,7 +58,7 @@ const BookItemRow: React.FC<BookItemRowProps> = ({ book, onBookClick }) => {
             href={book.url}
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="w-40 md:w-48 flex-shrink-0 shadow-md border border-[#dae7df]/30 overflow-hidden group-hover/book:shadow-xl transition-shadow duration-300 rounded-sm bg-white cursor-pointer"
+            className="w-36 md:w-44 flex-shrink-0 shadow-md border border-[#dae7df]/30 overflow-hidden group-hover/book:shadow-xl transition-shadow duration-300 rounded-sm bg-white mb-6 cursor-pointer"
           >
             <img 
               src={book.coverUrl} 
@@ -70,11 +73,11 @@ const BookItemRow: React.FC<BookItemRowProps> = ({ book, onBookClick }) => {
           </a>
         )
       )}
-      <div className="flex-grow pt-1 min-w-0">
+      <div className="w-full flex-grow pt-1 min-w-0 flex flex-col items-center">
         {book.purchaseOptions && book.purchaseOptions.length > 0 ? (
           <div 
             onClick={(e) => onBookClick(e, book)}
-            className="block mb-2 text-lg md:text-xl font-bold text-[#174532] hover:text-[#4db380] transition-colors leading-snug cursor-pointer"
+            className="block mb-3 text-lg md:text-xl font-bold text-[#174532] hover:text-[#4db380] transition-colors leading-snug cursor-pointer"
           >
             👉 <span className="text-xs md:text-sm bg-[#4db380]/15 text-[#174532] px-1.5 py-0.5 rounded-sm mr-1.5 font-extrabold inline-block align-middle">[Clic Aquí para comprar]</span>{book.title}
           </div>
@@ -83,20 +86,20 @@ const BookItemRow: React.FC<BookItemRowProps> = ({ book, onBookClick }) => {
             href={book.url}
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="block mb-2 text-lg md:text-xl font-bold text-[#174532] hover:text-[#4db380] transition-colors leading-snug cursor-pointer"
+            className="block mb-3 text-lg md:text-xl font-bold text-[#174532] hover:text-[#4db380] transition-colors leading-snug cursor-pointer"
           >
             👉 <span className="text-xs md:text-sm bg-[#4db380]/15 text-[#174532] px-1.5 py-0.5 rounded-sm mr-1.5 font-extrabold inline-block align-middle">[Clic Aquí para comprar]</span>{book.title}
           </a>
         )}
-        <p className="text-sm md:text-[15px] text-[#1b1b1b]/50 leading-relaxed font-light italic">
+        <p className="text-sm md:text-[15px] text-[#1b1b1b]/60 leading-relaxed font-light italic mb-4 max-w-xl">
           {book.description}
         </p>
 
         {book.extraInfo && (
-          <div className="mt-2.5">
+          <div className="w-full mt-2 flex flex-col items-center">
             <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="inline-flex items-center gap-1 text-xs md:text-sm font-bold text-[#4db380] hover:text-[#174532] transition-colors focus:outline-none cursor-pointer select-none"
+              className="inline-flex items-center gap-1.5 text-xs md:text-sm font-bold text-[#4db380] hover:text-[#174532] transition-colors focus:outline-none cursor-pointer select-none"
             >
               <span>{isExpanded ? '[- Info]' : '[+ Info]'}</span>
               <ChevronDown 
@@ -111,9 +114,9 @@ const BookItemRow: React.FC<BookItemRowProps> = ({ book, onBookClick }) => {
                   animate={{ height: 'auto', opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.25, ease: 'easeInOut' }}
-                  className="overflow-hidden"
+                  className="w-full overflow-hidden text-left"
                 >
-                  <div className="mt-3 p-3.5 bg-[#dae7df]/15 border-l-2 border-[#4db380] rounded-r-md text-sm md:text-[15px] text-[#1b1b1b]/80 space-y-3 leading-relaxed font-normal">
+                  <div className="mt-4 p-4 md:p-5 bg-[#dae7df]/15 border-t-2 border-[#4db380] rounded-b-md text-sm md:text-[15px] text-[#1b1b1b]/80 space-y-3 leading-relaxed font-normal">
                     {book.extraInfo.map((paragraph, index) => {
                       const isListItem = paragraph.startsWith('Seleccionar PLR') || 
                                          paragraph.startsWith('Modificar y') || 
@@ -271,23 +274,21 @@ const Library: React.FC = () => {
               key={route.id} 
               className="border-t border-[#dae7df]/40 pt-16 first:border-t-0 first:pt-0"
             >
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
-                {/* Left Column: Route Banner and Details */}
-                <div className="lg:col-span-5 space-y-6">
-                  <div>
-                    <span className="text-[10px] uppercase tracking-[0.3em] text-[#4db380] font-black mb-2 block">
-                      RUTA: {route.category}
-                    </span>
-                    <h3 className="text-2xl md:text-3xl font-bold text-[#174532] leading-tight mb-4 border-l-2 border-[#f4b925] pl-4">
-                      {route.title}
-                    </h3>
-                    <p className="text-[#1b1b1b]/70 text-sm md:text-base leading-relaxed font-light italic">
-                      {route.intro}
-                    </p>
-                  </div>
+              <div className="flex flex-col items-center">
+                {/* Center route title and intro */}
+                <div className="text-center max-w-3xl mx-auto mb-12">
+                  <span className="text-[11px] uppercase tracking-[0.3em] text-[#4db380] font-black mb-3 block">
+                    RUTA: {route.category}
+                  </span>
+                  <h3 className="text-2xl md:text-4xl font-extrabold text-[#174532] leading-tight mb-4">
+                    {route.title}
+                  </h3>
+                  <p className="text-[#1b1b1b]/70 text-base md:text-lg leading-relaxed font-light italic max-w-2xl mx-auto">
+                    {route.intro}
+                  </p>
 
                   {route.coverUrl && (
-                    <div className="overflow-hidden bg-[#dae7df]/10 relative shadow-sm border border-[#dae7df]/40 transition-all duration-500 hover:shadow-lg rounded-sm">
+                    <div className="mt-8 max-w-md mx-auto overflow-hidden bg-[#dae7df]/10 relative shadow-sm border border-[#dae7df]/40 transition-all duration-500 hover:shadow-lg rounded-sm">
                       <img 
                         src={route.coverUrl} 
                         alt={route.title}
@@ -302,16 +303,11 @@ const Library: React.FC = () => {
                   )}
                 </div>
 
-                {/* Right Column: Books List */}
-                <div className="lg:col-span-7 space-y-12 lg:pt-4">
-                  <div className="text-[10px] uppercase tracking-[0.2em] text-[#174532]/40 font-bold border-b border-[#dae7df]/40 pb-2 mb-6">
-                    Libros incluidos en esta ruta
-                  </div>
-                  <div className="space-y-12">
-                    {route.books.map((book: BookItem, idx: number) => (
-                      <BookItemRow key={idx} book={book} onBookClick={handleBookClick} />
-                    ))}
-                  </div>
+                {/* Books List beneath, stacked sequentially */}
+                <div className="w-full max-w-2xl space-y-10">
+                  {route.books.map((book: BookItem, idx: number) => (
+                    <BookItemRow key={idx} book={book} onBookClick={handleBookClick} />
+                  ))}
                 </div>
               </div>
             </article>
