@@ -21,7 +21,7 @@ const BookItemRow: React.FC<BookItemRowProps> = ({ book, onBookClick }) => {
         setTimeout(() => {
           const element = document.getElementById(book.id!);
           if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
         }, 150);
       }
@@ -35,7 +35,7 @@ const BookItemRow: React.FC<BookItemRowProps> = ({ book, onBookClick }) => {
   }, [book.id]);
 
   return (
-    <div id={book.id} className="group/book flex flex-col items-center text-center w-full bg-white border border-[#dae7df]/35 hover:border-[#4db380]/40 rounded-xl p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-300 scroll-mt-24">
+    <div id={book.id} className="group/book flex flex-col items-center text-center w-full bg-white border border-[#dae7df]/35 hover:border-[#4db380]/40 rounded-xl p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-300 scroll-mt-28">
       {book.coverUrl && (
         book.purchaseOptions && book.purchaseOptions.length > 0 ? (
           <div 
