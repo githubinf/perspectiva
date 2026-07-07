@@ -544,7 +544,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Ideas y consejos de Tráfico Web',
         description: 'Aprende a atraer visitantes de forma constante con métodos probados.',
         url: 'https://amzn.to/3Flv3QS',
-        coverUrl: 'https://i.ibb.co/7dKDNLZG/13-ideas-y-consejos-de-trafico-web-libro-400.jpg',
+        coverUrl: 'https://i.ibb.co/qMx88zpy/13-ideas-y-consejos-de-trafico-web-libro-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
@@ -646,7 +646,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'El Vendedor hipnótico',
         description: 'Mejora tu persuasión conectando emocionalmente con tus clientes.',
         url: 'https://amzn.to/3LZRdvV',
-        coverUrl: 'https://i.ibb.co/20bRD4Gt/8-el-vendedor-hipnotico-libro-400.jpg',
+        coverUrl: 'https://i.ibb.co/f593x0C/8-el-vendedor-hipnotico-libro-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
