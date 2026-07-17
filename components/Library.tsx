@@ -95,6 +95,27 @@ const BookItemRow: React.FC<BookItemRowProps> = ({ book, onBookClick }) => {
           {book.description}
         </p>
 
+        {book.audiobookOptions && book.audiobookOptions.length > 0 && (
+          <div className="flex flex-col items-center justify-center gap-2 mt-1 mb-5 text-xs w-full">
+            <span className="font-semibold text-[#174532]/75 flex items-center gap-1 select-none">
+              Audiolibro ▶️🎧:
+            </span>
+            <div className="flex flex-wrap justify-center gap-2 max-w-2xl">
+              {book.audiobookOptions.map((opt, i) => (
+                <a
+                  key={i}
+                  href={opt.url}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="px-3 py-1.5 rounded-full bg-[#dae7df]/20 border border-[#dae7df]/60 hover:bg-[#4db380]/15 hover:border-[#4db380]/40 text-[#174532] hover:scale-105 transition-all duration-200 font-medium text-[11px] cursor-pointer shadow-sm"
+                >
+                  {opt.platform}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+
         {book.extraInfo && (
           <div className="w-full mt-2 flex flex-col items-center">
             <button

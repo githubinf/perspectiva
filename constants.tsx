@@ -647,6 +647,14 @@ export const FEATURED_BOOKS: BookCategory[] = [
         description: 'Mejora tu persuasión conectando emocionalmente con tus clientes.',
         url: 'https://amzn.to/3LZRdvV',
         coverUrl: 'https://i.ibb.co/f593x0C/8-el-vendedor-hipnotico-libro-400.jpg',
+        audiobookOptions: [
+          { platform: 'Spotify', url: 'https://open.spotify.com/show/0DrnOq1TRjB9OX5Xa6hyz5' },
+          { platform: 'Apple Books', url: 'https://books.apple.com/us/audiobook/el-vendedor-hipn%C3%B3tico-domina-el-arte-de/id1861823314?uo=4' },
+          { platform: 'Everand', url: 'https://es.everand.com/audiobook/967843087/El-Vendedor-Hipnotico-Domina-el-arte-de-la-seduccion-emocional-para-vender-sin-presionar' },
+          { platform: 'Storytel', url: 'https://www.storytel.com/tv/books/el-vendedor-hipn%C3%B3tico-domina-el-arte-de-la-seducci%C3%B3n-emocional-para-vender-sin-presionar-13219210?utm_source=internal&utm_medium=app_link&utm_campaign=share_links' },
+          { platform: 'Google Play', url: 'https://play.google.com/store/audiobooks/details?id=AQAAAEDqXVcdrM' },
+          { platform: 'Amazon', url: 'https://amzn.to/4vMYGTh' }
+        ],
         purchaseOptions: [
           { 
             platform: 'Amazon', 

@@ -7,6 +7,11 @@ export interface PurchaseOption {
   cta?: string;
 }
 
+export interface AudiobookOption {
+  platform: string;
+  url: string;
+}
+
 export interface BookItem {
   id?: string;
   title: string;
@@ -14,6 +19,7 @@ export interface BookItem {
   url: string;
   coverUrl?: string;
   purchaseOptions?: PurchaseOption[];
+  audiobookOptions?: AudiobookOption[];
   extraInfo?: string[];
 }
 
