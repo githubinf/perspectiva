@@ -16,7 +16,9 @@ const BookItemRow: React.FC<BookItemRowProps> = ({ book, onBookClick }) => {
 
   useEffect(() => {
     const handleHashChange = () => {
-      if (book.id && window.location.hash === `#${book.id}`) {
+      const currentHash = window.location.hash;
+      const isMatch = book.id && (currentHash === `#${book.id}` || (book.id === 'clickbank' && currentHash === '#clcibank'));
+      if (isMatch) {
         setIsExpanded(true);
         setTimeout(() => {
           const element = document.getElementById(book.id!);
@@ -229,11 +231,13 @@ const BookItemRow: React.FC<BookItemRowProps> = ({ book, onBookClick }) => {
                                          paragraph.startsWith('Mantener la calidad') ||
                                          paragraph.startsWith('Validar tu ebook en el mercado');
                       if (isListItem) {
-                        const parts = paragraph.split(':');
-                        if (parts.length > 1) {
+                        const colonIndex = paragraph.indexOf(':');
+                        if (colonIndex !== -1) {
+                          const titlePart = paragraph.substring(0, colonIndex);
+                          const descPart = paragraph.substring(colonIndex + 1);
                           return (
                             <div key={index} className="pl-3 relative before:content-['•'] before:absolute before:left-0 before:text-[#4db380] before:font-bold">
-                              <strong className="text-[#174532]">{parts[0]}:</strong>{parts[1]}
+                              <strong className="text-[#174532]">{titlePart}:</strong>{descPart}
                             </div>
                           );
                         } else {

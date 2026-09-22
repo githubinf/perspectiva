@@ -332,7 +332,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         ]
       },
       {
-        id: 'clcibank',
+        id: 'clickbank',
         title: 'Dinero con Clickbank',
         description: 'Cómo elegir productos rentables, promocionarlos y construir tu primer negocio de afiliados',
         url: 'https://amzn.to/46yludn',

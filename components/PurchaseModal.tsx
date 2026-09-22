@@ -111,7 +111,7 @@ const PurchaseModal: React.FC<PurchaseModalProps> = ({ isOpen, onClose, bookTitl
                   </div>
                 </div>
                 <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-[#dae7df]/20 flex items-center justify-center group-hover:bg-[#4db380] group-hover:text-white transition-all flex-shrink-0 ml-2">
-                  <ExternalLink size={12} md:size={14} />
+                  <ExternalLink className="w-3 h-3 md:w-3.5 md:h-3.5" />
                 </div>
               </a>
             ))}
