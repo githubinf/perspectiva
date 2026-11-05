@@ -13,14 +13,14 @@ export const FEATURED_BOOKS: BookCategory[] = [
     title: '🌟 PRODUCTO ESTRELLA (Origen de toda la colección)',
     category: 'Origen',
     intro: 'La base de todo. Desde este método nacen el resto de libros de la biblioteca FG Perspectiva.',
-    coverUrl: 'https://i.ibb.co/84zjNS6T/producto-estrella-plr.png',
+    coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/producto-estrella-plr.png',
     books: [
       {
         id: 'plr',
         title: 'Experto en PLR premium: El Sistema Paso a Paso para Crear Infoproductos Rentables que venden.',
         description: 'Aprende a crear, modificar y vender infoproductos con PLR profesional, incluso sin ser experto. Herramientas Digitales Actuales.',
         url: 'https://www.amazon.com/dp/B0GWZQPNT2',
-        coverUrl: 'https://i.ibb.co/QFGfhgGL/25-experto-en-plr-producto-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/25-experto-en-plr-producto-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
@@ -68,14 +68,14 @@ export const FEATURED_BOOKS: BookCategory[] = [
     title: '📚 Fundamentos digitales',
     category: 'Iniciación',
     intro: 'Para quienes quieren construir su primer activo online con bases sólidas y una estructura que escale.',
-    coverUrl: 'https://i.ibb.co/p6SHyqBW/fundamentos-digitales-categoria.png',
+    coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fundamentos-digitales-categoria.png',
     books: [
       {
         id: 'optimizado',
         title: 'Cómo crear un Blog optimizado',
         description: 'Construye tu primer activo digital desde cero, con estructura y visión a largo plazo.',
         url: 'https://amzn.to/3ZXWB8q',
-        coverUrl: 'https://i.ibb.co/q3TTrp45/1-como-crear-un-blog-optimizado-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/1-como-crear-un-blog-optimizado-libro-400.png',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
@@ -117,7 +117,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Mi Blog y los Programas de Afiliados',
         description: 'Aprende a convertir contenido en ingresos de forma ordenada y sostenible.',
         url: 'https://amzn.to/3PXiwYW',
-        coverUrl: 'https://i.ibb.co/gFByygV3/4-mi-blog-y-los-programas-de-afiliados-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/4-mi-blog-y-los-programas-de-afiliados-libro-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
@@ -171,7 +171,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Guía Completa de Inbound Marketing',
         description: 'Atrae clientes con contenido estratégico, sin depender de interrupciones.',
         url: 'https://amzn.to/48SDeBV',
-        coverUrl: 'https://i.ibb.co/Sp4GnWM/guia-inbound-marketing.png',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/11-guia-inbound-marketing-libro-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
@@ -214,14 +214,14 @@ export const FEATURED_BOOKS: BookCategory[] = [
     title: '💰 Monetización y afiliación',
     category: 'Ingresos',
     intro: 'Estrategias prácticas para transformar tráfico e ideas en ingresos reales y sistemas sostenibles.',
-    coverUrl: 'https://i.ibb.co/whft6kKb/monetizacion-y-afiliacion-categoria.png',
+    coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/monetizacion-y-afiliacion-categoria.png',
     books: [
       {
         id: 'dominando',
         title: 'Dominando el marketing de afiliados',
         description: 'Estrategias para generar ingresos recomendando productos.',
         url: 'https://amzn.to/46AasVc',
-        coverUrl: 'https://i.ibb.co/848rmyCx/3-marketing-de-afiliados-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/3-marketing-de-afiliados-libro-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
@@ -256,7 +256,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Marketing CPA Para Emprendedores y Profesionales Digitales',
         description: 'Domina el modelo de Coste Por Acción.',
         url: 'https://marketing-cpa.lovable.app/',
-        coverUrl: 'https://i.ibb.co/wrdHNtFn/marketing-cpa-para-emprendedores.png',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/21-marketing-cpa-libro-400-2.jpg',
         purchaseOptions: [
           { 
             platform: 'Clickbank', 
@@ -296,7 +296,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Cpa Marketing Fórmula Smartlink',
         description: 'Optimización avanzada de enlaces inteligentes.',
         url: 'https://amzn.to/3PF2oMd',
-        coverUrl: 'https://i.ibb.co/fV1pc13f/6-cpa-marketing-smartlink-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/6-cpa-marketing-smartlink-libro-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
@@ -336,7 +336,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Dinero con Clickbank',
         description: 'Cómo elegir productos rentables, promocionarlos y construir tu primer negocio de afiliados',
         url: 'https://amzn.to/46yludn',
-        coverUrl: 'https://i.ibb.co/jZvBdz9f/2-dinero-con-clickbank-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/2-dinero-con-clickbank-libro-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
@@ -383,7 +383,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Tips de Marketing para Afiliados',
         description: 'Consejos accionables para maximizar conversiones.',
         url: 'https://amzn.to/405AkFR',
-        coverUrl: 'https://i.ibb.co/5hqN1ycg/5-tips-de-marketing-para-afiliados-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/5-tips-de-marketing-para-afiliados-libro-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
@@ -440,14 +440,14 @@ export const FEATURED_BOOKS: BookCategory[] = [
     title: '🤖 Inteligencia Artificial aplicada',
     category: 'Tecnología',
     intro: 'Cómo integrar IA en tus procesos digitales para crear más rápido, decidir mejor y escalar con menos esfuerzo.',
-    coverUrl: 'https://i.ibb.co/ym9cL2rD/inteligencia-artificial-aplicada-categoria.png',
+    coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/inteligencia-artificial-aplicada-categoria.png',
     books: [
       {
         id: 'chat1',
         title: 'Cómo ganar dinero con CHATGPT',
         description: 'Aplica ChatGPT a proyectos reales y crea flujos de ingresos asistidos por IA.',
         url: 'https://amzn.to/3Q13TUi',
-        coverUrl: 'https://i.ibb.co/LDrzycGZ/como-ganar-dinero-con-chatgpt.png',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/12-dinero-con-chatgpt-libro-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
@@ -488,7 +488,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Desbloquea tu inspiración con ChatGPT',
         description: 'Utiliza la IA como motor creativo para contenidos y productos digitales.',
         url: 'https://amzn.to/3VhmpME',
-        coverUrl: 'https://i.ibb.co/qY3WJ4bN/16-chatgpt-para-escritores-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/16-chatgpt-para-escritores-libro-400.jpg',
         extraInfo: [
           'El bloqueo creativo es uno de los mayores enemigos de los creadores digitales. Pasar horas mirando una pantalla en blanco, esperando que llegue la "idea perfecta", es una experiencia frustrante que retrasa proyectos y genera ansiedad. Pero, ¿y si pudieras tener un "motor de inspiración" disponible las 24 horas del día, los 7 días de la semana?',
           'ChatGPT no solo sirve para automatizar tareas o generar contenido; también es una herramienta excepcional para desbloquear tu creatividad. Este libro te enseña a usar la IA no como un sustituto de tu creatividad, sino como un catalizador que la potencia y la amplifica.',
@@ -506,7 +506,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Inteligencia Artificial',
         description: 'Comprende los fundamentos de la IA y su impacto en los negocios digitales.',
         url: 'https://amzn.to/3PAxt3y',
-        coverUrl: 'https://i.ibb.co/20gchR86/15-inteligencia-artificial-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/15-inteligencia-artificial-libro-400.jpg',
         extraInfo: [
           'La Inteligencia Artificial está transformando todos los sectores, pero para la mayoría de las personas sigue siendo un concepto abstracto y lejano. Este libro desmitifica la IA y te la presenta como una herramienta práctica que puedes integrar en tu negocio digital hoy mismo, sin necesidad de ser programador o experto en tecnología.',
           'Aprenderás qué es realmente el machine learning, el procesamiento del lenguaje natural y las redes neuronales, pero explicado de forma sencilla y con ejemplos aplicados al marketing, la creación de contenido y la atención al cliente. También explorarás el panorama actual y las tendencias futuras para que puedas anticiparte a los cambios.',
@@ -518,7 +518,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'El futuro del marketing (IA)',
         description: 'Adelántate a los cambios del marketing impulsado por inteligencia artificial.',
         url: 'https://amzn.to/400t0eP',
-        coverUrl: 'https://i.ibb.co/Kx6WXKQ7/7-marketing-IA-futuro-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/7-marketing-IA-futuro-libro-400.jpg',
         extraInfo: [
           'El marketing digital está experimentando una transformación sin precedentes gracias a la inteligencia artificial. Lo que hace cinco años parecía ciencia ficción (contenido generado automáticamente, personalización masiva, predicción de comportamientos) ya es una realidad que está cambiando las reglas del juego. Pero la mayoría de los profesionales y emprendedores digitales reaccionan a estos cambios cuando ya son inevitables, perdiendo la oportunidad de posicionarse como líderes en su nicho.',
           'Este libro no es una predicción abstracta; es una guía estratégica para entender hacia dónde se dirige el marketing y cómo puedes prepararte hoy para no quedarte atrás mañana. Está basado en tendencias actuales, investigaciones de mercado y casos prácticos de empresas que ya están utilizando IA de forma avanzada.',
@@ -537,14 +537,14 @@ export const FEATURED_BOOKS: BookCategory[] = [
     title: '🚀 Tráfico, contenidos y crecimiento',
     category: 'Crecimiento',
     intro: 'Métodos probados para atraer visitantes cualificados y convertir contenido en crecimiento constante.',
-    coverUrl: 'https://i.ibb.co/dJ5D1987/trafico-contenidos-y-crecimiento-categoria.png',
+    coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/trafico-contenidos-y-crecimiento-categoria.png',
     books: [
       {
         id: 'visitas1',
         title: 'Ideas y consejos de Tráfico Web',
         description: 'Aprende a atraer visitantes de forma constante con métodos probados.',
         url: 'https://amzn.to/3Flv3QS',
-        coverUrl: 'https://i.ibb.co/qMx88zpy/13-ideas-y-consejos-de-trafico-web-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/13-ideas-y-consejos-de-trafico-web-libro-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
@@ -584,7 +584,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Ideas Maestras de Tráfico Web',
         description: 'Construye sistemas de tráfico que alimenten tus activos digitales.',
         url: 'https://amzn.to/3vjVwNB',
-        coverUrl: 'https://i.ibb.co/KjkrJZVk/27-ideas-maestras-de-trafico-web-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/27-ideas-maestras-de-trafico-web-libro-400.jpg',
         extraInfo: [
           'Tener ideas sueltas para generar tráfico está bien, pero si quieres construir un negocio digital sostenible, necesitas ir un paso más allá: necesitas un sistema de tráfico que funcione de forma continua, sin depender de tu esfuerzo diario ni de la suerte. Eso es exactamente lo que encontrarás en este libro.',
           'Mientras que "Ideas y consejos de Tráfico Web" te da las bases y las primeras estrategias, este libro profundiza en la construcción de sistemas de tráfico multicanal, diseñados para alimentar tus activos digitales de forma constante y escalable. Está pensado para quienes ya tienen algo de tráfico y quieren multiplicarlo.',
@@ -601,7 +601,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'El Poder Del Marketing De Contenidos',
         description: 'Convierte tu contenido en la base principal de tu crecimiento online.',
         url: 'https://amzn.to/47MbpgC',
-        coverUrl: 'https://i.ibb.co/hJ7WccPy/18-marketing-de-contenidos-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/18-marketing-de-contenidos-libro-400.jpg',
         extraInfo: [
           'El marketing de contenidos es el pilar fundamental de cualquier estrategia digital exitosa. No se trata de "publicar artículos" por cumplir, sino de crear contenido estratégico que eduque, atraiga y convierta a tu audiencia en clientes leales. Sin una estrategia de contenidos clara, todo el tráfico que atraigas será en vano.',
           'Este libro es una guía completa para dominar el arte y la ciencia del marketing de contenidos, desde la planificación hasta la ejecución y la medición. Aprenderás a crear contenido que no solo informe, sino que genere confianza, autoridad y, finalmente, ventas recurrentes.',
@@ -619,7 +619,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Dominando el Arte del Email Marketing',
         description: 'Crea relaciones duraderas y ventas recurrentes con email estratégico.',
         url: 'https://amzn.to/4cbywRd',
-        coverUrl: 'https://i.ibb.co/FbxVRfGY/26-dominando-el-arte-del-email-marketing-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/26-dominando-el-arte-del-email-marketing-libro-400.jpg',
         extraInfo: [
           'El email marketing es, con diferencia, el canal de marketing con el mayor retorno de inversión (ROI) para cualquier negocio digital. Pero la mayoría de las personas lo hace mal: envían correos genéricos, spam o promociones agresivas que terminan en la papelera (o en la carpeta de spam). El email marketing efectivo no es enviar correos; es construir relaciones.',
           'Este libro te enseña a utilizar el email como un sistema de comunicación estratégica que te permite conectar con tu audiencia a un nivel más profundo, construir confianza y generar ventas recurrentes de forma ética y sostenible. No es un manual de tácticas puntuales; es una guía para construir un sistema de email marketing que funcione solo.',
@@ -639,14 +639,14 @@ export const FEATURED_BOOKS: BookCategory[] = [
     title: '🧠 Mentalidad y creación',
     category: 'Mindset',
     intro: 'Desarrollo personal, enfoque creativo y mentalidad estratégica para sostener cualquier proyecto digital.',
-    coverUrl: 'https://i.ibb.co/xtbJZf7c/mentalidad-y-creacion-categoria.png',
+    coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/mentalidad-y-creacion-categoria.png',
     books: [
       {
         id: 'vendedor',
         title: 'El Vendedor hipnótico',
         description: 'Mejora tu persuasión conectando emocionalmente con tus clientes.',
         url: 'https://amzn.to/3LZRdvV',
-        coverUrl: 'https://i.ibb.co/f593x0C/8-el-vendedor-hipnotico-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/8-el-vendedor-hipnotico-libro-400.jpg',
         audiobookOptions: [
           { platform: 'Spotify', url: 'https://open.spotify.com/show/0DrnOq1TRjB9OX5Xa6hyz5' },
           { platform: 'Apple Books', url: 'https://books.apple.com/us/audiobook/el-vendedor-hipn%C3%B3tico-domina-el-arte-de/id1861823314?uo=4' },
@@ -716,7 +716,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'El Arte de Atraer la Abundancia',
         description: 'Despierta tu potencial ilimitado y crea una vida de riqueza, éxito y plenitud total',
         url: 'https://amzn.to/3XCLjVW',
-        coverUrl: 'https://i.ibb.co/Jw33pVGT/El-arte-de-atraer-la-abundancia.png',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/14-el-arte-de-atraer-la-abundancia-ebook-libro-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
@@ -757,7 +757,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'De la Pluma al Dinero',
         description: 'Transforma tus ideas escritas en productos digitales rentables.',
         url: 'https://amzn.to/3Tt81ir',
-        coverUrl: 'https://i.ibb.co/hFkMt4cm/23-de-la-pluma-al-dinero-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/23-de-la-pluma-al-dinero-libro-400.jpg',
         extraInfo: [
           'Escribir es una de las habilidades más valiosas en el mundo digital, pero la mayoría de las personas no sabe cómo convertir sus escritos en productos rentables. Tienen ideas, conocimientos y experiencias que podrían ayudar a otros, pero no saben cómo estructurarlas, empaquetarlas y venderlas. Este libro es el puente entre tener algo que decir y tener un producto digital que genere ingresos.',
           'No es un manual de escritura creativa ni un tratado sobre gramática. Es una guía práctica para transformar tu conocimiento en productos digitales que la gente esté dispuesta a comprar, desde ebooks y guías hasta cursos y plantillas. Está pensado para quienes tienen experiencia en un área y quieren monetizarla sin complicaciones.',
@@ -775,7 +775,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Cómo crear Ebooks (de no ficción)',
         description: 'Diseña ebooks útiles que aporten valor y generen ingresos.',
         url: 'https://amzn.to/3xfCrNa',
-        coverUrl: 'https://i.ibb.co/MxcXwpc4/9-como-crear-ebooks-de-no-ficcion-libro-400.jpg',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/9-como-crear-ebooks-de-no-ficcion-libro-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
@@ -817,7 +817,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
         title: 'Ebook en 24 horas',
         description: 'Cómo escribir un ebook de no ficción y publicarlo en tiempo récord (menos de 24 horas) ¿Te atreves?',
         url: 'https://amzn.to/3xfCrNa',
-        coverUrl: 'https://i.ibb.co/TMFmSZxG/ebook-en-24-horas-no-ficcion.png',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/10-ebook-en-24-horas-libro-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
