@@ -25,14 +25,14 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { 
             platform: 'Amazon', 
             url: 'https://www.amazon.com/dp/B0GWZQPNT2', 
-            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '🛒',
             cta: 'Comprar en Amazon'
           },
           { 
             platform: 'Clickbank', 
             url: 'https://expertoplrpremium.vercel.app/', 
-            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
@@ -45,7 +45,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/QhoMJ', 
-            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           }
@@ -80,28 +80,28 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { 
             platform: 'Amazon', 
             url: 'https://amzn.to/3ZXWB8q', 
-            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '🛒',
             cta: 'Comprar en Amazon'
           },
           { 
             platform: 'Lulu', 
             url: 'https://www.lulu.com/es/shop/francisco-gonzalez/c%C3%B3mo-crear-un-blog-optimizado/ebook/product-9pqk7n.html?page=1&pageSize=4', 
-            logo: 'https://i.ibb.co/nq0QhxZR/lulu-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg',
             emoji: '📚',
             cta: 'Ver en Lulu'
           },
           { 
             platform: 'Clickbank', 
             url: 'https://bloggingopt.lovable.app/', 
-            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/w8feQ', 
-            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           }
@@ -122,35 +122,35 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { 
             platform: 'Amazon', 
             url: 'https://amzn.to/3PXiwYW', 
-            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '🛒',
             cta: 'Comprar en Amazon'
           },
           { 
             platform: 'Lulu', 
             url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/mi-blog-y-los-programas-de-afiliados/ebook/product-zmwkppj.html', 
-            logo: 'https://i.ibb.co/nq0QhxZR/lulu-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg',
             emoji: '📚',
             cta: 'Ver en Lulu'
           },
           { 
             platform: 'Clickbank', 
             url: 'https://miblogafiliados.vercel.app/', 
-            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
           { 
             platform: 'Draft2Digital', 
             url: 'https://books2read.com/u/mdJkDR', 
-            logo: 'https://i.ibb.co/TDgFD1mx/draft2digital-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/draft2digital-logo.jpg',
             emoji: '📖',
             cta: 'Ver en Draft2Digital'
           },
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/hYfbn', 
-            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           }
@@ -176,21 +176,21 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { 
             platform: 'Amazon', 
             url: 'https://amzn.to/48SDeBV', 
-            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '🛒',
             cta: 'Comprar en Amazon'
           },
           { 
             platform: 'Clickbank', 
             url: 'https://inboundinboundmarketing.vercel.app', 
-            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/dvPDj', 
-            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           }
@@ -226,21 +226,21 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { 
             platform: 'Amazon', 
             url: 'https://amzn.to/46AasVc', 
-            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '🛒',
             cta: 'Comprar en Amazon'
           },
           { 
             platform: 'Clickbank', 
             url: 'https://dominando-el-marketing-de-afiliados.vercel.app/', 
-            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/mQwHe', 
-            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           }
@@ -261,21 +261,21 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { 
             platform: 'Clickbank', 
             url: 'https://marketing-cpa.lovable.app/', 
-            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/6PclQ', 
-            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           },
           { 
             platform: 'Ko-fi', 
             url: 'https://ko-fi.com/s/48931def16', 
-            logo: 'https://i.ibb.co/2r0C36C/ko-fi-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/ko-fi-logo.jpg',
             emoji: '☕',
             cta: 'Comprar en Ko-fi'
           }
@@ -301,21 +301,21 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { 
             platform: 'Amazon', 
             url: 'https://amzn.to/3PF2oMd', 
-            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '🛒',
             cta: 'Comprar en Amazon'
           },
           { 
             platform: 'Clickbank', 
             url: 'https://cpamarketingformula.vercel.app/', 
-            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/U84n0', 
-            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           }
@@ -341,28 +341,28 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { 
             platform: 'Amazon', 
             url: 'https://amzn.to/46yludn', 
-            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '🛒',
             cta: 'Comprar en Amazon'
           },
           { 
             platform: 'Lulu', 
             url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/dinero-con-clickbank/ebook/product-958dkwn.html', 
-            logo: 'https://i.ibb.co/nq0QhxZR/lulu-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg',
             emoji: '📚',
             cta: 'Ver en Lulu'
           },
           { 
             platform: 'Clickbank', 
             url: 'https://dineroconclk.vercel.app/', 
-            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/DIuAq', 
-            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           }
@@ -388,35 +388,35 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { 
             platform: 'Amazon', 
             url: 'https://amzn.to/405AkFR', 
-            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '🛒',
             cta: 'Comprar en Amazon'
           },
           { 
             platform: 'Lulu', 
             url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/tips-de-marketing-para-afiliados/ebook/product-jej9vm4.html', 
-            logo: 'https://i.ibb.co/nq0QhxZR/lulu-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg',
             emoji: '📚',
             cta: 'Ver en Lulu'
           },
           { 
             platform: 'Clickbank', 
             url: 'https://tips-marketing-de-afiliados.vercel.app/', 
-            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
           { 
             platform: 'Draft2Digital', 
             url: 'https://books2read.com/u/m28gXr', 
-            logo: 'https://i.ibb.co/TDgFD1mx/draft2digital-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/draft2digital-logo.jpg',
             emoji: '📖',
             cta: 'Ver en Draft2Digital'
           },
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/bCMT3', 
-            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           }
@@ -452,21 +452,21 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { 
             platform: 'Amazon', 
             url: 'https://amzn.to/3Q13TUi', 
-            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '🛒',
             cta: 'Comprar en Amazon'
           },
           { 
             platform: 'Clickbank', 
             url: 'https://dineroconchatgpt.vercel.app/', 
-            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/FuLo0', 
-            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           }
@@ -549,21 +549,21 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { 
             platform: 'Amazon', 
             url: 'https://amzn.to/3Flv3QS', 
-            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '🛒',
             cta: 'Comprar en Amazon'
           },
           { 
             platform: 'Clickbank', 
             url: 'https://traficoweb.vercel.app/', 
-            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/kyY9j', 
-            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           }
@@ -659,42 +659,42 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { 
             platform: 'Amazon', 
             url: 'https://amzn.to/3LZRdvV', 
-            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '🛒',
             cta: 'Comprar en Amazon'
           },
           { 
             platform: 'Clickbank', 
             url: 'https://elvendedorhipnotico.vercel.app/', 
-            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
           { 
             platform: 'Draft2Digital', 
             url: 'https://books2read.com/u/4A85vk', 
-            logo: 'https://i.ibb.co/TDgFD1mx/draft2digital-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/draft2digital-logo.jpg',
             emoji: '📖',
             cta: 'Ver en Draft2Digital'
           },
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/JWv4w', 
-            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           },
           { 
             platform: 'Lulu', 
             url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/el-vendedor-hipn%C3%B3tico/ebook/product-84j9eep.html', 
-            logo: 'https://i.ibb.co/nq0QhxZR/lulu-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg',
             emoji: '📚',
             cta: 'Ver en Lulu'
           },
           { 
             platform: 'Google Play', 
             url: 'https://play.google.com/store/books/details/Francisco_Gonz%C3%A1lez_El_Vendedor_Hipn%C3%B3tico?id=ViOdEQAAQBAJ', 
-            logo: 'https://i.ibb.co/snCJXvX/google-play-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/google-play-logo.jpg',
             emoji: '📱',
             cta: 'Ver en Google Play'
           }
@@ -721,21 +721,21 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { 
             platform: 'Amazon', 
             url: 'https://amzn.to/3XCLjVW', 
-            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '🛒',
             cta: 'Comprar en Amazon'
           },
           { 
             platform: 'Clickbank', 
             url: 'https://abundancia-arte.vercel.app/ ', 
-            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/VJNwa', 
-            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           }
@@ -780,21 +780,21 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { 
             platform: 'Amazon', 
             url: 'https://amzn.to/3xfCrNa', 
-            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '🛒',
             cta: 'Comprar en Amazon'
           },
           { 
             platform: 'Clickbank', 
             url: 'https://comocrearebooksdeno-ficcion.vercel.app', 
-            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/DwRge', 
-            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           }
@@ -816,27 +816,27 @@ export const FEATURED_BOOKS: BookCategory[] = [
         id: 'ebooks24',
         title: 'Ebook en 24 horas',
         description: 'Cómo escribir un ebook de no ficción y publicarlo en tiempo récord (menos de 24 horas) ¿Te atreves?',
-        url: 'https://amzn.to/3xfCrNa',
+        url: 'https://amzn.to/3TqQl6o',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/10-ebook-en-24-horas-libro-400.jpg',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
-            url: 'https://amzn.to/3xfCrNa', 
-            logo: 'https://i.ibb.co/SXqcPJV7/amazon-logo.jpg',
+            url: 'https://amzn.to/3TqQl6o', 
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '🛒',
             cta: 'Comprar en Amazon'
           },
           { 
             platform: 'Clickbank', 
             url: 'https://ebook24.vercel.app/', 
-            logo: 'https://i.ibb.co/7Nz9j8Jv/clickbank-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/8prkL', 
-            logo: 'https://i.ibb.co/fdbkG4Qg/payhip-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           }
