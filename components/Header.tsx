@@ -40,12 +40,6 @@ const Header: React.FC = () => {
               {item.label}
             </Link>
           ))}
-          <Link 
-            href="/biblioteca/" 
-            className="bg-[#174532] text-white px-5 py-2 text-[13.5px] font-semibold hover:bg-[#1f513a] transition-all shadow-md shadow-[#174532]/10 rounded-md"
-          >
-            Explorar
-          </Link>
         </nav>
 
         <button 
@@ -80,15 +74,6 @@ const Header: React.FC = () => {
                 {item.label}
               </Link>
             ))}
-          </div>
-          <div className="mt-auto">
-            <Link 
-              href="/biblioteca/" 
-              className="block w-full text-center bg-[#174532] text-white py-3.5 text-[14px] font-semibold rounded-md shadow-md"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Explorar Catálogo
-            </Link>
           </div>
         </div>
       </div>

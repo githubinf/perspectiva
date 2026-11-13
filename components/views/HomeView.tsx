@@ -4,7 +4,6 @@ import Manifesto from '../Manifesto.tsx';
 import Features from '../Features.tsx';
 import HomeSystems from '../HomeSystems.tsx';
 import HomeAbout from '../HomeAbout.tsx';
-import HomeAuthority from '../HomeAuthority.tsx';
 import FooterCTA from '../FooterCTA.tsx';
 import { FEATURED_BOOKS, ALL_BOOKS } from '../../constants.tsx';
 import { BookItem } from '../../types.ts';
@@ -106,16 +105,10 @@ const HomeView: React.FC = () => {
 
           {/* Featured Books Grid */}
           <div className="mb-12">
-            <div className="flex items-center justify-between mb-8 border-b border-[#dae7df] pb-3">
+            <div className="mb-8 border-b border-[#dae7df] pb-3">
               <h3 className="text-h3 font-bold font-serif text-[#174532]">
                 Títulos destacados de la colección
               </h3>
-              <Link
-                href="/biblioteca/"
-                className="text-xs uppercase tracking-wider font-semibold text-[#4db380] hover:text-[#174532] transition-colors"
-              >
-                Ver todos los 23 libros →
-              </Link>
             </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -124,9 +117,9 @@ const HomeView: React.FC = () => {
                 return (
                   <div
                     key={book.id || book.slug}
-                    className="bg-white border border-[#dae7df]/40 hover:border-[#4db380]/50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center group h-full"
+                    className="relative bg-white border border-[#dae7df]/40 hover:border-[#4db380]/50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center group h-full"
                   >
-                    <Link href={bookUrl} className="block mb-5 cursor-pointer">
+                    <div className="mb-5">
                       <img
                         src={book.coverUrl}
                         alt={book.title}
@@ -135,14 +128,11 @@ const HomeView: React.FC = () => {
                         width={300}
                         height={435}
                       />
-                    </Link>
+                    </div>
 
-                    <Link
-                      href={bookUrl}
-                      className="text-[17px] md:text-[18px] font-bold font-serif text-[#174532] hover:text-[#4db380] transition-colors leading-snug mb-2 cursor-pointer break-words"
-                    >
+                    <h4 className="text-[17px] md:text-[18px] font-bold font-serif text-[#174532] group-hover:text-[#4db380] transition-colors leading-snug mb-2 break-words">
                       {book.title}
-                    </Link>
+                    </h4>
 
                     <p className="text-body-sm text-[#1b1b1b]/70 font-normal italic mb-6 leading-relaxed">
                       {book.description}
@@ -151,15 +141,17 @@ const HomeView: React.FC = () => {
                     <div className="mt-auto w-full flex flex-col gap-2">
                       <Link
                         href={bookUrl}
-                        className="w-full inline-flex items-center justify-center py-2.5 px-4 bg-[#174532] text-white text-[13px] font-semibold rounded-md hover:bg-[#1f513a] transition-colors shadow-sm"
+                        aria-label={`Ver ficha del libro: ${book.title}`}
+                        className="w-full inline-flex items-center justify-center py-2.5 px-4 bg-[#174532] text-white text-[13px] font-semibold rounded-md hover:bg-[#1f513a] transition-colors shadow-sm after:content-[''] after:absolute after:inset-0 after:rounded-xl"
                       >
                         Ver ficha del libro →
                       </Link>
 
                       {book.purchaseOptions && book.purchaseOptions.length > 0 && (
                         <button
+                          type="button"
                           onClick={(e) => openPurchaseModal(e, book)}
-                          className="w-full inline-flex items-center justify-center py-2 px-3 bg-[#dae7df]/30 text-[#174532] text-[12.5px] font-medium rounded-md hover:bg-[#dae7df]/60 transition-colors cursor-pointer"
+                          className="relative z-10 w-full inline-flex items-center justify-center py-2 px-3 bg-[#dae7df]/30 text-[#174532] text-[12.5px] font-medium rounded-md hover:bg-[#dae7df]/60 transition-colors cursor-pointer"
                         >
                           Opciones de compra
                         </button>
@@ -195,7 +187,6 @@ const HomeView: React.FC = () => {
       <HomeSystems />
 
       <HomeAbout />
-      <HomeAuthority />
       <FooterCTA />
 
       <PurchaseModal

@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+@theme {
+  /* Centralized Typography Families */
+  --font-serif: "Libre Baskerville", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* Editorial Color Palette */
+  --color-primary: #174532;
+  --color-secondary: #4db380;
+  --color-tech-dark: #1f513a;
+  --color-white-editorial: #ffffff;
+  --color-grey-soft: #dae7df;
+  --color-text: #1b1b1b;
+  --color-accent: #f4b925;
+}
+
+@layer base {
+  :root {
+    /* Breakpoint-Calibrated Fluid Typographic Scale (390px -> 768px base) */
+    --text-hero: clamp(2.25rem, 1.6052rem + 2.6455vw, 2.875rem);
+    --text-h1: clamp(1.75rem, 1.3631rem + 1.5873vw, 2.125rem);
+    --text-h2-lg: clamp(1.625rem, 1.2381rem + 1.5873vw, 2rem);
+    --text-h2: clamp(1.375rem, 1.1171rem + 1.0582vw, 1.625rem);
+    --text-h3: clamp(1.125rem, 1.0605rem + 0.26455vw, 1.1875rem);
+    --text-h4: clamp(1rem, 0.9678rem + 0.13228vw, 1.03125rem);
+    --text-subtitle: clamp(1rem, 0.9033rem + 0.39683vw, 1.09375rem);
+    --text-body: 1rem;
+    --text-body-sm: 0.875rem;
+    --text-ornament-8: clamp(8.75rem, 6.1706rem + 10.5820vw, 11.25rem);
+  }
+
+  @media (min-width: 768px) {
+    :root {
+      /* 768px -> 1024px */
+      --text-hero: clamp(2.875rem, 1.75rem + 2.34375vw, 3.25rem);
+      --text-h1: clamp(2.125rem, 1.375rem + 1.5625vw, 2.375rem);
+      --text-h2-lg: clamp(2rem, 1.25rem + 1.5625vw, 2.25rem);
+      --text-h2: clamp(1.625rem, 1.25rem + 0.78125vw, 1.75rem);
+      --text-h3: clamp(1.1875rem, 1rem + 0.390625vw, 1.25rem);
+      --text-h4: clamp(1.03125rem, 0.9375rem + 0.19531vw, 1.0625rem);
+      --text-subtitle: clamp(1.09375rem, 0.90625rem + 0.390625vw, 1.15625rem);
+      --text-body: clamp(1rem, 0.90625rem + 0.19531vw, 1.03125rem);
+      --text-body-sm: clamp(0.875rem, 0.78125rem + 0.19531vw, 0.90625rem);
+      --text-ornament-8: clamp(11.25rem, 7.5rem + 7.8125vw, 12.5rem);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    :root {
+      /* 1024px -> 1280px */
+      --text-hero: clamp(3.25rem, 2.25rem + 1.5625vw, 3.5rem);
+      --text-h1: clamp(2.375rem, 1.375rem + 1.5625vw, 2.625rem);
+      --text-h2-lg: clamp(2.25rem, 1.25rem + 1.5625vw, 2.5rem);
+      --text-h2: clamp(1.75rem, 1.25rem + 0.78125vw, 1.875rem);
+      --text-h3: clamp(1.25rem, 0.75rem + 0.78125vw, 1.375rem);
+      --text-h4: clamp(1.0625rem, 0.8125rem + 0.390625vw, 1.125rem);
+      --text-subtitle: clamp(1.15625rem, 0.90625rem + 0.390625vw, 1.21875rem);
+      --text-body: clamp(1.03125rem, 0.90625rem + 0.19531vw, 1.0625rem);
+      --text-body-sm: clamp(0.90625rem, 0.78125rem + 0.19531vw, 0.9375rem);
+      --text-ornament-8: clamp(12.5rem, 7.5rem + 7.8125vw, 13.75rem);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    :root {
+      /* 1280px -> 1440px */
+      --text-hero: clamp(3.5rem, 2.5rem + 1.25vw, 3.625rem);
+      --text-h1: clamp(2.625rem, 1.625rem + 1.25vw, 2.75rem);
+      --text-h2-lg: clamp(2.5rem, 1.5rem + 1.25vw, 2.625rem);
+      --text-h2: clamp(1.875rem, 0.875rem + 1.25vw, 2rem);
+      --text-h3: 1.375rem;
+      --text-h4: 1.125rem;
+      --text-subtitle: clamp(1.21875rem, 0.96875rem + 0.3125vw, 1.25rem);
+      --text-body: 1.0625rem;
+      --text-body-sm: 0.9375rem;
+      --text-ornament-8: clamp(13.75rem, 3.75rem + 12.5vw, 15rem);
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #1b1b1b;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, .serif {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer utilities {
+  .text-hero {
+    font-size: var(--text-hero);
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+  }
+
+  .text-h1 {
+    font-size: var(--text-h1);
+    line-height: 1.20;
+    letter-spacing: -0.020em;
+  }
+
+  .text-h2-lg {
+    font-size: var(--text-h2-lg);
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+  }
+
+  .text-h2 {
+    font-size: var(--text-h2);
+    line-height: 1.30;
+    letter-spacing: -0.010em;
+  }
+
+  .text-h3 {
+    font-size: var(--text-h3);
+    line-height: 1.35;
+  }
+
+  .text-h4 {
+    font-size: var(--text-h4);
+    line-height: 1.40;
+  }
+
+  .text-subtitle {
+    font-size: var(--text-subtitle);
+    line-height: 1.55;
+  }
+
+  .text-body {
+    font-size: var(--text-body);
+    line-height: 1.70;
+    letter-spacing: 0.010em;
+  }
+
+  .text-body-sm {
+    font-size: var(--text-body-sm);
+    line-height: 1.60;
+  }
+
+  .text-ornament-8 {
+    font-size: var(--text-ornament-8);
+    line-height: 1;
+    letter-spacing: -0.05em;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(23, 69, 50, 0.05);
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(23, 69, 50, 0.2);
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(23, 69, 50, 0.4);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}

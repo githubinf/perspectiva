@@ -4,28 +4,31 @@ const HomeSystems: React.FC = () => {
   return (
     <section id="sistemas" className="pt-12 pb-6 md:pt-20 md:pb-10 bg-[#dae7df]/20">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
-        <div className="mb-24">
-          <div className="flex items-center gap-4 mb-8">
-            <span className="text-3xl">🧩</span>
-            <div className="h-[1px] flex-grow bg-[#174532]/20"></div>
-            <span className="text-[11.5px] uppercase tracking-wider font-semibold text-[#174532]">Arquitectura Digital</span>
-          </div>
-          <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-tight">
-            Sistemas <span className="italic font-serif text-[#4db380]">Digitales</span>
-          </h2>
-          <p className="text-[#174532]/80 text-subtitle mb-10 font-medium">
-            Los libros enseñan las piezas. <br className="hidden sm:block" />
-            Ahora veamos cómo se conectan.
-          </p>
-          <div className="grid md:grid-cols-12 gap-12 items-start">
-            <div className="md:col-span-4">
-              <p className="text-h3 font-normal text-[#1b1b1b] leading-relaxed font-serif italic">
-                No necesitas más información. <br />
-                <span className="text-[#174532] font-bold not-italic">Necesitas estructura.</span>
-              </p>
+        {/* Single-Column Editorial Composition: Bloques 1 a 4 */}
+        <div className="max-w-4xl mx-auto mb-28">
+          {/* Bloque 1 — Identidad y presentación */}
+          <div className="mb-14">
+            <div className="flex items-center gap-4 mb-8">
+              <span className="text-3xl" aria-hidden="true">🧩</span>
+              <div className="h-[1px] flex-grow bg-[#174532]/20"></div>
+              <span className="text-[11.5px] uppercase tracking-wider font-semibold text-[#174532]">Arquitectura Digital</span>
             </div>
-            <div className="md:col-span-8 space-y-5 text-[#1b1b1b]/75 text-body leading-relaxed">
+
+            <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-5 leading-tight">
+              Sistemas <span className="italic font-serif text-[#4db380]">Digitales</span>
+            </h2>
+
+            <p className="text-[#174532]/80 text-subtitle mb-10 font-medium">
+              Los libros enseñan las piezas. <br className="hidden sm:block" />
+              Ahora veamos cómo se conectan.
+            </p>
+
+            <p className="text-h3 font-normal text-[#1b1b1b] leading-relaxed font-serif italic mb-8">
+              No necesitas más información. <br />
+              <span className="text-[#174532] font-bold not-italic">Necesitas estructura.</span>
+            </p>
+
+            <div className="space-y-5 text-[#1b1b1b]/75 text-body leading-relaxed">
               <p>
                 Podemos aprender sobre marketing, crear contenidos, utilizar herramientas digitales y descubrir distintas formas de monetización. Sin embargo, conocer cada elemento por separado no garantiza que sepamos integrarlo en un proyecto coherente.
               </p>
@@ -40,53 +43,61 @@ const HomeSystems: React.FC = () => {
               </p>
             </div>
           </div>
-        </div>
 
-        {/* Definition & Logic */}
-        <div className="grid lg:grid-cols-3 gap-16 mb-32">
-          <div className="lg:col-span-1 bg-[#174532] text-white p-10 rounded-sm shadow-2xl relative overflow-hidden">
-            <div className="absolute -right-10 -bottom-10 text-9xl opacity-5 font-bold" aria-hidden="true">🔎</div>
-            <h3 className="text-h3 font-bold font-serif mb-6 border-b border-white/20 pb-4">¿Qué caracteriza a un sistema digital?</h3>
-            <ul className="space-y-5 text-sm md:text-base text-white/85 leading-relaxed">
+          {/* Bloque 2 — Características de un sistema digital */}
+          <div className="pt-12 border-t border-[#174532]/15">
+            <h3 className="text-h2 font-bold font-serif text-[#174532] mb-6">
+              ¿Qué caracteriza a un sistema digital?
+            </h3>
+
+            <ul className="space-y-4 text-body text-[#1b1b1b]/80 leading-relaxed">
               <li className="flex gap-3.5 items-start">
-                <span className="text-[#f4b925] mt-0.5">●</span>
-                <span><strong className="text-white font-semibold">Tiene un propósito definido:</strong> cada elemento responde a un objetivo concreto dentro del proyecto.</span>
+                <span className="text-[#f4b925] mt-0.5 flex-shrink-0" aria-hidden="true">●</span>
+                <span><strong className="text-[#174532] font-semibold">Tiene un propósito definido:</strong> cada elemento responde a un objetivo concreto dentro del proyecto.</span>
               </li>
               <li className="flex gap-3.5 items-start">
-                <span className="text-[#f4b925] mt-0.5">●</span>
-                <span><strong className="text-white font-semibold">Integra contenido y monetización:</strong> establece una relación entre lo que ofrecemos, la audiencia a la que nos dirigimos y las vías para generar ingresos.</span>
+                <span className="text-[#f4b925] mt-0.5 flex-shrink-0" aria-hidden="true">●</span>
+                <span><strong className="text-[#174532] font-semibold">Integra contenido y monetización:</strong> establece una relación entre lo que ofrecemos, la audiencia a la que nos dirigimos y las vías para generar ingresos.</span>
               </li>
               <li className="flex gap-3.5 items-start">
-                <span className="text-[#f4b925] mt-0.5">●</span>
-                <span><strong className="text-white font-semibold">Diversifica las fuentes de tráfico:</strong> evita que toda la actividad dependa de un único canal de adquisición.</span>
+                <span className="text-[#f4b925] mt-0.5 flex-shrink-0" aria-hidden="true">●</span>
+                <span><strong className="text-[#174532] font-semibold">Diversifica las fuentes de tráfico:</strong> evita que toda la actividad dependa de un único canal de adquisición.</span>
               </li>
               <li className="flex gap-3.5 items-start">
-                <span className="text-[#f4b925] mt-0.5">●</span>
-                <span><strong className="text-white font-semibold">Conecta procesos y herramientas:</strong> organiza los recursos para que trabajen de manera coordinada.</span>
+                <span className="text-[#f4b925] mt-0.5 flex-shrink-0" aria-hidden="true">●</span>
+                <span><strong className="text-[#174532] font-semibold">Conecta procesos y herramientas:</strong> organiza los recursos para que trabajen de manera coordinada.</span>
               </li>
               <li className="flex gap-3.5 items-start">
-                <span className="text-[#f4b925] mt-0.5">●</span>
-                <span><strong className="text-white font-semibold">Permite medir y mejorar:</strong> facilita identificar qué funciona, qué necesita ajustes y dónde existen oportunidades de crecimiento.</span>
+                <span className="text-[#f4b925] mt-0.5 flex-shrink-0" aria-hidden="true">●</span>
+                <span><strong className="text-[#174532] font-semibold">Permite medir y mejorar:</strong> facilita identificar qué funciona, qué necesita ajustes y dónde existen oportunidades de crecimiento.</span>
               </li>
             </ul>
-            <div className="mt-10 pt-8 border-t border-white/10">
-              <p className="text-xs uppercase tracking-widest text-[#4db380] font-bold mb-2">De la atención a los resultados</p>
-              <p className="font-mono text-sm">Tráfico → Atención → Confianza → Ingresos → Optimización</p>
-            </div>
           </div>
 
-          <div className="lg:col-span-2">
+          {/* Bloque 3 — De la atención a los resultados */}
+          <div className="my-14 p-6 md:p-8 bg-white border border-[#174532]/15 rounded-lg shadow-xs">
+            <p className="text-[11.5px] uppercase tracking-widest text-[#1f513a] font-bold mb-3">
+              De la atención a los resultados
+            </p>
+            <p className="font-mono text-sm md:text-base font-medium text-[#174532] leading-relaxed break-words">
+              Tráfico → Atención → Confianza → Ingresos → Optimización
+            </p>
+          </div>
+
+          {/* Bloque 4 — Metodología */}
+          <div className="pt-2">
             <div className="mb-10">
-              <span className="text-[11.5px] uppercase tracking-wider font-semibold text-[#4db380] mb-3 block">Metodología</span>
+              <span className="text-[11.5px] uppercase tracking-wider font-semibold text-[#1f513a] mb-3 block">Metodología</span>
               <h3 className="text-h2 font-bold font-serif text-[#174532] mb-4">Cómo pensamos los sistemas</h3>
-              <p className="text-body text-[#1b1b1b]/75 leading-relaxed mb-3">
+              <p className="text-body text-[#1b1b1b]/75 leading-relaxed mb-4">
                 Un sistema digital no se construye reuniendo herramientas o acumulando acciones independientes. Necesita una dirección, una estructura y una secuencia de procesos que trabajen de forma coordinada.
               </p>
               <p className="text-body text-[#174532] font-medium">
                 Nuestra metodología organiza ese desarrollo en cinco etapas:
               </p>
             </div>
-            <div className="grid sm:grid-cols-2 gap-x-12 gap-y-10">
+
+            <div className="space-y-8">
               {[
                 {
                   step: "01",
@@ -115,9 +126,12 @@ const HomeSystems: React.FC = () => {
                 }
               ].map((item, idx) => (
                 <div key={idx} className="border-l-2 border-[#f4b925] pl-6 py-2">
-                  <span className="block font-mono text-xs text-[#4db380] mb-2">{item.step}</span>
-                  <h4 className="text-lg font-bold font-serif text-[#174532] mb-2">{item.title}</h4>
-                  <p className="text-body-sm text-[#1b1b1b]/70 leading-relaxed">{item.desc}</p>
+                  <div className="flex items-baseline gap-2.5 mb-2">
+                    <span className="font-mono text-xs font-semibold text-[#1f513a] tabular-nums">{item.step}</span>
+                    <span className="text-[#174532]/35 text-xs" aria-hidden="true">—</span>
+                    <h4 className="text-h3 font-bold font-serif text-[#174532]">{item.title}</h4>
+                  </div>
+                  <p className="text-body text-[#1b1b1b]/75 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
