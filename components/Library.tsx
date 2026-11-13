@@ -55,6 +55,21 @@ const BookItemRow: React.FC<BookItemRowProps> = ({ book, onBookClick }) => {
               height={580}
             />
           </div>
+        ) : book.isAvailable === false ? (
+          <div 
+            className="w-36 md:w-44 flex-shrink-0 shadow-md border border-[#dae7df]/30 overflow-hidden rounded-sm bg-white mb-6 opacity-95"
+          >
+            <img 
+              src={book.coverUrl} 
+              alt={book.title} 
+              className="w-full h-auto object-cover"
+              loading="lazy"
+              decoding="async"
+              referrerPolicy="no-referrer"
+              width={400}
+              height={580}
+            />
+          </div>
         ) : (
           <a 
             href={book.url}
@@ -82,6 +97,10 @@ const BookItemRow: React.FC<BookItemRowProps> = ({ book, onBookClick }) => {
             className="block mb-3 text-lg md:text-xl font-bold text-[#174532] hover:text-[#4db380] transition-colors leading-snug cursor-pointer"
           >
             👉 <span className="text-xs md:text-sm bg-[#4db380]/15 text-[#174532] px-1.5 py-0.5 rounded-sm mr-1.5 font-extrabold inline-block align-middle">[Clic Aquí para comprar]</span>{book.title}
+          </div>
+        ) : book.isAvailable === false ? (
+          <div className="block mb-3 text-lg md:text-xl font-bold text-[#174532] leading-snug select-none">
+            ⏳ <span className="text-xs md:text-sm bg-[#f4b925]/20 text-[#174532] px-2 py-0.5 rounded-sm mr-1.5 font-extrabold inline-block align-middle">[Próximamente]</span>{book.title}
           </div>
         ) : (
           <a 

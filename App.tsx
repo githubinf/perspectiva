@@ -1,27 +1,62 @@
-
 import React from 'react';
 import Layout from './components/Layout.tsx';
-import Hero from './components/Hero.tsx';
-import Manifesto from './components/Manifesto.tsx';
-import Features from './components/Features.tsx';
-import Library from './components/Library.tsx';
-import Systems from './components/Systems.tsx';
-import About from './components/About.tsx';
-import Authority from './components/Authority.tsx';
-import FooterCTA from './components/FooterCTA.tsx';
+import { RouterProvider, useRouter } from './router.tsx';
+import HomeView from './components/views/HomeView.tsx';
+import LibraryView from './components/views/LibraryView.tsx';
+import CategoryView from './components/views/CategoryView.tsx';
+import BookDetailView from './components/views/BookDetailView.tsx';
+import SystemsView from './components/views/SystemsView.tsx';
+import AboutView from './components/views/AboutView.tsx';
+import ContactView from './components/views/ContactView.tsx';
+import NotFoundView from './components/views/NotFoundView.tsx';
+import SeoHead from './components/SeoHead.tsx';
 
-const App: React.FC = () => {
+const AppContent: React.FC = () => {
+  const { currentPath, matchedCategory, matchedBook } = useRouter();
+
+  if (currentPath === '/') {
+    return <HomeView />;
+  }
+
+  if (currentPath === '/biblioteca/') {
+    return <LibraryView />;
+  }
+
+  if (currentPath === '/sistemas-digitales/') {
+    return <SystemsView />;
+  }
+
+  if (currentPath === '/sobre-fg-perspectiva/') {
+    return <AboutView />;
+  }
+
+  if (currentPath === '/contacto/') {
+    return <ContactView />;
+  }
+
+  if (matchedCategory) {
+    return <CategoryView category={matchedCategory} />;
+  }
+
+  if (matchedBook) {
+    return <BookDetailView book={matchedBook} />;
+  }
+
+  return <NotFoundView />;
+};
+
+export interface AppProps {
+  initialPath?: string;
+}
+
+const App: React.FC<AppProps> = ({ initialPath }) => {
   return (
-    <Layout>
-      <Hero />
-      <Manifesto />
-      <Features />
-      <Library />
-      <Systems />
-      <About />
-      <Authority />
-      <FooterCTA />
-    </Layout>
+    <RouterProvider initialPath={initialPath}>
+      <SeoHead />
+      <Layout>
+        <AppContent />
+      </Layout>
+    </RouterProvider>
   );
 };
 

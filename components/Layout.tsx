@@ -1,6 +1,7 @@
 
 import React from 'react';
 import Header from './Header.tsx';
+import { Link } from '../router.tsx';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -17,8 +18,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-12 gap-16 mb-20">
             <div className="md:col-span-5">
-              <h3 className="text-white font-bold mb-8 serif italic text-3xl">FG <span className="text-[#4db380]">Perspectiva</span></h3>
-              <p className="max-w-sm text-base leading-relaxed mb-8">
+              <div className="mb-6">
+                <img
+                  src="https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/icono3-fgperspectiva.png"
+                  alt="FG Perspectiva"
+                  className="h-14 md:h-16 w-auto object-contain"
+                />
+              </div>
+              <p className="max-w-sm text-[13.5px] leading-relaxed mb-8 text-slate-300">
                 Editorial digital moderna dedicada a la creación de sistemas y transformación real. 
                 Construimos puentes entre la idea y el activo digital.
               </p>
@@ -43,19 +50,20 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
             <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
                <div>
-                  <h4 className="text-white text-[10px] uppercase tracking-widest font-black mb-6">Navegación</h4>
-                  <ul className="space-y-4 text-sm">
-                    <li><a href="#biblioteca" className="hover:text-[#4db380] transition-colors">Biblioteca</a></li>
-                    <li><a href="#sistemas" className="hover:text-[#4db380] transition-colors">Sistemas</a></li>
-                    <li><a href="#sobre-fg-perspectiva" className="hover:text-[#4db380] transition-colors">Sobre nosotros</a></li>
-                    <li><a href="https://despertarindomable.blogspot.com/" target="_blank" rel="noopener noreferrer nofollow" className="hover:text-[#4db380] transition-colors">Blog</a></li>
-                    <li><a href="https://afiliados-fgperspectiva.vercel.app/" target="_blank" rel="noopener noreferrer nofollow" className="hover:text-[#4db380] transition-colors">Afiliados</a></li>
+                  <h4 className="text-[#4db380] text-[14px] md:text-[14.5px] uppercase tracking-[0.05em] font-semibold mb-5 block">Navegación</h4>
+                  <ul className="space-y-3 text-[14px]">
+                    <li><Link href="/biblioteca/" className="text-slate-300 hover:text-white transition-colors py-0.5 block">Biblioteca</Link></li>
+                    <li><Link href="/sistemas-digitales/" className="text-slate-300 hover:text-white transition-colors py-0.5 block">Sistemas</Link></li>
+                    <li><Link href="/sobre-fg-perspectiva/" className="text-slate-300 hover:text-white transition-colors py-0.5 block">Sobre nosotros</Link></li>
+                    <li><Link href="/contacto/" className="text-slate-300 hover:text-white transition-colors py-0.5 block">Contacto</Link></li>
+                    <li><a href="https://despertarindomable.blogspot.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-slate-300 hover:text-white transition-colors py-0.5 block">Blog</a></li>
+                    <li><a href="https://afiliados-fgperspectiva.vercel.app/" target="_blank" rel="noopener noreferrer nofollow" className="text-slate-300 hover:text-white transition-colors py-0.5 block">Afiliados</a></li>
                   </ul>
                </div>
             </div>
           </div>
           
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 pt-10 border-t border-white/5 text-[10px] uppercase tracking-widest font-bold">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pt-10 border-t border-white/10 text-[11.5px] md:text-[12px] uppercase tracking-wider text-slate-400 font-medium">
             <span>© {new Date().getFullYear()} FG Perspectiva.</span>
             <span className="text-[#4db380]">Sistemas que transforman realidades.</span>
           </div>

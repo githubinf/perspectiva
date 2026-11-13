@@ -1,15 +1,18 @@
 
-import { BookCategory, NavItem } from './types.ts';
+import { BookCategory, BookItem, NavItem } from './types.ts';
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Sistemas', href: '#sistemas' },
-  { label: 'Sobre la editorial', href: '#sobre-fg-perspectiva' },
-  { label: 'Contacto', href: '#contacto' },
+  { label: 'Biblioteca', href: '/biblioteca/' },
+  { label: 'Sistemas', href: '/sistemas-digitales/' },
+  { label: 'Sobre la editorial', href: '/sobre-fg-perspectiva/' },
+  { label: 'Contacto', href: '/contacto/' },
 ];
 
 export const FEATURED_BOOKS: BookCategory[] = [
   {
     id: 'star',
+    slug: 'origen',
+    path: '/origen/',
     title: '🌟 PRODUCTO ESTRELLA (Origen de toda la colección)',
     category: 'Origen',
     intro: 'La base de todo. Desde este método nacen el resto de libros de la biblioteca FG Perspectiva.',
@@ -17,8 +20,14 @@ export const FEATURED_BOOKS: BookCategory[] = [
     books: [
       {
         id: 'plr',
-        title: 'Experto en PLR premium: El Sistema Paso a Paso para Crear Infoproductos Rentables que venden.',
-        description: 'Aprende a crear, modificar y vender infoproductos con PLR profesional, incluso sin ser experto. Herramientas Digitales Actuales.',
+        slug: 'experto-en-plr-premium',
+        path: '/experto-en-plr-premium/',
+        categorySlug: 'origen',
+        title: 'Experto en PLR Premium',
+        subtitle: 'El Sistema Paso a Paso para Crear Infoproductos Rentables que venden. Con Herramientas Digitales Actuales',
+        metaTitle: 'Experto en PLR Premium: crea y vende productos digitales',
+        metaDescription: 'Aprende a transformar productos PLR con inteligencia artificial, crear infoproductos en distintos formatos y desarrollar un negocio digital con plataformas y estrategias de marketing.',
+        description: 'Aprende a transformar productos PLR con inteligencia artificial, crear infoproductos en distintos formatos y desarrollar un negocio digital con plataformas y estrategias de marketing.',
         url: 'https://www.amazon.com/dp/B0GWZQPNT2',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/25-experto-en-plr-producto-400.jpg',
         purchaseOptions: [
@@ -27,44 +36,357 @@ export const FEATURED_BOOKS: BookCategory[] = [
             url: 'https://www.amazon.com/dp/B0GWZQPNT2', 
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '🛒',
-            cta: 'Comprar en Amazon'
+            cta: 'Comprar libro en Amazon',
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
           },
           { 
-            platform: 'Clickbank', 
+            platform: 'ClickBank', 
             url: 'https://expertoplrpremium.vercel.app/', 
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
-            cta: 'Oferta Clickbank'
-          },
-          { 
-            platform: 'Jvzoo', 
-            url: 'https://experto-en-plr--fjgjavier.replit.app/', 
-            emoji: '🚀',
-            cta: 'Ver en Jvzoo'
+            cta: 'Página comercial ClickBank',
+            rel: 'noopener noreferrer'
           },
           { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/QhoMJ', 
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
-            cta: 'Descarga Directa'
+            cta: 'Alternativa de compra en Payhip',
+            rel: 'noopener noreferrer'
           }
         ],
-        extraInfo: [
-          'El PLR (Private Label Rights) es uno de los secretos mejor guardados de los creadores digitales exitosos. Consiste en adquirir contenido de calidad con derechos de modificación y reventa, lo que te permite saltarte el proceso de escritura desde cero y centrarte en lo que realmente importa: personalizar, dar valor y vender.',
-          'Sin embargo, la mayoría de personas que prueban el PLR fracasan porque compran material de baja calidad, no saben modificarlo correctamente o lo publican sin estrategia. Este libro nace para resolver eso. Es el sistema que he desarrollado tras años de experiencia creando y vendiendo infoproductos basados en PLR premium.',
-          'En sus páginas aprenderás a:',
-          'Seleccionar PLR premium: Cómo distinguir el contenido de calidad del que no vale la pena, y dónde encontrarlo.',
-          'Modificar y personalizar: Técnicas para darle tu voz, actualizar ejemplos y añadir tu experiencia sin perder la estructura original.',
-          'Diseñar y empaquetar: Cómo convertir ese contenido modificado en un ebook, curso o plantilla profesional, con portada y materiales complementarios.',
-          'Crear un sistema de publicación: Un flujo de trabajo que te permita lanzar infoproductos de forma constante, sin quemarte ni reinventar la rueda cada vez.',
-          'Este libro es el origen de toda la biblioteca FG Perspectiva. No es un título más; es la puerta de entrada para cualquiera que quiera dejar de ser consumidor de contenido y convertirse en creador de activos digitales. Si solo compras un libro de toda la colección, que sea este. Porque, como dice el lema de FG Perspectiva: "No es falta de información, es falta de perspectiva."'
+        bookFormat: null,
+        editorialSections: [
+          {
+            title: 'Convierte los productos PLR en oportunidades para crear tu propio negocio digital',
+            paragraphs: [
+              'Crear un producto digital desde cero requiere tiempo, planificación y conocimientos. Sin embargo, existe otra posibilidad: partir de contenidos que ya han sido creados y transformarlos en productos con una identidad, una estructura y una propuesta de valor propias.',
+              'Ese es el punto de partida de los productos PLR (Private Label Rights), una modalidad de licencia que permite utilizar y modificar determinados contenidos digitales de acuerdo con las condiciones establecidas por sus titulares.',
+              'Pero disponer de un producto PLR no significa tener automáticamente un negocio. El verdadero trabajo consiste en evaluar el material original, mejorar su contenido, adaptarlo a un público concreto y encontrar la forma adecuada de presentarlo y comercializarlo.',
+              'Experto en PLR Premium aborda ese proceso de principio a fin. A través de sus doce capítulos, el libro desarrolla una metodología para transformar materiales PLR con ayuda de la inteligencia artificial, crear infoproductos en diferentes formatos y construir una estrategia de comercialización que combine plataformas digitales, marketing y herramientas de automatización.',
+              'No se limita a explicar cómo conseguir contenidos para revender. Su planteamiento se centra en cómo trabajar con ellos, aportar valor y convertirlos en productos digitales mejor estructurados y diferenciados.'
+            ]
+          },
+          {
+            title: 'Qué son los productos PLR y cómo utilizarlos para crear infoproductos',
+            paragraphs: [
+              'PLR significa Private Label Rights, expresión que suele traducirse como derechos de etiqueta privada. Se refiere a licencias que permiten utilizar y, según sus condiciones concretas, modificar, personalizar y comercializar determinados productos digitales.',
+              'Entre los materiales que pueden encontrarse bajo este tipo de licencias están los ebooks, manuales, guías, cursos, plantillas y otros recursos digitales.',
+              'El atractivo de este modelo es que permite partir de una base existente en lugar de desarrollar cada elemento desde cero. Sin embargo, utilizar un contenido sin revisarlo ni adaptarlo puede conducir a ofrecer un producto genérico, poco diferenciado y difícil de posicionar.',
+              'Por eso, una parte esencial del trabajo con PLR consiste en comprender qué contiene el material original, identificar sus limitaciones y decidir cómo mejorarlo.',
+              'En este libro se aborda el ecosistema PLR desde una perspectiva actualizada: su evolución, los cambios en los formatos digitales, la influencia de la inteligencia artificial y las posibilidades de utilizar estos materiales en distintos modelos de negocio.',
+              'También se plantea la importancia de elegir un modelo de comercialización coherente con los recursos disponibles, el tiempo de trabajo y los objetivos del proyecto.'
+            ]
+          },
+          {
+            title: 'Cómo transformar un producto PLR con inteligencia artificial',
+            paragraphs: [
+              'Uno de los ejes centrales del libro es el uso de inteligencia artificial para mejorar y transformar contenidos PLR.',
+              'La propuesta no consiste simplemente en pedirle a una herramienta que reescriba un texto. El proceso se organiza en cuatro fases que permiten trabajar sobre el material original de forma estructurada.'
+            ],
+            subsections: [
+              {
+                title: '1. Diagnóstico inteligente del contenido original',
+                paragraphs: [
+                  'Antes de modificar un producto, necesitamos comprender qué tenemos entre manos.',
+                  'Esta primera fase se centra en analizar el PLR original mediante herramientas de IA para identificar su estructura, los temas que desarrolla, sus puntos débiles y las oportunidades de mejora.',
+                  'El objetivo es disponer de un diagnóstico que permita tomar decisiones antes de comenzar la transformación.'
+                ]
+              },
+              {
+                title: '2. Reestructuración inteligente',
+                paragraphs: [
+                  'Una vez evaluado el material, llega el momento de revisar su arquitectura.',
+                  'Esta fase aborda la reorganización de los contenidos, la coherencia entre secciones y la forma de presentar la información. No se trata de cambiar palabras por sinónimos, sino de trabajar sobre la estructura para conseguir un producto más claro y mejor organizado.'
+                ]
+              },
+              {
+                title: '3. Contextualización con datos actuales',
+                paragraphs: [
+                  'Un contenido puede haber sido válido cuando se creó y necesitar modificaciones para responder a las circunstancias actuales.',
+                  'El libro desarrolla la incorporación de información contextualizada, con especial atención a la actualización de contenidos para 2026.',
+                  'Esta fase busca evitar que el resultado sea simplemente una versión maquillada del material original.'
+                ]
+              },
+              {
+                title: '4. Personalización del tono y el estilo',
+                paragraphs: [
+                  'La última fase se ocupa de dar identidad al producto.',
+                  'Se trabaja sobre el tono, la forma de comunicar y la coherencia del contenido para que el resultado tenga una personalidad editorial reconocible.',
+                  'El proceso también contempla el control de calidad, la revisión en diferentes capas, los criterios éticos y la transparencia respecto al uso de inteligencia artificial.',
+                  'Además, se desarrollan flujos de trabajo diferenciados para ebooks educativos e instructivos, guías, manuales, contenidos motivacionales y materiales relacionados con negocios y marketing.'
+                ]
+              }
+            ]
+          },
+          {
+            title: 'De un ebook a cinco formatos de contenido digital',
+            paragraphs: [
+              'Un contenido no tiene por qué quedarse limitado a un documento PDF. Una de las posibilidades de trabajar con productos digitales es aprovechar una misma base de conocimiento para desarrollar diferentes formatos.',
+              'El libro dedica un capítulo específico a esta estrategia y desarrolla cinco modalidades de producción:'
+            ],
+            subsections: [
+              {
+                title: 'Texto: ebooks y documentos PDF',
+                paragraphs: [
+                  'El formato escrito constituye una de las bases del trabajo con infoproductos. Se aborda la producción de ebooks y documentos digitales, desde la organización del contenido hasta su preparación para la distribución.'
+                ]
+              },
+              {
+                title: 'Audio: audiolibros y podcasts',
+                paragraphs: [
+                  'Los contenidos escritos también pueden adaptarse a formatos sonoros. El libro contempla la producción de audiolibros y podcasts, así como el uso de herramientas de voz mediante inteligencia artificial.'
+                ]
+              },
+              {
+                title: 'Vídeo: explicaciones y demostraciones',
+                paragraphs: [
+                  'El formato audiovisual permite presentar conceptos, desarrollar explicaciones y mostrar procedimientos. Se incluyen los vídeos explicativos y las demostraciones como alternativas para ampliar la presentación de un producto digital.'
+                ]
+              },
+              {
+                title: 'Interactivo: presentaciones y cuestionarios',
+                paragraphs: [
+                  'La información también puede organizarse mediante recursos que impliquen una participación más activa del usuario. En este apartado se trabajan las presentaciones interactivas y los cuestionarios.'
+                ]
+              },
+              {
+                title: 'Visual: infografías y resúmenes',
+                paragraphs: [
+                  'Los contenidos pueden convertirse en materiales visuales que faciliten la comprensión y la consulta de información. El libro contempla infografías, resúmenes y recursos gráficos.',
+                  'La propuesta se completa con una matriz de decisión para seleccionar formatos, procesos de producción, herramientas, controles de coherencia y calidad y una estrategia de conversión de un contenido base en diferentes versiones.',
+                  'También se estudian herramientas para crear presentaciones, vídeos, recursos visuales y contenidos de audio, junto con procedimientos de automatización y organización de la producción.'
+                ]
+              }
+            ]
+          },
+          {
+            title: 'Diseño, portadas y presentación profesional de los productos',
+            paragraphs: [
+              'La calidad del contenido es importante, pero la presentación también influye en cómo se percibe un producto digital.',
+              'Por eso, el libro dedica un capítulo al diseño de materiales y portadas mediante herramientas de inteligencia artificial.',
+              'Se abordan aspectos relacionados con la psicología del diseño, la selección de herramientas, la creación de portadas, la identidad visual y la adaptación de los recursos gráficos a diferentes canales.',
+              'También se contempla el uso de pruebas A/B para comparar alternativas de presentación y la preparación de imágenes y miniaturas para plataformas como Amazon KDP y redes sociales.',
+              'El objetivo es entender que la presentación visual forma parte del desarrollo del producto, no es un elemento que deba improvisarse al final.'
+            ]
+          },
+          {
+            title: 'Dónde vender productos digitales: Amazon KDP, plataformas de afiliación y tiendas propias',
+            paragraphs: [
+              'Crear un infoproducto es solo una parte del proceso. También necesitamos decidir dónde comercializarlo y qué infraestructura utilizar.',
+              'Experto en PLR Premium dedica varios capítulos a las diferentes posibilidades de distribución y monetización.'
+            ],
+            subsections: [
+              {
+                title: 'Amazon KDP y la publicación de libros digitales',
+                paragraphs: [
+                  'Amazon KDP constituye uno de los canales estudiados para publicar y comercializar libros digitales e impresos.',
+                  'El contenido aborda la preparación de publicaciones, la optimización de descripciones, las políticas de la plataforma, Kindle Unlimited, Amazon Ads y las posibilidades de organizar publicaciones en series.',
+                  'También se presta atención a la importancia de conocer las condiciones de publicación y evitar prácticas que puedan ocasionar problemas con la plataforma.'
+                ]
+              },
+              {
+                title: 'Plataformas de afiliación y comercialización',
+                paragraphs: [
+                  'El libro analiza diferentes plataformas que forman parte del ecosistema de productos digitales y afiliación:'
+                ],
+                bullets: [
+                  { description: 'ClickBank.' },
+                  { description: 'JVZoo.' },
+                  { description: 'Hotmart.' },
+                  { description: 'WarriorPlus.' },
+                  { description: 'Gumroad.' },
+                  { description: 'Payhip.' },
+                  { description: 'Ko-fi.' }
+                ]
+              },
+              {
+                title: 'Cómo desarrollar una plataforma propia',
+                paragraphs: [
+                  'Se estudian criterios para evaluar estas alternativas, sus posibilidades de utilización y la combinación de distintos canales dentro de una estrategia comercial.',
+                  'Otra de las posibilidades abordadas es construir un entorno de venta propio, sin depender exclusivamente de plataformas externas.',
+                  'Este apartado desarrolla distintos niveles de autonomía digital, herramientas de bajo código, páginas de destino, sistemas de pago y soluciones de automatización.',
+                  'También contempla herramientas como ConvertKit, ClickFunnels, Stripe, PayPal, Zapier y Make, además de cuestiones relacionadas con la seguridad, la legalidad y la medición de resultados.'
+                ]
+              }
+            ]
+          },
+          {
+            title: 'Cómo atraer clientes para tus infoproductos: SEO, tráfico y marketing digital',
+            paragraphs: [
+              'Un producto digital necesita llegar a las personas interesadas en su temática. Por eso, el libro dedica una parte importante a la captación de tráfico y la comercialización.',
+              'Se estudia cómo organizar una estrategia de distribución multicanal que combine posicionamiento en buscadores, contenidos y plataformas sociales.',
+              'Entre los temas desarrollados se encuentran:'
+            ],
+            bullets: [
+              { description: 'Investigación y organización de estrategias de tráfico.' },
+              { description: 'SEO y optimización de contenidos.' },
+              { description: 'Conceptos relacionados con E-E-A-T.' },
+              { description: 'Distribución de contenidos mediante Google y YouTube Shorts.' },
+              { description: 'Utilización de TikTok y Pinterest.' },
+              { description: 'Comunidades y canales de comunicación como Discord y Telegram.' },
+              { description: 'Organización de calendarios editoriales.' },
+              { description: 'Seguimiento de indicadores y resultados.' }
+            ],
+            subsections: [
+              {
+                title: 'Estrategia de distribución multicanal',
+                paragraphs: [
+                  'La intención es comprender cómo conectar los productos digitales con sus posibles compradores mediante diferentes vías de visibilidad, en lugar de depender de una única fuente de visitas.'
+                ]
+              }
+            ]
+          },
+          {
+            title: 'Automatización, comunidades y ventas recurrentes',
+            paragraphs: [
+              'Una vez que el proyecto empieza a tomar forma, organizar los procesos se convierte en una parte importante de su funcionamiento.',
+              'El libro aborda la automatización del marketing desde diferentes niveles, incluyendo herramientas, secuencias, upsells, sistemas de seguimiento y procedimientos de atención al cliente.',
+              'También estudia soluciones como n8n y otras herramientas SaaS para conectar procesos y reducir tareas repetitivas.',
+              'Otro de los temas tratados es la creación de comunidades y modelos de comercialización recurrente. Se analizan alternativas como Circle.so, Patreon y Substack, además de modelos híbridos, membresías, clubes de contenido y cursos distribuidos progresivamente.',
+              'El propósito de estos capítulos es ampliar la visión del negocio digital más allá de la venta individual de un ebook o un producto descargable.'
+            ]
+          },
+          {
+            title: 'Métricas y escalabilidad: cómo evaluar el desarrollo de un negocio PLR',
+            paragraphs: [
+              'Un negocio digital necesita algo más que publicaciones y ventas ocasionales. También requiere información para evaluar qué funciona, qué necesita mejorar y dónde conviene concentrar los recursos.',
+              'La última parte del libro se centra en el análisis y la sostenibilidad del proyecto.',
+              'Se desarrollan indicadores como:'
+            ],
+            bullets: [
+              {
+                title: 'CAC',
+                description: 'coste de adquisición de clientes.'
+              },
+              {
+                title: 'LTV',
+                description: 'valor del cliente a lo largo de su relación con el negocio.'
+              },
+              {
+                title: 'Churn',
+                description: 'tasa de cancelación o pérdida de clientes en modelos recurrentes.'
+              }
+            ],
+            subsections: [
+              {
+                title: 'Expansión y crecimiento del negocio digital',
+                paragraphs: [
+                  'También se contempla el uso de herramientas de análisis y visualización como Looker Studio, la creación de alertas y la organización de procedimientos operativos.',
+                  'El capítulo final aborda diferentes posibilidades de crecimiento, incluyendo la organización de equipos, los manuales de operaciones, las licencias de reventa, la certificación y otros modelos de expansión digital.',
+                  'La idea es pasar de gestionar productos aislados a comprender los elementos que intervienen en el funcionamiento y la evolución de un negocio.'
+                ]
+              }
+            ]
+          },
+          {
+            title: 'Qué aprenderás con Experto en PLR Premium',
+            paragraphs: [
+              'A lo largo de sus doce capítulos, el libro desarrolla conocimientos y procedimientos relacionados con las siguientes áreas:'
+            ],
+            bullets: [
+              { description: 'Comprender el ecosistema PLR y sus posibilidades de aplicación.' },
+              { description: 'Evaluar materiales digitales antes de utilizarlos.' },
+              { description: 'Transformar contenidos PLR mediante un proceso de cuatro fases con inteligencia artificial.' },
+              { description: 'Adaptar ebooks, guías y manuales a diferentes objetivos.' },
+              { description: 'Crear versiones en texto, audio, vídeo, formatos interactivos y recursos visuales.' },
+              { description: 'Diseñar portadas y materiales gráficos para productos digitales.' },
+              { description: 'Conocer las posibilidades de Amazon KDP y las plataformas de afiliación.' },
+              { description: 'Evaluar alternativas para vender productos digitales.' },
+              { description: 'Diseñar una infraestructura propia de comercialización.' },
+              { description: 'Aplicar estrategias de SEO, tráfico y distribución multicanal.' },
+              { description: 'Incorporar automatizaciones a los procesos de marketing y venta.' },
+              { description: 'Explorar modelos de comunidades y comercialización recurrente.' },
+              { description: 'Interpretar métricas para evaluar el funcionamiento del negocio.' }
+            ]
+          },
+          {
+            title: '¿A quién va dirigido este libro?',
+            paragraphs: [
+              'Experto en PLR Premium está dirigido a personas interesadas en crear, transformar y comercializar productos digitales utilizando contenidos con licencia PLR como punto de partida.',
+              'Puede resultar especialmente interesante para:'
+            ],
+            bullets: [
+              {
+                title: 'Emprendedores digitales',
+                description: 'que desean explorar modelos de negocio basados en infoproductos y necesitan comprender las diferentes etapas de su desarrollo.'
+              },
+              {
+                title: 'Creadores de contenido y autores',
+                description: 'que quieren ampliar sus conocimientos sobre transformación de materiales, producción multiformato y publicación digital.'
+              },
+              {
+                title: 'Afiliados y profesionales del marketing',
+                description: 'interesados en conocer otras posibilidades de comercialización, distribución y monetización de productos digitales.'
+              },
+              {
+                title: 'Personas que quieren utilizar inteligencia artificial en sus proyectos',
+                description: 'y buscan aplicar estas herramientas a la evaluación, reorganización, producción y presentación de contenidos.'
+              }
+            ],
+            subsections: [
+              {
+                title: 'Una perspectiva realista del modelo PLR',
+                paragraphs: [
+                  'No es necesario interpretar el PLR como una fórmula automática para generar ingresos. Se trata de un modelo que requiere trabajo editorial, selección de materiales, adaptación, cumplimiento de las licencias y una estrategia comercial adecuada.'
+                ]
+              }
+            ]
+          },
+          {
+            title: 'Preguntas frecuentes sobre PLR y creación de productos digitales',
+            subsections: [
+              {
+                title: '¿Qué significa PLR?',
+                paragraphs: [
+                  'PLR son las siglas de Private Label Rights, o derechos de etiqueta privada. Se refiere a una modalidad de licencia que puede permitir modificar, personalizar y comercializar contenidos digitales, siempre respetando las condiciones específicas de cada licencia.'
+                ]
+              },
+              {
+                title: '¿Se pueden crear productos digitales con PLR e inteligencia artificial?',
+                paragraphs: [
+                  'Sí. La inteligencia artificial puede utilizarse para analizar, reorganizar, contextualizar y adaptar contenidos PLR. Sin embargo, es necesario revisar los resultados, comprobar la información y respetar los derechos de uso del material original.'
+                ]
+              },
+              {
+                title: '¿Qué tipos de productos digitales se pueden desarrollar?',
+                paragraphs: [
+                  'El libro aborda cinco formatos principales: texto, audio, vídeo, recursos interactivos y materiales visuales. Cada uno puede responder a diferentes objetivos y formas de consumo de contenidos.'
+                ]
+              },
+              {
+                title: '¿Dónde se pueden vender los productos digitales?',
+                paragraphs: [
+                  'Entre las alternativas estudiadas se encuentran Amazon KDP, plataformas de afiliación y comercialización como ClickBank, Hotmart, JVZoo, WarriorPlus, Gumroad, Payhip y Ko-fi, además de la posibilidad de desarrollar una plataforma propia.',
+                  'La elección depende del producto, el público, las condiciones de cada servicio y la estrategia comercial.'
+                ]
+              },
+              {
+                title: '¿El libro trata únicamente sobre la reventa de ebooks PLR?',
+                paragraphs: [
+                  'No. Su contenido va más allá de la reventa de materiales. Incluye transformación con inteligencia artificial, producción multiformato, diseño, publicación, marketing, automatización, comunidades y análisis del negocio digital.'
+                ]
+              }
+            ]
+          },
+          {
+            title: 'Una visión completa para trabajar con productos PLR',
+            paragraphs: [
+              'Transformar un material PLR en un producto digital requiere criterio, planificación y trabajo. La licencia proporciona unas posibilidades de utilización, pero el valor del resultado depende de cómo se evalúa, se adapta, se presenta y se comercializa el contenido.',
+              'Experto en PLR Premium reúne estos elementos en un recorrido que va desde los fundamentos del modelo hasta la creación de productos multiformato, la distribución comercial y la organización de un negocio digital.',
+              'Una guía para quienes quieren comprender mejor el ecosistema PLR y explorar cómo utilizar las herramientas digitales actuales para desarrollar sus propios infoproductos.'
+            ]
+          }
         ]
       }
     ]
   },
   {
     id: '1',
+    slug: 'iniciacion',
+    path: '/iniciacion/',
     title: '📚 Fundamentos digitales',
     category: 'Iniciación',
     intro: 'Para quienes quieren construir su primer activo online con bases sólidas y una estructura que escale.',
@@ -72,48 +394,189 @@ export const FEATURED_BOOKS: BookCategory[] = [
     books: [
       {
         id: 'optimizado',
+        slug: 'como-crear-un-blog-optimizado',
+        path: '/como-crear-un-blog-optimizado/',
+        categorySlug: 'iniciacion',
         title: 'Cómo crear un Blog optimizado',
-        description: 'Construye tu primer activo digital desde cero, con estructura y visión a largo plazo.',
-        url: 'https://amzn.to/3ZXWB8q',
+        subtitle: 'El camino hacia el éxito para destacar en el mundo digital + Optimización de motores de búsqueda (SEO)',
+        metaTitle: 'Cómo crear un Blog optimizado: guía de blogging y SEO',
+        metaDescription: 'Aprende a crear un blog desde cero, optimizarlo para SEO, atraer tráfico orgánico y desarrollar estrategias de promoción, analítica y monetización.',
+        description: 'Aprende a crear un blog desde cero, optimizarlo para SEO, atraer tráfico orgánico y desarrollar estrategias de promoción, analítica y monetización.',
+        url: 'https://www.amazon.com/dp/B08NY61TZP',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/1-como-crear-un-blog-optimizado-libro-400.png',
         purchaseOptions: [
           { 
             platform: 'Amazon', 
-            url: 'https://amzn.to/3ZXWB8q', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B08NY61TZP', 
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
             emoji: '🛒',
-            cta: 'Comprar en Amazon'
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
           },
           { 
-            platform: 'Lulu', 
-            url: 'https://www.lulu.com/es/shop/francisco-gonzalez/c%C3%B3mo-crear-un-blog-optimizado/ebook/product-9pqk7n.html?page=1&pageSize=4', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg',
-            emoji: '📚',
-            cta: 'Ver en Lulu'
+            platform: 'Amazon', 
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B01EVJA21W', 
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          { 
+            platform: 'Amazon', 
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B09RGY5FF8', 
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
           },
           { 
             platform: 'Clickbank', 
+            cta: 'ClickBank',
             url: 'https://bloggingopt.lovable.app/', 
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
-            cta: 'Oferta Clickbank'
+            rel: 'nofollow noopener noreferrer'
           },
           { 
             platform: 'Payhip', 
+            cta: 'Payhip',
             url: 'https://payhip.com/b/w8feQ', 
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
-            cta: 'Descarga Directa'
+            rel: 'nofollow noopener noreferrer'
+          },
+          { 
+            platform: 'Lulu', 
+            cta: 'Lulu',
+            url: 'https://www.lulu.com/es/shop/francisco-gonzalez/c%C3%B3mo-crear-un-blog-optimizado/ebook/product-9pqk7n.html?page=1&pageSize=4', 
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg',
+            emoji: '📚',
+            rel: 'nofollow noopener noreferrer'
           }
         ],
-        extraInfo: [
-          'Crear un blog es el primer paso para tener un activo digital propio, pero la mayoría de la gente lo hace sin una estrategia clara. Eligen un tema por moda, usan plantillas genéricas y escriben sin un plan. El resultado es un blog que no genera tráfico, no convence y termina abandonado a los pocos meses.',
-          'Este libro te guía paso a paso para evitar esos errores. Aprenderás a elegir un nicho con potencial real, a configurar tu blog con una estructura técnica que facilite el posicionamiento en buscadores, y a planificar los primeros contenidos para atraer visitantes desde el primer mes. No se trata de escribir por escribir, sino de construir una base que escale con el tiempo.',
-          'El enfoque es práctico: cada capítulo incluye tareas concretas y ejemplos reales. Al final del libro, tendrás un blog optimizado, con una hoja de ruta clara para los próximos meses y el conocimiento para mantenerlo creciendo sin depender de trucos temporales. Es el cimiento que necesitas para cualquier proyecto digital posterior.'
+        editorialSections: [
+          {
+            title: 'Construir y gestionar una plataforma de contenidos con visión de futuro',
+            paragraphs: [
+              'Crear un blog es mucho más que elegir una plataforma y comenzar a publicar artículos. Para desarrollar un proyecto con posibilidades reales de crecimiento necesitamos una estructura adecuada, contenidos que respondan a las necesidades de los lectores, una estrategia de posicionamiento y un sistema que permita analizar, mejorar y mantener el sitio a lo largo del tiempo.',
+              'Cómo crear un Blog optimizado es una guía práctica que aborda las principales etapas de creación, desarrollo y crecimiento de un blog. Desde los primeros pasos de configuración hasta las estrategias de SEO, promoción, analítica, seguridad y escalabilidad, el libro ofrece una visión integral del trabajo que implica construir y gestionar una plataforma de contenidos.',
+              'Tanto si estamos preparando nuestro primer blog como si ya tenemos uno y queremos mejorar su funcionamiento, encontraremos una orientación organizada para comprender cada área y trabajar en ella de manera progresiva.'
+            ]
+          },
+          {
+            title: '¿Qué aprenderemos con este libro?',
+            subsections: [
+              {
+                title: '1. Cómo establecer los cimientos de un blog',
+                paragraphs: [
+                  'Antes de publicar contenidos necesitamos tomar decisiones que condicionarán el desarrollo del proyecto. El libro comienza con los fundamentos necesarios para poner en marcha un blog: elección de la plataforma, registro del dominio, selección del alojamiento web y configuración inicial.',
+                  'También aborda la incorporación de los elementos esenciales, la planificación de los primeros contenidos, la organización de la navegación y la configuración de herramientas de análisis. El objetivo es comprender cómo construir una base organizada desde la que podamos desarrollar el proyecto.'
+                ]
+              },
+              {
+                title: '2. Los fundamentos del blogging y la creación de contenidos',
+                paragraphs: [
+                  'Un blog necesita contenidos útiles, bien estructurados y adecuados a las personas a las que queremos llegar. En esta parte se explican los elementos que forman un artículo, las técnicas de escritura para blogs y la importancia de identificar las necesidades de nuestra audiencia.',
+                  'También aprenderemos a generar ideas, planificar publicaciones, estructurar textos, escribir de manera efectiva, incorporar recursos visuales y revisar los contenidos antes de publicarlos. El libro incluye además aspectos relacionados con las llamadas a la acción y la participación de los lectores.'
+                ]
+              },
+              {
+                title: '3. Diseño, usabilidad y experiencia del usuario',
+                paragraphs: [
+                  'La presentación de un blog influye en la manera en que los visitantes consumen sus contenidos. Por eso, el libro dedica un capítulo al diseño y la usabilidad, abordando los principios de diseño web, los elementos esenciales de una página y la organización de sus componentes.',
+                  'Se tratan aspectos técnicos y funcionales como la velocidad de carga, la accesibilidad, las pruebas de usabilidad y la integración de elementos interactivos. También se explica la relación entre el diseño del blog y su optimización para los motores de búsqueda.'
+                ]
+              },
+              {
+                title: '4. SEO para mejorar la visibilidad del blog',
+                paragraphs: [
+                  'El posicionamiento orgánico es uno de los pilares de una estrategia de blogging. El libro dedica un capítulo específico a comprender cómo optimizar un blog para los motores de búsqueda.',
+                  'Entre los temas tratados encontramos:'
+                ],
+                bullets: [
+                  { description: 'Investigación y selección de palabras clave.' },
+                  { description: 'Optimización de artículos y contenidos.' },
+                  { description: 'Aspectos técnicos del SEO.' },
+                  { description: 'Creación de enlaces entrantes o backlinks.' },
+                  { description: 'SEO local para blogs con alcance geográfico.' },
+                  { description: 'Análisis y seguimiento del rendimiento orgánico.' }
+                ],
+                footerParagraphs: [
+                  'Estos fundamentos nos ayudan a entender cómo trabajar la visibilidad de las publicaciones y desarrollar una estrategia de posicionamiento con criterios definidos.'
+                ]
+              },
+              {
+                title: '5. Promoción y marketing de contenidos',
+                paragraphs: [
+                  'Publicar no es suficiente: también necesitamos dar visibilidad a nuestro trabajo. El libro aborda diferentes estrategias de promoción, incluyendo el uso de redes sociales, la difusión de contenidos, las acciones de SEO y las colaboraciones con otros proyectos.',
+                  'Además, relaciona las actividades de promoción con la monetización y el análisis de resultados, para que podamos evaluar qué acciones contribuyen al crecimiento del blog.'
+                ]
+              },
+              {
+                title: '6. Analítica y seguimiento del rendimiento',
+                paragraphs: [
+                  'Para mejorar un proyecto digital necesitamos observar su evolución y tomar decisiones a partir de los datos. En este capítulo se presentan herramientas de analítica, la configuración e implementación de Google Analytics y las principales métricas que podemos utilizar para evaluar el rendimiento.',
+                  'También se explica cómo interpretar los datos, identificar oportunidades de mejora, preparar informes y realizar un seguimiento a largo plazo.'
+                ]
+              },
+              {
+                title: '7. Mantenimiento y seguridad',
+                paragraphs: [
+                  'Un blog necesita atención después de su puesta en marcha. Mantenerlo actualizado, proteger sus datos y prevenir problemas técnicos son tareas fundamentales para su continuidad.',
+                  'El libro aborda la gestión del sistema de contenidos, las copias de seguridad, la recuperación de datos, la protección frente a amenazas y ataques, la moderación de comentarios y el control del spam. También incluye la monitorización del sitio y la preparación de planes de contingencia.'
+                ]
+              },
+              {
+                title: '8. Monetización, crecimiento y escalabilidad',
+                paragraphs: [
+                  'Una vez establecidos los fundamentos, podemos trabajar para ampliar el alcance y las posibilidades del proyecto. El libro dedica una parte importante a las estrategias de crecimiento y monetización.',
+                  'Entre los temas incluidos se encuentran la definición de objetivos, la ampliación de la audiencia, la diversificación de contenidos y las opciones de monetización avanzada. También se abordan la optimización técnica, la automatización, la delegación de tareas y la fidelización de la comunidad.'
+                ]
+              },
+              {
+                title: '9. Cómo construir un blog sostenible a largo plazo',
+                paragraphs: [
+                  'El último capítulo amplía la perspectiva y se centra en la evolución del proyecto. Trata la mentalidad necesaria para mantener un blog a largo plazo, la adaptación a los cambios sin perder su identidad y la construcción de una marca personal y autoridad dentro de un nicho.',
+                  'El libro concluye con una hoja de ruta orientada a los próximos cinco años y una reflexión sobre el valor del blog como plataforma propia.'
+                ]
+              }
+            ]
+          },
+          {
+            title: '¿Para quién es este libro?',
+            paragraphs: [
+              'Esta guía está dirigida a:'
+            ],
+            bullets: [
+              { description: 'Personas que quieren crear su primer blog y necesitan comprender las etapas del proceso.' },
+              { description: 'Bloggers que desean mejorar la estructura, el diseño y la organización de su sitio.' },
+              { description: 'Creadores de contenido interesados en aprender a planificar y optimizar sus publicaciones.' },
+              { description: 'Emprendedores digitales que quieren utilizar un blog como parte de su estrategia de negocio.' },
+              { description: 'Personas interesadas en SEO, tráfico orgánico y promoción de contenidos.' },
+              { description: 'Bloggers que buscan comprender las opciones de monetización y las posibilidades de crecimiento.' },
+              { description: 'Propietarios de blogs que necesitan mejorar el mantenimiento, la seguridad y el seguimiento de sus proyectos.' }
+            ]
+          },
+          {
+            title: 'Una guía para construir y desarrollar nuestro propio proyecto',
+            paragraphs: [
+              'Un blog puede convertirse en una plataforma para compartir conocimientos, desarrollar una audiencia, fortalecer una marca y explorar distintas posibilidades de monetización. Pero para conseguirlo necesitamos trabajar más allá de la publicación de artículos.',
+              'Cómo crear un Blog optimizado reúne los principales elementos que intervienen en ese proceso: planificación, contenido, diseño, SEO, promoción, analítica, seguridad y crecimiento.',
+              'Si queremos comenzar un proyecto de blogging o mejorar uno que ya tenemos, este libro nos ofrece una visión organizada de las áreas que debemos conocer y trabajar para desarrollar una plataforma de contenidos con una base sólida.',
+              'Descubramos cómo crear, optimizar y desarrollar nuestro blog paso a paso.'
+            ]
+          }
         ]
       },
       {
         id: 'miblog',
+        slug: 'mi-blog-y-los-programas-de-afiliados',
+        path: '/mi-blog-y-los-programas-de-afiliados/',
+        categorySlug: 'iniciacion',
         title: 'Mi Blog y los Programas de Afiliados',
         description: 'Aprende a convertir contenido en ingresos de forma ordenada y sostenible.',
         url: 'https://amzn.to/3PXiwYW',
@@ -168,6 +631,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
       },
       {
         id: 'inbound',
+        slug: 'guia-completa-de-inbound-marketing',
+        path: '/guia-completa-de-inbound-marketing/',
+        categorySlug: 'iniciacion',
         title: 'Guía Completa de Inbound Marketing',
         description: 'Atrae clientes con contenido estratégico, sin depender de interrupciones.',
         url: 'https://amzn.to/48SDeBV',
@@ -211,6 +677,8 @@ export const FEATURED_BOOKS: BookCategory[] = [
   },
   {
     id: '2',
+    slug: 'ingresos',
+    path: '/ingresos/',
     title: '💰 Monetización y afiliación',
     category: 'Ingresos',
     intro: 'Estrategias prácticas para transformar tráfico e ideas en ingresos reales y sistemas sostenibles.',
@@ -218,6 +686,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
     books: [
       {
         id: 'dominando',
+        slug: 'dominando-el-marketing-de-afiliados',
+        path: '/dominando-el-marketing-de-afiliados/',
+        categorySlug: 'ingresos',
         title: 'Dominando el marketing de afiliados',
         description: 'Estrategias para generar ingresos recomendando productos.',
         url: 'https://amzn.to/46AasVc',
@@ -253,6 +724,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
       },
       {
         id: 'cpa1',
+        slug: 'marketing-cpa-para-emprendedores',
+        path: '/marketing-cpa-para-emprendedores/',
+        categorySlug: 'ingresos',
         title: 'Marketing CPA Para Emprendedores y Profesionales Digitales',
         description: 'Domina el modelo de Coste Por Acción.',
         url: 'https://marketing-cpa.lovable.app/',
@@ -293,7 +767,10 @@ export const FEATURED_BOOKS: BookCategory[] = [
       },
       {
         id: 'cpa2',
-        title: 'Cpa Marketing Fórmula Smartlink',
+        slug: 'cpa-marketing-formula-smartlink',
+        path: '/cpa-marketing-formula-smartlink/',
+        categorySlug: 'ingresos',
+        title: 'CPA Marketing Fórmula Smartlink',
         description: 'Optimización avanzada de enlaces inteligentes.',
         url: 'https://amzn.to/3PF2oMd',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/6-cpa-marketing-smartlink-libro-400.jpg',
@@ -333,7 +810,10 @@ export const FEATURED_BOOKS: BookCategory[] = [
       },
       {
         id: 'clickbank',
-        title: 'Dinero con Clickbank',
+        slug: 'dinero-con-clickbank',
+        path: '/dinero-con-clickbank/',
+        categorySlug: 'ingresos',
+        title: 'Dinero con Clickbank en minutos',
         description: 'Cómo elegir productos rentables, promocionarlos y construir tu primer negocio de afiliados',
         url: 'https://amzn.to/46yludn',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/2-dinero-con-clickbank-libro-400.jpg',
@@ -380,6 +860,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
       },
       {
         id: 'tips',
+        slug: 'tips-de-marketing-para-afiliados',
+        path: '/tips-de-marketing-para-afiliados/',
+        categorySlug: 'ingresos',
         title: 'Tips de Marketing para Afiliados',
         description: 'Consejos accionables para maximizar conversiones.',
         url: 'https://amzn.to/405AkFR',
@@ -437,6 +920,8 @@ export const FEATURED_BOOKS: BookCategory[] = [
   },
   {
     id: '3',
+    slug: 'tecnologia',
+    path: '/tecnologia/',
     title: '🤖 Inteligencia Artificial aplicada',
     category: 'Tecnología',
     intro: 'Cómo integrar IA en tus procesos digitales para crear más rápido, decidir mejor y escalar con menos esfuerzo.',
@@ -444,6 +929,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
     books: [
       {
         id: 'chat1',
+        slug: 'como-ganar-dinero-con-chatgpt',
+        path: '/como-ganar-dinero-con-chatgpt/',
+        categorySlug: 'tecnologia',
         title: 'Cómo ganar dinero con CHATGPT',
         description: 'Aplica ChatGPT a proyectos reales y crea flujos de ingresos asistidos por IA.',
         url: 'https://amzn.to/3Q13TUi',
@@ -485,6 +973,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
       },
       {
         id: 'chat2',
+        slug: 'desbloquea-tu-inspiracion-con-chatgpt',
+        path: '/desbloquea-tu-inspiracion-con-chatgpt/',
+        categorySlug: 'tecnologia',
         title: 'Desbloquea tu inspiración con ChatGPT',
         description: 'Utiliza la IA como motor creativo para contenidos y productos digitales.',
         url: 'https://amzn.to/3VhmpME',
@@ -503,6 +994,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
       },
       {
         id: 'artificial',
+        slug: 'inteligencia-artificial',
+        path: '/inteligencia-artificial/',
+        categorySlug: 'tecnologia',
         title: 'Inteligencia Artificial',
         description: 'Comprende los fundamentos de la IA y su impacto en los negocios digitales.',
         url: 'https://amzn.to/3PAxt3y',
@@ -515,6 +1009,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
       },
       {
         id: 'futuro',
+        slug: 'el-futuro-del-marketing-ia',
+        path: '/el-futuro-del-marketing-ia/',
+        categorySlug: 'tecnologia',
         title: 'El futuro del marketing (IA)',
         description: 'Adelántate a los cambios del marketing impulsado por inteligencia artificial.',
         url: 'https://amzn.to/400t0eP',
@@ -534,6 +1031,8 @@ export const FEATURED_BOOKS: BookCategory[] = [
   },
   {
     id: '4',
+    slug: 'crecimiento',
+    path: '/crecimiento/',
     title: '🚀 Tráfico, contenidos y crecimiento',
     category: 'Crecimiento',
     intro: 'Métodos probados para atraer visitantes cualificados y convertir contenido en crecimiento constante.',
@@ -541,6 +1040,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
     books: [
       {
         id: 'visitas1',
+        slug: 'ideas-y-consejos-de-trafico-web',
+        path: '/ideas-y-consejos-de-trafico-web/',
+        categorySlug: 'crecimiento',
         title: 'Ideas y consejos de Tráfico Web',
         description: 'Aprende a atraer visitantes de forma constante con métodos probados.',
         url: 'https://amzn.to/3Flv3QS',
@@ -581,6 +1083,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
       },
       {
         id: 'visitas2',
+        slug: 'ideas-maestras-de-trafico-web',
+        path: '/ideas-maestras-de-trafico-web/',
+        categorySlug: 'crecimiento',
         title: 'Ideas Maestras de Tráfico Web',
         description: 'Construye sistemas de tráfico que alimenten tus activos digitales.',
         url: 'https://amzn.to/3vjVwNB',
@@ -598,6 +1103,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
       },
       {
         id: 'contenidos',
+        slug: 'el-poder-del-marketing-de-contenidos',
+        path: '/el-poder-del-marketing-de-contenidos/',
+        categorySlug: 'crecimiento',
         title: 'El Poder Del Marketing De Contenidos',
         description: 'Convierte tu contenido en la base principal de tu crecimiento online.',
         url: 'https://amzn.to/47MbpgC',
@@ -616,6 +1124,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
       },
       {
         id: 'email',
+        slug: 'dominando-el-arte-del-email-marketing',
+        path: '/dominando-el-arte-del-email-marketing/',
+        categorySlug: 'crecimiento',
         title: 'Dominando el Arte del Email Marketing',
         description: 'Crea relaciones duraderas y ventas recurrentes con email estratégico.',
         url: 'https://amzn.to/4cbywRd',
@@ -636,13 +1147,106 @@ export const FEATURED_BOOKS: BookCategory[] = [
   },
   {
     id: '5',
+    slug: 'mindset',
+    path: '/mindset/',
     title: '🧠 Mentalidad y creación',
     category: 'Mindset',
     intro: 'Desarrollo personal, enfoque creativo y mentalidad estratégica para sostener cualquier proyecto digital.',
     coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/mentalidad-y-creacion-categoria.png',
     books: [
       {
+        id: 'abundancia',
+        slug: 'el-arte-de-atraer-la-abundancia',
+        path: '/el-arte-de-atraer-la-abundancia/',
+        categorySlug: 'mindset',
+        title: 'El arte de atraer la abundancia',
+        description: 'Despierta tu potencial ilimitado y crea una vida de riqueza, éxito y plenitud total',
+        url: 'https://amzn.to/3XCLjVW',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/14-el-arte-de-atraer-la-abundancia-ebook-libro-400.jpg',
+        purchaseOptions: [
+          { 
+            platform: 'Amazon', 
+            url: 'https://amzn.to/3XCLjVW', 
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
+            emoji: '🛒',
+            cta: 'Comprar en Amazon'
+          },
+          { 
+            platform: 'Clickbank', 
+            url: 'https://abundancia-arte.vercel.app/ ', 
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          },
+          { 
+            platform: 'Payhip', 
+            url: 'https://payhip.com/b/VJNwa', 
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
+            emoji: '💎',
+            cta: 'Descarga Directa'
+          }
+        ],
+        extraInfo: [
+          'La mayoría de los esfuerzos digitales fracasan no por falta de técnica, sino por una mentalidad limitante. Creencias profundas sobre el dinero, el éxito o la propia capacidad de crear pueden sabotear cualquier proyecto, por bueno que sea su plan de negocio. Este libro no es un tratado de autoayuda genérico; es un sistema práctico para transformar tu relación con la abundancia en todas sus formas.',
+          'A través de ejercicios concretos, cambios de hábitos y cambios de perspectiva, aprenderás a identificar y desbloquear esos patrones mentales que te mantienen estancado. No se trata de "pensar positivo" sin más, sino de alinear tus pensamientos, emociones y acciones para atraer oportunidades de forma natural.',
+          'Aprenderás a:',
+          'Identificar y desbloquear creencias limitantes: cómo detectar los patrones mentales que te frenan y sustituirlos por otros que te impulsen.',
+          'Transformar tu relación con el dinero: pasar de verlo como "mal necesario" o "escaso" a verlo como un reflejo del valor que aportas.',
+          'Cultivar una mentalidad de crecimiento: ver los fracasos como aprendizaje, los obstáculos como oportunidades y los retos como escalones.',
+          'Integrar hábitos diarios de abundancia: prácticas sencillas que mantienen tu energía y enfoque en alto, incluso en los días difíciles.',
+          'Atraer clientes y oportunidades desde la convicción: no desde la necesidad, sino desde la certeza de que puedes aportar valor.',
+          'Este libro es el segundo pilar de la Ruta Mindset. Después de dominar la persuasión (Libro 1), el siguiente paso es trabajar tu interior para que la confianza que transmites sea auténtica y no forzada.'
+        ]
+      },
+      {
+        id: 'solopreneur',
+        slug: 'el-manual-del-solopreneur-moderno',
+        path: '/el-manual-del-solopreneur-moderno/',
+        categorySlug: 'mindset',
+        title: 'El Manual del Solopreneur Moderno',
+        subtitle: 'Cómo crear, organizar y escalar un negocio digital sin empleados ni complicaciones.',
+        description: 'Cómo crear, organizar y escalar un negocio digital sin empleados ni complicaciones.',
+        url: 'https://www.amazon.com/dp/B0HKPPV7HH',
+        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/22-solopreneur-libro-600.jpg',
+        isAvailable: true,
+        purchaseOptions: [
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B0HKPPV7HH',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
+            emoji: '📖'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Edición Kindle',
+            url: 'https://www.amazon.com/dp/B0HKPHYRYX',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
+            emoji: '📱'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B0HKPZMYJ6',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
+            emoji: '📚'
+          }
+        ],
+        extraInfo: [
+          'El Manual del Solopreneur Moderno es una guía integral diseñada para profesionales, creadores y emprendedores que desean construir activos digitales sólidos con autonomía total.',
+          'Aprenderás a:',
+          'Arquitectura de negocio unipersonal: Diseña sistemas escalables que operen sin necesidad de contratar empleados ni asumir estructuras pesadas.',
+          'Monetización y activos duraderos: Conecta productos digitales, servicios de alto valor y flujos automatizados de ingresos.',
+          'Organización y productividad estratégica: Gestiona tu tiempo, herramientas digitales e inteligencia artificial para maximizar resultados con mínima fricción.',
+          'Escalabilidad sin complicaciones: Estrategias prácticas para crecer de manera sostenible manteniendo tu libertad personal y financiera.',
+          'Una obra fundamental dentro de la Ruta Mindset para transformar conocimientos y habilidades individuales en un ecosistema empresarial eficiente y rentable.'
+        ]
+      },
+{
         id: 'vendedor',
+        slug: 'el-vendedor-hipnotico',
+        path: '/el-vendedor-hipnotico/',
+        categorySlug: 'mindset',
         title: 'El Vendedor hipnótico',
         description: 'Mejora tu persuasión conectando emocionalmente con tus clientes.',
         url: 'https://amzn.to/3LZRdvV',
@@ -693,8 +1297,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
           },
           { 
             platform: 'Google Play', 
+            format: 'Ebook',
             url: 'https://play.google.com/store/books/details/Francisco_Gonz%C3%A1lez_El_Vendedor_Hipn%C3%B3tico?id=ViOdEQAAQBAJ', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/google-play-logo.jpg',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/google_play_ebook.jpg',
             emoji: '📱',
             cta: 'Ver en Google Play'
           }
@@ -712,48 +1317,10 @@ export const FEATURED_BOOKS: BookCategory[] = [
         ]
       },
       {
-        id: 'abundancia',
-        title: 'El Arte de Atraer la Abundancia',
-        description: 'Despierta tu potencial ilimitado y crea una vida de riqueza, éxito y plenitud total',
-        url: 'https://amzn.to/3XCLjVW',
-        coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/14-el-arte-de-atraer-la-abundancia-ebook-libro-400.jpg',
-        purchaseOptions: [
-          { 
-            platform: 'Amazon', 
-            url: 'https://amzn.to/3XCLjVW', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
-            emoji: '🛒',
-            cta: 'Comprar en Amazon'
-          },
-          { 
-            platform: 'Clickbank', 
-            url: 'https://abundancia-arte.vercel.app/ ', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
-            emoji: '⚡',
-            cta: 'Oferta Clickbank'
-          },
-          { 
-            platform: 'Payhip', 
-            url: 'https://payhip.com/b/VJNwa', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
-            emoji: '💎',
-            cta: 'Descarga Directa'
-          }
-        ],
-        extraInfo: [
-          'La mayoría de los esfuerzos digitales fracasan no por falta de técnica, sino por una mentalidad limitante. Creencias profundas sobre el dinero, el éxito o la propia capacidad de crear pueden sabotear cualquier proyecto, por bueno que sea su plan de negocio. Este libro no es un tratado de autoayuda genérico; es un sistema práctico para transformar tu relación con la abundancia en todas sus formas.',
-          'A través de ejercicios concretos, cambios de hábitos y cambios de perspectiva, aprenderás a identificar y desbloquear esos patrones mentales que te mantienen estancado. No se trata de "pensar positivo" sin más, sino de alinear tus pensamientos, emociones y acciones para atraer oportunidades de forma natural.',
-          'Aprenderás a:',
-          'Identificar y desbloquear creencias limitantes: cómo detectar los patrones mentales que te frenan y sustituirlos por otros que te impulsen.',
-          'Transformar tu relación con el dinero: pasar de verlo como "mal necesario" o "escaso" a verlo como un reflejo del valor que aportas.',
-          'Cultivar una mentalidad de crecimiento: ver los fracasos como aprendizaje, los obstáculos como oportunidades y los retos como escalones.',
-          'Integrar hábitos diarios de abundancia: prácticas sencillas que mantienen tu energía y enfoque en alto, incluso en los días difíciles.',
-          'Atraer clientes y oportunidades desde la convicción: no desde la necesidad, sino desde la certeza de que puedes aportar valor.',
-          'Este libro es el segundo pilar de la Ruta Mindset. Después de dominar la persuasión (Libro 1), el siguiente paso es trabajar tu interior para que la confianza que transmites sea auténtica y no forzada.'
-        ]
-      },
-      {
         id: 'pluma',
+        slug: 'de-la-pluma-al-dinero',
+        path: '/de-la-pluma-al-dinero/',
+        categorySlug: 'mindset',
         title: 'De la Pluma al Dinero',
         description: 'Transforma tus ideas escritas en productos digitales rentables.',
         url: 'https://amzn.to/3Tt81ir',
@@ -772,6 +1339,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
       },
       {
         id: 'ebooks',
+        slug: 'como-crear-ebooks-de-no-ficcion',
+        path: '/como-crear-ebooks-de-no-ficcion/',
+        categorySlug: 'mindset',
         title: 'Cómo crear Ebooks (de no ficción)',
         description: 'Diseña ebooks útiles que aporten valor y generen ingresos.',
         url: 'https://amzn.to/3xfCrNa',
@@ -814,6 +1384,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
       },
       {
         id: 'ebooks24',
+        slug: 'ebook-en-24-horas',
+        path: '/ebook-en-24-horas/',
+        categorySlug: 'mindset',
         title: 'Ebook en 24 horas',
         description: 'Cómo escribir un ebook de no ficción y publicarlo en tiempo récord (menos de 24 horas) ¿Te atreves?',
         url: 'https://amzn.to/3TqQl6o',
@@ -857,3 +1430,71 @@ export const FEATURED_BOOKS: BookCategory[] = [
     ]
   }
 ];
+
+export const ALL_BOOKS: BookItem[] = FEATURED_BOOKS.flatMap((cat) => cat.books);
+
+export const RESERVED_ROOT_SLUGS = new Set<string>([
+  '',
+  'biblioteca',
+  'origen',
+  'iniciacion',
+  'ingresos',
+  'tecnologia',
+  'crecimiento',
+  'mindset',
+  'sistemas-digitales',
+  'sobre-fg-perspectiva',
+  'contacto',
+  '404',
+  'sitemap.xml',
+  'robots.txt',
+  'assets'
+]);
+
+export const CANONICAL_URLS: string[] = [
+  'https://fgperspectiva.vercel.app/',
+  'https://fgperspectiva.vercel.app/biblioteca/',
+  'https://fgperspectiva.vercel.app/origen/',
+  'https://fgperspectiva.vercel.app/iniciacion/',
+  'https://fgperspectiva.vercel.app/ingresos/',
+  'https://fgperspectiva.vercel.app/tecnologia/',
+  'https://fgperspectiva.vercel.app/crecimiento/',
+  'https://fgperspectiva.vercel.app/mindset/',
+  'https://fgperspectiva.vercel.app/sistemas-digitales/',
+  'https://fgperspectiva.vercel.app/sobre-fg-perspectiva/',
+  'https://fgperspectiva.vercel.app/contacto/',
+  ...ALL_BOOKS.map((b) => `https://fgperspectiva.vercel.app${b.path}`)
+];
+
+export const HISTORICAL_HASH_REDIRECTS: Record<string, string> = {
+  'biblioteca': '/biblioteca/',
+  'sistemas': '/sistemas-digitales/',
+  'sobre-fg-perspectiva': '/sobre-fg-perspectiva/',
+  'nosotros': '/sobre-fg-perspectiva/',
+  'contacto': '/contacto/',
+  'plr': '/experto-en-plr-premium/',
+  'optimizado': '/como-crear-un-blog-optimizado/',
+  'miblog': '/mi-blog-y-los-programas-de-afiliados/',
+  'inbound': '/guia-completa-de-inbound-marketing/',
+  'dominando': '/dominando-el-marketing-de-afiliados/',
+  'cpa1': '/marketing-cpa-para-emprendedores/',
+  'cpa2': '/cpa-marketing-formula-smartlink/',
+  'clickbank': '/dinero-con-clickbank/',
+  'clcibank': '/dinero-con-clickbank/',
+  'tips': '/tips-de-marketing-para-afiliados/',
+  'chat1': '/como-ganar-dinero-con-chatgpt/',
+  'chat2': '/desbloquea-tu-inspiracion-con-chatgpt/',
+  'artificial': '/inteligencia-artificial/',
+  'futuro': '/el-futuro-del-marketing-ia/',
+  'visitas1': '/ideas-y-consejos-de-trafico-web/',
+  'visitas2': '/ideas-maestras-de-trafico-web/',
+  'contenidos': '/el-poder-del-marketing-de-contenidos/',
+  'email': '/dominando-el-arte-del-email-marketing/',
+  'vendedor': '/el-vendedor-hipnotico/',
+  'abundancia': '/el-arte-de-atraer-la-abundancia/',
+  'solopreneur': '/el-manual-del-solopreneur-moderno/',
+  'pluma': '/de-la-pluma-al-dinero/',
+  'ebooks': '/como-crear-ebooks-de-no-ficcion/',
+  'ebooks24': '/ebook-en-24-horas/'
+};
+

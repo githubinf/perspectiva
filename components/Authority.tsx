@@ -3,9 +3,9 @@ import React from 'react';
 
 const Authority: React.FC = () => {
   return (
-    <section className="pt-16 pb-32 bg-[#174532] text-white overflow-hidden relative">
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
-        <span className="absolute -top-10 -left-10 text-[25rem] font-black text-white/[0.03] serif italic leading-none select-none">
+    <section className="pt-16 pb-44 md:pb-32 bg-[#174532] text-white overflow-hidden relative">
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden" aria-hidden="true">
+        <span className="absolute bottom-2 right-4 md:bottom-4 md:right-8 text-ornament-8 font-bold text-white/[0.06] font-serif italic leading-none select-none pointer-events-none">
           8+
         </span>
       </div>
@@ -15,18 +15,18 @@ const Authority: React.FC = () => {
           <div className="hidden lg:block w-40 h-[1px] bg-[#4db380]/40"></div>
           <div>
             <div className="mb-12 inline-block">
-               <span className="text-[#f4b925] text-4xl serif">"</span>
-               <p className="text-2xl md:text-4xl font-light italic serif leading-relaxed">
+               <span className="text-[#f4b925] text-4xl font-serif">"</span>
+               <p className="text-h2 font-normal italic font-serif leading-relaxed text-slate-100">
                 Más de 8 años creando proyectos digitales, decenas de libros publicados y miles de lectores en distintos países. 
                 FG Perspectiva es el resultado de años de prueba, error y aprendizaje real.
               </p>
-              <span className="text-[#f4b925] text-4xl serif float-right -mt-6">"</span>
+              <span className="text-[#f4b925] text-4xl font-serif float-right -mt-6">"</span>
             </div>
             
             <div className="flex items-center gap-6">
               <div className="w-16 h-16 rounded-full bg-[#1f513a] border-2 border-[#4db380] overflow-hidden shadow-2xl">
                 <img 
-                  src="https://i.ibb.co/XkxVB4VJ/6-300x300.jpg" 
+                  src="https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/avatar_francisco.jpg" 
                   alt="Francisco González" 
                   className="grayscale hover:grayscale-0 transition-all duration-500 w-full h-full object-cover" 
                   loading="lazy"
@@ -37,8 +37,8 @@ const Authority: React.FC = () => {
                 />
               </div>
               <div className="space-y-1">
-                <span className="block font-black text-xs tracking-[0.3em] uppercase text-white">Francisco González</span>
-                <span className="text-[10px] text-[#4db380] uppercase tracking-widest font-bold">Fundador de FG Perspectiva</span>
+                <span className="block font-semibold text-[15px] tracking-wide text-white">Francisco González</span>
+                <span className="text-[12px] text-[#4db380] uppercase tracking-wider font-medium">Fundador de FG Perspectiva</span>
               </div>
             </div>
           </div>

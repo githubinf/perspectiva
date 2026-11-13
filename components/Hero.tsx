@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from '../router.tsx';
 
 const Hero: React.FC = () => {
   return (
@@ -9,54 +10,55 @@ const Hero: React.FC = () => {
       <div className="max-w-5xl mx-auto px-6">
         <div className="inline-flex items-center gap-3 mb-8 animate-fade-in">
           <span className="w-8 h-[1px] bg-[#f4b925]"></span>
-          <span className="text-[10px] uppercase tracking-[0.4em] text-[#4db380] font-bold">
+          <span className="text-[11.5px] uppercase tracking-wider text-[#174532] font-semibold">
             Editorial de Sistemas Digitales
           </span>
         </div>
         
-        <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold leading-tight mb-10 animate-slide-up text-[#174532]">
-          Cambia tu forma de ver. Cambia tus resultados. <span className="italic serif text-[#4db380]">Construye sistemas digitales que generen ingresos reales.</span>
+        <h1 className="text-hero font-bold font-serif mb-8 animate-slide-up text-[#174532]">
+          Cambia tu forma de ver. Cambia tus resultados. <span className="italic font-serif text-[#4db380]">Construye sistemas digitales que generen ingresos reales.</span>
         </h1>
         
         <div className="grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-7">
-            <p className="text-lg md:text-xl text-[#1b1b1b]/80 leading-relaxed mb-10 text-balance">
-              Creamos libros y sistemas prácticos para personas que quieren construir activos digitales reales, 
-              entender el marketing moderno y desarrollar una mentalidad estratégica en un mundo impulsado por la tecnología.
-              Desde blogging y afiliados hasta inteligencia artificial y crecimiento personal, en FG Perspectiva reunimos 
-              conocimiento aplicado, métodos probados y perspectivas claras que convierten ideas en acción.
+            <p className="text-subtitle text-[#1b1b1b]/80 mb-5 font-normal">
+              Creamos libros prácticos para emprendedores, creadores y profesionales que buscan comprender el entorno digital, desarrollar conocimientos aplicables y construir proyectos con una visión estratégica. Nuestra colección reúne distintas áreas del conocimiento que intervienen en la creación, desarrollo y crecimiento de activos digitales.
             </p>
-            <div className="mb-10">
-              <p className="text-[#174532] font-medium border-l-4 border-[#f4b925] pl-8 py-2 text-lg leading-relaxed">
-                No publicamos teoría. Creamos caminos. Diseñado para emprendedores digitales, creadores y profesionales que quieren construir activos reales, no perseguir tácticas.
+            <p className="text-subtitle text-[#1b1b1b]/80 mb-6 font-normal">
+              Desde el blogging y el marketing de afiliados hasta la inteligencia artificial, la creación de productos digitales, el marketing de contenidos y el crecimiento personal, en FG Perspectiva abordamos disciplinas que permiten comprender mejor las oportunidades del entorno digital y desarrollar las competencias necesarias para aprovecharlas.
+            </p>
+            <div className="mb-6">
+              <p className="text-[#174532] font-medium border-l-4 border-[#f4b925] pl-6 py-2 text-base md:text-[17px] leading-relaxed">
+                No publicamos teoría. Creamos caminos.
               </p>
             </div>
+            <p className="text-body text-[#1b1b1b]/80 mb-5 font-normal">
+              Cada libro forma parte de una propuesta orientada a conectar conocimientos, comprender procesos y encontrar aplicaciones prácticas. Nuestro propósito es ofrecer algo más que información aislada: perspectivas y fundamentos que ayuden a tomar decisiones, desarrollar proyectos y construir activos reales.
+            </p>
+            <p className="text-body text-[#1b1b1b]/80 mb-8 font-normal">
+              Nos dirigimos a emprendedores digitales, creadores y profesionales que prefieren comprender antes de actuar, construir sobre fundamentos y desarrollar proyectos con visión a largo plazo, en lugar de depender de tácticas pasajeras o soluciones que pierden utilidad con el tiempo.
+            </p>
             <div className="flex flex-col sm:flex-row gap-6">
-              <a 
-                href="#biblioteca" 
-                className="inline-flex items-center justify-center px-10 py-5 bg-[#174532] text-white font-bold text-xs uppercase tracking-[0.25em] hover:bg-[#1f513a] transition-all hover:-translate-y-1 shadow-2xl shadow-[#174532]/20 rounded-sm"
+              <Link 
+                href="/biblioteca/" 
+                className="inline-flex items-center justify-center px-8 py-3.5 bg-[#174532] text-white font-semibold text-[15px] hover:bg-[#1f513a] transition-all hover:-translate-y-0.5 shadow-xl shadow-[#174532]/20 rounded-md"
               >
                 👉 Empezar a construir activos
-              </a>
+              </Link>
             </div>
           </div>
           <div className="md:col-span-5 hidden md:block">
-             <div className="aspect-[4/5] bg-[#dae7df] rounded-sm relative overflow-hidden shadow-2xl group">
+             <div className="rounded-xl overflow-hidden shadow-2xl border border-[#dae7df]/60 bg-white">
                <img 
-                 src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=1200" 
-                 alt="Perspective and Systems" 
-                 className="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
+                 src="https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png" 
+                 alt="FG Perspectiva - Ideas que florecen" 
+                 className="w-full h-auto object-contain block"
                  fetchPriority="high"
                  decoding="async"
                  referrerPolicy="no-referrer"
-                 width={1200}
-                 height={1500}
+                 width={1672}
+                 height={941}
                />
-               <div className="absolute inset-0 bg-gradient-to-t from-[#174532]/60 to-transparent mix-blend-multiply"></div>
-               <div className="absolute bottom-6 left-6 right-6">
-                  <div className="w-12 h-1 bg-[#f4b925] mb-4"></div>
-                  <p className="text-white text-xs uppercase tracking-widest font-bold">Visión Sistémica</p>
-               </div>
              </div>
           </div>
         </div>

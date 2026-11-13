@@ -2,16 +2,20 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, ExternalLink, ShoppingCart } from 'lucide-react';
-import { PurchaseOption } from '../types.ts';
+import { PurchaseOption, BookItem } from '../types.ts';
 
 interface PurchaseModalProps {
   isOpen: boolean;
   onClose: () => void;
-  bookTitle: string;
-  purchaseOptions: PurchaseOption[];
+  bookTitle?: string;
+  purchaseOptions?: PurchaseOption[];
+  book?: BookItem | null;
 }
 
-const PurchaseModal: React.FC<PurchaseModalProps> = ({ isOpen, onClose, bookTitle, purchaseOptions }) => {
+const PurchaseModal: React.FC<PurchaseModalProps> = ({ isOpen, onClose, bookTitle, purchaseOptions, book }) => {
+  const effectiveTitle = bookTitle || book?.title || 'Ficha del libro';
+  const effectiveOptions = purchaseOptions || book?.purchaseOptions || [];
+
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add('modal-open');
@@ -34,7 +38,7 @@ const PurchaseModal: React.FC<PurchaseModalProps> = ({ isOpen, onClose, bookTitl
     'Lulu': 5
   };
 
-  const sortedOptions = [...purchaseOptions].sort((a, b) => {
+  const sortedOptions = [...effectiveOptions].sort((a, b) => {
     const priorityA = platformPriority[a.platform] || 99;
     const priorityB = platformPriority[b.platform] || 99;
     return priorityA - priorityB;
@@ -61,8 +65,8 @@ const PurchaseModal: React.FC<PurchaseModalProps> = ({ isOpen, onClose, bookTitl
           {/* Header - Sticky */}
           <div className="bg-[#174532] p-5 md:p-6 text-white flex justify-between items-center sticky top-0 z-20 shadow-md">
             <div className="pr-4">
-              <h3 className="text-[10px] uppercase tracking-widest font-black text-[#4db380] mb-1">Donde comprar</h3>
-              <h2 className="text-lg md:text-xl font-bold serif italic leading-tight">{bookTitle}</h2>
+              <h3 className="text-[11px] uppercase tracking-wider font-semibold text-[#4db380] mb-1 font-sans">Donde comprar</h3>
+              <h2 className="text-lg md:text-xl font-bold font-serif italic leading-tight">{effectiveTitle}</h2>
             </div>
             <button 
               onClick={onClose}
@@ -80,7 +84,7 @@ const PurchaseModal: React.FC<PurchaseModalProps> = ({ isOpen, onClose, bookTitl
                 key={index}
                 href={option.url}
                 target="_blank"
-                rel="noopener noreferrer nofollow"
+                rel={option.rel || (option.platform.toLowerCase() === 'amazon' ? 'nofollow noopener noreferrer' : 'noopener noreferrer')}
                 className="flex items-center justify-between p-3 md:p-4 rounded-xl border border-[#dae7df] hover:border-[#4db380] hover:bg-[#dae7df]/10 transition-all group"
               >
                 <div className="flex items-center gap-3 md:gap-4">
@@ -105,7 +109,7 @@ const PurchaseModal: React.FC<PurchaseModalProps> = ({ isOpen, onClose, bookTitl
                       <span className="text-sm md:text-base font-bold text-[#174532] truncate">{option.platform}</span>
                       <span className="text-base md:text-lg flex-shrink-0">{option.emoji || '📖'}</span>
                     </div>
-                    <span className="text-[9px] md:text-[10px] text-[#1b1b1b]/50 uppercase tracking-widest font-bold block truncate">
+                    <span className="text-[11px] text-[#1b1b1b]/60 uppercase tracking-wider font-medium block truncate">
                       {option.cta || 'Comprar ahora'}
                     </span>
                   </div>
@@ -119,7 +123,7 @@ const PurchaseModal: React.FC<PurchaseModalProps> = ({ isOpen, onClose, bookTitl
 
           {/* Footer */}
           <div className="p-4 md:p-5 bg-[#dae7df]/10 border-t border-[#dae7df] text-center">
-            <p className="text-[9px] md:text-[10px] text-[#1b1b1b]/40 uppercase tracking-widest font-bold">
+            <p className="text-[11.5px] text-[#1b1b1b]/50 uppercase tracking-wider font-medium">
               Selecciona tu plataforma preferida
             </p>
           </div>
