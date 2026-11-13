@@ -18,14 +18,9 @@ const HomeSystems: React.FC = () => {
               Sistemas <span className="italic font-serif text-[#4db380]">Digitales</span>
             </h2>
 
-            <p className="text-[#174532]/80 text-subtitle mb-10 font-medium">
-              Los libros enseñan las piezas. <br className="hidden sm:block" />
-              Ahora veamos cómo se conectan.
-            </p>
-
-            <p className="text-h3 font-normal text-[#1b1b1b] leading-relaxed font-serif italic mb-8">
-              No necesitas más información. <br />
-              <span className="text-[#174532] font-bold not-italic">Necesitas estructura.</span>
+            <p className="text-[#174532]/85 text-subtitle mb-10 font-medium leading-relaxed">
+              Los libros enseñan las piezas. Ahora veamos cómo se conectan. No necesitas más información.{' '}
+              <span className="font-bold text-[#174532]">Necesitas estructura.</span>
             </p>
 
             <div className="space-y-5 text-[#1b1b1b]/75 text-body leading-relaxed">
