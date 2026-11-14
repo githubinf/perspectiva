@@ -153,25 +153,35 @@ export const getPageMeta = (rawPath: string): PageMeta => {
 
   // 4. Sobre FG Perspectiva
   if (path === '/sobre-fg-perspectiva/') {
+    const { '@context': _orgContext, ...organizationEntity } = ORGANIZATION_SCHEMA;
     return {
       path: '/sobre-fg-perspectiva/',
-      title: 'Sobre FG Perspectiva — Editorial Digital de Sistemas y Conocimiento Práctico',
-      description: 'Conoce la visión y trayectoria de FG Perspectiva: una editorial centrada en el conocimiento práctico, métodos probados y activos sostenibles.',
+      title: 'Sobre FG Perspectiva | Editorial digital de libros',
+      description: 'Conoce FG Perspectiva, su enfoque editorial, la trayectoria de Francisco González y su propuesta de libros y sistemas digitales.',
       canonical: `${BASE_URL}/sobre-fg-perspectiva/`,
-      ogImage: DEFAULT_IMAGE,
+      ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
       ogType: 'website',
-      h1: 'Editorial FG Perspectiva',
+      h1: 'FG Perspectiva, una editorial digital de libros y conocimiento práctico',
       schema: [
         {
           '@context': 'https://schema.org',
           '@type': 'AboutPage',
-          name: 'Sobre FG Perspectiva',
-          description: 'Historia, principios y misión de la editorial digital FG Perspectiva.',
+          name: 'Sobre FG Perspectiva | Editorial digital de libros',
+          description: 'Conoce FG Perspectiva, su enfoque editorial, la trayectoria de Francisco González y su propuesta de libros y sistemas digitales.',
           url: `${BASE_URL}/sobre-fg-perspectiva/`,
           isPartOf: {
             '@type': 'WebSite',
             name: 'FG Perspectiva',
             url: `${BASE_URL}/`
+          },
+          mainEntity: {
+            ...organizationEntity,
+            founder: {
+              '@type': 'Person',
+              name: 'Francisco González',
+              jobTitle: 'Fundador de FG Perspectiva',
+              image: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/avatar_francisco.jpg'
+            }
           }
         },
         {
