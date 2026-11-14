@@ -4,6 +4,7 @@ import { RouterProvider, useRouter } from './router.tsx';
 import HomeView from './components/views/HomeView.tsx';
 import LibraryView from './components/views/LibraryView.tsx';
 import CategoryView from './components/views/CategoryView.tsx';
+import OriginView from './components/views/OriginView.tsx';
 import BookDetailView from './components/views/BookDetailView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
@@ -32,6 +33,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/contacto/') {
     return <ContactView />;
+  }
+
+  if (currentPath === '/origen/' && matchedCategory) {
+    return <OriginView category={matchedCategory} />;
   }
 
   if (matchedCategory) {

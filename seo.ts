@@ -266,7 +266,78 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
-  // 6. Category pages
+  // 6a. Categoría Origen (vista editorial dedicada)
+  if (path === '/origen/') {
+    const originCategory = FEATURED_BOOKS.find((c) => c.path === '/origen/');
+    const originBooks = originCategory?.books || [];
+    const originDescription =
+      'Descubre cómo aprovechar recursos PLR, transformar conocimientos en infoproductos propios y desarrollar productos digitales con criterio, identidad y visión comercial.';
+
+    return {
+      path: '/origen/',
+      title: 'Origen: creación de productos digitales y PLR | FG Perspectiva',
+      description: originDescription,
+      canonical: `${BASE_URL}/origen/`,
+      ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
+      ogType: 'website',
+      h1: 'Origen: del conocimiento existente a la creación de productos digitales propios',
+      schema: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          name: 'Origen: creación de productos digitales y PLR | FG Perspectiva',
+          description: originDescription,
+          url: `${BASE_URL}/origen/`,
+          isPartOf: {
+            '@type': 'WebSite',
+            name: 'FG Perspectiva',
+            url: `${BASE_URL}/`
+          },
+          mainEntity: {
+            '@type': 'ItemList',
+            name: 'Libros de la ruta Origen',
+            numberOfItems: originBooks.length,
+            itemListElement: originBooks.map((b, idx) => ({
+              '@type': 'ListItem',
+              position: idx + 1,
+              item: {
+                '@type': 'Book',
+                name: b.title,
+                description: b.description,
+                url: `${BASE_URL}${b.path || `/${b.slug}/`}`
+              }
+            }))
+          }
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Origen',
+              item: `${BASE_URL}/origen/`
+            }
+          ]
+        }
+      ]
+    };
+  }
+
+  // 6. Category pages (iniciación, ingresos, tecnología, crecimiento, mindset)
   const matchedCategory = FEATURED_BOOKS.find((c) => c.path === path);
   if (matchedCategory) {
     return {

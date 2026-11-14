@@ -1,0 +1,430 @@
+# INSTRUCCIÓN DE IMPLEMENTACIÓN — REDISEÑO EDITORIAL Y SEO DE LA PÁGINA /origen/ — FG PERSPECTIVA
+
+## 1. OBJETIVO DEL TRABAJO
+
+Implementar una nueva versión editorial de la página `/origen/` de FG Perspectiva.
+
+Esta página debe convertirse en un recurso editorial independiente, con profundidad temática, identidad propia y contenido útil para los usuarios y los motores de búsqueda.
+
+No debe limitarse a presentar un libro ni a funcionar como un listado de productos. Su objetivo es desarrollar el territorio temático de la categoría Origen: el aprovechamiento de recursos PLR, la transformación del conocimiento existente en productos digitales propios y las posibilidades de desarrollar una actividad comercial a partir de ellos.
+
+La página debe mantener una relación natural con el libro que pertenece a esta categoría:
+
+**Experto en PLR Premium**
+
+La obra debe aparecer como parte de la propuesta editorial, pero el contenido de la página debe aportar valor por sí mismo, incluso para quien todavía no conozca el libro.
+
+## 2. REGLAS DE ALCANCE Y PROTECCIÓN DEL PROYECTO
+
+Antes de modificar archivos, inspecciona la arquitectura actual y determina cómo se renderiza la ruta `/origen/`.
+
+La implementación debe cumplir estrictamente estas condiciones:
+
+1. Modificar exclusivamente lo necesario para implementar la nueva página `/origen/`.
+2. Si `CategoryView.tsx` es un componente compartido por las seis categorías, no modificarlo de forma que altere globalmente las demás páginas.
+3. Si resulta necesario, crear una vista específica para Origen y conectarla exclusivamente a la ruta correspondiente.
+4. Mantener intactas las páginas `/iniciacion/`, `/ingresos/`, `/tecnologia/`, `/crecimiento/` y `/mindset/`.
+5. No modificar `/`, `/biblioteca/`, `/sistemas-digitales/`, `/sobre-fg-perspectiva/` ni `/contacto/`.
+6. No modificar las fichas individuales de los libros.
+7. No modificar el Header, el Footer, el Layout general, el router global ni los estilos globales, salvo que exista una necesidad técnica imprescindible y esté estrictamente limitada a esta página.
+8. No modificar `constants.tsx`, `types.ts` ni los datos comerciales del catálogo.
+9. No modificar nombres, títulos, portadas, rutas, slugs, enlaces comerciales, opciones de compra ni información de los libros.
+10. No instalar paquetes ni dependencias nuevas.
+11. No eliminar ni sustituir funcionalidades existentes.
+12. No realizar ningún despliegue en Vercel.
+
+Antes de implementar, identifica los archivos que realmente participan en la ruta y selecciona la solución de menor impacto sobre el resto del proyecto.
+
+## 3. IDENTIDAD VISUAL Y CRITERIOS DE DISEÑO
+
+La página debe integrarse en la identidad visual de FG Perspectiva, pero no debe parecer una reproducción de la plantilla genérica de las demás categorías.
+
+Debe tener una composición editorial propia, con una jerarquía visual clara y una lectura cómoda.
+
+Respetar la identidad existente:
+
+- Verde principal: `#174532`.
+- Verde secundario: `#4db380`.
+- Fondos suaves: tonos basados en `#dae7df` con las transparencias ya utilizadas en el proyecto.
+- Texto principal: `#1b1b1b`.
+- Dorado: `#f4b925`.
+- Tipografías: Libre Baskerville e Inter, según la jerarquía tipográfica ya establecida.
+
+### Prohibición expresa de imágenes representativas de categorías
+
+La página NO debe incorporar:
+
+- Banners de categoría.
+- Fotografías genéricas.
+- Ilustraciones temáticas.
+- Iconos decorativos que representen la categoría.
+- Imágenes de bancos de recursos.
+- Imágenes generadas para representar PLR o infoproductos.
+
+La única imagen de contenido que se debe utilizar es la portada real del libro **Experto en PLR Premium**, obtenida de los datos existentes del catálogo.
+
+No inventar ni sustituir su URL.
+
+### Composición editorial
+
+La página debe organizarse como un artículo editorial de profundidad, no como una sucesión de tarjetas idénticas.
+
+Se recomienda:
+
+- Hero tipográfico con H1, introducción y jerarquía visual propia.
+- Secciones editoriales con anchuras de lectura adecuadas.
+- Subtítulos que permitan identificar claramente los temas.
+- Listas únicamente cuando faciliten la comprensión.
+- Bloques destacados para conceptos realmente importantes, sin convertir cada párrafo en una tarjeta.
+- Separación visual entre el desarrollo temático y la presentación del libro.
+- Bloque final de cierre editorial.
+
+La portada del libro debe aparecer en un bloque de presentación editorial proporcionado, sin competir visualmente con el contenido principal.
+
+Evitar el exceso de cajas, bordes, fondos de color, elementos decorativos y columnas estrechas.
+
+## 4. CONTENIDO EDITORIAL DEFINITIVO
+
+El siguiente texto es el contenido que debe implementarse. Debe conservarse íntegramente, respetando sus títulos, subtítulos, párrafos, listas y orden argumental.
+
+No resumirlo, no sustituirlo por texto genérico, no reducirlo para ajustarlo a una plantilla y no añadir párrafos de relleno.
+
+### H1: Origen: del conocimiento existente a la creación de productos digitales propios
+
+#### El punto de partida para construir algo propio
+
+Crear un producto digital no siempre significa comenzar desde una página en blanco. Antes de desarrollar una idea desde cero, podemos explorar conocimientos, materiales y recursos que ya existen, comprender su potencial y transformarlos en una propuesta con identidad, utilidad y valor propio.
+
+Esta posibilidad abre una vía especialmente interesante para quienes desean entrar en el mercado de los productos digitales, desarrollar una actividad independiente o ampliar un proyecto que ya está en marcha. No obstante, disponer de materiales no equivale a tener un producto terminado, y encontrar un recurso que podemos utilizar tampoco significa que estemos preparados para comercializarlo.
+
+Entre ambas cosas existe un proceso: analizar, seleccionar, reorganizar, actualizar, desarrollar y presentar el contenido de una manera coherente con el público al que queremos llegar.
+
+En FG Perspectiva, Origen representa ese primer territorio de exploración. Aquí abordamos una de las posibilidades que ofrece el entorno digital: aprovechar recursos y conocimientos existentes como punto de partida para crear infoproductos con una propuesta diferenciada.
+
+No se trata simplemente de reutilizar contenidos. Se trata de comprender cómo podemos convertir una base de conocimiento en un producto que tenga sentido, responda a una necesidad y forme parte de un proyecto digital con dirección propia.
+
+### Qué es el PLR y por qué puede convertirse en un punto de partida
+
+PLR corresponde a *Private Label Rights*, una modalidad de derechos de uso comercial que puede acompañar a determinados contenidos y productos digitales. Según las condiciones de cada licencia, estos materiales pueden ofrecer distintas posibilidades de utilización, modificación y comercialización.
+
+Su atractivo está en que permiten partir de una base existente en lugar de desarrollar todos los contenidos desde cero. Podemos encontrar materiales relacionados con diferentes disciplinas y utilizarlos como referencia o punto inicial para desarrollar una nueva propuesta.
+
+Sin embargo, conviene comprender una distinción fundamental: disponer de derechos PLR no convierte automáticamente un material en un producto original, competitivo o adecuado para cualquier mercado.
+
+El valor no reside únicamente en el recurso adquirido. Depende también de cómo lo evaluamos, qué decisiones tomamos sobre su contenido, cómo lo adaptamos y qué experiencia ofrecemos a las personas que lo utilizarán.
+
+Por eso, antes de trabajar con cualquier material PLR, necesitamos prestar atención a varios aspectos:
+
+- **Las condiciones de uso:** debemos conocer qué permite realmente la licencia, qué restricciones establece y qué derechos podemos ejercer.
+- **La calidad del contenido:** no todos los materiales tienen el mismo nivel de profundidad, rigor o utilidad.
+- **La vigencia de la información:** determinados contenidos necesitan revisión y actualización para responder a las circunstancias actuales.
+- **La adecuación al público:** un material puede tratar un tema interesante y, aun así, no responder a las necesidades concretas de nuestra audiencia.
+- **La diferenciación:** debemos encontrar una manera de desarrollar una propuesta que no dependa exclusivamente de presentar un contenido genérico.
+
+Comprender estos factores cambia nuestra manera de abordar el PLR. Dejamos de verlo como una colección de archivos que podemos publicar y comenzamos a entenderlo como una materia prima que exige criterio, trabajo y decisiones.
+
+### De un material disponible a un producto con identidad propia
+
+La transformación es el elemento que marca la diferencia entre utilizar un recurso existente y desarrollar una propuesta con personalidad.
+
+Un contenido puede contener información útil, pero necesitar una reorganización completa. Puede presentar conceptos válidos, aunque su lenguaje, ejemplos o referencias hayan quedado desactualizados. También puede abordar un tema demasiado amplio y requerir una orientación más concreta para resultar relevante para un público determinado.
+
+En estos casos, el trabajo consiste en intervenir sobre el material con un propósito definido.
+
+Podemos reorganizar su estructura, revisar la información, mejorar la claridad de las explicaciones, adaptar el enfoque y desarrollar una presentación coherente. La inteligencia artificial puede contribuir a determinadas tareas de investigación, análisis, revisión y producción, pero no sustituye el criterio necesario para evaluar el resultado.
+
+Una transformación bien planteada requiere comprender qué estamos creando y por qué cada modificación aporta algo a la propuesta final.
+
+#### Cuatro fases para abordar la transformación
+
+El proceso puede organizarse en cuatro fases relacionadas entre sí:
+
+**1. Diagnóstico**
+
+Antes de modificar un material, necesitamos conocerlo. Esto implica analizar su contenido, identificar sus fortalezas y limitaciones, evaluar su utilidad y determinar si existe una oportunidad real para desarrollarlo como producto.
+
+El diagnóstico permite tomar decisiones antes de invertir tiempo en una transformación que quizá no tenga sentido.
+
+**2. Reestructuración**
+
+Una vez comprendida la base de trabajo, podemos revisar su organización. El objetivo es mejorar la secuencia de los contenidos, eliminar problemas estructurales, reforzar la comprensión y construir una experiencia de lectura o utilización más coherente.
+
+No consiste en cambiar palabras superficialmente, sino en trabajar sobre la manera en que se presenta y desarrolla el conocimiento.
+
+**3. Contextualización 2026**
+
+Los contenidos digitales necesitan responder al contexto en el que se utilizan. Herramientas, plataformas, prácticas y expectativas evolucionan, por lo que debemos revisar qué información conserva su utilidad y qué aspectos necesitan adaptación.
+
+Contextualizar significa evitar que un producto dependa de referencias obsoletas o de procedimientos que ya no responden a las condiciones actuales.
+
+**4. Personalización**
+
+La última fase consiste en desarrollar una propuesta con una identidad definida. El enfoque, la presentación, la organización y la forma de comunicar el contenido deben responder a la finalidad del producto y al público al que se dirige.
+
+La personalización permite avanzar desde un material de partida hacia una propuesta que tenga una razón de ser dentro de un proyecto propio.
+
+Estas fases no deben entenderse como simples operaciones mecánicas. Son decisiones que requieren análisis, criterio y una comprensión clara del producto que queremos desarrollar.
+
+### Un mismo conocimiento puede adoptar distintos formatos
+
+La creación de infoproductos no está limitada a los libros electrónicos ni a los documentos descargables.
+
+Un conocimiento puede desarrollarse en diferentes formatos, dependiendo de su naturaleza, de las necesidades del público y de la experiencia que queramos ofrecer. Esta posibilidad amplía las alternativas para quienes desean construir una oferta digital y evita que todas las propuestas terminen teniendo la misma presentación.
+
+Entre los formatos que podemos explorar se encuentran:
+
+- **Texto:** libros electrónicos, guías y otros materiales escritos que permiten desarrollar conceptos de manera organizada.
+- **Audio:** contenidos que trasladan el conocimiento a una experiencia de escucha.
+- **Vídeo:** explicaciones y desarrollos audiovisuales que permiten mostrar procesos y comunicar información de forma visual.
+- **Interactivo:** propuestas en las que el usuario participa activamente en la experiencia de aprendizaje o consulta.
+- **Visual:** contenidos que organizan y comunican información mediante recursos gráficos.
+
+La elección del formato no debería responder únicamente a una tendencia. Debe estar relacionada con el contenido, su finalidad y la manera más adecuada de transmitirlo.
+
+También podemos considerar que una misma temática tenga distintas aplicaciones. Un conocimiento desarrollado inicialmente en formato escrito puede dar lugar a otras propuestas, siempre que se realice el trabajo necesario para adaptar su estructura y experiencia a cada medio.
+
+### Del producto digital a un proyecto comercial
+
+Desarrollar un infoproducto es una parte del proceso. Para convertirlo en una actividad comercial necesitamos comprender también cómo se presenta, dónde se distribuye, cómo llega a sus posibles compradores y qué mecanismos permiten mantener su continuidad.
+
+Aquí entran en juego distintas áreas del entorno digital.
+
+La publicación en plataformas como Amazon KDP, la comercialización mediante programas de afiliación y la utilización de plataformas propias representan alternativas que pueden formar parte de una estrategia de distribución. Cada opción tiene características y condiciones diferentes, por lo que conviene evaluar cuál se adapta mejor al producto y al modelo de negocio.
+
+La creación del producto tampoco garantiza que exista demanda. Necesitamos comprender a quién nos dirigimos, qué problema o interés aborda nuestra propuesta y cómo podemos comunicar su utilidad.
+
+Por eso, el desarrollo comercial requiere conectar varias disciplinas:
+
+**Creación del producto.** Definir qué ofrecemos, organizar el contenido y desarrollar una propuesta que tenga coherencia.
+
+**Diseño y presentación.** Trabajar la identidad visual y la manera en que el producto se presenta ante su público.
+
+**Distribución.** Evaluar las plataformas y los canales que permiten poner el producto a disposición de los compradores.
+
+**Visibilidad.** Comprender el papel del tráfico, el posicionamiento en buscadores y otras vías de adquisición de audiencia.
+
+**Comercialización.** Analizar las posibilidades de venta, afiliación y relación con los clientes.
+
+**Continuidad.** Explorar la automatización, la creación de comunidades y las oportunidades de desarrollar relaciones comerciales recurrentes.
+
+Estas áreas no funcionan de manera aislada. Un producto puede estar bien elaborado y tener una presentación atractiva, pero necesita una estrategia de distribución y visibilidad para encontrar a su público. Del mismo modo, atraer visitantes no resuelve por sí solo la necesidad de ofrecer algo relevante y facilitar una experiencia comercial coherente.
+
+La perspectiva adecuada consiste en comprender cómo se relacionan las distintas partes del proceso.
+
+### Inteligencia artificial: una herramienta para ampliar las posibilidades de creación
+
+La inteligencia artificial ha incorporado nuevas posibilidades a la producción de contenidos y al desarrollo de productos digitales. Puede ayudarnos a investigar temas, organizar información, explorar enfoques, revisar materiales y trabajar con distintos formatos.
+
+En el contexto del PLR, estas capacidades pueden facilitar determinadas tareas de transformación y producción. Sin embargo, utilizar inteligencia artificial no significa que el resultado tenga automáticamente calidad, originalidad o valor comercial.
+
+La herramienta puede generar propuestas, pero necesitamos evaluar su precisión, comprobar la información, detectar inconsistencias y decidir qué merece incorporarse al producto.
+
+También debemos evitar una confusión frecuente: producir más contenido no significa necesariamente crear mejores productos.
+
+La calidad depende de la utilidad de la información, de su organización, de la claridad con la que se comunica y de su adecuación al público. La tecnología puede ayudarnos a trabajar con mayor amplitud, pero el criterio humano sigue siendo necesario para definir el propósito y evaluar el resultado.
+
+Por eso, la combinación entre recursos existentes, herramientas actuales y decisiones editoriales puede abrir nuevas oportunidades, siempre que no confundamos velocidad de producción con calidad.
+
+### Qué necesitamos comprender antes de crear nuestro primer infoproducto
+
+Quienes se acercan por primera vez a este campo suelen concentrarse en encontrar un material, elegir una temática o descubrir qué plataforma utilizar para vender.
+
+Son cuestiones importantes, pero conviene plantearlas dentro de una perspectiva más amplia.
+
+Antes de comenzar, necesitamos comprender algunas preguntas fundamentales:
+
+- ¿Qué conocimiento queremos convertir en un producto y qué utilidad puede ofrecer?
+- ¿Existe un público concreto interesado en esa temática?
+- ¿El material de partida tiene calidad suficiente y podemos utilizarlo conforme a sus condiciones de licencia?
+- ¿Qué cambios necesita para convertirse en una propuesta coherente y actual?
+- ¿Qué formato permite comunicar mejor el contenido?
+- ¿Qué plataforma o canal de distribución tiene sentido para el producto?
+- ¿Cómo conseguiremos visibilidad y qué estrategia utilizaremos para llegar a posibles compradores?
+- ¿Qué podemos hacer para que el producto forme parte de un proyecto sostenible y no sea una publicación aislada?
+
+No necesitamos tener todas las respuestas desde el primer momento. Lo importante es entender que la creación de un producto digital implica mucho más que preparar un archivo y publicarlo.
+
+Cada decisión influye en las siguientes. Por eso, adquirir una visión general del proceso antes de comenzar puede ayudarnos a evitar trabajo innecesario y a construir propuestas con mayor coherencia.
+
+### Experto en PLR Premium: una guía para comprender el proceso completo
+
+Dentro de esta ruta temática, **Experto en PLR Premium** aborda la creación de infoproductos a partir de recursos PLR y su desarrollo dentro del entorno digital actual.
+
+La obra parte de los fundamentos del PLR y amplía el recorrido hacia la transformación de contenidos mediante inteligencia artificial, la producción en distintos formatos y el diseño de productos. También contempla su publicación y comercialización mediante alternativas como Amazon KDP, programas de afiliación y plataformas propias.
+
+El recorrido incluye otras áreas necesarias para comprender el desarrollo comercial de estos productos: tráfico, posicionamiento SEO, automatización, comunidades, ventas recurrentes, análisis y escalabilidad.
+
+Su planteamiento permite observar la creación de infoproductos como un proceso más amplio que la simple reutilización de materiales. El objetivo es comprender las decisiones que intervienen desde la selección del recurso inicial hasta las posibilidades de desarrollar una actividad comercial alrededor del producto.
+
+La obra constituye el punto de partida de la categoría Origen y reúne los fundamentos necesarios para explorar este ámbito con una visión que conecta creación, tecnología, distribución y comercialización.
+
+**Consulta la ficha de Experto en PLR Premium** para conocer los detalles del libro y sus opciones disponibles.
+
+### El origen de un proyecto comienza con una decisión
+
+La posibilidad de crear productos digitales a partir de conocimientos y recursos existentes representa una oportunidad, pero también exige responsabilidad sobre lo que desarrollamos y ofrecemos.
+
+No basta con encontrar un material, modificar su presentación y ponerlo a la venta. Necesitamos comprender su contenido, respetar sus condiciones de uso, aportar criterio en su transformación y desarrollar una propuesta que tenga sentido para quienes la reciben.
+
+Ese es el verdadero punto de partida: pasar de disponer de recursos a saber qué podemos construir con ellos.
+
+En FG Perspectiva entendemos Origen como el comienzo de ese recorrido. Una primera aproximación a la creación de productos digitales, a la transformación del conocimiento y a las decisiones que permiten desarrollar una propuesta propia.
+
+Porque antes de pensar en escalar un negocio digital, necesitamos comprender qué estamos construyendo, qué valor queremos aportar y cómo podemos convertir una idea en un producto con una finalidad definida.
+
+## 5. PRESENTACIÓN DEL LIBRO
+
+La sección «Experto en PLR Premium: una guía para comprender el proceso completo» debe incluir una presentación visual del libro.
+
+Para ello:
+
+- Recuperar la portada real desde el registro existente del libro en `constants.tsx`.
+- Utilizar el título y los datos reales existentes.
+- Recuperar la ruta canónica exacta de su ficha individual desde la fuente de datos del proyecto.
+- No inventar ni reconstruir la URL de la ficha.
+- No escribir manualmente datos comerciales que ya estén definidos en el catálogo.
+- No modificar el registro del libro ni sus enlaces.
+
+La acción principal debe ser **«Ver ficha del libro»**, enlazada a la ficha individual del libro.
+
+Si existen opciones de compra, se podrá ofrecer **«Opciones de compra»** como acción secundaria, reutilizando el mecanismo de compra que ya utiliza el proyecto.
+
+No mostrar precios, formatos ni disponibilidad que no estén confirmados por los datos existentes.
+
+El bloque debe ser una presentación editorial del único libro de esta categoría, no una tarjeta genérica de producto ni un banner comercial desproporcionado.
+
+## 6. ESTRUCTURA SEMÁNTICA Y SEO
+
+La página debe tener una estructura HTML semántica correcta.
+
+### Jerarquía de encabezados
+
+- Un único H1: «Origen: del conocimiento existente a la creación de productos digitales propios».
+- Los títulos principales de las secciones deben utilizar H2.
+- Los subtítulos internos deben utilizar H3 cuando corresponda.
+- No utilizar encabezados para conseguir únicamente un tamaño visual.
+- No saltar niveles de encabezado sin justificación.
+
+### Metadatos SEO
+
+Configurar metadatos exclusivos para `/origen/`.
+
+**Title:**
+
+Origen: creación de productos digitales y PLR | FG Perspectiva
+
+**Meta description:**
+
+Descubre cómo aprovechar recursos PLR, transformar conocimientos en infoproductos propios y desarrollar productos digitales con criterio, identidad y visión comercial.
+
+**Canonical:**
+
+`https://fgperspectiva.vercel.app/origen/`
+
+Eliminar emojis de los títulos públicos y de los metadatos SEO.
+
+La imagen Open Graph debe ser una imagen corporativa editorial ya existente y adecuada para FG Perspectiva. No utilizar una imagen representativa de la categoría ni la portada del libro como sustituto automático de la imagen corporativa.
+
+Configurar correctamente Open Graph y Twitter Cards, manteniendo coherencia con el SEO existente.
+
+### Datos estructurados
+
+Revisar el esquema JSON-LD actual y adaptar el correspondiente a `/origen/` para representar correctamente una página de categoría editorial.
+
+Se puede utilizar `CollectionPage`, `ItemList` y `BreadcrumbList`, según la estructura ya existente.
+
+El `ItemList` debe contener únicamente el libro real de esta categoría, con su URL canónica recuperada de los datos existentes.
+
+No inventar ISBN, precio, valoración, número de reseñas, disponibilidad ni propiedades comerciales.
+
+No utilizar un esquema que presente la página como una obra individual ni atribuir a la editorial información que no esté confirmada.
+
+## 7. NAVEGACIÓN Y ENLACES
+
+Mantener el componente de migas de pan existente, con una jerarquía coherente:
+
+Inicio → Biblioteca → Origen
+
+No introducir enlaces artificiales ni repetir enlaces a la misma página sin una finalidad clara.
+
+La referencia al libro debe dirigir a su ficha individual real.
+
+No añadir enlaces a otras categorías dentro del texto si no aportan un valor editorial concreto.
+
+No modificar el menú superior ni el Footer.
+
+## 8. EXPERIENCIA DE USUARIO Y RESPONSIVE
+
+Verificar la página en:
+
+- Escritorio: 1440 px.
+- Tablet: 768 px.
+- Móvil: 390 px.
+
+Comprobar:
+
+- Lectura cómoda de los párrafos.
+- Anchura de texto adecuada para una página editorial extensa.
+- Jerarquía visual clara.
+- Separación correcta entre secciones.
+- Portada del libro proporcionada y sin deformaciones.
+- Acciones del libro visibles y funcionales.
+- Navegación correcta.
+- Ausencia de desbordamiento horizontal.
+- Contraste suficiente.
+- Estados de foco visibles.
+- Imágenes con texto alternativo descriptivo.
+- Ausencia de elementos decorativos innecesarios.
+
+No utilizar columnas estrechas para el cuerpo principal del artículo. La lectura debe ser fluida tanto en escritorio como en móvil.
+
+## 9. PRUEBAS Y VERIFICACIONES OBLIGATORIAS
+
+Después de implementar:
+
+1. Ejecutar TypeScript y comprobar que no existen errores.
+2. Ejecutar el build de producción.
+3. Ejecutar el prerender de las rutas existentes.
+4. Comprobar que `/origen/` se genera correctamente.
+5. Verificar que el HTML prerenderizado contiene el contenido editorial completo.
+6. Verificar que existe un solo H1.
+7. Comprobar los metadatos y la URL canonical.
+8. Comprobar que los datos estructurados son JSON-LD válido.
+9. Verificar la portada real del libro.
+10. Verificar el enlace a la ficha individual y las opciones de compra cuando existan.
+11. Comprobar la navegación y las migas de pan.
+12. Realizar pruebas responsive en escritorio, tablet y móvil.
+13. Comprobar que las otras cinco categorías continúan funcionando exactamente como antes.
+14. Comprobar que Biblioteca, Home, Sistemas Digitales, Sobre FG Perspectiva y Contacto no presentan cambios.
+15. Revisar la consola y la red para detectar errores.
+
+## 10. BACKUP Y CONTROL DE CAMBIOS
+
+Antes de modificar archivos:
+
+- Crear un backup de todos los archivos que se vayan a modificar.
+- Guardarlo en una carpeta identificable, por ejemplo `/_backup_rediseno_origen/`.
+- No sobrescribir backups anteriores.
+
+Al finalizar:
+
+- Informar de todos los archivos creados y modificados.
+- Identificar qué cambios se realizaron en cada archivo.
+- Indicar la ubicación del backup.
+- Informar de los resultados de TypeScript, build, prerender y pruebas responsive.
+- Confirmar expresamente que las otras cinco categorías y el resto de páginas protegidas permanecen intactas.
+- Informar de cualquier limitación o prueba que no haya podido realizarse.
+
+## 11. RESTRICCIÓN FINAL
+
+Este trabajo comprende exclusivamente la implementación local de la nueva página `/origen/`.
+
+No realizar despliegues, publicaciones ni cambios en Vercel.
+
+No modificar el Footer bajo ninguna circunstancia.
+
+No reinterpretar el contenido editorial aprobado ni sustituirlo por una versión abreviada.
+
+No introducir cambios adicionales en el diseño o la arquitectura general de FG Perspectiva.
+
+El resultado debe ser una página editorial profunda, clara, técnicamente correcta y con una identidad propia dentro de la web.
