@@ -1,0 +1,657 @@
+# INSTRUCCIÓN INTEGRAL DE IMPLEMENTACIÓN — REDISEÑO EDITORIAL Y ESTRUCTURAL DE LA PÁGINA /iniciacion/ DE FG PERSPECTIVA
+
+## 1. OBJETIVO GENERAL
+
+Implementar un rediseño editorial, visual, estructural y SEO de la página `/iniciacion/` de FG Perspectiva.
+
+La página debe convertirse en una página editorial independiente, con identidad propia y contenido sustancial. No debe limitarse a mostrar las portadas de sus tres libros ni funcionar como una variación superficial de la plantilla utilizada por las demás categorías.
+
+Su función es desarrollar un territorio temático específico: los fundamentos necesarios para construir una presencia digital propia y convertirla progresivamente en un proyecto organizado, visible y con posibilidades de monetización.
+
+La página debe explicar y relacionar, con profundidad y claridad, los siguientes ámbitos:
+
+- La definición y planificación de un proyecto digital.
+- El blog como infraestructura de una presencia propia.
+- La organización y planificación de contenidos.
+- La visibilidad y los fundamentos del posicionamiento SEO.
+- El desarrollo de una audiencia y la relación con sus integrantes.
+- Las primeras posibilidades de monetización mediante afiliación.
+- Los fundamentos del inbound marketing.
+- La integración de los componentes dentro de un proyecto coherente.
+
+**No queremos una página de categoría convencional ni un texto introductorio breve. Queremos una página editorial completa, con valor informativo propio y una arquitectura argumental que responda a la intención de búsqueda de esta temática.**
+
+## 2. REVISIÓN TÉCNICA PREVIA Y COPIA DE SEGURIDAD
+
+Antes de modificar archivos:
+
+1. Inspecciona la arquitectura actual del proyecto y localiza cómo se resuelve la ruta `/iniciacion/`.
+2. Identifica la implementación independiente de `/origen/` en `OriginView.tsx`, `App.tsx` y `seo.ts`, así como los mecanismos existentes para obtener los datos de cada categoría.
+3. Inspecciona `constants.tsx`, `types.ts`, `PurchaseModal.tsx` y los componentes de navegación y SEO necesarios para integrar correctamente los tres libros.
+4. Comprueba los nombres, slugs, portadas, enlaces de compra y opciones comerciales reales de los tres libros de Iniciación.
+5. Comprueba cómo se generan actualmente los breadcrumbs y los datos estructurados.
+6. Crea una copia de seguridad de todos los archivos que vayas a modificar, conservando sus rutas originales dentro de una carpeta específica, por ejemplo:
+   `_backup_rediseno_iniciacion/`.
+
+No modifiques archivos hasta haber identificado las dependencias y confirmado qué elementos son necesarios.
+
+## 3. IDENTIDAD EDITORIAL Y DIFERENCIACIÓN
+
+La página debe tener una identidad propia, diferente de `/origen/` y de las otras cinco categorías.
+
+La distinción conceptual es obligatoria:
+
+- **Origen:** transformar conocimientos y recursos existentes en productos digitales propios.
+- **Iniciación:** construir los fundamentos de una presencia digital y organizar los primeros componentes de un proyecto online.
+
+La pregunta central que debe orientar la página es:
+
+**¿Qué necesitamos construir para pasar de tener una idea a desarrollar una presencia digital con posibilidades reales de crecimiento?**
+
+No reutilices la estructura argumental de Origen cambiando títulos o palabras. Tampoco conviertas los once apartados en once tarjetas visuales idénticas.
+
+Diseña una composición editorial propia para Iniciación. La jerarquía visual debe ayudar a comprender la progresión del contenido: primero la definición del proyecto, después su infraestructura, la creación de contenidos, la visibilidad, la audiencia, las posibilidades comerciales y la integración de todos los componentes.
+
+Puedes utilizar recursos tipográficos, divisores, bloques editoriales, diagramas conceptuales o composiciones visuales funcionales, siempre que aporten claridad y no se conviertan en decoración innecesaria.
+
+No utilices fotografías genéricas, banners, ilustraciones, iconos decorativos ni imágenes que representen la categoría. Las únicas imágenes de contenido permitidas son las portadas oficiales de los tres libros.
+
+Mantén la identidad visual de FG Perspectiva: tipografías, colores, fondos, tratamiento editorial y coherencia con el resto del sitio. La diferenciación debe proceder de la composición y la arquitectura de esta página, no de crear una identidad de marca distinta.
+
+## 4. CONTENIDO EDITORIAL COMPLETO Y DEFINITIVO
+
+El contenido siguiente está aprobado y debe incorporarse íntegramente.
+
+**No resumir, abreviar, reescribir, sustituir por fragmentos ni eliminar apartados.** No convertir el contenido en pestañas, acordeones cerrados o elementos que oculten partes sustanciales del texto. Todo el desarrollo editorial debe estar disponible y ser visible en la página.
+
+Se permite ajustar únicamente los elementos de presentación necesarios para integrarlo correctamente en el diseño, sin alterar su significado ni reducir su contenido.
+
+---
+
+# Iniciación: construir una presencia digital desde sus fundamentos
+
+## Antes de crear un proyecto digital, necesitamos saber qué queremos construir
+
+Comenzar un proyecto en Internet parece, a primera vista, una tarea sencilla. Podemos abrir un blog, crear una página web, publicar contenidos y comenzar a compartirlos en distintos canales. Las herramientas están disponibles y nunca había sido tan accesible poner en marcha una presencia digital.
+
+Sin embargo, tener un sitio web no significa haber construido un proyecto. Publicar artículos no garantiza que lleguemos a las personas adecuadas, y recibir visitas tampoco implica que estemos desarrollando una actividad con posibilidades de continuidad.
+
+La diferencia está en lo que existe detrás de esas acciones.
+
+Un proyecto digital necesita una dirección, una propuesta de valor y una estructura que permita relacionar sus distintos componentes. Antes de elegir una plataforma o comenzar a publicar, debemos comprender qué queremos ofrecer, a quién nos dirigimos y qué función cumplirá nuestra presencia en Internet.
+
+Podemos querer compartir conocimientos, desarrollar una publicación especializada, recomendar productos y servicios, crear una comunidad o construir una fuente de ingresos. Cada propósito implica decisiones diferentes, pero todos necesitan una base sobre la que podamos trabajar.
+
+En FG Perspectiva entendemos la iniciación como el proceso de adquirir esos fundamentos. No se trata de reunir herramientas ni de reproducir modelos ajenos, sino de comprender cómo se desarrolla una presencia digital propia y qué elementos permiten convertirla en un proyecto organizado.
+
+El primer paso consiste en dejar de pensar únicamente en lo que vamos a publicar y comenzar a pensar en lo que queremos construir.
+
+## El blog como centro de una presencia digital propia
+
+Una de las decisiones más importantes al comenzar un proyecto online es elegir dónde estableceremos nuestra presencia principal.
+
+Las redes sociales, las plataformas de publicación y otros canales digitales permiten comunicarnos con una audiencia, pero no todos ofrecen el mismo nivel de control sobre los contenidos, la estructura y las condiciones de funcionamiento. Por eso, disponer de un espacio propio puede representar una ventaja importante.
+
+Un blog permite organizar información, desarrollar contenidos especializados, crear páginas permanentes y establecer una estructura de navegación que responda a las necesidades de nuestros visitantes.
+
+No debemos entenderlo únicamente como un lugar donde publicamos artículos cronológicamente. Puede convertirse en el centro de una presencia digital que reúna diferentes recursos y conecte distintas actividades.
+
+Para que cumpla esa función, necesitamos prestar atención a su arquitectura.
+
+### La organización determina cómo se utiliza un sitio web
+
+Un sitio web debe permitir que las personas comprendan rápidamente dónde están, qué pueden encontrar y cómo acceder a la información que necesitan.
+
+Esto requiere una organización lógica de las páginas, las categorías y los contenidos. También implica establecer relaciones entre los distintos temas para que la navegación no dependa exclusivamente de los buscadores.
+
+Una estructura bien planteada facilita varias tareas:
+
+- **Identificar el propósito del sitio:** la página principal debe comunicar qué ofrece el proyecto y a quién puede resultar útil.
+- **Organizar los contenidos:** las categorías permiten agrupar publicaciones relacionadas y establecer una jerarquía temática.
+- **Facilitar la navegación:** los menús, enlaces internos y elementos de orientación ayudan a encontrar información sin recorrer páginas innecesarias.
+- **Crear páginas de referencia:** determinadas secciones necesitan permanecer accesibles porque explican el proyecto, sus servicios o sus principales recursos.
+- **Mantener una experiencia coherente:** diseño, estructura y contenido deben trabajar juntos para que el usuario pueda recorrer el sitio con facilidad.
+
+La arquitectura también tiene consecuencias para el posicionamiento en buscadores. Cuando los contenidos están organizados de forma comprensible, resulta más sencillo identificar de qué trata cada página y cómo se relaciona con el resto del sitio.
+
+Por tanto, construir un blog no consiste solamente en instalar una plantilla y comenzar a escribir. Necesitamos desarrollar una infraestructura que permita publicar, organizar y conectar el conocimiento que queremos compartir.
+
+## El contenido como fundamento del proyecto
+
+Una vez que tenemos una estructura, aparece una de las decisiones que más influirá en el desarrollo de nuestra presencia digital: qué contenidos vamos a crear.
+
+Publicar con frecuencia puede parecer una buena estrategia, pero la cantidad de artículos no determina por sí sola la calidad de un proyecto. Un sitio puede acumular decenas de publicaciones y seguir sin ofrecer una propuesta reconocible si sus contenidos no responden a una dirección editorial.
+
+Necesitamos identificar los temas que queremos abordar, comprender qué busca nuestra audiencia y establecer qué conocimientos podemos desarrollar de manera consistente.
+
+Esto implica pasar de la improvisación a una planificación editorial.
+
+### Comprender qué necesita encontrar nuestra audiencia
+
+Los contenidos adquieren sentido cuando responden a preguntas, necesidades, intereses o problemas reales.
+
+Una persona que busca información sobre un tema puede encontrarse en diferentes situaciones. Quizá está descubriendo una disciplina, comparando alternativas, intentando resolver una dificultad concreta o buscando información para tomar una decisión.
+
+Comprender esas diferencias nos ayuda a desarrollar publicaciones más útiles.
+
+No es lo mismo explicar los fundamentos de una actividad que ofrecer una guía para resolver un problema específico. Tampoco es igual presentar un concepto que analizar distintas alternativas para que el lector pueda elegir.
+
+Por eso, antes de escribir, conviene preguntarnos:
+
+- ¿Qué quiere comprender la persona que busca este tema?
+- ¿Qué conocimientos necesita para avanzar?
+- ¿Qué dudas suelen aparecer alrededor de esta cuestión?
+- ¿Qué información podemos aportar que resulte clara y útil?
+- ¿Qué relación tiene este contenido con el propósito general del proyecto?
+
+Estas preguntas ayudan a evitar publicaciones creadas únicamente para incorporar palabras clave o aumentar el número de páginas indexadas.
+
+### Construir una línea editorial reconocible
+
+Un proyecto digital necesita cierta continuidad temática. Esto no significa que todos sus contenidos deban tratar exactamente el mismo asunto, sino que deben guardar una relación comprensible con la propuesta general.
+
+Podemos organizar las publicaciones en grandes áreas, desarrollar temas relacionados y avanzar desde conceptos fundamentales hacia cuestiones más específicas.
+
+Esta organización facilita la planificación y permite que cada artículo contribuya a construir una biblioteca de conocimiento.
+
+Con el tiempo, los contenidos pueden reforzarse entre sí. Una publicación introductoria puede conducir a otra más especializada, mientras que una guía amplia puede reunir enlaces hacia explicaciones más concretas.
+
+De esta manera, el sitio deja de ser una sucesión de artículos independientes y comienza a funcionar como un recurso organizado.
+
+## Visibilidad: cómo conseguir que nos encuentren
+
+Un contenido puede estar bien elaborado y responder a una necesidad real, pero si nadie consigue encontrarlo, su alcance será limitado.
+
+La visibilidad constituye uno de los desafíos principales de cualquier proyecto digital. Necesitamos desarrollar mecanismos que permitan conectar nuestras publicaciones con las personas interesadas en los temas que abordamos.
+
+Entre las distintas posibilidades, el posicionamiento orgánico en buscadores ocupa un lugar importante porque permite que los contenidos aparezcan cuando alguien realiza una búsqueda relacionada con ellos.
+
+Sin embargo, trabajar el SEO no significa incorporar palabras clave de manera repetitiva ni adaptar cada párrafo para satisfacer un algoritmo. Significa comprender cómo buscan las personas, qué información esperan encontrar y cómo podemos ofrecerla de una manera organizada.
+
+### La intención de búsqueda como punto de partida
+
+Detrás de una consulta existe una necesidad. Una persona puede buscar una definición, una explicación, una comparación, una solución o una recomendación.
+
+Identificar esa intención nos permite determinar qué tipo de contenido debemos desarrollar.
+
+Si alguien busca cómo crear un blog, probablemente necesita comprender los pasos iniciales, las decisiones técnicas y la organización del sitio. Si busca comparar plataformas, espera encontrar diferencias relevantes que le ayuden a elegir.
+
+Cuando el contenido responde a la intención de búsqueda, tiene más posibilidades de resultar útil.
+
+### La estructura también influye en el posicionamiento
+
+El SEO no depende únicamente del texto. La organización de las páginas, los encabezados, los enlaces internos, los títulos y las descripciones ayudan a comunicar el contenido de cada URL.
+
+También debemos considerar aspectos técnicos como la velocidad, la adaptación a dispositivos móviles, la indexación y la correcta configuración de las direcciones canónicas.
+
+A esto se suma la necesidad de desarrollar información suficientemente completa y bien organizada para que el usuario encuentre respuestas sin tener que recorrer varias páginas que repiten lo mismo.
+
+El posicionamiento es, por tanto, una combinación de contenido, arquitectura y aspectos técnicos. Ninguno de estos elementos garantiza por sí solo resultados, pero todos contribuyen a construir una presencia digital más sólida.
+
+## De las visitas a una audiencia: desarrollar una relación
+
+Conseguir tráfico es importante, pero debemos distinguir entre recibir visitantes y desarrollar una audiencia.
+
+Una visita representa una interacción puntual. Una audiencia implica que las personas reconocen el valor de lo que ofrecemos, encuentran motivos para regresar y pueden mantener una relación con el proyecto.
+
+Esta diferencia cambia la manera de entender el crecimiento.
+
+No necesitamos atraer a cualquier visitante. Nos interesa llegar a personas que tengan relación con los temas que desarrollamos y que puedan encontrar utilidad en nuestros contenidos.
+
+Para ello, la consistencia editorial es fundamental. Cuando un sitio aborda sus temas con claridad, ofrece información útil y mantiene una organización comprensible, resulta más sencillo que los usuarios identifiquen su propuesta.
+
+También debemos considerar que no todas las personas llegan con el mismo nivel de conocimiento. Algunas están comenzando a explorar un tema, mientras que otras buscan información más avanzada. Una buena organización permite atender diferentes necesidades sin perder coherencia.
+
+### La relación no termina cuando el usuario abandona una página
+
+Una presencia digital puede desarrollar distintos mecanismos para mantener el contacto con su audiencia.
+
+Entre ellos se encuentran las suscripciones voluntarias, las publicaciones periódicas, los recursos descargables y los canales de comunicación directa.
+
+El email marketing, por ejemplo, permite establecer una relación que no depende exclusivamente de que una persona vuelva a encontrar nuestro sitio en un buscador o en una red social.
+
+Lo importante es comprender que una audiencia no se construye únicamente acumulando direcciones o seguidores. Se desarrolla ofreciendo motivos para mantener el interés y respetando la relación que establecemos con las personas.
+
+La confianza se construye mediante la utilidad, la coherencia y la continuidad de lo que publicamos.
+
+## Primeras posibilidades de monetización: cuando el contenido se conecta con una actividad comercial
+
+Un proyecto digital puede comenzar con el propósito de compartir conocimientos, desarrollar una publicación especializada o crear una presencia profesional. Con el tiempo, también puede incorporar mecanismos de monetización.
+
+Uno de los modelos que permite explorar esta posibilidad es el marketing de afiliados.
+
+Mediante los programas de afiliación podemos recomendar productos o servicios de terceros y recibir una comisión cuando se produce una acción comercial válida, según las condiciones de cada programa.
+
+Este modelo puede integrarse en un blog cuando existe una relación lógica entre los contenidos publicados, las necesidades de la audiencia y los productos recomendados.
+
+Sin embargo, no basta con insertar enlaces comerciales en los artículos. Para que la recomendación tenga sentido, necesitamos comprender qué ofrecemos, por qué puede resultar relevante y qué información necesita el lector antes de tomar una decisión.
+
+### La monetización debe responder al propósito del contenido
+
+Imaginemos un sitio especializado en una disciplina concreta. Sus publicaciones pueden explicar conceptos, analizar herramientas, comparar alternativas y orientar a los lectores en distintas etapas de su aprendizaje.
+
+Dentro de ese contexto, determinadas recomendaciones comerciales pueden resultar naturales porque están relacionadas con los temas que se desarrollan.
+
+En cambio, incorporar productos sin conexión con el contenido puede perjudicar la experiencia y debilitar la credibilidad del proyecto.
+
+Por eso, la monetización no debería convertirse en el único criterio para decidir qué publicamos.
+
+Un proyecto sostenible necesita encontrar una relación equilibrada entre utilidad editorial, necesidades de audiencia y posibilidades comerciales.
+
+### Comprender el papel de los programas de afiliados
+
+Los programas de afiliación presentan condiciones diferentes. Algunos remuneran las compras realizadas mediante enlaces de recomendación, mientras que otros pueden utilizar modelos de atribución y acciones comerciales distintos.
+
+También pueden variar las comisiones, las reglas de promoción, los plazos de atribución y los requisitos para participar.
+
+Antes de incorporarnos a un programa, debemos conocer sus condiciones y comprobar que los productos o servicios encajan con nuestra propuesta editorial.
+
+La transparencia también forma parte de esta relación. Las recomendaciones comerciales deben identificarse adecuadamente y no presentarse como opiniones independientes cuando existe un vínculo de afiliación.
+
+El objetivo es desarrollar una actividad comercial que no contradiga la confianza que intentamos construir con nuestros contenidos.
+
+## Inbound marketing: atraer antes de vender
+
+El marketing digital reúne diferentes disciplinas y mecanismos para conectar una propuesta con su público. Dentro de ese conjunto, el inbound marketing plantea una perspectiva centrada en atraer personas mediante contenidos y experiencias relevantes, en lugar de depender exclusivamente de mensajes comerciales dirigidos de forma indiscriminada.
+
+Su importancia está en comprender que las personas no siempre están preparadas para tomar una decisión en el primer contacto con una marca, un producto o un servicio.
+
+Algunas apenas están descubriendo un problema. Otras investigan alternativas y comparan opciones. También existen personas que ya conocen lo que necesitan y están evaluando dónde adquirirlo.
+
+Una estrategia de inbound marketing considera esas distintas etapas y desarrolla contenidos adecuados para acompañar el recorrido.
+
+### Atracción, conversión, relación y fidelización
+
+Podemos comprender este enfoque mediante cuatro grandes procesos:
+
+**Atracción.** Desarrollar contenidos y experiencias que permitan llegar a personas interesadas en los temas relacionados con nuestra propuesta.
+
+**Conversión.** Facilitar que los visitantes realicen una acción voluntaria y relevante, como solicitar información, suscribirse o descargar un recurso.
+
+**Relación.** Mantener una comunicación útil y coherente con las personas que han mostrado interés, ofreciendo información relacionada con sus necesidades.
+
+**Fidelización.** Desarrollar experiencias que permitan conservar una relación positiva y duradera con quienes ya han confiado en la propuesta.
+
+Estos procesos no deben entenderse como una secuencia automática ni como una garantía de ventas. Son una manera de organizar la comunicación y comprender cómo evoluciona la relación entre una organización y su audiencia.
+
+En un proyecto basado en contenidos, el blog puede contribuir especialmente a la atracción, mientras que los formularios, el correo electrónico y otros canales pueden facilitar la continuidad de la relación.
+
+La clave está en que cada elemento tenga una función definida.
+
+## Cómo se conectan los componentes de un proyecto digital
+
+Hasta aquí hemos abordado diferentes disciplinas: creación de un sitio web, organización de contenidos, SEO, desarrollo de audiencia, afiliación e inbound marketing.
+
+Podríamos tratarlas como actividades independientes, pero su verdadero potencial aparece cuando comprendemos cómo se relacionan.
+
+El blog proporciona el espacio donde organizamos y publicamos nuestros contenidos. La estrategia editorial determina qué información desarrollamos y para quién. El SEO contribuye a mejorar la visibilidad de las publicaciones. Los canales de comunicación permiten mantener una relación con la audiencia, mientras que los modelos de monetización pueden conectar la propuesta editorial con una actividad comercial.
+
+Cada componente cumple una función diferente, pero todos deben responder a una misma dirección.
+
+**Presencia digital → Contenidos → Visibilidad → Audiencia → Relación → Monetización**
+
+Esta secuencia no representa una fórmula rígida ni un recorrido idéntico para todos los proyectos. Es una manera de visualizar cómo pueden conectarse las principales áreas de trabajo.
+
+También nos ayuda a reconocer por qué algunas iniciativas no avanzan como esperan sus creadores.
+
+Un blog puede publicar artículos sin desarrollar una estrategia de visibilidad. Un sitio puede atraer visitas sin ofrecer una propuesta reconocible. Una página puede incorporar enlaces de afiliación sin haber construido la confianza necesaria para que sus recomendaciones resulten relevantes.
+
+El problema no siempre está en una herramienta concreta. Muchas veces está en la falta de conexión entre las decisiones que forman parte del proyecto.
+
+## Errores que pueden debilitar un proyecto digital desde el comienzo
+
+La facilidad para poner en marcha una página web puede llevarnos a comenzar sin haber reflexionado suficientemente sobre su estructura y su propósito.
+
+Algunos errores no producen consecuencias inmediatas, pero pueden dificultar el crecimiento posterior.
+
+**Crear un sitio sin una dirección definida.** Cuando no sabemos qué queremos ofrecer ni a quién nos dirigimos, los contenidos tienden a dispersarse y la propuesta pierde claridad.
+
+**Publicar sin una planificación editorial.** La improvisación puede generar actividad durante un tiempo, pero dificulta construir una línea temática coherente y desarrollar contenidos relacionados.
+
+**Depender exclusivamente de plataformas externas.** Las redes sociales pueden ser canales útiles, pero no deberían sustituir automáticamente la construcción de una presencia propia cuando el objetivo es desarrollar un activo digital.
+
+**Confundir tráfico con resultados.** Recibir visitas no significa que estemos alcanzando a la audiencia adecuada ni que exista una relación entre el contenido y los objetivos del proyecto.
+
+**Intentar monetizar antes de comprender al público.** Incorporar recomendaciones comerciales sin conocer las necesidades de los lectores puede perjudicar la confianza y restar utilidad a las publicaciones.
+
+**Tratar el SEO como una colección de trucos.** Repetir palabras clave o producir páginas sin valor editorial no sustituye la necesidad de responder bien a las búsquedas.
+
+**Abandonar antes de desarrollar continuidad.** Una presencia digital necesita tiempo para organizar sus contenidos, mejorar su visibilidad y encontrar una relación adecuada con su audiencia. La constancia, acompañada de análisis y ajustes, es más útil que publicar sin dirección.
+
+Evitar estos errores no garantiza el éxito, pero permite comenzar con una comprensión más realista de lo que implica desarrollar un proyecto online.
+
+## Tres perspectivas para comenzar a construir
+
+La categoría Iniciación reúne tres obras que abordan áreas diferentes, pero relacionadas, del desarrollo de una presencia digital.
+
+Cada una permite acercarse a un componente específico del proyecto: la construcción del blog, las posibilidades de monetización mediante afiliación y la comprensión de las estrategias de inbound marketing.
+
+### Cómo crear un Blog optimizado
+
+El blog constituye una de las infraestructuras fundamentales para organizar una presencia digital basada en contenidos. Esta obra se relaciona con el desarrollo y la optimización de ese espacio propio, un punto de partida para quienes desean establecer una publicación online y trabajar sobre su estructura.
+
+### Mi Blog y los Programas de Afiliados
+
+Una vez que existe una presencia digital, podemos explorar cómo relacionar sus contenidos con oportunidades comerciales. Esta obra conecta el ámbito del blogging con los programas de afiliados, una de las alternativas que permite desarrollar actividades de recomendación y monetización dentro de un proyecto online.
+
+### Guía Completa de Inbound Marketing
+
+El crecimiento de una presencia digital también depende de cómo atraemos a las personas, establecemos relaciones y comunicamos una propuesta. Esta obra se sitúa en el ámbito del inbound marketing y permite explorar una perspectiva centrada en los contenidos y en la relación con la audiencia.
+
+Las tres perspectivas no representan una única fórmula ni tienen que aplicarse de manera idéntica en todos los proyectos. Su relación está en que abordan dimensiones distintas que podemos necesitar comprender al desarrollar una presencia digital propia.
+
+## El comienzo de una construcción a largo plazo
+
+Iniciar un proyecto digital no consiste simplemente en elegir una plataforma, publicar algunos artículos y esperar resultados. Supone tomar decisiones sobre qué queremos construir, cómo vamos a organizarlo y qué valor podemos aportar a las personas a las que nos dirigimos.
+
+Necesitamos comprender la función del sitio web, desarrollar una línea editorial, crear contenidos relevantes, trabajar la visibilidad y encontrar maneras coherentes de mantener una relación con la audiencia.
+
+La monetización puede formar parte de ese recorrido, pero no debería sustituir los fundamentos que permiten sostenerlo.
+
+En FG Perspectiva entendemos Iniciación como el territorio donde comenzamos a conectar esos conocimientos. Un espacio para comprender las bases de una presencia digital, reconocer las disciplinas que intervienen en su desarrollo y adquirir una perspectiva más amplia sobre lo que implica construir un proyecto online.
+
+No necesitamos comenzar con una estructura compleja ni dominar todas las herramientas desde el primer día. Necesitamos una dirección, fundamentos sólidos y la disposición para desarrollar cada componente con sentido.
+
+Porque un proyecto digital no empieza realmente cuando publicamos nuestra primera página. Empieza cuando sabemos qué queremos construir y comprendemos cómo dar forma a esa idea.
+
+---
+
+## 5. INTEGRACIÓN DE LOS TRES LIBROS
+
+La página debe mostrar los tres libros oficiales que pertenecen a la categoría Iniciación, utilizando los datos reales del catálogo centralizado del proyecto.
+
+Los libros son:
+
+1. **Cómo crear un Blog optimizado**
+2. **Mi Blog y los Programas de Afiliados**
+3. **Guía Completa de Inbound Marketing**
+
+### Reglas obligatorias
+
+- Recuperar los tres libros desde la categoría correspondiente en `constants.tsx` o desde la fuente de datos que actualmente utiliza el proyecto.
+- No crear objetos de libros duplicados ni introducir datos manuales que puedan diferir del catálogo.
+- Utilizar las portadas oficiales existentes.
+- No sustituir portadas por imágenes de búsqueda, ilustraciones o imágenes genéricas.
+- Mantener títulos, slugs, URLs, opciones comerciales y demás datos originales.
+- No inventar precios, ISBN, valoraciones, formatos o enlaces.
+- Cada libro debe tener un enlace principal a su ficha individual.
+- Cuando el libro disponga de opciones de compra, mostrar una acción secundaria para abrir el modal de compra existente.
+
+### Jerarquía de acciones
+
+La acción principal debe ser:
+
+**Ver ficha del libro**
+
+La acción secundaria, cuando existan opciones comerciales reales, debe ser:
+
+**Opciones de compra**
+
+No mostrar una acción de compra vacía cuando el libro no tenga opciones disponibles.
+
+El diseño de los tres libros debe integrarse dentro de la narrativa editorial. No debe ocupar visualmente más espacio ni tener más protagonismo que el desarrollo principal de la página.
+
+## 6. ARQUITECTURA VISUAL Y EXPERIENCIA DE USUARIO
+
+Desarrolla una composición editorial que corresponda a la temática de Iniciación.
+
+La página debe transmitir una progresión: comprender el proyecto, construir su infraestructura, desarrollar contenidos, conseguir visibilidad, establecer relaciones y explorar posibilidades de monetización.
+
+### Hero editorial
+
+El encabezado debe presentar claramente el tema de la página.
+
+- Un único H1: «Iniciación: construir una presencia digital desde sus fundamentos».
+- Un texto introductorio breve extraído del contenido aprobado, sin sustituir ni eliminar el desarrollo posterior.
+- Breadcrumbs: Inicio > Biblioteca > Iniciación.
+- No incorporar imágenes de categoría ni elementos decorativos innecesarios.
+
+### Desarrollo editorial
+
+El texto debe ser el protagonista.
+
+No conviertas cada H2 en una tarjeta idéntica. Utiliza una jerarquía visual variada y equilibrada, con una composición que permita leer cómodamente un contenido extenso.
+
+Puedes destacar visualmente, cuando resulte adecuado:
+
+- Las preguntas de reflexión.
+- Los conceptos centrales.
+- Las secuencias de procesos.
+- Las diferencias entre tráfico y audiencia.
+- La relación entre los componentes de un proyecto digital.
+
+El diagrama «Presencia digital → Contenidos → Visibilidad → Audiencia → Relación → Monetización» puede representarse visualmente, siempre que conserve su contenido, sea comprensible y se adapte correctamente a móviles.
+
+No dupliques el mismo texto en elementos visuales y párrafos.
+
+### Bloque de libros
+
+Presenta los tres libros con portadas oficiales, títulos y acciones correspondientes.
+
+Debe quedar claro qué dimensión del proyecto aborda cada obra, utilizando exclusivamente las descripciones aprobadas en el contenido editorial.
+
+### Cierre
+
+Conserva íntegramente el cierre aprobado:
+
+«El comienzo de una construcción a largo plazo».
+
+No añadas CTA comerciales, enlaces o secciones nuevas que no estén justificados por la navegación y el contenido aprobado.
+
+El enlace de retorno a Biblioteca puede mantenerse como acción de navegación, utilizando la ruta existente `/biblioteca/`.
+
+## 7. IMPLEMENTACIÓN TÉCNICA
+
+La página `/iniciacion/` debe funcionar como una vista independiente, siguiendo el principio de independencia ya aplicado a `/origen/`.
+
+Como referencia arquitectónica, estudia la implementación de `OriginView.tsx`, pero no copies su estructura visual ni su composición editorial.
+
+### Vista independiente
+
+Crear un componente específico:
+
+`components/views/InitiationView.tsx`
+
+La implementación debe:
+
+- Recibir y utilizar los datos de la categoría Iniciación de la fuente centralizada.
+- Obtener los tres libros reales desde los datos existentes.
+- Renderizar el contenido editorial aprobado.
+- Mostrar las portadas oficiales.
+- Utilizar el componente de compra existente cuando corresponda.
+- Incluir los breadcrumbs.
+- Mantener una estructura semántica correcta.
+
+### Enrutamiento
+
+Modificar `App.tsx` únicamente cuando sea necesario para conectar `/iniciacion/` con `InitiationView.tsx`.
+
+La nueva vista debe resolverse antes del fallback genérico `CategoryView`, siguiendo el patrón de integración utilizado por `/origen/`.
+
+No alterar el funcionamiento de las otras rutas.
+
+### SEO
+
+Modificar exclusivamente la configuración SEO correspondiente a `/iniciacion/` en `seo.ts`.
+
+Utilizar los siguientes metadatos:
+
+**Title:**
+
+`Iniciación: cómo construir un proyecto digital desde cero | FG Perspectiva`
+
+**Meta description:**
+
+`Descubre los fundamentos para crear una presencia digital, desarrollar un blog, atraer audiencia mediante contenidos y comprender las bases del marketing online.`
+
+**Canonical:**
+
+`https://fgperspectiva.vercel.app/iniciacion/`
+
+Configurar correctamente:
+
+- Title.
+- Meta description.
+- Canonical.
+- Open Graph.
+- Twitter Cards.
+- Imagen social corporativa existente de FG Perspectiva.
+
+No utilizar una imagen de categoría como imagen social.
+
+### Datos estructurados
+
+Implementar JSON-LD adecuado para una página editorial de categoría:
+
+- `CollectionPage`.
+- `ItemList` con los tres libros reales de Iniciación.
+- `BreadcrumbList`.
+
+Los datos deben corresponder a los libros reales y sus URLs canónicas existentes.
+
+No inventar propiedades, identificadores, valoraciones, ofertas ni información bibliográfica.
+
+Validar la sintaxis del JSON-LD y evitar duplicar datos estructurados que ya se generen automáticamente desde otros componentes.
+
+## 8. RESTRICCIONES ABSOLUTAS: ARCHIVOS Y PÁGINAS PROTEGIDOS
+
+El alcance de esta intervención es exclusivamente la página `/iniciacion/` y los archivos imprescindibles para conectarla y definir su SEO.
+
+No modificar:
+
+- La Home `/`.
+- La página `/biblioteca/`.
+- La página `/origen/`.
+- La página `/ingresos/`.
+- La página `/tecnologia/`.
+- La página `/crecimiento/`.
+- La página `/mindset/`.
+- La página `/sistemas-digitales/`.
+- La página `/sobre-fg-perspectiva/`.
+- La página `/contacto/`.
+- El Header.
+- El Footer.
+- El router general, salvo la conexión estrictamente necesaria de la nueva vista.
+- Los estilos globales, salvo que se demuestre una necesidad imprescindible y se solicite autorización antes de hacerlo.
+- Los datos generales del catálogo en `constants.tsx`.
+- Los tipos generales en `types.ts`.
+- Los enlaces comerciales.
+- Las portadas.
+- Las fichas individuales de libros.
+- Los componentes compartidos de otras páginas.
+
+**El Footer está expresamente excluido de cualquier modificación. No cambiar su contenido, estructura, enlaces, estilos, comportamiento ni espaciado.**
+
+No modificar componentes compartidos de forma que puedan alterar las otras categorías.
+
+No modificar la plantilla genérica `CategoryView.tsx` para conseguir el diseño de Iniciación. La nueva vista debe ser independiente.
+
+No modificar `PurchaseModal.tsx` salvo que una necesidad técnica real sea demostrada y se solicite autorización previa. Utilizar el componente existente tal como funciona actualmente.
+
+No introducir dependencias ni instalar paquetes nuevos.
+
+## 9. CONTROL DE CALIDAD Y PRUEBAS OBLIGATORIAS
+
+Una vez implementada la página, ejecutar las comprobaciones necesarias.
+
+### Contenido y estructura
+
+- Comprobar que el contenido aprobado está incorporado íntegramente.
+- Confirmar que no existen apartados omitidos ni párrafos resumidos.
+- Verificar que no hay duplicaciones involuntarias.
+- Confirmar un solo H1.
+- Comprobar una jerarquía correcta de H2 y H3.
+- Verificar que todos los apartados son visibles y legibles.
+- Confirmar que no se han introducido emojis en títulos públicos.
+
+### Libros y navegación
+
+- Comprobar que aparecen los tres libros correctos.
+- Verificar que las tres portadas oficiales cargan correctamente.
+- Confirmar que cada libro conduce a su ficha individual.
+- Comprobar que las opciones de compra se muestran solo cuando existen.
+- Verificar que el modal funciona y conserva su accesibilidad.
+- Comprobar el breadcrumb y el enlace de retorno a Biblioteca.
+- Revisar que no existen enlaces rotos ni rutas incorrectas.
+
+### SEO
+
+- Verificar title y meta description.
+- Comprobar canonical.
+- Revisar Open Graph y Twitter Cards.
+- Validar JSON-LD.
+- Confirmar que el HTML prerenderizado contiene el contenido editorial y los metadatos correctos.
+- Verificar que la ruta aparece correctamente en el sitemap si la arquitectura actual la incluye.
+
+### Pruebas técnicas
+
+Ejecutar:
+
+- TypeScript / lint disponible en el proyecto.
+- Build de producción.
+- Prerender de las rutas.
+- Pruebas de navegación y renderizado.
+- Comprobaciones responsive.
+
+Probar al menos estas resoluciones:
+
+- Escritorio: 1440 px.
+- Tableta: 768 px.
+- Móvil: 390 px.
+
+Comprobar:
+
+- Ausencia de desbordamientos horizontales.
+- Lectura cómoda del texto.
+- Correcta adaptación de las portadas.
+- Ausencia de errores de consola.
+- Ausencia de errores de carga de imágenes.
+- Ausencia de errores de navegación.
+- Funcionamiento correcto de los enlaces y controles.
+
+Realizar una comprobación de regresión en las rutas protegidas, especialmente `/`, `/origen/` y `/biblioteca/`, para verificar que la nueva implementación no ha alterado su funcionamiento.
+
+## 10. INFORME FINAL OBLIGATORIO
+
+Al finalizar, entrega un informe técnico completo que incluya:
+
+1. Archivos creados.
+2. Archivos modificados.
+3. Archivos protegidos que permanecieron intactos.
+4. Ubicación de la copia de seguridad.
+5. Descripción de la arquitectura implementada.
+6. Confirmación de incorporación íntegra del contenido aprobado.
+7. Número de palabras editoriales visibles en el elemento `main`.
+8. Descripción de la composición visual.
+9. Confirmación de las tres portadas y sus enlaces.
+10. Metadatos SEO implementados.
+11. Datos estructurados implementados.
+12. Resultados de TypeScript/lint.
+13. Resultados del build y prerender.
+14. Resultados de las pruebas responsive.
+15. Resultados de las comprobaciones de navegación y regresión.
+16. Errores detectados y cómo se resolvieron, si los hubo.
+
+Diferencia claramente entre pruebas realizadas y pruebas que no hayan podido ejecutarse. No declares una comprobación como correcta si no se ha realizado.
+
+## 11. CONDICIÓN FINAL: NO DESPLEGAR
+
+**No realizar ningún despliegue en Vercel.**
+
+La implementación debe quedar en el entorno local de trabajo de Google AI Studio.
+
+No publicar, desplegar, sincronizar ni ejecutar acciones que modifiquen la versión pública del sitio.
+
+Al terminar, espera la revisión y aprobación del usuario.
+
+---
+
+# RESULTADO ESPERADO
+
+Una página `/iniciacion/` con identidad editorial propia, contenido completo y sustancial, arquitectura visual diferenciada, tres libros reales correctamente integrados y SEO específico.
+
+Debe funcionar como una página independiente dentro de FG Perspectiva y aportar valor informativo por sí misma, incluso antes de que el visitante decida consultar alguno de los libros.
+
+La calidad del resultado se evaluará por la profundidad del contenido, la coherencia de la estructura, la claridad de la experiencia de lectura y la precisión técnica de la implementación.
+
+**No buscamos una página más dentro de una plantilla. Buscamos una página editorial que tenga una razón propia para existir.**

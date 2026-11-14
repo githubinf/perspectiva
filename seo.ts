@@ -337,7 +337,78 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
-  // 6. Category pages (iniciación, ingresos, tecnología, crecimiento, mindset)
+  // 6b. Categoría Iniciación (vista editorial dedicada)
+  if (path === '/iniciacion/') {
+    const initiationCategory = FEATURED_BOOKS.find((c) => c.path === '/iniciacion/');
+    const initiationBooks = initiationCategory?.books || [];
+    const initiationDescription =
+      'Descubre los fundamentos para crear una presencia digital, desarrollar un blog, atraer audiencia mediante contenidos y comprender las bases del marketing online.';
+
+    return {
+      path: '/iniciacion/',
+      title: 'Iniciación: cómo construir un proyecto digital desde cero | FG Perspectiva',
+      description: initiationDescription,
+      canonical: `${BASE_URL}/iniciacion/`,
+      ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
+      ogType: 'website',
+      h1: 'Iniciación: construir una presencia digital desde sus fundamentos',
+      schema: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          name: 'Iniciación: cómo construir un proyecto digital desde cero | FG Perspectiva',
+          description: initiationDescription,
+          url: `${BASE_URL}/iniciacion/`,
+          isPartOf: {
+            '@type': 'WebSite',
+            name: 'FG Perspectiva',
+            url: `${BASE_URL}/`
+          },
+          mainEntity: {
+            '@type': 'ItemList',
+            name: 'Libros de la ruta Iniciación',
+            numberOfItems: initiationBooks.length,
+            itemListElement: initiationBooks.map((b, idx) => ({
+              '@type': 'ListItem',
+              position: idx + 1,
+              item: {
+                '@type': 'Book',
+                name: b.title,
+                description: b.description,
+                url: `${BASE_URL}${b.path || `/${b.slug}/`}`
+              }
+            }))
+          }
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Iniciación',
+              item: `${BASE_URL}/iniciacion/`
+            }
+          ]
+        }
+      ]
+    };
+  }
+
+  // 6. Category pages (ingresos, tecnología, crecimiento, mindset)
   const matchedCategory = FEATURED_BOOKS.find((c) => c.path === path);
   if (matchedCategory) {
     return {
