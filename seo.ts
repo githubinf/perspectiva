@@ -65,23 +65,38 @@ export const getPageMeta = (rawPath: string): PageMeta => {
   if (path === '/biblioteca/') {
     return {
       path: '/biblioteca/',
-      title: 'Biblioteca Editorial — Catálogo completo de 23 libros | FG Perspectiva',
-      description: 'Explora el catálogo completo de FG Perspectiva: 23 libros organizados en 6 rutas estratégicas sobre blogging, afiliados, CPA, IA y crecimiento personal.',
+      title: 'Biblioteca FG Perspectiva | Libros sobre negocios y conocimiento digital',
+      description: 'Explora los 23 libros de FG Perspectiva organizados en seis rutas temáticas sobre marketing, afiliación, inteligencia artificial, contenidos y desarrollo digital.',
       canonical: `${BASE_URL}/biblioteca/`,
-      ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fundamentos-digitales-categoria.png',
+      ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
       ogType: 'website',
       h1: 'Biblioteca FG Perspectiva',
       schema: [
         {
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
-          name: 'Biblioteca FG Perspectiva — Catálogo General',
-          description: 'Catálogo editorial completo de 23 libros en 6 rutas estratégicas.',
+          name: 'Biblioteca FG Perspectiva',
+          description: 'Explora los 23 libros de FG Perspectiva organizados en seis rutas temáticas sobre marketing, afiliación, inteligencia artificial, contenidos y desarrollo digital.',
           url: `${BASE_URL}/biblioteca/`,
           isPartOf: {
             '@type': 'WebSite',
             name: 'FG Perspectiva',
             url: `${BASE_URL}/`
+          },
+          mainEntity: {
+            '@type': 'ItemList',
+            name: 'Colección editorial FG Perspectiva',
+            numberOfItems: ALL_BOOKS.length,
+            itemListElement: ALL_BOOKS.map((book, index) => ({
+              '@type': 'ListItem',
+              position: index + 1,
+              item: {
+                '@type': 'Book',
+                name: book.title,
+                description: book.description,
+                url: `${BASE_URL}${book.path || `/${book.slug}/`}`
+              }
+            }))
           }
         },
         {
