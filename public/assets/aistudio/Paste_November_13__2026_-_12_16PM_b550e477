@@ -1,0 +1,635 @@
+# INSTRUCCIÓN DE IMPLEMENTACIÓN — REDISEÑO EDITORIAL Y ESTRUCTURAL DE LA PÁGINA SISTEMAS DIGITALES
+
+**Proyecto:** FG Perspectiva — Editorial Digital  
+**Ruta:** `/sistemas-digitales/`  
+**Tipo de intervención:** Rediseño integral de una página interior existente  
+**Objetivo:** Convertir Sistemas Digitales en una página temática independiente, con contenido editorial original, identidad visual propia y una estructura claramente diferenciada de la Home.
+
+---
+
+## 1. OBJETIVO GENERAL
+
+Vamos a replantear por completo la página `/sistemas-digitales/`.
+
+Actualmente, la página transmite la sensación de ser una sección de la Home que se ha separado del resto. Comienza directamente con el contenido de Sistemas Digitales, reutiliza prácticamente el mismo texto de la página principal y no presenta suficiente identidad editorial propia.
+
+Aunque la ruta y el componente sean técnicamente independientes, el resultado no cumple el propósito de una página interior completa.
+
+La intervención debe resolver tres cuestiones:
+
+1. **Independencia editorial:** desarrollar un contenido original, con explicaciones, argumentos y profundidad propios. No copiar ni trasladar el texto de la sección Sistemas Digitales de la Home.
+2. **Independencia estructural:** construir una página con presentación, jerarquía de contenidos, secciones y recorrido de lectura propios.
+3. **Independencia visual:** diseñar una composición que se identifique como una página temática de FG Perspectiva y no como un fragmento extraído de la Home.
+
+La página debe explicar y desarrollar el concepto de los sistemas digitales desde una perspectiva práctica y estructural.
+
+No debe convertirse en una página comercial de servicios, una página de ventas ni una presentación de herramientas concretas. Su función es desarrollar conocimiento, explicar conceptos y presentar modelos de organización de proyectos digitales.
+
+---
+
+## 2. REGLA FUNDAMENTAL: NO MODIFICAR LA HOME
+
+La Home ya tiene una estructura editorial aprobada.
+
+Su sección de Sistemas Digitales debe permanecer exactamente como está, sin modificaciones de contenido, extensión, enlaces, diseño o funcionamiento.
+
+La nueva página interior tendrá un desarrollo editorial diferente.
+
+No se debe:
+
+- Copiar el texto de `HomeSystems.tsx`.
+- Sustituir la sección de la Home por el contenido nuevo.
+- Reducir el contenido aprobado de la Home.
+- Añadir enlaces desde la sección de Sistemas Digitales de la Home hacia esta página.
+- Modificar el Hero, el Manifiesto, La Propuesta, la Biblioteca, Sobre FG Perspectiva o el CTA final de la Home.
+- Modificar el Footer.
+
+La nueva página debe implementarse exclusivamente en la vista y los componentes correspondientes a `/sistemas-digitales/`.
+
+Si existen componentes o estilos compartidos con la Home, crear variantes específicas para esta página. No alterar componentes globales para conseguir el nuevo diseño.
+
+---
+
+## 3. IDENTIDAD VISUAL Y PRESENTACIÓN
+
+La página debe tener una presentación editorial propia.
+
+No queremos una sucesión de bloques que parezca una continuación de la Home. Tampoco queremos reproducir el diseño de la Home cambiando únicamente el texto.
+
+### Dirección visual
+
+La identidad debe transmitir:
+
+- Arquitectura y organización.
+- Pensamiento estratégico.
+- Sistemas conectados.
+- Claridad y estructura.
+- Conocimiento aplicado.
+- Profesionalidad editorial.
+
+Conservar la identidad visual general de FG Perspectiva:
+
+- Verde oscuro principal: `#174532`.
+- Verde secundario: `#4db380`.
+- Fondos suaves: `#dae7df` con las transparencias ya utilizadas en el proyecto.
+- Texto principal: `#1b1b1b`.
+- Acentos dorados: `#f4b925`.
+- Tipografías: Libre Baskerville e Inter.
+
+### Composición de la página
+
+Diseñar una composición propia que incluya:
+
+1. **Hero editorial independiente:** una presentación visual clara, con un descriptor temático, un H1 original y una introducción breve.
+2. **Secciones de desarrollo:** alternar bloques de texto, columnas, listas y diagramas sencillos cuando ayuden a comprender las relaciones entre conceptos.
+3. **Bloques explicativos:** diferenciar visualmente los componentes, modelos y etapas de construcción.
+4. **Metodología:** presentar las cinco etapas de forma ordenada y visualmente reconocible.
+5. **Cierre editorial:** concluir el recorrido con una idea clara y un enlace contextual hacia la Biblioteca.
+
+No utilizar tarjetas por sistema. No convertir cada párrafo en una caja. La composición debe tener ritmo, espacios de lectura y una jerarquía tipográfica coherente.
+
+Los elementos gráficos deben tener una función explicativa. No añadir ilustraciones decorativas que no aporten información.
+
+No utilizar fotografías genéricas de personas trabajando con ordenadores como recurso principal.
+
+---
+
+## 4. CONTENIDO EDITORIAL COMPLETO
+
+El siguiente texto constituye el contenido de la nueva página. Debe incorporarse íntegramente, respetando su sentido, organización y jerarquía.
+
+No resumirlo, no sustituirlo por fragmentos del texto de la Home y no introducir promesas comerciales.
+
+### HERO
+
+**Descriptor:** ARQUITECTURA Y DESARROLLO DIGITAL
+
+# Sistemas Digitales: cómo conectar conocimientos, procesos y activos en una estructura coherente
+
+Un proyecto digital puede reunir contenidos, herramientas, canales de tráfico y distintas formas de monetización sin que exista una relación clara entre ellos. La diferencia aparece cuando dejamos de contemplarlos como elementos independientes y comenzamos a organizarlos dentro de una arquitectura con funciones, objetivos y procesos definidos.
+
+Un sistema digital permite comprender esa relación, establecer cómo debe funcionar cada componente y construir una estructura que pueda evolucionar con el proyecto.
+
+---
+
+### SECCIÓN 1 — EL PROBLEMA
+
+## Tener herramientas y conocimientos no significa tener un sistema
+
+En el entorno digital es habitual comenzar por las acciones más visibles: crear un blog, abrir perfiles sociales, publicar contenidos, utilizar herramientas de inteligencia artificial o incorporar enlaces de afiliación.
+
+Cada una de estas actividades puede tener sentido por separado. El problema aparece cuando se desarrollan sin una planificación que determine cómo deben relacionarse.
+
+Podemos publicar artículos sin una estrategia de captación. Podemos atraer visitas sin ofrecer un recorrido que permita generar confianza. Podemos disponer de productos digitales sin contar con un mecanismo organizado para presentarlos a una audiencia adecuada.
+
+El resultado suele ser un conjunto de actividades que requieren atención constante, pero que no siempre contribuyen a un mismo propósito.
+
+Un sistema digital parte de una pregunta diferente: ¿qué función cumple cada elemento y de qué manera contribuye al funcionamiento general del proyecto?
+
+Esta pregunta cambia la forma de planificar. En lugar de acumular acciones, comenzamos a definir relaciones, prioridades y procesos.
+
+### SECCIÓN 2 — EL CONCEPTO
+
+## Qué es una arquitectura digital
+
+Una arquitectura digital es la organización lógica de los elementos que intervienen en un proyecto online.
+
+No se limita a la estructura técnica de una web ni a la elección de determinadas aplicaciones. Comprende la manera en que se conectan los activos, los contenidos, los canales de adquisición, las relaciones con la audiencia y los mecanismos de monetización.
+
+Podemos entenderla como un conjunto de componentes que cumplen funciones específicas dentro de una misma estructura.
+
+**Un activo** representa un recurso que desarrollamos y organizamos para aportar valor al proyecto: una web, una biblioteca de contenidos, una lista de correo o un producto digital.
+
+**Un canal** permite establecer contacto con las personas a las que queremos llegar: buscadores, redes sociales, plataformas de distribución o correo electrónico.
+
+**Un proceso** define cómo se desarrolla una actividad y qué relación mantiene con las demás: publicación, captación, seguimiento, recomendación o venta.
+
+**Un mecanismo de monetización** establece cómo el proyecto puede generar ingresos a partir del valor que ofrece: afiliación, productos propios u otros modelos compatibles con su actividad.
+
+La arquitectura determina cómo se relacionan estos elementos, qué función tiene cada uno y qué recorrido siguen las actividades dentro del proyecto.
+
+No existe una estructura universal válida para todos los casos. La arquitectura debe responder al propósito, los recursos, la audiencia y el modelo de negocio que se desea desarrollar.
+
+### SECCIÓN 3 — LOS COMPONENTES
+
+## Los elementos que forman un sistema digital
+
+Para comprender un sistema necesitamos identificar sus componentes y evitar tratarlos como actividades aisladas.
+
+### 01. Propósito y modelo de negocio
+
+Todo sistema necesita una dirección. Antes de elegir herramientas o desarrollar contenidos, debemos establecer qué queremos construir, qué valor ofreceremos y de qué manera se sostendrá el proyecto.
+
+El modelo de negocio condiciona las decisiones posteriores: el tipo de audiencia, los activos necesarios, los canales de adquisición y las vías de monetización.
+
+### 02. Activos digitales
+
+Los activos constituyen la base sobre la que se desarrolla el proyecto.
+
+Una web, un blog, una biblioteca de contenidos, una base de suscriptores o un catálogo de productos pueden cumplir funciones diferentes. Lo importante es comprender qué aportan, qué recursos requieren y cómo se relacionan con el objetivo general.
+
+No todos los proyectos necesitan los mismos activos ni deben desarrollarlos al mismo tiempo.
+
+### 03. Contenidos y propuesta de valor
+
+El contenido permite comunicar conocimientos, responder necesidades y presentar soluciones relevantes para una audiencia.
+
+Su función no consiste únicamente en atraer visitas. También puede ayudar a explicar una propuesta, generar confianza, orientar decisiones y conectar diferentes partes del sistema.
+
+Por eso, su planificación debe responder a una estrategia y no depender exclusivamente de la publicación constante.
+
+### 04. Tráfico y adquisición de audiencia
+
+Un proyecto necesita mecanismos para llegar a las personas adecuadas.
+
+El posicionamiento en buscadores, la distribución de contenidos, las redes sociales y otros canales pueden contribuir a generar visibilidad y atraer visitas.
+
+La elección depende del proyecto y de sus posibilidades. No se trata de utilizar todos los canales, sino de seleccionar aquellos que puedan integrarse de manera coherente en la estructura.
+
+### 05. Relación y confianza
+
+La atención inicial no garantiza una relación duradera.
+
+El sistema debe contemplar cómo mantener el contacto con la audiencia, ofrecer información útil y facilitar que las personas comprendan la propuesta.
+
+El correo electrónico, los contenidos especializados y otros mecanismos de comunicación pueden cumplir esta función, siempre que exista una razón clara para incorporarlos.
+
+### 06. Conversión y monetización
+
+La monetización representa la conexión entre el valor que ofrece el proyecto y las acciones que pueden generar ingresos.
+
+Puede desarrollarse mediante recomendaciones de productos, comercialización de productos propios u otros modelos adecuados a la actividad.
+
+La conversión no debe entenderse como un elemento aislado. Depende de la coherencia entre la propuesta, la audiencia, el contenido y el recorrido que se ha diseñado.
+
+### 07. Tecnología y procesos
+
+Las herramientas facilitan determinadas tareas, pero no sustituyen la planificación.
+
+Su función es apoyar los procesos, organizar información, mejorar la ejecución y reducir tareas innecesarias.
+
+Una herramienta debe incorporarse porque resuelve una necesidad identificada. Añadir tecnología sin una función concreta puede aumentar la complejidad en lugar de mejorar el sistema.
+
+---
+
+### SECCIÓN 4 — EL FUNCIONAMIENTO
+
+## Cómo se conectan los componentes
+
+Un sistema no funciona porque todos sus elementos estén presentes. Funciona cuando existe una relación lógica entre ellos.
+
+Podemos representar un recorrido general de esta manera:
+
+**Propósito → Activos → Contenido → Tráfico → Relación → Conversión → Análisis**
+
+Cada etapa tiene una función:
+
+- El propósito establece la dirección.
+- Los activos proporcionan la estructura.
+- El contenido comunica la propuesta.
+- El tráfico permite alcanzar una audiencia.
+- La relación desarrolla confianza y continuidad.
+- La conversión conecta la propuesta con un resultado.
+- El análisis permite evaluar el funcionamiento y detectar oportunidades de mejora.
+
+Este recorrido no debe interpretarse como una secuencia rígida. En la práctica, algunos procesos funcionan simultáneamente, se retroalimentan o necesitan recorridos diferentes.
+
+Por ejemplo, una persona puede descubrir un proyecto mediante un artículo, regresar posteriormente desde otro canal, suscribirse a una lista de correo y realizar una compra después de recibir información adicional.
+
+La arquitectura debe contemplar esas relaciones y evitar que cada actividad funcione como un punto aislado.
+
+**La clave no es disponer de más componentes, sino conseguir que los componentes necesarios trabajen con una función definida.**
+
+---
+
+### SECCIÓN 5 — MODELOS
+
+## Tres modelos de sistemas digitales
+
+Existen distintas maneras de organizar un proyecto digital. Los siguientes modelos permiten comprender tres estructuras posibles y las relaciones que pueden establecerse entre sus componentes.
+
+No son fórmulas universales ni soluciones automáticas. Son modelos de referencia que deben adaptarse a cada proyecto.
+
+### MODELO 01 — Blog + Afiliación
+
+**Un activo de contenidos conectado con un modelo de recomendación comercial.**
+
+Este modelo utiliza un blog como activo central para desarrollar contenidos orientados a una audiencia concreta.
+
+El posicionamiento orgánico puede facilitar el descubrimiento de esos contenidos. A partir de ahí, los artículos pueden ofrecer información, responder consultas y presentar recomendaciones de productos o servicios relacionados con el tema tratado.
+
+La afiliación constituye el mecanismo de monetización, mientras que el contenido y el tráfico forman parte de la estructura de adquisición y comunicación.
+
+**Componentes principales:**
+
+- Blog como activo central.
+- Investigación de temas y necesidades de búsqueda.
+- Contenidos organizados por temática.
+- Estrategia de posicionamiento SEO.
+- Recomendaciones y enlaces de afiliación.
+- Análisis del tráfico y del comportamiento de los contenidos.
+
+El objetivo estructural es relacionar la creación de contenidos, la captación de visitas y la recomendación comercial dentro de un mismo proyecto.
+
+### MODELO 02 — IA + Productos Digitales
+
+**Tecnología aplicada a la investigación, creación y desarrollo de productos propios.**
+
+Este modelo integra herramientas de inteligencia artificial en distintas fases del desarrollo de productos digitales.
+
+La tecnología puede facilitar tareas de investigación, organización de información, planificación y producción. Sin embargo, la utilidad del resultado depende del criterio humano, la revisión, la contextualización y la calidad de la propuesta.
+
+El sistema debe contemplar tanto el proceso de creación como la manera de presentar, distribuir y comercializar el producto.
+
+**Componentes principales:**
+
+- Investigación de necesidades y oportunidades.
+- Definición de la propuesta de valor.
+- Inteligencia artificial como herramienta de apoyo.
+- Criterio editorial y revisión humana.
+- Desarrollo y organización del producto.
+- Canales de distribución y comercialización.
+
+El propósito es integrar tecnología y conocimiento para desarrollar productos digitales con una propuesta definida y una estructura de comercialización coherente.
+
+### MODELO 03 — Tráfico + Email
+
+**Captación de audiencia y desarrollo de una relación directa mediante correo electrónico.**
+
+Este modelo organiza diferentes canales de adquisición alrededor de una estructura de comunicación por email.
+
+El tráfico permite atraer personas interesadas. La suscripción ofrece la posibilidad de mantener una relación directa, compartir contenidos relevantes y presentar propuestas relacionadas con sus intereses.
+
+El correo electrónico deja de ser una actividad aislada y pasa a formar parte de un recorrido planificado.
+
+**Componentes principales:**
+
+- Canales de adquisición de tráfico.
+- Propuesta de suscripción.
+- Página o mecanismo de captación.
+- Organización de la lista de correo.
+- Secuencias y comunicaciones planificadas.
+- Contenidos y propuestas de conversión.
+- Análisis de resultados.
+
+El objetivo es conectar la adquisición de audiencia con una relación de comunicación que pueda desarrollarse a lo largo del tiempo.
+
+---
+
+### SECCIÓN 6 — METODOLOGÍA
+
+## Cinco etapas para construir un sistema digital
+
+Una arquitectura digital no debería surgir de la acumulación de herramientas ni de decisiones improvisadas. Su desarrollo requiere un proceso que permita avanzar desde la definición inicial hasta la evaluación de su funcionamiento.
+
+Podemos organizar ese trabajo en cinco etapas.
+
+### ETAPA 01 — Fundamento
+
+**Definir qué queremos construir y por qué.**
+
+El primer paso consiste en establecer el propósito del proyecto, identificar la audiencia a la que queremos dirigirnos y determinar qué valor podemos ofrecer.
+
+También necesitamos comprender el modelo de negocio, los recursos disponibles y los límites que condicionan su desarrollo.
+
+Sin esta base, las decisiones posteriores pueden terminar respondiendo a oportunidades aisladas en lugar de contribuir a una misma dirección.
+
+**Resultado de esta etapa:** una definición clara del proyecto, su propuesta de valor y sus objetivos.
+
+### ETAPA 02 — Arquitectura
+
+**Diseñar la estructura y las relaciones entre sus componentes.**
+
+Una vez definido el propósito, podemos determinar qué activos necesitamos, qué canales utilizaremos y qué procesos deben formar parte del sistema.
+
+En esta etapa organizamos la relación entre contenidos, tráfico, audiencia, comunicación, monetización y herramientas.
+
+No necesitamos incorporar todos los elementos desde el principio. Debemos establecer prioridades y construir una estructura que pueda desarrollarse de manera ordenada.
+
+**Resultado de esta etapa:** un esquema funcional que identifica los componentes y sus relaciones.
+
+### ETAPA 03 — Desarrollo y atracción
+
+**Construir los activos y establecer mecanismos de adquisición.**
+
+Con la arquitectura definida, comienza el desarrollo de los componentes principales.
+
+Esto puede incluir la creación de una web, la producción de contenidos, la organización de recursos y la puesta en marcha de los canales de adquisición seleccionados.
+
+La atracción debe responder a la audiencia y a la propuesta de valor. El objetivo no es generar actividad indiscriminada, sino establecer mecanismos para alcanzar personas con interés en lo que ofrecemos.
+
+**Resultado de esta etapa:** los activos principales desarrollados y los mecanismos iniciales de adquisición organizados.
+
+### ETAPA 04 — Integración y conversión
+
+**Conectar los procesos para que el sistema pueda cumplir su función.**
+
+En esta fase comprobamos que los componentes no trabajen de manera aislada.
+
+El contenido debe relacionarse con la propuesta. Los canales deben conducir a los activos adecuados. Los mecanismos de comunicación deben cumplir una función y las vías de monetización deben integrarse de manera coherente.
+
+También debemos revisar el recorrido de la audiencia e identificar posibles interrupciones, elementos innecesarios o procesos que no estén cumpliendo su objetivo.
+
+**Resultado de esta etapa:** un recorrido organizado que conecta la adquisición, la relación con la audiencia y las acciones de conversión.
+
+### ETAPA 05 — Evaluación y optimización
+
+**Medir, corregir y desarrollar la estructura.**
+
+Un sistema digital no queda terminado de manera definitiva. Su funcionamiento debe evaluarse a medida que el proyecto evoluciona.
+
+Necesitamos observar los resultados, analizar los procesos y reconocer qué elementos necesitan ajustes.
+
+Puede ser necesario mejorar contenidos, revisar canales de adquisición, reorganizar herramientas, corregir recorridos o modificar determinadas partes del modelo.
+
+La optimización debe basarse en información y objetivos definidos, no en incorporar novedades por el simple hecho de estar disponibles.
+
+**Resultado de esta etapa:** una estructura evaluada, con oportunidades de mejora identificadas y decisiones orientadas a su evolución.
+
+---
+
+### SECCIÓN 7 — CONOCIMIENTO Y APLICACIÓN
+
+## Del conocimiento a una estructura funcional
+
+Comprender las disciplinas que intervienen en un proyecto digital es un paso importante. Pero conocer marketing, SEO, creación de contenidos, inteligencia artificial o monetización no significa que sepamos integrarlos automáticamente.
+
+Cada disciplina aporta conocimientos específicos. La arquitectura permite determinar dónde intervienen, qué función cumplen y cómo se relacionan con el resto del proyecto.
+
+Por ejemplo, el SEO puede contribuir a la adquisición de tráfico, el marketing de contenidos puede organizar la comunicación de una propuesta, el email marketing puede desarrollar una relación con la audiencia y la afiliación puede formar parte del mecanismo de monetización.
+
+Ninguna de estas disciplinas necesita funcionar de manera aislada.
+
+La aplicación requiere comprender los fundamentos, seleccionar los conocimientos relevantes y conectarlos según las necesidades del proyecto.
+
+Por eso, el aprendizaje y la construcción de sistemas son dos dimensiones complementarias: una permite desarrollar competencias; la otra ayuda a organizarlas dentro de una estructura.
+
+### SECCIÓN 8 — DIFERENCIA ESTRUCTURAL
+
+## Un proyecto basado en acciones o un sistema organizado
+
+Un proyecto puede depender en gran medida de las acciones que su creador realiza cada día.
+
+Publicar, buscar oportunidades, promocionar productos, responder consultas y gestionar herramientas son actividades que pueden mantenerlo en funcionamiento. Sin embargo, cuando no están organizadas dentro de procesos definidos, su continuidad depende de la intervención constante y de decisiones que se repiten.
+
+Un sistema introduce una lógica diferente.
+
+Las actividades se organizan según funciones, prioridades y relaciones. Los procesos se definen, los recursos se conectan y las tareas pueden desarrollarse siguiendo una estructura comprensible.
+
+Esto no significa que un sistema funcione sin supervisión ni que elimine el trabajo necesario para mantener un proyecto. Significa que existe una organización que permite comprender cómo se desarrolla la actividad, detectar problemas y tomar decisiones con mayor criterio.
+
+| Proyecto basado en acciones aisladas | Sistema digital organizado |
+|---|---|
+| Actividades independientes. | Procesos relacionados. |
+| Decisiones frecuentes sin una estructura común. | Funciones y objetivos definidos. |
+| Dependencia de la improvisación. | Planificación y organización. |
+| Herramientas incorporadas por necesidad inmediata. | Tecnología seleccionada según su función. |
+| Dificultad para evaluar el conjunto. | Posibilidad de analizar las relaciones y los resultados. |
+
+**La diferencia no consiste en trabajar menos por definición. Consiste en organizar mejor el trabajo y comprender cómo contribuye cada actividad al proyecto.**
+
+---
+
+### CIERRE EDITORIAL
+
+## Construir con intención. Conectar con criterio.
+
+Un sistema digital no comienza con la elección de una herramienta ni con la publicación del primer contenido. Comienza cuando comprendemos qué queremos construir y somos capaces de organizar los elementos necesarios para hacerlo posible.
+
+La arquitectura aporta dirección. Los procesos aportan organización. El conocimiento permite tomar decisiones y la evaluación ayuda a desarrollar una estructura coherente con los objetivos del proyecto.
+
+No necesitamos incorporar todo desde el primer momento. Necesitamos comprender qué piezas son relevantes, qué función deben cumplir y cómo podemos conectarlas de manera progresiva.
+
+**La Biblioteca de FG Perspectiva reúne conocimientos sobre las disciplinas que intervienen en este recorrido. Explora sus libros y profundiza en los fundamentos que pueden ayudarte a comprender y desarrollar tus propios proyectos digitales.**
+
+**CTA:** Explorar la Biblioteca
+
+**Destino:** `/biblioteca/`
+
+---
+
+## 5. CRITERIOS DE DISEÑO PARA LAS SECCIONES
+
+El contenido anterior debe presentarse como una página editorial extensa, no como una colección de tarjetas repetitivas.
+
+Aplicar estos criterios:
+
+### Hero
+
+- Crear una presentación claramente diferente del Hero de la Home.
+- Utilizar el descriptor «ARQUITECTURA Y DESARROLLO DIGITAL».
+- Incorporar el H1 y la introducción proporcionados.
+- No reutilizar el H1, subtítulo, CTA ni composición visual del Hero de la Home.
+- No añadir promesas de ingresos ni afirmaciones comerciales.
+
+### Secciones de contenido
+
+- Utilizar títulos H2 para las secciones principales.
+- Utilizar H3 para los componentes, modelos y etapas.
+- Mantener párrafos completos y legibles.
+- Usar listas cuando ayuden a organizar información.
+- Evitar cajas innecesarias alrededor de cada párrafo.
+- Alternar composiciones para dar ritmo a la lectura.
+- Mantener una anchura de lectura cómoda, especialmente en los bloques largos.
+
+### Componentes y modelos
+
+Los siete componentes del sistema deben tener una presentación ordenada y fácil de recorrer.
+
+Los tres modelos deben distinguirse visualmente, pero sin convertirlos en tres grandes tarjetas idénticas que ocupen toda la página.
+
+### Metodología
+
+Las cinco etapas deben tener una jerarquía visual clara y consistente.
+
+Se pueden utilizar numeración, líneas de conexión o una composición secuencial, siempre que el resultado sea limpio y legible tanto en escritorio como en móvil.
+
+### Diagrama de funcionamiento
+
+Representar el recorrido:
+
+**Propósito → Activos → Contenido → Tráfico → Relación → Conversión → Análisis**
+
+Debe ser responsive. En pantallas estrechas puede transformarse en una secuencia vertical.
+
+### Comparación final
+
+La comparación entre proyecto y sistema debe conservarse como tabla o transformarse en una composición equivalente que mantenga toda la información. En móvil debe poder leerse sin desbordamientos horizontales.
+
+---
+
+## 6. NAVEGACIÓN Y ENLACES
+
+La página debe conservar la navegación global existente.
+
+No crear un menú secundario innecesario.
+
+El único CTA editorial nuevo expresamente aprobado en este contenido es «Explorar la Biblioteca», situado al final y dirigido a `/biblioteca/`.
+
+No añadir enlaces a libros específicos, categorías o páginas externas que no estén contemplados en esta instrucción.
+
+### Corrección del enlace heredado
+
+La auditoría anterior detectó en `components/Systems.tsx` un enlace antiguo con `href="#biblioteca"` asociado a «Rutas de construcción».
+
+Ese enlace provoca una interpretación histórica del fragmento y puede dar la impresión de que la página Sistemas Digitales redirige a Biblioteca.
+
+Eliminar el bloque «Rutas de construcción» y su enlace antiguo, tal como ya fue aprobado.
+
+No conservar anclas obsoletas que alteren la navegación actual.
+
+Revisar que la ruta `/sistemas-digitales/` se mantenga estable y que los enlaces internos no provoquen redirecciones inesperadas.
+
+---
+
+## 7. SEO DE LA PÁGINA
+
+La nueva página debe tener metadatos propios, coherentes con su contenido y diferentes de los de la Home.
+
+**Title:**
+
+Sistemas Digitales: arquitectura y desarrollo de proyectos | FG Perspectiva
+
+**Meta description:**
+
+Comprende cómo diseñar sistemas digitales, conectar activos, contenidos y procesos, y organizar proyectos online mediante una arquitectura coherente.
+
+**Canonical:**
+
+`https://fgperspectiva.vercel.app/sistemas-digitales/`
+
+Criterios:
+
+- Mantener el prerenderizado y la inclusión de contenido en el HTML inicial.
+- Utilizar un único H1.
+- Organizar las secciones con una jerarquía semántica correcta.
+- Mantener la URL canónica indicada.
+- Comprobar que los metadatos no se dupliquen.
+- No utilizar la imagen de una categoría de libros como imagen social de esta página.
+- No inventar datos estructurados, valoraciones, servicios, cifras o afirmaciones de autoridad.
+- No modificar el sistema SEO global ni `SeoHead.tsx` si no es imprescindible para esta página. Si se detecta una limitación global, informar antes de intervenirla.
+
+---
+
+## 8. RESTRICCIONES TÉCNICAS Y DE ALCANCE
+
+Antes de modificar archivos, inspeccionar la implementación existente y determinar qué componentes corresponden exclusivamente a `/sistemas-digitales/`.
+
+Realizar una copia de seguridad de los archivos que se vayan a modificar.
+
+No reconstruir el enrutador ni la aplicación completa.
+
+No modificar:
+
+- Home y sus secciones aprobadas.
+- `HomeSystems.tsx` ni el contenido de Sistemas Digitales de la Home.
+- Biblioteca y su catálogo.
+- Categorías y fichas individuales de libros.
+- Página Sobre FG Perspectiva.
+- Página Contacto.
+- Header global, salvo que se detecte un problema técnico directamente relacionado con la navegación de esta ruta; en ese caso, informar antes de modificarlo.
+- Footer, bajo ninguna circunstancia.
+- Estilos globales que alteren otras páginas.
+- Sitemap, robots o configuración de Vercel salvo que exista una necesidad técnica demostrable y se informe por separado.
+
+No añadir formularios, sistemas de registro, servicios, herramientas externas ni funcionalidades comerciales.
+
+No crear imágenes de categoría ni sustituir las portadas de libros por recursos genéricos.
+
+---
+
+## 9. PRUEBAS OBLIGATORIAS
+
+Una vez implementada la página, realizar las siguientes comprobaciones en el entorno local:
+
+1. Acceder directamente a `/sistemas-digitales/`.
+2. Recargar la página y comprobar que sigue mostrando Sistemas Digitales.
+3. Comprobar la navegación desde el menú superior.
+4. Comprobar que no aparece el contenido de Biblioteca en lugar de Sistemas Digitales.
+5. Comprobar que no existe ningún salto inesperado hacia `/biblioteca/`.
+6. Comprobar que el enlace final «Explorar la Biblioteca» sí conduce correctamente a `/biblioteca/`.
+7. Comprobar que el contenido completo aparece en el HTML prerenderizado.
+8. Verificar que existe un único H1 y que los encabezados mantienen una jerarquía lógica.
+9. Comprobar la presentación en escritorio, tablet y móvil.
+10. Verificar que las tablas, secuencias y bloques no generan desbordamientos.
+11. Confirmar que el Header y el Footer mantienen su funcionamiento y aspecto originales.
+12. Confirmar que la Home no ha sufrido ningún cambio.
+13. Comprobar que las demás rutas interiores siguen funcionando.
+14. Revisar la consola y corregir errores atribuibles a esta implementación.
+
+No considerar suficiente una comprobación visual superficial. La ruta debe funcionar de forma independiente al entrar directamente, navegar desde el menú y recargar el navegador.
+
+---
+
+## 10. INFORME FINAL OBLIGATORIO
+
+Al terminar, presentar un informe técnico que incluya:
+
+1. Archivos modificados.
+2. Archivos creados, si los hubiera.
+3. Copia de seguridad realizada y ubicación.
+4. Descripción de la nueva estructura editorial.
+5. Confirmación de que se ha incorporado el texto completo.
+6. Descripción de los cambios visuales.
+7. Metadatos SEO aplicados.
+8. Resultados de las pruebas de navegación.
+9. Resultados de las pruebas responsive.
+10. Confirmación expresa de que la Home no se ha modificado.
+11. Confirmación expresa de que el Footer no se ha modificado.
+12. Cualquier problema que no haya podido resolverse.
+
+Si alguna parte de esta instrucción no puede implementarse sin modificar componentes globales o afectar otras rutas, detener esa parte e informar antes de ampliar el alcance.
+
+**IMPORTANTE: No desplegar ni publicar cambios en Vercel. La implementación y las pruebas deben realizarse localmente. Esperar autorización expresa antes de cualquier despliegue.**
+
+---
+
+## RESULTADO ESPERADO
+
+La página `/sistemas-digitales/` debe dejar de parecer un fragmento de la Home.
+
+Debe funcionar como una página temática completa, con una presentación independiente, contenido editorial original, profundidad explicativa, estructura visual propia y un recorrido de lectura coherente.
+
+La Home presenta la filosofía general de FG Perspectiva. La página Sistemas Digitales desarrolla en profundidad una de las áreas de conocimiento de la editorial.
+
+**No buscamos una Home más larga. Buscamos una página editorial verdaderamente independiente.**

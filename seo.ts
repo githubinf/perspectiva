@@ -110,18 +110,18 @@ export const getPageMeta = (rawPath: string): PageMeta => {
   if (path === '/sistemas-digitales/') {
     return {
       path: '/sistemas-digitales/',
-      title: 'Sistemas Digitales — Arquitectura y Conexión de Activos | FG Perspectiva',
-      description: 'Descubre la metodología de diseño de sistemas digitales de FG Perspectiva: cómo conectar tráfico, atención, confianza e ingresos reales.',
+      title: 'Sistemas Digitales: arquitectura y desarrollo de proyectos | FG Perspectiva',
+      description: 'Comprende cómo diseñar sistemas digitales, conectar activos, contenidos y procesos, y organizar proyectos online mediante una arquitectura coherente.',
       canonical: `${BASE_URL}/sistemas-digitales/`,
-      ogImage: DEFAULT_IMAGE,
+      ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
       ogType: 'website',
-      h1: 'Sistemas Digitales',
+      h1: 'Sistemas Digitales: cómo conectar conocimientos, procesos y activos en una estructura coherente',
       schema: [
         {
           '@context': 'https://schema.org',
           '@type': 'WebPage',
-          name: 'Sistemas Digitales — FG Perspectiva',
-          description: 'Metodología de diseño y arquitectura de activos digitales rentables.',
+          name: 'Sistemas Digitales: arquitectura y desarrollo de proyectos | FG Perspectiva',
+          description: 'Comprende cómo diseñar sistemas digitales, conectar activos, contenidos y procesos, y organizar proyectos online mediante una arquitectura coherente.',
           url: `${BASE_URL}/sistemas-digitales/`,
           isPartOf: {
             '@type': 'WebSite',
