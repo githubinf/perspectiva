@@ -1,15 +1,65 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Breadcrumbs from '../Breadcrumbs.tsx';
-import { Mail, MessageSquare, CheckCircle, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+
+const EMAILMEFORM_ID = '2sfhB8Xdpq';
+const EMAILMEFORM_ORIGIN = 'https://www.emailmeform.com';
+const EMAILMEFORM_EMBED_BASE = `${EMAILMEFORM_ORIGIN}/builder/embed/${EMAILMEFORM_ID}`;
+const EMAILMEFORM_SCRIPT_URL = `${EMAILMEFORM_ORIGIN}/builder/forms/jsform/${EMAILMEFORM_ID}`;
+const EMAILMEFORM_LOGO_URL = 'https://assets.emailmeform.com/images/footer-logo.png?bWFzdGVy';
 
 const ContactView: React.FC = () => {
-  const [submitted, setSubmitted] = useState(false);
-  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
+  const [embedSrc, setEmbedSrc] = useState<string | null>(null);
+  const [dynamicHeight, setDynamicHeight] = useState<number | null>(null);
+  const [iframeLoaded, setIframeLoaded] = useState<boolean>(false);
+  const iframeRef = useRef<HTMLIFrameElement | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const targetUrl = `${EMAILMEFORM_EMBED_BASE}?#${encodeURIComponent(window.location.href)}`;
+    setEmbedSrc(targetUrl);
+
+    const handleMessage = (event: MessageEvent) => {
+      if (event.origin !== EMAILMEFORM_ORIGIN) return;
+      if (typeof event.data !== 'string') return;
+
+      const parts = event.data.split(',');
+      const operation = parts[0];
+
+      if (operation === 'resize') {
+        const rawHeight = parts[1] ?? '';
+        const visitId = parts[2] ?? '';
+        if (visitId && visitId !== EMAILMEFORM_ID) return;
+
+        const parsedHeight = parseInt(rawHeight, 10);
+        if (!Number.isNaN(parsedHeight) && parsedHeight >= 250 && parsedHeight <= 3000) {
+          setDynamicHeight(parsedHeight + 24);
+        }
+      } else if (operation === 'scroll_to') {
+        const y = parseInt(parts[1] ?? '', 10);
+        const visitId = parts[2] ?? '';
+        if (visitId && visitId !== EMAILMEFORM_ID) return;
+        if (!Number.isNaN(y) && iframeRef.current) {
+          const rect = iframeRef.current.getBoundingClientRect();
+          window.scrollTo({
+            top: Math.max(0, window.scrollY + rect.top + y),
+            behavior: 'smooth',
+          });
+        }
+      } else if (operation === 'redirect') {
+        const destination = parts[1] ?? '';
+        if (destination.startsWith('https://')) {
+          window.location.assign(destination);
+        }
+      }
+    };
+
+    window.addEventListener('message', handleMessage);
+    return () => {
+      window.removeEventListener('message', handleMessage);
+    };
+  }, []);
 
   return (
     <div className="pt-24 pb-24 bg-white">
@@ -90,90 +140,79 @@ const ContactView: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Contact Message Form */}
-          <div className="md:col-span-7 bg-white border border-[#dae7df]/60 rounded-xl p-8 shadow-sm">
+          {/* Right Column: EmailMeForm Embed */}
+          <div className="md:col-span-7 bg-white border border-[#dae7df]/60 rounded-xl px-4 py-6 sm:p-8 shadow-sm min-w-0">
             <h2 className="text-h3 font-bold font-serif text-[#174532] mb-6">Envíanos un mensaje</h2>
 
-            {submitted ? (
-              <div className="p-8 text-center bg-[#dae7df]/20 rounded-xl border border-[#4db380]/40">
-                <CheckCircle className="w-12 h-12 text-[#4db380] mx-auto mb-4" />
-                <h3 className="text-h3 font-bold font-serif text-[#174532] mb-2">Mensaje enviado</h3>
-                <p className="text-body-sm text-[#1b1b1b]/70 mb-6">
-                  Gracias por contactar con FG Perspectiva. Responderemos a tu consulta a la mayor brevedad.
-                </p>
-                <button
-                  onClick={() => setSubmitted(false)}
-                  className="px-6 py-2.5 bg-[#174532] text-white text-[13.5px] font-semibold rounded-md hover:bg-[#1f513a] cursor-pointer"
+            <div
+              className="w-full overflow-hidden"
+              data-emf-form-id={EMAILMEFORM_ID}
+              data-emf-source={EMAILMEFORM_SCRIPT_URL}
+            >
+              {embedSrc ? (
+                <>
+                  {!iframeLoaded && (
+                    <div
+                      className="w-full rounded-lg border border-[#dae7df]/60 bg-[#dae7df]/15 p-8 text-center text-body-sm text-[#174532]/75"
+                      role="status"
+                      aria-live="polite"
+                    >
+                      Cargando formulario de contacto…
+                    </div>
+                  )}
+                  <iframe
+                    ref={iframeRef}
+                    id={`auto_size_iframe_${EMAILMEFORM_ID}`}
+                    name={`auto_size_iframe_${EMAILMEFORM_ID}`}
+                    title="Formulario de contacto de FG Perspectiva"
+                    src={embedSrc}
+                    onLoad={() => setIframeLoaded(true)}
+                    allow="camera"
+                    scrolling="auto"
+                    className={`w-full border-0 bg-transparent transition-opacity duration-300 ${
+                      iframeLoaded
+                        ? `opacity-100 block ${dynamicHeight === null ? 'h-[860px] sm:h-[800px]' : ''}`
+                        : 'opacity-0 h-0 overflow-hidden'
+                    }`}
+                    style={iframeLoaded && dynamicHeight !== null ? { height: `${dynamicHeight}px` } : undefined}
+                  />
+                </>
+              ) : (
+                <div
+                  className="w-full rounded-lg border border-[#dae7df]/60 bg-[#dae7df]/15 p-8 text-center text-body-sm text-[#174532]/75"
+                  aria-live="polite"
                 >
-                  Enviar otro mensaje
-                </button>
+                  Preparando formulario de contacto…
+                </div>
+              )}
+            </div>
+
+            <div className="mt-5 pt-4 border-t border-[#dae7df]/50 text-center">
+              <div
+                id="emf_advertisement"
+                className="inline-flex flex-wrap items-center justify-center gap-1.5 text-xs text-[#1b1b1b]/65 leading-relaxed"
+              >
+                <span>Powered by</span>
+                <img
+                  src={EMAILMEFORM_LOGO_URL}
+                  alt="EmailMeForm"
+                  width={16}
+                  height={16}
+                  loading="lazy"
+                  decoding="async"
+                  className="inline-block h-4 w-auto align-middle"
+                />
+                <span>EMF</span>
+                <a
+                  href="https://www.emailmeform.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-[#174532] hover:text-[#4db380] underline decoration-[#dae7df] underline-offset-2 transition-colors"
+                >
+                  HTML Contact Form
+                </a>
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div>
-                  <label className="block text-xs uppercase tracking-wider font-semibold text-[#174532] mb-2">
-                    Tu Nombre
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 text-[15px] bg-white border border-[#dae7df] rounded-md focus:outline-none focus:border-[#4db380] transition-colors"
-                    placeholder="Ej. Carlos Moreno"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs uppercase tracking-wider font-semibold text-[#174532] mb-2">
-                    Correo Electrónico
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3 text-[15px] bg-white border border-[#dae7df] rounded-md focus:outline-none focus:border-[#4db380] transition-colors"
-                    placeholder="tu@email.com"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs uppercase tracking-wider font-semibold text-[#174532] mb-2">
-                    Asunto o Libro de interés
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={formData.subject}
-                    onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    className="w-full px-4 py-3 text-[15px] bg-white border border-[#dae7df] rounded-md focus:outline-none focus:border-[#4db380] transition-colors"
-                    placeholder="Ej. Consulta sobre El Vendedor Hipnótico"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs uppercase tracking-wider font-semibold text-[#174532] mb-2">
-                    Tu Mensaje
-                  </label>
-                  <textarea
-                    rows={4}
-                    required
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3 text-[15px] bg-white border border-[#dae7df] rounded-md focus:outline-none focus:border-[#4db380] transition-colors resize-none"
-                    placeholder="Escribe aquí tu consulta o comentario..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full py-3.5 px-6 bg-[#174532] text-white text-[15px] font-semibold rounded-md hover:bg-[#1f513a] transition-all shadow-md cursor-pointer"
-                >
-                  Enviar mensaje a la editorial
-                </button>
-              </form>
-            )}
+            </div>
           </div>
         </div>
       </div>
