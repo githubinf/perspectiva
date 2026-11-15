@@ -16,6 +16,7 @@ import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
 import NotFoundView from './components/views/NotFoundView.tsx';
 import SeoHead from './components/SeoHead.tsx';
+import BackToTopButton from './components/BackToTopButton.tsx';
 
 const AppContent: React.FC = () => {
   const { currentPath, matchedCategory, matchedBook } = useRouter();
@@ -86,6 +87,7 @@ const App: React.FC<AppProps> = ({ initialPath }) => {
       <Layout>
         <AppContent />
       </Layout>
+      <BackToTopButton />
     </RouterProvider>
   );
 };
