@@ -1,0 +1,637 @@
+# IMPLEMENTACIÓN INTEGRAL — REDISEÑO EDITORIAL Y SEO DE LA CATEGORÍA /tecnologia/ — FG PERSPECTIVA
+
+## 1. OBJETIVO GENERAL
+
+Implementar un rediseño editorial, estructural, visual y SEO de la página `/tecnologia/` de FG Perspectiva.
+
+La página debe adquirir identidad propia dentro de la arquitectura editorial del sitio. No debe ser una adaptación superficial de las páginas `/origen/`, `/iniciacion/` o `/ingresos/`, ni limitarse a presentar cuatro libros con descripciones breves.
+
+El objetivo es construir una página temática sustancial, bien organizada y con valor informativo propio, centrada en la inteligencia artificial y sus aplicaciones en el entorno digital.
+
+La página debe abordar la comprensión de esta tecnología, su utilización como herramienta de trabajo, sus posibilidades en la creatividad y la productividad, su influencia en el marketing y sus limitaciones.
+
+Debe mantener una perspectiva práctica, humana, responsable y editorial.
+
+## 2. REGLAS DE SEGURIDAD Y ALCANCE
+
+Antes de realizar cualquier modificación:
+
+1. Inspeccionar la implementación actual de `/tecnologia/`, el sistema de rutas, los componentes existentes, los datos del catálogo, los metadatos SEO y los mecanismos de navegación.
+2. Identificar cómo se implementaron las vistas independientes de `/origen/`, `/iniciacion/` e `/ingresos/`, utilizando sus soluciones técnicas como referencia de integración, pero no copiando sus estructuras editoriales ni visuales.
+3. Crear una copia de seguridad de todos los archivos que vayan a modificarse.
+4. Comprobar la estructura de datos de los cuatro libros y sus recursos gráficos antes de utilizarlos.
+
+### Restricciones obligatorias
+
+- No modificar la Home.
+- No modificar `/biblioteca/`.
+- No modificar `/origen/`, `/iniciacion/` ni `/ingresos/`.
+- No modificar `/crecimiento/` ni `/mindset/`.
+- No modificar `/sistemas-digitales/`, `/sobre-fg-perspectiva/` ni `/contacto/`.
+- No modificar el Header ni el Footer.
+- El Footer está expresamente excluido de cualquier intervención.
+- No modificar el catálogo general ni los datos comerciales de los libros.
+- No cambiar títulos, subtítulos, autores, portadas, slugs, enlaces de Amazon ni opciones de compra.
+- No alterar `PurchaseModal` ni su funcionamiento.
+- No cambiar el router, el sistema global de navegación, los tipos de datos ni la arquitectura general, salvo la modificación estrictamente necesaria para registrar la vista independiente.
+- No instalar paquetes ni dependencias nuevas si la implementación puede realizarse con los recursos existentes.
+- No desplegar a Vercel.
+- No modificar archivos ajenos a esta tarea.
+
+Si alguna modificación técnica requiere intervenir un componente compartido, buscar primero una solución local y aislada. No introducir cambios globales para resolver un problema específico de Tecnología.
+
+## 3. POSICIONAMIENTO EDITORIAL
+
+**Territorio temático:**
+
+Inteligencia artificial aplicada al entorno digital: fundamentos, herramientas, creación, productividad, automatización, capacidades humanas y transformación del marketing.
+
+**Pregunta central:**
+
+¿Cómo podemos comprender y aprovechar la inteligencia artificial para transformar nuestra forma de trabajar, crear y desarrollar proyectos digitales?
+
+**Intención de búsqueda:**
+
+Informativa y práctica. La página debe responder a personas interesadas en comprender la inteligencia artificial, conocer sus aplicaciones y explorar cómo utilizar herramientas como ChatGPT en actividades de creación, productividad y marketing.
+
+**H1 obligatorio:**
+
+Tecnología e inteligencia artificial: nuevas formas de crear y trabajar en el entorno digital
+
+**Meta title:**
+
+Tecnología: inteligencia artificial y aplicaciones digitales | FG Perspectiva
+
+**Meta description:**
+
+Explora la inteligencia artificial, sus aplicaciones en la creación de contenidos, la productividad digital y la transformación del marketing mediante nuevas tecnologías.
+
+**Canonical:**
+
+https://fgperspectiva.vercel.app/tecnologia/
+
+## 4. CONTENIDO EDITORIAL COMPLETO
+
+Incorporar el siguiente contenido como cuerpo editorial de la página.
+
+No resumirlo, sustituirlo por textos genéricos ni reducirlo a tarjetas con frases breves. Se permite ajustar la presentación visual, pero debe conservarse íntegramente el contenido y su sentido.
+
+---
+
+### HERO EDITORIAL
+
+**H1: Tecnología e inteligencia artificial: nuevas formas de crear y trabajar en el entorno digital**
+
+La inteligencia artificial está modificando la manera en que accedemos a la información, desarrollamos ideas y realizamos numerosas actividades profesionales. Lo que hace unos años parecía reservado a entornos especializados forma parte hoy de herramientas que podemos utilizar para investigar, crear contenidos, analizar información y mejorar distintos procesos de trabajo.
+
+Esta transformación abre posibilidades, pero también plantea nuevas preguntas. Comprender qué puede hacer la inteligencia artificial, dónde están sus límites y cómo utilizarla con criterio resulta cada vez más importante para quienes desarrollan actividades en Internet.
+
+En FG Perspectiva abordamos la tecnología desde una perspectiva práctica: comprender sus fundamentos, explorar sus aplicaciones y reconocer cómo puede ampliar nuestras capacidades sin sustituir el conocimiento, la creatividad ni el juicio humano.
+
+### H2: La inteligencia artificial está cambiando nuestra forma de trabajar
+
+La incorporación de inteligencia artificial a las actividades digitales no representa únicamente la aparición de nuevas aplicaciones. También está transformando la relación que mantenemos con la información, las herramientas y los procesos mediante los cuales desarrollamos nuestro trabajo.
+
+Investigar un tema, organizar documentación, explorar alternativas, preparar contenidos o analizar determinados datos son actividades que pueden recibir apoyo de sistemas inteligentes. Algunas tareas que antes exigían procesos manuales prolongados pueden realizarse ahora mediante interacciones más directas con herramientas especializadas.
+
+Sin embargo, disponer de nuevas capacidades tecnológicas no significa que todas las actividades deban automatizarse ni que cualquier resultado generado sea necesariamente correcto.
+
+La verdadera oportunidad está en comprender dónde puede aportar valor la tecnología, qué tareas puede facilitar y qué decisiones deben seguir dependiendo de nuestro conocimiento y criterio.
+
+Por eso, acercarnos a la inteligencia artificial exige algo más que aprender a utilizar una aplicación. Necesitamos entender el contexto en el que funciona y la manera en que sus capacidades pueden incorporarse a nuestras actividades.
+
+### H2: Comprender la inteligencia artificial antes de utilizarla
+
+La inteligencia artificial es un campo tecnológico que engloba sistemas capaces de realizar tareas que requieren diferentes formas de procesamiento de información, reconocimiento de patrones, predicción o generación de resultados.
+
+Dentro de este campo encontramos distintas aproximaciones y tecnologías que conviene distinguir.
+
+- **Aprendizaje automático:** sistemas que identifican patrones a partir de datos y utilizan esos patrones para realizar determinadas tareas o predicciones.
+- **Procesamiento del lenguaje natural:** tecnologías que permiten analizar, interpretar y trabajar con el lenguaje humano.
+- **Modelos generativos:** sistemas capaces de producir nuevos contenidos, como textos, imágenes, audio o código, a partir de las instrucciones y el contexto que reciben.
+- **Sistemas de reconocimiento y análisis:** herramientas orientadas a interpretar imágenes, sonidos, documentos y otros tipos de información.
+
+Estas categorías no representan tecnologías completamente aisladas. En muchos productos actuales encontramos varias capacidades combinadas para resolver diferentes necesidades.
+
+Comprender estas diferencias nos permite evitar una confusión habitual: pensar que todas las herramientas de inteligencia artificial funcionan de la misma manera o que todas pueden resolver cualquier problema.
+
+Cada sistema tiene capacidades, condiciones de uso y limitaciones específicas. Conocerlas es el primer paso para aprovecharlo correctamente.
+
+### H2: De la herramienta aislada al asistente de trabajo
+
+Durante mucho tiempo, el trabajo digital estuvo organizado alrededor de aplicaciones diseñadas para resolver tareas concretas. Utilizábamos una herramienta para escribir, otra para organizar información, otra para analizar datos y otras para desarrollar diferentes actividades.
+
+La incorporación de asistentes de inteligencia artificial introduce una forma distinta de interactuar con algunas de esas tareas. En lugar de navegar exclusivamente por funciones y menús, podemos formular una necesidad mediante lenguaje natural, aportar contexto y solicitar ayuda para desarrollar una actividad.
+
+Estos asistentes pueden apoyar procesos de investigación, planificación, organización, análisis y creación. También pueden ayudar a explorar diferentes alternativas antes de tomar una decisión.
+
+La diferencia importante no está únicamente en la comodidad de la interacción. Está en la posibilidad de utilizar una misma interfaz para abordar actividades relacionadas y desarrollar procesos de trabajo progresivos.
+
+Aun así, un asistente no conoce automáticamente todas nuestras necesidades ni comprende siempre las particularidades de cada proyecto. La información que aportamos, los objetivos que definimos y la revisión de los resultados siguen siendo fundamentales.
+
+### H2: ChatGPT: nuevas formas de interactuar con la información
+
+ChatGPT representa una de las formas más conocidas de interacción con modelos de inteligencia artificial generativa. Su funcionamiento conversacional permite plantear preguntas, proporcionar instrucciones, aportar documentos y desarrollar tareas mediante intercambios sucesivos.
+
+Para utilizarlo con criterio, conviene comprender varios elementos.
+
+**La formulación de instrucciones**
+
+Una petición clara ayuda a orientar el resultado. Cuanto mejor definamos la tarea, el propósito y las condiciones que debe respetar la respuesta, más posibilidades tendremos de obtener algo útil.
+
+**El contexto**
+
+La información que proporcionamos influye en la interpretación de una petición. Un mismo encargo puede producir resultados muy diferentes dependiendo de los antecedentes, los objetivos y las restricciones que expliquemos.
+
+**La interacción progresiva**
+
+No siempre necesitamos obtener una respuesta definitiva en una sola consulta. Podemos revisar, corregir, ampliar y orientar el trabajo mediante nuevas indicaciones.
+
+**La evaluación de resultados**
+
+Una respuesta bien redactada no es necesariamente una respuesta correcta. Debemos comprobar datos, identificar posibles errores y evaluar si el resultado responde realmente a la necesidad planteada.
+
+**La responsabilidad humana**
+
+La herramienta puede asistirnos en una tarea, pero somos nosotros quienes debemos determinar si el resultado es adecuado, fiable y coherente con el propósito del trabajo.
+
+Aprender a interactuar con ChatGPT implica, por tanto, desarrollar una forma más clara de comunicar objetivos, proporcionar información y evaluar resultados.
+
+### H2: Inteligencia artificial y creatividad: ampliar las posibilidades de creación
+
+La creatividad no consiste únicamente en producir ideas. También implica seleccionar, relacionar, desarrollar y transformar esas ideas hasta convertirlas en propuestas con sentido.
+
+La inteligencia artificial puede intervenir en distintas fases de ese proceso. Puede ayudarnos a explorar enfoques, generar alternativas, reorganizar conceptos o encontrar nuevas formas de abordar un problema.
+
+En determinadas situaciones, esta capacidad resulta útil para superar un bloqueo inicial o ampliar el conjunto de posibilidades que estamos considerando.
+
+Podemos utilizarla para:
+
+- Explorar perspectivas diferentes sobre un mismo tema.
+- Generar alternativas iniciales para un proyecto.
+- Desarrollar conceptos y líneas de trabajo.
+- Organizar ideas que todavía no tienen una estructura definida.
+- Experimentar con formatos y enfoques.
+- Revisar una propuesta desde diferentes puntos de vista.
+
+Sin embargo, producir muchas alternativas no equivale a crear algo valioso.
+
+Una idea necesita contexto, intención, conocimiento y una dirección. La selección y el desarrollo final dependen de nuestra capacidad para reconocer qué tiene sentido y qué merece convertirse en una propuesta concreta.
+
+La inteligencia artificial puede ampliar el espacio de exploración. La identidad y la coherencia de lo que creamos siguen dependiendo de las decisiones humanas.
+
+### H2: Creación de contenidos con inteligencia artificial
+
+La producción de contenidos es una de las áreas donde las herramientas generativas pueden ofrecer apoyo en distintas etapas del trabajo.
+
+Su aplicación puede comenzar durante la investigación y la organización de información, continuar con la planificación de contenidos y extenderse al desarrollo de borradores, la revisión y la adaptación a diferentes formatos.
+
+Utilizada de forma adecuada, la inteligencia artificial puede facilitar tareas que requieren organizar grandes cantidades de información o explorar distintas maneras de presentar una idea.
+
+No obstante, debemos distinguir entre facilitar la producción y garantizar la calidad editorial.
+
+Un texto puede estar correctamente estructurado y, aun así, carecer de profundidad, precisión o una perspectiva propia. La generación automática no sustituye la investigación, la comprobación de fuentes ni el conocimiento necesario para desarrollar un contenido útil.
+
+La intervención humana resulta esencial para evaluar la información, aportar contexto, corregir errores, establecer prioridades y asegurar que el resultado responde a una necesidad real.
+
+El objetivo no debería ser publicar más por el simple hecho de producir más rápido. Debería ser aprovechar las herramientas disponibles para desarrollar contenidos mejor fundamentados, coherentes y relevantes.
+
+### H2: Productividad digital: organizar el trabajo con inteligencia artificial
+
+La productividad no depende exclusivamente de realizar más tareas en menos tiempo. También consiste en organizar mejor los recursos, reducir fricciones y dedicar atención a las actividades que realmente necesitan nuestra intervención.
+
+En este contexto, la inteligencia artificial puede ayudar en diferentes procesos cotidianos.
+
+Puede facilitar la síntesis de documentación, la clasificación de información, la preparación de borradores, la organización de tareas y el análisis preliminar de determinados datos.
+
+También puede servir como apoyo para estructurar proyectos, preparar documentos o explorar alternativas antes de ejecutar una actividad.
+
+Sin embargo, incorporar una herramienta no mejora automáticamente un proceso. Si una tarea está mal definida, automatizarla puede trasladar el problema a otra parte del trabajo.
+
+Por eso, antes de incorporar inteligencia artificial conviene identificar qué necesidad queremos resolver, qué parte del proceso puede beneficiarse de su utilización y cómo comprobaremos que el resultado realmente mejora la actividad.
+
+La productividad surge de una combinación de herramientas adecuadas, procesos bien definidos y decisiones conscientes.
+
+### H2: Inteligencia artificial y nuevas oportunidades digitales
+
+La inteligencia artificial está ampliando las posibilidades de desarrollar actividades y propuestas dentro del entorno digital.
+
+Su utilización puede facilitar la investigación, la creación de recursos, la preparación de materiales, el desarrollo de servicios y la mejora de determinados procesos profesionales.
+
+También permite explorar formas diferentes de abordar actividades que antes requerían más tiempo o recursos especializados.
+
+Para emprendedores, creadores y profesionales digitales, estas capacidades pueden representar una oportunidad para ampliar sus posibilidades de trabajo y desarrollar nuevas propuestas.
+
+Pero debemos mantener una distinción fundamental: disponer de una herramienta no equivale a disponer de un negocio.
+
+Una oportunidad digital necesita identificar una necesidad, comprender a quién queremos dirigirnos, desarrollar una propuesta de valor y comprobar si existe una demanda real.
+
+La inteligencia artificial puede facilitar determinadas tareas y ampliar nuestras capacidades, pero no sustituye la comprensión del mercado, la calidad de una propuesta ni el trabajo necesario para desarrollarla.
+
+El verdadero aprovechamiento de estas tecnologías comienza cuando sabemos relacionar sus capacidades con necesidades concretas.
+
+### H2: La inteligencia artificial está transformando el marketing
+
+El marketing es otra de las disciplinas en las que la inteligencia artificial está introduciendo nuevas posibilidades de trabajo.
+
+Las herramientas actuales pueden apoyar la investigación, el análisis de información, la planificación de actividades y la adaptación de mensajes a diferentes contextos.
+
+Entre sus posibles aplicaciones encontramos:
+
+- **Investigación y análisis:** organizar información y explorar características de mercados, sectores y audiencias.
+- **Comprensión de necesidades:** identificar patrones y agrupar información que ayude a interpretar intereses y comportamientos.
+- **Planificación:** apoyar la organización de campañas, contenidos y acciones de comunicación.
+- **Adaptación de mensajes:** explorar distintas formulaciones y enfoques para diferentes públicos o contextos.
+- **Análisis de resultados:** facilitar la interpretación preliminar de datos y la identificación de aspectos que merecen revisión.
+- **Personalización:** apoyar la adaptación de determinadas experiencias y comunicaciones.
+
+Estas aplicaciones pueden mejorar la capacidad de análisis y facilitar determinadas tareas, pero no eliminan la necesidad de comprender el contexto comercial.
+
+Una estrategia de marketing requiere objetivos, conocimiento del público, una propuesta relevante y decisiones fundamentadas.
+
+La inteligencia artificial puede convertirse en un recurso de apoyo para desarrollar esas actividades, pero delegar completamente el criterio estratégico en una herramienta puede conducir a mensajes genéricos, decisiones poco fundamentadas y resultados desconectados de las necesidades reales.
+
+### H2: Automatización e integración: conectar herramientas y procesos
+
+Una de las posibilidades más interesantes de la evolución tecnológica está en conectar diferentes herramientas para organizar procesos de trabajo.
+
+Conviene distinguir tres niveles de utilización.
+
+**Uso independiente**
+
+Utilizamos una aplicación para resolver una tarea concreta. Por ejemplo, solicitar una síntesis de información o preparar un primer borrador.
+
+**Automatización de tareas**
+
+Definimos un proceso que permite ejecutar una actividad repetitiva mediante reglas y herramientas, reduciendo determinadas intervenciones manuales.
+
+**Integración de procesos**
+
+Conectamos diferentes aplicaciones y actividades para que la información pueda circular entre ellas y contribuir a un flujo de trabajo más organizado.
+
+La inteligencia artificial puede incorporarse a estos niveles para facilitar tareas de interpretación, generación, clasificación o asistencia.
+
+Sin embargo, una automatización no debe considerarse correcta únicamente porque funcione técnicamente. También necesitamos comprobar la calidad de los resultados, la seguridad de la información y las consecuencias de las acciones que ejecuta.
+
+La supervisión humana continúa siendo necesaria, especialmente cuando los procesos afectan a decisiones comerciales, datos personales o comunicaciones dirigidas a otras personas.
+
+### H2: Los límites de la inteligencia artificial: criterio, control y responsabilidad
+
+Comprender las posibilidades de la inteligencia artificial también exige reconocer sus limitaciones.
+
+Los sistemas generativos pueden producir respuestas convincentes que contienen errores, interpretaciones incorrectas o información que no está suficientemente fundamentada.
+
+Además, los resultados pueden depender de los datos utilizados, del contexto proporcionado y de las características particulares de cada herramienta.
+
+Existen cuestiones que debemos considerar antes de incorporar estas tecnologías a nuestro trabajo:
+
+**Precisión de la información**
+
+No debemos asumir que una respuesta es verdadera por el simple hecho de estar bien redactada. La comprobación resulta especialmente importante cuando trabajamos con información técnica, comercial o factual.
+
+**Actualización**
+
+No todos los sistemas disponen de información actualizada ni acceso a fuentes externas en tiempo real. Debemos comprobar las capacidades concretas de cada herramienta.
+
+**Privacidad**
+
+Es necesario evaluar qué información compartimos, qué datos pueden ser sensibles y cuáles son las condiciones de tratamiento de la plataforma utilizada.
+
+**Derechos de autor**
+
+La utilización de contenidos generados o transformados mediante inteligencia artificial requiere atención a las condiciones legales, las licencias y los derechos de terceros aplicables.
+
+**Dependencia tecnológica**
+
+Delegar demasiadas actividades puede reducir nuestra capacidad de análisis y dificultar la detección de errores. La herramienta debe apoyar el trabajo, no sustituir el conocimiento necesario para supervisarlo.
+
+**Responsabilidad**
+
+Quien utiliza, revisa y publica un resultado debe asumir la responsabilidad correspondiente sobre su contenido y sus posibles consecuencias.
+
+La inteligencia artificial es una tecnología con capacidades importantes, pero su utilización exige criterio, verificación y responsabilidad.
+
+### H2: Cuatro perspectivas para comprender la inteligencia artificial aplicada
+
+La tecnología no puede entenderse desde una única perspectiva. Necesitamos conocer sus fundamentos, explorar sus aplicaciones y reconocer cómo puede intervenir en diferentes actividades digitales.
+
+Nuestra colección reúne cuatro libros que se relacionan con distintas dimensiones de este territorio.
+
+**Inteligencia Artificial**
+
+Una aproximación al ámbito de la inteligencia artificial que ocupa el lugar de referencia conceptual dentro de esta selección. Permite situar el tema y acercarse a una tecnología que está adquiriendo relevancia en numerosos sectores.
+
+**Cómo ganar dinero con CHATGPT**
+
+Una obra relacionada con las posibilidades de aplicación de ChatGPT en actividades digitales. Su presencia en esta colección conecta la comprensión de la herramienta con la exploración de oportunidades de aprovechamiento.
+
+**Desbloquea tu inspiración con ChatGPT**
+
+Un título que se vincula con la dimensión creativa de la inteligencia artificial y su utilización como apoyo para explorar ideas y desarrollar procesos de creación.
+
+**El futuro del marketing (IA)**
+
+Una obra que relaciona la inteligencia artificial con la evolución del marketing y las transformaciones que pueden producirse en las actividades de comunicación y desarrollo comercial.
+
+Estos cuatro títulos permiten aproximarnos a la tecnología desde perspectivas complementarias: comprensión, aplicación, creatividad y transformación del marketing.
+
+No se trata de considerar la inteligencia artificial como una solución universal, sino de desarrollar una visión más amplia sobre sus capacidades y su posible integración en nuestro trabajo.
+
+### H2: La tecnología amplía nuestras posibilidades, el criterio define cómo utilizarlas
+
+La inteligencia artificial puede facilitar tareas, ampliar nuestras capacidades y transformar numerosos procesos de trabajo. Sin embargo, disponer de herramientas más avanzadas no garantiza que sepamos utilizarlas correctamente.
+
+El valor aparece cuando comprendemos qué problema queremos resolver, elegimos los recursos adecuados y evaluamos los resultados con criterio.
+
+La tecnología puede ayudarnos a investigar, crear, organizar y desarrollar nuevas posibilidades. Pero el conocimiento, la perspectiva y la responsabilidad siguen siendo fundamentales para convertir esas capacidades en aplicaciones útiles.
+
+En FG Perspectiva entendemos la tecnología como un campo de conocimiento que debemos explorar con curiosidad, pero también con sentido crítico.
+
+Porque el verdadero avance no consiste simplemente en utilizar más herramientas, sino en comprender mejor lo que podemos hacer con ellas.
+
+**Comprender la tecnología es el primer paso. Utilizarla con criterio es lo que marca la diferencia.**
+
+---
+
+## 5. PRESENTACIÓN DE LOS LIBROS
+
+La sección de los cuatro libros debe utilizar los datos oficiales existentes en el catálogo del proyecto.
+
+Libros que deben aparecer, respetando exactamente los títulos y su correspondencia con `category.books`:
+
+1. Cómo ganar dinero con CHATGPT
+2. Desbloquea tu inspiración con ChatGPT
+3. Inteligencia Artificial
+4. El futuro del marketing (IA)
+
+### Reglas obligatorias
+
+- Recuperar los objetos existentes desde la fuente oficial de datos del catálogo.
+- No duplicar manualmente los datos de los libros en un nuevo array si ya existe una fuente común.
+- Utilizar las portadas oficiales existentes.
+- No utilizar imágenes alternativas ni imágenes genéricas de inteligencia artificial.
+- No inventar descripciones comerciales, subtítulos, precios, valoraciones o formatos.
+- No alterar los enlaces de las fichas.
+- Mantener el comportamiento de las tarjetas y del componente `PurchaseModal`.
+- Los botones principales de las tarjetas deben conservar el texto «Ver ficha del libro».
+- Cuando existan opciones de compra, mantener «Opciones de compra» como acción secundaria.
+- Cuando un libro no tenga opciones de compra disponibles, no mostrar una acción ficticia.
+- Mantener las dimensiones y el tratamiento visual de las portadas coherentes con la Biblioteca.
+
+La presentación debe integrarse en el desarrollo editorial, no parecer una sección comercial desconectada del contenido.
+
+## 6. IDENTIDAD VISUAL Y COMPOSICIÓN
+
+La página debe tener una identidad visual propia, profesional y coherente con FG Perspectiva.
+
+No copiar la composición de Ingresos ni reproducir una sucesión uniforme de bloques de texto, tarjetas y diagramas.
+
+### Hero
+
+Crear un Hero editorial independiente con:
+
+- Breadcrumbs.
+- H1 indicado.
+- Introducción completa.
+- Jerarquía tipográfica clara.
+- Composición visual diferenciada.
+- Sin imágenes de categoría.
+
+### Desarrollo editorial
+
+Organizar las secciones con diferentes ritmos de lectura.
+
+Utilizar:
+
+- Bloques de texto con anchura de lectura adecuada.
+- Subtítulos y destacados editoriales.
+- Listas cuando realmente aporten claridad.
+- Separaciones visuales proporcionadas.
+- Diagramas conceptuales integrados en los apartados correspondientes.
+
+Evitar que todos los apartados tengan exactamente la misma composición.
+
+### Recursos visuales originales
+
+Construir los siguientes recursos con HTML, CSS o SVG, utilizando los recursos ya disponibles en el proyecto.
+
+**Diagrama A — Evolución del trabajo digital**
+
+Información → Asistencia inteligente → Evaluación → Aplicación
+
+**Diagrama B — Ecosistema conceptual de la inteligencia artificial**
+
+Representar las relaciones entre aprendizaje automático, procesamiento del lenguaje, modelos generativos y sistemas de análisis. Debe quedar claro que son conceptos relacionados y que no todos constituyen categorías equivalentes o independientes.
+
+**Diagrama C — Interacción con ChatGPT**
+
+Objetivo → Instrucciones → Contexto → Resultado → Revisión
+
+**Diagrama D — Proceso creativo asistido**
+
+Idea → Exploración → Selección → Desarrollo → Revisión humana
+
+**Diagrama E — Productividad**
+
+Tarea → Asistencia tecnológica → Comprobación → Resultado aplicable
+
+**Diagrama F — Aplicaciones de IA en marketing**
+
+Investigación → Análisis → Planificación → Comunicación → Evaluación
+
+**Diagrama G — Integración y automatización**
+
+Herramienta A → Proceso → Herramienta B → Resultado → Supervisión
+
+Los diagramas deben ser originales, claros y funcionales en escritorio, tablet y móvil.
+
+No utilizar ilustraciones decorativas de robots, cerebros digitales, circuitos, cabezas artificiales ni imágenes de bancos de imágenes.
+
+No convertir los diagramas en infografías saturadas. Deben facilitar la comprensión de los conceptos.
+
+## 7. ARQUITECTURA TÉCNICA
+
+Implementar una vista independiente para `/tecnologia/`.
+
+Antes de crear archivos, inspeccionar cómo están implementadas las vistas independientes de Origen, Iniciación e Ingresos.
+
+Utilizar la solución técnica más coherente con la arquitectura actual del proyecto.
+
+Como referencia, la implementación podrá requerir:
+
+- Un componente de vista específico para Tecnología.
+- El registro de la ruta en el router o en el punto de resolución actual.
+- Una rama SEO específica para `/tecnologia/`.
+
+No modificar la implementación compartida de `CategoryView` para las categorías que todavía dependen de ella.
+
+Si la ruta `/tecnologia/` actualmente utiliza `CategoryView`, registrar la vista independiente de modo que tenga prioridad sobre el fallback genérico, siguiendo el patrón ya probado en las otras categorías.
+
+Mantener intactos los datos del catálogo y la estructura general de navegación.
+
+## 8. SEO TÉCNICO
+
+Configurar metadatos exclusivos para `/tecnologia/`.
+
+**Title:**
+
+Tecnología: inteligencia artificial y aplicaciones digitales | FG Perspectiva
+
+**Description:**
+
+Explora la inteligencia artificial, sus aplicaciones en la creación de contenidos, la productividad digital y la transformación del marketing mediante nuevas tecnologías.
+
+**Canonical:**
+
+https://fgperspectiva.vercel.app/tecnologia/
+
+**Open Graph:**
+
+Mantener la imagen corporativa y el sistema de metadatos existente. No crear una imagen genérica de categoría.
+
+**Twitter Cards:**
+
+Respetar el sistema de metadatos existente.
+
+### Datos estructurados
+
+Implementar datos estructurados válidos y coherentes con el contenido real:
+
+- `CollectionPage`.
+- `ItemList` con los cuatro libros oficiales.
+- `BreadcrumbList`.
+
+Los objetos `Book` deben utilizar los datos reales del catálogo. No inventar ISBN, precios, fechas de publicación, valoraciones, formatos ni propiedades comerciales.
+
+No duplicar información estructurada ni introducir entidades ficticias.
+
+Comprobar que los datos JSON-LD sean válidos y estén correctamente vinculados a la ruta.
+
+## 9. NAVEGACIÓN Y ENLACES
+
+- Mantener los Breadcrumbs: Inicio → Biblioteca → Tecnología.
+- Los enlaces a los cuatro libros deben utilizar sus rutas reales existentes.
+- Mantener el retorno a Biblioteca.
+- No crear enlaces a rutas inexistentes.
+- No introducir CTA repetitivos en cada sección.
+- El cierre editorial debe ofrecer una transición natural hacia la Biblioteca.
+- No añadir enlaces innecesarios hacia Sistemas Digitales.
+- No modificar Header ni Footer.
+
+## 10. RESPONSIVE Y ACCESIBILIDAD
+
+Comprobar la página en:
+
+- Escritorio: 1440 px.
+- Tablet: 768 px.
+- Móvil: 390 px.
+
+Requisitos:
+
+- Sin desbordamientos horizontales.
+- Sin diagramas cortados.
+- Sin textos demasiado pequeños.
+- Sin portadas deformadas.
+- Sin elementos superpuestos.
+- Sin controles inaccesibles.
+- Sin dependencias de hover para funciones esenciales.
+- Contraste suficiente.
+- Jerarquía correcta de encabezados.
+- SVG accesibles cuando corresponda.
+- Imágenes con textos alternativos descriptivos.
+
+La página debe conservar una lectura cómoda en móvil. Los diagramas complejos deberán adaptarse a una disposición vertical cuando sea necesario.
+
+## 11. VALIDACIÓN Y PRUEBAS OBLIGATORIAS
+
+Una vez finalizada la implementación:
+
+### A. Integridad editorial
+
+- Verificar que todo el contenido proporcionado esté presente.
+- Confirmar que no se haya resumido ni omitido ningún apartado.
+- Comprobar los títulos y subtítulos.
+- Verificar que los cuatro libros aparezcan correctamente.
+- Confirmar que no existan textos genéricos o provisionales.
+
+### B. SEO
+
+- Un único H1.
+- Jerarquía H2/H3 coherente.
+- Title y description correctos.
+- Canonical correcto.
+- Open Graph y Twitter Cards.
+- JSON-LD válido.
+- Breadcrumbs funcionales.
+- Ruta incluida en sitemap.
+- Sin duplicación de metadatos.
+
+### C. Funcionamiento
+
+- Verificar la carga directa de `/tecnologia/`.
+- Verificar la navegación desde Biblioteca.
+- Comprobar los cuatro enlaces a las fichas.
+- Comprobar los botones de compra cuando existan.
+- Comprobar la apertura y cierre de PurchaseModal.
+- Comprobar que el retorno a Biblioteca funciona.
+- Comprobar que no existen errores de consola.
+
+### D. Integridad del proyecto
+
+Ejecutar:
+
+- TypeScript.
+- Build de producción.
+- Prerender de las rutas.
+- Comprobación de las rutas generadas.
+- Pruebas responsive.
+- Regresión de las páginas existentes.
+
+Como mínimo, comprobar que continúan funcionando:
+
+- Home.
+- Biblioteca.
+- Origen.
+- Iniciación.
+- Ingresos.
+- Crecimiento.
+- Mindset.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Contacto.
+
+Verificar que no se haya modificado accidentalmente el Header, Footer, catálogo, fichas de libros, sistema de compra ni las vistas de las demás categorías.
+
+## 12. INFORME TÉCNICO FINAL
+
+Al terminar, presentar un informe que incluya:
+
+1. Archivos creados.
+2. Archivos modificados.
+3. Copia de seguridad realizada y su ubicación.
+4. Descripción de la nueva arquitectura de la página.
+5. Confirmación de que el contenido editorial está completo.
+6. Número de palabras visibles dentro de `<main>`.
+7. Número de H1, H2 y H3.
+8. Confirmación de los cuatro libros y sus portadas.
+9. Metadatos SEO y datos estructurados implementados.
+10. Resultado de TypeScript, build y prerender.
+11. Resultado de las pruebas responsive.
+12. Resultado de las pruebas de navegación y compra.
+13. Resultado de las pruebas de regresión.
+14. Confirmación expresa de que Header y Footer permanecen intactos.
+15. Confirmación de que no se ha desplegado a Vercel.
+
+Si alguna comprobación no puede realizarse, indicarlo expresamente. No presentar como superada una prueba que no se haya ejecutado.
+
+## 13. CONDICIÓN FINAL
+
+La implementación debe quedar realizada exclusivamente en el entorno local del proyecto.
+
+No ejecutar despliegues, publicaciones ni cambios en producción.
+
+No realizar modificaciones adicionales por iniciativa propia.
+
+El resultado esperado es una página `/tecnologia/` independiente, editorialmente sólida, visualmente diferenciada, técnicamente integrada y optimizada para su propia intención de búsqueda, manteniendo intacto el resto del proyecto FG Perspectiva.
+
+**Ejecutar únicamente el alcance definido en esta instrucción y entregar el informe técnico final antes de dar la tarea por terminada.**

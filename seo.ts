@@ -479,7 +479,78 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
-  // 6. Category pages (tecnología, crecimiento, mindset)
+  // 6d. Categoría Tecnología (vista editorial dedicada)
+  if (path === '/tecnologia/') {
+    const technologyCategory = FEATURED_BOOKS.find((c) => c.path === '/tecnologia/');
+    const technologyBooks = technologyCategory?.books || [];
+    const technologyDescription =
+      'Explora la inteligencia artificial, sus aplicaciones en la creación de contenidos, la productividad digital y la transformación del marketing mediante nuevas tecnologías.';
+
+    return {
+      path: '/tecnologia/',
+      title: 'Tecnología: inteligencia artificial y aplicaciones digitales | FG Perspectiva',
+      description: technologyDescription,
+      canonical: `${BASE_URL}/tecnologia/`,
+      ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
+      ogType: 'website',
+      h1: 'Tecnología e inteligencia artificial: nuevas formas de crear y trabajar en el entorno digital',
+      schema: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          name: 'Tecnología: inteligencia artificial y aplicaciones digitales | FG Perspectiva',
+          description: technologyDescription,
+          url: `${BASE_URL}/tecnologia/`,
+          isPartOf: {
+            '@type': 'WebSite',
+            name: 'FG Perspectiva',
+            url: `${BASE_URL}/`
+          },
+          mainEntity: {
+            '@type': 'ItemList',
+            name: 'Libros de la ruta Tecnología',
+            numberOfItems: technologyBooks.length,
+            itemListElement: technologyBooks.map((b, idx) => ({
+              '@type': 'ListItem',
+              position: idx + 1,
+              item: {
+                '@type': 'Book',
+                name: b.title,
+                description: b.description,
+                url: `${BASE_URL}${b.path || `/${b.slug}/`}`
+              }
+            }))
+          }
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Tecnología',
+              item: `${BASE_URL}/tecnologia/`
+            }
+          ]
+        }
+      ]
+    };
+  }
+
+  // 6. Category pages (crecimiento, mindset)
   const matchedCategory = FEATURED_BOOKS.find((c) => c.path === path);
   if (matchedCategory) {
     return {
