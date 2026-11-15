@@ -621,7 +621,78 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
-  // 6. Category page (mindset)
+  // 6f. Categoría Mindset (vista editorial dedicada)
+  if (path === '/mindset/') {
+    const mindsetCategory = FEATURED_BOOKS.find((c) => c.path === '/mindset/');
+    const mindsetBooks = mindsetCategory?.books || [];
+    const mindsetDescription =
+      'Explora la mentalidad emprendedora, el trabajo independiente, la comunicación comercial y la creación y publicación de libros y productos propios.';
+
+    return {
+      path: '/mindset/',
+      title: 'Mindset: mentalidad emprendedora y desarrollo de proyectos propios | FG Perspectiva',
+      description: mindsetDescription,
+      canonical: `${BASE_URL}/mindset/`,
+      ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
+      ogType: 'website',
+      h1: 'Mindset: mentalidad emprendedora y capacidad para crear proyectos propios',
+      schema: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          name: 'Mindset: mentalidad emprendedora y desarrollo de proyectos propios | FG Perspectiva',
+          description: mindsetDescription,
+          url: `${BASE_URL}/mindset/`,
+          isPartOf: {
+            '@type': 'WebSite',
+            name: 'FG Perspectiva',
+            url: `${BASE_URL}/`
+          },
+          mainEntity: {
+            '@type': 'ItemList',
+            name: 'Libros de la ruta Mindset',
+            numberOfItems: mindsetBooks.length,
+            itemListElement: mindsetBooks.map((b, idx) => ({
+              '@type': 'ListItem',
+              position: idx + 1,
+              item: {
+                '@type': 'Book',
+                name: b.title,
+                description: b.description,
+                url: `${BASE_URL}${b.path || `/${b.slug}/`}`
+              }
+            }))
+          }
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Mindset',
+              item: `${BASE_URL}/mindset/`
+            }
+          ]
+        }
+      ]
+    };
+  }
+
+  // 6. Category page (fallback genérico)
   const matchedCategory = FEATURED_BOOKS.find((c) => c.path === path);
   if (matchedCategory) {
     return {

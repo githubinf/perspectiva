@@ -1,0 +1,738 @@
+# INSTRUCCIÓN INTEGRAL DE IMPLEMENTACIÓN — REDISEÑO EDITORIAL Y SEO DE /MINDSET/ — FG PERSPECTIVA
+
+## 1. OBJETIVO GENERAL
+
+Implementar un rediseño editorial, estructural y SEO completo de la página `/mindset/` del proyecto FG Perspectiva.
+
+La página debe convertirse en una vista editorial independiente, con identidad propia, contenido original y una arquitectura visual diferenciada de las demás categorías.
+
+La implementación debe respetar estrictamente el contenido editorial aprobado que se proporciona íntegramente en esta instrucción.
+
+No se solicita una auditoría ni una propuesta de diseño: se solicita ejecutar la implementación en el entorno local del proyecto.
+
+**Principio fundamental:** Mindset debe representar la mentalidad emprendedora, la autonomía, la comunicación y la creación intelectual. No debe convertirse en una página genérica de motivación, autoayuda o promesas de éxito.
+
+## 2. RESTRICCIONES OBLIGATORIAS
+
+Antes de realizar cualquier modificación:
+
+1. Inspecciona la arquitectura real del proyecto, los componentes, las rutas, el catálogo y la configuración SEO.
+2. Identifica cómo se implementaron las vistas independientes de Origen, Iniciación, Ingresos, Tecnología y Crecimiento.
+3. Inspecciona el contenido real de `constants.tsx` o del archivo que actualmente contenga el catálogo.
+4. Identifica los seis libros que pertenecen a Mindset y sus datos reales.
+5. Comprueba la estructura de las portadas, las rutas y las opciones de compra existentes.
+6. Crea una copia de seguridad de todos los archivos que vayas a modificar antes de comenzar.
+
+### Elementos que NO se pueden modificar
+
+Quedan expresamente protegidos:
+
+- El footer completo. No modificarlo en ningún aspecto.
+- El Header y su funcionamiento.
+- La Home.
+- La página `/biblioteca/`.
+- Las páginas `/origen/`, `/iniciacion/`, `/ingresos/`, `/tecnologia/` y `/crecimiento/`.
+- Las páginas `/sistemas-digitales/`, `/sobre-fg-perspectiva/` y `/contacto/`.
+- Las fichas individuales de los libros.
+- Los datos comerciales del catálogo.
+- Los títulos, subtítulos, portadas, slugs y enlaces comerciales de los libros.
+- `PurchaseModal` y su funcionamiento.
+- El router general, salvo la incorporación puntual de la ruta independiente de Mindset.
+- Los procesos generales de prerenderizado y generación del sitemap, salvo los ajustes estrictamente necesarios para incorporar la vista.
+- Los estilos globales, salvo que una modificación sea absolutamente imprescindible para integrar correctamente la nueva vista. En ese caso, prioriza estilos locales.
+
+No reorganices ni refactorices componentes ajenos a esta tarea.
+
+No elimines código existente por considerarlo innecesario.
+
+No cambies el diseño de otras páginas para uniformarlas con Mindset.
+
+No despliegues el proyecto en Vercel. Todos los cambios deben permanecer en el entorno local.
+
+## 3. IDENTIDAD EDITORIAL DE MINDSET
+
+### Posicionamiento
+
+Mindset reúne conocimientos relacionados con la mentalidad emprendedora y las capacidades personales que intervienen cuando decidimos desarrollar una actividad propia, comunicar nuestras ideas, crear contenidos y convertir nuestro conocimiento en publicaciones o proyectos.
+
+La categoría aborda cinco dimensiones:
+
+1. Mentalidad: perspectiva personal, actitud ante las oportunidades y relación con la abundancia.
+2. Autonomía: iniciativa individual, organización y desarrollo de una actividad emprendedora independiente.
+3. Comunicación: capacidad para presentar propuestas, transmitir valor y relacionarnos comercialmente con otras personas.
+4. Creación intelectual: transformar conocimientos, experiencias e ideas en contenidos y obras propias.
+5. Publicación: desarrollar y materializar proyectos editoriales, especialmente libros y ebooks.
+
+Estas dimensiones no deben presentarse como etapas obligatorias ni como un método único. Son áreas de conocimiento relacionadas con la iniciativa personal y la creación.
+
+### Intención de búsqueda
+
+La página debe responder a las búsquedas relacionadas con:
+
+- Mentalidad emprendedora.
+- Desarrollo de proyectos propios.
+- Autonomía y emprendimiento individual.
+- Comunicación comercial.
+- Escritura y creación de libros.
+- Creación de ebooks.
+- Publicación de libros de no ficción.
+- Desarrollo de una actividad digital independiente.
+
+No debe competir directamente con las categorías Iniciación, Ingresos, Tecnología o Crecimiento.
+
+## 4. METADATOS SEO
+
+Implementar exactamente los siguientes metadatos:
+
+**Meta title:**
+
+Mindset: mentalidad emprendedora y desarrollo de proyectos propios | FG Perspectiva
+
+**Meta description:**
+
+Explora la mentalidad emprendedora, el trabajo independiente, la comunicación comercial y la creación y publicación de libros y productos propios.
+
+**H1:**
+
+Mindset: mentalidad emprendedora y capacidad para crear proyectos propios
+
+**Canonical:**
+
+https://fgperspectiva.vercel.app/mindset/
+
+Configurar correctamente:
+
+- Open Graph.
+- Twitter Card.
+- `og:title`.
+- `og:description`.
+- `og:url`.
+- `og:type` como `website`.
+- Imagen corporativa OG existente, si corresponde a la configuración utilizada por las demás vistas.
+
+No crear imágenes nuevas para representar Mindset.
+
+No utilizar una portada de libro como imagen OG de la categoría.
+
+No introducir emojis en títulos, metadatos ni encabezados.
+
+## 5. ARQUITECTURA DE LA VISTA
+
+Crear una vista exclusiva:
+
+`components/views/MindsetView.tsx`
+
+La página debe tener una estructura editorial independiente.
+
+No reutilizar la plantilla genérica `CategoryView` como contenido principal.
+
+No limitarse a cambiar los textos de otra categoría.
+
+La composición debe tener una identidad visual propia y una jerarquía de lectura clara.
+
+### 5.1. Hero editorial
+
+Crear una apertura tipográfica sobria.
+
+Debe incluir:
+
+- Breadcrumbs: Inicio > Biblioteca > Mindset.
+- H1 aprobado.
+- Introducción editorial.
+- Una composición tipográfica que destaque la identidad de Mindset.
+
+No utilizar fotografías, banners, ilustraciones, imágenes conceptuales, iconos decorativos ni imágenes genéricas de emprendimiento.
+
+La categoría no debe estar representada por una imagen.
+
+### 5.2. Desarrollo editorial
+
+Incorporar los doce apartados aprobados en el contenido completo del apartado 6 de esta instrucción.
+
+La estructura debe conservar el orden argumental:
+
+1. La mentalidad detrás de los proyectos propios.
+2. Pensar como emprendedor: una perspectiva diferente.
+3. Abundancia, percepción y posibilidades.
+4. La autonomía como forma de construir una actividad propia.
+5. Organizar el conocimiento, el tiempo y el trabajo.
+6. Comunicar ideas y transmitir valor.
+7. Del conocimiento a la creación intelectual.
+8. Escribir para desarrollar y compartir conocimiento.
+9. Crear ebooks y materializar ideas.
+10. Publicar: convertir una obra en un proyecto editorial.
+11. De la iniciativa a la ejecución.
+12. Libros para desarrollar una mentalidad creadora.
+
+Cada apartado debe contar con su propio H2.
+
+Los H3 deben utilizarse para organizar subapartados cuando corresponda, especialmente en la sección de libros.
+
+No convertir los doce apartados en tarjetas idénticas.
+
+No reducir el contenido para acomodarlo a una plantilla predeterminada.
+
+No repetir párrafos ni crear bloques de texto genéricos para aumentar artificialmente la extensión.
+
+### 5.3. Composición conceptual
+
+Incorporar una composición visual original, desarrollada mediante HTML y CSS o SVG, que represente las cinco dimensiones de Mindset:
+
+- Mentalidad.
+- Autonomía.
+- Comunicación.
+- Creación intelectual.
+- Publicación.
+
+La composición debe ser conceptual y tipográfica.
+
+No debe sugerir que estas dimensiones forman un proceso lineal, una metodología obligatoria o una secuencia de cinco etapas.
+
+No utilizar fotografías, imágenes de stock, ilustraciones externas ni iconos decorativos.
+
+La composición debe adaptarse correctamente a escritorio, tablet y móvil.
+
+### 5.4. Sección de libros
+
+Presentar los seis libros reales de Mindset.
+
+Utilizar los datos existentes en el catálogo. No duplicar manualmente los datos comerciales ni crear registros paralelos.
+
+La sección debe incluir:
+
+- Portada oficial.
+- Título real.
+- Descripción editorial individual.
+- Enlace a la ficha correspondiente.
+- Botón principal: «Ver ficha del libro».
+- Botón secundario: «Opciones de compra», únicamente cuando existan opciones reales y utilizando el `PurchaseModal` existente.
+
+No mostrar botones de compra para libros que no tengan opciones comerciales registradas.
+
+Las portadas deben conservar su proporción, utilizar `object-fit: contain` y no deformarse.
+
+Utilizar carga diferida cuando corresponda.
+
+No sustituir ninguna portada por imágenes generadas o imágenes de búsqueda.
+
+### 5.5. Cierre editorial
+
+Incorporar el cierre aprobado del contenido.
+
+Debe finalizar con un único CTA contextual:
+
+**Explorar la Biblioteca**
+
+Enlace:
+
+`/biblioteca/`
+
+No añadir otros CTA comerciales ni enlaces innecesarios.
+
+## 6. CONTENIDO EDITORIAL COMPLETO Y OBLIGATORIO
+
+El siguiente texto debe incorporarse íntegramente en la página.
+
+No resumirlo, reescribirlo, eliminar párrafos ni sustituirlo por una versión abreviada.
+
+Conservar los títulos, subtítulos, párrafos, énfasis y orden argumental.
+
+---
+
+# Mindset: mentalidad emprendedora y capacidad para crear proyectos propios
+
+La creación de un proyecto propio comienza mucho antes de desarrollar un producto, abrir un negocio o publicar un libro. Comienza con una forma de observar las posibilidades, interpretar los conocimientos disponibles y decidir qué queremos hacer con nuestras ideas.
+
+En el entorno digital encontramos innumerables herramientas para emprender, comunicar, crear contenidos y desarrollar actividades independientes. Sin embargo, disponer de recursos no significa necesariamente saber aprovecharlos. Entre una idea y su materialización intervienen decisiones, capacidades personales, organización y voluntad de convertir una intención en algo concreto.
+
+La categoría Mindset de FG Perspectiva reúne libros relacionados con esa dimensión personal y creativa de los proyectos. Aquí abordamos la mentalidad emprendedora, la iniciativa individual, la comunicación comercial y la creación de publicaciones propias. Son ámbitos diferentes, pero comparten una cuestión fundamental: nuestra capacidad para desarrollar ideas y conocimientos mediante acciones concretas.
+
+No entendemos la mentalidad como una colección de pensamientos positivos ni como una garantía de éxito. La entendemos como una perspectiva que influye en la manera de interpretar los desafíos, reconocer posibilidades, tomar decisiones y mantener una dirección cuando decidimos construir algo propio.
+
+## 1. La mentalidad detrás de los proyectos propios
+
+Todo proyecto necesita una idea, pero también necesita a alguien dispuesto a desarrollarla. Esa diferencia es importante. Podemos acumular conocimientos, descubrir oportunidades y observar lo que hacen otras personas, pero ninguna de esas actividades sustituye la decisión de comenzar a construir.
+
+La iniciativa personal interviene en cada etapa: cuando identificamos una necesidad, cuando elegimos una dirección, cuando evaluamos alternativas y cuando debemos continuar trabajando sobre una idea que todavía no ha alcanzado su forma definitiva.
+
+Por eso, la mentalidad emprendedora no consiste simplemente en desear resultados. Implica desarrollar una relación más consciente con nuestras decisiones y con el trabajo necesario para llevarlas adelante.
+
+También supone aceptar que no todas las ideas merecen convertirse en proyectos, que algunas iniciativas necesitan modificarse y que aprender a distinguir entre una posibilidad interesante y una oportunidad viable forma parte del propio proceso.
+
+En FG Perspectiva nos interesa esa relación entre pensamiento y ejecución. No se trata de presentar el emprendimiento como una experiencia idealizada, sino de comprender las capacidades personales que intervienen cuando asumimos la responsabilidad de desarrollar una actividad propia.
+
+## 2. Pensar como emprendedor: una perspectiva diferente
+
+Pensar como emprendedor significa observar los problemas, los recursos y las oportunidades desde una perspectiva orientada a la acción. En lugar de limitarnos a consumir información, comenzamos a preguntarnos qué podemos hacer con ella, qué utilidad puede tener y cómo podríamos transformarla en una propuesta concreta.
+
+Esta perspectiva requiere criterio. No toda novedad representa una oportunidad, no toda tendencia merece nuestra atención y no toda idea tiene que convertirse en un negocio. La capacidad de seleccionar es tan importante como la capacidad de crear.
+
+También requiere disposición para aprender. Cuando desarrollamos una actividad propia, encontramos situaciones que no siempre podemos resolver con conocimientos anteriores. Es necesario investigar, experimentar, observar lo que sucede y revisar las decisiones cuando la realidad no coincide con nuestras expectativas.
+
+La iniciativa emprendedora, por tanto, no depende exclusivamente de la motivación inicial. Se relaciona con la capacidad de mantener una dirección, administrar la atención y convertir los aprendizajes en mejoras concretas.
+
+Esta forma de pensar puede aplicarse a distintos ámbitos: un negocio independiente, una actividad profesional, un proyecto editorial o una iniciativa basada en conocimientos propios. En todos ellos existe una responsabilidad compartida: pasar de la intención a la construcción.
+
+## 3. Abundancia, percepción y posibilidades
+
+La manera en que interpretamos nuestro entorno influye en las posibilidades que somos capaces de reconocer. Nuestras expectativas, creencias y experiencias participan en la forma de evaluar las alternativas que tenemos delante.
+
+Hablar de abundancia desde esta perspectiva no significa suponer que todo es posible ni que los resultados dependen únicamente de nuestra actitud. Significa explorar cómo nuestra percepción puede influir en la relación que mantenemos con las oportunidades, los recursos y las decisiones.
+
+Una mentalidad orientada a las posibilidades no elimina las limitaciones reales. Tampoco sustituye la planificación, el conocimiento o el trabajo. Lo que puede aportar es una disposición diferente para observar alternativas, cuestionar supuestos y evitar que una primera dificultad determine por completo nuestra manera de actuar.
+
+La reflexión sobre la abundancia pertenece a una dimensión personal del desarrollo. No debe confundirse con una fórmula comercial ni con una promesa de prosperidad. Su interés está en examinar la perspectiva desde la que interpretamos nuestras circunstancias y las decisiones que tomamos a partir de ellas.
+
+Dentro de esta categoría, *El arte de atraer la abundancia* representa esa dimensión de la mentalidad. Su presencia amplía el enfoque de Mindset más allá de las capacidades técnicas y nos recuerda que los proyectos también están relacionados con la manera en que pensamos y nos posicionamos ante nuestras posibilidades.
+
+## 4. La autonomía como forma de construir una actividad propia
+
+Desarrollar una actividad independiente implica asumir responsabilidades que en otras estructuras de trabajo pueden estar distribuidas entre diferentes personas o departamentos. Quien trabaja por cuenta propia debe tomar decisiones, organizar tareas, gestionar recursos y mantener una visión general de lo que está construyendo.
+
+En el entorno digital, esta autonomía puede adoptar diferentes formas. Podemos desarrollar una actividad profesional, ofrecer servicios, crear productos, publicar contenidos o construir un negocio que opere mediante herramientas y canales digitales.
+
+La independencia no significa trabajar sin planificación ni prescindir de toda colaboración. Significa asumir una mayor responsabilidad sobre la dirección y el funcionamiento de nuestra actividad.
+
+También exige comprender que no basta con tener conocimientos sobre un tema. Es necesario organizar el trabajo, establecer prioridades y encontrar una manera sostenible de atender las distintas responsabilidades que intervienen en un proyecto.
+
+*El Manual del Solopreneur Moderno* ocupa un lugar central en esta dimensión. Su propuesta, expresada en el subtítulo «Cómo crear, organizar y escalar un negocio digital sin empleados ni complicaciones», conecta directamente con la realidad de quienes desean desarrollar una actividad digital independiente.
+
+La figura del solopreneur permite abordar una cuestión relevante: cómo organizar una iniciativa propia sin asumir que el crecimiento de un proyecto debe depender necesariamente de construir una empresa con una estructura de empleados.
+
+## 5. Organizar el conocimiento, el tiempo y el trabajo
+
+La autonomía necesita organización. Cuando todas las decisiones dependen de nosotros, la falta de estructura puede convertirse en una dificultad importante. Las tareas se acumulan, las prioridades cambian constantemente y las ideas nuevas pueden desplazar el trabajo que ya habíamos decidido realizar.
+
+Organizar no significa llenar cada hora de actividades ni convertir un proyecto creativo en una sucesión rígida de obligaciones. Significa establecer cierta claridad sobre lo que estamos desarrollando, qué recursos necesitamos y qué acciones tienen mayor importancia en cada momento.
+
+El conocimiento también necesita organización. Podemos aprender sobre marketing, comunicación, publicación, tecnología o gestión, pero si mantenemos esos aprendizajes como información aislada, será difícil integrarlos en una actividad coherente.
+
+Por eso conviene distinguir entre aprender algo y saber utilizarlo. El primer paso amplía lo que conocemos; el segundo requiere relacionar ese conocimiento con una necesidad, una decisión o una tarea concreta.
+
+En un proyecto independiente, esta diferencia tiene consecuencias prácticas. La organización ayuda a reducir la dispersión, reconocer los compromisos asumidos y mantener una continuidad de trabajo sin depender exclusivamente de la motivación del momento.
+
+La capacidad de organizar nuestro tiempo y nuestros recursos no garantiza que un proyecto funcione, pero permite abordarlo con mayor claridad y responsabilidad.
+
+## 6. Comunicar ideas y transmitir valor
+
+Una idea puede tener utilidad, pero para que otras personas la comprendan necesitamos comunicarla. Esto sucede cuando presentamos un servicio, explicamos un producto, recomendamos una solución o intentamos establecer una relación comercial.
+
+La comunicación interviene en la manera en que una propuesta es percibida. No basta con enumerar características: necesitamos comprender qué estamos ofreciendo, a quién nos dirigimos y por qué podría resultar relevante para esa persona.
+
+En este contexto, vender no debería entenderse únicamente como conseguir una transacción. También implica escuchar, explicar, responder preguntas y ayudar a que el posible comprador comprenda lo que está considerando.
+
+La comunicación comercial exige claridad y responsabilidad. Una presentación eficaz no necesita ocultar limitaciones, exagerar beneficios ni crear expectativas que el producto no puede cumplir. La confianza depende, entre otras cosas, de la correspondencia entre lo que comunicamos y lo que realmente ofrecemos.
+
+*El Vendedor hipnótico* representa dentro de Mindset el ámbito de la comunicación y la actividad comercial. Su presencia permite incorporar la dimensión persuasiva de la relación con el mercado, sin confundir la capacidad de comunicar con la manipulación de las decisiones ajenas.
+
+Comprender cómo presentamos nuestras ideas y cómo se produce una decisión comercial forma parte de las capacidades que pueden intervenir en cualquier proyecto propio.
+
+## 7. Del conocimiento a la creación intelectual
+
+El conocimiento no tiene por qué permanecer como una experiencia exclusivamente personal. Podemos organizarlo, desarrollarlo y compartirlo mediante contenidos, materiales educativos, publicaciones y otras formas de creación intelectual.
+
+Este proceso comienza cuando identificamos aquello que sabemos, delimitamos un tema y encontramos una manera de explicarlo con sentido. No se trata simplemente de reunir información disponible, sino de construir una aportación que tenga una estructura y una finalidad reconocibles.
+
+Crear también implica seleccionar. Una obra no puede contener todo lo que conocemos sobre un asunto. Necesita un enfoque, un lector al que dirigirse y una organización que permita desarrollar el tema sin perder coherencia.
+
+La experiencia personal puede aportar ejemplos y perspectivas, mientras que la investigación ayuda a contrastar información y ampliar el contenido. El trabajo editorial consiste en relacionar esos elementos de una manera comprensible y útil.
+
+Esta capacidad de convertir conocimientos en materiales propios abre distintas posibilidades. Podemos escribir artículos, preparar recursos, desarrollar publicaciones digitales o trabajar en un libro de no ficción.
+
+La creación intelectual no depende únicamente de tener algo que decir. También requiere aprender a organizarlo, expresarlo y darle una forma que otras personas puedan comprender.
+
+## 8. Escribir para desarrollar y compartir conocimiento
+
+La escritura es una de las formas más directas de transformar ideas en una obra propia. Nos obliga a ordenar lo que pensamos, establecer relaciones entre conceptos y encontrar una secuencia que permita comunicar un tema.
+
+Escribir un libro de no ficción supone mucho más que acumular páginas. Necesitamos definir qué queremos abordar, establecer los límites del contenido y decidir cómo se desarrollará la exposición. También debemos considerar quién podría encontrar valor en esa obra y qué espera comprender el lector.
+
+La escritura permite convertir experiencias, conocimientos profesionales e investigaciones en publicaciones que pueden consultarse y compartirse. Sin embargo, el valor de una obra no depende únicamente de haberla terminado. También intervienen su claridad, su organización, la calidad de la información y la atención que dedicamos a la revisión.
+
+En este ámbito, *De la Pluma al Dinero* representa la relación entre escribir libros de no ficción y desarrollar una actividad editorial mediante la publicación en Kindle. Su lugar dentro de Mindset conecta la creatividad con una posibilidad concreta de materialización: convertir una obra escrita en una publicación.
+
+Escribir y publicar son actividades relacionadas, pero no idénticas. La primera desarrolla el contenido; la segunda exige preparar la obra para que pueda llegar a sus lectores.
+
+## 9. Crear ebooks y materializar ideas
+
+Un ebook es una publicación digital y, como cualquier obra editorial, necesita una idea definida, una estructura y un contenido desarrollado con coherencia.
+
+La facilidad técnica para crear un archivo digital puede llevarnos a pensar que producir un ebook consiste simplemente en escribir un texto y convertirlo a un formato electrónico. Sin embargo, la creación de una publicación requiere decisiones previas y posteriores a la escritura.
+
+Antes de comenzar conviene delimitar el tema, identificar el propósito de la obra y establecer qué aspectos se desarrollarán. Después será necesario organizar el contenido, revisar la continuidad de las explicaciones y comprobar que el resultado responde a la intención inicial.
+
+En los libros de no ficción, la claridad es especialmente importante. El lector necesita comprender cómo se relacionan las ideas y qué aporta cada apartado al conjunto. Una estructura desordenada puede dificultar la lectura incluso cuando el tema resulta interesante.
+
+*Cómo crear Ebooks (de no ficción)* se integra en esta dimensión de la categoría: la elaboración de publicaciones digitales centradas en contenidos de carácter no ficticio.
+
+Su presencia permite abordar la creación de ebooks como una actividad intelectual y editorial. No se trata solamente de producir un documento, sino de desarrollar una obra con un tema, una organización y una finalidad.
+
+## 10. Publicar: convertir una obra en un proyecto editorial
+
+Terminar un manuscrito no significa que el proceso editorial haya concluido. Una obra necesita prepararse para su publicación y presentarse de una manera que permita a los lectores reconocer su contenido.
+
+La publicación implica prestar atención a aspectos como la revisión del texto, la organización final, la presentación editorial, los formatos disponibles y la información que acompaña al libro. Cada decisión contribuye a que la obra pueda circular de forma adecuada.
+
+En el entorno digital existen distintas alternativas para distribuir publicaciones. Las plataformas de autopublicación han facilitado que los autores puedan preparar y comercializar sus libros sin depender necesariamente de una editorial tradicional. Esto amplía las posibilidades, aunque también supone asumir responsabilidades sobre la calidad y la presentación del trabajo.
+
+La publicación requiere una perspectiva realista. Subir un archivo a una plataforma no garantiza que encuentre lectores ni que genere ventas. La obra, su presentación, la demanda del tema y las acciones de difusión son factores diferentes que conviene considerar por separado.
+
+*Ebook en 24 horas* incorpora a esta dimensión una propuesta de creación de ebooks asociada al marco temporal expresado en su título. Ese planteamiento permite introducir la cuestión de la agilidad en la producción editorial, pero no debe interpretarse como una garantía universal de que cualquier persona podrá crear una obra de calidad en ese plazo, ni como una promesa de publicación o resultados comerciales.
+
+La rapidez puede ser una variable del proceso. La claridad, la revisión y la calidad del contenido siguen siendo responsabilidades fundamentales.
+
+## 11. De la iniciativa a la ejecución
+
+La mentalidad, la autonomía, la comunicación y la creación intelectual son dimensiones diferentes, pero pueden encontrarse dentro de un mismo proyecto.
+
+Una persona puede tener conocimientos sobre un tema y decidir convertirlos en una publicación. También puede desarrollar una actividad independiente, crear productos propios y necesitar comunicar sus propuestas a un público determinado. En cada caso intervienen capacidades distintas que deben coordinarse de acuerdo con los objetivos de la iniciativa.
+
+No existe una secuencia universal que todas las personas deban seguir. Algunos proyectos comienzan con una necesidad identificada; otros nacen de una experiencia profesional, una idea creativa o el deseo de desarrollar una actividad autónoma.
+
+Lo importante es comprender que la iniciativa necesita traducirse en decisiones. Una idea debe delimitarse, un propósito necesita convertirse en una dirección de trabajo y los conocimientos deben relacionarse con las tareas que exige su desarrollo.
+
+También es necesario evaluar. No todas las decisiones producirán el resultado esperado y no todas las iniciativas tendrán continuidad. Revisar lo que hacemos permite reconocer qué funciona, qué necesita cambiar y qué aprendizajes podemos aprovechar en el futuro.
+
+La ejecución no elimina la incertidumbre, pero nos permite trabajar sobre algo concreto. Es ahí donde la mentalidad emprendedora deja de ser una idea abstracta y comienza a relacionarse con la experiencia real de construir.
+
+## 12. Libros para desarrollar una mentalidad creadora
+
+Los seis libros de esta categoría abordan distintas dimensiones de la iniciativa personal y la creación de proyectos propios. No constituyen un programa único ni necesitan leerse como una secuencia obligatoria. Cada título se relaciona con un ámbito específico y permite acercarse a un tema diferente.
+
+### El arte de atraer la abundancia
+
+Una obra situada en la dimensión de la mentalidad y la relación personal con la abundancia. Su presencia amplía la categoría hacia la forma en que interpretamos las posibilidades y nuestras circunstancias.
+
+**Ver ficha del libro**
+
+### El Manual del Solopreneur Moderno
+
+Una propuesta centrada en la creación, organización y desarrollo de un negocio digital independiente, sin empleados. Representa el ámbito de la autonomía emprendedora y la gestión de una actividad propia.
+
+**Ver ficha del libro**
+
+### El Vendedor hipnótico
+
+Un título relacionado con la comunicación comercial y la presentación persuasiva de propuestas. Se integra en la dimensión de las capacidades necesarias para comunicar valor y desarrollar relaciones comerciales.
+
+**Ver ficha del libro**
+
+### De la Pluma al Dinero
+
+Una obra vinculada con la escritura de libros de no ficción y su publicación en Kindle. Representa la posibilidad de convertir conocimientos e ideas en una publicación propia.
+
+**Ver ficha del libro**
+
+### Cómo crear Ebooks (de no ficción)
+
+Un título orientado al ámbito de la creación de ebooks de no ficción. Se relaciona con la organización y el desarrollo de contenidos para convertir una idea en una publicación digital.
+
+**Ver ficha del libro**
+
+### Ebook en 24 horas
+
+Una propuesta relacionada con la creación de ebooks y con un marco temporal definido en su propio título. Se integra en el ámbito de la materialización de publicaciones digitales, sin convertir ese plazo en una garantía de resultados.
+
+**Ver ficha del libro**
+
+## Cierre editorial: las ideas necesitan una dirección
+
+La iniciativa personal puede adoptar muchas formas. Podemos desarrollar una actividad independiente, mejorar nuestra comunicación, escribir un libro o transformar conocimientos en una publicación propia. Cada camino requiere capacidades distintas, pero todos comparten la necesidad de pasar de las ideas a las decisiones.
+
+La mentalidad emprendedora no consiste en imaginar resultados sin considerar el trabajo que implican. Consiste en desarrollar una perspectiva que nos permita reconocer posibilidades, elegir una dirección y asumir la responsabilidad de construir.
+
+En FG Perspectiva entendemos la creación como un proceso en el que el conocimiento adquiere forma mediante la reflexión, la organización y la acción. Por eso, Mindset reúne libros que exploran diferentes aspectos de la iniciativa personal y de la capacidad de desarrollar proyectos propios.
+
+Porque una idea puede ser el comienzo, pero es nuestra capacidad para trabajar sobre ella la que determina en qué puede convertirse.
+
+**Explora la colección completa de FG Perspectiva y descubre otros ámbitos del conocimiento digital en nuestra Biblioteca.**
+
+**Explorar la Biblioteca**
+
+---
+
+## 7. INTEGRACIÓN REAL DE LOS SEIS LIBROS
+
+La sección editorial anterior contiene los nombres y las descripciones aprobadas. Debe integrarse con los registros reales del catálogo.
+
+Los seis libros son:
+
+1. El arte de atraer la abundancia.
+2. El Manual del Solopreneur Moderno.
+3. El Vendedor hipnótico.
+4. De la Pluma al Dinero.
+5. Cómo crear Ebooks (de no ficción).
+6. Ebook en 24 horas.
+
+### Reglas de integración
+
+- Localizar los seis registros reales en el catálogo existente.
+- Utilizar sus identificadores, slugs, títulos, portadas y opciones comerciales originales.
+- No inventar slugs.
+- No inventar enlaces de Amazon, ClickBank, Payhip ni otras plataformas.
+- No introducir precios, valoraciones, ISBN, formatos o datos no presentes en el proyecto.
+- No duplicar registros en `constants.tsx`.
+- No cambiar la categoría asignada a ningún libro.
+- No alterar ninguna ficha individual.
+- Los enlaces «Ver ficha del libro» del contenido editorial deben transformarse en enlaces funcionales hacia las rutas reales de los libros.
+- Los botones deben conservar la identidad visual y el comportamiento de las demás páginas de FG Perspectiva.
+
+### Datos comerciales confirmados de El Manual del Solopreneur Moderno
+
+Solo como comprobación de consistencia con el catálogo existente:
+
+- Kindle: https://www.amazon.com/dp/B0HKPHYRYX
+- Tapa blanda: https://www.amazon.com/dp/B0HKPPV7HH
+- Tapa dura: https://www.amazon.com/dp/B0HKPZMYJ6
+- Portada: https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/22-solopreneur-libro-600.jpg
+
+Estos datos no deben utilizarse para crear un registro nuevo ni sustituir el registro existente. Deben coincidir con el catálogo actual.
+
+Si alguno de los otros cinco libros no puede localizarse inequívocamente, no inventes sus datos. Detén esa parte de la integración, informa del registro que falta y conserva intactos los datos existentes.
+
+## 8. ESTRUCTURA TÉCNICA
+
+Crear:
+
+`components/views/MindsetView.tsx`
+
+Integrar la vista en el router actual para que `/mindset/` utilice este componente específico.
+
+La ruta debe tener prioridad sobre el fallback genérico de categorías.
+
+La integración debe seguir el patrón técnico ya utilizado en las vistas independientes de Origen, Iniciación, Ingresos, Tecnología y Crecimiento, sin copiar indiscriminadamente sus contenidos ni sus diseños.
+
+Actualizar `seo.ts` con una rama específica para Mindset, antes del fallback genérico de categorías.
+
+La vista debe funcionar correctamente con el sistema actual de:
+
+- React.
+- TypeScript.
+- Router.
+- Renderizado estático.
+- Hidratación.
+- Prerenderizado.
+- Breadcrumbs.
+- Componentes de compra.
+
+No introducir dependencias nuevas salvo necesidad técnica real y justificada.
+
+No modificar el sistema general de rutas ni el proceso de renderizado.
+
+## 9. DATOS ESTRUCTURADOS JSON-LD
+
+Implementar datos estructurados válidos para la página.
+
+Incluir:
+
+1. `CollectionPage`.
+2. `ItemList` con los seis libros reales de Mindset.
+3. `Book` para cada elemento de la colección, utilizando únicamente datos verificables del catálogo.
+4. `BreadcrumbList` con la jerarquía Inicio > Biblioteca > Mindset.
+
+Comprobar:
+
+- Que el JSON-LD sea válido.
+- Que no existan registros duplicados.
+- Que las URLs sean las rutas reales.
+- Que los títulos coincidan exactamente con el catálogo.
+- Que no se inventen autores, ISBN, precios, fechas, valoraciones ni formatos.
+- Que no se generen ofertas comerciales inexistentes.
+
+No modificar el JSON-LD de las demás páginas.
+
+## 10. DISEÑO VISUAL Y ESTILO
+
+La página debe conservar la identidad corporativa de FG Perspectiva:
+
+- Verde oscuro: `#174532`.
+- Verde medio: `#4db380`.
+- Fondos suaves: `#dae7df` con las transparencias ya utilizadas en el proyecto.
+- Texto: `#1b1b1b`.
+- Dorado: `#f4b925`.
+- Tipografía Libre Baskerville para encabezados.
+- Tipografía Inter para texto general.
+
+Utilizar los estilos globales existentes y crear estilos locales para la nueva vista cuando sea necesario.
+
+### Identidad específica de Mindset
+
+La página debe transmitir:
+
+- Reflexión.
+- Iniciativa.
+- Autonomía.
+- Creación intelectual.
+- Desarrollo de proyectos propios.
+
+No debe parecer una página de frases motivacionales.
+
+No utilizar:
+
+- Fotografías de personas trabajando.
+- Personas generadas por IA.
+- Fotografías de escritorios o portátiles.
+- Imágenes genéricas de emprendimiento.
+- Ilustraciones de cerebros o bombillas.
+- Iconos decorativos.
+- Banners de categoría.
+- Imágenes de stock.
+- Imágenes que representen visualmente la categoría.
+
+Las únicas imágenes permitidas dentro de la sección de libros son las portadas oficiales que ya existen en el catálogo.
+
+La composición conceptual de las cinco dimensiones debe realizarse con elementos HTML, CSS o SVG, sin imágenes externas.
+
+## 11. RESPONSIVE Y ACCESIBILIDAD
+
+Comprobar el comportamiento en:
+
+- Escritorio: 1440 × 900.
+- Tablet: 768 × 1024.
+- Móvil: 390 × 844.
+
+Requisitos:
+
+- Sin desbordamiento horizontal.
+- Sin textos cortados.
+- Sin títulos superpuestos.
+- Portadas completas y proporcionadas.
+- Espaciado adecuado.
+- Jerarquía tipográfica legible.
+- Botones accesibles.
+- Enlaces con destinos correctos.
+- Contraste suficiente.
+- Navegación por teclado.
+- Estados de foco visibles.
+- Sin elementos visuales que dificulten la lectura.
+
+No modificar el Header ni el Footer para resolver problemas de responsive.
+
+## 12. COMPROBACIONES FUNCIONALES Y SEO
+
+Después de implementar, realizar las siguientes pruebas.
+
+### A. Integridad del contenido
+
+- Comprobar que los doce apartados estén presentes.
+- Verificar que el texto íntegro se haya incorporado.
+- Comprobar que no falte ningún párrafo.
+- Confirmar que los seis libros aparezcan una sola vez en la sección de colección.
+- Comprobar los encabezados H1, H2 y H3.
+- Verificar que no haya textos provisionales.
+
+### B. Navegación
+
+- Breadcrumbs.
+- Enlaces a las seis fichas.
+- Enlace final a Biblioteca.
+- Botones de compra cuando correspondan.
+- Navegación de regreso.
+- Funcionamiento del router.
+- Ausencia de enlaces rotos.
+
+### C. SEO
+
+- Meta title correcto.
+- Meta description correcta.
+- Canonical correcto.
+- Open Graph.
+- Twitter Card.
+- Un único H1.
+- Jerarquía de encabezados.
+- JSON-LD válido.
+- URL prerenderizada.
+- Presencia de la ruta en sitemap.
+
+### D. Calidad técnica
+
+Ejecutar:
+
+- TypeScript.
+- Build de producción.
+- Prerenderizado.
+- Verificación de consola.
+- Verificación de peticiones fallidas.
+- Pruebas responsive.
+- Comprobación de las portadas.
+- Comprobación de los enlaces.
+- Comprobación de las opciones de compra.
+
+### E. Prueba de regresión
+
+Comprobar que la nueva implementación no haya alterado:
+
+1. Home `/`.
+2. Biblioteca `/biblioteca/`.
+3. Origen `/origen/`.
+4. Iniciación `/iniciacion/`.
+5. Ingresos `/ingresos/`.
+6. Tecnología `/tecnologia/`.
+7. Crecimiento `/crecimiento/`.
+8. Sistemas Digitales `/sistemas-digitales/`.
+9. Sobre FG Perspectiva `/sobre-fg-perspectiva/`.
+10. Contacto `/contacto/`.
+
+También comprobar las rutas de las seis fichas individuales de Mindset.
+
+No modificar el footer ni otros elementos globales durante las pruebas.
+
+## 13. COPIA DE SEGURIDAD
+
+Crear una copia de seguridad específica antes de modificar los archivos.
+
+Utilizar una carpeta con nombre descriptivo:
+
+`/_backup_rediseno_mindset/`
+
+Guardar como mínimo las versiones originales de todos los archivos que se modifiquen.
+
+No sobrescribir backups anteriores.
+
+## 14. INFORME TÉCNICO FINAL OBLIGATORIO
+
+Cuando finalice la implementación, entregar un informe técnico completo y verificable que incluya:
+
+1. Archivos creados.
+2. Archivos modificados.
+3. Ubicación del backup.
+4. Integración de la nueva ruta.
+5. Integración de la rama SEO.
+6. Número de palabras visibles dentro de `<main>`.
+7. Número de H1, H2 y H3.
+8. Confirmación de que los doce apartados están completos.
+9. Confirmación de que aparecen los seis libros reales.
+10. Confirmación de las portadas oficiales utilizadas.
+11. Confirmación de los enlaces de fichas y opciones de compra.
+12. Resultado de JSON-LD.
+13. Resultado de TypeScript.
+14. Resultado de build.
+15. Resultado de prerenderizado.
+16. Resultado de pruebas responsive.
+17. Resultado de comprobaciones de consola y red.
+18. Resultado de la prueba de regresión de las diez rutas protegidas.
+19. Confirmación expresa de que Header y Footer permanecen intactos.
+20. Confirmación expresa de que ninguna ficha de libro ni dato comercial ha sido modificado.
+21. Confirmación expresa de que no se ha realizado ningún despliegue en Vercel.
+
+No afirmar que una prueba se ha realizado si no se ha ejecutado realmente.
+
+Si alguna comprobación falla, indicar el problema, su causa y si ha podido corregirse.
+
+## 15. CONDICIÓN FINAL DE ACEPTACIÓN
+
+La tarea se considerará completada únicamente cuando:
+
+- Mindset disponga de una vista independiente.
+- El contenido aprobado esté íntegro.
+- Los seis libros estén correctamente integrados desde el catálogo real.
+- La página tenga metadatos y datos estructurados propios.
+- La composición visual tenga identidad editorial diferenciada.
+- No existan errores de TypeScript, build o prerenderizado.
+- La vista funcione en escritorio, tablet y móvil.
+- Las rutas protegidas continúen funcionando.
+- Header y Footer permanezcan intactos.
+- No se hayan modificado fichas ni datos comerciales.
+- No se haya realizado ningún despliegue.
+
+**Ejecuta ahora la implementación completa en el entorno local. No te limites a presentar un plan, una auditoría o una propuesta. Al terminar, entrega el informe técnico solicitado.**

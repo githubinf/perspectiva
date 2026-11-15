@@ -9,6 +9,7 @@ import InitiationView from './components/views/InitiationView.tsx';
 import IncomeView from './components/views/IncomeView.tsx';
 import TechnologyView from './components/views/TechnologyView.tsx';
 import GrowthView from './components/views/GrowthView.tsx';
+import MindsetView from './components/views/MindsetView.tsx';
 import BookDetailView from './components/views/BookDetailView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
@@ -57,6 +58,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/crecimiento/' && matchedCategory) {
     return <GrowthView category={matchedCategory} />;
+  }
+
+  if (currentPath === '/mindset/' && matchedCategory) {
+    return <MindsetView category={matchedCategory} />;
   }
 
   if (matchedCategory) {
