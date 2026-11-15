@@ -6,6 +6,7 @@ import LibraryView from './components/views/LibraryView.tsx';
 import CategoryView from './components/views/CategoryView.tsx';
 import OriginView from './components/views/OriginView.tsx';
 import InitiationView from './components/views/InitiationView.tsx';
+import IncomeView from './components/views/IncomeView.tsx';
 import BookDetailView from './components/views/BookDetailView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
@@ -42,6 +43,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/iniciacion/' && matchedCategory) {
     return <InitiationView category={matchedCategory} />;
+  }
+
+  if (currentPath === '/ingresos/' && matchedCategory) {
+    return <IncomeView category={matchedCategory} />;
   }
 
   if (matchedCategory) {

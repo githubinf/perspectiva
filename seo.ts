@@ -408,7 +408,78 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
-  // 6. Category pages (ingresos, tecnología, crecimiento, mindset)
+  // 6c. Categoría Ingresos (vista editorial dedicada)
+  if (path === '/ingresos/') {
+    const incomeCategory = FEATURED_BOOKS.find((c) => c.path === '/ingresos/');
+    const incomeBooks = incomeCategory?.books || [];
+    const incomeDescription =
+      'Comprende cómo funcionan el marketing de afiliados, el CPA y otros modelos de monetización digital, desde la selección de ofertas hasta el tráfico y las conversiones.';
+
+    return {
+      path: '/ingresos/',
+      title: 'Ingresos: marketing de afiliados y monetización digital | FG Perspectiva',
+      description: incomeDescription,
+      canonical: `${BASE_URL}/ingresos/`,
+      ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
+      ogType: 'website',
+      h1: 'Ingresos digitales: cómo funcionan los modelos de monetización online',
+      schema: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          name: 'Ingresos: marketing de afiliados y monetización digital | FG Perspectiva',
+          description: incomeDescription,
+          url: `${BASE_URL}/ingresos/`,
+          isPartOf: {
+            '@type': 'WebSite',
+            name: 'FG Perspectiva',
+            url: `${BASE_URL}/`
+          },
+          mainEntity: {
+            '@type': 'ItemList',
+            name: 'Libros de la ruta Ingresos',
+            numberOfItems: incomeBooks.length,
+            itemListElement: incomeBooks.map((b, idx) => ({
+              '@type': 'ListItem',
+              position: idx + 1,
+              item: {
+                '@type': 'Book',
+                name: b.title,
+                description: b.description,
+                url: `${BASE_URL}${b.path || `/${b.slug}/`}`
+              }
+            }))
+          }
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Ingresos',
+              item: `${BASE_URL}/ingresos/`
+            }
+          ]
+        }
+      ]
+    };
+  }
+
+  // 6. Category pages (tecnología, crecimiento, mindset)
   const matchedCategory = FEATURED_BOOKS.find((c) => c.path === path);
   if (matchedCategory) {
     return {

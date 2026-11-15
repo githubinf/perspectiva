@@ -1,0 +1,953 @@
+# INSTRUCCIÓN INTEGRAL DE IMPLEMENTACIÓN — REDISEÑO EDITORIAL Y SEO DE /ingresos/
+
+## FG PERSPECTIVA — PÁGINA DE CATEGORÍA INGRESOS
+
+Vamos a implementar una página editorial independiente para la ruta `/ingresos/` de FG Perspectiva.
+
+Esta intervención debe seguir el nivel de profundidad editorial, independencia estructural y calidad técnica alcanzado en las páginas `/origen/` y `/iniciacion/`, pero debe desarrollar una identidad argumental, una composición visual y un recorrido de lectura propios.
+
+No queremos una página genérica de categoría que se limite a mostrar cinco libros con unas pocas líneas introductorias. Necesitamos un recurso editorial sustancial que explique el territorio temático de la monetización digital y aporte valor por sí mismo.
+
+La implementación debe realizarse exclusivamente en el entorno local del proyecto.
+
+**NO desplegar a Vercel. No ejecutar ningún despliegue.**
+
+---
+
+# 1. OBJETIVO GENERAL
+
+Crear una página independiente para `/ingresos/`, dedicada a explicar cómo funcionan los modelos de monetización digital, con especial atención al marketing de afiliados, el CPA, los Smartlinks, ClickBank, el tráfico, las conversiones y la rentabilidad.
+
+La página debe responder a esta pregunta central:
+
+**¿Cómo podemos transformar el tráfico y la atención de una audiencia en oportunidades de ingresos mediante modelos de monetización bien estructurados?**
+
+Su territorio editorial comprende:
+
+- Los fundamentos económicos de la monetización digital.
+- Los principales modelos para generar ingresos en Internet.
+- El funcionamiento del marketing de afiliados.
+- La selección de ofertas y productos.
+- El modelo Cost Per Action (CPA).
+- Los Smartlinks y la distribución de ofertas.
+- Los marketplaces de productos digitales y ClickBank.
+- Las fuentes de tráfico desde una perspectiva comercial.
+- Los procesos de conversión.
+- La medición de campañas y la rentabilidad.
+- Los errores que comprometen una estrategia de monetización.
+
+La página debe tener suficiente profundidad para responder a búsquedas relacionadas con marketing de afiliados, CPA y monetización digital.
+
+No debe convertirse en un tutorial genérico para crear blogs ni en una página centrada exclusivamente en ClickBank.
+
+---
+
+# 2. PRINCIPIO FUNDAMENTAL: INDEPENDENCIA EDITORIAL Y TÉCNICA
+
+La ruta `/ingresos/` debe disponer de una vista React propia, con identidad editorial y composición visual independientes.
+
+No queremos que la página dependa de una plantilla genérica de categorías con cambios superficiales de títulos y textos.
+
+Antes de modificar archivos, inspecciona la implementación actual de:
+
+- `App.tsx`
+- `seo.ts`
+- `components/views/OriginView.tsx`
+- `components/views/InitiationView.tsx`
+- `constants.tsx`
+- `types.ts`
+- `components/PurchaseModal.tsx`
+- `components/Breadcrumbs.tsx`
+- Los componentes compartidos que intervienen en la presentación de libros y categorías.
+
+Utiliza las implementaciones de Origen e Iniciación como referencias para comprender la arquitectura técnica, la conexión de rutas, los datos del catálogo, la presentación de portadas y los mecanismos de compra.
+
+**No copies sus textos, sus argumentos ni su diseño de forma literal.**
+
+La nueva página debe tener una composición visual propia y una secuencia editorial adecuada a la temática de Ingresos.
+
+La implementación debe mantener la arquitectura existente del proyecto y reutilizar los componentes compartidos cuando corresponda, sin introducir dependencias innecesarias.
+
+---
+
+# 3. DATOS OFICIALES DE LA CATEGORÍA
+
+La categoría ya existe en el catálogo centralizado del proyecto.
+
+Ruta canónica:
+
+`https://fgperspectiva.vercel.app/ingresos/`
+
+Slug:
+
+`ingresos`
+
+Nombre:
+
+`Ingresos`
+
+Los cinco libros oficiales que deben aparecer en esta página son:
+
+1. Dominando el marketing de afiliados.
+2. Marketing CPA Para Emprendedores y Profesionales Digitales.
+3. CPA Marketing Fórmula Smartlink.
+4. Dinero con Clickbank.
+5. Tips de Marketing para Afiliados.
+
+**IMPORTANTE:**
+
+Recupera los cinco libros directamente de la fuente centralizada de datos del proyecto (`constants.tsx` y los tipos correspondientes).
+
+No escribas manualmente nombres de archivos de portadas, URLs comerciales, identificadores o datos que ya estén definidos en el catálogo.
+
+No inventes ni modifiques:
+
+- Títulos.
+- Subtítulos.
+- Slugs.
+- Portadas.
+- Enlaces de Amazon.
+- Opciones de compra.
+- Identificadores.
+- Categorías.
+- Datos comerciales.
+
+La página debe utilizar los datos oficiales existentes.
+
+Las cinco portadas deben corresponder exactamente a los cinco libros de la categoría Ingresos.
+
+No utilices imágenes de búsqueda ni imágenes genéricas para sustituir las portadas oficiales.
+
+---
+
+# 4. CONTENIDO EDITORIAL COMPLETO Y APROBADO
+
+El siguiente texto es el contenido editorial definitivo para la página.
+
+Debe integrarse íntegramente en la nueva vista.
+
+**No resumir, reescribir, sustituir, eliminar ni reducir párrafos.**
+
+No utilizar textos de relleno, extractos, resúmenes ni versiones abreviadas.
+
+Se permite añadir elementos visuales explicativos, diagramas, comparativas y recursos de presentación que ayuden a comprender el contenido, siempre que no sustituyan ni alteren el texto aprobado.
+
+Conservar exactamente los títulos y subtítulos editoriales. Se pueden utilizar negritas y elementos de presentación compatibles con el diseño, sin alterar el sentido ni la redacción.
+
+## TEXTO EDITORIAL
+
+# Ingresos digitales: cómo funcionan los modelos de monetización online
+
+Generar ingresos a través de Internet no consiste simplemente en publicar contenidos, conseguir visitas o incorporar enlaces comerciales a una página. Detrás de cualquier actividad digital que pretende producir ingresos existe una estructura económica: alguien ofrece un producto o servicio, alguien necesita o desea adquirirlo y un conjunto de procesos permite que ambas partes se encuentren y realicen una transacción.
+
+Comprender esa estructura es el primer paso para desarrollar una actividad de monetización con fundamento.
+
+El entorno digital ofrece distintas posibilidades para generar ingresos. Podemos comercializar productos propios, vender servicios, distribuir productos de terceros, participar en programas de afiliación o trabajar con campañas cuya remuneración depende de determinadas acciones. Cada modelo tiene características, condiciones y mecanismos particulares.
+
+Sin embargo, todos comparten una necesidad: conectar una propuesta comercial con personas que puedan encontrar valor en ella.
+
+En FG Perspectiva abordamos la monetización digital desde esa perspectiva. Nos interesa comprender cómo funcionan los modelos comerciales, qué papel desempeñan las ofertas, cómo interviene el tráfico y por qué las conversiones y la medición son elementos esenciales para evaluar una actividad económica online.
+
+## Generar ingresos digitales exige comprender el modelo de negocio
+
+Una de las confusiones más habituales al comenzar una actividad en Internet es identificar movimiento con resultados económicos. Publicar artículos, mantener perfiles sociales, recibir visitas o conseguir suscriptores son actividades que pueden contribuir al desarrollo de un proyecto, pero ninguna de ellas garantiza por sí misma la generación de ingresos.
+
+Para que una actividad digital tenga una dimensión comercial necesita un modelo que explique de dónde procede el valor económico y bajo qué condiciones se produce una remuneración.
+
+Podemos entender ese modelo a partir de varios componentes relacionados:
+
+- **Una propuesta comercial:** un producto, servicio u oferta que responde a una necesidad, un interés o una demanda.
+- **Un público potencial:** personas que pueden encontrar utilidad o valor en aquello que se ofrece.
+- **Un mecanismo de conexión:** contenidos, recomendaciones, publicidad, canales de comunicación u otros medios que permiten acercar la oferta a su público.
+- **Una acción comercial:** una compra, un registro, una solicitud u otra acción definida por el modelo.
+- **Una forma de remuneración:** el mecanismo mediante el cual se generan ingresos para el propietario del producto, el intermediario o el participante en el programa comercial.
+
+Estos componentes deben guardar cierta coherencia. Una oferta puede ser interesante, pero si se presenta ante un público que no tiene relación con ella, las posibilidades de conseguir resultados serán limitadas. Del mismo modo, atraer muchas visitas carece de valor comercial si no existe una propuesta adecuada o un recorrido que permita avanzar hacia una acción.
+
+Por eso, antes de pensar en cuánto podemos ganar, necesitamos comprender qué estamos ofreciendo, a quién nos dirigimos y cómo se produce la remuneración.
+
+## Los principales modelos de monetización digital
+
+Internet permite desarrollar actividades comerciales mediante diferentes modelos. Aunque algunos pueden combinarse dentro de un mismo proyecto, conviene distinguirlos porque no funcionan de la misma manera ni requieren necesariamente los mismos recursos.
+
+**Venta de productos y servicios propios.** En este modelo, el proyecto comercializa directamente aquello que ha creado o que ofrece. Puede tratarse de servicios profesionales, productos físicos, consultoría, formación o recursos digitales. El responsable de la actividad controla su propuesta comercial, aunque también debe asumir las tareas relacionadas con su desarrollo, presentación, distribución y atención al cliente.
+
+**Comercialización de productos digitales.** Los libros electrónicos, cursos, recursos descargables y otros formatos digitales permiten distribuir productos mediante canales online. Su naturaleza facilita la entrega digital, pero su comercialización sigue dependiendo de la calidad de la propuesta, su posicionamiento y la capacidad de llegar a compradores potenciales.
+
+**Marketing de afiliados.** El participante promociona productos o servicios de terceros mediante un acuerdo comercial. Cuando se produce una acción válida atribuida a su recomendación, puede recibir una comisión según las condiciones del programa.
+
+**Marketing CPA.** La remuneración depende de que el usuario complete una acción previamente establecida. Esa acción puede ser una compra, un registro, una solicitud, una instalación u otro evento aceptado por el anunciante.
+
+**Publicidad y monetización de audiencias.** Un proyecto que reúne una audiencia puede obtener ingresos mediante espacios publicitarios u otros acuerdos comerciales. En este caso, la capacidad de atraer y mantener la atención de un público adquiere especial importancia.
+
+No existe un modelo universalmente superior. La elección depende del tipo de proyecto, los recursos disponibles, la propuesta comercial y las características del público. Lo importante es comprender cómo se genera el ingreso y qué responsabilidades implica cada alternativa.
+
+## Marketing de afiliados: cómo funciona el modelo
+
+El marketing de afiliados permite participar en la comercialización de productos o servicios sin tener que crearlos ni gestionar directamente toda la operación de venta. El afiliado establece una relación comercial con un anunciante o propietario de una oferta y recibe una remuneración cuando se produce una conversión atribuida a su actividad, de acuerdo con las condiciones del programa.
+
+Para comprender su funcionamiento debemos identificar a los participantes principales.
+
+El **anunciante o propietario de la oferta** es quien dispone del producto o servicio que desea comercializar. Define las condiciones de promoción y establece el sistema de remuneración.
+
+El **afiliado** participa en la difusión de esa oferta. Su función consiste en acercarla a personas potencialmente interesadas mediante contenidos, recomendaciones, publicidad u otros canales permitidos.
+
+La **plataforma de afiliación**, cuando interviene, proporciona un entorno donde anunciantes y afiliados pueden relacionarse, consultar ofertas y gestionar el seguimiento de las referencias y las comisiones.
+
+El **usuario o potencial comprador** es la persona que recibe la recomendación, consulta la oferta y decide si realiza la acción correspondiente.
+
+La conexión entre estos participantes suele apoyarse en enlaces de seguimiento u otros mecanismos de atribución. Estos permiten identificar que una visita o conversión procede de la actividad de un afiliado y aplicar las reglas de remuneración establecidas.
+
+El modelo puede parecer sencillo, pero su funcionamiento comercial exige algo más que distribuir enlaces. Necesitamos conocer el producto, comprender a quién puede interesarle, presentar la propuesta de forma honesta y utilizar canales que permitan llegar a personas relevantes.
+
+Una recomendación comercial tiene sentido cuando existe correspondencia entre lo que ofrecemos y los intereses de la audiencia. Sin esa relación, la promoción pierde credibilidad y difícilmente puede sostener una actividad a largo plazo.
+
+## Elegir ofertas: la relación entre producto, audiencia y mercado
+
+La selección de productos es una de las decisiones que más influyen en una estrategia de afiliación. No todas las ofertas son adecuadas para todos los públicos y una comisión elevada no convierte automáticamente un producto en una buena oportunidad comercial.
+
+El primer criterio debe ser la correspondencia entre la oferta y la audiencia. Necesitamos comprender qué problemas, necesidades o intereses caracterizan al público al que queremos llegar. A partir de ahí podemos evaluar si el producto tiene una relación real con aquello que las personas están buscando.
+
+También debemos considerar la propuesta en sí misma. Conviene analizar qué ofrece, cómo se presenta, qué información proporciona el vendedor y si existen elementos suficientes para comprender su utilidad.
+
+Las condiciones comerciales constituyen otro aspecto fundamental. Los programas pueden establecer diferentes porcentajes de comisión, criterios de atribución, períodos de seguimiento, restricciones promocionales y requisitos para validar una conversión. Conocer estas condiciones evita tomar decisiones basadas en expectativas equivocadas.
+
+La demanda y la competencia también merecen atención. Una oferta puede responder a un interés existente, pero eso no significa que sea sencillo conseguir visibilidad o generar ventas. Necesitamos valorar el contexto del mercado y los medios disponibles para llegar a los compradores potenciales.
+
+Por último, debemos considerar la credibilidad. Recomendar productos sin conocerlos o promocionar propuestas que no guardan relación con nuestra audiencia puede deteriorar la confianza construida alrededor de un proyecto.
+
+Elegir una oferta no es seleccionar un enlace de una plataforma. Es tomar una decisión comercial que debe tener sentido para el producto, para el público y para la estrategia que queremos desarrollar.
+
+## CPA: cuando la remuneración depende de una acción
+
+El modelo Cost Per Action, conocido como CPA, establece que la remuneración se produce cuando un usuario completa una acción definida por el anunciante. A diferencia de un esquema basado exclusivamente en ventas, la acción remunerada puede ser otra interacción que tenga valor para la campaña.
+
+Según las condiciones de cada oferta, puede tratarse de completar un registro, enviar una solicitud, instalar una aplicación, realizar una compra o cumplir otro evento específico.
+
+La diferencia fundamental está en aquello que se considera una conversión válida. No basta con que una persona visite una página o haga clic en un enlace. Debe completar la acción que el programa reconoce y cumplir los requisitos establecidos.
+
+Por esta razón, antes de promocionar una campaña CPA necesitamos conocer sus condiciones:
+
+- Qué acción concreta se remunera.
+- Qué requisitos debe cumplir el usuario.
+- Qué territorios o públicos están admitidos.
+- Qué fuentes de tráfico están permitidas.
+- Qué restricciones existen para la promoción.
+- Cómo se valida y registra la conversión.
+
+Estas condiciones pueden variar considerablemente entre campañas. Una estrategia que funciona para una oferta no necesariamente será adecuada para otra.
+
+También debemos comprender que el CPA no elimina la necesidad de generar tráfico pertinente. Al contrario, exige prestar atención a la relación entre el público, la oferta y la acción solicitada. Conseguir visitas sin correspondencia con los requisitos de la campaña puede producir actividad sin conversiones válidas.
+
+El atractivo del modelo reside en que permite trabajar con diferentes tipos de acciones comerciales. Su viabilidad, sin embargo, depende de comprender las condiciones de cada oferta y evaluar los resultados con criterios objetivos.
+
+## Smartlinks y sistemas de distribución de ofertas
+
+Dentro del entorno de monetización CPA encontramos herramientas diseñadas para facilitar la distribución de tráfico hacia distintas ofertas. Entre ellas están los Smartlinks, que pueden utilizar determinados criterios y configuraciones de una plataforma para dirigir a los usuarios hacia propuestas que considera adecuadas.
+
+Su funcionamiento puede resultar interesante cuando se trabaja con campañas que admiten diferentes ofertas, públicos o condiciones de distribución. En lugar de depender de una única propuesta fija, el sistema puede gestionar distintas posibilidades según los parámetros que tenga disponibles.
+
+Sin embargo, conviene distinguir entre la herramienta y la estrategia comercial.
+
+Un Smartlink no sustituye el conocimiento del público, la selección de fuentes de tráfico ni el análisis de resultados. Tampoco garantiza que cualquier visita genere una conversión. Su utilidad depende de las ofertas disponibles, de las reglas de distribución y de la calidad del tráfico que recibe.
+
+Para utilizar este tipo de herramientas con criterio debemos comprender qué estamos promocionando, qué condiciones establece la plataforma y qué información podemos obtener sobre el comportamiento de las campañas.
+
+La tecnología puede facilitar determinados procesos, pero no elimina la responsabilidad de tomar decisiones fundamentadas. En monetización digital, automatizar una distribución no equivale a comprender por qué una oferta funciona o deja de funcionar.
+
+## ClickBank y los mercados de productos digitales
+
+Los marketplaces de productos digitales reúnen ofertas comerciales que pueden ser distribuidas mediante diferentes mecanismos, entre ellos los programas de afiliación. Estas plataformas conectan a creadores o vendedores con participantes interesados en promocionar sus productos bajo determinadas condiciones.
+
+ClickBank es una de las plataformas asociadas a este modelo. Su papel puede comprenderse dentro de un ecosistema donde los propietarios de productos presentan sus propuestas y los afiliados pueden evaluar oportunidades de promoción.
+
+Para participar en este entorno es importante entender que la disponibilidad de una oferta no significa que debamos promocionarla automáticamente. Necesitamos estudiar el producto, conocer sus condiciones, evaluar su relación con nuestro público y determinar si podemos presentarlo de manera coherente.
+
+La selección debe considerar tanto la propuesta comercial como las características del mercado al que se dirige. También conviene revisar las condiciones vigentes de cada producto y las reglas que establece la plataforma para su promoción.
+
+La actividad de afiliación no consiste únicamente en encontrar productos con comisiones atractivas. Requiere desarrollar una relación entre la oferta, el contenido que utilizamos para presentarla y las personas que podrían encontrar valor en ella.
+
+Por eso, comprender el funcionamiento de un marketplace es solo una parte del trabajo. La otra consiste en construir una estrategia de promoción que tenga sentido para el público y permita evaluar los resultados.
+
+## Tráfico: cómo llegan los potenciales compradores
+
+Una oferta necesita visibilidad. Incluso un producto bien desarrollado y una propuesta comercial adecuada tienen pocas posibilidades de generar conversiones si no llegan a personas que puedan estar interesadas.
+
+El tráfico representa el conjunto de visitas que recibe una página, una oferta o un canal digital. Desde el punto de vista de la monetización, no todas las visitas tienen el mismo valor. La relevancia del público y su relación con la propuesta comercial son factores determinantes.
+
+Existen diferentes fuentes de adquisición.
+
+**El posicionamiento orgánico** permite atraer personas que realizan búsquedas relacionadas con determinados temas, necesidades o productos. Su desarrollo requiere trabajar la relevancia de los contenidos, la estructura de las páginas y la correspondencia entre lo que se publica y la intención de búsqueda.
+
+**Los contenidos editoriales** pueden ayudar a explicar problemas, comparar alternativas y presentar soluciones relacionadas con una oferta. Cuando aportan información útil, permiten establecer un contexto para que el usuario valore una propuesta comercial.
+
+**Las redes sociales** ofrecen canales para distribuir contenidos, desarrollar comunidades y generar oportunidades de contacto con públicos específicos. Su utilidad depende de la naturaleza de la audiencia y de las posibilidades de cada plataforma.
+
+**El email marketing** permite mantener una comunicación directa con personas que han decidido recibir información. Puede contribuir a desarrollar una relación continuada y presentar propuestas comerciales cuando existe una correspondencia real con sus intereses.
+
+**La publicidad de pago** permite adquirir visibilidad mediante campañas en plataformas publicitarias. A diferencia de las fuentes orgánicas, implica un coste directo y exige controlar cuidadosamente la relación entre inversión y resultados.
+
+Cada fuente tiene características diferentes. No se trata de utilizar todos los canales disponibles, sino de comprender cuáles pueden acercarnos a las personas adecuadas y bajo qué condiciones podemos hacerlo.
+
+Desde la perspectiva de la monetización, el objetivo no es acumular visitas indiscriminadamente. Es atraer tráfico que tenga relación con la oferta y que pueda avanzar hacia una acción comercial.
+
+## Conversión: de la visita a la acción comercial
+
+Conseguir que una persona llegue a una página es solo una parte del proceso. La conversión se produce cuando realiza la acción que esperamos y que corresponde al objetivo comercial de la oferta.
+
+En el marketing de afiliados puede tratarse de una compra. En una campaña CPA puede ser un registro, una solicitud u otro evento definido por el anunciante. En cualquier caso, necesitamos comprender qué factores pueden influir en la decisión del usuario.
+
+El primero es la correspondencia entre el origen del tráfico y la propuesta que encuentra. Si una persona llega esperando resolver una necesidad concreta y descubre una oferta que no responde a ella, es probable que abandone el proceso.
+
+La claridad también importa. El usuario necesita comprender qué se ofrece, cuáles son sus características relevantes y qué debe hacer para continuar. Una presentación confusa puede introducir obstáculos innecesarios.
+
+La confianza constituye otro elemento importante. La transparencia, la calidad de la información y la coherencia entre el contenido y la oferta ayudan a que una persona pueda evaluar la propuesta con mayor criterio.
+
+También debemos prestar atención a la experiencia de navegación. Las páginas lentas, los formularios innecesariamente complejos, las instrucciones poco claras o los pasos que generan dudas pueden dificultar una acción que inicialmente despertaba interés.
+
+No todas las conversiones dependen de los mismos factores. Una compra, un registro o una solicitud implican decisiones diferentes. Por eso, el proceso debe analizarse teniendo en cuenta el tipo de acción que buscamos y las condiciones concretas de la oferta.
+
+La conversión no consiste en presionar al usuario para que actúe. Consiste en presentar una propuesta relevante, proporcionar información suficiente y facilitar un recorrido claro para que pueda tomar una decisión.
+
+## Medición y rentabilidad: comprender los números
+
+Una actividad de monetización necesita datos para evaluar su funcionamiento. Sin medición podemos confundir movimiento con rendimiento, interpretar incorrectamente los resultados o mantener decisiones que no están produciendo el efecto esperado.
+
+Existen varios indicadores que ayudan a comprender una actividad comercial.
+
+Las **visitas** muestran cuántas personas llegan a una página o una oferta. Sin embargo, por sí solas no indican si ese tráfico tiene valor comercial.
+
+La **tasa de conversión** relaciona el número de acciones conseguidas con el volumen de visitas o interacciones utilizado como referencia. Permite observar qué proporción del tráfico completa la acción prevista, siempre que se utilice una definición coherente de conversión.
+
+Las **comisiones** representan la remuneración obtenida por las acciones reconocidas por el programa de afiliación o CPA. Debemos distinguir las conversiones registradas de aquellas que finalmente han sido validadas y aprobadas.
+
+El **coste de adquisición** permite analizar cuánto cuesta conseguir una visita, un registro, un cliente u otra acción, según el objetivo de la campaña.
+
+Los **ingresos por clic** y otros indicadores similares ayudan a relacionar la actividad generada con la remuneración obtenida. Su interpretación depende del modelo utilizado y de la información que proporcione la plataforma.
+
+Finalmente, debemos distinguir entre ingresos y beneficio. Una campaña puede generar comisiones y, aun así, no resultar rentable si los costes asociados superan los ingresos obtenidos.
+
+Por eso, una evaluación comercial no debería basarse en un único indicador. Necesitamos observar el conjunto de datos, identificar dónde se producen los resultados y comprender qué elementos pueden mejorarse.
+
+Medir no significa perseguir números de manera aislada. Significa utilizar información para tomar mejores decisiones.
+
+## Errores que comprometen la monetización digital
+
+La monetización puede debilitarse cuando se toman decisiones sin comprender cómo se relacionan los diferentes componentes del modelo comercial. Algunos errores son especialmente frecuentes.
+
+**Elegir ofertas únicamente por sus comisiones.** Una remuneración elevada puede resultar atractiva, pero no compensa la falta de correspondencia entre el producto y la audiencia.
+
+**Enviar tráfico sin conocer al público.** Conseguir visitas no significa llegar a personas interesadas. La relevancia del tráfico influye directamente en las posibilidades de conversión.
+
+**Confundir visitas con resultados comerciales.** El volumen de tráfico es un indicador de actividad, no una demostración de rentabilidad.
+
+**Depender de una única fuente de adquisición.** Concentrar toda la actividad en un solo canal puede aumentar la vulnerabilidad ante cambios de condiciones, algoritmos o costes.
+
+**Ignorar las condiciones de los programas.** No conocer las reglas de atribución, validación y promoción puede provocar conversiones rechazadas o incumplimientos.
+
+**No medir los resultados.** Sin datos es difícil identificar qué ofertas, contenidos o canales contribuyen realmente a los objetivos comerciales.
+
+**Cambiar continuamente de estrategia.** Modificar las campañas sin analizar la información disponible impide comprender qué factores influyen en su rendimiento.
+
+**Promocionar productos sin transparencia.** Una actividad de afiliación necesita preservar la confianza. Debemos presentar las relaciones comerciales de forma clara, identificar los enlaces de afiliación cuando corresponda y evitar afirmaciones engañosas.
+
+Superar estos errores requiere desarrollar criterio comercial y entender que la monetización es un proceso que necesita planificación, seguimiento y ajustes.
+
+## Cinco perspectivas para comprender la monetización digital
+
+El marketing de afiliados y los diferentes modelos de remuneración constituyen un campo amplio. Para comprenderlo mejor conviene explorar sus principales dimensiones: el funcionamiento de la afiliación, las campañas CPA, los Smartlinks, los marketplaces de productos digitales y las estrategias de promoción.
+
+La colección de FG Perspectiva reúne cinco obras relacionadas con estos ámbitos.
+
+**Dominando el marketing de afiliados**
+
+El marketing de afiliados representa uno de los modelos centrales de la monetización digital. Comprenderlo permite estudiar la relación entre anunciantes, afiliados, productos, audiencias y mecanismos de remuneración. Este libro se integra en la colección como referencia temática sobre el modelo general de afiliación.
+
+**Marketing CPA Para Emprendedores y Profesionales Digitales**
+
+El CPA introduce una perspectiva diferente sobre la remuneración, basada en acciones concretas que deben cumplir determinadas condiciones. Esta obra se relaciona con el conocimiento de los modelos de Cost Per Action y su aplicación dentro de las actividades comerciales digitales.
+
+**CPA Marketing Fórmula Smartlink**
+
+Los Smartlinks forman parte de las herramientas utilizadas en determinados entornos de monetización CPA. Este título representa esa dimensión tecnológica y comercial, donde la distribución de ofertas se relaciona con las condiciones de las campañas y el tráfico disponible.
+
+**Dinero con Clickbank**
+
+Los marketplaces de productos digitales ofrecen un entorno donde creadores, vendedores y afiliados pueden participar en procesos de comercialización. Este libro se vincula con ClickBank y con la comprensión de ese mercado dentro de la actividad de afiliación.
+
+**Tips de Marketing para Afiliados**
+
+La monetización no depende solamente de disponer de una oferta. También requiere comprender cómo presentarla, cómo llegar al público adecuado y cómo desarrollar acciones de promoción coherentes. Este título completa la colección desde la perspectiva del marketing aplicado a la actividad de afiliación.
+
+Las cinco obras permiten acercarnos a diferentes dimensiones de un mismo territorio. No representan una fórmula única ni garantizan resultados comerciales. Su valor está en ofrecer perspectivas para comprender mejor los modelos, las herramientas y las decisiones que intervienen en la monetización digital.
+
+## Los ingresos digitales se construyen comprendiendo las conexiones
+
+Generar ingresos mediante Internet requiere mucho más que encontrar una oferta y compartir un enlace. Necesitamos comprender el modelo comercial, conocer el producto, identificar a las personas a las que puede interesarles y desarrollar mecanismos para acercar ambas partes.
+
+El marketing de afiliados, el CPA y los marketplaces de productos digitales ofrecen posibilidades distintas, pero todos exigen criterio para seleccionar propuestas, trabajar con tráfico relevante y evaluar las conversiones.
+
+También necesitamos entender que la monetización no es un proceso aislado. Está relacionada con los contenidos, los canales de adquisición, la confianza de la audiencia y la capacidad de medir lo que sucede. Cuando estos componentes se desarrollan sin conexión, la actividad puede convertirse en una sucesión de acciones dispersas. Cuando se comprenden sus relaciones, resulta más sencillo tomar decisiones y evaluar el funcionamiento del proyecto.
+
+En FG Perspectiva creemos que conocer los mecanismos económicos del entorno digital es una parte esencial para desarrollar proyectos con visión a largo plazo.
+
+**No se trata solamente de conseguir visitas o promocionar productos. Se trata de comprender cómo se genera valor, cómo se conecta con una audiencia y cómo esa relación puede convertirse en una actividad comercial sostenible.**
+
+## FIN DEL TEXTO EDITORIAL
+
+---
+
+# 5. ARQUITECTURA VISUAL Y EXPERIENCIA DE LECTURA
+
+El contenido es extenso y necesita una presentación editorial que facilite su lectura sin convertir la página en una sucesión monótona de párrafos.
+
+La identidad visual debe ser propia de Ingresos.
+
+No queremos copiar la estructura de Origen o Iniciación.
+
+Utiliza la identidad visual general de FG Perspectiva:
+
+- Verde oscuro corporativo: `#174532`.
+- Verde medio: `#4db380`.
+- Fondos suaves derivados de `#dae7df`.
+- Texto principal: `#1b1b1b`.
+- Acentos dorados: `#f4b925`.
+- Tipografías existentes del proyecto: Libre Baskerville e Inter.
+
+Respeta las variables y componentes reales del proyecto cuando existan. No introduzcas un sistema visual paralelo.
+
+## 5.1. Hero editorial
+
+Crear un Hero tipográfico independiente.
+
+Debe contener:
+
+- Breadcrumbs: Inicio > Biblioteca > Ingresos.
+- Un único H1: «Ingresos digitales: cómo funcionan los modelos de monetización online».
+- Una introducción editorial visualmente diferenciada.
+- Una composición sobria, profesional y de carácter editorial.
+
+No utilizar una imagen de categoría.
+
+No utilizar fotografías de personas, imágenes de dinero, billetes, monedas, gráficos bursátiles, capturas de plataformas ni ilustraciones genéricas de negocios.
+
+La página no debe transmitir una estética de promesas de riqueza o de dinero rápido.
+
+## 5.2. Desarrollo editorial
+
+Organiza el texto completo en secciones claramente diferenciadas.
+
+Los doce bloques argumentales deben mantener una jerarquía visual coherente y permitir que el lector identifique cada tema.
+
+Utiliza una combinación equilibrada de:
+
+- Secciones editoriales de lectura continua.
+- Listas cuando el texto las requiere.
+- Bloques destacados para conceptos importantes.
+- Diagramas conceptuales originales.
+- Comparativas visuales.
+- Espacios en blanco que mejoren la lectura.
+
+Evita introducir tarjetas decorativas para cada párrafo.
+
+No conviertas cada apartado en una tarjeta independiente.
+
+El objetivo es una publicación editorial profesional, no un panel de componentes.
+
+## 5.3. Recursos visuales explicativos
+
+Se pueden desarrollar recursos gráficos originales que ayuden a comprender los conceptos, siempre que no sustituyan contenido.
+
+Se recomiendan los siguientes:
+
+**A. Esquema del modelo comercial**
+
+Representar visualmente esta relación:
+
+Propuesta comercial → Audiencia → Conexión → Acción → Remuneración
+
+Debe quedar claro que se trata de componentes relacionados y no de una garantía de resultados.
+
+**B. Comparativa de modelos de monetización**
+
+Presentar visualmente las diferencias entre:
+
+- Venta de productos y servicios propios.
+- Marketing de afiliados.
+- CPA.
+- Publicidad y monetización de audiencias.
+
+Comparar qué se ofrece, qué acción genera remuneración y quién participa en el proceso.
+
+No inventar cifras ni comisiones.
+
+**C. Esquema del marketing de afiliados**
+
+Representar la relación entre:
+
+Anunciante / propietario de la oferta → Afiliado → Usuario
+
+Incluir el seguimiento de la referencia y la comisión como elementos del modelo, sin sugerir que toda visita genera remuneración.
+
+**D. Esquema de CPA**
+
+Representar:
+
+Oferta CPA → Tráfico → Acción definida → Validación → Remuneración
+
+Debe quedar visualmente diferenciada la acción del usuario y la validación de la conversión.
+
+**E. Esquema de Smartlinks**
+
+Representar el funcionamiento conceptual de un sistema de distribución de ofertas:
+
+Tráfico recibido → Criterios de distribución → Ofertas disponibles → Posible conversión
+
+Indicar que la distribución depende de las condiciones y configuraciones de cada plataforma.
+
+**F. Relación entre tráfico y conversión**
+
+Representar:
+
+Fuentes de tráfico → Página / Oferta → Decisión del usuario → Acción comercial
+
+El esquema debe explicar la relación, no prometer resultados.
+
+**G. Esquema de medición**
+
+Representar los indicadores descritos en el texto:
+
+Visitas, conversiones, comisiones, costes, ingresos y beneficio.
+
+No inventar valores ni introducir gráficos con datos ficticios.
+
+Los diagramas deben construirse preferentemente con HTML, CSS y SVG dentro de los componentes React existentes.
+
+Deben ser responsivos y accesibles.
+
+No instalar bibliotecas gráficas ni dependencias nuevas para realizar estos recursos.
+
+## 5.4. Presentación de los cinco libros
+
+La sección «Cinco perspectivas para comprender la monetización digital» debe tener un tratamiento editorial propio.
+
+Mostrar los cinco libros oficiales de la categoría Ingresos, utilizando sus portadas reales recuperadas de `constants.tsx`.
+
+Cada libro debe disponer de:
+
+- Portada oficial.
+- Título exacto.
+- Texto descriptivo correspondiente al contenido aprobado.
+- Enlace a su ficha individual.
+- Botón secundario de opciones de compra cuando existan opciones de compra en sus datos.
+
+El botón principal debe ser:
+
+**Ver ficha del libro**
+
+La acción secundaria, cuando corresponda, debe ser:
+
+**Opciones de compra**
+
+No mostrar botones de compra si el libro no dispone de opciones comerciales definidas.
+
+No inventar precios, formatos, valoraciones ni disponibilidad.
+
+Reutilizar el sistema de compra existente, especialmente `PurchaseModal`, cuando corresponda.
+
+No modificar su funcionamiento global.
+
+Las tarjetas deben tener una presentación limpia, con jerarquía visual clara y espacio suficiente para que las portadas mantengan su proporción original.
+
+No recortar, deformar ni estirar las portadas.
+
+Utilizar `object-contain` o el mecanismo equivalente que garantice la proporción real de cada imagen.
+
+No utilizar imágenes de categorías.
+
+---
+
+# 6. REQUISITOS SEO
+
+La página debe tener metadatos exclusivos.
+
+Configurar en `seo.ts`, dentro de la rama correspondiente a `/ingresos/`, los siguientes valores:
+
+**Title:**
+
+`Ingresos: marketing de afiliados y monetización digital | FG Perspectiva`
+
+**Meta description:**
+
+`Comprende cómo funcionan el marketing de afiliados, el CPA y otros modelos de monetización digital, desde la selección de ofertas hasta el tráfico y las conversiones.`
+
+**Canonical:**
+
+`https://fgperspectiva.vercel.app/ingresos/`
+
+**Open Graph title:**
+
+`Ingresos: marketing de afiliados y monetización digital | FG Perspectiva`
+
+**Open Graph description:**
+
+Utilizar la misma descripción aprobada para la meta description, salvo que la arquitectura SEO existente requiera una adaptación técnica que no altere su significado.
+
+**Open Graph image y Twitter image:**
+
+Utilizar la imagen corporativa editorial que ya se emplea en las páginas de categorías implementadas, comprobando su URL exacta en el código existente.
+
+No utilizar una imagen de categoría ni la portada de un libro como imagen social principal.
+
+Verificar que los metadatos se generan correctamente tanto en la navegación como en el HTML prerenderizado.
+
+## 6.1. Encabezados
+
+La página debe tener:
+
+- Un único H1.
+- H2 para los doce bloques principales.
+- H3 cuando exista una subdivisión que lo justifique.
+
+No utilizar encabezados por razones meramente visuales.
+
+Mantener una jerarquía semántica correcta.
+
+No introducir emojis en H1, H2, H3, title, description ni metadatos sociales.
+
+## 6.2. Datos estructurados
+
+Implementar JSON-LD apropiado para una página editorial de categoría.
+
+Utilizar:
+
+- `CollectionPage`.
+- `ItemList` con los cinco libros reales de la categoría.
+- `BreadcrumbList`.
+
+Cada elemento del ItemList debe corresponder a un libro real, con su nombre y URL canónica obtenidos del catálogo.
+
+No inventar ISBN, autorías adicionales, precios, valoraciones, fechas de publicación ni información comercial.
+
+No utilizar `Product` para representar los libros si el modelo de datos existente utiliza `Book`.
+
+Comprobar que el JSON-LD sea JSON válido y que no existan propiedades contradictorias.
+
+---
+
+# 7. IMPLEMENTACIÓN TÉCNICA
+
+Crear un componente independiente:
+
+`components/views/IncomeView.tsx`
+
+El nombre del archivo debe seguir la convención real del proyecto. Si existe una convención distinta y justificada, adaptarse a ella sin perder la independencia de la vista.
+
+La nueva vista debe recibir y utilizar los datos oficiales de la categoría Ingresos.
+
+## 7.1. Enrutamiento
+
+Modificar `App.tsx` únicamente en lo necesario para que la ruta `/ingresos/` utilice la nueva vista independiente.
+
+La ruta debe resolverse antes del fallback genérico de categorías, siguiendo el patrón técnico ya utilizado por Origen e Iniciación.
+
+No modificar el comportamiento de las demás rutas.
+
+No introducir redirecciones nuevas.
+
+No modificar `router.tsx`.
+
+No modificar la normalización de rutas.
+
+No modificar el comportamiento de trailing slash.
+
+## 7.2. Datos
+
+La categoría y sus libros deben proceder de `constants.tsx` y de los tipos existentes.
+
+No duplicar manualmente los datos del catálogo.
+
+No crear una segunda fuente de datos.
+
+No introducir información comercial paralela.
+
+## 7.3. Componentes compartidos
+
+Reutilizar los componentes existentes para:
+
+- Breadcrumbs.
+- Navegación.
+- Fichas de libros.
+- Opciones de compra.
+- SEO.
+- Layout.
+
+No modificar componentes compartidos salvo que sea absolutamente imprescindible para que la nueva página funcione.
+
+Si fuera imprescindible realizar algún cambio compartido, detenerse y explicar primero por qué es necesario, qué otras páginas afectaría y cómo se evitará cualquier regresión. No ampliar el alcance por iniciativa propia.
+
+## 7.4. CSS y dependencias
+
+No instalar paquetes.
+
+No modificar `package.json` ni el sistema general de estilos.
+
+Evitar reglas CSS globales que puedan afectar a otras páginas.
+
+Preferir clases y estilos encapsulados en la propia vista.
+
+No introducir scripts externos.
+
+No incorporar librerías de terceros para diagramas, gráficos o animaciones.
+
+---
+
+# 8. RESTRICCIONES ABSOLUTAS: ARCHIVOS Y PÁGINAS PROTEGIDAS
+
+Esta intervención debe limitarse a la nueva página Ingresos y a las modificaciones mínimas necesarias para conectarla al enrutamiento y al SEO.
+
+No modificar:
+
+- Home.
+- Header.
+- Footer.
+- Layout.
+- Biblioteca.
+- Origen.
+- Iniciación.
+- Tecnología.
+- Crecimiento.
+- Mindset.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Contacto.
+- Fichas individuales de libros.
+- `constants.tsx`.
+- `types.ts`.
+- `router.tsx`.
+- `components/PurchaseModal.tsx`.
+- `components/Breadcrumbs.tsx`.
+- `components/SeoHead.tsx`.
+- Estilos globales.
+- `prerender.ts`.
+- Configuración de Vercel.
+- Sitemap, salvo la generación automática normal ya existente.
+
+No modificar ninguna URL comercial, portada, slug, título ni dato de los libros.
+
+No cambiar la estructura del catálogo.
+
+No modificar la página genérica de categorías para introducir esta página.
+
+No modificar el Footer absolutamente en ningún aspecto.
+
+**La página `/ingresos/` debe ser independiente sin alterar las páginas que ya están implementadas.**
+
+---
+
+# 9. COPIA DE SEGURIDAD
+
+Antes de realizar cambios:
+
+1. Crear una copia de seguridad de todos los archivos que vayan a modificarse.
+2. Utilizar una carpeta identificable:
+
+`/_backup_rediseno_ingresos/`
+
+3. Conservar las versiones originales de `App.tsx`, `seo.ts` y cualquier otro archivo que finalmente necesite modificarse.
+4. No sobrescribir backups anteriores.
+5. No incluir archivos innecesarios en la copia.
+
+Si se produce un error durante la implementación, restaurar los archivos afectados antes de continuar, siempre que la corrección no pueda resolverse de forma segura.
+
+---
+
+# 10. PRUEBAS Y VALIDACIÓN OBLIGATORIAS
+
+No basta con crear el componente y comprobar que compila.
+
+La implementación debe validarse técnicamente y visualmente.
+
+## 10.1. TypeScript
+
+Ejecutar la comprobación TypeScript del proyecto.
+
+Resultado esperado: cero errores.
+
+## 10.2. Build y prerender
+
+Ejecutar el proceso de compilación y prerender existente.
+
+Comprobar que:
+
+- El build termina correctamente.
+- La ruta `/ingresos/` se genera en HTML estático.
+- El HTML prerenderizado contiene el contenido editorial.
+- Los metadatos SEO aparecen en el HTML.
+- El JSON-LD está presente y es válido.
+- No se producen errores de renderizado.
+
+El proyecto tiene una arquitectura de prerenderizado para sus rutas canónicas. No modificarla para solucionar problemas locales sin justificación.
+
+## 10.3. Integridad del contenido
+
+Comprobar programáticamente que:
+
+- El H1 es el aprobado.
+- Los doce bloques editoriales están presentes.
+- Los párrafos del texto aprobado no se han omitido.
+- No hay secciones ocultas para simular contenido.
+- No se ha sustituido el texto por versiones abreviadas.
+- No se ha introducido texto duplicado.
+- Los cinco libros oficiales están presentes.
+- Los enlaces de las fichas corresponden a los slugs reales.
+
+La integridad del contenido es una condición de aceptación.
+
+## 10.4. SEO
+
+Verificar:
+
+- Un único H1.
+- Jerarquía H1 > H2 > H3.
+- Title correcto.
+- Meta description correcta.
+- Canonical correcto.
+- Open Graph.
+- Twitter Card.
+- JSON-LD CollectionPage.
+- ItemList con cinco libros.
+- BreadcrumbList.
+- Ausencia de emojis en títulos y metadatos.
+- Ausencia de imágenes genéricas de categoría.
+
+## 10.5. Imágenes y libros
+
+Verificar que las cinco portadas oficiales:
+
+- Se cargan correctamente.
+- Corresponden a los cinco libros de Ingresos.
+- Conservan su proporción.
+- No están recortadas.
+- No presentan deformaciones.
+- No generan errores de red.
+
+Comprobar que los enlaces a las fichas individuales funcionan.
+
+Comprobar que las opciones de compra se muestran exclusivamente cuando existen en los datos del libro.
+
+Comprobar que los modales de compra funcionan sin modificar el componente compartido.
+
+## 10.6. Responsive
+
+Realizar pruebas en:
+
+- Escritorio: 1440 px.
+- Tablet: 768 px.
+- Móvil: 390 px.
+
+Verificar:
+
+- Ausencia de desbordamiento horizontal.
+- Lectura cómoda.
+- Jerarquía tipográfica.
+- Diagramas adaptados a móvil.
+- Portadas proporcionadas.
+- Botones utilizables.
+- Separaciones y márgenes adecuados.
+- Navegación y Breadcrumbs correctos.
+
+## 10.7. Navegación y regresión
+
+Verificar la nueva ruta:
+
+`/ingresos/`
+
+Comprobar que funciona tanto mediante navegación interna como mediante acceso directo.
+
+Realizar pruebas de regresión sobre las páginas protegidas, al menos:
+
+- `/`
+- `/biblioteca/`
+- `/origen/`
+- `/iniciacion/`
+- `/tecnologia/`
+- `/crecimiento/`
+- `/mindset/`
+- `/sistemas-digitales/`
+- `/sobre-fg-perspectiva/`
+- `/contacto/`
+
+Comprobar que conservan sus títulos, metadatos, H1 y funcionamiento esperado.
+
+No aceptar cambios colaterales en estas páginas.
+
+## 10.8. Errores
+
+Comprobar:
+
+- Consola del navegador.
+- Errores JavaScript.
+- Errores de React.
+- Peticiones HTTP fallidas.
+- Imágenes rotas.
+- Enlaces incorrectos.
+- Errores de prerenderizado.
+
+Resultado esperado: cero errores atribuibles a esta implementación.
+
+---
+
+# 11. INFORME FINAL OBLIGATORIO
+
+Al terminar, presentar un informe técnico claro y verificable.
+
+Debe incluir:
+
+1. Archivos creados.
+2. Archivos modificados.
+3. Ubicación de la copia de seguridad.
+4. Descripción de la arquitectura de la nueva página.
+5. Confirmación de que el texto editorial se ha integrado completo.
+6. Número de palabras visibles dentro de `<main>`.
+7. Número de H1, H2 y H3.
+8. Confirmación de los cinco libros y sus portadas oficiales.
+9. Resultado de los metadatos SEO.
+10. Resultado del JSON-LD.
+11. Resultado de TypeScript.
+12. Resultado del build y prerender.
+13. Resultado de las pruebas responsive.
+14. Resultado de las pruebas de navegación y compra.
+15. Resultado de la regresión sobre las páginas protegidas.
+16. Errores detectados y correcciones realizadas.
+17. Confirmación explícita de que Home, Header, Footer, Biblioteca, Origen, Iniciación, Sistemas Digitales, Sobre FG Perspectiva, Contacto y las demás categorías permanecen intactas.
+18. Confirmación de que no se ha ejecutado ningún despliegue a Vercel.
+
+Si alguna prueba no puede realizarse, indicarlo expresamente. No afirmar que una prueba se ha superado si no se ha ejecutado.
+
+---
+
+# 12. CONDICIÓN FINAL DE ACEPTACIÓN
+
+La implementación se considerará terminada únicamente cuando:
+
+- `/ingresos/` funcione como página editorial independiente.
+- El texto aprobado esté integrado íntegramente.
+- La página tenga una identidad visual propia.
+- Los cinco libros oficiales aparezcan correctamente.
+- Las portadas sean las originales del catálogo.
+- Los enlaces y las opciones de compra funcionen.
+- El SEO y los datos estructurados estén correctamente implementados.
+- El HTML prerenderizado contenga el contenido.
+- Las pruebas técnicas y responsive sean satisfactorias.
+- Las páginas protegidas permanezcan intactas.
+- Exista una copia de seguridad.
+- Se entregue el informe técnico final.
+
+**No desplegar a Vercel.**
+
+Realiza únicamente la implementación local y entrega el informe para su revisión.
+
+No introduzcas mejoras adicionales fuera de este alcance ni aproveches la intervención para modificar otras partes del proyecto.
+
+El objetivo es incorporar una nueva página editorial de calidad a FG Perspectiva, no reabrir ni alterar trabajos que ya han sido aprobados.
