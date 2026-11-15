@@ -1,0 +1,931 @@
+# INSTRUCCIÓN DE IMPLEMENTACIÓN — REDISEÑO EDITORIAL Y SEO DE LA CATEGORÍA /crecimiento/ — FG PERSPECTIVA
+
+## 1. OBJETIVO GENERAL
+
+Implementar un rediseño editorial, visual, estructural y SEO completo de la página `/crecimiento/` del proyecto FG Perspectiva.
+
+La página debe convertirse en una vista independiente, con identidad editorial propia, contenido original y profundidad suficiente para responder a la intención de búsqueda de la categoría.
+
+El trabajo debe seguir el modelo de las páginas independientes ya implementadas y aprobadas para:
+
+- `/origen/`
+- `/iniciacion/`
+- `/ingresos/`
+- `/tecnologia/`
+
+Sin embargo, NO se debe copiar mecánicamente la estructura, el número de apartados, la composición visual ni los diagramas de esas páginas.
+
+La nueva página debe desarrollar un territorio editorial propio: el crecimiento de audiencias digitales mediante tráfico web, marketing de contenidos, distribución y email marketing.
+
+La implementación debe realizarse exclusivamente en el entorno local del proyecto.
+
+**NO ejecutar ningún despliegue a Vercel ni publicar cambios en producción.**
+
+## 2. REGLAS DE PROTECCIÓN DEL PROYECTO
+
+Antes de realizar cualquier modificación:
+
+1. Inspeccionar la implementación actual de `/crecimiento/`.
+2. Revisar cómo se encuentran implementadas las vistas independientes de Origen, Iniciación, Ingresos y Tecnología.
+3. Revisar `App.tsx`, `seo.ts`, los componentes de navegación, los tipos de datos y la estructura real del catálogo.
+4. Identificar los datos exactos de los cuatro libros de Crecimiento en el catálogo.
+5. Comprobar las convenciones de rutas, importaciones, componentes, metadatos y datos estructurados que utiliza el proyecto.
+6. Crear una copia de seguridad de los archivos originales que vayan a modificarse.
+
+La copia de seguridad debe guardarse en:
+
+`/_backup_rediseno_crecimiento/`
+
+Debe conservarse la estructura de los archivos originales y permitir su recuperación.
+
+### Archivos y áreas protegidas
+
+No modificar, salvo la conexión estrictamente necesaria y justificada de la nueva vista:
+
+- `components/Layout.tsx`
+- Header.
+- Footer.
+- `PurchaseModal.tsx`, excepto que una incompatibilidad real y demostrada impida utilizarlo; en ese caso, detenerse y comunicar el problema antes de modificarlo.
+- `CategoryView.tsx`.
+- Las vistas independientes de Origen, Iniciación, Ingresos y Tecnología.
+- Home.
+- Biblioteca.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Contacto.
+- Las fichas individuales de libros.
+- Los datos comerciales del catálogo.
+- Los tipos generales del proyecto.
+- El sistema de navegación.
+- El sistema de prerenderizado.
+- Las rutas existentes que no correspondan a esta implementación.
+
+No modificar el Footer bajo ninguna circunstancia.
+
+No alterar los textos, imágenes, enlaces, botones, funcionalidades ni estructuras de otras páginas.
+
+No cambiar el diseño general de la web ni instalar dependencias innecesarias.
+
+Si se identifica una incompatibilidad que requiera modificar una zona protegida, detener esa parte del trabajo y explicar el problema. No realizar modificaciones colaterales por iniciativa propia.
+
+## 3. IDENTIDAD EDITORIAL Y POSICIONAMIENTO
+
+### Territorio temático
+
+La categoría Crecimiento aborda el desarrollo de audiencias digitales.
+
+Su contenido debe explicar cómo un proyecto puede:
+
+- Conseguir visibilidad.
+- Atraer visitantes relevantes.
+- Desarrollar tráfico web.
+- Crear contenidos que aporten valor.
+- Distribuir información mediante distintos canales.
+- Construir una audiencia.
+- Mantener una comunicación directa mediante email marketing.
+- Analizar y comprender su evolución.
+
+### Pregunta central
+
+¿Cómo podemos desarrollar una audiencia digital, atraer tráfico relevante y construir relaciones duraderas mediante contenidos y canales de comunicación?
+
+### Intención de búsqueda
+
+Informativa y práctica.
+
+La página debe responder a usuarios interesados en comprender cómo atraer visitantes a sus proyectos digitales, desarrollar estrategias de contenidos y utilizar diferentes canales para ampliar y mantener su audiencia.
+
+### Diferenciación temática
+
+Es obligatorio mantener estas fronteras editoriales:
+
+- **Iniciación:** construcción de una presencia digital desde sus fundamentos, creación de blogs, contenidos iniciales y comprensión de una actividad online.
+- **Ingresos:** modelos de monetización, marketing de afiliados, CPA, Smartlinks, ClickBank, ofertas, conversiones y generación de ingresos.
+- **Tecnología:** inteligencia artificial, aplicaciones tecnológicas, productividad y nuevas posibilidades digitales.
+- **Crecimiento:** tráfico web, adquisición de visitantes, visibilidad, marketing de contenidos, distribución, desarrollo de audiencia y email marketing.
+- **Sistemas Digitales:** integración de componentes, activos y procesos dentro de una arquitectura digital coherente.
+
+No trasladar a Crecimiento los desarrollos editoriales propios de las otras categorías.
+
+La página puede mencionar relaciones entre estas disciplinas cuando resulte necesario, pero su contenido principal debe permanecer centrado en el crecimiento de audiencias.
+
+## 4. METADATOS SEO OBLIGATORIOS
+
+Implementar exactamente los siguientes metadatos:
+
+**Ruta canónica:**
+
+`https://fgperspectiva.vercel.app/crecimiento/`
+
+**Title:**
+
+`Crecimiento: tráfico web, contenidos y email marketing | FG Perspectiva`
+
+**Meta description:**
+
+`Descubre cómo desarrollar tráfico web, crear contenidos relevantes, atraer audiencia y utilizar el email marketing para impulsar el crecimiento de proyectos digitales.`
+
+**H1 único:**
+
+`Crecimiento digital: cómo atraer audiencia y desarrollar visibilidad en Internet`
+
+Comprobar que la página utiliza:
+
+- Un único H1.
+- Jerarquía semántica correcta de H2 y H3.
+- Canonical absoluto correcto.
+- Open Graph con la identidad corporativa existente.
+- Twitter Card conforme a las convenciones del proyecto.
+- Metadatos independientes de las demás categorías.
+- Inclusión correcta de la ruta en el sitemap.
+- Ninguna duplicación de title, description o canonical de otra página.
+
+No inventar metadatos adicionales que contradigan el posicionamiento definido.
+
+## 5. CONTENIDO EDITORIAL COMPLETO Y OBLIGATORIO
+
+Crear una nueva vista independiente e incorporar íntegramente el siguiente contenido.
+
+No resumirlo, no sustituirlo por textos genéricos, no eliminar apartados y no reescribirlo de forma que se pierdan sus ideas o su profundidad.
+
+Se permiten ajustes mínimos de puntuación o presentación si son necesarios para integrarlo correctamente, pero no alterar el sentido editorial aprobado.
+
+### CONTENIDO
+
+# Crecimiento digital: cómo atraer audiencia y desarrollar visibilidad en Internet
+
+Crecer en Internet no consiste simplemente en conseguir más visitas. Un proyecto digital puede publicar contenidos con regularidad, estar presente en distintas plataformas e incluso recibir un volumen considerable de visitantes sin conseguir desarrollar una audiencia que reconozca su propuesta y mantenga el interés a lo largo del tiempo.
+
+La diferencia está en comprender qué sucede entre el momento en que una persona descubre un proyecto y el momento en que decide volver, explorar sus contenidos o mantener una relación con él.
+
+El crecimiento digital implica trabajar sobre distintas dimensiones que se complementan: conseguir visibilidad, atraer visitantes relevantes, ofrecer contenidos que respondan a sus intereses y desarrollar canales que permitan mantener la comunicación. Cada una cumple una función diferente, pero todas participan en un mismo proceso.
+
+En FG Perspectiva abordamos este territorio desde cuatro perspectivas editoriales: el tráfico web, el marketing de contenidos, la distribución de información y el email marketing. Son disciplinas que permiten comprender cómo un proyecto puede ampliar su alcance y desarrollar una audiencia con mayor continuidad.
+
+## 1. La visibilidad: el primer paso para desarrollar un proyecto digital
+
+Para que un proyecto pueda crecer, primero necesita ser descubierto. Podemos tener una propuesta bien definida, publicar información de calidad y disponer de recursos útiles, pero todo ese trabajo tendrá un alcance limitado si las personas interesadas no encuentran una forma de llegar hasta nosotros.
+
+La visibilidad representa precisamente esa posibilidad de aparecer ante una audiencia potencial. No depende de un único canal ni se consigue necesariamente mediante una acción aislada. Es el resultado de desarrollar una presencia que permita a las personas descubrir nuestro proyecto en diferentes circunstancias.
+
+Alguien puede encontrar un artículo mientras busca una respuesta en Google, descubrir una publicación en una red social, recibir una recomendación o acceder a un sitio web desde otro contenido relacionado. Aunque los recorridos sean distintos, todos tienen algo en común: crean una oportunidad de contacto entre el proyecto y una persona que todavía no lo conocía.
+
+Por eso, crecer exige pensar más allá de la publicación. Necesitamos comprender dónde se encuentra nuestra audiencia, qué temas despiertan su interés y mediante qué canales podemos facilitar el descubrimiento de nuestros contenidos.
+
+La visibilidad tampoco debe confundirse con la popularidad. Alcanzar a muchas personas no siempre significa llegar a quienes realmente pueden encontrar valor en nuestra propuesta. Una presencia digital eficaz necesita combinar alcance y relevancia.
+
+## 2. Comprender el tráfico web y su función
+
+El tráfico web representa las visitas que recibe un sitio o una página. Es uno de los indicadores más utilizados para observar la actividad de un proyecto digital, pero su interpretación requiere algo más que consultar el número total de visitantes.
+
+No todas las visitas tienen el mismo origen, responden a la misma intención ni producen el mismo tipo de interacción. Una persona puede llegar buscando una respuesta concreta, otra puede descubrir un artículo por recomendación y una tercera puede regresar porque ya conoce el proyecto.
+
+Estas diferencias ayudan a comprender por qué el volumen de tráfico, considerado de forma aislada, ofrece una visión incompleta.
+
+### Tráfico y calidad de las visitas
+
+Para interpretar correctamente el tráfico conviene distinguir varios aspectos:
+
+- **Procedencia:** permite identificar desde qué canales llegan los visitantes.
+- **Intención:** ayuda a comprender qué necesidad o interés puede haber motivado la visita.
+- **Comportamiento:** muestra cómo interactúan las personas con los contenidos disponibles.
+- **Recurrencia:** permite observar si algunos usuarios vuelven al proyecto.
+- **Relevancia:** ayuda a valorar si las visitas corresponden al público al que se dirige nuestra propuesta.
+
+Un sitio puede experimentar un aumento de visitas sin que eso represente necesariamente un avance significativo. Si los nuevos visitantes no encuentran información relacionada con sus intereses, es posible que el crecimiento del volumen no se traduzca en una audiencia más comprometida.
+
+El objetivo no consiste únicamente en atraer tráfico, sino en conseguir que las visitas tengan sentido dentro del propósito del proyecto.
+
+## 3. Los canales de adquisición: cómo llegan los visitantes
+
+El tráfico puede proceder de distintas fuentes. Cada canal tiene características propias, formas de descubrimiento y condiciones de funcionamiento. Comprender esas diferencias permite desarrollar una estrategia de adquisición más equilibrada.
+
+### Motores de búsqueda
+
+Los buscadores permiten que las personas encuentren páginas relacionadas con sus consultas. Cuando un contenido responde de forma pertinente a una necesidad de información, puede convertirse en una puerta de entrada al proyecto.
+
+La visibilidad orgánica puede tener continuidad, aunque depende de múltiples factores y no garantiza una posición permanente. Su desarrollo requiere trabajar la relevancia, la utilidad y la organización de los contenidos.
+
+### Redes sociales y plataformas de distribución
+
+Las redes sociales facilitan la difusión de publicaciones y permiten llegar a personas que quizá todavía no conocen el sitio web. Su funcionamiento está condicionado por las características de cada plataforma, sus sistemas de recomendación y las formas de interacción de sus usuarios.
+
+Estos canales pueden ampliar el alcance de un contenido, pero conviene recordar que la distribución no equivale a construir una relación propia y permanente con la audiencia.
+
+### Referencias y recomendaciones
+
+Los visitantes también pueden llegar desde otros sitios web, publicaciones, comunidades o recomendaciones personales. Estas referencias pueden aportar descubrimiento y contexto, especialmente cuando proceden de espacios relacionados con el tema del proyecto.
+
+### Tráfico directo
+
+Se produce cuando las personas acceden directamente a un sitio, por ejemplo, al escribir su dirección o utilizar un acceso guardado. Puede reflejar familiaridad previa con el proyecto, aunque su interpretación depende de cómo se registren y clasifiquen las visitas.
+
+No necesitamos depender de todos los canales al mismo tiempo. La elección debe responder al tipo de proyecto, a sus contenidos, a los hábitos de su audiencia y a los recursos disponibles para mantener una actividad coherente.
+
+## 4. Visibilidad orgánica y descubrimiento mediante buscadores
+
+Los motores de búsqueda representan una vía importante para descubrir contenidos porque conectan las consultas de las personas con páginas que pueden responder a sus necesidades.
+
+Para desarrollar visibilidad orgánica no basta con incluir palabras clave en un texto. Necesitamos comprender qué busca el usuario, qué tipo de respuesta espera y qué información puede resolver su consulta de manera clara y suficiente.
+
+La intención de búsqueda es una pieza fundamental de este proceso. Una persona que busca una definición necesita una respuesta diferente de quien compara alternativas o intenta resolver un problema concreto. Comprender esa diferencia permite crear contenidos mejor orientados.
+
+También importa la organización temática. Cuando las páginas de un sitio mantienen una relación lógica, desarrollan temas relacionados y ofrecen recorridos de lectura comprensibles, resulta más sencillo construir una presencia editorial coherente.
+
+Algunos elementos que intervienen en este trabajo son:
+
+- La correspondencia entre el contenido y la intención de búsqueda.
+- La claridad de los títulos y encabezados.
+- La profundidad y utilidad de la información.
+- La organización de las páginas y sus relaciones internas.
+- La actualización de contenidos cuando resulta necesaria.
+- La experiencia de navegación y el acceso a la información.
+
+El posicionamiento orgánico no debe entenderse como una colección de ajustes independientes. Forma parte de una estrategia de visibilidad en la que la calidad editorial, la estructura del sitio y la utilidad para el usuario tienen que trabajar en la misma dirección.
+
+## 5. Marketing de contenidos: atraer mediante valor
+
+Conseguir que una persona llegue hasta una página es solamente una parte del proceso. También necesitamos ofrecerle una razón para permanecer, explorar otros contenidos o reconocer que nuestro proyecto puede resultarle útil.
+
+El marketing de contenidos se ocupa de desarrollar y distribuir información con una finalidad definida. No consiste simplemente en publicar artículos, vídeos o mensajes con frecuencia. Su valor está en la capacidad de abordar temas relevantes para una audiencia y hacerlo con una perspectiva reconocible.
+
+Un contenido puede explicar un concepto, resolver una duda, orientar una decisión, presentar un procedimiento o ayudar a comprender un problema. Su función depende de la necesidad que intenta atender y del lugar que ocupa dentro de la propuesta editorial.
+
+### Diferentes funciones del contenido
+
+Los contenidos pueden desempeñar distintas funciones:
+
+- **Informar:** presentar datos, conceptos y explicaciones que permitan comprender un tema.
+- **Educar:** desarrollar conocimientos y facilitar la comprensión progresiva de una disciplina.
+- **Orientar:** ayudar a comparar alternativas y valorar diferentes posibilidades.
+- **Resolver problemas:** abordar necesidades concretas mediante información útil.
+- **Profundizar:** ampliar una cuestión y ofrecer una perspectiva más completa.
+
+No todos los contenidos tienen que cumplir todas estas funciones. Una estrategia editorial necesita variedad, pero también coherencia. Cada publicación debe tener un propósito reconocible y aportar algo dentro del conjunto.
+
+La calidad no depende exclusivamente de la extensión. Un contenido breve puede responder perfectamente a una consulta concreta, mientras que un tema complejo puede requerir un desarrollo más amplio. Lo importante es que la información sea pertinente, comprensible y suficiente para su finalidad.
+
+## 6. De la publicación aislada a una estrategia editorial
+
+Publicar de manera ocasional puede generar actividad, pero no siempre permite desarrollar una presencia temática sólida. Cuando los contenidos se producen sin una dirección común, el resultado puede convertirse en una colección de páginas que apenas mantienen relación entre sí.
+
+Una estrategia editorial introduce una estructura. Permite decidir qué temas abordar, qué necesidades atender y cómo organizar las publicaciones para que cada una contribuya al desarrollo del proyecto.
+
+El primer paso consiste en identificar los territorios temáticos que tienen sentido para nuestra audiencia. A partir de ahí podemos organizar los contenidos en áreas, preguntas y subtemas relacionados.
+
+Esta organización facilita la creación de materiales complementarios. Un artículo puede introducir una cuestión, otro puede profundizar en un aspecto específico y una tercera publicación puede abordar una aplicación práctica. De esta manera, el usuario encuentra más oportunidades para explorar el tema sin depender de una única página.
+
+La planificación también permite distribuir mejor los esfuerzos. Podemos identificar contenidos que necesitan actualización, temas que todavía no están suficientemente desarrollados y publicaciones que podrían complementarse entre sí.
+
+Una estrategia editorial no es un calendario rígido. Es una orientación que ayuda a mantener la coherencia y a decidir qué merece nuestra atención.
+
+## 7. Distribución: conseguir que el contenido encuentre su audiencia
+
+Crear un contenido y conseguir que llegue a las personas interesadas son dos actividades relacionadas, pero diferentes.
+
+La publicación marca el momento en que un material queda disponible. La distribución comprende las acciones que facilitan su descubrimiento y circulación a través de distintos canales.
+
+Un artículo publicado en un sitio web puede difundirse mediante una publicación social, incluirse en un boletín, formar parte de una recopilación temática o servir como referencia para desarrollar otro contenido. Cada adaptación debe respetar las características del canal y mantener la utilidad del material original.
+
+La distribución también permite aprovechar mejor el trabajo editorial. Un contenido que conserva su relevancia puede volver a difundirse, actualizarse o utilizarse como punto de partida para una nueva publicación.
+
+Sin embargo, distribuir no significa reproducir exactamente el mismo mensaje en todas partes. Cada plataforma tiene formatos, contextos y hábitos de consumo diferentes. La adaptación debe facilitar el acceso a la información, no limitarse a multiplicar publicaciones idénticas.
+
+Una estrategia de crecimiento necesita considerar la distribución desde el momento en que se planifica el contenido, en lugar de dejarla como una actividad improvisada después de publicar.
+
+## 8. Construir una audiencia, no solamente acumular visitas
+
+Una visita representa un contacto con nuestro proyecto. Una audiencia, en cambio, implica un conjunto de personas que mantiene algún grado de interés, reconocimiento o relación con lo que ofrecemos.
+
+No todas las personas que llegan a una página desean volver. Algunas encuentran la respuesta que buscaban y continúan con sus actividades. Otras descubren nuevos contenidos, reconocen afinidad con el tema o deciden seguir recibiendo información.
+
+Esa diferencia es importante porque el crecimiento no termina cuando conseguimos atraer visitantes. También debemos comprender qué puede motivar a las personas a mantener el interés.
+
+La utilidad de los contenidos, la coherencia temática, la claridad de la propuesta y la confianza que transmite un proyecto contribuyen a desarrollar esa relación.
+
+Una audiencia no se construye únicamente mediante cifras de seguidores o suscriptores. También importa que exista correspondencia entre los temas que abordamos y los intereses de las personas que nos siguen.
+
+Por eso, desarrollar audiencia requiere una perspectiva de continuidad. Necesitamos ofrecer motivos para regresar, descubrir nuevos contenidos y mantener el contacto de forma voluntaria.
+
+## 9. Email marketing: desarrollar una relación directa
+
+El correo electrónico permite establecer un canal de comunicación con personas que han decidido recibir información de un proyecto. A diferencia de una publicación abierta en una plataforma, el mensaje llega a una dirección de correo proporcionada voluntariamente por el suscriptor.
+
+Esta característica convierte al email marketing en una herramienta relevante para mantener la relación con una audiencia. No depende exclusivamente de que una persona vuelva a encontrar una publicación en un buscador o una red social: permite enviar información directamente a quienes han aceptado recibirla.
+
+### La lista de correo como canal de comunicación
+
+Una lista de correo no debería entenderse simplemente como una acumulación de direcciones. Representa un grupo de personas que ha manifestado interés en mantener algún tipo de comunicación con nosotros.
+
+Su desarrollo requiere transparencia, consentimiento y respeto por las preferencias de los suscriptores. También exige ofrecer una razón clara para recibir los mensajes y facilitar la posibilidad de cancelar la suscripción.
+
+### La relevancia de los mensajes
+
+La frecuencia y el contenido de los correos deben responder al propósito del proyecto y a las expectativas creadas. Enviar mensajes de forma constante no garantiza una relación de calidad.
+
+Podemos utilizar este canal para compartir nuevos contenidos, desarrollar temas, presentar recursos, comunicar novedades o mantener informada a nuestra audiencia. La elección depende de la propuesta editorial y de lo que realmente pueda resultar útil para los destinatarios.
+
+### Segmentación y continuidad
+
+No todas las personas de una lista tienen los mismos intereses ni se encuentran en el mismo momento de su relación con el proyecto. La segmentación permite organizar la comunicación según criterios pertinentes, siempre respetando el consentimiento y las normas aplicables.
+
+El objetivo no es enviar más mensajes, sino facilitar una comunicación más relevante. Una relación de email marketing bien planteada se desarrolla mediante la utilidad, la coherencia y el respeto por el tiempo de quienes reciben los correos.
+
+## 10. Integrar tráfico, contenidos y email marketing
+
+El tráfico web, el marketing de contenidos y el email marketing suelen estudiarse como disciplinas separadas. Sin embargo, su relación permite comprender mejor cómo se desarrolla una audiencia digital.
+
+El tráfico facilita que las personas descubran un proyecto. Los contenidos ofrecen información y motivos para explorar su propuesta. El email marketing proporciona un canal para mantener la comunicación con quienes desean seguir en contacto.
+
+Podemos representar esta relación mediante tres funciones complementarias:
+
+**Adquisición:** atraer visitantes mediante buscadores, redes sociales, referencias y otros canales.
+
+**Interés:** ofrecer contenidos que respondan a preguntas, necesidades y temas relevantes para la audiencia.
+
+**Continuidad:** mantener una comunicación directa con las personas que deciden seguir recibiendo información.
+
+No todos los proyectos necesitan aplicar estas tres dimensiones de la misma manera. Algunos pueden depender principalmente de la búsqueda orgánica; otros pueden desarrollar una presencia apoyada en comunidades o plataformas sociales. También existen proyectos donde el correo electrónico desempeña un papel especialmente importante.
+
+Lo fundamental es comprender que cada canal cumple una función y que su integración debe responder a una estrategia. No se trata de utilizar todas las herramientas disponibles, sino de elegir las que tienen sentido para el proyecto y su audiencia.
+
+## 11. Medir el crecimiento y reconocer qué funciona
+
+El crecimiento necesita observarse con datos, pero medir no consiste en acumular indicadores sin saber qué significan.
+
+Una cifra adquiere valor cuando nos ayuda a comprender una situación, identificar una tendencia o evaluar una decisión. Por eso, antes de elegir métricas conviene definir qué queremos observar.
+
+### Indicadores de adquisición
+
+Las visitas, los usuarios y las fuentes de tráfico ayudan a comprender cómo llegan las personas al sitio y cómo evoluciona su descubrimiento.
+
+### Indicadores de contenido
+
+Las páginas consultadas, las consultas que generan visibilidad y las interacciones con los contenidos pueden aportar información sobre qué temas despiertan interés y cómo se comporta la audiencia.
+
+### Indicadores de continuidad
+
+Las suscripciones, la recurrencia de visitas y las interacciones con los correos permiten observar diferentes aspectos de la relación que se desarrolla con el público.
+
+Ningún indicador debe interpretarse de forma aislada. Un aumento de visitas puede ser positivo, pero necesitamos conocer su procedencia y relevancia. Una lista de correo puede crecer, pero también importa si los mensajes mantienen el interés de sus destinatarios.
+
+Medir sirve para aprender. Nos permite reconocer qué contenidos funcionan, qué canales aportan visitantes relevantes y qué aspectos necesitan revisarse. La finalidad no es perseguir cifras por sí mismas, sino utilizar la información para tomar decisiones mejor fundamentadas.
+
+## 12. Cuatro perspectivas para desarrollar una audiencia digital
+
+El crecimiento de un proyecto requiere comprender diferentes disciplinas que intervienen en la visibilidad, la adquisición de visitantes y la relación con una audiencia. Nuestra colección reúne cuatro libros que abordan este territorio desde perspectivas complementarias.
+
+**Ideas y consejos de Tráfico Web**
+
+Una perspectiva editorial dedicada a la adquisición de visitantes y a las posibilidades de generar tráfico hacia un proyecto digital. Se integra en el ámbito de la visibilidad y el descubrimiento de contenidos.
+
+**Ideas Maestras de Tráfico Web**
+
+Una segunda obra dedicada al territorio del tráfico web, que amplía la colección con otra perspectiva sobre la generación y el desarrollo de visitas hacia propiedades digitales.
+
+**El Poder Del Marketing De Contenidos**
+
+El contenido ocupa un lugar central en el desarrollo de una audiencia. Este libro se incorpora a la colección desde la perspectiva del marketing de contenidos y su función dentro de la atracción y la comunicación de valor.
+
+**Dominando el Arte del Email Marketing**
+
+El correo electrónico ofrece un canal para mantener el contacto con personas interesadas en un proyecto. Esta obra completa la colección desde la perspectiva de la comunicación directa y la continuidad de la relación con los suscriptores.
+
+### Crecer es desarrollar una relación con la audiencia
+
+La visibilidad permite que un proyecto sea descubierto. El tráfico acerca visitantes, los contenidos les ofrecen razones para explorar y el email marketing facilita la continuidad de la comunicación.
+
+Estas disciplinas no funcionan necesariamente como una secuencia rígida, pero sí representan dimensiones importantes del crecimiento digital.
+
+Comprender cómo se relacionan nos permite ir más allá de la búsqueda de visitas y desarrollar una perspectiva más completa: crear una presencia que pueda ser descubierta, ofrecer información que merezca la atención y construir relaciones que tengan sentido a largo plazo.
+
+En FG Perspectiva reunimos conocimientos para comprender esas disciplinas y explorar sus posibilidades. Porque crecer en Internet no consiste solamente en llegar a más personas, sino en desarrollar una propuesta capaz de atraer a la audiencia adecuada y mantener su interés mediante contenidos y comunicación relevantes.
+
+### FIN DEL CONTENIDO EDITORIAL
+
+## 6. LIBROS: DATOS, PORTADAS Y FUNCIONALIDAD
+
+La sección final de la página debe presentar los cuatro libros oficiales de la categoría Crecimiento.
+
+Los títulos exactos son:
+
+1. Ideas y consejos de Tráfico Web.
+2. Ideas Maestras de Tráfico Web.
+3. El Poder Del Marketing De Contenidos.
+4. Dominando el Arte del Email Marketing.
+
+### Requisitos obligatorios
+
+Antes de implementarlos, consultar la fuente de datos real del catálogo, probablemente `constants.tsx` o el archivo que corresponda en la arquitectura actual.
+
+No crear objetos de libros duplicados ni introducir datos ficticios.
+
+Utilizar los registros reales de la categoría Crecimiento.
+
+Para cada libro recuperar desde el catálogo:
+
+- Título oficial.
+- Subtítulo, si existe.
+- Slug y ruta real.
+- Portada oficial.
+- Opciones de compra existentes.
+- Datos comerciales que ya estén definidos.
+- Identificadores y referencias necesarios para los componentes existentes.
+
+No inventar:
+
+- ISBN.
+- Precio.
+- Número de páginas.
+- Valoraciones.
+- Número de reseñas.
+- Editorial.
+- Formatos disponibles.
+- Enlaces de Amazon.
+- Enlaces de compra.
+- Subtítulos no registrados.
+
+Las portadas deben ser exclusivamente las imágenes oficiales existentes en el catálogo.
+
+No utilizar imágenes obtenidas de búsquedas externas, recreaciones, portadas aproximadas ni imágenes genéricas.
+
+No modificar los archivos de portadas ni sus referencias.
+
+### Funcionalidad
+
+Reutilizar el componente de compra `PurchaseModal` existente.
+
+Cada tarjeta debe incluir como acción principal:
+
+**Ver ficha del libro**
+
+Este botón debe dirigir a la ficha individual correspondiente.
+
+Cuando el libro disponga de opciones comerciales registradas, incluir como acción secundaria:
+
+**Opciones de compra**
+
+Debe abrir el modal existente con los datos reales.
+
+Cuando no existan opciones de compra, no mostrar un botón que abra un modal vacío ni inventar opciones.
+
+Mantener las reglas de accesibilidad y funcionamiento del modal ya implementado:
+
+- Apertura y cierre correctos.
+- Cierre mediante Escape.
+- Gestión adecuada del foco.
+- Compatibilidad con teclado.
+- Enlaces comerciales reales.
+- Comportamiento responsive.
+
+No alterar el diseño ni el funcionamiento global del componente de compra.
+
+## 7. DISEÑO VISUAL Y COMPOSICIÓN EDITORIAL
+
+La nueva página debe tener identidad visual propia dentro de FG Perspectiva.
+
+No reproducir mecánicamente el diseño de las categorías anteriores.
+
+La composición debe comunicar desarrollo de audiencia, circulación de contenidos, visibilidad y continuidad.
+
+### 7.1. Hero editorial
+
+Crear un Hero monográfico con una composición tipográfica propia.
+
+Debe incluir:
+
+- Breadcrumbs funcionales.
+- H1 exacto.
+- Presentación editorial.
+- Un recurso visual conceptual discreto, desarrollado mediante HTML, CSS o SVG.
+- Jerarquía visual clara.
+- Espaciado editorial generoso.
+
+No utilizar fotografías de stock, ilustraciones genéricas ni imágenes que representen la categoría.
+
+### 7.2. Desarrollo del contenido
+
+Organizar el texto en bloques editoriales con ritmo visual.
+
+Evitar que toda la página parezca una sucesión de tarjetas iguales.
+
+Utilizar, según convenga:
+
+- Bloques de texto de ancho controlado.
+- Columnas editoriales.
+- Listas bien estructuradas.
+- Separaciones tipográficas.
+- Diagramas conceptuales.
+- Bloques de síntesis visual.
+- Secciones con diferentes composiciones.
+
+Los diagramas deben explicar ideas del contenido, no actuar como elementos decorativos.
+
+### 7.3. Diagramas originales
+
+Crear recursos visuales propios mediante HTML, CSS o SVG.
+
+Se proponen los siguientes ocho recursos:
+
+**Diagrama A — Fuentes de tráfico y canales de adquisición**
+
+Representar las principales fuentes de descubrimiento:
+
+- Buscadores.
+- Redes sociales.
+- Referencias.
+- Tráfico directo.
+- Plataformas de distribución.
+
+**Diagrama B — Intención de búsqueda, contenido y descubrimiento**
+
+Explicar la relación entre una necesidad de información, el contenido que responde a ella y la posibilidad de que el usuario descubra el proyecto.
+
+**Diagrama C — Ciclo editorial**
+
+Representar:
+
+Investigación → Planificación → Creación → Publicación → Actualización.
+
+**Diagrama D — Distribución de contenidos**
+
+Mostrar cómo un contenido principal puede adaptarse y distribuirse en distintos canales sin perder su finalidad original.
+
+**Diagrama E — Evolución de visitante a audiencia**
+
+Representar conceptualmente:
+
+Descubrimiento → Visita → Interés → Recurrencia → Relación.
+
+No presentar este recorrido como una conversión garantizada.
+
+**Diagrama F — Arquitectura básica del email marketing**
+
+Representar:
+
+Suscripción voluntaria → Organización de contactos → Comunicación relevante → Interacción → Continuidad.
+
+Incluir el consentimiento y la posibilidad de cancelar la suscripción como principios fundamentales.
+
+**Diagrama G — Integración de tráfico, contenidos y email marketing**
+
+Representar las tres dimensiones:
+
+- Adquisición.
+- Interés.
+- Continuidad.
+
+Este diagrama debe mantener coherencia con la explicación del bloque 10.
+
+**Diagrama H — Indicadores de crecimiento**
+
+Organizar visualmente:
+
+- Adquisición.
+- Rendimiento de contenidos.
+- Continuidad de audiencia.
+
+No inventar cifras ni resultados.
+
+### Reglas de los diagramas
+
+- Deben ser originales y estar construidos con código.
+- Utilizar la identidad cromática corporativa.
+- Mantener legibilidad en escritorio, tablet y móvil.
+- Evitar texto demasiado pequeño.
+- No introducir gráficos estadísticos ficticios.
+- No utilizar librerías adicionales si no son necesarias.
+- No crear diagramas como imágenes rasterizadas.
+- No convertir cada apartado en una tarjeta.
+- No repetir un mismo diagrama con pequeñas variaciones.
+
+### 7.4. Sección de libros
+
+Presentar los cuatro libros con una composición editorial propia.
+
+Utilizar exclusivamente las portadas oficiales del catálogo.
+
+Las imágenes deben conservar su proporción original, con `object-fit: contain` o la solución equivalente utilizada en el proyecto.
+
+No recortar portadas ni alterar sus proporciones.
+
+La presentación debe adaptarse a escritorio, tablet y móvil.
+
+### 7.5. Cierre editorial
+
+El contenido termina con el apartado:
+
+**Crecer es desarrollar una relación con la audiencia**
+
+Respetar su texto completo.
+
+No añadir un CTA comercial nuevo, no inventar botones y no introducir enlaces internos innecesarios.
+
+Si la vista independiente requiere un retorno de navegación, utilizar únicamente los patrones ya existentes y justificados por la arquitectura del proyecto.
+
+## 8. IDENTIDAD CORPORATIVA
+
+Mantener la identidad visual existente de FG Perspectiva.
+
+Colores de referencia:
+
+- Verde oscuro: `#174532`
+- Verde medio: `#4db380`
+- Fondo suave: `#dae7df` con opacidades existentes.
+- Texto principal: `#1b1b1b`
+- Dorado: `#f4b925`
+
+Tipografías:
+
+- Libre Baskerville.
+- Inter.
+
+Utilizar las variables, tokens y convenciones reales existentes en el proyecto cuando estén disponibles.
+
+No introducir una paleta paralela ni modificar globalmente los estilos corporativos.
+
+La página debe parecer parte de FG Perspectiva, pero conservar una composición editorial propia.
+
+No incluir:
+
+- Banners genéricos.
+- Imágenes de categoría.
+- Fotografías de stock.
+- Megáfonos.
+- Gráficos genéricos de visitas.
+- Iconos decorativos repetitivos.
+- Emojis en títulos.
+- Elementos visuales sin función editorial.
+
+## 9. IMPLEMENTACIÓN TÉCNICA
+
+Crear una vista independiente, preferentemente:
+
+`components/views/GrowthView.tsx`
+
+Adaptar el nombre y la ubicación únicamente si la estructura real del proyecto exige otra convención.
+
+La nueva vista debe ser independiente de la vista genérica de categorías.
+
+### App.tsx
+
+Integrar la ruta `/crecimiento/` para que utilice la nueva vista específica.
+
+La condición de ruta debe tener prioridad sobre el fallback genérico de `CategoryView`.
+
+Mantener la normalización de rutas y las convenciones existentes.
+
+No duplicar rutas ni introducir variantes sin barra final.
+
+La ruta canónica debe seguir siendo:
+
+`/crecimiento/`
+
+### seo.ts
+
+Añadir la rama específica de Crecimiento con los metadatos definidos en esta instrucción.
+
+No alterar las ramas de otras rutas.
+
+### Datos del catálogo
+
+Obtener los cuatro libros desde la estructura real de categorías.
+
+No duplicar ni reconstruir los datos de los libros dentro de la vista.
+
+La vista debe utilizar la información oficial ya disponible.
+
+### Componentes
+
+Reutilizar los componentes existentes cuando corresponda:
+
+- Layout.
+- Breadcrumbs.
+- PurchaseModal.
+- Elementos de navegación.
+- Componentes de portadas.
+- Patrones de accesibilidad.
+
+Crear componentes locales específicos cuando aporten claridad y permitan mantener el código organizado.
+
+No modificar componentes compartidos por motivos puramente estéticos.
+
+### Prerenderizado
+
+Comprobar que `/crecimiento/` se genera correctamente mediante el sistema de prerenderizado actual.
+
+No modificar el sistema general de prerenderizado para resolver un problema local de esta página.
+
+El HTML prerenderizado debe incluir el contenido editorial y los metadatos correspondientes.
+
+## 10. DATOS ESTRUCTURADOS JSON-LD
+
+Implementar los datos estructurados correspondientes a la nueva página.
+
+Utilizar:
+
+1. `CollectionPage`.
+2. `ItemList` con los cuatro libros reales.
+3. `BreadcrumbList`.
+
+La colección debe reflejar los cuatro títulos oficiales y sus rutas reales.
+
+Los elementos `Book` deben contener únicamente propiedades respaldadas por el catálogo.
+
+No inventar:
+
+- ISBN.
+- Autor distinto del registrado.
+- Precio.
+- Valoración.
+- Disponibilidad.
+- Formato.
+- Número de páginas.
+- Ofertas comerciales.
+
+No incluir `offers` si no existen datos comerciales reales y verificables en el catálogo para ese propósito.
+
+Comprobar que el JSON-LD sea válido, que no existan duplicaciones innecesarias y que las URL coincidan con las rutas canónicas.
+
+## 11. ACCESIBILIDAD Y RESPONSIVE
+
+La página debe funcionar correctamente en:
+
+- Escritorio: 1440 px.
+- Tablet: 768 px.
+- Móvil: 390 px.
+
+Comprobar:
+
+- Ausencia de desbordamiento horizontal.
+- Imágenes con proporciones correctas.
+- Diagramas legibles.
+- Jerarquía de encabezados.
+- Contraste suficiente.
+- Navegación mediante teclado.
+- Enlaces con destinos correctos.
+- Botones con nombres accesibles.
+- Modales accesibles.
+- Orden lógico del contenido.
+- Breadcrumbs funcionales.
+
+No reducir excesivamente el tamaño de los textos en móvil para acomodar diagramas.
+
+Los diagramas deben adaptarse o reorganizarse cuando el ancho de pantalla lo requiera.
+
+## 12. PRUEBAS TÉCNICAS OBLIGATORIAS
+
+Al finalizar la implementación, ejecutar y documentar las siguientes comprobaciones.
+
+### A. TypeScript
+
+Ejecutar:
+
+`npx tsc --noEmit`
+
+Resultado esperado: cero errores.
+
+### B. Build
+
+Ejecutar el proceso de build habitual del proyecto.
+
+Resultado esperado: compilación correcta, sin errores.
+
+### C. Prerenderizado
+
+Comprobar que `/crecimiento/` aparece correctamente en el resultado prerenderizado.
+
+Verificar:
+
+- HTML generado.
+- H1 presente.
+- Contenido editorial presente.
+- Title y description correctos.
+- Canonical correcto.
+- JSON-LD presente y válido.
+- Inclusión en sitemap.
+
+### D. Contenido
+
+Verificar mediante inspección automatizada o Playwright:
+
+- Los 12 apartados principales están presentes.
+- Los subtítulos y párrafos se encuentran completos.
+- No faltan fragmentos del contenido aprobado.
+- No existen textos de relleno.
+- No aparecen textos genéricos de la antigua CategoryView.
+- Los cuatro libros oficiales aparecen correctamente.
+
+### E. Responsive
+
+Realizar pruebas reales en Chromium a:
+
+- 1440 px.
+- 768 px.
+- 390 px.
+
+Comprobar que no exista overflow horizontal ni elementos superpuestos.
+
+### F. Funcionalidad de libros
+
+Comprobar los cuatro enlaces a fichas individuales.
+
+Verificar las opciones de compra según los datos reales de cada libro.
+
+Si un libro dispone de opciones:
+
+- Abrir el modal.
+- Comprobar que los enlaces son correctos.
+- Cerrar mediante Escape.
+- Comprobar la navegación por teclado.
+
+Si no dispone de opciones:
+
+- Confirmar que no aparece un botón comercial vacío.
+
+### G. Navegación
+
+Comprobar:
+
+- Acceso a `/crecimiento/` desde Biblioteca.
+- Breadcrumbs.
+- Acceso a las cuatro fichas.
+- Retorno a Biblioteca mediante los patrones existentes.
+
+### H. Regresión
+
+Verificar que siguen funcionando y conservan sus características las siguientes rutas:
+
+- `/`
+- `/biblioteca/`
+- `/origen/`
+- `/iniciacion/`
+- `/ingresos/`
+- `/tecnologia/`
+- `/mindset/`
+- `/sistemas-digitales/`
+- `/sobre-fg-perspectiva/`
+- `/contacto/`
+
+Comprobar en las rutas anteriores:
+
+- Title.
+- H1.
+- Canonical.
+- Navegación.
+- Ausencia de errores JavaScript.
+- Ausencia de desbordamiento horizontal.
+
+No modificar las rutas protegidas para corregir problemas que no tengan relación directa con Crecimiento.
+
+## 13. INFORME FINAL OBLIGATORIO
+
+Al terminar, entregar un informe técnico detallado con los siguientes apartados:
+
+1. Archivos creados.
+2. Archivos modificados.
+3. Copia de seguridad realizada y ubicación.
+4. Integración de la nueva vista en App.tsx.
+5. Implementación SEO en seo.ts.
+6. Metadatos finales.
+7. Datos estructurados JSON-LD.
+8. Libros incorporados y confirmación de que se han utilizado los datos oficiales del catálogo.
+9. Portadas oficiales utilizadas.
+10. Diagramas implementados.
+11. Número de palabras editoriales visibles.
+12. Verificación de integridad del contenido.
+13. Resultado de TypeScript.
+14. Resultado del build.
+15. Resultado del prerenderizado.
+16. Resultado de pruebas responsive.
+17. Resultado de pruebas funcionales.
+18. Resultado de la regresión en las diez rutas protegidas.
+19. Confirmación de que Header y Footer permanecen intactos.
+20. Confirmación de que no se modificaron fichas, datos comerciales ni otras categorías.
+21. Confirmación de que no se ejecutó ningún despliegue.
+
+No declarar una prueba como satisfactoria si no se ha ejecutado realmente.
+
+Si alguna comprobación no puede realizarse, indicarlo expresamente.
+
+## 14. CRITERIO DE ACEPTACIÓN FINAL
+
+La implementación se considerará terminada cuando:
+
+- `/crecimiento/` tenga una vista independiente.
+- El contenido editorial aprobado esté íntegro.
+- La página tenga identidad visual propia.
+- Los cuatro libros oficiales estén correctamente incorporados.
+- Las portadas correspondan a los registros reales.
+- Los botones y modales funcionen según los datos disponibles.
+- Los metadatos SEO sean independientes y correctos.
+- Los datos estructurados sean válidos.
+- La página funcione en escritorio, tablet y móvil.
+- El build, TypeScript y prerenderizado finalicen correctamente.
+- Las diez rutas protegidas mantengan su funcionamiento.
+- Header y Footer permanezcan absolutamente intactos.
+- No se haya realizado ningún despliegue.
+
+**IMPORTANTE: realizar exclusivamente la implementación local de la página `/crecimiento/`. No publicar, desplegar ni modificar el entorno de producción.**
+
+Antes de finalizar, entregar el informe técnico completo y no realizar cambios adicionales que no estén contemplados en esta instrucción.

@@ -8,6 +8,7 @@ import OriginView from './components/views/OriginView.tsx';
 import InitiationView from './components/views/InitiationView.tsx';
 import IncomeView from './components/views/IncomeView.tsx';
 import TechnologyView from './components/views/TechnologyView.tsx';
+import GrowthView from './components/views/GrowthView.tsx';
 import BookDetailView from './components/views/BookDetailView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
@@ -52,6 +53,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/tecnologia/' && matchedCategory) {
     return <TechnologyView category={matchedCategory} />;
+  }
+
+  if (currentPath === '/crecimiento/' && matchedCategory) {
+    return <GrowthView category={matchedCategory} />;
   }
 
   if (matchedCategory) {

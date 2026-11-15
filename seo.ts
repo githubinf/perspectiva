@@ -550,7 +550,78 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
-  // 6. Category pages (crecimiento, mindset)
+  // 6e. Categoría Crecimiento (vista editorial dedicada)
+  if (path === '/crecimiento/') {
+    const growthCategory = FEATURED_BOOKS.find((c) => c.path === '/crecimiento/');
+    const growthBooks = growthCategory?.books || [];
+    const growthDescription =
+      'Descubre cómo desarrollar tráfico web, crear contenidos relevantes, atraer audiencia y utilizar el email marketing para impulsar el crecimiento de proyectos digitales.';
+
+    return {
+      path: '/crecimiento/',
+      title: 'Crecimiento: tráfico web, contenidos y email marketing | FG Perspectiva',
+      description: growthDescription,
+      canonical: `${BASE_URL}/crecimiento/`,
+      ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
+      ogType: 'website',
+      h1: 'Crecimiento digital: cómo atraer audiencia y desarrollar visibilidad en Internet',
+      schema: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          name: 'Crecimiento: tráfico web, contenidos y email marketing | FG Perspectiva',
+          description: growthDescription,
+          url: `${BASE_URL}/crecimiento/`,
+          isPartOf: {
+            '@type': 'WebSite',
+            name: 'FG Perspectiva',
+            url: `${BASE_URL}/`
+          },
+          mainEntity: {
+            '@type': 'ItemList',
+            name: 'Libros de la ruta Crecimiento',
+            numberOfItems: growthBooks.length,
+            itemListElement: growthBooks.map((b, idx) => ({
+              '@type': 'ListItem',
+              position: idx + 1,
+              item: {
+                '@type': 'Book',
+                name: b.title,
+                description: b.description,
+                url: `${BASE_URL}${b.path || `/${b.slug}/`}`
+              }
+            }))
+          }
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Crecimiento',
+              item: `${BASE_URL}/crecimiento/`
+            }
+          ]
+        }
+      ]
+    };
+  }
+
+  // 6. Category page (mindset)
   const matchedCategory = FEATURED_BOOKS.find((c) => c.path === path);
   if (matchedCategory) {
     return {
