@@ -3,10 +3,27 @@ import { BookCategory, BookItem } from '../../types.ts';
 import { Link } from '../../router.tsx';
 import Breadcrumbs from '../Breadcrumbs.tsx';
 import PurchaseModal from '../PurchaseModal.tsx';
+import CategoryIndex, { CategoryIndexItem } from '../CategoryIndex.tsx';
 
 interface MindsetViewProps {
   category: BookCategory;
 }
+
+const MINDSET_INDEX_ITEMS: readonly CategoryIndexItem[] = [
+  { id: 'mindset-mentalidad', label: 'La mentalidad detrás de los proyectos propios' },
+  { id: 'mindset-emprendedor', label: 'Pensar como emprendedor' },
+  { id: 'mindset-abundancia', label: 'Abundancia, percepción y posibilidades' },
+  { id: 'mindset-autonomia', label: 'La autonomía para construir una actividad propia' },
+  { id: 'mindset-organizacion', label: 'Organizar el conocimiento, el tiempo y el trabajo' },
+  { id: 'mindset-comunicacion', label: 'Comunicar ideas y transmitir valor' },
+  { id: 'mindset-creacion', label: 'Del conocimiento a la creación intelectual' },
+  { id: 'mindset-escritura', label: 'Escribir para desarrollar y compartir conocimiento' },
+  { id: 'mindset-ebooks', label: 'Crear ebooks y materializar ideas' },
+  { id: 'mindset-publicar', label: 'Publicar: de la obra al proyecto editorial' },
+  { id: 'mindset-ejecucion', label: 'De la iniciativa a la ejecución' },
+  { id: 'mindset-libros', label: 'Libros para desarrollar una mentalidad creadora' },
+  { id: 'mindset-cierre', label: 'Cierre: las ideas necesitan dirección' },
+];
 
 interface DimensionNode {
   id: string;
@@ -235,8 +252,10 @@ const MindsetView: React.FC<MindsetViewProps> = ({ category }) => {
 
       {/* CUERPO EDITORIAL */}
       <article aria-label="Desarrollo editorial de la categoría Mindset">
+        <CategoryIndex items={MINDSET_INDEX_ITEMS} maxWidthClass="max-w-6xl" />
+
         {/* APARTADO 1: LA MENTALIDAD DETRÁS DE LOS PROYECTOS PROPIOS */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="mindset-mentalidad" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -265,7 +284,7 @@ const MindsetView: React.FC<MindsetViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 2: PENSAR COMO EMPRENDEDOR */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="mindset-emprendedor" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
               <div className="lg:col-span-7 max-w-[66ch]">
@@ -329,7 +348,7 @@ const MindsetView: React.FC<MindsetViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 3: ABUNDANCIA, PERCEPCIÓN Y POSIBILIDADES */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="mindset-abundancia" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
               <div className="lg:col-span-8 max-w-[68ch]">
@@ -368,7 +387,7 @@ const MindsetView: React.FC<MindsetViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 4: LA AUTONOMÍA COMO FORMA DE CONSTRUIR UNA ACTIVIDAD PROPIA */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="mindset-autonomia" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -400,7 +419,7 @@ const MindsetView: React.FC<MindsetViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 5: ORGANIZAR EL CONOCIMIENTO, EL TIEMPO Y EL TRABAJO */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="mindset-organizacion" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -458,7 +477,7 @@ const MindsetView: React.FC<MindsetViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 6: COMUNICAR IDEAS Y TRANSMITIR VALOR */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="mindset-comunicacion" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -650,7 +669,7 @@ const MindsetView: React.FC<MindsetViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 7: DEL CONOCIMIENTO A LA CREACIÓN INTELECTUAL */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="mindset-creacion" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -682,7 +701,7 @@ const MindsetView: React.FC<MindsetViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 8: ESCRIBIR PARA DESARROLLAR Y COMPARTIR CONOCIMIENTO */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="mindset-escritura" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -736,7 +755,7 @@ const MindsetView: React.FC<MindsetViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 9: CREAR EBOOKS Y MATERIALIZAR IDEAS */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="mindset-ebooks" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -768,7 +787,7 @@ const MindsetView: React.FC<MindsetViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 10: PUBLICAR: CONVERTIR UNA OBRA EN UN PROYECTO EDITORIAL */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="mindset-publicar" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
               <div className="lg:col-span-8 max-w-[68ch]">
@@ -814,7 +833,7 @@ const MindsetView: React.FC<MindsetViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 11: DE LA INICIATIVA A LA EJECUCIÓN */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="mindset-ejecucion" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -846,7 +865,7 @@ const MindsetView: React.FC<MindsetViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 12: LIBROS PARA DESARROLLAR UNA MENTALIDAD CREADORA + CIERRE EDITORIAL */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12">
+        <section id="mindset-libros" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch] mb-10">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -932,7 +951,7 @@ const MindsetView: React.FC<MindsetViewProps> = ({ category }) => {
             </div>
 
             {/* Cierre editorial: las ideas necesitan una dirección */}
-            <div className="mt-16 pt-12 border-t border-[#174532]/20 max-w-[68ch]">
+            <div id="mindset-cierre" tabIndex={-1} className="scroll-mt-20 outline-none mt-16 pt-12 border-t border-[#174532]/20 max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
                 Cierre editorial: las ideas necesitan una dirección
               </h2>

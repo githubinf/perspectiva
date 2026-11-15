@@ -3,10 +3,26 @@ import { BookCategory, BookItem } from '../../types.ts';
 import { Link } from '../../router.tsx';
 import Breadcrumbs from '../Breadcrumbs.tsx';
 import PurchaseModal from '../PurchaseModal.tsx';
+import CategoryIndex, { CategoryIndexItem } from '../CategoryIndex.tsx';
 
 interface GrowthViewProps {
   category: BookCategory;
 }
+
+const GROWTH_INDEX_ITEMS: readonly CategoryIndexItem[] = [
+  { id: 'crecimiento-visibilidad', label: 'La visibilidad: el primer paso' },
+  { id: 'crecimiento-trafico', label: 'Comprender el tráfico web y su función' },
+  { id: 'crecimiento-canales', label: 'Los canales de adquisición' },
+  { id: 'crecimiento-buscadores', label: 'Visibilidad orgánica y buscadores' },
+  { id: 'crecimiento-contenidos', label: 'Marketing de contenidos: atraer mediante valor' },
+  { id: 'crecimiento-estrategia', label: 'De la publicación aislada a la estrategia editorial' },
+  { id: 'crecimiento-distribucion', label: 'Distribución: encontrar a la audiencia' },
+  { id: 'crecimiento-audiencia', label: 'Construir una audiencia, no solo visitas' },
+  { id: 'crecimiento-email', label: 'Email marketing: relación directa' },
+  { id: 'crecimiento-integracion', label: 'Integrar tráfico, contenidos y email' },
+  { id: 'crecimiento-medicion', label: 'Medir el crecimiento y reconocer qué funciona' },
+  { id: 'crecimiento-libros', label: 'Cuatro perspectivas para desarrollar una audiencia' },
+];
 
 const TRAFFIC_ASPECTS = [
   {
@@ -411,8 +427,10 @@ const GrowthView: React.FC<GrowthViewProps> = ({ category }) => {
 
       {/* CUERPO EDITORIAL */}
       <article aria-label="Desarrollo editorial de la categoría Crecimiento">
+        <CategoryIndex items={GROWTH_INDEX_ITEMS} maxWidthClass="max-w-6xl" />
+
         {/* APARTADO 1: VISIBILIDAD */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="crecimiento-visibilidad" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -441,7 +459,7 @@ const GrowthView: React.FC<GrowthViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 2: COMPRENDER EL TRÁFICO WEB */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="crecimiento-trafico" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
               <div className="lg:col-span-6 max-w-[64ch]">
@@ -501,7 +519,7 @@ const GrowthView: React.FC<GrowthViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 3: CANALES DE ADQUISICIÓN + DIAGRAMA A */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="crecimiento-canales" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch] mb-10">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -633,7 +651,7 @@ const GrowthView: React.FC<GrowthViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 4: VISIBILIDAD ORGÁNICA + DIAGRAMA B */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="crecimiento-buscadores" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -753,7 +771,7 @@ const GrowthView: React.FC<GrowthViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 5: MARKETING DE CONTENIDOS */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="crecimiento-contenidos" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -811,7 +829,7 @@ const GrowthView: React.FC<GrowthViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 6: ESTRATEGIA EDITORIAL + DIAGRAMA C */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="crecimiento-estrategia" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -928,7 +946,7 @@ const GrowthView: React.FC<GrowthViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 7: DISTRIBUCIÓN DE CONTENIDOS + DIAGRAMA D */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="crecimiento-distribucion" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -1027,7 +1045,7 @@ const GrowthView: React.FC<GrowthViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 8: CONSTRUIR UNA AUDIENCIA + DIAGRAMA E */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="crecimiento-audiencia" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -1130,7 +1148,7 @@ const GrowthView: React.FC<GrowthViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 9: EMAIL MARKETING + DIAGRAMA F */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="crecimiento-email" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -1259,7 +1277,7 @@ const GrowthView: React.FC<GrowthViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 10: INTEGRAR TRÁFICO, CONTENIDOS Y EMAIL MARKETING + DIAGRAMA G */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="crecimiento-integracion" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -1352,7 +1370,7 @@ const GrowthView: React.FC<GrowthViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 11: MEDIR EL CRECIMIENTO + DIAGRAMA H */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="crecimiento-medicion" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -1429,7 +1447,7 @@ const GrowthView: React.FC<GrowthViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 12: CUATRO PERSPECTIVAS (LIBROS OFICIALES) + CIERRE EDITORIAL */}
-        <section className="py-14 md:py-20 bg-white">
+        <section id="crecimiento-libros" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch] mb-10">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">

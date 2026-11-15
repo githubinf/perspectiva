@@ -3,10 +3,27 @@ import { BookCategory, BookItem } from '../../types.ts';
 import { Link } from '../../router.tsx';
 import Breadcrumbs from '../Breadcrumbs.tsx';
 import PurchaseModal from '../PurchaseModal.tsx';
+import CategoryIndex, { CategoryIndexItem } from '../CategoryIndex.tsx';
 
 interface TechnologyViewProps {
   category: BookCategory;
 }
+
+const TECHNOLOGY_INDEX_ITEMS: readonly CategoryIndexItem[] = [
+  { id: 'tecnologia-trabajo', label: 'Cómo la IA cambia nuestra forma de trabajar' },
+  { id: 'tecnologia-fundamentos', label: 'Comprender la inteligencia artificial' },
+  { id: 'tecnologia-asistente', label: 'De herramienta aislada a asistente de trabajo' },
+  { id: 'tecnologia-chatgpt', label: 'ChatGPT y la interacción con la información' },
+  { id: 'tecnologia-creatividad', label: 'Inteligencia artificial y creatividad' },
+  { id: 'tecnologia-contenidos', label: 'Creación de contenidos con IA' },
+  { id: 'tecnologia-productividad', label: 'Productividad digital y organización del trabajo' },
+  { id: 'tecnologia-oportunidades', label: 'IA y nuevas oportunidades digitales' },
+  { id: 'tecnologia-marketing', label: 'Transformación del marketing con IA' },
+  { id: 'tecnologia-automatizacion', label: 'Automatización e integración de procesos' },
+  { id: 'tecnologia-limites', label: 'Límites de la IA: criterio y responsabilidad' },
+  { id: 'tecnologia-libros', label: 'Cuatro perspectivas sobre IA aplicada' },
+  { id: 'tecnologia-cierre', label: 'Cierre: tecnología y criterio humano' },
+];
 
 const AI_CATEGORIES = [
   {
@@ -315,8 +332,10 @@ const TechnologyView: React.FC<TechnologyViewProps> = ({ category }) => {
 
       {/* CUERPO EDITORIAL */}
       <article aria-label="Desarrollo editorial de la categoría Tecnología">
+        <CategoryIndex items={TECHNOLOGY_INDEX_ITEMS} maxWidthClass="max-w-6xl" />
+
         {/* SECCIÓN 1: CAMBIO EN LA FORMA DE TRABAJAR + DIAGRAMA A EN COLUMNA LATERAL */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="tecnologia-trabajo" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
               <div className="lg:col-span-7 max-w-[68ch]">
@@ -404,7 +423,7 @@ const TechnologyView: React.FC<TechnologyViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 2: COMPRENDER LA IA + DIAGRAMA B (ECOSISTEMA CONCEPTUAL) */}
-        <section className="py-14 md:py-20 bg-[#f7faf8] border-b border-[#174532]/12">
+        <section id="tecnologia-fundamentos" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#f7faf8] border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -574,7 +593,7 @@ const TechnologyView: React.FC<TechnologyViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 3: DE LA HERRAMIENTA AISLADA AL ASISTENTE DE TRABAJO */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="tecnologia-asistente" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
               <div className="lg:col-span-7 max-w-[68ch]">
@@ -633,7 +652,7 @@ const TechnologyView: React.FC<TechnologyViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 4: CHATGPT + DIAGRAMA C */}
-        <section className="py-14 md:py-20 bg-[#f7faf8] border-b border-[#174532]/12">
+        <section id="tecnologia-chatgpt" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#f7faf8] border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -733,7 +752,7 @@ const TechnologyView: React.FC<TechnologyViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 5: CREATIVIDAD + DIAGRAMA D */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="tecnologia-creatividad" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -848,7 +867,7 @@ const TechnologyView: React.FC<TechnologyViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 6: CREACIÓN DE CONTENIDOS */}
-        <section className="py-14 md:py-20 bg-[#f7faf8] border-b border-[#174532]/12">
+        <section id="tecnologia-contenidos" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#f7faf8] border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -883,7 +902,7 @@ const TechnologyView: React.FC<TechnologyViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 7: PRODUCTIVIDAD DIGITAL + DIAGRAMA E */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="tecnologia-productividad" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -975,7 +994,7 @@ const TechnologyView: React.FC<TechnologyViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 8: NUEVAS OPORTUNIDADES DIGITALES */}
-        <section className="py-14 md:py-20 bg-[#f7faf8] border-b border-[#174532]/12">
+        <section id="tecnologia-oportunidades" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#f7faf8] border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -1013,7 +1032,7 @@ const TechnologyView: React.FC<TechnologyViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 9: TRANSFORMACIÓN DEL MARKETING + DIAGRAMA F */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="tecnologia-marketing" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -1108,7 +1127,7 @@ const TechnologyView: React.FC<TechnologyViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 10: AUTOMATIZACIÓN E INTEGRACIÓN + DIAGRAMA G */}
-        <section className="py-14 md:py-20 bg-[#f7faf8] border-b border-[#174532]/12">
+        <section id="tecnologia-automatizacion" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#f7faf8] border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -1218,7 +1237,7 @@ const TechnologyView: React.FC<TechnologyViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 11: LÍMITES DE LA INTELIGENCIA ARTIFICIAL */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="tecnologia-limites" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -1272,7 +1291,7 @@ const TechnologyView: React.FC<TechnologyViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 12: CUATRO PERSPECTIVAS + CATÁLOGO OFICIAL INTEGRADO */}
-        <section className="py-14 md:py-20 bg-[#f7faf8] border-b border-[#174532]/15">
+        <section id="tecnologia-libros" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#f7faf8] border-b border-[#174532]/15">
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-[68ch] mb-10">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -1371,7 +1390,7 @@ const TechnologyView: React.FC<TechnologyViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 13: CIERRE EDITORIAL */}
-        <section className="py-14 md:py-20 bg-[#174532] text-white">
+        <section id="tecnologia-cierre" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#174532] text-white">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-white mb-6 leading-snug text-balance">

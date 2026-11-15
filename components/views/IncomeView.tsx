@@ -3,10 +3,27 @@ import { BookCategory, BookItem } from '../../types.ts';
 import { Link } from '../../router.tsx';
 import Breadcrumbs from '../Breadcrumbs.tsx';
 import PurchaseModal from '../PurchaseModal.tsx';
+import CategoryIndex, { CategoryIndexItem } from '../CategoryIndex.tsx';
 
 interface IncomeViewProps {
   category: BookCategory;
 }
+
+const INCOME_INDEX_ITEMS: readonly CategoryIndexItem[] = [
+  { id: 'ingresos-modelo-negocio', label: 'Comprender el modelo de negocio' },
+  { id: 'ingresos-modelos', label: 'Los principales modelos de monetización digital' },
+  { id: 'ingresos-afiliados', label: 'Marketing de afiliados: cómo funciona el modelo' },
+  { id: 'ingresos-ofertas', label: 'Elegir ofertas: producto, audiencia y mercado' },
+  { id: 'ingresos-cpa', label: 'CPA: remuneración por acción' },
+  { id: 'ingresos-smartlinks', label: 'Smartlinks y distribución de ofertas' },
+  { id: 'ingresos-clickbank', label: 'ClickBank y los mercados de productos digitales' },
+  { id: 'ingresos-trafico', label: 'Tráfico: cómo llegan los potenciales compradores' },
+  { id: 'ingresos-conversion', label: 'Conversión: de la visita a la acción comercial' },
+  { id: 'ingresos-medicion', label: 'Medición y rentabilidad: comprender los números' },
+  { id: 'ingresos-errores', label: 'Errores que comprometen la monetización' },
+  { id: 'ingresos-libros', label: 'Cinco perspectivas sobre monetización digital' },
+  { id: 'ingresos-cierre', label: 'Cierre: comprender las conexiones' },
+];
 
 const BUSINESS_MODEL_COMPONENTS = [
   {
@@ -256,8 +273,10 @@ const IncomeView: React.FC<IncomeViewProps> = ({ category }) => {
 
       {/* ARTÍCULO EDITORIAL PRINCIPAL */}
       <article aria-label="Desarrollo editorial de la categoría Ingresos">
+        <CategoryIndex items={INCOME_INDEX_ITEMS} maxWidthClass="max-w-5xl" />
+
         {/* BLOQUE 1: Comprender el modelo de negocio + Esquema A */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="ingresos-modelo-negocio" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -339,7 +358,7 @@ const IncomeView: React.FC<IncomeViewProps> = ({ category }) => {
         </section>
 
         {/* BLOQUE 2: Los principales modelos de monetización + Comparativa B */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="ingresos-modelos" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -446,7 +465,7 @@ const IncomeView: React.FC<IncomeViewProps> = ({ category }) => {
         </section>
 
         {/* BLOQUE 3: Marketing de afiliados + Esquema C */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="ingresos-afiliados" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -553,7 +572,7 @@ const IncomeView: React.FC<IncomeViewProps> = ({ category }) => {
         </section>
 
         {/* BLOQUE 4: Selección de ofertas */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="ingresos-ofertas" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -589,7 +608,7 @@ const IncomeView: React.FC<IncomeViewProps> = ({ category }) => {
         </section>
 
         {/* BLOQUE 5: CPA + Esquema D */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="ingresos-cpa" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -686,7 +705,7 @@ const IncomeView: React.FC<IncomeViewProps> = ({ category }) => {
         </section>
 
         {/* BLOQUE 6: Smartlinks + Esquema E */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="ingresos-smartlinks" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -751,7 +770,7 @@ const IncomeView: React.FC<IncomeViewProps> = ({ category }) => {
         </section>
 
         {/* BLOQUE 7: ClickBank y marketplaces */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="ingresos-clickbank" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -783,7 +802,7 @@ const IncomeView: React.FC<IncomeViewProps> = ({ category }) => {
         </section>
 
         {/* BLOQUE 8: Tráfico */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="ingresos-trafico" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -827,7 +846,7 @@ const IncomeView: React.FC<IncomeViewProps> = ({ category }) => {
         </section>
 
         {/* BLOQUE 9: Conversión + Esquema F */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="ingresos-conversion" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -894,7 +913,7 @@ const IncomeView: React.FC<IncomeViewProps> = ({ category }) => {
         </section>
 
         {/* BLOQUE 10: Medición y rentabilidad + Esquema G */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="ingresos-medicion" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -983,7 +1002,7 @@ const IncomeView: React.FC<IncomeViewProps> = ({ category }) => {
         </section>
 
         {/* BLOQUE 11: Errores que comprometen la monetización */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="ingresos-errores" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -1018,7 +1037,7 @@ const IncomeView: React.FC<IncomeViewProps> = ({ category }) => {
         </section>
 
         {/* BLOQUE 12: Los cinco libros oficiales */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
+        <section id="ingresos-libros" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/12 border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch] mb-10">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -1113,7 +1132,7 @@ const IncomeView: React.FC<IncomeViewProps> = ({ category }) => {
         </section>
 
         {/* BLOQUE 13: Cierre editorial */}
-        <section className="py-14 md:py-20 bg-white">
+        <section id="ingresos-cierre" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">

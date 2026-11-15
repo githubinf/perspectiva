@@ -3,10 +3,25 @@ import { BookCategory, BookItem } from '../../types.ts';
 import { Link } from '../../router.tsx';
 import Breadcrumbs from '../Breadcrumbs.tsx';
 import PurchaseModal from '../PurchaseModal.tsx';
+import CategoryIndex, { CategoryIndexItem } from '../CategoryIndex.tsx';
 
 interface InitiationViewProps {
   category: BookCategory;
 }
+
+const INITIATION_INDEX_ITEMS: readonly CategoryIndexItem[] = [
+  { id: 'iniciacion-proposito', label: 'Saber qué queremos construir antes de empezar' },
+  { id: 'iniciacion-blog', label: 'El blog como centro de una presencia propia' },
+  { id: 'iniciacion-contenido', label: 'El contenido como fundamento del proyecto' },
+  { id: 'iniciacion-visibilidad', label: 'Visibilidad: cómo conseguir que nos encuentren' },
+  { id: 'iniciacion-audiencia', label: 'De las visitas a una audiencia' },
+  { id: 'iniciacion-monetizacion', label: 'Primeras posibilidades de monetización' },
+  { id: 'iniciacion-inbound', label: 'Inbound marketing: atraer antes de vender' },
+  { id: 'iniciacion-conexion', label: 'Cómo se conectan los componentes del proyecto' },
+  { id: 'iniciacion-errores', label: 'Errores frecuentes al comenzar' },
+  { id: 'iniciacion-libros', label: 'Tres perspectivas para comenzar a construir' },
+  { id: 'iniciacion-cierre', label: 'Cierre: una construcción a largo plazo' },
+];
 
 const BLOG_ARCHITECTURE_ITEMS = [
   {
@@ -194,8 +209,10 @@ const InitiationView: React.FC<InitiationViewProps> = ({ category }) => {
 
       {/* ARTÍCULO EDITORIAL PRINCIPAL */}
       <article aria-label="Desarrollo editorial de la categoría Iniciación">
+        <CategoryIndex items={INITIATION_INDEX_ITEMS} maxWidthClass="max-w-5xl" />
+
         {/* APARTADO 1: Definición y dirección inicial del proyecto */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/14 border-b border-[#174532]/12">
+        <section id="iniciacion-proposito" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/14 border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-7 leading-snug text-balance">
@@ -231,7 +248,7 @@ const InitiationView: React.FC<InitiationViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 2: Infraestructura — El blog como centro */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="iniciacion-blog" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -303,7 +320,7 @@ const InitiationView: React.FC<InitiationViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 3: Contenido y planificación editorial */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/14 border-b border-[#174532]/12">
+        <section id="iniciacion-contenido" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/14 border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -397,7 +414,7 @@ const InitiationView: React.FC<InitiationViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 4: Visibilidad y fundamentos SEO */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="iniciacion-visibilidad" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -465,7 +482,7 @@ const InitiationView: React.FC<InitiationViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 5: Tráfico frente a Audiencia */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/14 border-b border-[#174532]/12">
+        <section id="iniciacion-audiencia" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/14 border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -539,7 +556,7 @@ const InitiationView: React.FC<InitiationViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 6: Primeras posibilidades de monetización */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="iniciacion-monetizacion" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -616,7 +633,7 @@ const InitiationView: React.FC<InitiationViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 7: Inbound marketing y secuencia de 4 procesos */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/14 border-b border-[#174532]/12">
+        <section id="iniciacion-inbound" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/14 border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -690,7 +707,7 @@ const InitiationView: React.FC<InitiationViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 8: Conexión integral + Diagrama progresivo */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="iniciacion-conexion" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -772,7 +789,7 @@ const InitiationView: React.FC<InitiationViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 9: Errores frecuentes (Registro editorial numerado) */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/14 border-b border-[#174532]/12">
+        <section id="iniciacion-errores" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/14 border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -812,7 +829,7 @@ const InitiationView: React.FC<InitiationViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 10: Integración editorial de los tres libros oficiales */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/12">
+        <section id="iniciacion-libros" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/12">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch] mb-10">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
@@ -907,7 +924,7 @@ const InitiationView: React.FC<InitiationViewProps> = ({ category }) => {
         </section>
 
         {/* APARTADO 11: Cierre editorial */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/14">
+        <section id="iniciacion-cierre" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/14">
           <div className="max-w-5xl mx-auto px-6">
             <div className="max-w-[68ch]">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">

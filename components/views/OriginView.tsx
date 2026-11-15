@@ -3,10 +3,22 @@ import { BookCategory } from '../../types.ts';
 import { Link } from '../../router.tsx';
 import Breadcrumbs from '../Breadcrumbs.tsx';
 import PurchaseModal from '../PurchaseModal.tsx';
+import CategoryIndex, { CategoryIndexItem } from '../CategoryIndex.tsx';
 
 interface OriginViewProps {
   category: BookCategory;
 }
+
+const ORIGIN_INDEX_ITEMS: readonly CategoryIndexItem[] = [
+  { id: 'origen-plr', label: 'Qué es el PLR y su valor como punto de partida' },
+  { id: 'origen-transformacion', label: 'De un material disponible a un producto propio' },
+  { id: 'origen-formatos', label: 'Formatos posibles para un mismo conocimiento' },
+  { id: 'origen-comercial', label: 'Del producto digital a un proyecto comercial' },
+  { id: 'origen-ia', label: 'Inteligencia artificial en la creación de productos' },
+  { id: 'origen-primer-infoproducto', label: 'Qué comprender antes de crear el primer infoproducto' },
+  { id: 'origen-libro', label: 'Experto en PLR Premium: el libro de la categoría' },
+  { id: 'origen-cierre', label: 'Cierre: el origen de un proyecto' },
+];
 
 const PLR_EVALUATION_CRITERIA = [
   {
@@ -183,8 +195,10 @@ const OriginView: React.FC<OriginViewProps> = ({ category }) => {
 
       {/* ARTÍCULO EDITORIAL PRINCIPAL */}
       <article aria-label="Desarrollo temático de la categoría Origen">
+        <CategoryIndex items={ORIGIN_INDEX_ITEMS} maxWidthClass="max-w-4xl" />
+
         {/* SECCIÓN 1: Qué es el PLR */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/10">
+        <section id="origen-plr" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/10">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
               Qué es el PLR y por qué puede convertirse en un punto de partida
@@ -223,7 +237,7 @@ const OriginView: React.FC<OriginViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 2: De un material disponible a un producto con identidad propia */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/15 border-b border-[#174532]/12">
+        <section id="origen-transformacion" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/15 border-b border-[#174532]/12">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
               De un material disponible a un producto con identidad propia
@@ -281,7 +295,7 @@ const OriginView: React.FC<OriginViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 3: Distintos formatos */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/10">
+        <section id="origen-formatos" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/10">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
               Un mismo conocimiento puede adoptar distintos formatos
@@ -322,7 +336,7 @@ const OriginView: React.FC<OriginViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 4: Del producto digital a un proyecto comercial */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/15 border-b border-[#174532]/12">
+        <section id="origen-comercial" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/15 border-b border-[#174532]/12">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
               Del producto digital a un proyecto comercial
@@ -366,7 +380,7 @@ const OriginView: React.FC<OriginViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 5: Inteligencia artificial */}
-        <section className="py-14 md:py-20 bg-white border-b border-[#174532]/10">
+        <section id="origen-ia" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-white border-b border-[#174532]/10">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
               Inteligencia artificial: una herramienta para ampliar las posibilidades de creación
@@ -396,7 +410,7 @@ const OriginView: React.FC<OriginViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 6: Qué necesitamos comprender antes de crear nuestro primer infoproducto */}
-        <section className="py-14 md:py-20 bg-[#dae7df]/15 border-b border-[#174532]/12">
+        <section id="origen-primer-infoproducto" tabIndex={-1} className="scroll-mt-20 outline-none py-14 md:py-20 bg-[#dae7df]/15 border-b border-[#174532]/12">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
               Qué necesitamos comprender antes de crear nuestro primer infoproducto
@@ -435,7 +449,7 @@ const OriginView: React.FC<OriginViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 7: Presentación editorial del libro Experto en PLR Premium */}
-        <section className="py-16 md:py-24 bg-white border-b border-[#174532]/12">
+        <section id="origen-libro" tabIndex={-1} className="scroll-mt-20 outline-none py-16 md:py-24 bg-white border-b border-[#174532]/12">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
               Experto en PLR Premium: una guía para comprender el proceso completo
@@ -520,7 +534,7 @@ const OriginView: React.FC<OriginViewProps> = ({ category }) => {
         </section>
 
         {/* SECCIÓN 8: Cierre editorial */}
-        <section className="py-16 md:py-24 bg-[#dae7df]/20">
+        <section id="origen-cierre" tabIndex={-1} className="scroll-mt-20 outline-none py-16 md:py-24 bg-[#dae7df]/20">
           <div className="max-w-4xl mx-auto px-6">
             <div className="bg-white border border-[#174532]/15 rounded-md p-8 md:p-12 shadow-xs">
               <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 leading-snug text-balance">
