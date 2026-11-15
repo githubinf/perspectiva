@@ -251,7 +251,7 @@ const Systems: React.FC = () => {
   return (
     <div className="bg-white text-[#1b1b1b]">
       {/* SECCIÓN 1 — EL PROBLEMA */}
-      <section className="py-16 md:py-24 bg-white">
+      <section id="systems-problema" tabIndex={-1} className="scroll-mt-20 outline-none py-16 md:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-5">
             <span className="w-6 h-[1px] bg-[#f4b925]" aria-hidden="true"></span>
@@ -298,7 +298,7 @@ const Systems: React.FC = () => {
       </section>
 
       {/* SECCIÓN 2 — EL CONCEPTO */}
-      <section className="py-16 md:py-24 bg-[#dae7df]/20 border-y border-[#174532]/10">
+      <section id="systems-arquitectura" tabIndex={-1} className="scroll-mt-20 outline-none py-16 md:py-24 bg-[#dae7df]/20 border-y border-[#174532]/10">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-5">
             <span className="w-6 h-[1px] bg-[#f4b925]" aria-hidden="true"></span>
@@ -357,7 +357,7 @@ const Systems: React.FC = () => {
       </section>
 
       {/* SECCIÓN 3 — LOS COMPONENTES */}
-      <section className="py-16 md:py-24 bg-white">
+      <section id="systems-componentes" tabIndex={-1} className="scroll-mt-20 outline-none py-16 md:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="mb-12">
             <div className="flex items-center gap-3 mb-5">
@@ -399,7 +399,7 @@ const Systems: React.FC = () => {
       </section>
 
       {/* SECCIÓN 4 — EL FUNCIONAMIENTO */}
-      <section className="py-16 md:py-24 bg-[#174532] text-white">
+      <section id="systems-funcionamiento" tabIndex={-1} className="scroll-mt-20 outline-none py-16 md:py-24 bg-[#174532] text-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-3xl mb-12">
             <div className="flex items-center gap-3 mb-5">
@@ -496,7 +496,7 @@ const Systems: React.FC = () => {
       </section>
 
       {/* SECCIÓN 5 — MODELOS */}
-      <section className="py-16 md:py-24 bg-white">
+      <section id="systems-modelos" tabIndex={-1} className="scroll-mt-20 outline-none py-16 md:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="mb-14">
             <div className="flex items-center gap-3 mb-5">
@@ -587,7 +587,7 @@ const Systems: React.FC = () => {
       </section>
 
       {/* SECCIÓN 6 — METODOLOGÍA */}
-      <section className="py-16 md:py-24 bg-[#dae7df]/20 border-y border-[#174532]/10">
+      <section id="systems-metodologia" tabIndex={-1} className="scroll-mt-20 outline-none py-16 md:py-24 bg-[#dae7df]/20 border-y border-[#174532]/10">
         <div className="max-w-5xl mx-auto px-6">
           <div className="mb-14">
             <div className="flex items-center gap-3 mb-5">
@@ -657,7 +657,7 @@ const Systems: React.FC = () => {
       </section>
 
       {/* SECCIÓN 7 — CONOCIMIENTO Y APLICACIÓN */}
-      <section className="py-16 md:py-24 bg-white">
+      <section id="systems-aplicacion" tabIndex={-1} className="scroll-mt-20 outline-none py-16 md:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-5">
             <span className="w-6 h-[1px] bg-[#f4b925]" aria-hidden="true"></span>
@@ -735,7 +735,7 @@ const Systems: React.FC = () => {
       </section>
 
       {/* SECCIÓN 8 — DIFERENCIA ESTRUCTURAL */}
-      <section className="py-16 md:py-24 bg-[#dae7df]/15 border-t border-[#174532]/10">
+      <section id="systems-diferencia" tabIndex={-1} className="scroll-mt-20 outline-none py-16 md:py-24 bg-[#dae7df]/15 border-t border-[#174532]/10">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-5">
             <span className="w-6 h-[1px] bg-[#f4b925]" aria-hidden="true"></span>

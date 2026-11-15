@@ -3,6 +3,19 @@ import Breadcrumbs from '../Breadcrumbs.tsx';
 import Systems from '../Systems.tsx';
 import { Link } from '../../router.tsx';
 import { ArrowRight } from 'lucide-react';
+import CategoryIndex, { CategoryIndexItem } from '../CategoryIndex.tsx';
+
+const SYSTEMS_INDEX_ITEMS: readonly CategoryIndexItem[] = [
+  { id: 'systems-problema', label: 'Tener herramientas y conocimientos no significa tener un sistema' },
+  { id: 'systems-arquitectura', label: 'Qué es una arquitectura digital' },
+  { id: 'systems-componentes', label: 'Los elementos que forman un sistema digital' },
+  { id: 'systems-funcionamiento', label: 'Cómo se conectan los componentes' },
+  { id: 'systems-modelos', label: 'Tres modelos de sistemas digitales' },
+  { id: 'systems-metodologia', label: 'Cinco etapas para construir un sistema digital' },
+  { id: 'systems-aplicacion', label: 'Del conocimiento a una estructura funcional' },
+  { id: 'systems-diferencia', label: 'Un proyecto basado en acciones o un sistema organizado' },
+  { id: 'systems-cierre', label: 'Cierre: construir con intención y criterio' },
+];
 
 const SystemsView: React.FC = () => {
   return (
@@ -95,11 +108,13 @@ const SystemsView: React.FC = () => {
         </div>
       </header>
 
+      <CategoryIndex items={SYSTEMS_INDEX_ITEMS} maxWidthClass="max-w-5xl" />
+
       {/* Main Thematic Editorial Body (Sections 1-8) */}
       <Systems />
 
       {/* CIERRE EDITORIAL */}
-      <section className="py-16 md:py-24 bg-white border-t border-[#174532]/12">
+      <section id="systems-cierre" tabIndex={-1} className="scroll-mt-20 outline-none py-16 md:py-24 bg-white border-t border-[#174532]/12">
         <div className="max-w-4xl mx-auto px-6">
           <div className="bg-[#dae7df]/20 border border-[#174532]/15 rounded-md p-8 md:p-12">
             <h2 className="text-h2-lg font-bold font-serif text-[#174532] mb-6 text-balance">
