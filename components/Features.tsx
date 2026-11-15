@@ -26,7 +26,7 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <section className="pt-12 pb-24 bg-[#1f513a] text-white relative overflow-hidden">
+    <section id="home-propuesta" tabIndex={-1} className="pt-12 pb-24 bg-[#1f513a] text-white relative overflow-hidden scroll-mt-20 outline-none">
       <div className="absolute top-0 right-0 w-64 h-64 bg-[#4db380]/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
       
       <div className="max-w-4xl mx-auto px-6 relative z-10">

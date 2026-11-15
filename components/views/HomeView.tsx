@@ -10,6 +10,7 @@ import { BookItem } from '../../types.ts';
 import { Link } from '../../router.tsx';
 import PurchaseModal from '../PurchaseModal.tsx';
 import { ArrowRight, BookOpen } from 'lucide-react';
+import { HOME_ANCHOR_IDS, scrollToHomeAnchor } from '../HomeAnchorMenu.tsx';
 
 /**
  * Fisher-Yates (Durstenfeld) shuffle algorithm to select 'count' random books
@@ -52,6 +53,26 @@ const HomeView: React.FC = () => {
     setFeaturedBooks(selectRandomBooks(ALL_BOOKS, 6));
   }, []);
 
+  // Localized handling for direct URL visits or cross-route visits to /#home-...
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const scrollFromCurrentHash = () => {
+      const targetId = window.location.hash.replace(/^#/, '');
+      if (!targetId || !HOME_ANCHOR_IDS.has(targetId)) return;
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          scrollToHomeAnchor(targetId);
+        });
+      });
+    };
+
+    scrollFromCurrentHash();
+    window.addEventListener('hashchange', scrollFromCurrentHash);
+    return () => window.removeEventListener('hashchange', scrollFromCurrentHash);
+  }, []);
+
   return (
     <>
       <Hero />
@@ -59,7 +80,7 @@ const HomeView: React.FC = () => {
       <Features />
 
       {/* Featured Editorial Library Section */}
-      <section className="py-20 md:py-28 bg-white border-y border-[#dae7df]/50">
+      <section id="home-biblioteca" tabIndex={-1} className="py-20 md:py-28 bg-white border-y border-[#dae7df]/50 scroll-mt-20 outline-none">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-[11.5px] uppercase tracking-wider font-semibold text-[#174532] bg-[#dae7df]/30 px-3.5 py-1 rounded-full border border-[#dae7df] inline-block mb-4">

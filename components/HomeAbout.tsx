@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomeAbout: React.FC = () => {
   return (
-    <section id="sobre-fg-perspectiva" className="py-20 bg-white">
+    <section id="home-editorial" tabIndex={-1} className="py-20 bg-white scroll-mt-20 outline-none">
       <div className="max-w-5xl mx-auto px-6">
         <div className="border border-[#174532]/15 rounded-sm p-8 md:p-12 relative overflow-hidden bg-[#dae7df]/15">
           {/* Decorative accents including subtle 8+ visual indicator */}

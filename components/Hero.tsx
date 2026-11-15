@@ -4,7 +4,7 @@ import { Link } from '../router.tsx';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative pt-20 pb-20 md:pt-28 md:pb-32 overflow-hidden bg-white">
+    <section id="home-inicio" tabIndex={-1} className="relative pt-20 pb-20 md:pt-28 md:pb-32 overflow-hidden bg-white scroll-mt-20 outline-none">
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[#dae7df]/30 -skew-x-12 -z-10 translate-x-1/3"></div>
       
       <div className="max-w-5xl mx-auto px-6">

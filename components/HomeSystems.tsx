@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomeSystems: React.FC = () => {
   return (
-    <section id="sistemas" className="pt-12 pb-6 md:pt-20 md:pb-10 bg-[#dae7df]/20">
+    <section id="home-sistemas" tabIndex={-1} className="pt-12 pb-6 md:pt-20 md:pb-10 bg-[#dae7df]/20 scroll-mt-20 outline-none">
       <div className="max-w-7xl mx-auto px-6">
         {/* Single-Column Editorial Composition: Bloques 1 a 4 */}
         <div className="max-w-4xl mx-auto mb-28">

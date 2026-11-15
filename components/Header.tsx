@@ -1,11 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { NAV_ITEMS } from '../constants.tsx';
-import { Link } from '../router.tsx';
+import { Link, useRouter } from '../router.tsx';
+import HomeAnchorMenu from './HomeAnchorMenu.tsx';
 
 const Header: React.FC = () => {
+  const { currentPath } = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const isHome = currentPath === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,13 +18,17 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [currentPath]);
+
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen((prev) => !prev);
   };
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-white/95 backdrop-blur-md py-3 shadow-md border-b border-[#dae7df]' : 'bg-transparent py-6'}`}>
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between gap-4">
         <Link href="/" className="flex items-center shrink-0 relative z-50 group">
           <img
             src="https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/icono1-fgperspectiva.png"
@@ -29,23 +36,34 @@ const Header: React.FC = () => {
             className="h-11 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
           />
         </Link>
-        
-        <nav className="hidden md:flex items-center gap-8">
-          {NAV_ITEMS.map((item) => (
-            <Link 
-              key={item.label} 
-              href={item.href}
-              className="text-sm font-medium text-[#1b1b1b]/80 hover:text-[#174532] transition-colors"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
 
-        <button 
-          className="md:hidden text-[#174532] p-2 relative z-50"
+        <div className="hidden md:flex items-center gap-4 lg:gap-7">
+          {isHome && (
+            <>
+              <HomeAnchorMenu variant="desktop" />
+              <span className="h-4 w-px bg-[#174532]/15 shrink-0" aria-hidden="true" />
+            </>
+          )}
+
+          <nav aria-label="Navegación principal" className={`flex items-center ${isHome ? 'gap-5 lg:gap-8' : 'gap-8'}`}>
+            {NAV_ITEMS.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="text-sm font-medium whitespace-nowrap text-[#1b1b1b]/80 hover:text-[#174532] transition-colors"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+
+        <button
+          type="button"
+          className="md:hidden text-[#174532] p-2 relative z-50 cursor-pointer"
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
+          aria-expanded={isMobileMenuOpen}
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {isMobileMenuOpen ? (
@@ -58,15 +76,16 @@ const Header: React.FC = () => {
       </div>
 
       {/* Mobile Menu Overlay */}
-      <div 
-        className={`fixed inset-0 bg-white z-40 transition-transform duration-500 md:hidden ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+      <div
+        aria-hidden={!isMobileMenuOpen}
+        className={`fixed inset-0 bg-white z-40 transition-transform duration-500 md:hidden ${isMobileMenuOpen ? 'translate-x-0 visible' : 'translate-x-full invisible pointer-events-none'}`}
         onClick={() => setIsMobileMenuOpen(false)}
       >
-        <div className="flex flex-col h-full p-8 pt-28" onClick={(e) => e.stopPropagation()}>
-          <div className="space-y-6">
+        <div className="flex flex-col h-full p-8 pt-28 overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+          <nav aria-label="Navegación principal móvil" className="space-y-6">
             {NAV_ITEMS.map((item) => (
-              <Link 
-                key={item.label} 
+              <Link
+                key={item.label}
                 href={item.href}
                 className="block text-[19px] font-medium text-[#174532] hover:text-[#4db380] transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -74,7 +93,14 @@ const Header: React.FC = () => {
                 {item.label}
               </Link>
             ))}
-          </div>
+          </nav>
+
+          {isHome && (
+            <HomeAnchorMenu
+              variant="mobile"
+              onNavigate={() => setIsMobileMenuOpen(false)}
+            />
+          )}
         </div>
       </div>
     </header>
