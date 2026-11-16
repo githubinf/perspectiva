@@ -871,7 +871,32 @@ export const getPageMeta = (rawPath: string): PageMeta => {
       author: {
         '@type': 'Person',
         name: 'Francisco González'
-      }
+      },
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/EBook',
+        'https://schema.org/Hardcover'
+      ],
+      workExample: [
+        {
+          '@type': 'Book',
+          name: 'El arte de atraer la abundancia (Tapa blanda)',
+          bookFormat: 'https://schema.org/Paperback',
+          url: 'https://www.amazon.com/-/es/dp/B0CY211RSP'
+        },
+        {
+          '@type': 'Book',
+          name: 'El arte de atraer la abundancia (Kindle)',
+          bookFormat: 'https://schema.org/EBook',
+          url: 'https://www.amazon.com/dp/B0CXZC4XLL'
+        },
+        {
+          '@type': 'Book',
+          name: 'El arte de atraer la abundancia (Tapa dura)',
+          bookFormat: 'https://schema.org/Hardcover',
+          url: 'https://www.amazon.com/dp/B0CY1XYJS7'
+        }
+      ]
     };
 
     if (validCatalogOptions.length > 0) {
@@ -918,6 +943,87 @@ export const getPageMeta = (rawPath: string): PageMeta => {
               position: 4,
               name: 'El arte de atraer la abundancia',
               item: abundanceUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
+  // 6i. Ficha editorial dedicada: El Vendedor hipnótico
+  if (path === '/el-vendedor-hipnotico/') {
+    const vendedorBook = ALL_BOOKS.find(
+      (b) => b.path === '/el-vendedor-hipnotico/' || b.slug === 'el-vendedor-hipnotico'
+    );
+    const vendedorDescription =
+      'Descubre cómo mejorar la comunicación comercial, comprender al cliente y presentar propuestas de valor mediante técnicas de venta persuasiva sin presión.';
+    const vendedorCover =
+      vendedorBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/8-el-vendedor-hipnotico-libro-400.jpg';
+    const vendedorUrl = `${BASE_URL}/el-vendedor-hipnotico/`;
+    const validCatalogOptions = (vendedorBook?.purchaseOptions || []).filter(
+      (opt) => opt.url && opt.url !== '#'
+    );
+
+    const vendedorBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'El Vendedor hipnótico',
+      alternateName: 'Domina el arte de la seducción emocional para vender sin presionar.',
+      description: vendedorDescription,
+      image: vendedorCover,
+      url: vendedorUrl,
+      inLanguage: 'es',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      }
+    };
+
+    if (validCatalogOptions.length > 0) {
+      vendedorBookSchema.offers = validCatalogOptions.map((opt) => ({
+        '@type': 'Offer',
+        url: opt.url.trim()
+      }));
+    }
+
+    return {
+      path: '/el-vendedor-hipnotico/',
+      title: 'El Vendedor Hipnótico: técnicas de venta persuasiva | FG Perspectiva',
+      description: vendedorDescription,
+      canonical: vendedorUrl,
+      ogImage: vendedorCover,
+      ogType: 'book',
+      h1: 'El Vendedor hipnótico',
+      schema: [
+        vendedorBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Mindset',
+              item: `${BASE_URL}/mindset/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'El Vendedor hipnótico',
+              item: vendedorUrl
             }
           ]
         }

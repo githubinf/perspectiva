@@ -13,6 +13,7 @@ import MindsetView from './components/views/MindsetView.tsx';
 import BookDetailView from './components/views/BookDetailView.tsx';
 import SolopreneurManualView from './components/views/SolopreneurManualView.tsx';
 import AbundanceView from './components/views/AbundanceView.tsx';
+import HypnoticSellerView from './components/views/HypnoticSellerView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
@@ -77,6 +78,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/el-arte-de-atraer-la-abundancia/' && matchedBook) {
     return <AbundanceView book={matchedBook} />;
+  }
+
+  if (currentPath === '/el-vendedor-hipnotico/' && matchedBook) {
+    return <HypnoticSellerView book={matchedBook} />;
   }
 
   if (matchedBook) {

@@ -1161,26 +1161,47 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'mindset',
         title: 'El arte de atraer la abundancia',
         description: 'Despierta tu potencial ilimitado y crea una vida de riqueza, éxito y plenitud total',
-        url: 'https://amzn.to/3XCLjVW',
+        url: 'https://www.amazon.com/-/es/dp/B0CY211RSP',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/14-el-arte-de-atraer-la-abundancia-ebook-libro-400.jpg',
         purchaseOptions: [
-          { 
-            platform: 'Amazon', 
-            url: 'https://amzn.to/3XCLjVW', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/-/es/dp/B0CY211RSP',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
             emoji: '🛒',
-            cta: 'Comprar en Amazon'
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
           },
-          { 
-            platform: 'Clickbank', 
-            url: 'https://abundancia-arte.vercel.app/ ', 
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B0CXZC4XLL',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B0CY1XYJS7',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Clickbank',
+            url: 'https://abundancia-arte.vercel.app/',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
-          { 
-            platform: 'Payhip', 
-            url: 'https://payhip.com/b/VJNwa', 
+          {
+            platform: 'Payhip',
+            url: 'https://payhip.com/b/VJNwa',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'

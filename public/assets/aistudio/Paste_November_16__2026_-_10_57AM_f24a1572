@@ -1,0 +1,648 @@
+# INSTRUCCIÓN INTEGRAL — REDISEÑO EDITORIAL Y SEO DE LA FICHA «EL VENDEDOR HIPNÓTICO»
+
+## 1. Objetivo de la intervención
+
+Realiza una actualización editorial, semántica y SEO de la ficha individual del libro **El Vendedor hipnótico**, perteneciente a la categoría Mindset de FG Perspectiva.
+
+El objetivo es transformar la ficha en una página editorial con contenido original, sustancial y útil para quien busca mejorar su comunicación comercial, comprender mejor a sus clientes y aprender a presentar propuestas de valor sin recurrir a la presión.
+
+La nueva página debe tener una identidad editorial propia. No debe reproducir la estructura, los encabezados ni el desarrollo argumental de otras fichas del catálogo.
+
+**Esta intervención se limita exclusivamente a la ficha de este libro.** No modificar otras páginas, fichas, categorías, componentes globales, catálogo, navegación general, Home, Biblioteca ni footer.
+
+La actualización debe realizarse en el entorno local. No ejecutar ningún despliegue en Vercel.
+
+---
+
+## 2. Datos oficiales del libro
+
+Conservar los datos existentes del proyecto y verificar que coincidan con esta información:
+
+- **Título:** El Vendedor hipnótico.
+- **Subtítulo:** Domina el arte de la seducción emocional para vender sin presionar.
+- **Autor:** Francisco González.
+- **Categoría:** Mindset.
+- **Ruta:** conservar el slug y la URL canónica que ya tiene asignados la ficha en el proyecto.
+- **Portada:** conservar la portada oficial que ya utiliza la ficha. No sustituirla ni generar otra.
+- **Identidad editorial:** FG Perspectiva.
+
+No inventar ISBN, precio, valoración, número de páginas, fecha de publicación, características editoriales ni datos que no estén confirmados en el proyecto.
+
+### Enlaces comerciales y de distribución
+
+Conservar los enlaces existentes y verificar que cada uno continúe asociado al formato o plataforma correspondiente.
+
+**Amazon**
+
+- Kindle: https://www.amazon.com/dp/B0CG1ZHVZ6
+- Tapa blanda: https://www.amazon.com/dp/B0CFZJK3YF
+- Tapa dura: https://www.amazon.com/dp/B0CZSYKLRZ
+- Audiolibro: https://www.amazon.com/dp/B0H51GRRLJ
+
+**Google Play**
+
+- Ebook: https://play.google.com/store/books/details?id=ViOdEQAAQBAJ
+- Audiolibro: https://play.google.com/store/audiobooks/details?id=AQAAAEDqXVcdrM
+
+**Otras plataformas**
+
+- ClickBank: https://elvendedorhipnotico.vercel.app/
+- Books2Read: https://books2read.com/u/4A85vk
+- Payhip: https://payhip.com/b/JWv4w
+- Lulu: https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/el-vendedor-hipn%C3%B3tico/ebook/product-84j9eep.html
+
+**Recurso gráfico del audiolibro:**
+
+https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png
+
+Si el proyecto ya utiliza este recurso gráfico en el módulo correspondiente al audiolibro, conservar su integración y comportamiento.
+
+No eliminar plataformas, formatos ni enlaces comerciales. No sustituirlos por otros.
+
+---
+
+## 3. Protección obligatoria de la estructura comercial
+
+Esta condición tiene prioridad sobre cualquier decisión de rediseño visual o editorial.
+
+La ficha ya dispone de una estructura de compra. La intervención no autoriza a reorganizarla.
+
+Antes de modificar el componente, inspeccionar y documentar cómo están implementados actualmente:
+
+- Los botones de compra situados en la zona superior.
+- El botón o acceso a las ediciones disponibles.
+- El modal de compra, si existe.
+- La selección de formatos y plataformas.
+- Los enlaces comerciales.
+- El botón de compra situado al final de la página.
+
+### Prohibiciones expresas
+
+1. No mover ningún botón de compra.
+2. No eliminar ningún botón.
+3. No sustituir botones existentes por otros diseños o componentes.
+4. No duplicar botones.
+5. No ocultar botones en ninguna resolución.
+6. No trasladar el botón de compra inferior a otra sección.
+7. No eliminar ni modificar el modal de compra.
+8. No transformar un modal existente en una colección de botones individuales.
+9. No cambiar textos, estilos, jerarquía visual o comportamiento comercial sin autorización.
+10. No alterar la relación entre cada formato y su enlace correspondiente.
+
+**El botón de compra situado al final de la ficha debe permanecer en su posición original y seguir funcionando.** No basta con conservar su código: debe verificarse visualmente y probarse su funcionamiento.
+
+La actualización editorial debe integrarse alrededor de la estructura comercial existente, sin perjudicarla.
+
+---
+
+## 4. Identidad editorial del nuevo contenido
+
+El contenido debe desarrollar una perspectiva propia sobre la comunicación comercial y la influencia consciente.
+
+El término «hipnótico» debe abordarse como el concepto de comunicación e influencia que plantea el libro. No debe presentarse como control de la voluntad, manipulación psicológica ni capacidad de obligar a una persona a comprar.
+
+La página debe transmitir una idea central:
+
+**Una venta de calidad no comienza cuando intentamos convencer a alguien, sino cuando conseguimos comprender qué necesita, comunicar con claridad y facilitar una decisión libre e informada.**
+
+El contenido debe distinguir entre hablar para vender y comunicarse para ayudar a comprender una propuesta.
+
+No presentar la persuasión como un conjunto de trucos infalibles. Tampoco garantizar conversiones, resultados económicos o cierres de venta.
+
+---
+
+# 5. REDACCIÓN EDITORIAL COMPLETA
+
+Incorporar el siguiente contenido como cuerpo editorial de la ficha. Se debe conservar su sentido, profundidad y enfoque. Se permiten ajustes de adaptación al diseño y a la semántica HTML, pero no resumirlo, sustituirlo por textos comerciales ni convertirlo en una descripción genérica.
+
+## Encabezado editorial
+
+**Título H1:** El Vendedor hipnótico
+
+**Subtítulo oficial:** Domina el arte de la seducción emocional para vender sin presionar.
+
+**Línea editorial complementaria:**
+
+La comunicación comercial como herramienta para generar confianza, comprender decisiones y presentar valor con naturalidad.
+
+**Autor:** Francisco González.
+
+No añadir una sección titulada «Sobre el libro». El encabezado debe presentar directamente el título, el subtítulo, la línea editorial y el autor.
+
+---
+
+## Introducción — La venta empieza mucho antes de presentar una oferta
+
+En una conversación comercial, las palabras que utilizamos importan, pero no son lo único que determina cómo se recibe nuestro mensaje. También influyen el momento, la atención que prestamos, la manera de escuchar, el tono con el que explicamos una propuesta y la capacidad de comprender qué está buscando realmente la otra persona.
+
+Podemos conocer perfectamente un producto y, sin embargo, transmitir su valor de una forma poco convincente. Podemos enumerar características, explicar ventajas y repetir argumentos, pero si no conseguimos conectar nuestra explicación con las inquietudes del interlocutor, la conversación difícilmente avanzará.
+
+Esta diferencia permite entender por qué vender no consiste únicamente en hablar de lo que ofrecemos. La comunicación comercial requiere observar, interpretar, preguntar y construir un intercambio en el que ambas partes puedan comprender si existe una correspondencia real entre una necesidad y una solución.
+
+La influencia consciente comienza precisamente ahí. No se trata de imponer una idea ni de conducir a alguien hacia una decisión que no desea tomar. Se trata de crear las condiciones para que una propuesta pueda ser entendida, valorada y considerada sin presión innecesaria.
+
+En este proceso intervienen elementos que a menudo pasan inadvertidos: la primera impresión, la escucha, el lenguaje corporal, la claridad de las preguntas, la manera de presentar una idea y la respuesta ante las dudas. Cada uno puede facilitar la conversación o introducir obstáculos que dificulten la confianza.
+
+También debemos considerar que una venta no termina necesariamente cuando se produce una compra. La experiencia posterior, la coherencia entre lo prometido y lo entregado y la calidad de la relación influyen en la percepción que el cliente conserva de nosotros.
+
+Por eso, la comunicación persuasiva necesita algo más que recursos verbales. Requiere criterio, sensibilidad y responsabilidad. Cuanto mejor comprendemos a la persona que tenemos delante, menos necesitamos recurrir a discursos forzados.
+
+## Contenido de esta página
+
+Accede directamente al apartado que te interesa.
+
+- [La comunicación comercial más allá del discurso](#vendedor-comunicacion)
+- [La confianza como punto de partida](#vendedor-confianza)
+- [Comprender antes de influir](#vendedor-comprension)
+- [Lo que comunicamos sin pronunciar palabras](#vendedor-no-verbal)
+- [El lenguaje que facilita la decisión](#vendedor-lenguaje)
+- [Historias y propuestas que se entienden](#vendedor-narrativa)
+- [Presentar valor sin abrumar](#vendedor-valor)
+- [Las objeciones como parte de la conversación](#vendedor-objeciones)
+- [La decisión pertenece al cliente](#vendedor-decision)
+- [La relación después de la venta](#vendedor-fidelizacion)
+- [La comunicación comercial en entornos digitales](#vendedor-digital)
+- [Una identidad comercial coherente](#vendedor-identidad)
+- [A quién puede interesar esta perspectiva](#vendedor-lectores)
+
+---
+
+## La comunicación comercial más allá del discurso
+
+La capacidad de vender suele asociarse con la facilidad para hablar, argumentar y responder rápidamente. Sin embargo, una conversación comercial eficaz no depende de quién pronuncia más palabras ni de quién consigue introducir más argumentos en menos tiempo.
+
+Hablar demasiado puede dificultar la comprensión. Cuando una persona recibe información que no responde a sus inquietudes, puede desconectarse de la conversación, aunque la explicación sea correcta desde el punto de vista técnico.
+
+La comunicación comercial exige seleccionar qué información merece ser presentada, en qué momento y con qué nivel de detalle. No todas las personas necesitan escuchar la misma explicación. Tampoco todas se encuentran en la misma etapa de decisión.
+
+Por eso, una comunicación bien construida comienza con la capacidad de adaptar el mensaje sin perder su autenticidad. No consiste en interpretar un personaje ni en utilizar frases prefabricadas, sino en comprender el contexto y expresarse de una manera que resulte clara para el interlocutor.
+
+También conviene distinguir entre captar atención y mantener interés. Una frase llamativa puede conseguir que alguien escuche durante unos segundos, pero la atención sostenida depende de que el contenido tenga relación con lo que esa persona considera importante.
+
+La comunicación persuasiva adquiere mayor consistencia cuando deja de centrarse exclusivamente en el vendedor y empieza a considerar la experiencia de quien escucha.
+
+## La confianza como punto de partida
+
+La confianza no aparece automáticamente porque una persona tenga un discurso convincente. Se construye mediante señales de coherencia que se acumulan durante la interacción.
+
+La forma de responder, la disposición para escuchar, la precisión de la información y la capacidad de reconocer los límites de una propuesta contribuyen a crear una percepción de credibilidad.
+
+Una conversación comercial pierde solidez cuando el interlocutor percibe exageraciones, promesas difíciles de justificar o respuestas que evitan abordar sus preocupaciones. Incluso una oferta interesante puede generar desconfianza si se presenta de manera poco transparente.
+
+Por el contrario, explicar con claridad qué puede ofrecer una solución y qué aspectos no cubre permite establecer expectativas más realistas. Esta transparencia no debilita necesariamente una venta. Puede mejorar la calidad de la relación porque evita que la decisión se base en una interpretación equivocada.
+
+La confianza también requiere consistencia entre lo que comunicamos y lo que hacemos. Si la experiencia posterior contradice las expectativas creadas durante la conversación, la relación comercial pierde credibilidad.
+
+Vender sin presionar implica aceptar que la confianza no se exige: se construye. Y para construirla necesitamos que nuestras palabras, nuestras acciones y la experiencia que ofrecemos mantengan una relación coherente.
+
+## Comprender antes de influir
+
+Una de las dificultades más frecuentes de la comunicación comercial es intentar presentar una solución antes de comprender suficientemente la situación de la otra persona.
+
+Cuando empezamos hablando de características, funciones o beneficios sin conocer el contexto, corremos el riesgo de responder a una necesidad que quizá no existe o de destacar aspectos que no tienen importancia para el interlocutor.
+
+Comprender requiere prestar atención a las preguntas, las prioridades y las circunstancias que aparecen durante la conversación. También supone diferenciar entre lo que una persona solicita inicialmente y el problema que intenta resolver.
+
+Las preguntas abiertas pueden ayudar a obtener información que no surgiría mediante una presentación unilateral. En lugar de asumir lo que necesita el cliente, podemos explorar qué está intentando conseguir, qué dificultades encuentra y qué criterios utilizará para valorar las alternativas.
+
+Escuchar no significa esperar nuestro turno para hablar. Significa utilizar lo que la otra persona comunica para orientar la conversación de manera pertinente.
+
+Esta comprensión debe evitar las interpretaciones precipitadas. Una respuesta breve, una duda o una objeción no permiten conocer por sí solas todas las motivaciones de alguien. La información debe confirmarse mediante preguntas y diálogo.
+
+La influencia responsable comienza cuando dejamos de tratar a cada interlocutor como una oportunidad idéntica y reconocemos que cada decisión tiene un contexto propio.
+
+## Lo que comunicamos sin pronunciar palabras
+
+La comunicación no verbal forma parte de la experiencia comercial. La postura, los gestos, la expresión facial, el contacto visual y el tono de voz pueden acompañar nuestro mensaje o transmitir una impresión diferente de la que pretendíamos comunicar.
+
+No obstante, interpretar estas señales requiere prudencia. Un gesto aislado no demuestra que una persona esté interesada, incómoda, convencida o dispuesta a comprar. El lenguaje corporal debe considerarse dentro del contexto y en relación con el resto de la conversación.
+
+La coherencia entre comunicación verbal y no verbal resulta especialmente importante. Si explicamos que estamos dispuestos a escuchar, pero interrumpimos continuamente, nuestras acciones contradicen el mensaje.
+
+También debemos prestar atención a nuestra propia presencia. Una actitud serena, una postura natural y un tono adecuado pueden facilitar un intercambio más cómodo, especialmente cuando se habla de decisiones que requieren reflexión.
+
+En las interacciones presenciales, estos elementos contribuyen a crear un entorno de comunicación. En las conversaciones digitales, algunos desaparecen o se transforman, por lo que debemos prestar mayor atención a la claridad del texto, los tiempos de respuesta y el tono utilizado.
+
+El objetivo no es aprender a descifrar mecánicamente a las personas. Es desarrollar una mayor conciencia sobre cómo se produce la comunicación y evitar que nuestras señales generen contradicciones innecesarias.
+
+## El lenguaje que facilita la decisión
+
+Las palabras pueden hacer que una propuesta resulte comprensible o que parezca más complicada de lo que realmente es.
+
+En una conversación comercial, utilizar términos técnicos sin necesidad, acumular explicaciones o recurrir a expresiones ambiguas puede aumentar la distancia entre lo que queremos comunicar y lo que el interlocutor entiende.
+
+Un lenguaje claro no significa simplificar en exceso ni eliminar información relevante. Significa organizar las ideas para que la otra persona pueda identificar qué estamos ofreciendo, qué problema aborda y qué implicaciones tiene la propuesta.
+
+También importa la forma de formular las preguntas. Las preguntas orientadas a comprender permiten que el cliente explique sus prioridades. Las preguntas utilizadas únicamente para dirigirlo hacia una respuesta predeterminada pueden generar resistencia.
+
+La elección de palabras debe respetar el contexto. No es lo mismo conversar con alguien que ya conoce el producto que explicar por primera vez una solución a una persona que todavía está identificando sus necesidades.
+
+La comunicación eficaz adapta el nivel de detalle sin distorsionar la información. Evita exageraciones y no utiliza la urgencia artificial como sustituto de una explicación convincente.
+
+Cuando el lenguaje facilita la comprensión, la conversación deja de depender de la insistencia. La propuesta puede evaluarse por su pertinencia y por el valor que realmente ofrece.
+
+## Historias y propuestas que se entienden
+
+Una idea puede resultar difícil de comprender cuando se presenta como una lista de características desconectadas. En cambio, una explicación organizada alrededor de una situación reconocible puede ayudar a que el interlocutor entienda por qué una propuesta tiene sentido.
+
+Las historias permiten situar una idea dentro de un contexto. Pueden mostrar un problema, describir una circunstancia y explicar cómo una solución interviene en ella. Su utilidad no depende de dramatizar la situación ni de presentar experiencias extraordinarias.
+
+En la comunicación comercial, una historia debe ayudar a comprender, no reemplazar la información verificable. Los ejemplos deben ser honestos y no deben presentarse como resultados garantizados para cualquier cliente.
+
+También es importante que la narrativa no se convierta en una distracción. Una explicación demasiado extensa puede ocultar la propuesta que pretendíamos presentar.
+
+La combinación de contexto, explicación y evidencia permite construir mensajes más fáciles de seguir. Podemos mostrar cómo funciona una solución, qué aspectos conviene considerar y en qué circunstancias podría resultar apropiada.
+
+La historia aporta una estructura; la información aporta fundamento. Cuando ambas trabajan juntas, la comunicación gana claridad sin necesidad de exagerar.
+
+## Presentar valor sin abrumar
+
+Una oferta puede tener muchas características, pero no todas tienen la misma importancia para cada persona.
+
+Presentar valor significa relacionar lo que ofrecemos con los aspectos que el interlocutor considera relevantes. Para hacerlo necesitamos conocer sus prioridades y distinguir entre las características del producto y las consecuencias prácticas que pueden tener en su situación.
+
+Una explicación comercial útil no consiste en enumerar todo lo que sabemos. Consiste en seleccionar la información necesaria para que la otra persona pueda evaluar la propuesta.
+
+Esto también implica explicar las condiciones, los límites y los elementos que podrían influir en la experiencia. Ocultar información relevante para conseguir una respuesta favorable puede producir una venta inmediata, pero debilita la relación posterior.
+
+La presentación debe mantener un equilibrio entre precisión y sencillez. Si omitimos información importante, la decisión puede resultar incompleta. Si acumulamos detalles irrelevantes, dificultamos la comparación.
+
+Podemos mejorar la presentación de una propuesta organizando la información en torno a tres cuestiones: qué ofrece, por qué podría ser pertinente y qué necesita saber el cliente antes de decidir.
+
+El valor no depende únicamente de cómo describimos una oferta. También depende de la correspondencia real entre lo que ofrecemos y lo que la persona necesita.
+
+## Las objeciones como parte de la conversación
+
+Las objeciones suelen interpretarse como obstáculos que deben superarse cuanto antes. Sin embargo, una duda puede revelar que todavía existe información que el interlocutor necesita para valorar la propuesta.
+
+El precio, el tiempo, la confianza, la utilidad o la comparación con otras alternativas pueden generar preguntas legítimas. Responder a ellas con insistencia no necesariamente mejora la conversación.
+
+El primer paso consiste en comprender qué expresa realmente la objeción. Una frase breve puede esconder una preocupación distinta de la que parece indicar. Por eso conviene escuchar, pedir aclaraciones y responder al punto concreto.
+
+También debemos aceptar que algunas objeciones no pueden resolverse porque reflejan una incompatibilidad real. Si una propuesta no se ajusta a las necesidades, las posibilidades o las prioridades del cliente, insistir puede ser contraproducente.
+
+Una respuesta comercial responsable no consiste en neutralizar cualquier duda, sino en proporcionar información suficiente para que pueda evaluarse.
+
+Cuando las objeciones se reciben con serenidad, la conversación puede ganar profundidad. El vendedor deja de reaccionar defensivamente y empieza a utilizar las preguntas como una oportunidad para aclarar expectativas.
+
+## La decisión pertenece al cliente
+
+La comunicación persuasiva tiene un límite que no debemos perder de vista: la decisión final corresponde a la persona que recibe la propuesta.
+
+Nuestro papel consiste en explicar, responder, orientar y facilitar la comprensión. No consiste en eliminar la libertad de elección ni en convertir cada conversación en una obligación de compra.
+
+Esta diferencia resulta fundamental para entender la influencia consciente. Podemos organizar mejor un mensaje, utilizar preguntas pertinentes y presentar una propuesta de forma atractiva, pero no debemos confundir esas habilidades con el derecho a decidir por otra persona.
+
+Una decisión informada necesita tiempo cuando la situación lo requiere, información comprensible y ausencia de presiones artificiales. La urgencia solo tiene sentido cuando responde a una condición real que puede explicarse con transparencia.
+
+Aceptar un «no» también forma parte de una comunicación profesional. No todas las personas necesitan lo que ofrecemos y no todas se encuentran en el momento adecuado para adquirirlo.
+
+Respetar esa realidad protege la credibilidad del vendedor y evita relaciones basadas en expectativas equivocadas.
+
+La venta puede ser una consecuencia de una buena conversación, pero no debe convertirse en el único criterio para valorar su calidad.
+
+## La relación después de la venta
+
+La experiencia comercial continúa después de la decisión de compra. La entrega, la atención posterior, la resolución de dudas y el cumplimiento de lo prometido forman parte de la relación que se ha establecido.
+
+Una venta puede generar satisfacción inicial y, aun así, deteriorarse si la experiencia posterior no corresponde con las expectativas. Por eso, la comunicación no debería desaparecer una vez completada la transacción.
+
+La fidelización no se construye únicamente mediante mensajes promocionales o recordatorios de compra. También depende de que el cliente encuentre coherencia entre la propuesta original y el servicio recibido.
+
+Escuchar comentarios, atender incidencias y ofrecer información útil puede ayudar a mantener una relación profesional más sólida.
+
+Esto no significa que cada cliente vaya a convertirse en un comprador recurrente. La continuidad depende de la utilidad real de la oferta y de la experiencia concreta de cada persona.
+
+Una relación comercial bien cuidada puede favorecer recomendaciones y nuevas oportunidades, pero su fundamento debe seguir siendo la confianza, no la presión para repetir una compra.
+
+## La comunicación comercial en entornos digitales
+
+Los principios de la comunicación persuasiva también tienen aplicación en páginas web, correos electrónicos, redes sociales, presentaciones y otros espacios digitales.
+
+La diferencia es que, en muchos de estos contextos, no existe una conversación presencial inmediata. El mensaje debe ofrecer suficiente claridad para que el usuario pueda comprender la propuesta sin depender de una explicación verbal.
+
+Una página comercial, por ejemplo, necesita organizar la información de manera que el visitante pueda identificar qué se ofrece, para quién puede ser útil y cuáles son las condiciones relevantes.
+
+En el correo electrónico, la pertinencia del mensaje y la claridad del propósito influyen en la experiencia del destinatario. En redes sociales, la comunicación necesita adaptarse al contexto sin perder consistencia.
+
+La automatización puede ayudar a organizar determinados procesos, pero no sustituye el criterio necesario para comunicarse con personas reales. Una secuencia de mensajes no debería convertirse en una sucesión de presiones ni ignorar las respuestas del usuario.
+
+En cualquier canal digital conviene respetar la privacidad, ofrecer información veraz y facilitar que cada persona pueda decidir cómo continuar la interacción.
+
+La tecnología amplía las posibilidades de comunicación. La responsabilidad de utilizarla adecuadamente sigue correspondiendo a quien diseña y ejecuta el proceso comercial.
+
+## Una identidad comercial coherente
+
+La manera en que vendemos también contribuye a construir nuestra identidad profesional.
+
+No basta con utilizar un lenguaje atractivo si nuestra conducta transmite lo contrario. La credibilidad depende de que exista correspondencia entre el mensaje, la propuesta, el trato y la experiencia que recibe el cliente.
+
+Una identidad comercial coherente no necesita imitar estilos ajenos ni recurrir a una personalidad artificial. Puede desarrollarse a partir de una forma reconocible de explicar, escuchar, responder y cumplir compromisos.
+
+Esto resulta especialmente importante para profesionales independientes, emprendedores y personas que representan directamente sus propios productos o servicios. En estos casos, la comunicación comercial forma parte de la percepción que el público construye sobre la marca personal.
+
+La consistencia también requiere reconocer los límites de nuestro conocimiento. No siempre tendremos una respuesta inmediata, y admitirlo puede ser más profesional que improvisar una explicación poco fiable.
+
+La confianza a largo plazo se apoya en comportamientos repetidos, no en una intervención brillante aislada.
+
+Cuando nuestra identidad comercial refleja lo que realmente podemos ofrecer, la comunicación se vuelve más natural y sostenible.
+
+## A quién puede interesar esta perspectiva
+
+La comunicación persuasiva sin presión puede resultar especialmente relevante para quienes necesitan presentar productos, servicios o propuestas profesionales y desean mejorar la calidad de sus conversaciones comerciales.
+
+Puede interesar a emprendedores, vendedores, profesionales independientes, consultores, creadores de productos digitales y personas que gestionan directamente la relación con sus clientes.
+
+También puede aportar una perspectiva útil a quienes trabajan en marketing, atención comercial o desarrollo de relaciones profesionales, especialmente cuando necesitan explicar propuestas complejas de forma comprensible.
+
+No se trata de convertir todas las conversaciones en oportunidades de venta ni de utilizar recursos psicológicos para obtener respuestas automáticas. Se trata de comprender mejor cómo se construye una interacción comercial y qué elementos pueden facilitar una decisión informada.
+
+La capacidad de escuchar, formular preguntas pertinentes, presentar valor y responder a las dudas puede desarrollarse mediante práctica y reflexión. No depende de una fórmula universal ni produce resultados idénticos en todos los contextos.
+
+El interés de esta perspectiva está en mejorar la calidad de la comunicación y reconocer que una relación comercial sólida necesita algo más que argumentos.
+
+Vender sin presionar exige comprender que la influencia tiene sentido cuando respeta a la persona que recibe el mensaje.
+
+---
+
+# 6. Criterios de diseño y presentación
+
+Adaptar el contenido al sistema visual que ya utiliza FG Perspectiva.
+
+La ficha debe mantener una apariencia editorial, ordenada y coherente con la identidad del sitio.
+
+### Encabezado
+
+Presentar los elementos en este orden:
+
+1. Título del libro.
+2. Subtítulo oficial.
+3. Línea editorial complementaria.
+4. Autor: Francisco González.
+
+No incorporar el encabezado «Sobre el libro».
+
+No repetir el subtítulo mediante una segunda frase comercial.
+
+### Introducción
+
+La introducción debe aparecer después del encabezado editorial y antes del índice de contenidos.
+
+### Índice de contenidos
+
+El índice debe aparecer exactamente después de la introducción y antes del primer apartado del desarrollo temático.
+
+Utilizar:
+
+**Título:** Contenido de esta página.
+
+**Texto auxiliar:** Accede directamente al apartado que te interesa.
+
+El índice debe ser visible, funcional y específico de esta ficha. Utilizar los trece enlaces y sus identificadores definidos en la redacción.
+
+No situarlo inmediatamente debajo del Hero, antes de la introducción ni dentro de los metadatos SEO.
+
+En escritorio puede organizarse en dos columnas y en móvil en una sola columna, siempre que se mantenga la legibilidad y no se produzcan desbordamientos.
+
+Los enlaces deben conducir a los encabezados H2 reales de la página. No crear anclas ficticias ni duplicar identificadores.
+
+### Desarrollo
+
+Los trece apartados deben utilizar encabezados H2 y conservar una jerarquía semántica ordenada.
+
+No convertir todos los párrafos en tarjetas. Evitar elementos decorativos que interrumpan la lectura.
+
+No añadir imágenes genéricas, fotografías de stock, ilustraciones conceptuales ni imágenes que representen el contenido de la categoría. La portada oficial del libro debe conservarse.
+
+Mantener los componentes existentes que sean compatibles con la nueva estructura editorial.
+
+### Adaptación móvil
+
+Verificar:
+
+- Lectura cómoda de los párrafos.
+- Correcta jerarquía de títulos.
+- Índice de contenidos accesible.
+- Anclas que no queden ocultas bajo el encabezado fijo, si existe.
+- Ausencia de desplazamiento horizontal.
+- Portada correctamente dimensionada.
+- Botones de compra visibles y operativos.
+- Modal correctamente adaptado a pantallas pequeñas.
+
+---
+
+# 7. SEO ON-PAGE
+
+La ficha debe responder a una intención de búsqueda concreta: personas que buscan mejorar sus técnicas de venta persuasiva, aprender a comunicarse comercialmente sin presión y comprender mejor la relación entre influencia, confianza y decisión de compra.
+
+Las palabras clave siguientes son una propuesta inicial de orientación semántica. No deben presentarse como resultados de una investigación de volúmenes de búsqueda que no se haya realizado.
+
+### Palabra clave principal
+
+**técnicas de venta persuasiva**
+
+### Palabras clave secundarias
+
+- comunicación persuasiva.
+- venta emocional.
+- ventas sin presión.
+- psicología de ventas.
+- conexión con el cliente.
+- influencia comercial.
+- comunicación comercial.
+- técnicas de persuasión en ventas.
+
+Distribuirlas de forma natural. No forzar repeticiones ni crear párrafos artificiales para introducir términos.
+
+### Etiqueta Title propuesta
+
+El Vendedor Hipnótico: técnicas de venta persuasiva | FG Perspectiva
+
+### Meta description propuesta
+
+Descubre cómo mejorar la comunicación comercial, comprender al cliente y presentar propuestas de valor mediante técnicas de venta persuasiva sin presión.
+
+La descripción debe conservar una extensión adecuada para los resultados de búsqueda y no convertirse en una lista de palabras clave.
+
+### URL canónica
+
+Utilizar la URL canónica correspondiente a la ruta que ya tiene asignada la ficha en el proyecto.
+
+No modificar el slug ni crear una segunda URL para el mismo contenido.
+
+### Encabezados
+
+- Un único H1: El Vendedor hipnótico.
+- Los trece apartados editoriales deben ser H2.
+- No utilizar encabezados para decorar texto.
+- Mantener una jerarquía H1-H2-H3 coherente.
+
+### Enlaces internos
+
+Conservar las migas de pan existentes y su funcionamiento.
+
+La ficha debe mantener su relación con la categoría Mindset y con la Biblioteca, de acuerdo con la arquitectura de navegación vigente.
+
+No crear enlaces internos repetitivos ni añadir bloques de enlaces que no aporten valor.
+
+### Open Graph y Twitter Cards
+
+Actualizar los metadatos sociales para que correspondan al libro:
+
+- og:type: book o el tipo compatible que ya utilice correctamente el proyecto.
+- og:title: título editorial de la ficha.
+- og:description: descripción específica de esta página.
+- og:image: portada oficial existente.
+- og:url: URL canónica.
+- twitter:card: summary_large_image, si es compatible con la implementación actual.
+- twitter:title, twitter:description y twitter:image: coherentes con los anteriores.
+
+No inventar imágenes ni sustituir la portada.
+
+---
+
+# 8. Datos estructurados
+
+Revisar la implementación actual y conservar el sistema de datos estructurados del proyecto.
+
+La ficha debe disponer de:
+
+1. **Book:** para identificar el libro.
+2. **BreadcrumbList:** para representar la jerarquía de navegación.
+
+El objeto Book debe utilizar exclusivamente datos verificables:
+
+- Nombre: El Vendedor hipnótico.
+- Autor: Francisco González.
+- Imagen: portada oficial.
+- URL: URL canónica.
+- Descripción: texto original y específico, coherente con el enfoque de la ficha.
+
+Si el proyecto dispone de datos reales adicionales, se pueden conservar. No inventar ISBN, precio, moneda, valoración, reseñas, editorial, número de páginas ni disponibilidad.
+
+No crear ofertas ficticias ni propiedades comerciales que no estén respaldadas por los datos existentes.
+
+Validar que el JSON-LD sea sintácticamente correcto y no genere errores de implementación.
+
+---
+
+# 9. Requisitos técnicos de implementación
+
+Antes de editar:
+
+1. Identificar el componente y los archivos que renderizan la ficha.
+2. Localizar el origen de los datos del libro en el catálogo.
+3. Identificar los componentes de compra y sus dependencias.
+4. Comprobar cómo se generan los metadatos SEO.
+5. Revisar el sistema de rutas y migas de pan.
+6. Crear una copia de seguridad completa de los archivos que se modificarán.
+
+No realizar una reescritura general del sistema de fichas. No modificar componentes globales si la intervención puede resolverse dentro de los archivos específicos de esta ficha.
+
+Implementar el contenido aprobado sin alterar los datos comerciales.
+
+Comprobar que los identificadores de las trece anclas coinciden exactamente con los enlaces del índice.
+
+Verificar que los enlaces externos mantienen sus destinos originales y el comportamiento de seguridad que ya utilice el proyecto.
+
+---
+
+# 10. Pruebas obligatorias y control de regresión
+
+Al finalizar, ejecutar las comprobaciones disponibles en el proyecto.
+
+### Contenido y estructura
+
+- El título y subtítulo son correctos.
+- La línea editorial complementaria aparece una sola vez.
+- No existe una sección «Sobre el libro».
+- La introducción aparece antes del índice.
+- El índice aparece después de la introducción.
+- Los trece enlaces del índice funcionan.
+- Todos los H2 tienen su identificador correcto.
+- El contenido completo está presente.
+- No se han eliminado párrafos para reducir artificialmente la extensión.
+- No se han introducido textos genéricos de otras fichas.
+
+### SEO y renderizado
+
+- Title y meta description correctos.
+- Canonical correcta.
+- Open Graph y Twitter Cards correctos.
+- JSON-LD Book y BreadcrumbList válidos.
+- No hay errores de TypeScript.
+- No hay errores de renderizado.
+- La ruta sigue funcionando en prerender.
+- No hay títulos H1 duplicados.
+- No hay identificadores HTML duplicados.
+- No hay enlaces internos rotos.
+
+### Regresión comercial — prueba prioritaria
+
+Comparar la ficha anterior con la nueva y verificar expresamente:
+
+- Los botones superiores siguen en su ubicación original.
+- El acceso a las ediciones sigue funcionando.
+- El modal se abre y se cierra correctamente.
+- Los formatos disponibles siguen apareciendo.
+- Los enlaces comerciales corresponden a sus formatos.
+- El botón de compra inferior sigue presente.
+- El botón inferior permanece en la misma ubicación relativa dentro de la ficha.
+- El botón inferior funciona y conduce al comportamiento comercial original.
+- No hay botones duplicados, ocultos o desplazados.
+- La experiencia de compra no ha sufrido modificaciones.
+
+Realizar pruebas tanto en escritorio como en móvil.
+
+### Regresión general
+
+Confirmar que no se han modificado:
+
+- Otras fichas de libros.
+- La categoría Mindset.
+- La Biblioteca.
+- La Home.
+- Sistemas Digitales.
+- La navegación global.
+- El footer.
+- Los componentes comerciales compartidos.
+
+No desplegar en Vercel.
+
+---
+
+# 11. Informe final obligatorio
+
+Al terminar, presentar un informe técnico claro y verificable con estos apartados:
+
+1. **Archivos modificados:** enumerar cada archivo y explicar su función.
+2. **Copia de seguridad:** indicar su ubicación exacta.
+3. **Contenido editorial:** confirmar la integración de todos los apartados y del índice.
+4. **SEO:** detallar Title, meta description, canonical, Open Graph, Twitter Cards y datos estructurados.
+5. **Navegación:** confirmar que las trece anclas funcionan.
+6. **Diseño responsive:** informar de las pruebas realizadas en escritorio y móvil.
+7. **Estructura comercial:** describir qué se verificó y confirmar expresamente que los botones conservan su ubicación y funcionamiento.
+8. **Botón inferior:** indicar de forma explícita que permanece presente, en su posición original y operativo, o informar de cualquier incidencia.
+9. **Pruebas técnicas:** resultado de TypeScript, build, prerender y validaciones disponibles.
+10. **Regresión:** confirmar qué páginas y componentes se comprobaron para asegurar que no sufrieron modificaciones.
+11. **Despliegue:** confirmar que no se realizó ningún despliegue en Vercel.
+
+No afirmar que una prueba se ha superado si no se ha ejecutado. Diferenciar claramente entre comprobaciones realizadas, comprobaciones no disponibles e incidencias pendientes.
+
+---
+
+## 12. Criterio final de aceptación
+
+La intervención se considerará satisfactoria únicamente si conseguimos simultáneamente:
+
+- Una ficha editorial original, profunda y específica para El Vendedor hipnótico.
+- Una estructura semántica y SEO correctamente implementada.
+- Un índice de contenidos funcional situado después de la introducción.
+- La conservación íntegra de los datos oficiales del libro.
+- La conservación de todos los enlaces y formatos comerciales.
+- La conservación de todos los botones de compra en sus ubicaciones originales.
+- La presencia y funcionamiento del botón de compra situado al final de la ficha.
+- La ausencia de modificaciones en el resto del sitio.
+- La validación técnica del resultado en el entorno local.
+
+**Prioridad absoluta: mejorar la ficha editorial sin alterar la experiencia comercial existente. No sacrificar ningún elemento de compra para conseguir un cambio visual o editorial.**
