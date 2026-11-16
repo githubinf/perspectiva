@@ -103,6 +103,7 @@ const PurchaseModal: React.FC<PurchaseModalProps> = ({ isOpen, onClose, bookTitl
     'Amazon': 1,
     'Clickbank': 2,
     'Draft2Digital': 3,
+    'Books2Read': 3,
     'Payhip': 4,
     'Lulu': 5
   };

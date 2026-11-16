@@ -977,7 +977,51 @@ export const getPageMeta = (rawPath: string): PageMeta => {
       author: {
         '@type': 'Person',
         name: 'Francisco González'
-      }
+      },
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/EBook',
+        'https://schema.org/Hardcover',
+        'https://schema.org/AudiobookFormat'
+      ],
+      workExample: [
+        {
+          '@type': 'Book',
+          name: 'El Vendedor hipnótico (Tapa blanda)',
+          bookFormat: 'https://schema.org/Paperback',
+          url: 'https://www.amazon.com/dp/B0CFZJK3YF'
+        },
+        {
+          '@type': 'Book',
+          name: 'El Vendedor hipnótico (Kindle)',
+          bookFormat: 'https://schema.org/EBook',
+          url: 'https://www.amazon.com/dp/B0CG1ZHVZ6'
+        },
+        {
+          '@type': 'Book',
+          name: 'El Vendedor hipnótico (Tapa dura)',
+          bookFormat: 'https://schema.org/Hardcover',
+          url: 'https://www.amazon.com/dp/B0CZSYKLRZ'
+        },
+        {
+          '@type': 'Audiobook',
+          name: 'El Vendedor hipnótico (Audiolibro en Amazon / Audible)',
+          bookFormat: 'https://schema.org/AudiobookFormat',
+          url: 'https://www.amazon.com/dp/B0H51GRRLJ'
+        },
+        {
+          '@type': 'Book',
+          name: 'El Vendedor hipnótico (Ebook en Google Play)',
+          bookFormat: 'https://schema.org/EBook',
+          url: 'https://play.google.com/store/books/details?id=ViOdEQAAQBAJ'
+        },
+        {
+          '@type': 'Audiobook',
+          name: 'El Vendedor hipnótico (Audiolibro en Google Play)',
+          bookFormat: 'https://schema.org/AudiobookFormat',
+          url: 'https://play.google.com/store/audiobooks/details?id=AQAAAEDqXVcdrM'
+        }
+      ]
     };
 
     if (validCatalogOptions.length > 0) {

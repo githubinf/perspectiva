@@ -417,20 +417,20 @@ export const FEATURED_BOOKS: BookCategory[] = [
           },
           { 
             platform: 'Amazon', 
-            cta: 'Kindle ebook',
-            format: 'Kindle',
-            url: 'https://www.amazon.com/dp/B01EVJA21W', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
-            emoji: '📱',
-            rel: 'nofollow noopener noreferrer'
-          },
-          { 
-            platform: 'Amazon', 
             cta: 'Tapa dura',
             format: 'Tapa dura',
             url: 'https://www.amazon.com/dp/B09RGY5FF8', 
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
             emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          { 
+            platform: 'Amazon', 
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B01EVJA21W', 
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
             rel: 'nofollow noopener noreferrer'
           },
           { 
@@ -590,11 +590,11 @@ export const FEATURED_BOOKS: BookCategory[] = [
             cta: 'Comprar en Amazon'
           },
           { 
-            platform: 'Lulu', 
-            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/mi-blog-y-los-programas-de-afiliados/ebook/product-zmwkppj.html', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg',
-            emoji: '📚',
-            cta: 'Ver en Lulu'
+            platform: 'Draft2Digital', 
+            url: 'https://books2read.com/u/mdJkDR', 
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/books2read_logo.png',
+            emoji: '📖',
+            cta: 'Ver en Draft2Digital'
           },
           { 
             platform: 'Clickbank', 
@@ -604,18 +604,18 @@ export const FEATURED_BOOKS: BookCategory[] = [
             cta: 'Oferta Clickbank'
           },
           { 
-            platform: 'Draft2Digital', 
-            url: 'https://books2read.com/u/mdJkDR', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/draft2digital-logo.jpg',
-            emoji: '📖',
-            cta: 'Ver en Draft2Digital'
-          },
-          { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/hYfbn', 
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
+          },
+          { 
+            platform: 'Lulu', 
+            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/mi-blog-y-los-programas-de-afiliados/ebook/product-zmwkppj.html', 
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg',
+            emoji: '📚',
+            cta: 'Ver en Lulu'
           }
         ],
         extraInfo: [
@@ -826,13 +826,6 @@ export const FEATURED_BOOKS: BookCategory[] = [
             cta: 'Comprar en Amazon'
           },
           { 
-            platform: 'Lulu', 
-            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/dinero-con-clickbank/ebook/product-958dkwn.html', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg',
-            emoji: '📚',
-            cta: 'Ver en Lulu'
-          },
-          { 
             platform: 'Clickbank', 
             url: 'https://dineroconclk.vercel.app/', 
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
@@ -845,6 +838,13 @@ export const FEATURED_BOOKS: BookCategory[] = [
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
+          },
+          { 
+            platform: 'Lulu', 
+            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/dinero-con-clickbank/ebook/product-958dkwn.html', 
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg',
+            emoji: '📚',
+            cta: 'Ver en Lulu'
           }
         ],
         extraInfo: [
@@ -876,11 +876,11 @@ export const FEATURED_BOOKS: BookCategory[] = [
             cta: 'Comprar en Amazon'
           },
           { 
-            platform: 'Lulu', 
-            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/tips-de-marketing-para-afiliados/ebook/product-jej9vm4.html', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg',
-            emoji: '📚',
-            cta: 'Ver en Lulu'
+            platform: 'Draft2Digital', 
+            url: 'https://books2read.com/u/m28gXr', 
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/books2read_logo.png',
+            emoji: '📖',
+            cta: 'Ver en Draft2Digital'
           },
           { 
             platform: 'Clickbank', 
@@ -890,18 +890,18 @@ export const FEATURED_BOOKS: BookCategory[] = [
             cta: 'Oferta Clickbank'
           },
           { 
-            platform: 'Draft2Digital', 
-            url: 'https://books2read.com/u/m28gXr', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/draft2digital-logo.jpg',
-            emoji: '📖',
-            cta: 'Ver en Draft2Digital'
-          },
-          { 
             platform: 'Payhip', 
             url: 'https://payhip.com/b/bCMT3', 
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
+          },
+          { 
+            platform: 'Lulu', 
+            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/tips-de-marketing-para-afiliados/ebook/product-jej9vm4.html', 
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg',
+            emoji: '📚',
+            cta: 'Ver en Lulu'
           }
         ],
         extraInfo: [
@@ -1176,20 +1176,20 @@ export const FEATURED_BOOKS: BookCategory[] = [
           },
           {
             platform: 'Amazon',
-            cta: 'Kindle ebook',
-            format: 'Kindle',
-            url: 'https://www.amazon.com/dp/B0CXZC4XLL',
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
-            emoji: '📱',
-            rel: 'nofollow noopener noreferrer'
-          },
-          {
-            platform: 'Amazon',
             cta: 'Tapa dura',
             format: 'Tapa dura',
             url: 'https://www.amazon.com/dp/B0CY1XYJS7',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
             emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B0CXZC4XLL',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
             rel: 'nofollow noopener noreferrer'
           },
           {
@@ -1240,17 +1240,17 @@ export const FEATURED_BOOKS: BookCategory[] = [
           },
           {
             platform: 'Amazon',
-            cta: 'Edición Kindle',
-            url: 'https://www.amazon.com/dp/B0HKPHYRYX',
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
-            emoji: '📱'
-          },
-          {
-            platform: 'Amazon',
             cta: 'Tapa dura',
             url: 'https://www.amazon.com/dp/B0HKPZMYJ6',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
             emoji: '📚'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Edición Kindle',
+            url: 'https://www.amazon.com/dp/B0HKPHYRYX',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
+            emoji: '📱'
           }
         ],
         extraInfo: [
@@ -1269,8 +1269,9 @@ export const FEATURED_BOOKS: BookCategory[] = [
         path: '/el-vendedor-hipnotico/',
         categorySlug: 'mindset',
         title: 'El Vendedor hipnótico',
+        subtitle: 'Domina el arte de la seducción emocional para vender sin presionar.',
         description: 'Mejora tu persuasión conectando emocionalmente con tus clientes.',
-        url: 'https://amzn.to/3LZRdvV',
+        url: 'https://www.amazon.com/dp/B0CFZJK3YF',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/8-el-vendedor-hipnotico-libro-400.jpg',
         audiobookOptions: [
           { platform: 'Spotify', url: 'https://open.spotify.com/show/0DrnOq1TRjB9OX5Xa6hyz5' },
@@ -1278,51 +1279,89 @@ export const FEATURED_BOOKS: BookCategory[] = [
           { platform: 'Everand', url: 'https://es.everand.com/audiobook/967843087/El-Vendedor-Hipnotico-Domina-el-arte-de-la-seduccion-emocional-para-vender-sin-presionar' },
           { platform: 'Storytel', url: 'https://www.storytel.com/tv/books/el-vendedor-hipn%C3%B3tico-domina-el-arte-de-la-seducci%C3%B3n-emocional-para-vender-sin-presionar-13219210?utm_source=internal&utm_medium=app_link&utm_campaign=share_links' },
           { platform: 'Google Play', url: 'https://play.google.com/store/audiobooks/details?id=AQAAAEDqXVcdrM' },
-          { platform: 'Amazon', url: 'https://amzn.to/4vMYGTh' }
+          { platform: 'Amazon', url: 'https://www.amazon.com/dp/B0H51GRRLJ' }
         ],
         purchaseOptions: [
-          { 
-            platform: 'Amazon', 
-            url: 'https://amzn.to/3LZRdvV', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.jpg',
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B0CFZJK3YF',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
             emoji: '🛒',
-            cta: 'Comprar en Amazon'
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
           },
-          { 
-            platform: 'Clickbank', 
-            url: 'https://elvendedorhipnotico.vercel.app/', 
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B0CZSYKLRZ',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B0CG1ZHVZ6',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            url: 'https://www.amazon.com/dp/B0H51GRRLJ',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Google Play',
+            format: 'Ebook',
+            url: 'https://play.google.com/store/books/details?id=ViOdEQAAQBAJ',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/google_play_ebook.jpg',
+            emoji: '📱',
+            cta: 'Ebook en Google Play'
+          },
+          {
+            platform: 'Google Play',
+            format: 'Audiolibro',
+            url: 'https://play.google.com/store/audiobooks/details?id=AQAAAEDqXVcdrM',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/google_play_audiolibro.jpg',
+            emoji: '🎧',
+            cta: 'Audiolibro en Google Play'
+          },
+          {
+            platform: 'Books2Read',
+            url: 'https://books2read.com/u/4A85vk',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/books2read_logo.png',
+            emoji: '📖',
+            cta: 'Ver en Books2Read'
+          },
+          {
+            platform: 'Clickbank',
+            url: 'https://elvendedorhipnotico.vercel.app/',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
-          { 
-            platform: 'Draft2Digital', 
-            url: 'https://books2read.com/u/4A85vk', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/draft2digital-logo.jpg',
-            emoji: '📖',
-            cta: 'Ver en Draft2Digital'
-          },
-          { 
-            platform: 'Payhip', 
-            url: 'https://payhip.com/b/JWv4w', 
+          {
+            platform: 'Payhip',
+            url: 'https://payhip.com/b/JWv4w',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
             emoji: '💎',
             cta: 'Descarga Directa'
           },
-          { 
-            platform: 'Lulu', 
-            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/el-vendedor-hipn%C3%B3tico/ebook/product-84j9eep.html', 
+          {
+            platform: 'Lulu',
+            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/el-vendedor-hipn%C3%B3tico/ebook/product-84j9eep.html',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg',
             emoji: '📚',
             cta: 'Ver en Lulu'
-          },
-          { 
-            platform: 'Google Play', 
-            format: 'Ebook',
-            url: 'https://play.google.com/store/books/details/Francisco_Gonz%C3%A1lez_El_Vendedor_Hipn%C3%B3tico?id=ViOdEQAAQBAJ', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/google_play_ebook.jpg',
-            emoji: '📱',
-            cta: 'Ver en Google Play'
           }
         ],
         extraInfo: [

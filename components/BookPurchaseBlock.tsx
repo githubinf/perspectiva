@@ -5,13 +5,15 @@ export const OFFICIAL_PLATFORM_LOGOS = {
   amazonTapaBlanda: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
   amazonKindleEbook: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
   amazonTapaDura: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+  amazonAudibleAudiolibro: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
   googlePlayAudiolibro: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/google_play_audiolibro.jpg',
   googlePlayEbook: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/google_play_ebook.jpg',
   googlePlayBook: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/google_play_book.png',
   kofi: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/ko-fi-logo.jpg',
   clickbank: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
   payhip: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
-  draft2digital: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/draft2digital-logo.jpg',
+  draft2digital: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/books2read_logo.png',
+  books2read: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/books2read_logo.png',
   lulu: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg'
 } as const;
 
@@ -40,19 +42,9 @@ export function resolvePurchaseTiles(book: BookItem): PurchaseTile[] {
     const cta = (opt.cta || '').toLowerCase().trim();
     const format = (opt.format || '').toLowerCase().trim();
 
-    // 1. Amazon: diferenciar las tres ediciones
+    // 1. Amazon: Tapa blanda (1) -> Tapa dura (2) -> Kindle (3) -> Audiolibro/Audible (4)
     if (p === 'amazon' || opt.url.includes('amazon') || opt.url.includes('amzn.to')) {
-      if (cta.includes('kindle') || format.includes('kindle')) {
-        tiles.push({
-          id: `amazon-kindle-${i}`,
-          platform: 'Amazon',
-          format: 'Kindle ebook',
-          tooltip: 'Amazon · Kindle ebook',
-          logo: OFFICIAL_PLATFORM_LOGOS.amazonKindleEbook,
-          url: opt.url,
-          priority: 2
-        });
-      } else if (cta.includes('tapa dura') || format.includes('tapa dura') || cta.includes('hardcover')) {
+      if (cta.includes('tapa dura') || format.includes('tapa dura') || cta.includes('hardcover') || format.includes('hardcover')) {
         tiles.push({
           id: `amazon-tapadura-${i}`,
           platform: 'Amazon',
@@ -60,7 +52,27 @@ export function resolvePurchaseTiles(book: BookItem): PurchaseTile[] {
           tooltip: 'Amazon · Tapa dura',
           logo: OFFICIAL_PLATFORM_LOGOS.amazonTapaDura,
           url: opt.url,
+          priority: 2
+        });
+      } else if (cta.includes('kindle') || format.includes('kindle')) {
+        tiles.push({
+          id: `amazon-kindle-${i}`,
+          platform: 'Amazon',
+          format: 'Kindle ebook',
+          tooltip: 'Amazon · Kindle ebook',
+          logo: OFFICIAL_PLATFORM_LOGOS.amazonKindleEbook,
+          url: opt.url,
           priority: 3
+        });
+      } else if (cta.includes('audiolibro') || format.includes('audiolibro') || cta.includes('audible') || format.includes('audible')) {
+        tiles.push({
+          id: `amazon-audiolibro-${i}`,
+          platform: 'Amazon',
+          format: 'Audiolibro',
+          tooltip: 'Amazon · Audiolibro (Audible)',
+          logo: OFFICIAL_PLATFORM_LOGOS.amazonAudibleAudiolibro,
+          url: opt.url,
+          priority: 4
         });
       } else {
         // Prioridad comercial establecida: tapa blanda como principal
@@ -75,8 +87,8 @@ export function resolvePurchaseTiles(book: BookItem): PurchaseTile[] {
         });
       }
     }
-    // 2. Google Play Books
-    else if (p.includes('google play') || p.includes('google_play') || p.includes('googleplay')) {
+    // 2. Google Play Books: Ebook (5) -> Audiolibro (6)
+    else if (p.includes('google play') || p.includes('google_play') || p.includes('googleplay') || opt.url.includes('play.google.com')) {
       if (format === 'audiolibro' || cta.includes('audiolibro')) {
         tiles.push({
           id: `googleplay-audiolibro-${i}`,
@@ -85,7 +97,7 @@ export function resolvePurchaseTiles(book: BookItem): PurchaseTile[] {
           tooltip: 'Google Play · Audiolibro',
           logo: OFFICIAL_PLATFORM_LOGOS.googlePlayAudiolibro,
           url: opt.url,
-          priority: 35
+          priority: 6
         });
       } else if (format === 'ebook' || cta.includes('ebook') || opt.emoji === '📱') {
         tiles.push({
@@ -95,7 +107,7 @@ export function resolvePurchaseTiles(book: BookItem): PurchaseTile[] {
           tooltip: 'Google Play · Ebook',
           logo: OFFICIAL_PLATFORM_LOGOS.googlePlayEbook,
           url: opt.url,
-          priority: 35
+          priority: 5
         });
       } else if (format === 'libro' || format === 'tapa blanda' || format === 'tapa dura' || cta.includes('libro')) {
         tiles.push({
@@ -105,34 +117,22 @@ export function resolvePurchaseTiles(book: BookItem): PurchaseTile[] {
           tooltip: 'Google Play · Libro',
           logo: OFFICIAL_PLATFORM_LOGOS.googlePlayBook,
           url: opt.url,
-          priority: 35
+          priority: 11
         });
       }
       // Nota: Si el formato no estuviera confirmado en los datos, no se deduce por URL ni se asigna variante ficticia.
     }
-    // 3. ClickBank
-    else if (p.includes('clickbank')) {
+    // 3. Books2Read / Draft2Digital (7)
+    else if (p.includes('books2read')) {
       tiles.push({
-        id: `clickbank-${i}`,
-        platform: 'ClickBank',
-        tooltip: 'ClickBank',
-        logo: OFFICIAL_PLATFORM_LOGOS.clickbank,
+        id: `books2read-${i}`,
+        platform: 'Books2Read',
+        tooltip: 'Books2Read',
+        logo: OFFICIAL_PLATFORM_LOGOS.books2read,
         url: opt.url,
-        priority: 10
+        priority: 7
       });
     }
-    // 4. Payhip
-    else if (p.includes('payhip')) {
-      tiles.push({
-        id: `payhip-${i}`,
-        platform: 'Payhip',
-        tooltip: 'Payhip',
-        logo: OFFICIAL_PLATFORM_LOGOS.payhip,
-        url: opt.url,
-        priority: 20
-      });
-    }
-    // 5. Draft2Digital
     else if (p.includes('draft2digital')) {
       tiles.push({
         id: `draft2digital-${i}`,
@@ -140,10 +140,32 @@ export function resolvePurchaseTiles(book: BookItem): PurchaseTile[] {
         tooltip: 'Draft2Digital',
         logo: OFFICIAL_PLATFORM_LOGOS.draft2digital,
         url: opt.url,
-        priority: 30
+        priority: 7
       });
     }
-    // 6. Lulu
+    // 4. ClickBank (8)
+    else if (p.includes('clickbank')) {
+      tiles.push({
+        id: `clickbank-${i}`,
+        platform: 'ClickBank',
+        tooltip: 'ClickBank',
+        logo: OFFICIAL_PLATFORM_LOGOS.clickbank,
+        url: opt.url,
+        priority: 8
+      });
+    }
+    // 5. Payhip (9)
+    else if (p.includes('payhip')) {
+      tiles.push({
+        id: `payhip-${i}`,
+        platform: 'Payhip',
+        tooltip: 'Payhip',
+        logo: OFFICIAL_PLATFORM_LOGOS.payhip,
+        url: opt.url,
+        priority: 9
+      });
+    }
+    // 6. Lulu (10)
     else if (p.includes('lulu')) {
       tiles.push({
         id: `lulu-${i}`,
@@ -151,10 +173,10 @@ export function resolvePurchaseTiles(book: BookItem): PurchaseTile[] {
         tooltip: 'Lulu',
         logo: OFFICIAL_PLATFORM_LOGOS.lulu,
         url: opt.url,
-        priority: 40
+        priority: 10
       });
     }
-    // 7. Ko-fi
+    // 7. Otras plataformas adicionales después de Lulu (11+)
     else if (p.includes('ko-fi') || p.includes('kofi')) {
       tiles.push({
         id: `kofi-${i}`,
@@ -162,13 +184,23 @@ export function resolvePurchaseTiles(book: BookItem): PurchaseTile[] {
         tooltip: 'Ko-fi',
         logo: OFFICIAL_PLATFORM_LOGOS.kofi,
         url: opt.url,
-        priority: 50
+        priority: 11
       });
     }
-    // Cualquier otra plataforma sin logotipo oficial no se incluye para no inventar recursos
+    else if (opt.logo) {
+      tiles.push({
+        id: `other-${i}`,
+        platform: opt.platform || 'Otra plataforma',
+        format: opt.format,
+        tooltip: opt.format ? `${opt.platform} · ${opt.format}` : (opt.platform || opt.cta || 'Comprar'),
+        logo: opt.logo,
+        url: opt.url,
+        priority: 11
+      });
+    }
   }
 
-  // Ordenar por prioridad establecida (Amazon Tapa blanda primero, luego Kindle, Tapa dura, etc.)
+  // Ordenar según secuencia comercial obligatoria (1..11)
   tiles.sort((a, b) => a.priority - b.priority);
 
   return tiles;
