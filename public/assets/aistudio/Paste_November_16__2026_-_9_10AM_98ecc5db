@@ -1,0 +1,461 @@
+# INSTRUCCIÓN COMPLETA PARA GOOGLE AI STUDIO
+## Implementación de la nueva ficha editorial y SEO de «El Manual del Solopreneur Moderno» — FG Perspectiva
+
+### 1. Objetivo de la intervención
+
+Vamos a sustituir el contenido actual de la ficha del libro **El Manual del Solopreneur Moderno** por una página editorial independiente, con contenido original, sustancial y optimizado para SEO.
+
+La ficha debe tener identidad propia dentro de FG Perspectiva. No debe limitarse a reproducir la descripción comercial de Amazon, reorganizar sus párrafos ni utilizar una plantilla genérica compartida con otras fichas.
+
+El objetivo es ofrecer una página que responda a búsquedas relacionadas con la creación y gestión de un negocio unipersonal, explique el problema que aborda el libro, aporte contexto útil al lector y presente el contenido de la obra con claridad.
+
+La intervención debe limitarse exclusivamente a esta ficha. No modificar otras páginas, componentes globales, rutas, categorías, catálogo ni elementos compartidos.
+
+### 2. Datos oficiales que deben conservarse
+
+- **Título:** El Manual del Solopreneur Moderno
+- **Subtítulo:** Cómo crear, organizar y escalar un negocio digital sin empleados ni complicaciones
+- **Autor:** Francisco González
+- **Categoría:** Mindset
+- **Ruta:** `/el-manual-del-solopreneur-moderno/`
+- **Portada oficial:** `https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/22-solopreneur-libro-600.jpg`
+
+**Enlaces de compra oficiales:**
+
+- Kindle: `https://www.amazon.com/dp/B0HKPHYRYX`
+- Tapa blanda: `https://www.amazon.com/dp/B0HKPPV7HH`
+- Tapa dura: `https://www.amazon.com/dp/B0HKPZMYJ6`
+
+No inventar ISBN, precios, valoraciones, número de páginas, fechas de publicación ni características editoriales que no estén verificadas.
+
+Mantener los enlaces comerciales existentes con apertura en nueva pestaña y los atributos `rel="nofollow noopener noreferrer"`. La tapa blanda debe conservar la prioridad visual como opción principal de compra; Kindle y tapa dura pueden presentarse como alternativas.
+
+### 3. Auditoría previa y protección del proyecto
+
+Antes de modificar archivos:
+
+1. Inspeccionar la implementación actual de la ficha y localizar sus componentes, datos, metadatos y estructura de prerenderizado.
+2. Identificar cómo se construyen las fichas de libros en el proyecto, sin asumir que todas utilizan exactamente el mismo componente.
+3. Crear una copia de seguridad de los archivos que vayan a modificarse en:
+
+`/_backup_ficha_manual_solopreneur/`
+
+4. Registrar los archivos originales y comprobar que la copia permite recuperar el estado anterior.
+5. No modificar componentes compartidos si la ficha puede resolverse mediante su propia vista o configuración específica.
+
+La página debe seguir funcionando con la arquitectura actual de FG Perspectiva, React, el enrutamiento y el sistema de prerenderizado existentes.
+
+### 4. Contenido editorial que debe incorporarse
+
+Sustituir el cuerpo editorial actual por el siguiente contenido íntegro. No resumirlo, no eliminar apartados, no convertirlo en una descripción comercial breve y no añadir afirmaciones sobre el libro que no estén respaldadas por su contenido real.
+
+El contenido debe conservar su enfoque y sus argumentos. Se pueden aplicar ajustes tipográficos y de presentación, pero no alterar su sentido.
+
+---
+
+# El Manual del Solopreneur Moderno
+
+**Cómo crear, organizar y escalar un negocio digital sin empleados ni complicaciones**
+
+Tener una habilidad que otras personas necesitan puede ser el comienzo de una actividad profesional independiente. Conseguir clientes puede permitirnos trabajar por cuenta propia. Pero ninguna de esas dos cosas garantiza que hayamos construido un negocio.
+
+Existe una diferencia importante entre vivir de los encargos que conseguimos y dirigir una actividad económica que tenga una estructura, una dirección y unas condiciones de funcionamiento sostenibles. Cuando todas las decisiones, tareas y responsabilidades dependen de una sola persona, esa diferencia deja de ser teórica: se convierte en una cuestión cotidiana.
+
+El solopreneur no necesita reproducir la estructura de una empresa tradicional a pequeña escala. Necesita aprender a organizar su trabajo como propietario de un negocio, no simplemente como alguien que ejecuta tareas para otros.
+
+Este libro aborda precisamente esa transición. Su planteamiento gira alrededor de una cuestión fundamental: cómo construir una actividad independiente que pueda funcionar sin depender de una organización compleja ni de la incorporación constante de otras personas.
+
+## No confundamos trabajar por cuenta propia con dirigir un negocio
+
+Trabajar de manera independiente ofrece autonomía, pero también concentra responsabilidades. Quien trabaja solo suele encargarse de encontrar oportunidades, conversar con posibles clientes, definir lo que ofrece, entregar el trabajo, administrar los ingresos y resolver los problemas que aparecen durante el proceso.
+
+Al principio, esta concentración de funciones puede parecer una consecuencia natural de emprender. Sin embargo, cuando no existe una forma clara de organizar esas responsabilidades, el negocio termina dependiendo de la improvisación.
+
+El problema no consiste necesariamente en tener demasiadas tareas. Consiste en no distinguir cuáles hacen avanzar la actividad, cuáles son imprescindibles y cuáles consumen tiempo sin aportar suficiente valor.
+
+Por eso, construir un negocio unipersonal requiere algo más que dominar una profesión o disponer de una herramienta digital. Hace falta desarrollar criterio para decidir, establecer prioridades y reconocer qué estructura necesita realmente nuestra actividad.
+
+## De profesional independiente a propietario de una actividad económica
+
+Una de las transformaciones más importantes consiste en cambiar la perspectiva desde la que tomamos decisiones.
+
+Un profesional puede concentrarse en completar correctamente el trabajo que le han encargado. El propietario de un negocio debe considerar, además, cómo llega ese trabajo, qué condiciones permiten realizarlo, cuánto valor aporta y qué consecuencias tiene aceptarlo.
+
+Esta diferencia influye en decisiones aparentemente pequeñas: qué servicios ofrecer, qué solicitudes rechazar, cuánto tiempo reservar para cada cliente y qué actividades deben tener prioridad.
+
+No se trata de adoptar una mentalidad empresarial grandilocuente. Se trata de asumir que una actividad independiente necesita dirección.
+
+Cuando no definimos esa dirección, las decisiones urgentes suelen imponerse sobre las importantes. Terminamos aceptando tareas poco convenientes, cambiando continuamente de prioridades y confundiendo estar ocupados con avanzar.
+
+Una estructura unipersonal necesita reglas de funcionamiento que ayuden a evitar esa dispersión.
+
+## La oferta es el punto de partida de un negocio claro
+
+Una habilidad profesional no se convierte automáticamente en una oferta comprensible.
+
+Podemos saber diseñar, escribir, programar, asesorar o desarrollar contenidos y, aun así, tener dificultades para explicar qué problema resolvemos y qué resultado puede esperar un cliente.
+
+Una oferta necesita conectar tres elementos: una necesidad reconocible, una solución concreta y un valor que el cliente pueda comprender.
+
+Cuando estos elementos no están definidos, la comunicación se vuelve imprecisa. El profesional describe sus capacidades, enumera servicios y habla de herramientas, pero el posible comprador sigue sin entender por qué debería contratarlo.
+
+La claridad también ayuda a establecer límites. No todo lo que un cliente solicita tiene que formar parte del servicio. Definir qué incluye una oferta y qué queda fuera permite evitar expectativas confusas y reduce las complicaciones durante la entrega.
+
+El objetivo no es ofrecerlo todo. Es construir una propuesta que podamos explicar, entregar y sostener con los recursos disponibles.
+
+## Una estructura pequeña también necesita organización
+
+Trabajar sin empleados no significa trabajar sin procesos.
+
+Cuando una misma persona se ocupa de distintas funciones, cada tarea puede convertirse en una interrupción de la siguiente. La atención salta de la comunicación con clientes a la administración, de la entrega al marketing y de la planificación a los asuntos urgentes.
+
+Sin una organización mínima, el negocio puede consumir una cantidad desproporcionada de atención.
+
+La solución no consiste en instalar numerosas aplicaciones ni en documentar cada movimiento. Consiste en identificar las actividades que se repiten y establecer una forma sencilla de realizarlas.
+
+Un proceso útil reduce dudas, facilita la continuidad y evita tener que resolver desde cero una tarea que ya hemos realizado anteriormente.
+
+También es importante saber cuándo un sistema deja de ayudar. Si mantener una herramienta o un procedimiento exige más esfuerzo del que ahorra, probablemente hemos añadido complejidad en lugar de eliminarla.
+
+La organización debe estar al servicio del negocio, no convertirse en otro negocio que tengamos que administrar.
+
+## El dinero debe orientar las decisiones, no convertirse en una incógnita
+
+Una actividad independiente puede parecer viable mientras entra dinero, pero eso no significa que conozcamos su situación económica.
+
+Ingresos, gastos, disponibilidad y capacidad para afrontar periodos de menor actividad son cuestiones distintas. Si no las diferenciamos, podemos confundir facturación con beneficio o interpretar como estabilidad una situación que depende de unos pocos encargos.
+
+Conocer los números básicos permite tomar decisiones con mayor criterio. También ayuda a establecer límites: qué gastos podemos asumir, qué ingresos necesitamos y cuánto margen tenemos para reorganizar nuestra actividad.
+
+La cuestión no es convertirnos en especialistas financieros. Es evitar que las decisiones importantes se tomen sin información suficiente.
+
+Un negocio pequeño también necesita disciplina económica. De hecho, cuando no existe un equipo que supervise las operaciones, esa responsabilidad recae directamente en quien lo dirige.
+
+## Conseguir clientes exige iniciativa y conversaciones reales
+
+Uno de los errores habituales al comenzar una actividad independiente es esperar a que el mercado descubra nuestra existencia.
+
+Crear una página, publicar contenidos o preparar perfiles profesionales puede formar parte de una estrategia de captación, pero esas acciones no sustituyen necesariamente el contacto con posibles clientes.
+
+Al principio, necesitamos aprender a generar oportunidades de manera intencionada. Eso implica identificar personas o negocios que podrían necesitar lo que ofrecemos, iniciar conversaciones pertinentes y comprobar si existe una necesidad real.
+
+No todas las conversaciones terminarán en una contratación. Su utilidad también está en ayudarnos a entender cómo se expresa el problema, qué espera el cliente y qué aspectos de nuestra propuesta necesitan mayor claridad.
+
+La captación no debería depender exclusivamente de la esperanza de recibir solicitudes espontáneas. Requiere atención, continuidad y disposición para actuar.
+
+## Vender sin convertir cada conversación en una presión
+
+La venta de servicios profesionales no tiene por qué basarse en discursos agresivos ni en técnicas que obliguen al cliente a tomar una decisión apresurada.
+
+Una conversación comercial puede comenzar por comprender la situación de la otra persona. Escuchar, formular preguntas y aclarar las expectativas permite determinar si existe una relación razonable entre la necesidad y la solución que ofrecemos.
+
+También ayuda a reconocer cuándo no somos la opción adecuada. No todos los posibles clientes necesitan nuestro servicio, y no todas las oportunidades justifican aceptar un encargo.
+
+Una venta bien planteada no termina cuando recibimos una respuesta afirmativa. Continúa en la definición de las condiciones, el alcance del trabajo y los compromisos que asumimos.
+
+La claridad antes de empezar puede evitar muchos problemas después.
+
+## El trabajo no termina cuando el cliente paga
+
+Conseguir un cliente representa un avance, pero mantener una relación profesional satisfactoria requiere atención posterior.
+
+La entrega, el seguimiento y la comunicación influyen en la experiencia que tiene el cliente. También pueden ayudar a detectar necesidades adicionales, resolver dudas y comprender qué aspectos del servicio conviene mejorar.
+
+En un negocio unipersonal, la relación con cada cliente tiene un peso particular. Una experiencia confusa puede consumir tiempo y generar problemas que afectan a toda la actividad. Una relación bien gestionada, en cambio, puede facilitar la continuidad y las recomendaciones.
+
+Esto no significa estar disponible a cualquier hora ni aceptar solicitudes ilimitadas. La atención profesional también necesita condiciones claras.
+
+La calidad de una relación comercial depende tanto de cumplir lo acordado como de saber establecer expectativas realistas.
+
+## Crecer sin perder el control de nuestra actividad
+
+La idea de crecimiento suele asociarse con más clientes, más trabajo, más herramientas y, eventualmente, más empleados. Sin embargo, para un negocio unipersonal, crecer sin revisar su funcionamiento puede convertirse en una fuente de sobrecarga.
+
+Aumentar los encargos sin mejorar la organización puede reducir la calidad de las entregas y dejar cada vez menos tiempo para planificar. Por eso, el crecimiento necesita evaluarse en relación con la capacidad real de la actividad.
+
+Podemos mejorar una oferta, simplificar una operación, eliminar tareas innecesarias o utilizar automatizaciones ligeras cuando tengan una utilidad concreta. No todas las actividades necesitan convertirse en sistemas complejos ni todas las oportunidades deben perseguirse.
+
+La pregunta importante no es solamente cuánto podemos aumentar el volumen de trabajo. También debemos preguntarnos qué tipo de actividad queremos mantener y qué condiciones hacen posible sostenerla.
+
+## La energía también forma parte de la estructura del negocio
+
+Cuando trabajamos solos, nuestra capacidad de atención y nuestra energía son recursos limitados. No existe una separación automática entre la persona que dirige el negocio y la persona que realiza sus tareas.
+
+Si toda la actividad depende de nosotros, ignorar los límites personales puede afectar a la continuidad del trabajo.
+
+Una agenda permanentemente saturada no es necesariamente una señal de éxito. Puede indicar que hemos aceptado más compromisos de los que podemos atender o que nuestra organización depende demasiado de la disponibilidad constante.
+
+Establecer límites, reconocer cuándo necesitamos descansar y distinguir entre una jornada productiva y una jornada interminable forma parte de una gestión responsable.
+
+La sostenibilidad no es un añadido que podamos considerar cuando el negocio ya esté consolidado. Es una condición que conviene tener presente desde el principio.
+
+## Una lectura para construir un negocio que tenga sentido
+
+El Manual del Solopreneur Moderno está dirigido a profesionales independientes, freelancers, consultores, creadores y emprendedores digitales que desean organizar una actividad propia sin reproducir las estructuras de una empresa convencional.
+
+Su interés no está en presentar el trabajo en solitario como una fórmula universal ni en prometer resultados automáticos. La propuesta consiste en abordar las decisiones que aparecen cuando una persona debe construir, dirigir y sostener su propio negocio.
+
+A lo largo de la obra se recorren cuestiones relacionadas con la identidad profesional, la organización, la oferta, las finanzas, la captación de clientes, las ventas, las relaciones comerciales y la gestión de la energía.
+
+La idea que conecta estos asuntos es sencilla: trabajar por cuenta propia no debería significar vivir reaccionando a cada tarea que aparece.
+
+Construir una actividad independiente exige aprender a elegir, organizar y decidir. No necesitamos una estructura enorme para empezar, pero sí una que tenga sentido para lo que queremos hacer.
+
+Porque el propósito no es llenar nuestra jornada de trabajo ni convertir cada oportunidad en una obligación. Es construir un negocio que podamos dirigir con claridad y mantener de una manera razonable.
+
+### ¿Para quién puede resultar útil este libro?
+
+Esta obra puede resultar especialmente pertinente para:
+
+- Profesionales que quieren transformar sus conocimientos en una actividad independiente.
+- Freelancers que necesitan organizar mejor la captación, la entrega y la relación con sus clientes.
+- Consultores y prestadores de servicios que desean definir una oferta más clara.
+- Creadores y emprendedores digitales que trabajan solos y necesitan una estructura operativa sencilla.
+- Personas que están comenzando a trabajar por cuenta propia y quieren comprender las responsabilidades que implica dirigir un negocio.
+
+No es necesario tener todas las decisiones resueltas antes de comenzar. Lo importante es comprender que una actividad profesional independiente necesita algo más que conocimientos técnicos: necesita dirección, organización y criterios para funcionar.
+
+### Sobre el libro
+
+**El Manual del Solopreneur Moderno**  
+*Cómo crear, organizar y escalar un negocio digital sin empleados ni complicaciones.*
+
+Autor: Francisco González.
+
+Disponible en Kindle, tapa blanda y tapa dura.
+
+---
+
+### 5. Ubicación obligatoria del índice de contenidos
+
+Este punto es especialmente importante y debe respetarse literalmente.
+
+El índice de contenidos debe aparecer en el cuerpo visible de la página siguiendo este orden:
+
+1. Hero editorial con el título, subtítulo, autor, portada y elementos de presentación de la ficha.
+2. Primera sección introductoria del contenido editorial, que comienza con el planteamiento sobre la diferencia entre tener una habilidad, conseguir clientes y construir un negocio.
+3. **Índice de contenidos.**
+4. Desarrollo temático principal de la página.
+
+Por tanto:
+
+- No colocar el índice inmediatamente después del Hero.
+- No colocarlo antes de la primera sección introductoria.
+- No trasladarlo al final de la página.
+- No colocarlo dentro del Hero.
+- No confundir su ubicación en el contenido visible con la ubicación de los metadatos SEO en el documento HTML.
+
+El índice debe estar exactamente después del Hero editorial y después de la primera sección introductoria, pero antes del desarrollo temático principal.
+
+**Título visible del índice:** Contenido de esta página.
+
+**Texto introductorio:** Accede directamente al apartado que te interesa.
+
+Las entradas deben enlazar a los encabezados H2 reales que aparecen después del índice. Utilizar estas etiquetas:
+
+1. No confundamos trabajar por cuenta propia con dirigir un negocio.
+2. De profesional independiente a propietario de una actividad económica.
+3. La oferta es el punto de partida de un negocio claro.
+4. Una estructura pequeña también necesita organización.
+5. El dinero debe orientar las decisiones, no convertirse en una incógnita.
+6. Conseguir clientes exige iniciativa y conversaciones reales.
+7. Vender sin convertir cada conversación en una presión.
+8. El trabajo no termina cuando el cliente paga.
+9. Crecer sin perder el control de nuestra actividad.
+10. La energía también forma parte de la estructura del negocio.
+11. Una lectura para construir un negocio que tenga sentido.
+
+Cada entrada debe llevar a su sección correspondiente mediante un identificador HTML único y estable. Los enlaces deben funcionar correctamente tanto al hacer clic como al cargar la página con un fragmento de URL.
+
+El índice debe tener una presentación visual discreta, coherente con el diseño editorial de FG Perspectiva. No utilizar un bloque excesivamente alto, tarjetas innecesarias ni elementos decorativos que compitan con el contenido.
+
+En escritorio puede organizarse en dos columnas si el diseño existente lo permite. En móvil debe mostrarse en una sola columna, con separación suficiente entre enlaces y sin desbordamientos horizontales.
+
+### 6. Arquitectura visual de la ficha
+
+Mantener la identidad visual de FG Perspectiva:
+
+- Verde oscuro: `#174532`.
+- Verde medio: `#4db380`.
+- Fondos suaves derivados de los tonos actuales del proyecto.
+- Texto principal oscuro: `#1b1b1b`.
+- Dorado: `#f4b925`.
+- Tipografías existentes: Libre Baskerville e Inter.
+
+La página debe conservar una presentación editorial sobria y legible.
+
+El Hero debe presentar el libro con su portada oficial, título, subtítulo y autor. La portada no debe sustituirse ni recrearse.
+
+El cuerpo editorial debe tener jerarquía tipográfica clara, párrafos cómodos de leer y separación coherente entre secciones.
+
+No añadir imágenes de stock, ilustraciones genéricas, fotografías decorativas, gráficos, iconos ornamentales ni imágenes que representen la categoría Mindset. La única imagen del libro que debe utilizarse es su portada oficial.
+
+Conservar los componentes funcionales existentes de compra y navegación cuando sean compatibles con la nueva ficha.
+
+No convertir el texto en un conjunto de tarjetas. La lectura principal debe funcionar como un artículo editorial bien estructurado.
+
+### 7. Optimización SEO
+
+Implementar los siguientes metadatos exclusivos de esta página.
+
+**Title:**
+
+`El Manual del Solopreneur Moderno: negocio unipersonal | FG Perspectiva`
+
+**Meta description:**
+
+`Aprende a organizar un negocio unipersonal, definir una oferta profesional, gestionar clientes y tomar decisiones para trabajar por cuenta propia con mayor claridad.`
+
+**Intención principal de búsqueda:**
+
+Negocio unipersonal.
+
+**Términos secundarios y relacionados:**
+
+- Solopreneur.
+- Negocio digital de una persona.
+- Emprender por cuenta propia.
+- Gestión de un negocio independiente.
+- Cómo organizar un negocio unipersonal.
+- Trabajar por cuenta propia.
+- Organización de un negocio digital.
+- Gestión de clientes para freelancers.
+
+Integrar estos términos de manera natural, sin acumulación artificial ni repetición forzada.
+
+La página debe responder a una intención informativa y comercial relacionada con la gestión de un negocio unipersonal y con la obra que aborda ese tema.
+
+**Canonical:**
+
+`https://fgperspectiva.vercel.app/el-manual-del-solopreneur-moderno/`
+
+Configurar correctamente:
+
+- Title.
+- Meta description.
+- Canonical.
+- Open Graph title.
+- Open Graph description.
+- Open Graph image con la portada oficial.
+- Twitter Card.
+- Robots: `index, follow`.
+
+Los metadatos deben permanecer en el `<head>`, nunca como texto visible dentro del cuerpo de la página.
+
+### 8. Datos estructurados
+
+Incorporar datos estructurados válidos mediante JSON-LD, respetando los datos reales disponibles.
+
+Utilizar:
+
+- `Book`.
+- `BreadcrumbList`.
+
+Para `Book`, utilizar el título oficial, autor Francisco González, portada oficial y los datos editoriales que estén realmente disponibles.
+
+No inventar ISBN, fechas, idioma, número de páginas, editorial, puntuaciones ni ofertas comerciales.
+
+Si se incluyen formatos o enlaces de compra, hacerlo únicamente con la información comprobada y sin introducir precios ficticios.
+
+La jerarquía de navegación debe representar:
+
+Inicio → Biblioteca → Mindset → El Manual del Solopreneur Moderno.
+
+Validar que el JSON-LD sea sintácticamente correcto y no contenga propiedades incompatibles o valores inventados.
+
+### 9. Enlaces y navegación
+
+Conservar la ruta oficial:
+
+`/el-manual-del-solopreneur-moderno/`
+
+No crear una ruta nueva ni modificar el slug.
+
+Los enlaces del índice deben apuntar a los H2 reales de esta misma página.
+
+Mantener los enlaces de compra oficiales y comprobar que cada uno abre el destino correcto.
+
+No añadir enlaces internos artificiales ni duplicar enlaces que no aporten utilidad.
+
+Mantener las migas de pan existentes y su funcionamiento.
+
+### 10. Requisitos técnicos y de accesibilidad
+
+La implementación debe respetar el sistema actual de FG Perspectiva:
+
+- React y TypeScript.
+- Sistema de rutas existente.
+- Prerenderizado estático.
+- Hidratación mediante la arquitectura actual.
+- Metadatos específicos por ruta.
+- Componentes y estilos ya utilizados por el proyecto.
+
+Comprobar especialmente:
+
+1. Que la ficha se renderiza correctamente en HTML prerenderizado.
+2. Que el contenido editorial está presente en el HTML inicial y no depende exclusivamente de JavaScript para aparecer.
+3. Que el H1 es único.
+4. Que los H2 y H3 siguen una jerarquía lógica.
+5. Que los identificadores del índice no se repiten.
+6. Que los enlaces de anclaje funcionan.
+7. Que la portada tiene texto alternativo descriptivo.
+8. Que los enlaces de compra son accesibles y distinguibles.
+9. Que el diseño funciona en escritorio, tablet y móvil.
+10. Que no existen errores de consola, TypeScript ni prerenderizado.
+
+No introducir paquetes nuevos si no son imprescindibles.
+
+### 11. Pruebas de regresión
+
+Una vez terminada la implementación, comprobar que la intervención no haya afectado a:
+
+- Home.
+- Biblioteca.
+- Las seis páginas de categorías.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Contacto.
+- Las demás fichas de libros.
+- Header y navegación global.
+- Footer.
+
+El Footer está expresamente excluido de esta intervención: no modificarlo en ningún aspecto, ni su contenido, estructura, diseño, enlaces, estilos o comportamiento.
+
+Comprobar que el catálogo mantiene sus 23 libros y sus rutas originales.
+
+### 12. Restricciones expresas
+
+- No modificar ningún otro libro.
+- No modificar ninguna categoría.
+- No modificar la Home.
+- No modificar el Header.
+- No modificar el Footer.
+- No cambiar la identidad visual global.
+- No cambiar la portada ni los datos oficiales del libro.
+- No inventar información editorial o comercial.
+- No copiar la descripción de Amazon.
+- No reducir el contenido editorial.
+- No sustituir el contenido por una plantilla.
+- No añadir imágenes decorativas ni imágenes de categoría.
+- No crear nuevas rutas.
+- No desplegar a Vercel.
+
+### 13. Informe final obligatorio
+
+Al terminar, entregar un informe técnico que incluya:
+
+1. Archivos inspeccionados.
+2. Archivos modificados.
+3. Copia de seguridad creada y su ubicación.
+4. Confirmación de que el contenido editorial completo se incorporó.
+5. Confirmación de la ubicación exacta del índice: después del Hero y de la primera sección introductoria, antes del desarrollo temático principal.
+6. Relación de los H2 y comprobación de sus anclas.
+7. Metadatos SEO implementados.
+8. Datos estructurados incorporados y validados.
+9. Resultado del build y del prerenderizado.
+10. Resultado de las pruebas responsive.
+11. Resultado de las pruebas de regresión.
+12. Confirmación expresa de que no se modificaron otras páginas, el Header ni el Footer.
+13. Confirmación de que no se realizó ningún despliegue.
+
+**Criterio de finalización:** la ficha debe funcionar como una página editorial independiente, con contenido original y completo, intención SEO definida, navegación interna útil y datos comerciales correctos. El índice debe aparecer en la posición indicada, sin excepciones.

@@ -754,6 +754,96 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6g. Ficha editorial dedicada: El Manual del Solopreneur Moderno
+  if (path === '/el-manual-del-solopreneur-moderno/') {
+    const solopreneurDescription =
+      'Aprende a organizar un negocio unipersonal, definir una oferta profesional, gestionar clientes y tomar decisiones para trabajar por cuenta propia con mayor claridad.';
+    const solopreneurCover =
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/22-solopreneur-libro-600.jpg';
+    const solopreneurUrl = `${BASE_URL}/el-manual-del-solopreneur-moderno/`;
+
+    return {
+      path: '/el-manual-del-solopreneur-moderno/',
+      title: 'El Manual del Solopreneur Moderno: negocio unipersonal | FG Perspectiva',
+      description: solopreneurDescription,
+      canonical: solopreneurUrl,
+      ogImage: solopreneurCover,
+      ogType: 'book',
+      h1: 'El Manual del Solopreneur Moderno',
+      schema: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'Book',
+          name: 'El Manual del Solopreneur Moderno',
+          alternateName:
+            'Cómo crear, organizar y escalar un negocio digital sin empleados ni complicaciones',
+          description: solopreneurDescription,
+          image: solopreneurCover,
+          url: solopreneurUrl,
+          author: {
+            '@type': 'Person',
+            name: 'Francisco González'
+          },
+          bookFormat: [
+            'https://schema.org/Paperback',
+            'https://schema.org/EBook',
+            'https://schema.org/Hardcover'
+          ],
+          workExample: [
+            {
+              '@type': 'Book',
+              name: 'El Manual del Solopreneur Moderno (Tapa blanda)',
+              bookFormat: 'https://schema.org/Paperback',
+              url: 'https://www.amazon.com/dp/B0HKPPV7HH'
+            },
+            {
+              '@type': 'Book',
+              name: 'El Manual del Solopreneur Moderno (Kindle)',
+              bookFormat: 'https://schema.org/EBook',
+              url: 'https://www.amazon.com/dp/B0HKPHYRYX'
+            },
+            {
+              '@type': 'Book',
+              name: 'El Manual del Solopreneur Moderno (Tapa dura)',
+              bookFormat: 'https://schema.org/Hardcover',
+              url: 'https://www.amazon.com/dp/B0HKPZMYJ6'
+            }
+          ]
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Mindset',
+              item: `${BASE_URL}/mindset/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'El Manual del Solopreneur Moderno',
+              item: solopreneurUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {
