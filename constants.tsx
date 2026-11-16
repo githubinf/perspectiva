@@ -1383,8 +1383,38 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'mindset',
         title: 'De la Pluma al Dinero',
         description: 'Transforma tus ideas escritas en productos digitales rentables.',
-        url: 'https://amzn.to/3Tt81ir',
+        url: 'https://www.amazon.com/dp/B0DGTQJTVR',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/23-de-la-pluma-al-dinero-libro-400.jpg',
+        purchaseOptions: [
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B0DGTQJTVR',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
+            emoji: '🛒',
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B0DGTVTVB7',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B0DGRJPTLN',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          }
+        ],
         extraInfo: [
           'Escribir es una de las habilidades más valiosas en el mundo digital, pero la mayoría de las personas no sabe cómo convertir sus escritos en productos rentables. Tienen ideas, conocimientos y experiencias que podrían ayudar a otros, pero no saben cómo estructurarlas, empaquetarlas y venderlas. Este libro es el puente entre tener algo que decir y tener un producto digital que genere ingresos.',
           'No es un manual de escritura creativa ni un tratado sobre gramática. Es una guía práctica para transformar tu conocimiento en productos digitales que la gente esté dispuesta a comprar, desde ebooks y guías hasta cursos y plantillas. Está pensado para quienes tienen experiencia en un área y quieren monetizarla sin complicaciones.',

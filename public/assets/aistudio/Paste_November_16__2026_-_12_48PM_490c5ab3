@@ -1,0 +1,582 @@
+# INSTRUCCIÓN INTEGRAL PARA GOOGLE AI STUDIO
+## Actualización editorial, SEO y estructural de la ficha «De la Pluma al Dinero»
+### Proyecto: FG Perspectiva
+
+## 1. OBJETIVO Y ALCANCE
+
+Actualizar exclusivamente la ficha individual del libro «De la Pluma al Dinero» dentro del proyecto FG Perspectiva.
+
+La intervención consiste en sustituir el contenido editorial actual por la nueva redacción aprobada, incorporar un índice de navegación interno, optimizar los elementos SEO y adaptar la presentación al sistema visual y técnico existente.
+
+No se trata de crear una ficha nueva ni de reconstruir el componente desde cero. Debes inspeccionar primero la implementación actual y trabajar sobre la vista, los datos y los componentes que ya utiliza este libro.
+
+La intervención debe limitarse a esta ficha. No modificar otras páginas, libros, categorías, componentes globales ni elementos generales del sitio.
+
+**Regla de prioridad:** conservar íntegramente la estructura comercial y el funcionamiento actual de la ficha. La actualización editorial no autoriza ningún cambio en los elementos de compra.
+
+## 2. IDENTIFICACIÓN Y DATOS OFICIALES DEL LIBRO
+
+Utiliza estos datos como referencia y contrástalos con los registros existentes en el proyecto:
+
+- Título: De la Pluma al Dinero.
+- Subtítulo: Si todavía no estás publicando en Kindle esta es tu oportunidad de generar ingresos pasivos. Crea un negocio rentable y recurrente con libros de no-ficción.
+- Autor: Francisco González.
+- Categoría: Mindset.
+- Ruta: conservar exactamente el slug y la URL canónica que ya tiene asignados esta ficha.
+- Portada: conservar la portada oficial que ya está asociada al libro en el catálogo y en la ficha actual.
+
+### Enlaces comerciales oficiales
+
+- Amazon Kindle: https://www.amazon.com/dp/B0DGRJPTLN
+- Amazon tapa blanda: https://www.amazon.com/dp/B0DGTQJTVR
+- Amazon tapa dura: https://www.amazon.com/dp/B0DGTVTVB7
+
+No inventar enlaces adicionales ni modificar los existentes.
+
+No cambiar el título, el subtítulo, el autor, la categoría, la portada, el slug ni los identificadores comerciales.
+
+## 3. REVISIÓN PREVIA Y COPIA DE SEGURIDAD
+
+Antes de modificar archivos:
+
+1. Localiza la implementación real de la ficha «De la Pluma al Dinero».
+2. Identifica su componente de vista, su registro de datos, sus metadatos y los componentes comerciales que utiliza.
+3. Comprueba cómo se renderizan actualmente el Hero, la introducción, las secciones de contenido, los botones de compra y el botón inferior.
+4. Identifica si la ficha utiliza componentes compartidos con otras páginas.
+5. Crea una copia de seguridad de todos los archivos que vayas a modificar.
+
+Nombre de la copia de seguridad:
+
+`/_backup_ficha_de_la_pluma_al_dinero/`
+
+No modificar componentes compartidos si no es imprescindible. Si alguna modificación global fuera aparentemente necesaria, detenerse y explicar el motivo antes de realizarla.
+
+## 4. NUEVA ARQUITECTURA EDITORIAL
+
+La ficha debe conservar su identidad visual y su sistema de componentes, pero incorporar una estructura editorial coherente con el nuevo texto.
+
+Orden obligatorio del contenido visible:
+
+1. Hero editorial.
+2. Primera sección introductoria.
+3. Índice de contenidos.
+4. Desarrollo temático completo.
+5. Cierre editorial.
+6. Elementos comerciales originales en sus ubicaciones actuales, sin desplazamientos.
+
+El índice debe aparecer exactamente después de la primera sección introductoria y antes del desarrollo temático principal.
+
+**No colocar el índice inmediatamente después del Hero.**
+
+**No colocar el índice antes de la introducción.**
+
+### 4.1. Hero editorial
+
+Mostrar:
+
+- Título: De la Pluma al Dinero.
+- Subtítulo oficial completo.
+- Una línea editorial complementaria que aporte contexto sin repetir el subtítulo.
+- Autor: Francisco González.
+- Portada oficial existente.
+
+Línea editorial complementaria aprobada:
+
+«Una perspectiva práctica sobre cómo convertir el conocimiento en un catálogo editorial con identidad, utilidad y posibilidades comerciales.»
+
+No añadir una sección denominada «Sobre el libro».
+
+No repetir el subtítulo en la línea editorial complementaria.
+
+No inventar valoraciones, reseñas, cifras de ventas, premios ni acreditaciones.
+
+### 4.2. Introducción
+
+Incorporar íntegramente el texto de la primera sección de la redacción aprobada, desde el encabezado «Introducción» hasta el último párrafo anterior al índice.
+
+No resumir, recortar ni sustituir su contenido.
+
+### 4.3. Índice de contenidos
+
+Título visible:
+
+«Contenido de esta página»
+
+Texto introductorio:
+
+«Accede directamente al apartado que te interesa.»
+
+El índice debe incluir estos apartados, con enlaces internos funcionales:
+
+1. El cambio de mentalidad: del manuscrito al proyecto editorial.
+2. Encontrar una oportunidad antes de empezar a escribir.
+3. La utilidad como criterio para desarrollar una obra.
+4. El trabajo editorial que el lector no siempre ve.
+5. Publicar es también tomar decisiones comerciales.
+6. La visibilidad no aparece automáticamente.
+7. Construir un catálogo con coherencia.
+8. Ingresos, expectativas y sostenibilidad.
+9. El autor como responsable de su proyecto.
+10. Una oportunidad que exige criterio y continuidad.
+
+Cada entrada debe apuntar al encabezado H2 correspondiente.
+
+Utilizar los identificadores únicos indicados en la redacción:
+
+- `proyecto-editorial`
+- `oportunidad-editorial`
+- `utilidad-del-libro`
+- `calidad-editorial`
+- `decisiones-comerciales`
+- `visibilidad`
+- `catalogo-editorial`
+- `ingresos-sostenibilidad`
+- `autor-proyecto`
+- `oportunidad-kindle`
+
+Los identificadores deben estar correctamente asociados a sus secciones reales. No crear anclas duplicadas.
+
+El índice debe ser visualmente coherente con los índices incorporados en las demás fichas y adaptarse a escritorio y móvil.
+
+En escritorio puede utilizar dos columnas si el sistema visual existente lo permite. En móvil debe presentarse en una sola columna.
+
+Los enlaces deben permitir una navegación cómoda y no dejar los encabezados ocultos detrás del encabezado fijo del sitio. Si existe un sistema de desplazamiento con margen superior, reutilizarlo.
+
+## 5. TEXTO EDITORIAL COMPLETO Y APROBADO
+
+Incorporar el siguiente contenido íntegramente.
+
+No resumirlo, reescribirlo, sustituir párrafos, eliminar secciones ni cambiar su enfoque. La redacción ha sido aprobada expresamente y debe conservarse.
+
+### Introducción
+
+Escribir un libro puede ser una experiencia creativa y enriquecedora. Sin embargo, cuando decidimos publicar con una intención comercial, aparece una cuestión que va más allá de terminar un manuscrito: ¿cómo conseguimos que ese trabajo encuentre lectores y pueda formar parte de un proyecto editorial con continuidad?
+
+La autopublicación ha cambiado las posibilidades de quienes desean desarrollar sus propias obras. Ya no es imprescindible recorrer el camino tradicional de búsqueda de una editorial para poner un libro a disposición del público. Plataformas como Kindle Direct Publishing permiten gestionar la publicación y comercialización de contenidos propios, con acceso a un mercado amplio y diferentes formatos de lectura.
+
+Pero disponer de una herramienta de publicación no equivale a tener un negocio editorial. La diferencia está en las decisiones que tomamos antes, durante y después de escribir. Un tema puede parecernos interesante y, aun así, no responder a una necesidad concreta. Un manuscrito puede estar terminado, pero necesitar una revisión profunda antes de presentarlo a los lectores. Y un libro correctamente publicado puede permanecer prácticamente invisible si no cuenta con una propuesta clara y una estrategia de difusión.
+
+Por eso, desarrollar una actividad editorial independiente requiere combinar creatividad, investigación, criterio comercial y constancia. No se trata de producir libros de manera indiscriminada, sino de construir un conjunto de publicaciones que aporten valor y puedan sostener una presencia a largo plazo.
+
+### El cambio de mentalidad: del manuscrito al proyecto editorial
+
+Uno de los errores más habituales al acercarse a la autopublicación consiste en pensar que el objetivo termina cuando el libro está escrito y disponible para la venta. Esa perspectiva reduce una actividad que puede tener muchas dimensiones a un único acontecimiento: publicar.
+
+Un proyecto editorial funciona de otra manera. Cada obra representa una decisión sobre qué conocimiento queremos compartir, a quién deseamos llegar y qué lugar puede ocupar ese contenido dentro de una propuesta más amplia.
+
+Esta diferencia modifica la forma de trabajar. En lugar de comenzar directamente con la redacción, conviene detenerse a valorar si existe una razón suficientemente sólida para desarrollar el libro. También debemos preguntarnos si podemos aportar una perspectiva propia, si el contenido tendrá utilidad para sus lectores y si seremos capaces de presentarlo de manera profesional.
+
+El manuscrito es una parte fundamental del proyecto, pero no es el proyecto completo. A su alrededor existen decisiones relacionadas con la identidad del autor, la selección de temas, la organización de las publicaciones, la presentación comercial y el mantenimiento de cada título.
+
+Cuando comprendemos esta relación, dejamos de considerar cada libro como una iniciativa aislada. Empezamos a trabajar con una visión editorial que permite aprender de una publicación y aplicar ese aprendizaje a las siguientes.
+
+### Encontrar una oportunidad antes de empezar a escribir
+
+La elección del tema merece una atención especial porque condiciona buena parte del trabajo posterior. Una idea puede resultar atractiva para nosotros, pero eso no significa necesariamente que tenga interés para un público determinado.
+
+Investigar una oportunidad editorial implica observar qué preguntas se hacen los lectores, qué problemas intentan resolver y qué información encuentran cuando buscan respuestas. También supone analizar cómo se están abordando esos asuntos en las publicaciones existentes.
+
+No necesitamos descubrir un tema completamente desconocido para desarrollar una obra valiosa. En muchos casos, la oportunidad consiste en tratar una cuestión conocida desde una perspectiva más clara, práctica, ordenada o especializada.
+
+La investigación debe ayudarnos a distinguir entre interés personal y demanda potencial. Para ello podemos estudiar los libros que ya existen, examinar las opiniones de los lectores, identificar aspectos que generan confusión y reconocer necesidades que no están suficientemente atendidas.
+
+También conviene valorar la dimensión del tema. Una materia demasiado amplia puede resultar difícil de abordar con profundidad en un solo libro. Una cuestión excesivamente limitada, por otra parte, quizá no permita desarrollar una propuesta suficientemente completa. Encontrar un alcance adecuado ayuda a definir qué vamos a incluir y, sobre todo, qué debemos dejar fuera.
+
+La investigación no elimina la incertidumbre comercial, pero reduce las decisiones tomadas a ciegas. Nos permite empezar con una hipótesis razonada en lugar de confiar exclusivamente en la intuición.
+
+### La utilidad como criterio para desarrollar una obra
+
+Un libro de no-ficción necesita algo más que información acumulada. Su contenido debe ofrecer al lector una experiencia de comprensión: ayudarle a entender una cuestión, organizar conocimientos, evaluar alternativas o afrontar una situación con mejores criterios.
+
+La utilidad no depende necesariamente de la cantidad de páginas. Un texto extenso puede resultar poco provechoso si repite ideas o no consigue establecer una dirección clara. Del mismo modo, una obra de menor tamaño puede ser valiosa cuando delimita bien su propósito y desarrolla sus contenidos con precisión.
+
+Antes de avanzar demasiado en la escritura, resulta conveniente definir el alcance de la obra. ¿Qué asunto abordaremos? ¿Qué conocimientos necesita tener el lector antes de comenzar? ¿Qué conceptos requieren una explicación más detenida? ¿Qué partes pueden resolverse mediante ejemplos y cuáles necesitan una argumentación más amplia?
+
+Estas preguntas ayudan a evitar un problema frecuente: empezar con una idea concreta y terminar escribiendo sobre demasiadas cuestiones diferentes. Cuando eso ocurre, el contenido pierde cohesión y al lector le puede resultar difícil reconocer el propósito principal.
+
+La selección de información también exige responsabilidad. No todo lo que encontramos durante la investigación merece formar parte del manuscrito. Debemos comprobar la relevancia de las fuentes, distinguir los datos de las opiniones y evitar presentar como hechos aquellas afirmaciones que no podemos respaldar.
+
+Una obra bien enfocada no intenta demostrar cuánto sabe su autor. Busca que el lector pueda aprovechar ese conocimiento.
+
+### El trabajo editorial que el lector no siempre ve
+
+La calidad de un libro no se decide únicamente durante la redacción. Una parte importante del resultado depende del trabajo que realizamos cuando el primer manuscrito ya existe.
+
+En esa etapa debemos revisar la coherencia general, detectar explicaciones insuficientes, eliminar repeticiones y comprobar que cada apartado cumple una función. También es necesario prestar atención a la claridad de las transiciones y a la relación entre las distintas partes de la obra.
+
+La corrección lingüística es importante, pero no sustituye a la revisión editorial. Un manuscrito puede estar escrito sin errores ortográficos y, sin embargo, contener argumentos desordenados, ejemplos poco claros o explicaciones que no llegan a resolver las dudas del lector.
+
+La presentación también influye en la experiencia de lectura. Una organización visual adecuada, una jerarquía reconocible de títulos y un formato compatible con los dispositivos Kindle facilitan la consulta del contenido. El diseño debe acompañar al texto, no competir con él.
+
+La portada merece una atención particular porque constituye uno de los elementos que ayudan a identificar una publicación en un entorno comercial. Debe comunicar con claridad el carácter de la obra y mantener coherencia con su temática. No se trata de acumular elementos gráficos, sino de conseguir una presentación reconocible y apropiada para el público al que nos dirigimos.
+
+Todos estos trabajos forman parte de una misma responsabilidad: entregar una publicación cuidada. La facilidad técnica para publicar no debería convertirse en una excusa para reducir los estándares de calidad.
+
+### Publicar es también tomar decisiones comerciales
+
+Cuando una obra está preparada, llega el momento de presentarla al mercado. En esta fase, el contenido debe traducirse en una propuesta que el lector pueda comprender antes de comprar.
+
+El título, el texto de presentación, la categoría y los elementos de identificación comercial deben transmitir una imagen coherente. Si el mensaje promete una cosa y el contenido desarrolla otra, la publicación puede generar expectativas equivocadas y perjudicar la confianza del lector.
+
+La ficha comercial no debería tratarse como un trámite secundario. Es el espacio donde explicamos de qué trata la obra, qué perspectiva ofrece y por qué puede resultar relevante para determinadas personas. Su redacción exige precisión: debemos comunicar el valor del contenido sin exagerar sus beneficios ni atribuirle resultados que no puede garantizar.
+
+También es importante conocer las condiciones de publicación de la plataforma elegida. Amazon KDP ofrece herramientas para gestionar libros digitales y determinadas ediciones impresas, pero el autor debe revisar los requisitos aplicables a cada formato, los archivos que necesita preparar y las condiciones comerciales vigentes.
+
+La publicación requiere, por tanto, una combinación de atención editorial y criterio práctico. No basta con que el libro esté disponible: su presentación debe permitir que el lector entienda qué está considerando adquirir.
+
+### La visibilidad no aparece automáticamente
+
+Estar presente en una plataforma con millones de usuarios no significa que una publicación vaya a ser descubierta de forma espontánea. La disponibilidad y la visibilidad son dos cuestiones diferentes.
+
+Un libro puede estar correctamente publicado y tener una propuesta interesante, pero competir con numerosas obras que tratan asuntos similares. Por eso, necesitamos comprender cómo puede llegar a sus lectores potenciales y qué información facilita que estos lo identifiquen.
+
+La presentación comercial, la selección de categorías pertinentes y el uso de términos relacionados con el tema ayudan a contextualizar la obra. Sin embargo, estos elementos deben reflejar fielmente su contenido. Intentar atraer visitas mediante expresiones que no corresponden con el libro puede generar una expectativa equivocada.
+
+La promoción también puede desarrollarse fuera de la tienda. Un autor puede construir una presencia digital mediante contenidos relacionados con su especialidad, una página editorial, un blog, una lista de correo u otros canales apropiados para su público.
+
+No todos los proyectos necesitan utilizar los mismos medios. La elección depende de los recursos disponibles, de la naturaleza del tema y de los hábitos de las personas a las que queremos llegar. Lo importante es evitar que la difusión se convierta en una actividad improvisada que solo comienza cuando las ventas no responden a nuestras expectativas.
+
+La visibilidad se trabaja con continuidad y requiere observar qué acciones aportan resultados, cuáles consumen recursos sin producir avances y qué aspectos de la propuesta necesitan mejorar.
+
+### Construir un catálogo con coherencia
+
+Un libro puede ser el comienzo de una actividad editorial, pero un catálogo permite desarrollar una presencia más amplia. La diferencia no reside simplemente en acumular títulos, sino en establecer relaciones comprensibles entre las publicaciones.
+
+Cuando varios libros comparten una temática general, una línea de conocimiento o un público potencial, pueden reforzar la identidad del autor. Cada obra aporta una pieza distinta y permite que los lectores reconozcan una especialización.
+
+Esta coherencia no significa que todos los títulos deban abordar exactamente lo mismo. Un catálogo puede explorar diferentes aspectos de una disciplina, siempre que exista una lógica editorial que explique su relación.
+
+También conviene evitar la producción acelerada de libros sin una aportación diferenciada. Publicar más títulos no garantiza una mayor presencia comercial. Si varias obras repiten información, ofrecen poco contenido original o responden a temas elegidos sin investigación, el crecimiento del catálogo puede convertirse en una carga en lugar de una ventaja.
+
+Una estrategia más sólida consiste en desarrollar cada publicación con un propósito definido. Así podemos identificar qué temas merecen una obra independiente, cuáles podrían complementar un título existente y qué conocimientos todavía no hemos cubierto.
+
+El catálogo debe crecer al ritmo que permita mantener la calidad. La continuidad tiene más sentido cuando se apoya en una identidad reconocible y en publicaciones que justifican su existencia.
+
+### Ingresos, expectativas y sostenibilidad
+
+La posibilidad de obtener ingresos a partir de libros publicados en formato digital o impreso es uno de los aspectos que despiertan mayor interés en la autopublicación. Sin embargo, conviene comprender la diferencia entre una oportunidad comercial y un resultado asegurado.
+
+Los ingresos dependen de múltiples variables: el interés que despierta el tema, la calidad de la obra, su posicionamiento, el precio, la competencia, las condiciones de distribución y la capacidad de alcanzar a los lectores adecuados. Ninguna de estas variables puede controlarse por completo.
+
+Por eso, es más razonable plantear objetivos progresivos que construir expectativas basadas en cifras ajenas. Los resultados de otros autores pueden servir como referencia para estudiar modelos de trabajo, pero no constituyen una previsión fiable de lo que conseguiremos con nuestro propio catálogo.
+
+También debemos considerar los costes y el tiempo invertido. Investigación, redacción, edición, diseño, promoción y mantenimiento forman parte del esfuerzo necesario para desarrollar una publicación profesional. Si ignoramos esos recursos, podemos confundir facturación con rentabilidad.
+
+La idea de ingresos recurrentes debe entenderse desde esta perspectiva. Un libro que continúa disponible puede seguir teniendo oportunidades de venta después de su lanzamiento, pero eso no significa que genere ingresos constantes sin atención ni trabajo. El mercado cambia, las publicaciones compiten entre sí y algunas obras pueden necesitar actualizaciones o nuevas acciones de difusión.
+
+La sostenibilidad aparece cuando conseguimos organizar el proyecto de manera que el esfuerzo editorial, los recursos utilizados y las posibilidades comerciales mantengan una relación razonable.
+
+### El autor como responsable de su proyecto
+
+La autopublicación ofrece libertad para tomar decisiones, pero esa libertad también implica asumir responsabilidades que en otros modelos editoriales pueden estar repartidas entre diferentes profesionales.
+
+El autor necesita desarrollar criterio para seleccionar temas, evaluar información, organizar contenidos y decidir cómo presentar cada publicación. No tiene que realizar personalmente todas las tareas, pero sí comprender qué necesita su obra y supervisar el resultado.
+
+También debe aprender a valorar su propio trabajo con cierta distancia. Una idea que nos entusiasma no siempre es la mejor elección comercial. Un capítulo al que hemos dedicado muchas horas puede necesitar una revisión profunda. Una portada que nos gusta personalmente quizá no comunique adecuadamente el contenido del libro.
+
+Aceptar estas posibilidades forma parte del crecimiento profesional. La actividad editorial mejora cuando sustituimos las decisiones impulsivas por procesos de evaluación y aprendizaje.
+
+Con el tiempo, cada publicación puede aportar experiencia sobre la investigación, la escritura, la presentación y la relación con los lectores. Esa experiencia resulta especialmente valiosa cuando la utilizamos para mejorar el siguiente proyecto, en lugar de repetir automáticamente lo que hicimos antes.
+
+### Una oportunidad que exige criterio y continuidad
+
+Kindle ha ampliado las posibilidades de quienes desean publicar sus propios libros y desarrollar una actividad editorial independiente. Su importancia no reside únicamente en ofrecer un canal de distribución, sino en permitir que los autores participen de manera más directa en la creación y presentación de sus obras.
+
+Sin embargo, las herramientas no sustituyen el trabajo intelectual ni las decisiones comerciales. Una publicación necesita una razón para existir, un contenido bien desarrollado y una propuesta que pueda ser comprendida por sus lectores.
+
+Convertir la escritura en una actividad con posibilidades de continuidad exige mirar más allá del primer lanzamiento. Significa aprender a investigar, seleccionar temas con criterio, cuidar el proceso editorial y construir una identidad que pueda sostener nuevas publicaciones.
+
+No necesitamos empezar con un catálogo enorme ni disponer de todos los recursos desde el primer día. Podemos comenzar con una obra bien planteada, aprender de su desarrollo y utilizar esa experiencia para tomar decisiones más fundamentadas.
+
+La oportunidad está en transformar el conocimiento en publicaciones que tengan sentido para sus lectores y puedan integrarse en un proyecto editorial propio. El resultado no depende de una fórmula automática, sino de la calidad de las decisiones que tomamos y de nuestra capacidad para mantener el trabajo a lo largo del tiempo.
+
+## 6. REQUISITOS SEO
+
+Implementar los metadatos correspondientes a la ruta real de esta ficha.
+
+### SEO title propuesto
+
+`De la Pluma al Dinero: publicar libros en Amazon KDP | FG Perspectiva`
+
+### Meta description propuesta
+
+`Descubre cómo plantear un proyecto editorial independiente, desarrollar libros de no-ficción y aprovechar Amazon KDP para construir un catálogo con posibilidades comerciales.`
+
+### Orientación semántica
+
+Palabra clave principal:
+
+- publicar libros en Amazon KDP
+
+Términos secundarios:
+
+- autopublicar libros de no-ficción
+- negocio editorial independiente
+- escribir y publicar libros
+- ingresos por libros en Kindle
+- crear un catálogo de libros
+
+Utilizar estas expresiones de manera natural y contextual. No forzar su repetición ni introducirlas en párrafos donde no aporten significado.
+
+No convertir la página en una acumulación de palabras clave.
+
+### Canonical
+
+Conservar la URL canónica real que ya tiene asignada el libro en el proyecto. Debe coincidir con su ruta pública, sin crear una URL alternativa.
+
+### Open Graph y Twitter Cards
+
+Actualizar los metadatos sociales para esta ficha utilizando:
+
+- Título de la obra.
+- Descripción SEO.
+- Portada oficial existente.
+- URL canónica real.
+
+No utilizar una imagen genérica ni crear una portada nueva.
+
+### Datos estructurados
+
+Comprobar el JSON-LD existente y adaptarlo si es necesario.
+
+Debe conservarse una entidad `Book` coherente con los datos reales del catálogo y un `BreadcrumbList` que refleje la navegación:
+
+Inicio → Biblioteca → Mindset → De la Pluma al Dinero.
+
+No inventar:
+
+- ISBN.
+- Editorial.
+- Fecha de publicación.
+- Número de páginas.
+- Calificaciones.
+- Reseñas.
+- Precios.
+- Ofertas.
+- Disponibilidad.
+- Datos de ventas.
+
+No generar propiedades `offers`, valoraciones ni datos comerciales que no estén respaldados por el proyecto.
+
+El título, el subtítulo y el autor de los datos estructurados deben coincidir con los datos reales del libro. La documentación de Amazon KDP establece que los datos de título y autor deben corresponder con la identificación real de la obra.
+
+## 7. PROTECCIÓN ABSOLUTA DE LA ESTRUCTURA COMERCIAL
+
+**ESTA SECCIÓN ES OBLIGATORIA Y TIENE PRIORIDAD SOBRE CUALQUIER DECISIÓN DE REDISEÑO.**
+
+La ficha ya cuenta con una estructura comercial implementada. La actualización editorial y SEO no autoriza modificarla.
+
+Debes conservar exactamente:
+
+1. La ubicación original de todos los botones de compra.
+2. El botón o acceso comercial superior, si existe.
+3. El botón que permite consultar las ediciones disponibles.
+4. El modal de compra y su funcionamiento, si la ficha lo utiliza.
+5. Los formatos disponibles y sus enlaces.
+6. Los textos originales de los botones.
+7. Los estilos, colores, tamaños y jerarquía visual de los elementos comerciales.
+8. La lógica de apertura y cierre del modal.
+9. Los enlaces externos y sus atributos de seguridad.
+10. El bloque comercial inferior.
+11. El botón de compra situado al final de la página, en su posición original y completamente operativo.
+
+**Prohibiciones expresas:**
+
+- No eliminar botones.
+- No sustituir botones.
+- No duplicar botones.
+- No ocultar botones.
+- No desplazar bloques comerciales.
+- No trasladar el botón inferior a otra sección.
+- No retirar el botón de compra final.
+- No convertir un modal existente en botones individuales.
+- No modificar las URL comerciales.
+- No cambiar los formatos disponibles.
+- No alterar el comportamiento del modal.
+- No modificar la lógica comercial para simplificar el componente.
+- No sustituir los componentes actuales por una implementación nueva.
+
+La ubicación comercial debe permanecer idéntica a la implementación anterior. El nuevo contenido editorial debe integrarse respetando esa estructura.
+
+Si el código actual requiere reorganización para incorporar el índice o los nuevos apartados, separar los cambios editoriales de los componentes comerciales. No modificar la lógica de compra.
+
+La normalización general del orden de formatos comerciales, si se realiza, corresponde a una intervención independiente y no debe ejecutarse dentro de esta tarea.
+
+## 8. DISEÑO Y EXPERIENCIA DE USUARIO
+
+Mantener la identidad visual actual de FG Perspectiva.
+
+- Conservar la paleta de colores del proyecto.
+- Mantener la tipografía y jerarquía visual existentes.
+- Respetar el diseño del Hero y la presentación de la portada.
+- Mantener una lectura cómoda y una anchura de texto apropiada.
+- Evitar bloques excesivamente densos.
+- Mantener una separación visual clara entre secciones.
+- Utilizar los H2 para los diez apartados principales.
+- No introducir imágenes genéricas, ilustraciones decorativas ni fotografías ajenas al libro.
+- No añadir iconos decorativos innecesarios.
+- No introducir elementos visuales que distraigan de la lectura.
+- No crear tarjetas repetitivas para cada párrafo.
+- No añadir una sección «Sobre el libro».
+
+La página debe conservar un aspecto editorial, no convertirse en una página de ventas genérica.
+
+### Adaptación móvil
+
+Verificar:
+
+- Que el Hero no se desborde.
+- Que la portada conserve sus proporciones.
+- Que el índice sea fácil de consultar.
+- Que los enlaces del índice sean accesibles.
+- Que los títulos largos no rompan la composición.
+- Que los párrafos tengan una anchura y separación legibles.
+- Que los botones comerciales mantengan su tamaño y funcionamiento.
+- Que el modal de compra pueda utilizarse correctamente.
+- Que el botón inferior siga visible y operativo en su ubicación original.
+
+## 9. REQUISITOS TÉCNICOS Y DE ACCESIBILIDAD
+
+- Mantener el sistema de rutas existente.
+- No modificar el router.
+- No modificar la configuración de trailing slash.
+- No modificar el sistema global de SEO.
+- No introducir dependencias nuevas.
+- No duplicar componentes innecesariamente.
+- Utilizar HTML semántico y una jerarquía correcta de encabezados.
+- Comprobar que solo exista un H1 principal.
+- Utilizar H2 para los apartados principales.
+- Evitar encabezados vacíos.
+- Garantizar que los enlaces internos del índice funcionen.
+- Garantizar que los identificadores HTML sean únicos.
+- Mantener los atributos accesibles de botones y enlaces.
+- Respetar los atributos `target` y `rel` de los enlaces externos existentes.
+- Mantener la hidratación y el prerenderizado compatibles con la arquitectura actual.
+
+No colocar metadatos SEO visibles dentro del cuerpo del documento. Las etiquetas `title`, `meta description`, canonical, Open Graph y Twitter deben estar en el lugar técnico correspondiente dentro del documento HTML.
+
+## 10. PRUEBAS Y AUDITORÍA OBLIGATORIAS
+
+Una vez finalizada la implementación:
+
+### A. Integridad editorial
+
+- Comprobar que se ha incorporado todo el texto aprobado.
+- Verificar que no se ha omitido ningún apartado.
+- Comprobar que no se han añadido párrafos inventados.
+- Confirmar que la introducción aparece antes del índice.
+- Confirmar que el índice aparece después de la introducción.
+- Verificar que cada enlace del índice lleva al H2 correcto.
+- Comprobar que no existen anclas duplicadas.
+
+### B. Integridad comercial
+
+Comparar la ficha anterior y la nueva.
+
+Verificar expresamente:
+
+- Que todos los botones comerciales originales siguen presentes.
+- Que todos mantienen su ubicación.
+- Que los enlaces de Amazon siguen siendo los mismos.
+- Que el modal conserva su funcionamiento.
+- Que el acceso a las ediciones sigue funcionando.
+- Que el botón de compra inferior permanece en su posición original.
+- Que el botón inferior funciona correctamente.
+- Que no se ha eliminado, duplicado, desplazado ni ocultado ningún elemento comercial.
+
+La prueba del botón inferior debe aparecer expresamente en el informe final.
+
+### C. SEO
+
+Comprobar:
+
+- SEO title.
+- Meta description.
+- Canonical.
+- Open Graph.
+- Twitter Cards.
+- JSON-LD Book.
+- JSON-LD BreadcrumbList.
+- Ausencia de datos inventados.
+- Ausencia de errores de renderizado o duplicación de metadatos.
+
+### D. Pruebas técnicas
+
+- Ejecutar TypeScript.
+- Ejecutar build de producción.
+- Ejecutar prerenderizado.
+- Comprobar la ruta pública de esta ficha.
+- Verificar que el resto de las rutas sigue funcionando.
+- Revisar errores de consola.
+- Revisar la versión de escritorio.
+- Revisar la versión móvil.
+- Comprobar que la hidratación funciona correctamente.
+
+### E. Regresión
+
+Comparar con la copia de seguridad y comprobar que no se han alterado:
+
+- Otras fichas de libros.
+- Categorías.
+- Biblioteca.
+- Home.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Navegación general.
+- Footer.
+
+## 11. LÍMITES DE LA INTERVENCIÓN
+
+No modificar:
+
+- Ninguna otra ficha de libro.
+- Ninguna categoría.
+- La Home.
+- Biblioteca.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Header.
+- Footer.
+- Menús generales.
+- Componentes globales no necesarios.
+- Catálogo de libros.
+- Portadas.
+- Enlaces comerciales de otros títulos.
+- Sitemap global, salvo que el sistema lo regenere automáticamente sin cambiar rutas ni datos ajenos a esta tarea.
+
+No desplegar a Vercel.
+
+No publicar cambios en producción.
+
+## 12. INFORME FINAL OBLIGATORIO
+
+Al terminar, entregar un informe técnico que incluya:
+
+1. Archivos inspeccionados.
+2. Archivos modificados.
+3. Ubicación de la copia de seguridad.
+4. Confirmación de que se ha actualizado exclusivamente la ficha solicitada.
+5. Confirmación de que el texto aprobado está incorporado íntegramente.
+6. Confirmación de la posición del índice.
+7. Confirmación de que las diez anclas funcionan.
+8. Metadatos SEO implementados.
+9. Datos estructurados implementados y validados.
+10. Resultado de TypeScript, build y prerenderizado.
+11. Resultado de las pruebas de escritorio y móvil.
+12. Resultado de la prueba comparativa de los elementos comerciales.
+13. Confirmación expresa de que el botón inferior de compra permanece en su posición original y funciona.
+14. Confirmación de que el modal y los demás botones comerciales no han sufrido alteraciones.
+15. Confirmación de que no se ha modificado el Footer.
+16. Confirmación de que no se ha realizado ningún despliegue.
+
+Si alguna prueba no puede realizarse, indicarlo expresamente. No declarar como correcto aquello que no se haya comprobado.
+
+## 13. CONDICIÓN FINAL
+
+Esta es una intervención editorial y SEO sobre una ficha existente, no una reconstrucción comercial.
+
+La prioridad es integrar el contenido aprobado, mejorar la estructura de navegación y optimizar la presentación orgánica sin alterar el funcionamiento que ya tiene la ficha.
+
+**El texto editorial se incorpora; la estructura comercial se conserva.**
+
+Ejecuta únicamente los cambios autorizados, verifica cada punto y presenta el informe técnico antes de considerar finalizada la tarea.

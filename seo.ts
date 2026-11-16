@@ -1075,6 +1075,103 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6j. Ficha editorial dedicada: De la Pluma al Dinero
+  if (path === '/de-la-pluma-al-dinero/') {
+    const plumaBook = ALL_BOOKS.find(
+      (b) => b.path === '/de-la-pluma-al-dinero/' || b.slug === 'de-la-pluma-al-dinero'
+    );
+    const plumaDescription =
+      'Descubre cómo plantear un proyecto editorial independiente, desarrollar libros de no-ficción y aprovechar Amazon KDP para construir un catálogo con posibilidades comerciales.';
+    const plumaCover =
+      plumaBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/23-de-la-pluma-al-dinero-libro-400.jpg';
+    const plumaUrl = `${BASE_URL}/de-la-pluma-al-dinero/`;
+
+    const plumaBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'De la Pluma al Dinero',
+      alternateName:
+        'Si todavía no estás publicando en Kindle esta es tu oportunidad de generar ingresos pasivos. Crea un negocio rentable y recurrente con libros de no-ficción.',
+      description: plumaDescription,
+      image: plumaCover,
+      url: plumaUrl,
+      inLanguage: 'es',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      },
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
+        'https://schema.org/EBook'
+      ],
+      workExample: [
+        {
+          '@type': 'Book',
+          name: 'De la Pluma al Dinero (Tapa blanda)',
+          bookFormat: 'https://schema.org/Paperback',
+          url: 'https://www.amazon.com/dp/B0DGTQJTVR'
+        },
+        {
+          '@type': 'Book',
+          name: 'De la Pluma al Dinero (Tapa dura)',
+          bookFormat: 'https://schema.org/Hardcover',
+          url: 'https://www.amazon.com/dp/B0DGTVTVB7'
+        },
+        {
+          '@type': 'Book',
+          name: 'De la Pluma al Dinero (Kindle)',
+          bookFormat: 'https://schema.org/EBook',
+          url: 'https://www.amazon.com/dp/B0DGRJPTLN'
+        }
+      ]
+    };
+
+    return {
+      path: '/de-la-pluma-al-dinero/',
+      title: 'De la Pluma al Dinero: publicar libros en Amazon KDP | FG Perspectiva',
+      description: plumaDescription,
+      canonical: plumaUrl,
+      ogImage: plumaCover,
+      ogType: 'book',
+      h1: 'De la Pluma al Dinero',
+      schema: [
+        plumaBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Mindset',
+              item: `${BASE_URL}/mindset/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'De la Pluma al Dinero',
+              item: plumaUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {
