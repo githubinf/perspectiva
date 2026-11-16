@@ -517,21 +517,6 @@ const SolopreneurManualView: React.FC<SolopreneurManualViewProps> = ({ book }) =
                     No es necesario tener todas las decisiones resueltas antes de comenzar. Lo importante es comprender que una actividad profesional independiente necesita algo más que conocimientos técnicos: necesita dirección, organización y criterios para funcionar.
                   </p>
                 </div>
-
-                {/* Subapartado H3 #2 */}
-                <div className="pt-6 border-t border-[#dae7df]/60 space-y-3">
-                  <h3 className="text-h3 font-bold font-serif text-[#174532] leading-snug">
-                    Sobre el libro
-                  </h3>
-                  <p className="font-semibold text-[#174532]">
-                    El Manual del Solopreneur Moderno
-                  </p>
-                  <p className="font-serif italic text-[#174532]/85">
-                    Cómo crear, organizar y escalar un negocio digital sin empleados ni complicaciones.
-                  </p>
-                  <p>Autor: Francisco González.</p>
-                  <p>Disponible en Kindle, tapa blanda y tapa dura.</p>
-                </div>
               </div>
             </section>
           </div>

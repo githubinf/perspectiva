@@ -844,6 +844,87 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6h. Ficha editorial dedicada: El arte de atraer la abundancia
+  if (path === '/el-arte-de-atraer-la-abundancia/') {
+    const abundanceBook = ALL_BOOKS.find(
+      (b) => b.path === '/el-arte-de-atraer-la-abundancia/' || b.slug === 'el-arte-de-atraer-la-abundancia'
+    );
+    const abundanceDescription =
+      'Descubre una perspectiva sobre la mentalidad de abundancia, la prosperidad personal y las decisiones que influyen en nuestra forma de construir una vida plena.';
+    const abundanceCover =
+      abundanceBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/14-el-arte-de-atraer-la-abundancia-ebook-libro-400.jpg';
+    const abundanceUrl = `${BASE_URL}/el-arte-de-atraer-la-abundancia/`;
+    const validCatalogOptions = (abundanceBook?.purchaseOptions || []).filter(
+      (opt) => opt.url && opt.url !== '#'
+    );
+
+    const abundanceBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'El arte de atraer la abundancia',
+      alternateName:
+        'Despierta tu potencial ilimitado y crea una vida de riqueza, éxito y plenitud total.',
+      description: abundanceDescription,
+      image: abundanceCover,
+      url: abundanceUrl,
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      }
+    };
+
+    if (validCatalogOptions.length > 0) {
+      abundanceBookSchema.offers = validCatalogOptions.map((opt) => ({
+        '@type': 'Offer',
+        url: opt.url.trim()
+      }));
+    }
+
+    return {
+      path: '/el-arte-de-atraer-la-abundancia/',
+      title: 'El arte de atraer la abundancia: mentalidad y prosperidad | FG Perspectiva',
+      description: abundanceDescription,
+      canonical: abundanceUrl,
+      ogImage: abundanceCover,
+      ogType: 'book',
+      h1: 'El arte de atraer la abundancia',
+      schema: [
+        abundanceBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Mindset',
+              item: `${BASE_URL}/mindset/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'El arte de atraer la abundancia',
+              item: abundanceUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {

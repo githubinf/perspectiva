@@ -1,0 +1,452 @@
+# INSTRUCCIÓN COMPLETA PARA GOOGLE AI STUDIO
+## Rediseño editorial y optimización SEO de la ficha «El arte de atraer la abundancia» — FG Perspectiva
+
+### 1. Objetivo de la intervención
+
+Realiza una actualización editorial, estructural y SEO de la ficha individual del libro **El arte de atraer la abundancia**, dentro del proyecto FG Perspectiva.
+
+El objetivo es convertir la ficha en una página editorial sólida, informativa y diferenciada, que responda a búsquedas relacionadas con la mentalidad de abundancia, la prosperidad personal y el desarrollo de una relación más consciente con las oportunidades, las decisiones y los recursos.
+
+No queremos una descripción comercial ampliada ni una reformulación de la descripción de Amazon. Queremos contenido editorial propio que aporte contexto, profundidad y valor al lector antes de decidir si desea adquirir el libro.
+
+Esta intervención debe limitarse exclusivamente a la ficha de este libro. No modifiques otras páginas, categorías, componentes compartidos ni datos generales del catálogo.
+
+### 2. Identificación y datos oficiales del libro
+
+Conserva los datos existentes del catálogo y verifica su correspondencia antes de realizar cambios.
+
+- **Título:** El arte de atraer la abundancia.
+- **Subtítulo:** Despierta tu potencial ilimitado y crea una vida de riqueza, éxito y plenitud total.
+- **Autor:** Francisco González.
+- **Categoría:** Mindset.
+- **Portada:** conservar exactamente la portada oficial que ya está asociada al libro en los datos del proyecto.
+- **Ruta:** conservar el slug y la URL canónica que ya tenga asignados esta ficha. No crear una ruta alternativa ni modificar la existente.
+
+Enlaces comerciales oficiales:
+
+- **Kindle:** https://www.amazon.com/dp/B0CXZC4XLL
+- **Tapa blanda:** https://www.amazon.com/-/es/dp/B0CY211RSP
+- **Tapa dura:** https://www.amazon.com/dp/B0CY1XYJS7
+
+No inventes ISBN, número de páginas, fecha de publicación, editorial, valoraciones, reseñas, puntuaciones ni características comerciales que no estén verificadas en el proyecto.
+
+### 3. Nueva presentación del encabezado editorial
+
+Reestructura la presentación inicial para que sea clara, elegante y coherente con la identidad de FG Perspectiva.
+
+El encabezado debe mostrar:
+
+**H1:**
+
+El arte de atraer la abundancia
+
+**Subtítulo:**
+
+Despierta tu potencial ilimitado y crea una vida de riqueza, éxito y plenitud total.
+
+**Línea editorial breve:**
+
+Una perspectiva práctica sobre la mentalidad, las oportunidades y la prosperidad que construimos con nuestras decisiones.
+
+**Autor:**
+
+Autor: Francisco González
+
+La línea editorial es una presentación complementaria, no debe confundirse con el subtítulo oficial ni repetirlo. Mantén una tipografía, jerarquía y separación visual que permitan identificar claramente cada elemento.
+
+No añadas una sección denominada «Sobre el libro». No es necesaria y queda expresamente descartada para esta ficha y para las demás fichas del catálogo.
+
+Tampoco añadas una sección independiente que vuelva a explicar el título, el subtítulo o la autoría.
+
+### 4. Introducción editorial
+
+Después del encabezado, incorpora una introducción breve que presente el tema desde una perspectiva propia.
+
+Debe explicar que la abundancia puede entenderse como una manera de relacionarnos con nuestras posibilidades, nuestras decisiones y aquello que consideramos valioso. Conviene evitar la idea simplista de que basta con pensar positivamente para modificar las circunstancias.
+
+La introducción debe abrir una reflexión y preparar al lector para el contenido posterior. No debe repetir la descripción comercial de Amazon ni anticipar de forma mecánica todos los apartados que se desarrollarán.
+
+### 5. Índice de contenidos visible
+
+El índice debe aparecer exactamente después de la primera sección introductoria y antes del desarrollo temático principal.
+
+Utiliza el siguiente título y texto:
+
+**Contenido de esta página**
+
+Accede directamente al apartado que te interesa.
+
+El índice debe contener enlaces internos mediante anclas HTML a los encabezados H2 reales de esta ficha.
+
+Condiciones:
+
+- Cada entrada debe corresponder a un apartado que exista realmente.
+- Los identificadores de las anclas deben ser únicos.
+- No deben repetirse entradas ni utilizarse enlaces vacíos.
+- En escritorio, utiliza dos columnas si encaja con el diseño actual.
+- En móvil, presenta una sola columna.
+- Mantén un diseño discreto, legible y coherente con la identidad visual de FG Perspectiva.
+- No dupliques el índice del libro físico: este índice corresponde exclusivamente a la navegación de la página web.
+- No coloques el índice inmediatamente debajo del Hero ni antes de la introducción.
+
+### 6. Contenido editorial completo
+
+Incorpora el siguiente texto como cuerpo principal de la ficha. Debe conservarse su contenido, sus argumentos y su enfoque. Puedes adaptar únicamente los elementos de presentación visual y la jerarquía semántica necesaria para integrarlo en los componentes existentes.
+
+El texto debe aparecer como contenido HTML visible e indexable, no como una imagen, un acordeón cerrado por defecto ni un elemento que dependa de JavaScript para existir en el HTML inicial.
+
+---
+
+#### La abundancia como una forma de interpretar nuestras posibilidades
+
+La palabra abundancia suele asociarse de inmediato con dinero, posesiones o resultados extraordinarios. Sin embargo, esa interpretación deja fuera una parte importante de la cuestión: la manera en que una persona reconoce sus posibilidades, valora lo que tiene y decide qué hacer con los recursos disponibles. Dos personas pueden encontrarse ante circunstancias parecidas y desarrollar respuestas muy diferentes. La diferencia no siempre está en las oportunidades que aparecen, sino también en la forma de percibirlas y relacionarse con ellas.
+
+Hablar de abundancia desde esta perspectiva no significa negar las dificultades ni suponer que todas las personas parten de las mismas condiciones. Significa ampliar el marco desde el que observamos nuestra vida. La prosperidad puede incluir estabilidad económica, pero también autonomía, relaciones satisfactorias, bienestar, tiempo y capacidad para orientar nuestras decisiones hacia objetivos que tengan sentido.
+
+Esta mirada permite abandonar una comparación constante con los resultados ajenos. Cuando utilizamos la vida de otras personas como medida permanente de nuestro propio progreso, corremos el riesgo de perder de vista nuestras circunstancias, prioridades y posibilidades reales. La abundancia deja entonces de ser una experiencia que podemos construir y se convierte en una carrera que nunca parece terminar.
+
+#### La relación entre pensamiento y decisiones cotidianas
+
+Nuestra manera de interpretar lo que sucede influye en las decisiones que tomamos. Una expectativa negativa puede llevarnos a descartar una posibilidad antes de examinarla; una confianza sin fundamento, por el contrario, puede impulsarnos a asumir riesgos que no hemos evaluado correctamente. Por eso, una mentalidad constructiva no consiste en sustituir cualquier preocupación por optimismo, sino en desarrollar criterios que permitan valorar las situaciones con mayor claridad.
+
+Las ideas que repetimos sobre nuestras capacidades, el dinero, el éxito o el futuro pueden convertirse en referencias habituales. Algunas nos ayudan a actuar con prudencia; otras pueden mantenernos dentro de límites que nunca hemos revisado. Examinar esas ideas exige distinguir entre hechos, interpretaciones y temores. No todo lo que pensamos describe fielmente la realidad, pero tampoco todo obstáculo puede resolverse cambiando nuestra actitud.
+
+Una perspectiva más consciente nos permite formular mejores preguntas: ¿qué parte de esta situación depende de nosotros?, ¿qué información nos falta?, ¿qué decisión sería razonable con los recursos actuales?, ¿qué estamos evitando por miedo a equivocarnos? Estas preguntas no garantizan un resultado, pero ayudan a sustituir las reacciones automáticas por respuestas deliberadas.
+
+#### La intención necesita una dirección concreta
+
+Desear una vida diferente puede ser un punto de partida, pero el deseo por sí solo no organiza el camino. Para que una aspiración tenga posibilidades de convertirse en una dirección real, necesitamos definir qué significa para nosotros y qué decisiones podrían acercarnos a ella.
+
+Una intención clara funciona como criterio para ordenar prioridades. Nos ayuda a distinguir entre actividades que consumen atención y acciones que contribuyen a algo que consideramos importante. También permite reconocer cuándo estamos siguiendo expectativas externas en lugar de tomar decisiones coherentes con nuestros propios objetivos.
+
+No todas las metas necesitan ser ambiciosas ni producir cambios inmediatos. A veces, avanzar consiste en ordenar una situación financiera, mejorar una relación, recuperar tiempo personal o desarrollar una habilidad. La importancia de una meta no depende exclusivamente de su tamaño, sino de la función que cumple en la vida que queremos construir.
+
+La coherencia aparece cuando nuestras elecciones cotidianas guardan relación con aquello que decimos valorar. No exige una disciplina perfecta. Requiere revisar el rumbo, reconocer las contradicciones y realizar ajustes cuando las circunstancias cambian.
+
+#### La atención también determina lo que reconocemos
+
+Vivimos rodeados de estímulos, información y comparaciones. Esa abundancia de mensajes no implica necesariamente una mayor capacidad para identificar oportunidades. Cuando nuestra atención está fragmentada, podemos dedicar demasiado tiempo a asuntos secundarios y dejar en segundo plano aquello que necesita una decisión.
+
+Aprender a dirigir la atención implica reconocer qué merece nuestra energía y qué puede esperar. También significa observar el entorno sin interpretar cada dificultad como una señal definitiva de fracaso. Una situación compleja puede contener información útil, aunque no ofrezca una solución inmediata.
+
+La atención consciente permite valorar mejor los recursos que ya tenemos: conocimientos, experiencias, contactos, tiempo, capacidades y herramientas. Reconocerlos no significa conformarse con la situación actual. Significa partir de una evaluación más realista para decidir qué conviene desarrollar, modificar o buscar.
+
+También conviene distinguir entre estar ocupado y avanzar. La actividad constante puede producir una sensación de movimiento sin acercarnos necesariamente a nuestras prioridades. En cambio, una elección bien orientada puede tener más valor que muchas acciones realizadas sin un propósito claro.
+
+#### Bienestar y prosperidad no son dimensiones separadas
+
+Una visión limitada del éxito puede llevarnos a medir el progreso únicamente por los resultados visibles. Sin embargo, una mejora material pierde parte de su sentido cuando exige deteriorar de forma permanente la salud, las relaciones o la tranquilidad personal.
+
+El bienestar no debería tratarse como una recompensa que llegará después de alcanzar todos nuestros objetivos. Forma parte de las condiciones que permiten sostener cualquier proyecto a lo largo del tiempo. El descanso, el cuidado personal, la estabilidad emocional y la calidad de nuestras relaciones influyen en nuestra capacidad para pensar, decidir y actuar.
+
+Esto no significa que debamos buscar una vida sin exigencias ni momentos difíciles. Significa reconocer que los recursos personales también tienen límites. Ignorarlos puede convertir una aspiración valiosa en una fuente de desgaste.
+
+Una relación más equilibrada con el éxito nos invita a revisar qué estamos sacrificando, qué estamos protegiendo y qué aspectos de nuestra vida necesitan mayor atención. La prosperidad adquiere así un significado más amplio, relacionado con la calidad de las condiciones que hacemos posibles y no solamente con aquello que podemos acumular.
+
+#### Aprender a convivir con la incertidumbre
+
+No todas las decisiones ofrecen garantías. Podemos prepararnos, estudiar una situación y actuar con responsabilidad, pero siempre existirán factores que escapan a nuestro control. Pretender eliminar toda incertidumbre puede terminar paralizando cualquier iniciativa.
+
+Una actitud constructiva consiste en diferenciar entre lo que podemos influir y lo que debemos aceptar como parte del contexto. Esta distinción evita gastar energía intentando controlar circunstancias ajenas y permite concentrarnos en las decisiones que sí están a nuestro alcance.
+
+La confianza tampoco debería confundirse con la certeza de que todo saldrá bien. Puede entenderse como la disposición a actuar con criterio, aprender de la experiencia y revisar una decisión cuando aparecen datos nuevos. Esa confianza es compatible con la prudencia y con la posibilidad de equivocarnos.
+
+Los resultados no siempre siguen el ritmo que esperamos. Por eso, conviene valorar también la calidad del proceso: la información que hemos adquirido, las capacidades que hemos desarrollado y la claridad con la que afrontamos las siguientes decisiones.
+
+#### Las relaciones forman parte de nuestra experiencia de prosperidad
+
+La manera en que nos relacionamos con otras personas influye en la calidad de nuestra vida. La confianza, el respeto, la colaboración y la capacidad de establecer límites contribuyen a crear entornos más saludables.
+
+Una perspectiva de abundancia no debería reducir las relaciones a su utilidad ni convertir cada encuentro en una oportunidad de obtener algo. Las conexiones humanas tienen valor propio. Compartir conocimientos, escuchar, colaborar y reconocer las necesidades de los demás permite construir vínculos que no dependen exclusivamente de un intercambio inmediato.
+
+También es importante identificar las relaciones que generan desgaste constante. Establecer límites no implica actuar con indiferencia, sino reconocer que el respeto debe estar presente en ambas direcciones. Una relación equilibrada necesita espacio para las diferencias, la comunicación y la autonomía.
+
+La prosperidad personal no se construye en aislamiento. El entorno influye en nuestras decisiones y nosotros también participamos en el entorno que ayudamos a crear.
+
+#### El dinero necesita una relación consciente
+
+La dimensión financiera forma parte de la abundancia, pero merece una mirada realista. El dinero ofrece posibilidades, facilita decisiones y puede aportar estabilidad. Sin embargo, su presencia no resuelve automáticamente todas las necesidades ni determina por sí sola la calidad de una vida.
+
+Una relación más consciente con los recursos económicos comienza por observar cómo tomamos decisiones: qué valoramos, qué priorizamos, qué compromisos asumimos y qué hábitos mantenemos. La claridad financiera no depende únicamente de cuánto se posee, sino también de la capacidad para comprender la situación propia y actuar de acuerdo con ella.
+
+Conviene evitar tanto la idealización del dinero como su rechazo automático. Considerarlo irrelevante puede impedirnos atender una dimensión importante de nuestra autonomía; convertirlo en la medida absoluta del éxito puede desplazar otros aspectos que también merecen cuidado.
+
+La contribución, la generosidad y el uso responsable de los recursos pueden formar parte de una relación más amplia con la prosperidad. No se trata de adoptar una única fórmula económica, sino de reconocer que las decisiones financieras tienen consecuencias y deben responder a circunstancias concretas.
+
+#### Aspiraciones que respetan nuestra propia dirección
+
+Las metas personales adquieren mayor sentido cuando responden a una visión que hemos examinado y no únicamente a modelos externos de éxito. Es fácil adoptar objetivos porque parecen deseables, reciben reconocimiento o representan lo que otras personas han conseguido. Sin embargo, una aspiración puede resultar poco adecuada si no guarda relación con nuestras prioridades y condiciones.
+
+Definir una dirección propia exige tiempo para revisar qué queremos conservar, qué deseamos cambiar y qué estamos dispuestos a dedicar a cada objetivo. También requiere aceptar que nuestras prioridades pueden evolucionar. Cambiar de dirección después de aprender algo nuevo no siempre significa abandonar; en ocasiones, significa tomar una decisión mejor informada.
+
+El progreso puede ser gradual y adoptar formas distintas en cada etapa. Hay momentos para ampliar posibilidades y otros para consolidar lo que ya hemos construido. La comparación permanente dificulta reconocer esa diferencia y puede llevarnos a perseguir ritmos que no corresponden a nuestra realidad.
+
+Una aspiración bien planteada no necesita convertirse en una exigencia permanente. Puede funcionar como orientación, ayudándonos a elegir con mayor conciencia y a evaluar los avances sin perder de vista el conjunto de nuestra vida.
+
+#### Reconocer la abundancia en la experiencia cotidiana
+
+La idea de prosperidad también puede observarse en situaciones que suelen pasar inadvertidas: disponer de tiempo para una conversación, aprender algo que amplía nuestra perspectiva, recuperar una relación importante o encontrar una forma más ordenada de resolver un problema.
+
+Reconocer estos aspectos no significa ignorar las carencias. La gratitud pierde sentido cuando se utiliza para invalidar una dificultad real o para pedir a alguien que se conforme con circunstancias que necesita cambiar. Su valor está en ampliar la percepción, no en sustituir la acción.
+
+La vida cotidiana ofrece oportunidades para revisar nuestras prioridades y reconocer qué está funcionando. Esa observación puede ayudarnos a cuidar lo que tiene valor, corregir lo que necesita atención y evitar que la búsqueda de un futuro mejor nos desconecte por completo del presente.
+
+La abundancia, entendida de esta manera, no es un estado permanente ni una promesa de ausencia de problemas. Es una perspectiva que puede ayudarnos a relacionarnos con mayor conciencia con nuestras posibilidades, nuestros recursos y las personas que forman parte de nuestra vida.
+
+#### Una perspectiva que se construye con el tiempo
+
+Atraer la abundancia puede interpretarse como un proceso de transformación de la mirada y de la conducta, no como una fórmula que garantice resultados externos. Pensar de otra manera puede abrir preguntas nuevas; actuar con intención puede modificar decisiones; revisar nuestros hábitos puede ayudarnos a sostener cambios. Pero los resultados también dependen de circunstancias, oportunidades y factores que no controlamos por completo.
+
+El valor de esta perspectiva está en reunir reflexión y responsabilidad. No basta con imaginar una situación distinta si no estamos dispuestos a examinar las decisiones que tomamos. Tampoco resulta útil convertir cada dificultad en una supuesta falla personal. Una visión madura de la prosperidad reconoce tanto nuestra capacidad de actuar como los límites de nuestra influencia.
+
+Desde ese punto de vista, la abundancia deja de ser una imagen idealizada y se convierte en una forma de observar la vida con mayor amplitud. Nos invita a valorar los recursos disponibles, definir qué significa avanzar y tomar decisiones más coherentes con aquello que queremos construir.
+
+#### ¿A quién puede interesarle esta lectura?
+
+Esta obra puede resultar de interés para quienes desean reflexionar sobre su relación con la prosperidad, el éxito y las oportunidades desde una perspectiva de desarrollo personal.
+
+También puede interesar a lectores que quieran examinar sus creencias, revisar la influencia de sus hábitos y prestar más atención a la conexión entre sus aspiraciones y sus decisiones cotidianas.
+
+No es necesario interpretar la abundancia exclusivamente desde el dinero. La lectura puede abordarse desde una visión más amplia que incluya bienestar, relaciones, autonomía, objetivos personales y la manera de valorar los recursos disponibles.
+
+Quienes busquen una promesa de riqueza inmediata o una garantía de resultados deberían tener presente que el desarrollo personal no elimina los condicionantes externos. El interés de esta perspectiva está en ofrecer elementos de reflexión para tomar decisiones con mayor conciencia, no en sustituir la realidad por expectativas infundadas.
+
+---
+
+### 7. Criterios para los encabezados y la arquitectura semántica
+
+Utiliza el título del libro como único H1.
+
+Los apartados del texto editorial deben organizarse con H2 y, solo cuando sea necesario, H3. No alteres el orden argumental ni conviertas cada párrafo en un encabezado.
+
+El índice de navegación debe enlazar con los H2 reales de la ficha.
+
+No añadas encabezados genéricos como «Sobre el libro», «¿De qué trata este libro?» o «Todo lo que necesitas saber» si no aportan una función editorial concreta.
+
+No introduzcas bloques de texto repetidos para aumentar artificialmente la extensión.
+
+### 8. Estrategia SEO de esta ficha
+
+La página debe responder a una intención de búsqueda relacionada con el desarrollo de una mentalidad de abundancia y la búsqueda de una perspectiva más consciente sobre la prosperidad personal.
+
+Trabaja con las siguientes expresiones de manera natural:
+
+- **Palabra clave principal:** mentalidad de abundancia.
+- **Expresiones secundarias:** libro sobre abundancia, abundancia personal, prosperidad y desarrollo personal, mentalidad de prosperidad, crecimiento personal y abundancia.
+
+No repitas mecánicamente estas expresiones. Utilízalas únicamente cuando encajen con el argumento y la intención del apartado.
+
+Propuesta de metadatos:
+
+**SEO Title:**
+
+El arte de atraer la abundancia: mentalidad y prosperidad | FG Perspectiva
+
+**Meta description:**
+
+Descubre una perspectiva sobre la mentalidad de abundancia, la prosperidad personal y las decisiones que influyen en nuestra forma de construir una vida plena.
+
+El título SEO y la descripción deben ser únicos dentro del catálogo. Comprueba que no se repitan en otras fichas.
+
+Implementa o actualiza correctamente:
+
+- Title.
+- Meta description.
+- Canonical con la URL oficial existente.
+- Open Graph title.
+- Open Graph description.
+- Open Graph image con la portada oficial.
+- Twitter Card y sus metadatos correspondientes.
+- H1 único.
+- Jerarquía H2/H3 coherente.
+- Enlaces internos pertinentes.
+- Breadcrumbs visibles y datos estructurados correspondientes.
+
+No introduzcas etiquetas meta en el cuerpo visible. Los metadatos pertenecen al `<head>`.
+
+### 9. Datos estructurados
+
+Conserva la arquitectura de datos estructurados del proyecto y asegúrate de que esta ficha incluya:
+
+- `Book`.
+- `BreadcrumbList`.
+
+En el objeto `Book`, utiliza exclusivamente los datos confirmados en el catálogo: nombre, autor, imagen y demás propiedades que estén verificadas.
+
+No inventes ISBN, editorial, fecha de publicación, número de páginas, puntuaciones, reseñas u ofertas.
+
+No añadas propiedades comerciales ficticias ni marques como disponibles formatos que no estén respaldados por los enlaces reales.
+
+Comprueba que el JSON-LD sea válido y que no existan dos bloques contradictorios para el mismo libro.
+
+### 10. Enlaces internos y contexto editorial
+
+Mantén el breadcrumb correspondiente a la estructura real del sitio:
+
+Inicio > Biblioteca > Mindset > El arte de atraer la abundancia.
+
+Comprueba que los enlaces a Biblioteca y Mindset apunten a las rutas oficiales existentes.
+
+Si hay un bloque de libros relacionados, conserva la lógica y los componentes del proyecto. Los libros relacionados deben proceder del catálogo real de Mindset o de categorías temáticamente pertinentes.
+
+No inventes títulos, portadas ni enlaces. No conviertas el bloque de relacionados en una sección repetitiva que compita con el contenido principal.
+
+### 11. Protección absoluta de la estructura comercial
+
+Esta condición es crítica y tiene prioridad sobre cualquier propuesta de rediseño editorial.
+
+La actualización del contenido y del SEO NO autoriza a modificar la estructura comercial existente.
+
+Antes de editar, inspecciona la ficha actual y registra la ubicación, cantidad, etiquetas, estilos y funcionamiento de todos los elementos de compra.
+
+Debes conservar:
+
+1. Los botones de compra que aparecen en la parte superior de la ficha.
+2. El botón o acceso a las ediciones y formatos.
+3. El modal de compra, si existe.
+4. Los formatos disponibles y sus enlaces comerciales.
+5. El botón de compra que aparece al final de la página.
+6. La ubicación original de cada uno de estos elementos.
+7. Los textos, estilos, jerarquía visual y comportamiento de compra actuales.
+
+**Está expresamente prohibido:**
+
+- Eliminar botones de compra.
+- Mover botones de una sección a otra.
+- Sustituir botones por enlaces de texto.
+- Duplicar botones.
+- Ocultar botones mediante CSS.
+- Cambiar el modal por un sistema distinto.
+- Convertir enlaces de un modal en botones individuales si no estaban presentados así.
+- Alterar el orden de los formatos comerciales.
+- Modificar los enlaces de Amazon.
+- Eliminar el botón de compra situado al final de la página.
+
+La incorporación del contenido editorial debe realizarse respetando la estructura comercial preexistente. Si es necesario ajustar el espaciado del contenido para integrarlo, hazlo sin desplazar, eliminar ni alterar los elementos comerciales.
+
+Antes de finalizar, realiza una comparación entre la ficha original y la actualizada. Comprueba expresamente que el botón de compra inferior sigue presente en su posición original y que funciona.
+
+### 12. Diseño y presentación visual
+
+Respeta la identidad visual existente de FG Perspectiva:
+
+- Verde oscuro institucional: `#174532`.
+- Verde medio: `#4db380`.
+- Fondos suaves ya definidos en el proyecto.
+- Texto principal oscuro.
+- Tipografías Libre Baskerville e Inter, según la jerarquía actual.
+
+La ficha debe transmitir una estética editorial, sobria y cuidada.
+
+No añadas imágenes decorativas, fotografías genéricas, ilustraciones ni iconos que no estuvieran justificados en el diseño original. Conserva la portada oficial del libro.
+
+No conviertas el contenido en una sucesión de tarjetas, cajas o elementos visuales innecesarios. Debe predominar la lectura cómoda, con una buena separación entre apartados y una anchura de texto apropiada.
+
+El diseño debe ser completamente responsive y conservar una experiencia de lectura adecuada en escritorio, tablet y móvil.
+
+### 13. Alcance técnico y archivos
+
+Antes de realizar cambios:
+
+1. Inspecciona la ficha actual y sus componentes.
+2. Identifica el archivo de vista, los datos del libro, los componentes comerciales y los metadatos asociados.
+3. Identifica la ruta real y la portada oficial desde el catálogo.
+4. Crea una copia de seguridad de los archivos que vayas a modificar.
+5. No sustituyas componentes compartidos si puedes resolver la intervención dentro de la ficha individual.
+
+No cambies el modelo general de datos del catálogo, la estructura de rutas, la navegación global ni los componentes de otras fichas.
+
+No modifiques:
+
+- La Home.
+- Biblioteca.
+- La categoría Mindset.
+- Las demás fichas de libros.
+- El menú principal.
+- El footer.
+- El diseño global.
+- La estructura de compra compartida.
+
+El footer está expresamente excluido de cualquier intervención. No debes modificarlo en ningún aspecto.
+
+### 14. Validaciones y pruebas obligatorias
+
+Una vez terminada la implementación, realiza las siguientes comprobaciones:
+
+**Contenido**
+- El texto editorial completo está presente.
+- No hay párrafos duplicados.
+- No se ha incorporado una sección «Sobre el libro».
+- El encabezado muestra título, subtítulo, línea editorial y autor.
+- El índice aparece después de la introducción y antes del desarrollo temático.
+- Todos los enlaces del índice funcionan.
+- Los H2 coinciden con las entradas del índice.
+
+**SEO**
+- Title y meta description únicos.
+- Canonical correcto.
+- Open Graph y Twitter Card correctos.
+- Un único H1.
+- Jerarquía de encabezados correcta.
+- Breadcrumbs funcionales.
+- JSON-LD Book y BreadcrumbList válidos.
+- Enlaces internos correctos.
+- No existen metadatos duplicados o contradictorios.
+
+**Compra**
+- Los botones superiores siguen presentes.
+- El acceso a las ediciones sigue presente.
+- El modal continúa funcionando, si existe.
+- Los tres enlaces oficiales de Amazon se conservan.
+- El botón inferior de compra sigue presente.
+- El botón inferior funciona y mantiene su ubicación original.
+- No se ha alterado ningún otro elemento comercial.
+
+**Diseño**
+- Escritorio.
+- Tablet.
+- Móvil.
+- Lectura y espaciado.
+- Portada correcta.
+- Ausencia de desbordamientos horizontales.
+- Ausencia de elementos visuales no autorizados.
+
+**Técnica**
+- TypeScript sin errores.
+- Build correcto.
+- Prerender de la ruta correcto.
+- HTML inicial con el contenido editorial visible e indexable.
+- Ausencia de errores de consola.
+- Sin regresiones en rutas o componentes ajenos a esta intervención.
+
+### 15. Informe final obligatorio
+
+Al terminar, entrega un informe técnico que detalle:
+
+1. Archivos creados y modificados.
+2. Copia de seguridad realizada y su ubicación.
+3. Ruta de la ficha intervenida.
+4. Número aproximado de palabras del contenido editorial incorporado.
+5. Metadatos SEO implementados.
+6. Datos estructurados comprobados.
+7. Resultado de las pruebas responsive.
+8. Resultado de TypeScript, build y prerender.
+9. Confirmación expresa de que no se ha modificado ninguna otra ficha ni categoría.
+10. Confirmación expresa de que el footer permanece intacto.
+11. Confirmación de que todos los botones comerciales conservan su ubicación original.
+12. Confirmación específica de que el botón de compra inferior está presente y funciona.
+13. Cualquier incidencia que no haya podido resolverse.
+
+### 16. Restricción de despliegue
+
+Todos los cambios deben realizarse exclusivamente en el entorno de trabajo actual.
+
+**No ejecutes ningún despliegue a Vercel.**
+
+No publiques, no sincronices con producción y no realices cambios en el sitio público.
+
+La tarea termina cuando la ficha esté implementada y todas las validaciones estén documentadas en el informe final. El despliegue requerirá una autorización expresa posterior.
+
+---
+
+**Instrucción final:** ejecuta únicamente la intervención descrita para «El arte de atraer la abundancia». Respeta íntegramente los datos oficiales, el contenido editorial, la arquitectura comercial y las restricciones del proyecto FG Perspectiva. No aproveches esta tarea para introducir mejoras adicionales en otras partes del sitio.

@@ -12,6 +12,7 @@ import GrowthView from './components/views/GrowthView.tsx';
 import MindsetView from './components/views/MindsetView.tsx';
 import BookDetailView from './components/views/BookDetailView.tsx';
 import SolopreneurManualView from './components/views/SolopreneurManualView.tsx';
+import AbundanceView from './components/views/AbundanceView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
@@ -72,6 +73,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/el-manual-del-solopreneur-moderno/' && matchedBook) {
     return <SolopreneurManualView book={matchedBook} />;
+  }
+
+  if (currentPath === '/el-arte-de-atraer-la-abundancia/' && matchedBook) {
+    return <AbundanceView book={matchedBook} />;
   }
 
   if (matchedBook) {
