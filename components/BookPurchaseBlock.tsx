@@ -9,12 +9,12 @@ export const OFFICIAL_PLATFORM_LOGOS = {
   googlePlayAudiolibro: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/google_play_audiolibro.jpg',
   googlePlayEbook: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/google_play_ebook.jpg',
   googlePlayBook: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/google_play_book.png',
-  kofi: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/ko-fi-logo.jpg',
-  clickbank: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.jpg',
-  payhip: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.jpg',
+  kofi: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/ko-fi-logo.png',
+  clickbank: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.png',
+  payhip: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.png',
   draft2digital: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/books2read_logo.png',
   books2read: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/books2read_logo.png',
-  lulu: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.jpg'
+  lulu: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.png'
 } as const;
 
 export interface PurchaseTile {
