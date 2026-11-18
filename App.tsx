@@ -15,6 +15,7 @@ import SolopreneurManualView from './components/views/SolopreneurManualView.tsx'
 import AbundanceView from './components/views/AbundanceView.tsx';
 import HypnoticSellerView from './components/views/HypnoticSellerView.tsx';
 import DeLaPlumaAlDineroView from './components/views/DeLaPlumaAlDineroView.tsx';
+import ExpertoPlrPremiumView from './components/views/ExpertoPlrPremiumView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
@@ -87,6 +88,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/de-la-pluma-al-dinero/' && matchedBook) {
     return <DeLaPlumaAlDineroView book={matchedBook} />;
+  }
+
+  if (currentPath === '/experto-en-plr-premium/' && matchedBook) {
+    return <ExpertoPlrPremiumView book={matchedBook} />;
   }
 
   if (matchedBook) {

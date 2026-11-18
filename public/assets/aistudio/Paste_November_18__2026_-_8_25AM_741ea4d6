@@ -1,0 +1,622 @@
+# INSTRUCCIÓN INTEGRAL PARA GOOGLE AI STUDIO
+## Actualización editorial, SEO y estructural de la ficha «Experto en PLR Premium»
+### Proyecto: FG Perspectiva
+
+## 1. OBJETIVO DE LA INTERVENCIÓN
+
+Actualizar exclusivamente la ficha individual del libro «Experto en PLR Premium» dentro del proyecto FG Perspectiva.
+
+La intervención consiste en sustituir el contenido editorial anterior por la nueva redacción aprobada, incorporar un índice de navegación interno, optimizar los elementos SEO y adaptar la presentación al sistema visual y técnico existente.
+
+No se trata de crear una ficha nueva ni de reconstruir el componente desde cero. Debes inspeccionar primero la implementación actual y trabajar sobre la vista, los datos y los componentes que ya utiliza este libro.
+
+La intervención debe limitarse a esta ficha. No modificar otras páginas, libros, categorías, componentes globales ni elementos generales del sitio.
+
+### Principio editorial fundamental
+
+La nueva ficha debe presentar el libro como una obra sobre la construcción de un sistema de productos y activos digitales, utilizando el PLR como materia prima y conectándolo con la transformación de contenidos, la inteligencia artificial, la producción multiformato, la comercialización, la infraestructura digital y la escalabilidad.
+
+No reducir el contenido del libro a una simple guía para modificar productos PLR.
+
+Tampoco convertir la ficha en una reproducción de la página de categoría Origen.
+
+La categoría Origen y la ficha deben cumplir funciones editoriales distintas:
+
+- La categoría Origen explica el significado del punto de partida y su relación con la propuesta editorial de FG Perspectiva.
+- La ficha profundiza en el modelo de creación y desarrollo de productos digitales que representa este libro.
+
+No copiar ni reutilizar párrafos de la categoría Origen.
+
+## 2. DATOS OFICIALES DEL LIBRO
+
+Utiliza estos datos como referencia y contrástalos con los registros existentes en el proyecto:
+
+- Título: Experto en PLR Premium.
+- Subtítulo: El Sistema Paso a Paso para Crear Infoproductos Rentables que venden. Con Herramientas Digitales Actuales.
+- Autor: Francisco González.
+- Categoría: Origen.
+- Ruta: conservar exactamente el slug y la URL canónica que ya tiene asignados esta ficha.
+- Portada: conservar la portada oficial existente, tanto en el catálogo como en la ficha.
+
+### Enlaces comerciales oficiales
+
+- Amazon: https://www.amazon.com/dp/B0GWZQPNT2
+- ClickBank: https://expertoplrpremium.vercel.app/
+- Payhip: https://payhip.com/b/QhoMJ
+
+No inventar enlaces adicionales ni modificar los existentes.
+
+No cambiar el título, el subtítulo, el autor, la categoría, la portada, el slug ni los identificadores comerciales.
+
+## 3. REVISIÓN PREVIA Y COPIA DE SEGURIDAD
+
+Antes de modificar archivos:
+
+1. Localiza la implementación real de la ficha «Experto en PLR Premium».
+2. Identifica su componente de vista, su registro de datos, sus metadatos y los componentes comerciales que utiliza.
+3. Comprueba cómo se renderizan actualmente el Hero, la introducción, las secciones de contenido, los botones de compra y el botón inferior.
+4. Identifica si la ficha utiliza componentes compartidos con otras páginas.
+5. Comprueba la estructura editorial de la categoría Origen para evitar introducir contenido duplicado.
+6. Crea una copia de seguridad de todos los archivos que vayas a modificar.
+
+Nombre de la copia de seguridad:
+
+`/_backup_ficha_experto_plr_premium/`
+
+No modificar componentes compartidos si no es imprescindible. Si alguna modificación global fuera aparentemente necesaria, detenerse y explicar el motivo antes de realizarla.
+
+## 4. NUEVA ARQUITECTURA EDITORIAL
+
+La ficha debe conservar su identidad visual y su sistema de componentes, pero incorporar la nueva estructura editorial aprobada.
+
+Orden obligatorio del contenido visible:
+
+1. Hero editorial.
+2. Primera sección introductoria.
+3. Índice de contenidos.
+4. Desarrollo temático completo.
+5. Cierre editorial.
+6. Elementos comerciales originales en sus ubicaciones actuales, sin desplazamientos.
+
+El índice debe aparecer exactamente después de la primera sección introductoria y antes del desarrollo temático principal.
+
+**No colocar el índice inmediatamente después del Hero.**
+
+**No colocar el índice antes de la introducción.**
+
+### 4.1. Hero editorial
+
+Mostrar:
+
+- Título: Experto en PLR Premium.
+- Subtítulo oficial completo.
+- Una línea editorial complementaria que aporte contexto sin repetir el subtítulo.
+- Autor: Francisco González.
+- Portada oficial existente.
+
+Línea editorial complementaria aprobada:
+
+«De la materia prima digital a un ecosistema propio: una visión estratégica para transformar contenidos, desarrollar productos y organizar un negocio digital con capacidad de evolución.»
+
+No añadir una sección denominada «Sobre el libro».
+
+No repetir el subtítulo en la línea editorial complementaria.
+
+No inventar valoraciones, reseñas, cifras de ventas, premios ni acreditaciones.
+
+### 4.2. Introducción
+
+Incorporar íntegramente el texto de la primera sección de la redacción aprobada, desde el encabezado «Introducción» hasta el último párrafo anterior al índice.
+
+No resumir, recortar ni sustituir su contenido.
+
+### 4.3. Índice de contenidos
+
+Título visible:
+
+«Contenido de esta página»
+
+Texto introductorio:
+
+«Accede directamente al apartado que te interesa.»
+
+El índice debe incluir estos apartados, con enlaces internos funcionales:
+
+1. El verdadero valor de trabajar con contenido PLR.
+2. Transformar conocimiento exige una dirección propia.
+3. La inteligencia artificial dentro del proceso creativo.
+4. Un contenido puede convertirse en distintas experiencias.
+5. La presentación también forma parte del producto.
+6. Elegir dónde comercializar y distribuir.
+7. Construir una infraestructura digital propia.
+8. La atención del público como recurso estratégico.
+9. Automatizar sin perder el control del negocio.
+10. Medir, mejorar y ampliar el proyecto.
+11. De productos aislados a un sistema digital.
+
+Utilizar los identificadores únicos indicados en la redacción:
+
+- `valor-plr`
+- `transformacion-conocimiento`
+- `inteligencia-artificial`
+- `contenido-multiformato`
+- `presentacion-producto`
+- `distribucion-comercial`
+- `infraestructura-digital`
+- `atencion-publico`
+- `automatizacion`
+- `escalabilidad`
+- `sistema-digital`
+
+Los identificadores deben estar correctamente asociados a sus secciones reales. No crear anclas duplicadas.
+
+El índice debe ser visualmente coherente con los índices incorporados en las demás fichas y adaptarse a escritorio y móvil.
+
+En escritorio puede utilizar dos columnas si el sistema visual existente lo permite. En móvil debe presentarse en una sola columna.
+
+Los enlaces deben permitir una navegación cómoda y no dejar los encabezados ocultos detrás del encabezado fijo del sitio. Si existe un sistema de desplazamiento con margen superior, reutilizarlo.
+
+## 5. TEXTO EDITORIAL COMPLETO Y APROBADO
+
+Incorporar el siguiente contenido íntegramente.
+
+No resumirlo, reescribirlo, sustituir párrafos, eliminar secciones ni cambiar su enfoque. La redacción ha sido aprobada expresamente y debe conservarse.
+
+### Introducción
+
+El mercado de los productos digitales ofrece una posibilidad interesante para quienes desean desarrollar una actividad comercial basada en el conocimiento y la distribución de contenidos. Sin embargo, disponer de materiales que podemos utilizar o comercializar no significa que tengamos construido un negocio. Entre adquirir un recurso y convertirlo en una propuesta digital con identidad propia existe un trabajo estratégico que determina buena parte del valor final.
+
+El PLR puede facilitar el acceso a contenidos sobre los que desarrollar nuevos productos, pero su verdadero potencial no se encuentra en cambiar algunas palabras, modificar una portada o publicar el material en otra plataforma. La oportunidad aparece cuando somos capaces de tomar decisiones sobre el contenido, su utilidad, su presentación y la forma en que llegará a las personas interesadas.
+
+Además, el entorno digital actual permite conectar herramientas que antes se utilizaban de manera independiente. La inteligencia artificial puede intervenir en diferentes tareas de producción; los formatos digitales permiten adaptar una misma base de conocimiento a distintas experiencias; y las plataformas comerciales ofrecen alternativas para distribuir, vender y gestionar productos.
+
+El desafío consiste en organizar todas esas posibilidades sin convertir el proyecto en una acumulación desordenada de herramientas. Necesitamos comprender cómo se relacionan el producto, la tecnología, los canales de distribución y las personas que pueden encontrar valor en nuestra propuesta.
+
+### El verdadero valor de trabajar con contenido PLR
+
+Los productos con derechos de marca privada pueden representar un punto de partida para desarrollar una actividad digital. Permiten acceder a materiales que, bajo las condiciones de licencia correspondientes, podemos adaptar y utilizar en nuestros propios proyectos. Sin embargo, su disponibilidad no constituye por sí misma una ventaja competitiva.
+
+Cuando un mismo material puede encontrarse en manos de numerosos compradores, la simple distribución de ese contenido difícilmente permite construir una identidad diferenciada. La oportunidad está en decidir qué hacer con él y cómo convertirlo en una propuesta que tenga sentido para un público concreto.
+
+Esta perspectiva cambia nuestra relación con el PLR. Dejamos de verlo como un producto terminado que solo necesita una nueva presentación y empezamos a considerarlo una materia prima que requiere evaluación, criterio y trabajo editorial.
+
+También debemos comprender que no todos los materiales tienen el mismo potencial. Algunos pueden estar desactualizados, otros necesitan una reorganización profunda y algunos quizá no resulten apropiados para el proyecto que queremos desarrollar. La licencia de uso tampoco debe interpretarse como una autorización ilimitada: las condiciones concretas de cada material determinan qué transformaciones y formas de comercialización están permitidas.
+
+Por tanto, el primer paso consiste en evaluar lo que tenemos delante y decidir si merece la pena invertir recursos en su transformación.
+
+### Transformar conocimiento exige una dirección propia
+
+La transformación de un producto digital no debería medirse por la cantidad de cambios visibles que realizamos. Un documento puede tener una portada diferente y una redacción modificada sin que haya mejorado su utilidad. La verdadera transformación se produce cuando reconsideramos el propósito del material y encontramos una manera de aportar valor que no dependa exclusivamente de su contenido original.
+
+Para conseguirlo, necesitamos comprender qué problema aborda, qué información resulta insuficiente y qué aspectos requieren una explicación más clara. También debemos determinar qué conocimientos adicionales pueden enriquecer la propuesta y qué elementos conviene eliminar porque no contribuyen al objetivo.
+
+Esta tarea exige una combinación de análisis y criterio editorial. No basta con incorporar información nueva: debemos comprobar que sea pertinente, que tenga fundamento y que encaje con el propósito del producto.
+
+La contextualización merece especial atención. Un contenido puede haber sido válido en el momento de su creación y necesitar una revisión cuando cambian las herramientas, las prácticas del sector o las condiciones del mercado. Actualizarlo implica comprobar la vigencia de sus afirmaciones, no simplemente sustituir fechas o nombres.
+
+La personalización también debe ir más allá de modificar el tono. Una propuesta adquiere identidad cuando refleja decisiones conscientes sobre su enfoque, su organización y la experiencia que queremos ofrecer. El resultado debe tener una razón propia para existir.
+
+### La inteligencia artificial dentro del proceso creativo
+
+La inteligencia artificial ha ampliado las posibilidades de trabajar con contenidos digitales. Puede ayudar a examinar documentos, detectar problemas de organización, explorar alternativas, preparar borradores y acelerar determinadas tareas de producción.
+
+Sin embargo, utilizar estas herramientas no elimina la necesidad de supervisión. La velocidad con la que podemos generar texto no garantiza que la información sea correcta, que el resultado tenga profundidad o que responda a las necesidades de un lector.
+
+La IA funciona mejor cuando forma parte de un proceso dirigido por objetivos claros. Primero debemos saber qué queremos conseguir; después podemos utilizarla para explorar soluciones, organizar información o desarrollar materiales que posteriormente serán revisados.
+
+También es necesario distinguir entre asistencia y responsabilidad. La selección de fuentes, la comprobación de datos, la coherencia del contenido y las decisiones finales siguen necesitando criterio humano.
+
+Una herramienta puede producir una explicación convincente y, aun así, contener errores o presentar como cierta una afirmación insuficientemente respaldada. Por eso, la revisión no es una fase opcional que se realiza únicamente cuando sobra tiempo. Forma parte de la calidad del producto.
+
+La ventaja no está en utilizar inteligencia artificial en todas las tareas posibles, sino en identificar dónde aporta eficiencia sin deteriorar el resultado.
+
+### Un contenido puede convertirse en distintas experiencias
+
+El conocimiento no tiene por qué permanecer limitado a un único formato. Una idea desarrollada inicialmente como texto puede adaptarse a otras formas de presentación cuando estas responden a una necesidad real del público.
+
+Un ebook permite organizar información para una lectura estructurada. Un recurso de audio puede facilitar el acceso a determinados contenidos en otros momentos del día. Un vídeo puede ayudar a explicar un procedimiento que resulta más sencillo de comprender mediante imágenes. Una presentación interactiva puede favorecer la participación y la aplicación práctica de lo aprendido.
+
+Estas posibilidades abren un campo de desarrollo para quienes trabajan con productos digitales. Sin embargo, multiplicar formatos no significa copiar el mismo contenido en diferentes archivos y considerar terminado el trabajo.
+
+Cada experiencia necesita una adaptación. El lenguaje, la extensión, la organización y la forma de interacción deben responder a las características del medio utilizado.
+
+También debemos valorar el esfuerzo que requiere cada formato. Producir cinco versiones de un material puede parecer atractivo, pero no siempre es la mejor decisión. Conviene identificar qué formatos aportan valor adicional y cuáles pueden consumir recursos sin mejorar la experiencia del usuario.
+
+La diversificación tiene sentido cuando existe una relación clara entre el contenido principal y las nuevas formas de presentarlo.
+
+### La presentación también forma parte del producto
+
+Un producto digital no se evalúa únicamente por la información que contiene. Su presentación influye en la manera en que las personas lo reconocen, lo interpretan y deciden si merece su atención.
+
+La identidad visual, la portada, la organización de las páginas y la coherencia entre los distintos elementos contribuyen a transmitir una percepción de calidad. Estos componentes no sustituyen al contenido, pero ayudan a comunicar su propósito y a diferenciarlo de otras propuestas.
+
+En este contexto, el diseño debe estar al servicio del producto. Una portada necesita representar adecuadamente el tema y el público al que se dirige. Los recursos gráficos deben facilitar la comprensión, mientras que la estructura visual debe permitir que el usuario encuentre la información sin dificultades.
+
+La inteligencia artificial también puede intervenir en la generación de conceptos visuales y en determinadas tareas de diseño. Aun así, el resultado requiere revisión: una imagen atractiva no necesariamente es apropiada, y una composición visualmente llamativa puede resultar poco clara cuando se utiliza en una miniatura comercial.
+
+La presentación profesional es una combinación de decisiones. No depende de añadir más elementos, sino de conseguir que cada uno cumpla una función reconocible.
+
+### Elegir dónde comercializar y distribuir
+
+Un producto bien desarrollado necesita un entorno adecuado para llegar a sus posibles compradores. La elección de la plataforma influye en la forma de presentar la oferta, gestionar las transacciones y mantener la relación con los clientes.
+
+No existe un único canal que resulte conveniente para todos los proyectos. Algunas plataformas ofrecen acceso a mercados ya establecidos y simplifican determinadas tareas de distribución. Otras permiten construir una relación más directa con el público y controlar una mayor parte de la experiencia comercial.
+
+Amazon KDP, por ejemplo, pertenece a un entorno orientado a la publicación y distribución de libros. Las plataformas de cursos responden a necesidades diferentes, mientras que los servicios de venta de productos digitales pueden ofrecer alternativas para gestionar archivos, pagos y entregas.
+
+También existen plataformas de afiliación que permiten comercializar productos propios o participar en la distribución de ofertas de terceros, siempre bajo sus condiciones particulares.
+
+La decisión no debería basarse únicamente en la popularidad de una herramienta. Necesitamos valorar sus costes, las condiciones aplicables, las posibilidades de integración, el tipo de público al que permite llegar y el grado de control que ofrece.
+
+La plataforma es un medio para desarrollar el negocio, no el negocio en sí mismo.
+
+### Construir una infraestructura digital propia
+
+A medida que un proyecto incorpora productos, clientes y canales de distribución, puede resultar conveniente desarrollar una infraestructura que conecte sus diferentes componentes.
+
+Una presencia digital propia permite organizar la información, presentar el catálogo, explicar las propuestas y establecer puntos de contacto con las personas interesadas. También puede facilitar que diferentes recursos trabajen de manera coordinada.
+
+No es necesario comenzar con una arquitectura tecnológica compleja. En muchos casos, una página bien organizada y un sistema básico de comunicación son suficientes para dar los primeros pasos. La infraestructura puede evolucionar conforme aparecen necesidades que justifican nuevas funcionalidades.
+
+Lo importante es comprender la diferencia entre depender completamente de una plataforma externa y construir elementos propios que aporten continuidad al proyecto.
+
+Una tienda o un servicio de terceros pueden resolver tareas concretas, pero las condiciones de esos proveedores pueden cambiar. Contar con una estructura digital propia permite desarrollar una identidad independiente y organizar mejor las relaciones entre productos, contenidos y audiencia.
+
+Esta evolución requiere tomar decisiones proporcionadas a los recursos disponibles. Construir más infraestructura de la necesaria puede convertirse en una fuente de costes y complejidad. La tecnología debe responder a necesidades reales, no convertirse en un objetivo aislado.
+
+### La atención del público como recurso estratégico
+
+Un producto digital no encuentra necesariamente a sus compradores por el simple hecho de estar disponible. Para que una propuesta llegue a las personas adecuadas, necesitamos desarrollar una estrategia de visibilidad.
+
+La atención del público se distribuye entre numerosos canales y formatos. Los buscadores, las redes sociales, las comunidades, los contenidos audiovisuales y el correo electrónico ofrecen distintas oportunidades para establecer contacto con posibles clientes.
+
+Cada canal tiene características propias. Una búsqueda puede responder a una necesidad concreta; una publicación en redes puede despertar interés; una comunidad puede facilitar conversaciones más continuas; y el correo electrónico puede mantener una relación directa con personas que han decidido recibir información.
+
+La elección debe partir del comportamiento del público, no de la popularidad momentánea de una plataforma. También conviene evitar la dispersión: intentar mantener una presencia intensa en todos los canales puede consumir recursos que deberían destinarse a mejorar los productos.
+
+Una estrategia de tráfico necesita coherencia entre lo que comunicamos y lo que ofrecemos. Si atraemos personas mediante mensajes que no representan fielmente el producto, podemos generar visitas sin construir confianza.
+
+La visibilidad adquiere valor cuando facilita una relación entre una necesidad real y una propuesta capaz de responder a ella.
+
+### Automatizar sin perder el control del negocio
+
+La automatización puede ayudar a reducir tareas repetitivas y conectar procesos que, de otro modo, exigirían intervención constante. En un negocio digital puede intervenir en la distribución de contenidos, la gestión de consultas, el seguimiento de clientes y determinadas operaciones comerciales.
+
+Su utilidad depende de que exista un proceso comprensible antes de intentar automatizarlo. Si una actividad está mal organizada, trasladarla a una herramienta no resuelve sus problemas. En algunos casos, incluso puede multiplicar los errores.
+
+Por eso, conviene identificar qué tareas se repiten, qué pasos pueden estandarizarse y qué situaciones requieren una decisión humana. La automatización debe mejorar la organización, no eliminar indiscriminadamente el contacto personal.
+
+También debemos considerar la experiencia del cliente. Una respuesta automática puede resultar útil cuando proporciona información inmediata, pero puede generar frustración si impide resolver una consulta particular. La eficiencia interna nunca debería conseguirse a costa de una atención deficiente.
+
+Un sistema bien planteado combina procedimientos claros, herramientas apropiadas y supervisión. Su propósito es liberar tiempo para actividades que requieren análisis, creatividad y decisiones de mayor importancia.
+
+### Medir, mejorar y ampliar el proyecto
+
+Un negocio digital necesita información para saber si está avanzando en la dirección adecuada. Las métricas permiten observar el comportamiento de los productos, los canales de adquisición y las operaciones, pero solo resultan útiles cuando están relacionadas con decisiones concretas.
+
+No todas las cifras tienen la misma importancia. El número de visitas, por ejemplo, no explica por sí solo si una propuesta es rentable. También debemos considerar la relación entre los recursos invertidos, las ventas obtenidas, los costes de adquisición y la continuidad de los clientes.
+
+La interpretación de los datos exige contexto. Un aumento de actividad puede representar una mejora o simplemente un incremento del esfuerzo necesario para conseguir el mismo resultado. Por eso, conviene analizar las relaciones entre indicadores en lugar de perseguir cifras aisladas.
+
+Cuando un proyecto comienza a mostrar una estructura más estable, aparece la posibilidad de ampliar sus operaciones. Esto puede implicar incorporar nuevos productos, mejorar los procesos, distribuir responsabilidades o desarrollar sistemas que permitan mantener la calidad a medida que aumenta la actividad.
+
+La escalabilidad no consiste en crecer a cualquier precio. Un sistema que aumenta su volumen mientras pierde control, coherencia o rentabilidad no representa necesariamente una evolución favorable.
+
+El crecimiento sostenible requiere comprender qué funciona, qué necesita mejorar y qué recursos podemos dedicar a la siguiente etapa.
+
+### De productos aislados a un sistema digital
+
+El verdadero potencial de trabajar con productos digitales aparece cuando dejamos de considerar cada publicación como una operación independiente y empezamos a comprender las relaciones que pueden establecerse entre ellas.
+
+Un contenido puede convertirse en la base de diferentes formatos. Un producto puede formar parte de una oferta más amplia. Una plataforma puede facilitar su distribución, mientras que una infraestructura propia organiza la relación con los clientes. Los procesos automatizados pueden reducir determinadas tareas y las métricas ayudar a decidir dónde conviene concentrar los recursos.
+
+Estas conexiones permiten construir una actividad con mayor coherencia que la simple acumulación de archivos y ofertas.
+
+Sin embargo, no necesitamos desarrollar todos los componentes al mismo tiempo. Un proyecto puede comenzar con un producto bien definido y evolucionar a partir de las necesidades que aparecen durante su desarrollo. La infraestructura, los canales y las herramientas deben crecer de manera proporcionada.
+
+También debemos recordar que la tecnología cambia, las plataformas actualizan sus condiciones y los hábitos de los consumidores evolucionan. Un sistema digital no es una estructura que se construye una vez y permanece intacta. Necesita revisión y capacidad de adaptación.
+
+Trabajar con PLR, inteligencia artificial y herramientas digitales puede abrir diferentes caminos para quienes desean crear productos propios. La diferencia está en cómo utilizamos esos recursos: si nos limitamos a reproducir materiales existentes, tendremos una propuesta difícil de distinguir; si los integramos dentro de una estrategia coherente, podremos desarrollar activos con identidad y posibilidades de evolución.
+
+La finalidad no es producir por producir, ni automatizar cada actividad disponible. Es construir un sistema en el que el conocimiento, los productos, la tecnología y la comercialización trabajen en una misma dirección.
+
+Ese cambio de perspectiva permite pasar de gestionar contenidos aislados a desarrollar un proyecto digital con estructura, criterio y capacidad de crecimiento.
+
+## 6. REQUISITOS SEO
+
+Implementar los metadatos correspondientes a la ruta real de esta ficha.
+
+### SEO title propuesto
+
+`Experto en PLR Premium: crear productos digitales | FG Perspectiva`
+
+### Meta description propuesta
+
+`Descubre cómo transformar contenidos PLR, desarrollar infoproductos y conectar inteligencia artificial, plataformas y sistemas digitales para construir un negocio propio.`
+
+### Orientación semántica
+
+Palabra clave principal:
+
+- productos digitales con PLR
+
+Términos secundarios:
+
+- transformar productos PLR
+- crear infoproductos
+- negocio de productos digitales
+- PLR con inteligencia artificial
+- comercializar infoproductos
+- automatización de negocios digitales
+
+Utilizar estas expresiones de manera natural y contextual. No forzar su repetición ni introducirlas en párrafos donde no aporten significado.
+
+No convertir la página en una acumulación de palabras clave.
+
+Estas expresiones constituyen una orientación semántica inicial. No afirmar que se han validado volúmenes de búsqueda o niveles de competencia mediante herramientas externas si no se ha realizado esa investigación.
+
+### Canonical
+
+Conservar la URL canónica real que ya tiene asignada el libro en el proyecto. Debe coincidir con su ruta pública, sin crear una URL alternativa.
+
+### Open Graph y Twitter Cards
+
+Actualizar los metadatos sociales para esta ficha utilizando:
+
+- Título de la obra.
+- Descripción SEO.
+- Portada oficial existente.
+- URL canónica real.
+
+No utilizar una imagen genérica ni crear una portada nueva.
+
+### Datos estructurados
+
+Comprobar el JSON-LD existente y adaptarlo si es necesario.
+
+Debe conservarse una entidad `Book` coherente con los datos reales del catálogo y un `BreadcrumbList` que refleje la navegación:
+
+Inicio → Biblioteca → Origen → Experto en PLR Premium.
+
+No inventar:
+
+- ISBN.
+- Editorial.
+- Fecha de publicación.
+- Número de páginas.
+- Calificaciones.
+- Reseñas.
+- Precios.
+- Ofertas.
+- Disponibilidad.
+- Datos de ventas.
+
+No generar propiedades `offers`, valoraciones ni datos comerciales que no estén respaldados por el proyecto.
+
+El título, el subtítulo y el autor de los datos estructurados deben coincidir con los datos reales del libro.
+
+## 7. PROTECCIÓN ABSOLUTA DE LA ESTRUCTURA COMERCIAL
+
+**ESTA SECCIÓN ES OBLIGATORIA Y TIENE PRIORIDAD SOBRE CUALQUIER DECISIÓN DE REDISEÑO.**
+
+La ficha ya cuenta con una estructura comercial implementada. La actualización editorial y SEO no autoriza modificarla.
+
+Debes conservar exactamente:
+
+1. La ubicación original de todos los botones de compra.
+2. El botón o acceso comercial superior, si existe.
+3. El botón que permite consultar las ediciones disponibles.
+4. El modal de compra y su funcionamiento, si la ficha lo utiliza.
+5. Los formatos disponibles y sus enlaces.
+6. Los textos originales de los botones.
+7. Los estilos, colores, tamaños y jerarquía visual de los elementos comerciales.
+8. La lógica de apertura y cierre del modal.
+9. Los enlaces externos y sus atributos de seguridad.
+10. El bloque comercial inferior.
+11. El botón de compra situado al final de la página, en su posición original y completamente operativo.
+
+**Prohibiciones expresas:**
+
+- No eliminar botones.
+- No sustituir botones.
+- No duplicar botones.
+- No ocultar botones.
+- No desplazar bloques comerciales.
+- No trasladar el botón inferior a otra sección.
+- No retirar el botón de compra final.
+- No convertir un modal existente en botones individuales.
+- No modificar las URL comerciales.
+- No cambiar los formatos disponibles.
+- No alterar el comportamiento del modal.
+- No modificar la lógica comercial para simplificar el componente.
+- No sustituir los componentes actuales por una implementación nueva.
+
+La ubicación comercial debe permanecer idéntica a la implementación anterior. El nuevo contenido editorial debe integrarse respetando esa estructura.
+
+Si el código actual requiere reorganización para incorporar el índice o los nuevos apartados, separar los cambios editoriales de los componentes comerciales. No modificar la lógica de compra.
+
+La normalización general del orden de formatos comerciales, si se realiza, corresponde a una intervención independiente y no debe ejecutarse dentro de esta tarea.
+
+## 8. DISEÑO Y EXPERIENCIA DE USUARIO
+
+Mantener la identidad visual actual de FG Perspectiva.
+
+- Conservar la paleta de colores del proyecto.
+- Mantener la tipografía y jerarquía visual existentes.
+- Respetar el diseño del Hero y la presentación de la portada.
+- Mantener una lectura cómoda y una anchura de texto apropiada.
+- Evitar bloques excesivamente densos.
+- Mantener una separación visual clara entre secciones.
+- Utilizar los H2 para los once apartados principales.
+- No introducir imágenes genéricas, ilustraciones decorativas ni fotografías ajenas al libro.
+- No añadir iconos decorativos innecesarios.
+- No introducir elementos visuales que distraigan de la lectura.
+- No crear tarjetas repetitivas para cada párrafo.
+- No añadir una sección «Sobre el libro».
+
+La página debe conservar un aspecto editorial, no convertirse en una página de ventas genérica.
+
+### Adaptación móvil
+
+Verificar:
+
+- Que el Hero no se desborde.
+- Que la portada conserve sus proporciones.
+- Que el índice sea fácil de consultar.
+- Que los enlaces del índice sean accesibles.
+- Que los títulos largos no rompan la composición.
+- Que los párrafos tengan una anchura y separación legibles.
+- Que los botones comerciales mantengan su tamaño y funcionamiento.
+- Que el modal de compra pueda utilizarse correctamente.
+- Que el botón inferior siga visible y operativo en su ubicación original.
+
+## 9. REQUISITOS TÉCNICOS Y DE ACCESIBILIDAD
+
+- Mantener el sistema de rutas existente.
+- No modificar el router.
+- No modificar la configuración de trailing slash.
+- No modificar el sistema global de SEO.
+- No introducir dependencias nuevas.
+- No duplicar componentes innecesariamente.
+- Utilizar HTML semántico y una jerarquía correcta de encabezados.
+- Comprobar que solo exista un H1 principal.
+- Utilizar H2 para los apartados principales.
+- Evitar encabezados vacíos.
+- Garantizar que los enlaces internos del índice funcionen.
+- Garantizar que los identificadores HTML sean únicos.
+- Mantener los atributos accesibles de botones y enlaces.
+- Respetar los atributos `target` y `rel` de los enlaces externos existentes.
+- Mantener la hidratación y el prerenderizado compatibles con la arquitectura actual.
+
+No colocar metadatos SEO visibles dentro del cuerpo del documento. Las etiquetas `title`, `meta description`, canonical, Open Graph y Twitter deben estar en el lugar técnico correspondiente dentro del documento HTML.
+
+## 10. PRUEBAS Y AUDITORÍA OBLIGATORIAS
+
+Una vez finalizada la implementación:
+
+### A. Integridad editorial
+
+- Comprobar que se ha incorporado todo el texto aprobado.
+- Verificar que no se ha omitido ningún apartado.
+- Comprobar que no se han añadido párrafos inventados.
+- Confirmar que la introducción aparece antes del índice.
+- Confirmar que el índice aparece después de la introducción.
+- Verificar que cada enlace del índice lleva al H2 correcto.
+- Comprobar que no existen anclas duplicadas.
+- Verificar que no se ha copiado contenido de la categoría Origen.
+- Confirmar que el enfoque editorial no se ha reducido a una explicación superficial del PLR.
+
+### B. Integridad comercial
+
+Comparar la ficha anterior y la nueva.
+
+Verificar expresamente:
+
+- Que todos los botones comerciales originales siguen presentes.
+- Que todos mantienen su ubicación.
+- Que los enlaces de Amazon, ClickBank y Payhip siguen siendo los mismos.
+- Que el modal conserva su funcionamiento, si existe.
+- Que el acceso a las ediciones sigue funcionando, si existe.
+- Que el botón de compra inferior permanece en su posición original.
+- Que el botón inferior funciona correctamente.
+- Que no se ha eliminado, duplicado, desplazado ni ocultado ningún elemento comercial.
+
+La prueba del botón inferior debe aparecer expresamente en el informe final.
+
+### C. SEO
+
+Comprobar:
+
+- SEO title.
+- Meta description.
+- Canonical.
+- Open Graph.
+- Twitter Cards.
+- JSON-LD Book.
+- JSON-LD BreadcrumbList.
+- Ausencia de datos inventados.
+- Ausencia de errores de renderizado o duplicación de metadatos.
+
+### D. Pruebas técnicas
+
+- Ejecutar TypeScript.
+- Ejecutar build de producción.
+- Ejecutar prerenderizado.
+- Comprobar la ruta pública de esta ficha.
+- Verificar que el resto de las rutas sigue funcionando.
+- Revisar errores de consola.
+- Revisar la versión de escritorio.
+- Revisar la versión móvil.
+- Comprobar que la hidratación funciona correctamente.
+
+### E. Regresión
+
+Comparar con la copia de seguridad y comprobar que no se han alterado:
+
+- Otras fichas de libros.
+- Categorías.
+- Biblioteca.
+- Home.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Navegación general.
+- Footer.
+
+## 11. LÍMITES DE LA INTERVENCIÓN
+
+No modificar:
+
+- Ninguna otra ficha de libro.
+- Ninguna categoría.
+- La Home.
+- Biblioteca.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Header.
+- Footer.
+- Menús generales.
+- Componentes globales no necesarios.
+- Catálogo de libros.
+- Portadas.
+- Enlaces comerciales de otros títulos.
+- Sitemap global, salvo que el sistema lo regenere automáticamente sin cambiar rutas ni datos ajenos a esta tarea.
+
+No desplegar a Vercel.
+
+No publicar cambios en producción.
+
+## 12. INFORME FINAL OBLIGATORIO
+
+Al terminar, entregar un informe técnico que incluya:
+
+1. Archivos inspeccionados.
+2. Archivos modificados.
+3. Ubicación de la copia de seguridad.
+4. Confirmación de que se ha actualizado exclusivamente la ficha solicitada.
+5. Confirmación de que el texto aprobado está incorporado íntegramente.
+6. Confirmación de la posición del índice.
+7. Confirmación de que las once anclas funcionan.
+8. Metadatos SEO implementados.
+9. Datos estructurados implementados y validados.
+10. Resultado de TypeScript, build y prerenderizado.
+11. Resultado de las pruebas de escritorio y móvil.
+12. Resultado de la prueba comparativa de los elementos comerciales.
+13. Confirmación expresa de que el botón inferior de compra permanece en su posición original y funciona.
+14. Confirmación de que el modal y los demás botones comerciales no han sufrido alteraciones.
+15. Confirmación de que no se ha modificado la categoría Origen.
+16. Confirmación de que no se ha modificado el Footer.
+17. Confirmación de que no se ha realizado ningún despliegue.
+
+Si alguna prueba no puede realizarse, indicarlo expresamente. No declarar como correcto aquello que no se haya comprobado.
+
+## 13. CONDICIÓN FINAL
+
+Esta es una intervención editorial y SEO sobre una ficha existente, no una reconstrucción comercial.
+
+La prioridad es integrar el contenido aprobado, mejorar la estructura de navegación y optimizar la presentación orgánica sin alterar el funcionamiento que ya tiene la ficha.
+
+La nueva ficha debe desarrollar la identidad editorial de «Experto en PLR Premium» y mantener una diferenciación clara respecto a la página de categoría Origen.
+
+**El texto editorial se incorpora; la estructura comercial se conserva.**
+
+Ejecuta únicamente los cambios autorizados, verifica cada punto y presenta el informe técnico antes de considerar finalizada la tarea.

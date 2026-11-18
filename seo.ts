@@ -1172,6 +1172,78 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6k. Ficha editorial dedicada: Experto en PLR Premium
+  if (path === '/experto-en-plr-premium/') {
+    const plrBook = ALL_BOOKS.find(
+      (b) => b.path === '/experto-en-plr-premium/' || b.slug === 'experto-en-plr-premium'
+    );
+    const plrDescription =
+      'Descubre cómo transformar contenidos PLR, desarrollar infoproductos y conectar inteligencia artificial, plataformas y sistemas digitales para construir un negocio propio.';
+    const plrCover =
+      plrBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/25-experto-en-plr-producto-400.jpg';
+    const plrUrl = `${BASE_URL}/experto-en-plr-premium/`;
+
+    const plrBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Experto en PLR Premium',
+      alternateName:
+        'El Sistema Paso a Paso para Crear Infoproductos Rentables que venden. Con Herramientas Digitales Actuales.',
+      description: plrDescription,
+      image: plrCover,
+      url: plrUrl,
+      inLanguage: 'es',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      }
+    };
+
+    return {
+      path: '/experto-en-plr-premium/',
+      title: 'Experto en PLR Premium: crear productos digitales | FG Perspectiva',
+      description: plrDescription,
+      canonical: plrUrl,
+      ogImage: plrCover,
+      ogType: 'book',
+      h1: 'Experto en PLR Premium',
+      schema: [
+        plrBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Origen',
+              item: `${BASE_URL}/origen/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Experto en PLR Premium',
+              item: plrUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {
