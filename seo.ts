@@ -1459,6 +1459,88 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6o. Ficha editorial dedicada: Dominando el Marketing de Afiliados
+  if (path === '/dominando-el-marketing-de-afiliados/') {
+    const dominandoBook = ALL_BOOKS.find(
+      (b) =>
+        b.path === '/dominando-el-marketing-de-afiliados/' ||
+        b.slug === 'dominando-el-marketing-de-afiliados'
+    );
+    const dominandoMetaDescription =
+      'Comprende cómo organizar un negocio de marketing de afiliados, evaluar programas, gestionar comisiones y construir una actividad digital sostenible.';
+    const dominandoSchemaDescription =
+      'Una perspectiva estratégica sobre cómo desarrollar una actividad de afiliación con criterio comercial, evaluar programas, gestionar comisiones y convertir las recomendaciones digitales en un negocio organizado.';
+    const dominandoCover =
+      dominandoBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/3-marketing-de-afiliados-libro-400.jpg';
+    const dominandoUrl = `${BASE_URL}/dominando-el-marketing-de-afiliados/`;
+
+    const dominandoBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Dominando el Marketing de Afiliados',
+      alternateName:
+        'Y cómo construir un negocio rentable desde cero con uno de los mejores sistemas de monetización',
+      description: dominandoSchemaDescription,
+      image: dominandoCover,
+      url: dominandoUrl,
+      inLanguage: 'es',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      },
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
+        'https://schema.org/EBook',
+        'https://schema.org/AudiobookFormat'
+      ]
+    };
+
+    return {
+      path: '/dominando-el-marketing-de-afiliados/',
+      title: 'Dominando el Marketing de Afiliados: negocio de afiliación | FG Perspectiva',
+      description: dominandoMetaDescription,
+      canonical: dominandoUrl,
+      ogImage: dominandoCover,
+      ogType: 'book',
+      h1: 'Dominando el Marketing de Afiliados',
+      schema: [
+        dominandoBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Ingresos',
+              item: `${BASE_URL}/ingresos/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Dominando el Marketing de Afiliados',
+              item: dominandoUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {

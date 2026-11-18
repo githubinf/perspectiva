@@ -1,0 +1,570 @@
+# INSTRUCCIÓN INTEGRAL PARA GOOGLE AI STUDIO
+## Rediseño editorial y SEO de la ficha «Dominando el Marketing de Afiliados» — FG Perspectiva
+
+### 1. OBJETIVO Y ALCANCE
+
+Implementar una nueva versión editorial y SEO de la ficha del libro «Dominando el Marketing de Afiliados» dentro del proyecto FG Perspectiva.
+
+La intervención debe incorporar el contenido editorial aprobado que aparece íntegramente en esta instrucción, junto con su estructura de navegación interna, metadatos SEO y datos estructurados.
+
+Se trata de una intervención exclusiva sobre esta ficha. No se debe modificar ninguna otra página, libro, categoría, componente comercial compartido ni elemento general del sitio.
+
+Antes de realizar cualquier modificación, inspecciona la estructura actual del proyecto y localiza la ficha existente, su ruta, su portada, sus datos comerciales y sus componentes de compra.
+
+No inventes rutas, imágenes, formatos ni enlaces. Conserva los elementos existentes que no estén expresamente autorizados para cambiar.
+
+### 2. IDENTIFICACIÓN DEL LIBRO
+
+- Título: Dominando el Marketing de Afiliados.
+- Subtítulo: Y cómo construir un negocio rentable desde cero con uno de los mejores sistemas de monetización.
+- Autor: Francisco González.
+- Categoría: Ingresos.
+- Ruta: localizar y conservar exactamente el slug y la URL actuales de la ficha.
+- Portada: localizar y conservar la portada oficial que utiliza actualmente esta ficha.
+
+No modificar el título, el subtítulo, el autor, la categoría, la portada ni la ruta.
+
+### 3. ENLACES COMERCIALES OFICIALES — DATOS INALTERABLES
+
+Esta sección es prioritaria. Los siguientes enlaces han sido proporcionados directamente por el autor y deben utilizarse literalmente, sin modificaciones, sustituciones, reconstrucciones ni redirecciones inventadas.
+
+**Amazon**
+
+1. Amazon tapa blanda:
+   https://www.amazon.com/dp/B09RV3DMV6
+
+2. Amazon tapa dura:
+   https://www.amazon.com/dp/B09RLRHRSV
+
+3. Amazon ebook Kindle:
+   https://www.amazon.com/dp/B097MFP96C
+
+4. Amazon/Audible audiolibro:
+   https://www.amazon.com/dp/B0HB5NQVJG
+
+**Otras plataformas**
+
+5. ClickBank:
+   https://dominando-el-marketing-de-afiliados.vercel.app/
+
+6. Payhip:
+   https://payhip.com/b/mQwHe
+
+**Reglas obligatorias:**
+
+- Utilizar exactamente estas seis URL.
+- No cambiar identificadores, dominios, rutas ni parámetros.
+- No sustituir un enlace por otro que parezca equivalente.
+- No utilizar enlaces de libros diferentes.
+- No inventar enlaces de Google Play, Books2Read, Lulu u otras plataformas.
+- No crear botones para plataformas que no figuran en esta lista.
+- No eliminar ninguno de los enlaces anteriores.
+- Si existen enlaces comerciales adicionales actualmente registrados en la ficha, no eliminarlos: conservarlos y situarlos después de las plataformas establecidas, respetando la estructura comercial existente.
+- Verificar individualmente que cada botón o enlace conduce a la URL exacta indicada.
+
+**Orden obligatorio de presentación:**
+
+1. Amazon — Tapa blanda.
+2. Amazon — Tapa dura.
+3. Amazon — Ebook Kindle.
+4. Amazon/Audible — Audiolibro.
+5. Google Play Books — Ebook, únicamente si existe un enlace real previamente confirmado.
+6. Google Play — Audiolibro, únicamente si existe un enlace real previamente confirmado.
+7. Books2Read, únicamente si existe un enlace real previamente confirmado.
+8. ClickBank.
+9. Payhip.
+10. Lulu, únicamente si existe un enlace real previamente confirmado.
+11. Otras plataformas adicionales ya existentes, al final.
+
+Los formatos o plataformas no disponibles deben omitirse, sin botones vacíos ni espacios reservados.
+
+### 4. PROTECCIÓN OBLIGATORIA DE LOS COMPONENTES COMERCIALES
+
+La actualización editorial y SEO NO autoriza a modificar la estructura comercial de la ficha.
+
+Se deben conservar estrictamente:
+
+- La ubicación original de los bloques comerciales.
+- Los botones de compra que aparecen en la parte superior.
+- El botón o acceso a las distintas ediciones.
+- El modal de compra existente, si lo utiliza esta ficha.
+- El comportamiento de apertura y cierre del modal.
+- Los textos, estilos, dimensiones, colores y jerarquía visual de los botones.
+- Los enlaces de compra y sus destinos.
+- El botón de compra situado al final de la ficha.
+- Cualquier comportamiento responsive relacionado con la compra.
+
+No se permite:
+
+- Mover los botones de compra.
+- Eliminar botones.
+- Duplicar botones.
+- Ocultar botones.
+- Sustituir botones por enlaces de texto.
+- Convertir un modal existente en una colección de botones individuales.
+- Cambiar la ubicación del modal.
+- Alterar la apariencia comercial.
+- Eliminar el botón inferior de compra.
+- Cambiar componentes comerciales compartidos para adaptar esta ficha.
+
+La única modificación comercial autorizada es comprobar y aplicar el orden de presentación indicado en la sección 3, sin alterar la estructura ni la ubicación de los bloques comerciales existentes.
+
+**Prueba obligatoria:** antes de terminar, compara la ficha anterior y la nueva. Comprueba que el botón inferior «Comprar ahora» o su equivalente original sigue presente, visible y operativo. Verifica también el funcionamiento de los botones superiores y del modal.
+
+Si para incorporar el orden correcto fuera necesario alterar la estructura comercial o mover elementos, detén esa modificación y conserva la estructura existente.
+
+### 5. CONTENIDO EDITORIAL APROBADO
+
+El siguiente contenido debe incorporarse íntegramente. No resumirlo, reescribirlo, eliminar apartados ni sustituirlo por una versión abreviada.
+
+Mantener los títulos, subtítulos y párrafos aprobados. Se permite adaptar únicamente la presentación visual para integrarlos en el diseño actual de FG Perspectiva, sin alterar su significado.
+
+---
+
+# Dominando el Marketing de Afiliados
+
+**Subtítulo:** Y cómo construir un negocio rentable desde cero con uno de los mejores sistemas de monetización
+
+**Una línea editorial:** Una perspectiva estratégica sobre cómo desarrollar una actividad de afiliación con criterio comercial, construir relaciones sostenibles y convertir las recomendaciones digitales en un modelo de negocio organizado.
+
+**Autor: Francisco González**
+
+## Introducción
+
+El marketing de afiliados suele presentarse como una forma de participar en el comercio digital sin necesidad de desarrollar productos propios. Sin embargo, esa descripción apenas explica una parte de su funcionamiento. Detrás de cada recomendación que puede generar una comisión existe una actividad que necesita dirección, planificación y una comprensión precisa de las relaciones comerciales que la hacen posible.
+
+Participar en un programa de afiliados no equivale automáticamente a tener un negocio. La diferencia aparece cuando dejamos de considerar cada enlace como una oportunidad aislada y comenzamos a construir una actividad con objetivos definidos, una propuesta reconocible y procedimientos que permitan evaluar lo que sucede. La elección de productos, la relación con los anunciantes, la calidad de la comunicación y la capacidad para interpretar los resultados forman parte de un mismo sistema.
+
+También debemos comprender que este mercado no permanece inmóvil. Las plataformas cambian sus condiciones, los consumidores modifican sus hábitos y los canales digitales evolucionan. Una estrategia que funcionaba en determinado momento puede perder eficacia cuando cambian las circunstancias que la sostenían. Por eso, desarrollar una actividad de afiliación requiere algo más que conocer herramientas: exige aprender a tomar decisiones y revisar continuamente su utilidad.
+
+En esta ficha abordaremos el marketing de afiliados desde esa perspectiva empresarial. Nos centraremos en los criterios que permiten organizarlo, en la relación entre las distintas partes que intervienen y en las decisiones que influyen en su continuidad. El propósito es comprender qué significa construir una actividad de afiliación con estructura, responsabilidad y capacidad de adaptación, sin confundir las posibilidades del modelo con resultados garantizados.
+
+## Contenido de esta página
+
+Accede directamente al apartado que te interesa.
+
+1. La afiliación como actividad empresarial.
+2. El criterio comercial detrás de cada recomendación.
+3. Construir una identidad reconocible en el mercado.
+4. La arquitectura de una actividad digital.
+5. La economía de las comisiones y la viabilidad.
+6. La experiencia del consumidor y la decisión.
+7. La información como herramienta de dirección.
+8. Relaciones comerciales que necesitan continuidad.
+9. La confianza como patrimonio del proyecto.
+10. Adaptarse a un entorno tecnológico cambiante.
+11. Los riesgos de gestionar sin una estructura.
+12. Evolucionar sin perder el sentido del negocio.
+
+## La afiliación como actividad empresarial
+
+El primer cambio de perspectiva consiste en dejar de contemplar la afiliación como una sucesión de promociones. Cuando una persona participa en diferentes programas, recomienda productos y recibe comisiones, está interviniendo en una actividad comercial en la que existen responsabilidades, dependencias y objetivos. Si no reconoce esas relaciones, corre el riesgo de trabajar de manera desordenada, sin saber qué decisiones contribuyen realmente al desarrollo de su proyecto.
+
+Un negocio de afiliación necesita una orientación que permita distinguir las oportunidades interesantes de aquellas que solamente parecen atractivas a primera vista. No basta con encontrar una comisión elevada o una plataforma conocida. También debemos considerar si la oferta tiene sentido dentro del mercado al que nos dirigimos, si podemos comunicarla correctamente y si existe una relación coherente entre lo que recomendamos y las necesidades de las personas.
+
+Esta visión empresarial ayuda a establecer prioridades. En lugar de perseguir cada novedad, podemos concentrar los recursos en actividades que respondan a una dirección concreta. El objetivo no consiste en promocionar el mayor número posible de productos, sino en desarrollar una estructura que tenga sentido y pueda evaluarse con criterios objetivos.
+
+## El criterio comercial detrás de cada recomendación
+
+Una recomendación comercial implica una elección. Aunque el producto pertenezca a otra empresa, quien lo promociona decide asociar su comunicación con esa oferta y asumir una responsabilidad ante su audiencia. Por eso, seleccionar qué productos o servicios incorporar a una actividad de afiliación es una decisión estratégica, no una simple búsqueda de oportunidades de comisión.
+
+La evaluación debe considerar la utilidad de la oferta, las características del público, la reputación del proveedor y las condiciones del programa. También resulta importante comprender qué sucede después de que una persona utiliza nuestro enlace: cómo se registra la operación, qué condiciones determinan una comisión válida y qué limitaciones pueden afectar a la relación comercial.
+
+Este análisis permite evitar una práctica habitual: construir una actividad alrededor de ofertas que no guardan relación entre sí. Cuando cada recomendación responde a un criterio diferente, el proyecto pierde coherencia y resulta más difícil explicar qué valor aporta. Una selección razonada, en cambio, contribuye a que la actividad tenga una identidad y una orientación reconocibles.
+
+## Construir una identidad reconocible en el mercado
+
+En un entorno donde numerosas personas promocionan productos similares, la identidad del proyecto adquiere una importancia especial. No se trata únicamente de disponer de un nombre, una página o una presencia en redes sociales. La identidad también está formada por el tipo de información que ofrecemos, los criterios que utilizamos y la manera en que nos relacionamos con quienes reciben nuestras recomendaciones.
+
+Una actividad de afiliación puede desarrollar una posición propia cuando ofrece una perspectiva consistente. Esa posición no depende necesariamente de ser el primero en hablar de un producto, sino de aportar contexto, facilitar comparaciones útiles y explicar por qué una alternativa podría responder a determinadas necesidades.
+
+La coherencia entre comunicación y oferta también influye en la percepción del proyecto. Si el contenido transmite una orientación y las recomendaciones comerciales responden a otra completamente distinta, se genera una contradicción que debilita la credibilidad. Por el contrario, una identidad bien definida ayuda a mantener una relación comprensible entre lo que comunicamos y las oportunidades que presentamos.
+
+## La arquitectura de una actividad digital
+
+Una actividad de afiliación no tiene por qué depender de una única plataforma, pero sí necesita una organización que permita comprender cómo se conectan sus diferentes elementos. La presencia digital, los canales de comunicación, las ofertas y los procedimientos de seguimiento deben responder a una estructura que facilite el trabajo cotidiano.
+
+La arquitectura de un proyecto puede ser sencilla en sus primeras etapas. Lo importante es que cada elemento cumpla una función reconocible y que podamos identificar dónde se produce cada interacción. Una página informativa, un canal de comunicación o una herramienta de gestión no adquieren valor por su mera existencia, sino por la utilidad que aportan al conjunto.
+
+Esta organización también permite reducir dependencias innecesarias. Cuando toda la actividad se concentra en un único canal externo, cualquier modificación de sus condiciones puede afectar considerablemente al proyecto. Comprender qué recursos controlamos directamente y cuáles dependen de terceros es fundamental para tomar decisiones más prudentes.
+
+## La economía de las comisiones y la viabilidad
+
+Las comisiones representan el mecanismo económico que permite remunerar la intermediación comercial, pero su importe aislado no determina la viabilidad de una actividad. Para evaluar una oportunidad necesitamos comprender las condiciones que regulan el pago, la duración de las atribuciones, las posibles devoluciones y los criterios que utiliza cada programa para reconocer una operación.
+
+También debemos distinguir entre ingresos registrados, comisiones pendientes y cantidades efectivamente recibidas. Estas diferencias son importantes porque una cifra visible dentro de una plataforma no siempre representa dinero disponible. La gestión responsable requiere prestar atención a los plazos, las condiciones y las variaciones que pueden producirse durante el proceso.
+
+La rentabilidad depende además de los recursos empleados para generar resultados. El tiempo dedicado a producir contenido, mantener canales, analizar campañas o atender cuestiones operativas forma parte del coste real de la actividad. Una oportunidad que parece atractiva por su comisión puede dejar de serlo cuando consideramos el esfuerzo necesario para sostenerla.
+
+Por eso, la evaluación económica debe realizarse desde una perspectiva amplia. Nos interesa comprender qué actividades aportan valor, cuáles consumen recursos sin una contribución suficiente y qué ajustes pueden mejorar la sostenibilidad del proyecto.
+
+## La experiencia del consumidor y la decisión
+
+El funcionamiento del marketing de afiliados no termina cuando alguien encuentra una recomendación. Entre el primer contacto y una posible compra existe un proceso de evaluación en el que intervienen las expectativas, la información disponible, la confianza y las características de la oferta.
+
+Comprender ese proceso permite mejorar la calidad de la comunicación. Una recomendación puede despertar interés, pero la persona necesita información suficiente para valorar si el producto responde a lo que busca. Las explicaciones ambiguas, las afirmaciones exageradas o la ausencia de contexto pueden generar expectativas equivocadas y perjudicar tanto al consumidor como a quien realiza la promoción.
+
+La experiencia también depende de la continuidad entre los distintos puntos de contacto. Si una comunicación presenta determinadas características y la oferta conduce a una experiencia completamente diferente, se produce una ruptura que puede afectar a la decisión. La coherencia informativa debe mantenerse durante todo el recorrido.
+
+Desde esta perspectiva, el trabajo del afiliado no consiste en forzar una compra. Consiste en facilitar una relación comprensible entre una necesidad y una alternativa comercial, respetando la capacidad de decisión de cada persona.
+
+## La información como herramienta de dirección
+
+Una actividad digital produce información constantemente. Las visitas, las interacciones, los clics y las conversiones pueden aportar indicios sobre el comportamiento del público y el rendimiento de las acciones comerciales. Sin embargo, acumular cifras no equivale a comprender lo que está sucediendo.
+
+La información adquiere utilidad cuando se interpreta dentro de un contexto. Un incremento de visitas puede parecer positivo, pero debemos preguntarnos si esas visitas corresponden al público que nos interesa y si contribuyen a los objetivos del proyecto. Del mismo modo, una campaña con muchas interacciones no necesariamente representa una oportunidad comercial valiosa.
+
+La comparación entre periodos, canales y ofertas ayuda a identificar diferencias que merecen atención. También permite reconocer cuándo una modificación ha mejorado un resultado y cuándo simplemente ha coincidido con una variación externa.
+
+La finalidad del análisis no es perseguir indicadores por sí mismos. Es utilizar la información para tomar decisiones mejor fundamentadas, detectar problemas y establecer prioridades. Cuando este hábito forma parte de la gestión cotidiana, el proyecto puede evolucionar a partir de evidencias y no únicamente de impresiones.
+
+## Relaciones comerciales que necesitan continuidad
+
+Los programas de afiliados establecen relaciones entre diferentes participantes. El anunciante proporciona una oferta, la plataforma o red puede intervenir en la administración y el afiliado desarrolla acciones para conectar esa oferta con posibles consumidores. Cada participante tiene condiciones y responsabilidades que deben comprenderse antes de establecer una colaboración.
+
+Estas relaciones no deberían considerarse intercambios puntuales sin consecuencias posteriores. Las condiciones pueden cambiar, las campañas pueden finalizar y los responsables de los programas pueden modificar sus políticas. Mantener una actividad organizada implica revisar las comunicaciones recibidas, conocer las reglas aplicables y conservar información suficiente para gestionar las colaboraciones.
+
+La continuidad también depende de la calidad de las interacciones. Una relación comercial clara facilita resolver incidencias, comprender modificaciones y evaluar nuevas oportunidades. Por el contrario, trabajar sin revisar las condiciones puede generar conflictos evitables o mantener promociones que ya no resultan adecuadas.
+
+## La confianza como patrimonio del proyecto
+
+La confianza no es un elemento decorativo de la comunicación comercial. Es una condición que influye en la manera en que las personas interpretan nuestras recomendaciones y deciden si desean seguir prestando atención al proyecto.
+
+Para construirla, debemos procurar que la información sea comprensible y que las relaciones comerciales se presenten con transparencia. Cuando existe una remuneración por una recomendación, las personas deben poder reconocer esa circunstancia. También es importante no atribuir a un producto características que no se hayan comprobado ni presentar experiencias particulares como resultados universales.
+
+La protección de los datos personales forma parte de esa responsabilidad. La recopilación, el almacenamiento y el tratamiento de información deben realizarse con atención a las obligaciones aplicables y a las expectativas legítimas de los usuarios.
+
+La confianza se desarrolla mediante decisiones repetidas. Una comunicación honesta, el respeto por la privacidad y la coherencia entre las recomendaciones y la realidad de las ofertas contribuyen a construir una reputación que no depende de una campaña concreta.
+
+## Adaptarse a un entorno tecnológico cambiante
+
+Las herramientas digitales modifican la forma de investigar, comunicar y gestionar una actividad de afiliación. Nuevas plataformas, sistemas de análisis y soluciones de automatización pueden facilitar tareas que antes requerían más tiempo. Sin embargo, incorporar tecnología sin una necesidad definida también puede aumentar la complejidad.
+
+La decisión de utilizar una herramienta debe partir de un problema real. Puede resultar útil para organizar información, mejorar un procedimiento o facilitar el seguimiento de determinadas actividades. Lo importante es evaluar si aporta una ventaja concreta y si su mantenimiento resulta razonable.
+
+También debemos reconocer que las plataformas externas tienen sus propias reglas. Sus condiciones de uso, políticas comerciales y mecanismos de atribución pueden cambiar. Por tanto, una estrategia responsable necesita capacidad para revisar los recursos utilizados y adaptar los procedimientos cuando las circunstancias lo exijan.
+
+La tecnología puede ampliar las posibilidades de una actividad, pero no sustituye el criterio comercial. La selección de ofertas, la comprensión del público y la evaluación de resultados continúan dependiendo de decisiones humanas.
+
+## Los riesgos de gestionar sin una estructura
+
+Cuando una actividad de afiliación crece sin una organización definida, aparecen problemas que pueden pasar inadvertidos durante las primeras etapas. Se acumulan herramientas, se mantienen promociones que han perdido vigencia y se invierte tiempo en tareas cuyo valor no está claro. El proyecto puede parecer activo, pero su funcionamiento resulta cada vez más difícil de comprender.
+
+La falta de control también afecta a la capacidad de responder ante cambios externos. Una cuenta suspendida, una modificación de las condiciones de un programa o una pérdida de acceso a un canal pueden tener consecuencias importantes cuando no existen alternativas razonables.
+
+A esto se suman los riesgos derivados de una comunicación poco transparente, el tratamiento inadecuado de datos o el desconocimiento de las obligaciones aplicables. No son cuestiones secundarias: pueden afectar a la reputación, a las relaciones comerciales y a la continuidad de la actividad.
+
+Una estructura bien pensada no elimina todos los riesgos, pero ayuda a identificarlos antes y a responder con mayor orden. La planificación, la documentación y la revisión periódica permiten trabajar con una perspectiva más realista.
+
+## Evolucionar sin perder el sentido del negocio
+
+Desarrollar una actividad de afiliación supone tomar decisiones a lo largo del tiempo. Algunas ofertas dejan de ser adecuadas, determinados canales pierden eficacia y aparecen nuevas oportunidades que merecen evaluación. La evolución no consiste en incorporar cada novedad, sino en distinguir qué cambios contribuyen realmente a la dirección del proyecto.
+
+La diversificación puede ayudar a reducir determinadas dependencias, siempre que no se convierta en una acumulación desordenada de programas y promociones. Ampliar el alcance comercial requiere comprobar que los nuevos elementos mantienen una relación coherente con la identidad, la capacidad operativa y las necesidades del público.
+
+También es necesario revisar los objetivos. Las prioridades de una actividad que comienza no son necesariamente las mismas que las de un proyecto con experiencia y procedimientos establecidos. Reconocer esa diferencia permite ajustar los recursos y evitar que el crecimiento aparente se convierta en una fuente de complejidad innecesaria.
+
+El marketing de afiliados ofrece un modelo de participación en el comercio digital, pero su desarrollo depende de cómo se gestione. Comprender las relaciones comerciales, actuar con transparencia, interpretar la información y mantener una estructura adaptable son aspectos que ayudan a construir una actividad con mayor consistencia.
+
+La cuestión central no es cuántos productos podemos promocionar ni cuántos canales podemos utilizar. Es si somos capaces de organizar esos recursos alrededor de una propuesta clara, una gestión responsable y una dirección que tenga sentido a largo plazo.
+
+---
+
+### 6. ESTRUCTURA DEL ÍNDICE Y NAVEGACIÓN INTERNA
+
+El índice debe ser visible en el contenido de la ficha, con la ubicación exacta siguiente:
+
+1. Hero editorial.
+2. Primera sección introductoria completa.
+3. Índice «Contenido de esta página».
+4. Desarrollo temático principal.
+
+No colocar el índice inmediatamente después del Hero ni antes de la introducción.
+
+El índice debe utilizar los doce títulos reales del contenido aprobado y enlazar a sus correspondientes secciones H2.
+
+Crear los siguientes identificadores únicos y estables:
+
+| Apartado | ID del ancla |
+|---|---|
+| La afiliación como actividad empresarial | afiliacion-actividad-empresarial |
+| El criterio comercial detrás de cada recomendación | criterio-comercial-recomendacion |
+| Construir una identidad reconocible en el mercado | identidad-reconocible-mercado |
+| La arquitectura de una actividad digital | arquitectura-actividad-digital |
+| La economía de las comisiones y la viabilidad | economia-comisiones-viabilidad |
+| La experiencia del consumidor y la decisión | experiencia-consumidor-decision |
+| La información como herramienta de dirección | informacion-herramienta-direccion |
+| Relaciones comerciales que necesitan continuidad | relaciones-comerciales-continuidad |
+| La confianza como patrimonio del proyecto | confianza-patrimonio-proyecto |
+| Adaptarse a un entorno tecnológico cambiante | adaptacion-entorno-tecnologico |
+| Los riesgos de gestionar sin una estructura | riesgos-gestion-sin-estructura |
+| Evolucionar sin perder el sentido del negocio | evolucionar-sin-perder-sentido |
+
+Requisitos:
+
+- Todos los enlaces deben funcionar.
+- Cada ID debe ser único.
+- No duplicar encabezados para crear el índice.
+- No crear apartados ficticios.
+- No cambiar los títulos aprobados.
+- Verificar el desplazamiento de las anclas en escritorio y móvil.
+- Considerar la altura del encabezado fijo para evitar que los títulos queden ocultos al navegar.
+
+### 7. HERO EDITORIAL Y PRESENTACIÓN VISUAL
+
+Mantener el lenguaje visual de FG Perspectiva y la coherencia con las fichas de libros ya actualizadas.
+
+El Hero debe presentar:
+
+- Título del libro.
+- Subtítulo oficial.
+- Línea editorial complementaria aprobada.
+- Autor: Francisco González.
+- Portada oficial existente.
+- Elementos comerciales originales, respetando estrictamente sus ubicaciones.
+
+No añadir una imagen genérica, ilustración temática, banner ni recurso visual que no exista ya en la identidad de esta ficha.
+
+No repetir el subtítulo en la línea editorial complementaria.
+
+No crear una sección titulada «Sobre el libro».
+
+### 8. SEO ON-PAGE
+
+Implementar los metadatos siguientes, conservando la URL canónica real que corresponda a la ficha existente.
+
+**SEO Title propuesto:**
+
+Dominando el Marketing de Afiliados: negocio de afiliación | FG Perspectiva
+
+**Meta description propuesta:**
+
+Comprende cómo organizar un negocio de marketing de afiliados, evaluar programas, gestionar comisiones y construir una actividad digital sostenible.
+
+**Palabra clave principal:**
+
+marketing de afiliados
+
+**Palabras clave secundarias:**
+
+- negocio de marketing de afiliados
+- cómo funciona el marketing de afiliados
+- programas de afiliados
+- comisiones de afiliados
+- estrategia de afiliación
+- monetización mediante afiliados
+- gestión de afiliados
+- negocio digital de afiliación
+
+Utilizar estas expresiones con naturalidad, sin forzar su repetición ni introducir párrafos artificiales para insertar palabras clave.
+
+No afirmar que se ha realizado una investigación externa de volúmenes de búsqueda si no se ha efectuado.
+
+**Requisitos técnicos:**
+
+- Title único.
+- Meta description única.
+- Canonical autorreferente con la URL real de la ficha.
+- Open Graph title y description coherentes.
+- Open Graph image utilizando la portada oficial existente.
+- Twitter Card correctamente configurada.
+- Un único H1 principal.
+- Jerarquía H2 y H3 coherente.
+- Enlaces internos pertinentes, sin introducir enlaces redundantes.
+- Noindex únicamente si ya existe una razón técnica válida y documentada; no introducirlo por defecto.
+
+Los metadatos deben permanecer en el `<head>`. No trasladarlos al contenido visible.
+
+### 9. DATOS ESTRUCTURADOS
+
+Implementar JSON-LD de tipo `Book` y `BreadcrumbList`, utilizando exclusivamente datos reales y confirmados.
+
+**Book:**
+
+- `@type`: `Book`.
+- `name`: Dominando el Marketing de Afiliados.
+- `author`: Francisco González.
+- `description`: utilizar una descripción breve y original basada en la ficha aprobada, no copiar la descripción comercial de Amazon.
+- `image`: portada oficial existente.
+- `url`: URL canónica real de la ficha.
+- `inLanguage`: es, si corresponde a los datos reales del libro.
+- `bookFormat`: solo los formatos confirmados y compatibles con el marcado empleado.
+
+No inventar ISBN, número de páginas, editorial, fecha de publicación, valoración, reseñas, precio, disponibilidad ni otros atributos no confirmados.
+
+No crear `Offer` ni información de disponibilidad ficticia.
+
+**BreadcrumbList:**
+
+Mantener la jerarquía real:
+
+Inicio > Biblioteca > Ingresos > Dominando el Marketing de Afiliados.
+
+Utilizar las URL reales del proyecto.
+
+Evitar datos estructurados duplicados o contradictorios con los existentes.
+
+### 10. IMPLEMENTACIÓN TÉCNICA Y AISLAMIENTO
+
+Antes de modificar archivos:
+
+1. Localizar la vista actual de «Dominando el Marketing de Afiliados».
+2. Identificar su ruta y sistema de navegación.
+3. Identificar los datos de portada y enlaces comerciales.
+4. Identificar los componentes de compra y su comportamiento.
+5. Identificar los metadatos y datos estructurados actuales.
+6. Revisar la arquitectura de las fichas recientemente actualizadas para mantener coherencia técnica sin copiar una plantilla editorial.
+
+Crear una copia de seguridad completa de los archivos que vayan a modificarse.
+
+Nombre sugerido:
+
+`/_backup_ficha_dominando_marketing_afiliados/`
+
+La copia debe conservar los archivos originales necesarios para una restauración completa.
+
+Implementar una vista dedicada para esta ficha, utilizando una denominación coherente con el proyecto. No reutilizar ni modificar el contenido de otra ficha para realizar esta intervención.
+
+Modificar únicamente los archivos estrictamente necesarios para esta página.
+
+No modificar:
+
+- Otras fichas de libros.
+- Las seis páginas de categorías.
+- Home.
+- Biblioteca.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Header.
+- Footer.
+- Componentes comerciales compartidos.
+- Navegación general.
+- Catálogo global.
+- Datos de otros libros.
+- Rutas no relacionadas.
+
+El Footer queda expresamente excluido de esta intervención. No modificar absolutamente ningún aspecto suyo.
+
+### 11. DISEÑO RESPONSIVE Y ACCESIBILIDAD
+
+Comprobar la ficha en escritorio, tablet y móvil.
+
+Requisitos:
+
+- Portada con proporciones correctas.
+- Lectura cómoda.
+- Índice legible y navegable.
+- En escritorio, el índice puede organizarse en dos columnas si el diseño existente lo permite.
+- En móvil, organizarlo en una sola columna.
+- Botones comerciales con tamaño y separación adecuados.
+- No debe existir desplazamiento horizontal.
+- Contraste suficiente.
+- Encabezados correctamente jerarquizados.
+- Navegación por teclado.
+- Estados de foco visibles.
+- Enlaces con nombres comprensibles.
+- El modal de compra debe seguir siendo accesible y funcional.
+
+No alterar el diseño general de FG Perspectiva.
+
+### 12. PRUEBAS Y AUDITORÍA OBLIGATORIAS
+
+Al terminar, realizar y documentar estas pruebas:
+
+**A. Integridad editorial**
+
+- Confirmar que se ha incorporado íntegramente el texto aprobado.
+- Confirmar que no se han omitido párrafos.
+- Confirmar que los doce apartados aparecen.
+- Confirmar que el índice está después de la introducción.
+- Confirmar que cada ancla funciona.
+- Confirmar que no se ha añadido una sección «Sobre el libro».
+- Confirmar que no se ha alterado el contenido editorial aprobado.
+
+**B. Integridad comercial**
+
+Verificar individualmente las seis URL oficiales:
+
+- Amazon tapa blanda: https://www.amazon.com/dp/B09RV3DMV6
+- Amazon tapa dura: https://www.amazon.com/dp/B09RLRHRSV
+- Amazon Kindle: https://www.amazon.com/dp/B097MFP96C
+- Amazon/Audible: https://www.amazon.com/dp/B0HB5NQVJG
+- ClickBank: https://dominando-el-marketing-de-afiliados.vercel.app/
+- Payhip: https://payhip.com/b/mQwHe
+
+Comprobar que cada botón apunta exactamente a su URL correspondiente.
+
+Comprobar el orden de presentación.
+
+Comprobar que los botones superiores permanecen en su ubicación original.
+
+Comprobar que el modal de compra sigue funcionando.
+
+Comprobar expresamente que el botón de compra inferior sigue presente, visible y operativo.
+
+No basta con indicar que los enlaces se conservaron: debe verificarse su destino.
+
+**C. Integridad técnica**
+
+- TypeScript sin errores.
+- Build de producción correcto.
+- Prerender de la ruta de la ficha correcto.
+- HTML inicial con contenido visible.
+- Metadatos presentes y únicos.
+- Canonical correcto.
+- JSON-LD válido.
+- Sin errores de consola.
+- Sin enlaces internos rotos.
+- Sin errores de navegación.
+- Responsive comprobado.
+
+**D. Regresión**
+
+Comparar la ficha anterior y la nueva para confirmar que no se han producido alteraciones no autorizadas en:
+
+- Botones de compra.
+- Modal.
+- Portada.
+- Ruta.
+- Categoría.
+- Navegación.
+- Header.
+- Footer.
+
+### 13. ENTREGA DEL INFORME FINAL
+
+Al terminar, presentar un informe técnico claro con:
+
+1. Archivos creados.
+2. Archivos modificados.
+3. Copia de seguridad creada y su ubicación.
+4. Ruta exacta de la ficha intervenida.
+5. Confirmación de incorporación íntegra del contenido editorial.
+6. Confirmación de la ubicación del índice y funcionamiento de las doce anclas.
+7. Metadatos SEO implementados.
+8. Datos estructurados implementados.
+9. Tabla de los seis enlaces comerciales con sus destinos verificados.
+10. Confirmación del orden comercial aplicado.
+11. Confirmación de que los botones superiores y el modal siguen funcionando.
+12. Confirmación expresa de que el botón inferior de compra permanece presente y operativo.
+13. Resultados de TypeScript, build, prerender y pruebas responsive.
+14. Confirmación de que las demás páginas y el Footer permanecen intactos.
+15. Incidencias encontradas, si las hubiera.
+
+Si algún requisito no puede verificarse, indicarlo expresamente. No declarar una prueba como satisfactoria si no se ha realizado.
+
+### 14. RESTRICCIÓN DE DESPLIEGUE
+
+Realizar los cambios exclusivamente en el entorno de trabajo local del proyecto.
+
+**NO desplegar a Vercel.**
+
+No publicar, sincronizar ni ejecutar ninguna acción de despliegue. La publicación queda reservada a una autorización expresa posterior del propietario del proyecto.
+
+### RESULTADO ESPERADO
+
+Una ficha editorial independiente, con contenido original aprobado, arquitectura propia, índice funcional, SEO técnico correctamente implementado y enlaces comerciales oficiales preservados.
+
+La prioridad absoluta es mantener la integridad del contenido, la exactitud de los enlaces y el funcionamiento de la estructura comercial existente.
+
+No improvisar, no sustituir datos y no realizar cambios fuera del alcance autorizado.
