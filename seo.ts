@@ -1244,6 +1244,78 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6l. Ficha editorial dedicada: Cómo crear un Blog optimizado
+  if (path === '/como-crear-un-blog-optimizado/') {
+    const blogBook = ALL_BOOKS.find(
+      (b) => b.path === '/como-crear-un-blog-optimizado/' || b.slug === 'como-crear-un-blog-optimizado'
+    );
+    const blogDescription =
+      'Comprende cómo organizar un blog, desarrollar contenidos útiles, mejorar su visibilidad SEO y construir una plataforma digital preparada para evolucionar.';
+    const blogCover =
+      blogBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/1-como-crear-un-blog-optimizado-libro-400.png';
+    const blogUrl = `${BASE_URL}/como-crear-un-blog-optimizado/`;
+
+    const blogBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Cómo crear un Blog optimizado',
+      alternateName:
+        'El camino hacia el éxito para destacar en el mundo digital + Optimización de motores de búsqueda (SEO)',
+      description: blogDescription,
+      image: blogCover,
+      url: blogUrl,
+      inLanguage: 'es',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      }
+    };
+
+    return {
+      path: '/como-crear-un-blog-optimizado/',
+      title: 'Cómo crear un Blog optimizado: SEO y estrategia | FG Perspectiva',
+      description: blogDescription,
+      canonical: blogUrl,
+      ogImage: blogCover,
+      ogType: 'book',
+      h1: 'Cómo crear un Blog optimizado',
+      schema: [
+        blogBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Iniciación',
+              item: `${BASE_URL}/iniciacion/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Cómo crear un Blog optimizado',
+              item: blogUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {

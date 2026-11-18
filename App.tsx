@@ -16,6 +16,7 @@ import AbundanceView from './components/views/AbundanceView.tsx';
 import HypnoticSellerView from './components/views/HypnoticSellerView.tsx';
 import DeLaPlumaAlDineroView from './components/views/DeLaPlumaAlDineroView.tsx';
 import ExpertoPlrPremiumView from './components/views/ExpertoPlrPremiumView.tsx';
+import HowToCreateOptimizedBlogView from './components/views/HowToCreateOptimizedBlogView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
@@ -92,6 +93,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/experto-en-plr-premium/' && matchedBook) {
     return <ExpertoPlrPremiumView book={matchedBook} />;
+  }
+
+  if (currentPath === '/como-crear-un-blog-optimizado/' && matchedBook) {
+    return <HowToCreateOptimizedBlogView book={matchedBook} />;
   }
 
   if (matchedBook) {

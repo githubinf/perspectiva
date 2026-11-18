@@ -1,0 +1,602 @@
+# INSTRUCCIÓN INTEGRAL PARA GOOGLE AI STUDIO
+## Nueva ficha editorial independiente y optimización SEO — Cómo crear un Blog optimizado
+### Proyecto FG Perspectiva
+
+## 1. OBJETIVO GENERAL
+
+Implementar una nueva ficha editorial independiente para el libro **Cómo crear un Blog optimizado**, dentro del proyecto FG Perspectiva.
+
+La intervención debe sustituir el contenido editorial actual de esta ficha por la nueva redacción aprobada, crear una vista dedicada y desarrollar sus metadatos SEO y datos estructurados.
+
+La nueva página debe tener identidad editorial propia. No debe limitarse a modificar algunas frases de la ficha anterior ni utilizar una plantilla genérica con contenido intercambiable.
+
+La intervención es exclusiva para la ruta y el libro indicados. No modificar ninguna otra ficha, categoría, página, componente comercial ni elemento global.
+
+**Importante:** realizar los cambios exclusivamente en el entorno local. No desplegar, publicar ni realizar ninguna operación sobre Vercel o producción.
+
+## 2. IDENTIFICACIÓN DEL LIBRO Y DATOS OFICIALES
+
+Conservar los datos existentes en el proyecto y utilizar los siguientes valores como referencia:
+
+- Título: Cómo crear un Blog optimizado.
+- Subtítulo oficial: El camino hacia el éxito para destacar en el mundo digital + Optimización de motores de búsqueda (SEO).
+- Autor: Francisco González.
+- Categoría: Iniciación.
+- Ruta: conservar exactamente el slug y la URL canónica que ya utiliza esta ficha en el proyecto.
+- Portada: conservar la portada oficial existente, sin sustituirla ni modificar su URL.
+
+### Enlaces comerciales oficiales
+
+Amazon:
+- Ebook Kindle: https://www.amazon.com/dp/B01EVJA21W
+- Tapa blanda: https://www.amazon.com/dp/B08NY61TZP
+- Tapa dura: https://www.amazon.com/dp/B09RGY5FF8
+
+ClickBank:
+- https://bloggingopt.lovable.app/
+
+Payhip:
+- https://payhip.com/b/w8feQ
+
+Lulu:
+- https://www.lulu.com/es/shop/francisco-gonzalez/c%C3%B3mo-crear-un-blog-optimizado/ebook/product-9pqk7n.html?page=1&pageSize=4
+
+No inventar otros formatos, plataformas, ISBN, precios, valoraciones, fechas de publicación ni datos editoriales.
+
+Antes de modificar nada, inspeccionar el registro del libro en `constants.tsx` y los componentes actuales para identificar con precisión su ruta, portada, enlaces, etiquetas comerciales y estructura de compra.
+
+## 3. ESTRATEGIA DE IMPLEMENTACIÓN
+
+Crear una vista editorial independiente:
+
+`components/views/HowToCreateOptimizedBlogView.tsx`
+
+El nombre puede ajustarse únicamente si existe una convención interna de nomenclatura que aconseje otro nombre coherente.
+
+Modificar `App.tsx` para que la ruta existente de este libro utilice la nueva vista dedicada.
+
+Modificar `seo.ts` para incorporar los metadatos específicos de esta ficha, respetando el sistema SEO actual del proyecto.
+
+No modificar el registro comercial del libro en `constants.tsx`, salvo que una necesidad técnica imprescindible esté demostrada y se solicite autorización antes de realizarla.
+
+No modificar la vista compartida `BookDetailView.tsx` ni utilizar esta intervención para alterar el comportamiento de otras fichas.
+
+La nueva vista debe integrar correctamente los componentes comerciales existentes, reutilizando los componentes originales en lugar de crear una implementación paralela que pueda generar diferencias de comportamiento.
+
+## 4. TEXTO EDITORIAL APROBADO
+
+Incorporar íntegramente el siguiente contenido. No resumir, recortar, reescribir, sustituir párrafos ni añadir texto comercial que cambie el sentido de la redacción aprobada.
+
+### Hero editorial
+
+**Título:**
+Cómo crear un Blog optimizado
+
+**Subtítulo oficial:**
+El camino hacia el éxito para destacar en el mundo digital + Optimización de motores de búsqueda (SEO)
+
+**Línea editorial complementaria:**
+Un blog no se construye únicamente publicando artículos: necesita una estructura capaz de convertir el conocimiento en contenido útil, atraer lectores y mantener su valor con el paso del tiempo.
+
+**Autor:**
+Francisco González
+
+No añadir una sección denominada «Sobre el libro».
+
+### Introducción
+
+Crear un blog puede parecer una tarea sencilla cuando pensamos únicamente en publicar textos en Internet. Sin embargo, entre disponer de un espacio web y desarrollar una plataforma que tenga sentido para sus lectores existe una diferencia importante. Un blog necesita una razón para existir, una orientación reconocible y una organización que permita transformar publicaciones individuales en una propuesta editorial coherente.
+
+La dificultad no reside exclusivamente en escribir. También intervienen decisiones que afectan a la experiencia de navegación, la presentación de la información, la capacidad de ser encontrado en los buscadores y la manera en que el proyecto puede evolucionar. Cuando estos elementos se desarrollan sin conexión entre sí, el resultado puede ser un sitio con numerosas publicaciones, pero sin una dirección suficientemente definida.
+
+Por eso, pensar en un blog optimizado exige una perspectiva más amplia. No se trata de perseguir visitas a cualquier precio ni de aplicar técnicas aisladas para mejorar posiciones en los resultados de búsqueda. Se trata de construir una plataforma en la que el contenido, la estructura y las decisiones técnicas trabajen en una misma dirección.
+
+### Índice de contenidos
+
+El índice debe aparecer inmediatamente después de la introducción y antes del primer apartado temático.
+
+**Título:** Contenido de esta página
+
+**Texto introductorio:** Accede directamente al apartado que te interesa.
+
+Crear enlaces internos a los siguientes apartados:
+
+- El blog como proyecto editorial
+- Las decisiones que condicionan su estructura
+- Contenido que responde a necesidades reales
+- La experiencia de lectura y navegación
+- SEO y descubrimiento orgánico
+- Promoción y relaciones con la audiencia
+- Interpretar los datos para tomar decisiones
+- Mantenimiento y confianza técnica
+- Monetización y desarrollo del proyecto
+- Un activo digital que debe evolucionar
+
+Utilizar los IDs exactos especificados en los apartados siguientes. No crear IDs duplicados ni enlaces a elementos inexistentes.
+
+### Desarrollo editorial
+
+#### H2: El blog como proyecto editorial: mucho más que una colección de publicaciones
+
+ID: `blog-proyecto-editorial`
+
+Un blog adquiere identidad cuando deja de funcionar como un espacio donde se acumulan artículos y comienza a responder a una intención reconocible. Esa intención determina qué temas tienen cabida, qué tipo de lectores pueden encontrar utilidad en sus contenidos y qué relación existe entre una publicación y la siguiente.
+
+La elección de una temática, por tanto, no debería limitarse a seleccionar un asunto que parezca atractivo. También conviene considerar si existe suficiente profundidad para desarrollarlo, si permite abordar distintas necesidades y si podemos mantener una línea editorial sin depender constantemente de ideas improvisadas.
+
+Esta perspectiva cambia la manera de entender el trabajo. Cada artículo deja de ser una pieza independiente y pasa a formar parte de una biblioteca de contenidos que puede adquirir valor acumulativo. Una publicación puede explicar un concepto, otra profundizar en una dificultad y una tercera ayudar al lector a relacionar ambas cuestiones.
+
+La coherencia temática no significa hablar siempre de lo mismo. Significa que las distintas publicaciones contribuyen a una propuesta reconocible. Esa continuidad ayuda a orientar al lector y proporciona una base más sólida para organizar el crecimiento del sitio.
+
+#### H2: Las decisiones que condicionan la estructura de un blog
+
+ID: `estructura-blog`
+
+Antes de concentrar esfuerzos en producir contenido, necesitamos comprender que la estructura del blog condiciona buena parte de su desarrollo posterior. La plataforma utilizada, el dominio, el alojamiento y la configuración inicial no son decisiones aisladas: forman parte de la infraestructura sobre la que se sostendrá el proyecto.
+
+También importa la forma en que organizamos las secciones, las categorías y los recorridos de navegación. Un visitante debería poder comprender dónde se encuentra, qué tipo de información puede consultar y cómo continuar explorando sin tener que reconstruir mentalmente la organización del sitio.
+
+Una estructura clara beneficia tanto a la experiencia de las personas como a la interpretación de las páginas por parte de los buscadores. Cuando las publicaciones se relacionan mediante una organización lógica, el blog transmite mejor la relación entre sus diferentes áreas de conocimiento.
+
+La planificación inicial también evita que el proyecto dependa de soluciones improvisadas. Es más sencillo desarrollar una estructura con criterios definidos que reorganizar posteriormente un sitio que ha crecido sin una dirección editorial y técnica consistente.
+
+#### H2: Contenido que responde a necesidades reales
+
+ID: `contenido-necesidades`
+
+El contenido constituye el motivo principal por el que una persona decide visitar un blog, pero publicar con frecuencia no garantiza que las publicaciones tengan utilidad. La cuestión fundamental es comprender qué necesita saber el lector y qué información puede ayudarle a avanzar en su búsqueda.
+
+Esto requiere distinguir entre escribir sobre un tema y resolver una necesidad relacionada con ese tema. Una publicación puede contener numerosos datos y, aun así, dejar al visitante sin una respuesta clara. Otra, más concreta y mejor organizada, puede resultar mucho más valiosa porque aborda directamente la cuestión que motivó la búsqueda.
+
+La planificación editorial permite evitar esa desconexión. En lugar de elegir asuntos al azar, podemos identificar áreas de interés, relacionar preguntas y establecer prioridades. De este modo, el contenido adquiere una función dentro del conjunto y no depende exclusivamente de la inspiración del momento.
+
+También debemos prestar atención a la forma de presentar las ideas. La claridad, la organización de los argumentos, la precisión del lenguaje y la revisión del texto influyen en la capacidad de lectura. Los elementos visuales pueden complementar la explicación cuando aportan información, pero no deberían utilizarse para disimular la falta de contenido sustancial.
+
+Un blog con criterio editorial no necesita publicar sobre cualquier tendencia. Necesita desarrollar aquellos temas que justifican su presencia y hacerlo con suficiente profundidad para que cada nueva incorporación refuerce el conjunto.
+
+#### H2: La experiencia de lectura y navegación también forma parte del contenido
+
+ID: `experiencia-lectura`
+
+La calidad de un artículo no depende únicamente de sus palabras. La forma en que se presenta puede facilitar su comprensión o convertirse en un obstáculo para el lector.
+
+Un diseño excesivamente recargado, una navegación confusa o una página difícil de utilizar pueden perjudicar la experiencia incluso cuando la información publicada es pertinente. Por eso, la presentación del blog debe estar al servicio del contenido y no competir con él.
+
+La usabilidad comienza por cuestiones aparentemente sencillas: una jerarquía visual comprensible, una distribución ordenada de las secciones, enlaces que conduzcan a destinos coherentes y una lectura cómoda desde diferentes dispositivos. También implica considerar a quienes necesitan alternativas accesibles para interactuar con los elementos de la página.
+
+El rendimiento técnico interviene en esta experiencia. Una página que tarda demasiado en responder puede dificultar el acceso a la información y generar fricción innecesaria. Lo mismo sucede cuando los elementos visuales, los componentes interactivos o la estructura de navegación no funcionan como el visitante espera.
+
+El objetivo no es conseguir un diseño llamativo por sí mismo. Es desarrollar un entorno que permita concentrarse en la información, descubrir otros contenidos relacionados y utilizar el sitio sin dificultades evitables.
+
+#### H2: SEO y descubrimiento orgánico: facilitar que el contenido pueda encontrarse
+
+ID: `seo-descubrimiento`
+
+Un contenido útil necesita oportunidades para llegar a sus lectores. La optimización para motores de búsqueda interviene precisamente en esa relación entre lo que una publicación ofrece y las consultas que realizan las personas cuando buscan información.
+
+El SEO no debería entenderse como una operación de insertar palabras clave en un texto. Su función es más amplia: ayudar a que cada página tenga un propósito reconocible, presente la información de manera comprensible y responda a una necesidad de búsqueda concreta.
+
+Esto comienza con la investigación de los términos y las preguntas que pueden conducir a un artículo. Sin embargo, identificar una expresión no significa repetirla indiscriminadamente. Es necesario comprender su contexto y desarrollar una respuesta que resulte natural, completa y pertinente.
+
+La organización interna también influye. Los títulos deben reflejar el contenido real de cada apartado, las páginas necesitan una estructura lógica y los enlaces internos pueden ayudar a conectar publicaciones que aportan información complementaria.
+
+A estos elementos se suman aspectos técnicos que permiten interpretar y recorrer el sitio con mayor facilidad. La optimización no consiste en una única modificación, sino en mantener una relación coherente entre contenido, arquitectura y funcionamiento.
+
+Los enlaces externos que apuntan hacia un blog pueden formar parte de su reconocimiento en Internet, pero su valor no debería evaluarse únicamente por la cantidad. La relevancia y el contexto de las referencias también importan. Del mismo modo, los proyectos orientados a una zona geográfica necesitan considerar cómo se relaciona su contenido con las búsquedas de carácter local.
+
+#### H2: Promoción y relaciones con la audiencia
+
+ID: `promocion-audiencia`
+
+La publicación de un artículo no significa que su difusión haya terminado. Un blog necesita encontrar vías para conectar con personas interesadas en sus contenidos, y esa tarea puede desarrollarse mediante distintos canales.
+
+Las redes sociales, las colaboraciones y otras formas de distribución permiten ampliar los puntos de contacto con la audiencia. No obstante, cada canal tiene características propias. Compartir una publicación no debería consistir simplemente en repetir el mismo mensaje en todas partes, sino en presentar su utilidad de una forma adecuada al contexto.
+
+También es importante comprender que atraer visitantes y construir una audiencia son objetivos relacionados, pero diferentes. Una visita puntual puede responder a una necesidad inmediata. Una relación más estable requiere que el lector encuentre motivos para regresar, explorar otros artículos o mantener el contacto con el proyecto.
+
+La promoción tiene más sentido cuando existe una base editorial que la respalda. Difundir contenidos poco relacionados entre sí puede generar actividad momentánea, pero difícilmente construye una identidad reconocible. En cambio, una propuesta consistente facilita que las distintas acciones de comunicación refuercen el mismo posicionamiento.
+
+#### H2: Interpretar los datos para tomar decisiones
+
+ID: `datos-decisiones`
+
+Las estadísticas de un blog pueden ofrecer información valiosa, pero su utilidad depende de las preguntas que intentemos responder. Consultar cifras sin un propósito definido puede producir una acumulación de datos que no se traduce en mejoras.
+
+Conviene distinguir entre las métricas que describen el alcance, las que ayudan a comprender el comportamiento de los visitantes y las que permiten evaluar los objetivos del proyecto. No todas tienen la misma importancia en cada etapa.
+
+Por ejemplo, un incremento de visitas puede parecer positivo, pero necesita interpretarse junto con otros indicadores. También interesa conocer qué publicaciones reciben atención, qué contenidos conducen a otras páginas y dónde aparecen dificultades durante la navegación.
+
+Las herramientas de analítica permiten observar tendencias y comparar resultados a lo largo del tiempo. Su función no es sustituir el criterio editorial, sino aportar información que ayude a tomar decisiones mejor fundamentadas.
+
+Un proyecto maduro utiliza los datos para revisar prioridades, detectar oportunidades y reconocer qué aspectos necesitan atención. No modifica su orientación cada vez que una cifra cambia, sino que interpreta los resultados dentro de un contexto más amplio.
+
+#### H2: Mantenimiento y confianza técnica: cuidar lo que ya hemos construido
+
+ID: `mantenimiento-confianza`
+
+Un blog no termina de desarrollarse cuando sus primeras publicaciones están disponibles. Como cualquier plataforma digital, necesita atención continuada para conservar su funcionamiento y reducir riesgos.
+
+Las actualizaciones del sistema de gestión de contenidos y de sus componentes forman parte de esa responsabilidad. También conviene disponer de copias de seguridad que permitan recuperar información ante incidentes y revisar periódicamente que los elementos esenciales del sitio continúan operativos.
+
+La seguridad no es un asunto reservado a proyectos grandes. Un sitio que almacena contenidos, gestiona usuarios o incorpora herramientas externas necesita considerar las amenazas que pueden afectar a su disponibilidad y a la integridad de sus datos.
+
+La gestión de comentarios y del spam también influye en la calidad del entorno. Mantener espacios de participación requiere establecer criterios y evitar que las interacciones deterioren la experiencia de lectura.
+
+Además, el rendimiento debe revisarse con cierta continuidad. Las necesidades de un blog pueden cambiar a medida que incorpora nuevas publicaciones, recursos y funcionalidades. Detectar problemas a tiempo permite actuar antes de que se conviertan en obstáculos importantes para sus visitantes.
+
+#### H2: Monetización y desarrollo del proyecto
+
+ID: `monetizacion-desarrollo`
+
+Un blog puede convertirse en una plataforma desde la que desarrollar distintas actividades económicas, pero la monetización necesita guardar relación con la temática, la audiencia y el valor que realmente ofrece el sitio.
+
+No todas las alternativas son adecuadas para todos los proyectos. La promoción de productos de terceros, la comercialización de recursos propios, la creación de contenidos formativos o el desarrollo de otros productos digitales responden a modelos diferentes y requieren decisiones específicas.
+
+La elección no debería basarse únicamente en la posibilidad de generar ingresos. También importa la coherencia entre la propuesta editorial y aquello que se ofrece al lector. Una recomendación comercial desconectada del contenido puede debilitar la confianza; una oferta relacionada con una necesidad real puede integrarse de forma más natural.
+
+A medida que el proyecto adquiere dimensión, también puede ser necesario revisar cómo se distribuyen las tareas y qué procesos conviene simplificar. La automatización y la delegación pueden liberar tiempo, pero necesitan objetivos claros y supervisión. Incorporar herramientas sin comprender qué problema resuelven puede añadir complejidad en lugar de reducirla.
+
+El desarrollo económico de un blog, por tanto, no debería separarse de su calidad editorial ni de la relación que mantiene con sus visitantes.
+
+#### H2: Un activo digital que debe evolucionar
+
+ID: `activo-evolucion`
+
+Un blog con recorrido necesita adaptarse. Cambian los intereses de los lectores, aparecen nuevas formas de consumo de información y las condiciones técnicas de Internet evolucionan. Mantener una plataforma no significa conservar todas sus decisiones originales de manera indefinida.
+
+La revisión periódica permite identificar publicaciones que necesitan actualización, temas que han perdido relevancia y oportunidades que todavía no se han desarrollado. También ayuda a reconocer qué elementos forman parte de la identidad del proyecto y cuáles pueden modificarse sin perder su orientación.
+
+La autoridad no aparece por acumular artículos ni por mantener una actividad constante sin dirección. Se construye cuando un sitio desarrolla una propuesta reconocible, ofrece información consistente y demuestra continuidad en su ámbito de especialización.
+
+En este sentido, el blog puede entenderse como un activo digital que reúne conocimiento, contenidos, estructura y relaciones con una audiencia. Su valor no depende de una publicación aislada, sino de la capacidad del conjunto para seguir siendo útil y adaptarse a nuevas circunstancias.
+
+La perspectiva a largo plazo cambia la prioridad: en lugar de perseguir únicamente resultados inmediatos, conviene construir una plataforma que podamos comprender, mantener y mejorar. Esa es la diferencia entre publicar en Internet y desarrollar un proyecto editorial con posibilidades de continuidad.
+
+## 5. REQUISITOS DE ESTRUCTURA Y PRESENTACIÓN
+
+La ficha debe contar con una composición editorial coherente con la identidad visual de FG Perspectiva y con la calidad de las fichas dedicadas ya implementadas.
+
+### Hero editorial
+
+- Mostrar el título oficial.
+- Mostrar el subtítulo oficial completo.
+- Incorporar la línea editorial complementaria aprobada.
+- Mostrar «Autor: Francisco González».
+- Utilizar la portada oficial que ya está registrada.
+- Mantener una composición visual equilibrada y legible.
+- No añadir una sección «Sobre el libro».
+- No inventar distintivos, valoraciones, cifras ni etiquetas comerciales.
+
+### Índice de contenidos
+
+El índice debe aparecer después de la introducción y antes del primer H2.
+
+Utilizar el componente `CategoryIndex` si su comportamiento y presentación son compatibles con esta ficha. En caso contrario, reutilizar el mecanismo de navegación interna existente sin modificar globalmente el componente compartido.
+
+Presentación:
+- Título: «Contenido de esta página».
+- Texto: «Accede directamente al apartado que te interesa».
+- Dos columnas en escritorio.
+- Una columna en móvil.
+- Enlaces a los diez apartados reales.
+- IDs únicos.
+- Desplazamiento con margen superior suficiente para que el encabezado fijo no tape los títulos.
+
+No duplicar encabezados ni generar un índice que contenga apartados inexistentes.
+
+### Desarrollo
+
+- Un único H1 para el título del libro.
+- Diez H2 correspondientes a los apartados editoriales.
+- Mantener el texto completo aprobado.
+- Jerarquía de encabezados correcta.
+- Espaciado legible y párrafos equilibrados.
+- Adaptación a pantallas móviles.
+- No introducir imágenes de stock, imágenes decorativas ni ilustraciones que no formen parte de los recursos oficiales de la ficha.
+
+## 6. PROTECCIÓN COMERCIAL ABSOLUTA
+
+Este apartado es obligatorio y tiene prioridad sobre cualquier decisión de diseño o refactorización.
+
+La actualización editorial y SEO no autoriza a modificar la estructura comercial existente.
+
+Antes de comenzar, inspeccionar la ficha actual y registrar mediante capturas o pruebas automatizadas la ubicación, el contenido y el comportamiento de todos sus elementos comerciales.
+
+**No mover, eliminar, sustituir, duplicar, ocultar ni reorganizar los botones de compra existentes.**
+
+Se deben conservar:
+
+1. El bloque comercial superior en su ubicación original.
+2. El botón «Opciones de compra», si existe.
+3. El modal de compra y su funcionamiento.
+4. Todos los botones y enlaces comerciales existentes.
+5. Los formatos y plataformas que figuran actualmente.
+6. Los textos, estilos, logotipos y comportamientos originales.
+7. El botón de compra situado al final de la ficha, en su ubicación original.
+8. El enlace de retorno a la categoría, en su posición original.
+
+No convertir un modal en botones individuales.
+
+No trasladar los botones al principio, al final o a otra sección.
+
+No cambiar los enlaces comerciales por los proporcionados en esta instrucción si los enlaces existentes coinciden con ellos. Si se detecta alguna discrepancia, documentarla y solicitar autorización antes de modificarla.
+
+No eliminar opciones comerciales que no aparezcan en la lista de referencia. Los datos proporcionados identifican las plataformas conocidas, pero no autorizan a suprimir otras opciones reales que ya estén registradas.
+
+No modificar `BookPurchaseBlock.tsx`, `BookPurchaseCTA.tsx` ni `PurchaseModal.tsx` para realizar esta intervención, salvo que una incompatibilidad técnica demostrada haga imprescindible una modificación. En ese caso, detenerse y solicitar autorización antes de tocar componentes compartidos.
+
+### Prueba obligatoria del botón inferior
+
+Al finalizar la implementación, comprobar expresamente que el botón inferior de compra:
+
+- Sigue presente.
+- Conserva su texto y estilo originales.
+- Está en la misma posición relativa dentro de la ficha.
+- Responde correctamente al clic.
+- Desplaza al bloque comercial original cuando su destino sea un ancla.
+- No queda oculto ni inutilizado en móvil.
+
+El informe final debe incluir una confirmación expresa de esta prueba.
+
+## 7. METADATOS SEO
+
+Implementar metadatos exclusivos para esta ficha.
+
+Propuesta inicial:
+
+**SEO Title:**
+
+`Cómo crear un Blog optimizado: SEO y estrategia | FG Perspectiva`
+
+**Meta description:**
+
+`Comprende cómo organizar un blog, desarrollar contenidos útiles, mejorar su visibilidad SEO y construir una plataforma digital preparada para evolucionar.`
+
+**Palabra clave principal:**
+
+`cómo crear un blog optimizado`
+
+**Palabras clave secundarias:**
+
+- crear un blog
+- optimización SEO para blogs
+- cómo organizar un blog
+- contenido para blogs
+- posicionamiento web
+- estrategia de contenidos
+- estructura de un blog
+- crecimiento de un blog
+
+Las palabras clave deben orientar la optimización semántica, no convertirse en repeticiones artificiales dentro del texto.
+
+La ficha debe tener:
+
+- Title único.
+- Meta description única.
+- Canonical correspondiente a su ruta real.
+- Open Graph completo.
+- Twitter Cards.
+- Imagen social con la portada oficial existente.
+- Idioma español.
+
+No duplicar etiquetas ni crear metadatos globales que alteren otras páginas.
+
+Las etiquetas SEO pertenecen al `<head>` y no deben aparecer como contenido visible dentro de la ficha.
+
+Si el proyecto dispone de una función centralizada para construir metadatos, utilizarla respetando su arquitectura.
+
+## 8. DATOS ESTRUCTURADOS
+
+Implementar JSON-LD específico para esta ficha.
+
+### Book
+
+Incluir exclusivamente datos confirmados:
+
+- `@type`: `Book`
+- `name`: título oficial.
+- `alternateName`: subtítulo oficial.
+- `description`: descripción editorial breve y original, coherente con la nueva ficha.
+- `image`: portada oficial existente.
+- `url`: URL canónica de la ficha.
+- `inLanguage`: `es`
+- `author`: objeto `Person` con `name`: `Francisco González`.
+
+No inventar:
+
+- ISBN.
+- Editorial.
+- Fecha de publicación.
+- Número de páginas.
+- Valoraciones.
+- Reseñas.
+- Precios.
+- Ofertas.
+- Disponibilidad.
+- Datos bibliográficos no confirmados.
+
+### BreadcrumbList
+
+Representar la jerarquía real:
+
+Inicio → Biblioteca → Iniciación → Cómo crear un Blog optimizado.
+
+Comprobar que las URL de las migas de pan corresponden a las rutas reales del proyecto.
+
+No duplicar JSON-LD ni alterar el esquema de otras fichas.
+
+## 9. BACKUP Y CONTROL DE CAMBIOS
+
+Antes de modificar archivos, crear una copia de seguridad exclusiva:
+
+`/_backup_ficha_como_crear_blog_optimizado/`
+
+Debe contener, como mínimo, copias de los archivos que vayan a modificarse y de los componentes relevantes para recuperar la ficha anterior.
+
+Registrar los archivos creados, modificados y preservados.
+
+La intervención debe quedar limitada a:
+
+- Nueva vista dedicada del libro.
+- Enrutamiento de esa ruta en `App.tsx`.
+- Metadatos SEO específicos en `seo.ts`, o el mecanismo equivalente ya utilizado por el proyecto.
+
+No modificar:
+- `constants.tsx`, salvo autorización previa.
+- `BookDetailView.tsx`.
+- Componentes comerciales compartidos.
+- `OriginView.tsx`.
+- Otras vistas de libros.
+- Páginas de categorías.
+- Home.
+- Biblioteca.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Header.
+- Footer.
+- Navegación global.
+- Sitemap global, salvo que el proceso normal de build lo regenere automáticamente sin modificar su lógica.
+
+El Footer está expresamente excluido de cualquier intervención.
+
+## 10. PRUEBAS TÉCNICAS OBLIGATORIAS
+
+### Integridad del contenido
+
+Comprobar que:
+- El texto completo está incorporado.
+- No hay párrafos omitidos.
+- No hay párrafos duplicados.
+- No se ha añadido una sección «Sobre el libro».
+- El índice está después de la introducción.
+- Los diez enlaces internos conducen a sus apartados reales.
+
+### Navegación interna
+
+Probar individualmente los diez enlaces del índice con Playwright.
+
+Comprobar:
+- Que cada enlace funciona.
+- Que los IDs no están duplicados.
+- Que el desplazamiento no deja el H2 oculto bajo el encabezado fijo.
+- Que funciona en escritorio y móvil.
+
+### SEO
+
+Verificar:
+- Un único H1.
+- Diez H2 editoriales.
+- Title correcto.
+- Meta description correcta.
+- Canonical correcto.
+- Open Graph.
+- Twitter Cards.
+- Portada oficial como imagen social.
+- JSON-LD válido.
+- Ausencia de datos editoriales inventados.
+
+### Diseño y responsive
+
+Probar al menos:
+- Escritorio: 1440 × 900.
+- Móvil: 390 × 844.
+
+Comprobar:
+- Portada cargada.
+- Ausencia de desbordamiento horizontal.
+- Índice adaptable.
+- Lectura cómoda.
+- Botones comerciales visibles y operativos.
+- Ningún solapamiento con el encabezado.
+- Ausencia de errores de consola o de ejecución.
+
+### Pruebas comerciales
+
+Comparar el estado anterior y posterior de todos los elementos comerciales.
+
+Probar:
+- Bloque superior.
+- Botón de opciones de compra.
+- Apertura y cierre del modal.
+- Enlaces comerciales.
+- Logotipos.
+- Botón inferior.
+- Navegación desde el botón inferior al bloque de compra.
+- Comportamiento móvil.
+
+### Regresión
+
+Comprobar que no se han alterado las siguientes rutas:
+
+- `/`
+- `/biblioteca/`
+- `/iniciacion/`
+- `/origen/`
+- `/sistemas-digitales/`
+- `/sobre-fg-perspectiva/`
+- `/experto-en-plr-premium/`
+- `/el-manual-del-solopreneur-moderno/`
+- `/el-arte-de-atraer-la-abundancia/`
+- `/el-vendedor-hipnotico/`
+- `/de-la-pluma-al-dinero/`
+
+La prueba de regresión no autoriza a modificar esas páginas.
+
+## 11. BUILD Y PRERENDERIZADO
+
+Ejecutar:
+
+- TypeScript (`tsc --noEmit`).
+- Build de producción local.
+- Prerenderizado de la ruta.
+- Comprobación del HTML generado.
+
+Verificar que la ficha aparece correctamente prerenderizada en su ruta real y que los metadatos están presentes en el HTML generado.
+
+No dar por finalizada la tarea si el contenido solo aparece después de ejecutar JavaScript en el navegador.
+
+La ruta debe seguir funcionando con el sistema actual de navegación y renderizado del proyecto.
+
+## 12. INFORME TÉCNICO FINAL OBLIGATORIO
+
+Al terminar, entregar un informe que incluya:
+
+1. Archivos inspeccionados.
+2. Archivos creados.
+3. Archivos modificados.
+4. Ubicación del backup.
+5. Confirmación de incorporación íntegra del texto aprobado.
+6. Confirmación de ubicación del índice.
+7. Resultado de las diez anclas.
+8. Metadatos SEO implementados.
+9. Datos estructurados y validación.
+10. Resultado de TypeScript.
+11. Resultado del build y prerenderizado.
+12. Pruebas de escritorio y móvil.
+13. Comparación de los elementos comerciales antes y después.
+14. Confirmación expresa de que el modal y todos los botones conservan su funcionamiento.
+15. Confirmación expresa de que el botón inferior de compra permanece en su posición original y funciona.
+16. Confirmación de que no se modificaron otras fichas ni categorías.
+17. Confirmación de que el Footer permanece intacto.
+18. Confirmación de que no se ha realizado ningún despliegue a Vercel.
+
+Si alguna prueba no puede realizarse, indicarlo expresamente. No presentar como verificado algo que no se haya comprobado.
+
+## 13. CRITERIO FINAL DE ACEPTACIÓN
+
+La tarea solo se considera terminada cuando:
+
+- La ficha dispone de una vista independiente.
+- El texto aprobado está incorporado íntegramente.
+- La estructura editorial es correcta.
+- El índice funciona.
+- Los metadatos SEO están implementados.
+- Los datos estructurados son válidos y no contienen información inventada.
+- La ficha funciona en escritorio y móvil.
+- Todos los elementos comerciales conservan su ubicación y funcionamiento.
+- El botón inferior de compra está presente y operativo.
+- No existen errores de TypeScript, build o prerenderizado.
+- No se han producido modificaciones fuera del alcance autorizado.
+- No se ha publicado ni desplegado a producción.
+
+**EJECUTAR EXCLUSIVAMENTE ESTA INTERVENCIÓN EN EL ENTORNO LOCAL. NO DESPLEGAR A VERCEL.**
