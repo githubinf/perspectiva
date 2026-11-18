@@ -1316,6 +1316,77 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6m. Ficha editorial dedicada: Mi Blog y los Programas de Afiliados
+  if (path === '/mi-blog-y-los-programas-de-afiliados/') {
+    const miblogBook = ALL_BOOKS.find(
+      (b) => b.path === '/mi-blog-y-los-programas-de-afiliados/' || b.slug === 'mi-blog-y-los-programas-de-afiliados'
+    );
+    const miblogDescription =
+      'Comprende cómo desarrollar un blog de afiliación, elegir programas, crear recomendaciones útiles y construir relaciones comerciales basadas en la confianza.';
+    const miblogCover =
+      miblogBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/4-mi-blog-y-los-programas-de-afiliados-libro-400.jpg';
+    const miblogUrl = `${BASE_URL}/mi-blog-y-los-programas-de-afiliados/`;
+
+    const miblogBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Mi Blog y los Programas de Afiliados',
+      ...(miblogBook?.subtitle ? { alternateName: miblogBook.subtitle } : {}),
+      description: miblogDescription,
+      image: miblogCover,
+      url: miblogUrl,
+      inLanguage: 'es',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      }
+    };
+
+    return {
+      path: '/mi-blog-y-los-programas-de-afiliados/',
+      title: 'Mi Blog y los Programas de Afiliados: estrategia | FG Perspectiva',
+      description: miblogDescription,
+      canonical: miblogUrl,
+      ogImage: miblogCover,
+      ogType: 'book',
+      h1: 'Mi Blog y los Programas de Afiliados',
+      schema: [
+        miblogBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Iniciación',
+              item: `${BASE_URL}/iniciacion/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Mi Blog y los Programas de Afiliados',
+              item: miblogUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {

@@ -17,6 +17,7 @@ import HypnoticSellerView from './components/views/HypnoticSellerView.tsx';
 import DeLaPlumaAlDineroView from './components/views/DeLaPlumaAlDineroView.tsx';
 import ExpertoPlrPremiumView from './components/views/ExpertoPlrPremiumView.tsx';
 import HowToCreateOptimizedBlogView from './components/views/HowToCreateOptimizedBlogView.tsx';
+import MyBlogAffiliateProgramsView from './components/views/MyBlogAffiliateProgramsView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
@@ -97,6 +98,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/como-crear-un-blog-optimizado/' && matchedBook) {
     return <HowToCreateOptimizedBlogView book={matchedBook} />;
+  }
+
+  if (currentPath === '/mi-blog-y-los-programas-de-afiliados/' && matchedBook) {
+    return <MyBlogAffiliateProgramsView book={matchedBook} />;
   }
 
   if (matchedBook) {

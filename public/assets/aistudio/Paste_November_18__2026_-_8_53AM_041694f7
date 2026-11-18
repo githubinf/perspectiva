@@ -1,0 +1,615 @@
+# INSTRUCCIÓN INTEGRAL PARA GOOGLE AI STUDIO
+## Nueva ficha editorial independiente — Mi Blog y los Programas de Afiliados
+### Proyecto FG Perspectiva
+
+## 1. OBJETIVO DE LA INTERVENCIÓN
+
+Crear una ficha editorial independiente para el libro **Mi Blog y los Programas de Afiliados**, sustituyendo el contenido editorial anterior por la nueva redacción aprobada.
+
+La nueva ficha debe contar con:
+
+- Vista editorial propia.
+- Texto íntegro aprobado.
+- Hero editorial con los datos oficiales.
+- Índice de contenidos con navegación por anclas.
+- Metadatos SEO específicos.
+- Datos estructurados JSON-LD.
+- Integración con los componentes comerciales existentes.
+- Diseño responsive y prerenderizado correcto.
+
+No se trata de modificar una plantilla compartida para todas las fichas. La nueva página debe tener identidad editorial propia y respetar la arquitectura general del proyecto FG Perspectiva.
+
+**La intervención se limita exclusivamente a este libro.**
+
+No realizar despliegues, publicaciones ni cambios en Vercel. Trabajar únicamente en el entorno local.
+
+## 2. IDENTIFICACIÓN Y DATOS DEL LIBRO
+
+Conservar los siguientes datos:
+
+- Título: Mi Blog y los Programas de Afiliados.
+- Categoría: Iniciación.
+- Ruta: `/mi-blog-y-los-programas-de-afiliados/`.
+- Autor: Francisco González.
+
+El subtítulo oficial debe conservarse exactamente como aparece actualmente en el registro del libro y en sus recursos editoriales. No inventar uno nuevo ni sustituirlo por una frase editorial.
+
+La portada debe ser la imagen oficial que ya está registrada para este libro. No sustituirla, rediseñarla ni modificar su URL.
+
+### Enlaces comerciales
+
+Conservar todos los enlaces comerciales que figuran actualmente en el registro del libro y en la ficha existente.
+
+No inventar enlaces ni sustituir URLs por otras que no estén confirmadas.
+
+Antes de implementar, inspeccionar `constants.tsx` y registrar:
+
+- Enlaces de Amazon y sus formatos.
+- Otras plataformas comerciales existentes.
+- Textos de los botones.
+- Logotipos.
+- Componentes de compra utilizados.
+- Ubicación de los bloques comerciales.
+
+Los datos existentes en el proyecto tienen prioridad sobre cualquier suposición.
+
+## 3. ARQUITECTURA TÉCNICA
+
+Crear una vista independiente para este libro.
+
+Nombre recomendado:
+
+`components/views/MyBlogAffiliateProgramsView.tsx`
+
+Si existe una convención de nomenclatura diferente en el proyecto, utilizar una denominación equivalente y coherente.
+
+Modificar `App.tsx` para dirigir la ruta existente a la nueva vista.
+
+Modificar `seo.ts` para incorporar los metadatos específicos de esta ficha, respetando el sistema SEO actual.
+
+No modificar la vista compartida `BookDetailView.tsx` para adaptar esta ficha.
+
+Reutilizar los componentes comerciales existentes, sin crear una implementación paralela ni alterar su comportamiento.
+
+No modificar `constants.tsx` salvo que exista una necesidad técnica imprescindible. Si se detecta alguna inconsistencia en los datos, documentarla y solicitar autorización antes de modificarla.
+
+## 4. TEXTO EDITORIAL APROBADO
+
+Incorporar íntegramente el siguiente contenido.
+
+No resumirlo, recortarlo, sustituir párrafos ni introducir modificaciones de estilo que alteren la redacción aprobada.
+
+### HERO EDITORIAL
+
+**H1:**
+
+Mi Blog y los Programas de Afiliados
+
+**Subtítulo oficial:**
+
+Utilizar el subtítulo que ya figura en el registro original del libro, sin inventar ni modificar su redacción.
+
+**Línea editorial complementaria:**
+
+Una perspectiva estratégica sobre cómo convertir el contenido editorial en un espacio de confianza, recomendación y desarrollo comercial dentro del marketing de afiliados.
+
+**Autor:**
+
+Francisco González.
+
+No incorporar una sección titulada «Sobre el libro».
+
+### INTRODUCCIÓN
+
+Un blog puede cumplir muchas funciones: compartir conocimientos, desarrollar una identidad profesional, reunir a personas interesadas en una temática o construir un espacio propio dentro de Internet. Cuando se incorpora el marketing de afiliados, aparece una dimensión adicional: la posibilidad de establecer relaciones comerciales a partir de los contenidos publicados.
+
+Sin embargo, esa transición no consiste simplemente en añadir enlaces a productos y esperar que los lectores realicen una compra. Entre una publicación informativa y una recomendación comercial existe una responsabilidad editorial. El visitante necesita comprender por qué se presenta una determinada solución, qué relación tiene con el tema que está consultando y qué motivos justifican considerarla.
+
+Esta diferencia es importante porque un proyecto de afiliación depende de varios elementos que deben funcionar de manera coordinada. El contenido atrae y orienta; la confianza influye en la recepción de las recomendaciones; los programas de afiliados proporcionan mecanismos de colaboración comercial; y el análisis permite comprender qué decisiones están produciendo resultados.
+
+Por eso, desarrollar un blog de afiliación requiere pensar más allá de la monetización inmediata. Es necesario comprender cómo se relacionan la actividad editorial, las necesidades de la audiencia y los intereses de los anunciantes, sin perder de vista la independencia y la credibilidad del proyecto.
+
+## 5. ÍNDICE DE CONTENIDOS
+
+El índice debe aparecer inmediatamente después de la introducción y antes del primer apartado temático.
+
+**Título:** Contenido de esta página
+
+**Texto introductorio:** Accede directamente al apartado que te interesa.
+
+Incluir exactamente estos doce enlaces:
+
+1. El blog y la recomendación comercial → `#blog-recomendacion-comercial`
+2. Encontrar una orientación editorial con sentido → `#orientacion-editorial`
+3. La relación entre contenido y decisión de compra → `#contenido-decision`
+4. Elegir programas y productos con criterio → `#programas-productos`
+5. La confianza como fundamento de la afiliación → `#confianza-afiliacion`
+6. El tráfico necesita una estrategia → `#trafico-estrategia`
+7. Las distintas formas de relacionarse con el mercado → `#relaciones-mercado`
+8. Comprender los resultados y mejorar el modelo → `#analisis-modelo`
+9. Diversificar sin perder la coherencia → `#diversificacion-coherencia`
+10. La tecnología como apoyo al trabajo editorial → `#tecnologia-trabajo`
+11. Los desafíos de un mercado cambiante → `#desafios-mercado`
+12. Construir un proyecto con continuidad → `#proyecto-continuidad`
+
+Utilizar el componente `CategoryIndex` si es compatible con esta ficha y permite conservar el comportamiento previsto.
+
+Presentación:
+- Dos columnas en escritorio.
+- Una columna en móvil.
+- Anclas únicas.
+- Desplazamiento con margen superior suficiente para que el encabezado fijo no tape los títulos.
+
+No modificar globalmente `CategoryIndex.tsx`.
+
+## 6. DESARROLLO EDITORIAL
+
+### H2: El blog y la recomendación comercial: dos actividades que deben convivir
+
+ID: `blog-recomendacion-comercial`
+
+Un proyecto editorial que incorpora afiliación tiene una particularidad: su contenido no solo informa, también puede intervenir en el proceso mediante el cual una persona evalúa distintas alternativas. Esa función exige una relación equilibrada entre el interés del lector y la actividad comercial del sitio.
+
+Una publicación puede explicar las características de una herramienta, analizar una categoría de productos o ayudar a comprender las diferencias entre varias opciones. Cuando existe una relación de afiliación, esa información puede incluir una vía de acceso comercial. Pero el enlace no debería convertirse en el motivo principal de la publicación.
+
+La recomendación tiene sentido cuando está respaldada por el contexto. Si una persona llega buscando orientación sobre un problema, necesita encontrar información que le ayude a comprenderlo antes de enfrentarse a una propuesta comercial. Cuando el contenido se limita a conducir hacia una compra, pierde buena parte de su utilidad editorial.
+
+Esta relación también modifica la manera de valorar el trabajo del blogger. No basta con considerar cuántos artículos se publican o cuántos enlaces se incorporan. Importa la capacidad de construir un entorno donde las recomendaciones tengan una razón clara para aparecer.
+
+### H2: Encontrar una orientación editorial con sentido
+
+ID: `orientacion-editorial`
+
+La elección de una temática determina buena parte de las posibilidades de desarrollo de un blog. No se trata únicamente de seleccionar un sector con productos comercializables, sino de encontrar un ámbito en el que podamos desarrollar contenidos con continuidad y aportar información relevante.
+
+Una temática demasiado amplia puede dificultar la construcción de una identidad reconocible. Por otro lado, una orientación excesivamente limitada puede reducir las posibilidades de profundizar en diferentes necesidades de la audiencia. La decisión requiere encontrar un equilibrio entre especialización, interés editorial y posibilidades de evolución.
+
+También conviene comprender que los lectores no siempre llegan a un sitio con una intención de compra inmediata. Algunas visitas responden a una necesidad de aprendizaje, otras buscan comparar alternativas y otras intentan resolver una dificultad concreta. Un blog puede atender distintas etapas de ese recorrido si organiza sus publicaciones con una lógica adecuada.
+
+La identidad editorial se fortalece cuando existe una relación reconocible entre los temas tratados. Así, cada artículo contribuye a desarrollar una propuesta y no aparece como una pieza aislada creada únicamente porque ofrece una oportunidad comercial.
+
+### H2: La relación entre contenido y decisión de compra
+
+ID: `contenido-decision`
+
+El contenido ocupa una posición especialmente importante dentro del marketing de afiliados porque constituye el contexto en el que se presentan las recomendaciones.
+
+Una explicación, una comparación o un análisis pueden ayudar a que el lector comprenda mejor una necesidad y evalúe las alternativas disponibles. Sin embargo, cada formato tiene una función distinta. Una publicación orientada a explicar un concepto no necesita convertirse en una presentación comercial, del mismo modo que una comparación de productos requiere criterios comprensibles para que el lector pueda valorar sus diferencias.
+
+La calidad editorial depende de que exista correspondencia entre la intención de la publicación y la información que ofrece. Los títulos deben anticipar adecuadamente su contenido, los argumentos necesitan desarrollarse con claridad y las recomendaciones deben aparecer donde realmente aportan contexto.
+
+También importa la manera de presentar los recursos visuales. Una imagen puede facilitar la identificación de un producto o ayudar a comprender una explicación, pero su presencia debe responder a una función concreta. El diseño no sustituye la información ni convierte por sí mismo una recomendación en una propuesta convincente.
+
+Cuando el contenido está organizado alrededor de las necesidades de las personas, el componente comercial puede integrarse sin dominar toda la experiencia de lectura.
+
+### H2: Elegir programas y productos con criterio
+
+ID: `programas-productos`
+
+Los programas de afiliados representan una vía de colaboración entre quienes publican contenidos y las empresas que ofrecen productos o servicios. No obstante, la existencia de una comisión no es razón suficiente para incorporar una oferta a un blog.
+
+La selección requiere considerar si el producto guarda relación con la temática, si puede resultar útil para los lectores y si las condiciones del programa son compatibles con la orientación del proyecto. También es necesario comprender cómo se registran las referencias, qué mecanismos de seguimiento se utilizan y qué requisitos deben respetarse.
+
+Las condiciones comerciales pueden variar. Un programa puede modificar sus comisiones, sus políticas de participación o sus criterios de atribución. Por eso, la relación con una plataforma no debería considerarse permanente ni mantenerse sin revisiones.
+
+La diversificación de anunciantes puede reducir la dependencia de una única fuente comercial, aunque también introduce nuevas necesidades de gestión. Cada colaboración debe evaluarse por su pertinencia y por las condiciones que implica, no únicamente por las expectativas económicas que genera.
+
+En definitiva, elegir un programa significa incorporar una relación comercial a un proyecto editorial. Esa decisión merece el mismo cuidado que dedicamos a seleccionar los temas y las recomendaciones que presentamos a nuestros lectores.
+
+### H2: La confianza como fundamento de la afiliación
+
+ID: `confianza-afiliacion`
+
+La credibilidad es uno de los recursos más importantes de un blog que utiliza recomendaciones comerciales. Se construye a través de la coherencia entre lo que se comunica, lo que se recomienda y la manera en que se reconoce la relación con las empresas.
+
+La transparencia no debería tratarse como una formalidad que se resuelve mediante un aviso escondido. El lector necesita poder identificar cuándo existe una relación comercial que puede generar una comisión. Esa información permite comprender el contexto de la recomendación y valorar el contenido con mayor claridad.
+
+También es importante evitar afirmaciones que no puedan justificarse. Presentar un producto como una solución universal, exagerar sus ventajas o transmitir experiencias que no se han tenido puede deteriorar la confianza. La recomendación responsable requiere distinguir entre información comprobable, opinión y características que dependen de las circunstancias de cada persona.
+
+La privacidad y el respeto por los datos forman parte de la misma responsabilidad. Un proyecto digital debe considerar cómo recoge, utiliza y protege la información de sus visitantes, así como las obligaciones aplicables a sus actividades.
+
+La confianza no garantiza una conversión ni elimina los desafíos comerciales. Su importancia reside en que proporciona una base más sólida para mantener una relación legítima con la audiencia a lo largo del tiempo.
+
+### H2: El tráfico necesita una estrategia
+
+ID: `trafico-estrategia`
+
+La visibilidad es necesaria para que los contenidos puedan llegar a sus posibles lectores, pero el volumen de visitas no describe por sí solo la calidad de una audiencia.
+
+Un sitio puede recibir tráfico de personas que no encuentran relación entre sus necesidades y las recomendaciones disponibles. También puede tener publicaciones con menos visitas que respondan de manera mucho más precisa a las consultas de un grupo interesado.
+
+Por eso, el trabajo de atracción necesita una orientación editorial. La optimización para buscadores ayuda a conectar los contenidos con determinadas búsquedas, mientras que otros canales de difusión permiten presentar las publicaciones ante públicos diferentes.
+
+Las redes sociales, el correo electrónico, las colaboraciones y las referencias externas pueden ampliar las oportunidades de descubrimiento. Sin embargo, cada canal exige comprender sus propias características y evitar que la distribución se convierta en una repetición mecánica del mismo mensaje.
+
+La estrategia de tráfico también necesita continuidad. No todas las publicaciones adquieren visibilidad al mismo ritmo ni responden a las mismas necesidades. Evaluar su comportamiento permite reconocer qué temas merecen mayor desarrollo y qué áreas necesitan una orientación distinta.
+
+### H2: Las distintas formas de relacionarse con el mercado
+
+ID: `relaciones-mercado`
+
+El blogger no mantiene una única relación comercial. Puede participar en programas de afiliados, colaborar con anunciantes, establecer acuerdos de promoción o desarrollar iniciativas conjuntas con otros profesionales y creadores de contenido.
+
+Cada modalidad implica responsabilidades diferentes. Una recomendación basada en un programa de afiliación no es necesariamente equivalente a una colaboración patrocinada o a una campaña acordada directamente con una marca. Comprender esas diferencias ayuda a presentar cada relación de forma transparente.
+
+Las colaboraciones pueden ampliar el alcance de un proyecto y facilitar el acceso a nuevas audiencias, pero necesitan objetivos compatibles. La afinidad temática, la reputación de las partes y la claridad de las condiciones son factores relevantes para evitar conflictos posteriores.
+
+También importa definir cómo se medirá el resultado de una colaboración. Las expectativas deben ser comprensibles desde el principio y las condiciones acordadas no deberían dejar aspectos esenciales sujetos a interpretaciones.
+
+Un proyecto editorial puede desarrollar relaciones comerciales más complejas a medida que crece, pero esa evolución necesita conservar una línea coherente con su identidad y con las expectativas de sus lectores.
+
+### H2: Comprender los resultados y mejorar el modelo
+
+ID: `analisis-modelo`
+
+El seguimiento de resultados permite observar cómo interactúan los visitantes con los contenidos y cómo se comportan las distintas iniciativas comerciales. Sin embargo, las cifras adquieren valor cuando se interpretan en relación con objetivos concretos.
+
+Las visitas, los clics, las conversiones y los ingresos describen aspectos diferentes del funcionamiento del proyecto. Ninguna de estas métricas explica por sí sola toda la situación. Por ejemplo, una publicación puede atraer numerosas visitas y recibir pocos clics comerciales porque su función principal es informativa. Otra puede tener menos tráfico, pero responder a una necesidad más próxima a una decisión.
+
+La interpretación necesita considerar el contexto, el tipo de contenido, la procedencia de las visitas y las condiciones de seguimiento de cada programa. También conviene prestar atención a los cambios en el comportamiento de la audiencia y a las modificaciones que puedan producirse en las plataformas comerciales.
+
+El análisis no consiste en perseguir cada variación de las estadísticas. Su utilidad está en ayudar a formular mejores preguntas, reconocer patrones y decidir qué aspectos merecen una revisión.
+
+Un blog de afiliación necesita combinar criterio editorial y observación de resultados. Los datos aportan señales, pero las decisiones siguen requiriendo una comprensión del proyecto y de las personas a las que se dirige.
+
+### H2: Diversificar sin perder la coherencia
+
+ID: `diversificacion-coherencia`
+
+La afiliación puede formar parte de un modelo de monetización más amplio. Un blog también puede desarrollar productos propios, ofrecer recursos especializados, organizar contenidos de acceso restringido o establecer colaboraciones comerciales con diferentes modalidades.
+
+La diversificación permite explorar alternativas y evitar que toda la actividad dependa de una sola relación comercial. Sin embargo, incorporar nuevas fuentes de ingresos no significa que todas sean apropiadas para cualquier proyecto.
+
+Cada alternativa exige valorar su relación con la audiencia, los recursos necesarios para gestionarla y el grado de complejidad que añade. Una membresía, por ejemplo, implica mantener una propuesta de valor continuada; un producto digital requiere desarrollar y atender una oferta propia; y una colaboración con una marca necesita acuerdos y responsabilidades definidos.
+
+La coherencia es el criterio que permite decidir qué alternativas tienen sentido. Cuando las distintas actividades responden a necesidades relacionadas, el blog puede evolucionar sin convertirse en una suma desordenada de ofertas.
+
+El objetivo no debería ser incorporar todas las posibilidades disponibles, sino desarrollar aquellas que puedan convivir con la identidad editorial y con la capacidad real de gestión del proyecto.
+
+### H2: La tecnología como apoyo al trabajo editorial
+
+ID: `tecnologia-trabajo`
+
+La gestión de un blog de afiliación implica tareas que pueden volverse complejas a medida que aumenta el volumen de publicaciones, relaciones comerciales y datos. Las herramientas digitales ayudan a organizar parte de ese trabajo, pero su utilidad depende de cómo se integren.
+
+Los recursos de investigación permiten estudiar temas y oportunidades; los sistemas de seguimiento ayudan a controlar referencias comerciales; las herramientas de analítica ofrecen información sobre el comportamiento del sitio; y las soluciones de comunicación facilitan mantener relaciones con una audiencia.
+
+La automatización también puede reducir determinadas tareas repetitivas. No obstante, automatizar un proceso no significa que deje de necesitar supervisión. La información debe revisarse, los enlaces necesitan mantenerse actualizados y las decisiones editoriales requieren criterio humano.
+
+La inteligencia artificial amplía las posibilidades de apoyo en investigación, organización y producción de materiales, pero no sustituye la responsabilidad sobre la calidad, la precisión y la originalidad de lo publicado.
+
+La tecnología aporta valor cuando resuelve necesidades identificables y permite trabajar con mayor organización. Acumular herramientas sin una función clara puede aumentar los costes, las dependencias y la complejidad operativa.
+
+### H2: Los desafíos de un mercado cambiante
+
+ID: `desafios-mercado`
+
+El marketing de afiliados se desarrolla dentro de un entorno en el que las plataformas, las condiciones comerciales y los hábitos de consumo pueden cambiar. Un proyecto que depende de una sola fuente de tráfico o de un único programa queda expuesto a decisiones externas que no controla.
+
+La competencia también obliga a diferenciarse. Cuando numerosos sitios presentan productos similares, la simple incorporación de enlaces no proporciona una ventaja editorial. La profundidad de la información, la claridad de las recomendaciones y la especialización pueden ayudar a construir una propuesta más reconocible.
+
+Otro desafío es mantener la motivación y la organización durante periodos en los que el trabajo realizado no produce los resultados esperados. El desarrollo de una plataforma requiere continuidad, pero también capacidad para revisar decisiones que no están funcionando.
+
+Las obligaciones legales y las políticas de los programas merecen atención permanente. Las condiciones de divulgación comercial, la privacidad y los derechos sobre los contenidos visuales no deberían considerarse cuestiones secundarias.
+
+Adaptarse implica observar el entorno sin abandonar los principios que sostienen el proyecto. No todas las tendencias merecen incorporarse ni todas las oportunidades justifican modificar una estrategia.
+
+### H2: Construir un proyecto con continuidad
+
+ID: `proyecto-continuidad`
+
+Un blog de afiliación puede evolucionar desde una iniciativa editorial pequeña hacia una plataforma con diferentes fuentes de ingresos y relaciones comerciales. Esa evolución, sin embargo, no depende únicamente de ampliar el número de publicaciones o incorporar más programas.
+
+La continuidad se apoya en una identidad reconocible, una audiencia comprendida y una gestión capaz de adaptarse a las condiciones del mercado. También requiere aprendizaje: revisar los resultados, conocer nuevas herramientas, actualizar los conocimientos y mantener una actitud crítica ante las oportunidades que aparecen.
+
+La marca personal puede contribuir a diferenciar el proyecto cuando representa una forma coherente de comunicar y una línea editorial reconocible. Las relaciones con lectores, anunciantes y otros profesionales también pueden adquirir valor cuando se desarrollan sobre bases claras y expectativas realistas.
+
+El crecimiento sostenible no significa que desaparezcan los riesgos ni que los ingresos estén garantizados. Significa construir una estructura que no dependa exclusivamente de decisiones improvisadas y que pueda revisarse cuando cambien las circunstancias.
+
+En última instancia, un blog de afiliación es mucho más que un espacio para insertar referencias comerciales. Es un proyecto editorial que participa en un mercado, establece relaciones y necesita equilibrar información, confianza y actividad económica. Comprender esa relación permite tomar decisiones más conscientes y desarrollar una plataforma con una dirección propia.
+
+## 7. REQUISITOS EDITORIALES Y VISUALES
+
+La ficha debe respetar la identidad visual de FG Perspectiva.
+
+- Utilizar la portada oficial existente.
+- Mantener una presentación editorial limpia y legible.
+- Respetar la tipografía y los colores globales del proyecto.
+- No introducir imágenes de stock.
+- No crear ilustraciones decorativas.
+- No añadir imágenes de categorías.
+- No inventar distintivos, estadísticas, valoraciones ni afirmaciones comerciales.
+- No añadir una sección «Sobre el libro».
+- No repetir el subtítulo en la línea editorial complementaria.
+- Mantener un único H1.
+- Utilizar los doce apartados como H2.
+- Conservar la jerarquía semántica de encabezados.
+
+No modificar el contenido aprobado para intentar alcanzar una extensión artificial.
+
+## 8. METADATOS SEO
+
+Implementar metadatos exclusivos para esta ficha.
+
+Propuesta inicial:
+
+**SEO Title:**
+
+`Mi Blog y los Programas de Afiliados: estrategia | FG Perspectiva`
+
+**Meta description:**
+
+`Comprende cómo desarrollar un blog de afiliación, elegir programas, crear recomendaciones útiles y construir relaciones comerciales basadas en la confianza.`
+
+**Palabra clave principal:**
+
+`blog de afiliados`
+
+**Palabras clave secundarias:**
+
+- marketing de afiliados con un blog
+- programas de afiliados
+- monetizar un blog
+- recomendaciones de afiliados
+- contenido para marketing de afiliados
+- estrategias de afiliación
+- tráfico para blogs de afiliados
+- ingresos por afiliación
+
+Estas expresiones son una propuesta semántica inicial, no una afirmación de volumen de búsqueda ni de dificultad SEO verificados.
+
+No repetir palabras clave de forma artificial.
+
+Implementar:
+
+- Title único.
+- Meta description única.
+- Canonical correspondiente a `/mi-blog-y-los-programas-de-afiliados/`.
+- Open Graph completo.
+- Twitter Cards.
+- Imagen social con la portada oficial.
+- Idioma español.
+
+Las etiquetas SEO deben permanecer en el `<head>`, nunca como contenido visible dentro de la ficha.
+
+## 9. DATOS ESTRUCTURADOS
+
+Incorporar JSON-LD específico.
+
+### Book
+
+Utilizar únicamente datos confirmados:
+
+- `@type`: `Book`
+- `name`: `Mi Blog y los Programas de Afiliados`
+- `alternateName`: subtítulo oficial existente, si está confirmado en el registro.
+- `description`: descripción editorial breve y original.
+- `image`: portada oficial existente.
+- `url`: URL canónica real.
+- `inLanguage`: `es`
+- `author`: `Person`, nombre `Francisco González`.
+
+No inventar ISBN, editorial, fechas, páginas, valoraciones, reseñas, precios, ofertas ni disponibilidad.
+
+### BreadcrumbList
+
+Representar la jerarquía real:
+
+Inicio → Biblioteca → Iniciación → Mi Blog y los Programas de Afiliados.
+
+Comprobar que las rutas utilizadas son las existentes.
+
+No duplicar JSON-LD ni alterar los datos estructurados de otras páginas.
+
+## 10. PROTECCIÓN COMERCIAL ABSOLUTA
+
+La intervención editorial no autoriza cambios en los elementos comerciales.
+
+Antes de comenzar, registrar la ubicación y el comportamiento de los componentes comerciales actuales.
+
+Conservar sin cambios:
+
+1. El bloque comercial superior.
+2. Los botones de compra existentes.
+3. El botón «Opciones de compra», si existe.
+4. El modal de compra.
+5. Los enlaces comerciales y sus formatos.
+6. Los logotipos.
+7. Los textos y estilos de los botones.
+8. La ubicación original de los bloques comerciales.
+9. El botón de compra al final de la ficha.
+10. El enlace de retorno a la categoría.
+
+No mover, eliminar, duplicar, sustituir, ocultar ni reorganizar los botones.
+
+No convertir un modal en botones individuales.
+
+No alterar los componentes compartidos:
+
+- `BookPurchaseBlock.tsx`
+- `BookPurchaseCTA.tsx`
+- `PurchaseModal.tsx`
+
+No modificar el registro comercial de `constants.tsx`.
+
+Si se encuentra un problema en los datos o enlaces existentes, documentarlo y solicitar autorización antes de modificarlo.
+
+### Prueba obligatoria del botón inferior
+
+Comprobar expresamente que el botón inferior:
+
+- Está presente.
+- Conserva su texto y estilo.
+- Mantiene su ubicación original.
+- Funciona al hacer clic.
+- Conduce correctamente al bloque comercial cuando su destino sea un ancla.
+- Es visible y operativo en móvil.
+
+El informe final debe incluir una confirmación expresa de esta prueba.
+
+## 11. BACKUP Y CONTROL DE CAMBIOS
+
+Crear antes de la intervención:
+
+`/_backup_ficha_mi_blog_programas_afiliados/`
+
+Incluir las copias de los archivos que vayan a modificarse y los elementos necesarios para recuperar el estado anterior.
+
+La intervención debe quedar limitada a:
+
+- Nueva vista dedicada.
+- Enrutamiento de la ruta en `App.tsx`.
+- Metadatos específicos en `seo.ts`, o el mecanismo equivalente existente.
+
+No modificar:
+
+- `constants.tsx`.
+- `BookDetailView.tsx`.
+- Componentes comerciales compartidos.
+- Otras fichas de libros.
+- Páginas de categorías.
+- Home.
+- Biblioteca.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Header.
+- Footer.
+- Navegación global.
+
+El Footer está expresamente excluido de cualquier intervención.
+
+## 12. PRUEBAS TÉCNICAS OBLIGATORIAS
+
+### Integridad editorial
+
+Verificar:
+- Texto íntegro.
+- Introducción completa.
+- Doce apartados H2.
+- Ausencia de párrafos duplicados.
+- Ausencia de secciones no aprobadas.
+- Índice ubicado después de la introducción.
+- Correspondencia entre los doce enlaces y sus destinos.
+
+### Navegación
+
+Probar las doce anclas individualmente con Playwright.
+
+Comprobar:
+- Que cada enlace funciona.
+- Que no existen IDs duplicados.
+- Que los encabezados no quedan ocultos bajo el encabezado fijo.
+- Que el comportamiento es correcto en escritorio y móvil.
+
+### SEO y datos estructurados
+
+Comprobar:
+- Un único H1.
+- Doce H2.
+- Title y description correctos.
+- Canonical correcto.
+- Open Graph.
+- Twitter Cards.
+- Imagen social correcta.
+- JSON-LD válido.
+- Ausencia de información inventada.
+
+### Diseño responsive
+
+Probar:
+
+- Escritorio: 1440 × 900.
+- Móvil: 390 × 844.
+
+Comprobar:
+- Portada cargada.
+- Índice adaptable.
+- Lectura cómoda.
+- Ausencia de desbordamiento horizontal.
+- Botones comerciales visibles.
+- Ausencia de solapamientos.
+- Cero errores de consola o ejecución.
+
+### Regresión
+
+Comprobar que no se han alterado:
+
+- `/`
+- `/biblioteca/`
+- `/iniciacion/`
+- `/origen/`
+- `/mi-blog-y-los-programas-de-afiliados/` antes de sustituir su vista, como referencia de estado inicial.
+- `/experto-en-plr-premium/`
+- `/el-manual-del-solopreneur-moderno/`
+- `/el-arte-de-atraer-la-abundancia/`
+- `/el-vendedor-hipnotico/`
+- `/de-la-pluma-al-dinero/`
+- `/sistemas-digitales/`
+- `/sobre-fg-perspectiva/`
+
+La prueba de regresión no autoriza cambios en esas rutas.
+
+## 13. TYPESCRIPT, BUILD Y PRERENDERIZADO
+
+Ejecutar:
+
+- `tsc --noEmit`.
+- Build local.
+- Prerenderizado.
+- Inspección del HTML generado.
+
+Verificar que:
+
+- La ruta real está prerenderizada.
+- El H1 y los doce H2 aparecen en el HTML.
+- Los metadatos están presentes.
+- El JSON-LD está presente.
+- Los enlaces comerciales siguen incluidos.
+- No se depende exclusivamente de JavaScript para mostrar el contenido editorial.
+
+No finalizar si existen errores de compilación o prerenderizado.
+
+## 14. INFORME TÉCNICO FINAL
+
+Entregar un informe que incluya:
+
+1. Archivos inspeccionados.
+2. Archivos creados.
+3. Archivos modificados.
+4. Ubicación del backup.
+5. Confirmación de incorporación íntegra del texto.
+6. Confirmación de ubicación del índice.
+7. Resultado de las doce anclas.
+8. Metadatos SEO implementados.
+9. Datos estructurados y validación.
+10. Resultado de TypeScript.
+11. Resultado del build y prerenderizado.
+12. Pruebas de escritorio y móvil.
+13. Comparación de los elementos comerciales antes y después.
+14. Confirmación de funcionamiento del modal y botones.
+15. Confirmación expresa del botón inferior de compra.
+16. Confirmación de que no se modificaron otras fichas ni categorías.
+17. Confirmación de que el Footer permanece intacto.
+18. Confirmación de que no se ha realizado despliegue a Vercel.
+
+No declarar pruebas superadas si no se han ejecutado realmente.
+
+## 15. CRITERIO FINAL DE ACEPTACIÓN
+
+La intervención se considera terminada únicamente cuando:
+
+- Existe una vista independiente para el libro.
+- Se ha incorporado íntegramente el texto aprobado.
+- El índice aparece en la ubicación correcta.
+- Las doce anclas funcionan.
+- Los metadatos SEO son específicos.
+- Los datos estructurados son válidos.
+- El diseño funciona en escritorio y móvil.
+- Todos los elementos comerciales conservan ubicación y comportamiento.
+- El botón inferior de compra sigue presente y operativo.
+- TypeScript, build y prerenderizado finalizan correctamente.
+- No se han modificado otras páginas ni componentes globales.
+- El Footer permanece intacto.
+- No se ha desplegado a producción.
+
+**EJECUTAR EXCLUSIVAMENTE ESTA INTERVENCIÓN EN EL ENTORNO LOCAL. NO DESPLEGAR A VERCEL.**
