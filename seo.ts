@@ -1387,6 +1387,78 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6n. Ficha editorial dedicada: Guía Completa de Inbound Marketing
+  if (path === '/guia-completa-de-inbound-marketing/') {
+    const inboundBook = ALL_BOOKS.find(
+      (b) => b.path === '/guia-completa-de-inbound-marketing/' || b.slug === 'guia-completa-de-inbound-marketing'
+    );
+    const inboundDescription =
+      'Comprende cómo organizar una estrategia de inbound marketing para atraer clientes, gestionar contactos, mejorar la comunicación y desarrollar relaciones comerciales.';
+    const inboundCover =
+      inboundBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/11-guia-inbound-marketing-libro-400.jpg';
+    const inboundUrl = `${BASE_URL}/guia-completa-de-inbound-marketing/`;
+
+    const inboundBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Guía Completa de Inbound Marketing',
+      alternateName: 'Atrae a tus clientes ideales con esta guía para negocios pequeños',
+      description:
+        'Una visión estratégica para negocios pequeños sobre cómo conectar la propuesta de valor, los contenidos, el recorrido del cliente, la captación y la experiencia comercial.',
+      image: inboundCover,
+      url: inboundUrl,
+      inLanguage: 'es',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      }
+    };
+
+    return {
+      path: '/guia-completa-de-inbound-marketing/',
+      title: 'Guía Completa de Inbound Marketing: negocios pequeños | FG Perspectiva',
+      description: inboundDescription,
+      canonical: inboundUrl,
+      ogImage: inboundCover,
+      ogType: 'book',
+      h1: 'Guía Completa de Inbound Marketing',
+      schema: [
+        inboundBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Iniciación',
+              item: `${BASE_URL}/iniciacion/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Guía Completa de Inbound Marketing',
+              item: inboundUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {

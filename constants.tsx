@@ -579,40 +579,71 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'iniciacion',
         title: 'Mi Blog y los Programas de Afiliados',
         description: 'Aprende a convertir contenido en ingresos de forma ordenada y sostenible.',
-        url: 'https://amzn.to/3PXiwYW',
+        url: 'https://www.amazon.com/dp/B08NJR5GD5',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/4-mi-blog-y-los-programas-de-afiliados-libro-400.jpg',
         purchaseOptions: [
-          { 
-            platform: 'Amazon', 
-            url: 'https://amzn.to/3PXiwYW', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.png',
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B08NJR5GD5',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
             emoji: '🛒',
-            cta: 'Comprar en Amazon'
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
           },
-          { 
-            platform: 'Draft2Digital', 
-            url: 'https://books2read.com/u/mdJkDR', 
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B09PHL6P21',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B06XQZ5TQ2',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            tooltip: 'Amazon/Audible',
+            url: 'https://www.amazon.com/dp/B0HB5WNWB7',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Books2Read',
+            url: 'https://books2read.com/u/mdJkDR',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/books2read_logo.png',
             emoji: '📖',
-            cta: 'Ver en Draft2Digital'
+            cta: 'Ver en Books2Read'
           },
-          { 
-            platform: 'Clickbank', 
-            url: 'https://miblogafiliados.vercel.app/', 
+          {
+            platform: 'Clickbank',
+            url: 'https://miblogafiliados.vercel.app/',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.png',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
-          { 
-            platform: 'Payhip', 
-            url: 'https://payhip.com/b/hYfbn', 
+          {
+            platform: 'Payhip',
+            url: 'https://payhip.com/b/hYfbn',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.png',
             emoji: '💎',
             cta: 'Descarga Directa'
           },
-          { 
-            platform: 'Lulu', 
-            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/mi-blog-y-los-programas-de-afiliados/ebook/product-zmwkppj.html', 
+          {
+            platform: 'Lulu',
+            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/mi-blog-y-los-programas-de-afiliados/ebook/product-zmwkppj.html',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.png',
             emoji: '📚',
             cta: 'Ver en Lulu'
@@ -636,26 +667,56 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'iniciacion',
         title: 'Guía Completa de Inbound Marketing',
         description: 'Atrae clientes con contenido estratégico, sin depender de interrupciones.',
-        url: 'https://amzn.to/48SDeBV',
+        url: 'https://www.amazon.com/dp/B0C7T3KSLD',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/11-guia-inbound-marketing-libro-400.jpg',
         purchaseOptions: [
-          { 
-            platform: 'Amazon', 
-            url: 'https://amzn.to/48SDeBV', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.png',
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B0C7T3KSLD',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
             emoji: '🛒',
-            cta: 'Comprar en Amazon'
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
           },
-          { 
-            platform: 'Clickbank', 
-            url: 'https://inboundinboundmarketing.vercel.app', 
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B0D3BVTP28',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B0C82671RC',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            url: 'https://www.amazon.com/dp/B0HB6PYBMT',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Clickbank',
+            url: 'https://inboundinboundmarketing.vercel.app',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.png',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
-          { 
-            platform: 'Payhip', 
-            url: 'https://payhip.com/b/dvPDj', 
+          {
+            platform: 'Payhip',
+            url: 'https://payhip.com/b/dvPDj',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.png',
             emoji: '💎',
             cta: 'Descarga Directa'

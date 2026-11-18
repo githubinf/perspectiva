@@ -1,0 +1,819 @@
+# INSTRUCCIÓN INTEGRAL PARA GOOGLE AI STUDIO
+## Creación de la ficha editorial independiente
+## Guía Completa de Inbound Marketing
+### Proyecto FG Perspectiva
+
+---
+
+## 1. OBJETIVO DE LA INTERVENCIÓN
+
+Crear una ficha editorial independiente para el libro **Guía Completa de Inbound Marketing**, incorporando la nueva redacción editorial aprobada y una arquitectura específica para esta obra.
+
+La intervención debe incluir:
+
+- Una vista editorial independiente.
+- El Hero con los datos oficiales.
+- La redacción completa aprobada.
+- Un índice de contenidos visible y funcional.
+- Metadatos SEO exclusivos.
+- Datos estructurados JSON-LD.
+- Integración con los elementos comerciales existentes.
+- Diseño responsive.
+- Prerenderizado correcto.
+- Pruebas de integridad editorial, comercial y técnica.
+
+No adaptar una plantilla genérica de otras fichas ni modificar componentes compartidos para conseguir el resultado.
+
+La nueva ficha debe tener una identidad editorial propia, coherente con FG Perspectiva y con la arquitectura técnica actual del proyecto.
+
+**Alcance exclusivo:** esta intervención afecta únicamente a la ficha de Guía Completa de Inbound Marketing y a los archivos estrictamente necesarios para conectarla.
+
+**No realizar ningún despliegue a Vercel. Trabajar exclusivamente en el entorno local.**
+
+---
+
+## 2. IDENTIFICACIÓN Y DATOS OFICIALES
+
+Utilizar los siguientes datos:
+
+- Título: Guía Completa de Inbound Marketing.
+- Subtítulo: Atrae a tus clientes ideales con esta guía para negocios pequeños.
+- Autor: Francisco González.
+- Categoría: Iniciación.
+
+### Ruta
+
+Antes de implementar, inspeccionar `constants.tsx`, `App.tsx` y el sistema de rutas.
+
+Identificar la ruta exacta que tiene actualmente asignada este libro y conservarla sin modificaciones.
+
+No inventar un slug ni crear una ruta alternativa.
+
+### Portada
+
+Utilizar exclusivamente la portada oficial que ya está registrada en el proyecto para este libro.
+
+No sustituir la imagen, modificar su URL ni generar una portada nueva.
+
+### Enlaces comerciales confirmados
+
+Incorporar y conservar los siguientes enlaces:
+
+**Amazon Kindle:**
+
+https://www.amazon.com/dp/B0C82671RC
+
+**Amazon — Tapa blanda:**
+
+https://www.amazon.com/dp/B0C7T3KSLD
+
+**Amazon — Tapa dura:**
+
+https://www.amazon.com/dp/B0D3BVTP28
+
+**Amazon — Audiolibro:**
+
+https://www.amazon.com/dp/B0HB6PYBMT
+
+**ClickBank:**
+
+https://inboundinboundmarketing.vercel.app
+
+**Payhip:**
+
+https://payhip.com/b/dvPDj
+
+No añadir plataformas que no estén confirmadas.
+
+No inventar enlaces de Google Play, Books2Read, Lulu ni de otras plataformas.
+
+### Orden de presentación comercial
+
+Respetar el orden general establecido para las fichas de FG Perspectiva:
+
+1. Amazon — Tapa blanda.
+2. Amazon — Tapa dura.
+3. Amazon — Ebook Kindle.
+4. Amazon/Audible — Audiolibro.
+5. Google Play Books — Ebook, si existe.
+6. Google Play — Audiolibro, si existe.
+7. Books2Read, si existe.
+8. ClickBank.
+9. Payhip.
+10. Lulu, si existe.
+11. Otras plataformas confirmadas, al final.
+
+Para esta ficha, el orden de los enlaces confirmados será:
+
+1. Amazon — Tapa blanda.
+2. Amazon — Tapa dura.
+3. Amazon — Ebook Kindle.
+4. Amazon/Audible — Audiolibro.
+5. ClickBank.
+6. Payhip.
+
+Omitir las plataformas que no existan, sin crear botones vacíos ni espacios reservados.
+
+La ordenación debe realizarse dentro de la estructura comercial actual, sin mover los bloques de compra de su ubicación original.
+
+---
+
+## 3. ARQUITECTURA TÉCNICA
+
+Crear una vista independiente.
+
+Nombre recomendado:
+
+`components/views/InboundMarketingGuideView.tsx`
+
+Si el proyecto utiliza una convención de nombres diferente, respetarla sin alterar el objetivo de independencia de la vista.
+
+Conectar la ruta existente desde `App.tsx`.
+
+Incorporar los metadatos específicos en `seo.ts` o en el mecanismo SEO que utilice actualmente el proyecto.
+
+No modificar la vista compartida `BookDetailView.tsx` para adaptar esta ficha.
+
+No modificar componentes comerciales compartidos.
+
+Reutilizar los componentes de compra actuales y mantener sus comportamientos.
+
+Antes de implementar, inspeccionar la arquitectura existente para evitar duplicar funciones o crear componentes innecesarios.
+
+---
+
+## 4. CONTENIDO EDITORIAL APROBADO
+
+Incorporar íntegramente el siguiente contenido.
+
+La redacción ha sido revisada y aprobada expresamente.
+
+**No resumir, recortar, reescribir, sustituir párrafos ni cambiar los encabezados.**
+
+No añadir una sección titulada «Sobre el libro».
+
+No copiar ni recuperar fragmentos de la descripción comercial original para completar el contenido.
+
+No introducir información, métodos, herramientas, resultados o promesas que no aparezcan en el texto aprobado.
+
+### HERO EDITORIAL
+
+**H1:**
+
+Guía Completa de Inbound Marketing
+
+**Subtítulo oficial:**
+
+Atrae a tus clientes ideales con esta guía para negocios pequeños
+
+**Línea editorial complementaria:**
+
+Una visión estratégica para comprender cómo conectar las necesidades de un mercado con los procesos de comunicación, captación y desarrollo comercial de un negocio.
+
+**Autor:**
+
+Francisco González.
+
+### INTRODUCCIÓN
+
+Conseguir nuevos clientes es uno de los desafíos más importantes para cualquier negocio. Sin embargo, atraer la atención de las personas adecuadas no depende exclusivamente de aumentar la publicidad o multiplicar los mensajes comerciales. También exige comprender qué busca el público, qué dificultades intenta resolver y qué información necesita para valorar una posible solución.
+
+En este contexto, el inbound marketing plantea una manera de organizar la actividad comercial alrededor de la experiencia de las personas. En lugar de comenzar por el producto y concentrar todos los esfuerzos en promocionarlo, propone desarrollar una relación progresiva con quienes podrían estar interesados en lo que ofrece una empresa.
+
+Esta perspectiva resulta especialmente relevante para los negocios pequeños. Sus recursos suelen ser limitados y necesitan tomar decisiones cuidadosas sobre dónde invertir tiempo, cómo comunicar su propuesta y qué herramientas pueden contribuir realmente a sus objetivos. No siempre es viable competir mediante grandes presupuestos publicitarios, pero sí es posible trabajar con mayor precisión sobre la información que se ofrece, los canales que se utilizan y la manera en que se acompaña al posible cliente.
+
+El valor de esta metodología no reside en una herramienta aislada ni en una campaña determinada. Se encuentra en la coordinación de diferentes actividades que, cuando responden a una misma dirección, pueden convertir la presencia digital de un negocio en una estructura comercial más organizada.
+
+---
+
+## 5. ÍNDICE DE CONTENIDOS
+
+El índice debe aparecer exactamente después de la introducción y antes del primer apartado temático.
+
+**Título del índice:**
+
+Contenido de esta página
+
+**Texto introductorio:**
+
+Accede directamente al apartado que te interesa.
+
+Incluir los siguientes doce enlaces:
+
+1. El problema de comunicar sin comprender al mercado → `#comprender-el-mercado`
+2. La propuesta de valor como punto de orientación → `#propuesta-de-valor`
+3. El recorrido que realiza una persona antes de elegir → `#recorrido-del-cliente`
+4. El contenido como infraestructura de comunicación → `#contenido-infraestructura`
+5. La visibilidad necesita corresponderse con la intención → `#visibilidad-intencion`
+6. De una visita anónima a una oportunidad de relación → `#visita-oportunidad`
+7. La continuidad de la comunicación después del primer contacto → `#continuidad-comunicacion`
+8. La coordinación entre personas, información y herramientas → `#coordinacion-herramientas`
+9. Medir para comprender, no solo para acumular cifras → `#medir-resultados`
+10. La experiencia del cliente como parte del crecimiento → `#experiencia-cliente`
+11. Adaptar la metodología a la capacidad de un negocio pequeño → `#adaptar-metodologia`
+12. Una estrategia conectada en lugar de acciones aisladas → `#estrategia-conectada`
+
+### Presentación
+
+- Dos columnas en escritorio.
+- Una columna en móvil.
+- Enlaces reales a los H2 correspondientes.
+- IDs únicos.
+- Desplazamiento correcto con encabezado fijo.
+- Separación visual suficiente entre índice y contenido.
+
+Reutilizar `CategoryIndex` solamente si es compatible con esta ficha y no exige modificar globalmente el componente.
+
+No duplicar encabezados ni crear apartados artificiales para completar el índice.
+
+---
+
+## 6. DESARROLLO EDITORIAL COMPLETO
+
+### H2: El problema de comunicar sin comprender al mercado
+
+ID: `comprender-el-mercado`
+
+Una empresa puede publicar con frecuencia, mantener perfiles en diferentes plataformas y disponer de una página web atractiva sin conseguir que esas actividades se traduzcan en oportunidades comerciales. El problema no siempre está en la falta de exposición. En ocasiones, la comunicación no guarda suficiente relación con las preguntas y prioridades de las personas a las que pretende llegar.
+
+Comprender el mercado implica observar algo más que los datos demográficos de una audiencia. También requiere identificar las circunstancias que llevan a alguien a buscar información, las dudas que dificultan una decisión y los criterios que utiliza para comparar alternativas.
+
+Una persona que todavía está intentando comprender un problema no necesita recibir el mismo mensaje que otra que ya conoce las posibles soluciones y está evaluando proveedores. Cuando una empresa ignora esas diferencias, corre el riesgo de presentar argumentos comerciales antes de que exista una base suficiente para comprenderlos.
+
+Por eso, una estrategia de atracción necesita comenzar con una interpretación razonable del público. No se trata de imaginar un cliente ideal y atribuirle comportamientos sin fundamento, sino de construir una representación útil a partir de las necesidades que el negocio puede atender y de la información disponible sobre su mercado.
+
+### H2: La propuesta de valor como punto de orientación
+
+ID: `propuesta-de-valor`
+
+Antes de decidir qué contenidos publicar o qué herramientas incorporar, conviene tener claridad sobre aquello que el negocio ofrece y por qué podría resultar relevante para determinadas personas.
+
+La propuesta de valor no es simplemente una frase publicitaria. Representa una explicación comprensible de la utilidad que una empresa pretende aportar, del problema al que responde y de las características que permiten distinguir su oferta.
+
+Cuando esta definición es imprecisa, la comunicación tiende a dispersarse. Los contenidos pueden abordar temas muy diferentes, las campañas transmiten mensajes poco relacionados y los contactos recibidos no siempre corresponden con el tipo de cliente que la empresa desea atender.
+
+Una propuesta bien delimitada proporciona un criterio para tomar decisiones. Ayuda a seleccionar los temas que merecen atención, identificar las preguntas que deben resolverse y mantener una relación coherente entre el contenido informativo y la actividad comercial.
+
+Esto no significa que una empresa deba comunicar siempre de la misma manera. Su mensaje puede adaptarse a diferentes públicos y situaciones, pero necesita conservar una orientación reconocible. La variedad de formatos no debería convertirse en una pérdida de identidad.
+
+### H2: El recorrido que realiza una persona antes de elegir
+
+ID: `recorrido-del-cliente`
+
+Las decisiones de compra rara vez se producen de manera idéntica. Algunas personas identifican una necesidad con claridad, mientras que otras comienzan buscando información sin saber todavía qué solución necesitan. También existen diferencias entre quienes están descubriendo una categoría de productos y quienes ya comparan propuestas concretas.
+
+Comprender ese recorrido permite organizar la comunicación con mayor sentido. La información inicial puede ayudar a reconocer una situación; otros contenidos pueden explicar alternativas, criterios y diferencias; y determinadas comunicaciones pueden facilitar la evaluación de una propuesta específica.
+
+Esta perspectiva evita tratar todas las visitas como si tuvieran la misma disposición comercial. Una consulta informativa no representa necesariamente una oportunidad inmediata de venta, pero puede constituir el comienzo de una relación que evolucione con el tiempo.
+
+Para un negocio pequeño, esta distinción ayuda a utilizar mejor sus recursos. En lugar de intentar cerrar una operación en cada interacción, puede construir una secuencia de información que acompañe al posible cliente conforme aumenta su conocimiento y define sus prioridades.
+
+La clave está en no forzar el recorrido. La comunicación debe responder al grado de comprensión y a las necesidades reales de cada persona, sin convertir el proceso en una sucesión de mensajes comerciales desconectados.
+
+### H2: El contenido como infraestructura de comunicación
+
+ID: `contenido-infraestructura`
+
+El contenido no debería entenderse únicamente como una actividad de publicación. Dentro de una estrategia de inbound marketing, cumple una función de conexión entre el conocimiento del negocio y las preguntas de su mercado.
+
+Un artículo, una guía, un recurso descargable o una publicación en redes sociales pueden abordar necesidades diferentes. Su utilidad depende de que exista una razón para producirlos y de que aporten información que ayude al público a comprender mejor un asunto.
+
+Esto exige trabajar con criterios editoriales. No todos los temas merecen convertirse en una publicación, ni todos los formatos son adecuados para cualquier objetivo. La selección debe considerar la relación con la oferta, el interés de la audiencia y la capacidad del negocio para desarrollar información fiable.
+
+También importa la continuidad temática. Un conjunto de contenidos relacionados puede ayudar a que una persona profundice en un área y descubra otras cuestiones vinculadas con su necesidad inicial. Así, la web deja de ser una colección de páginas independientes y comienza a funcionar como un entorno informativo organizado.
+
+El contenido adquiere mayor valor cuando responde a una función reconocible dentro del proyecto. Publicar más no equivale necesariamente a comunicar mejor; la relevancia, la claridad y la relación entre las piezas son criterios mucho más útiles para evaluar su aportación.
+
+### H2: La visibilidad necesita corresponderse con la intención
+
+ID: `visibilidad-intencion`
+
+Atraer visitantes es una parte del trabajo, pero conseguir que lleguen personas interesadas en lo que ofrece el negocio requiere una estrategia de visibilidad más precisa.
+
+El posicionamiento en buscadores permite conectar determinadas páginas con consultas que realizan los usuarios. Para aprovechar esa posibilidad, necesitamos comprender qué intención existe detrás de cada búsqueda y ofrecer una respuesta que guarde relación con ella.
+
+No es lo mismo una consulta orientada a aprender un concepto que otra destinada a comparar servicios o localizar un proveedor. Aunque ambas puedan pertenecer al mismo sector, las expectativas de quien busca son diferentes.
+
+La organización de los contenidos, la claridad de los títulos, la estructura de las páginas y la utilidad de la información contribuyen a que un sitio resulte más comprensible tanto para sus visitantes como para los sistemas de búsqueda.
+
+La visibilidad también puede desarrollarse mediante canales sociales y otras formas de distribución. Cada canal tiene características propias y no debería utilizarse como una simple repetición automática de publicaciones. La comunicación necesita adaptarse al contexto sin perder coherencia con la propuesta del negocio.
+
+El objetivo no consiste en estar presente en todas partes, sino en construir una presencia adecuada a los recursos disponibles y a los hábitos de las personas que se desea alcanzar.
+
+### H2: De una visita anónima a una oportunidad de relación
+
+ID: `visita-oportunidad`
+
+Una visita a una página web no proporciona por sí misma información suficiente para establecer una relación comercial. Para que el negocio pueda continuar la comunicación, necesita ofrecer mecanismos adecuados mediante los cuales las personas interesadas puedan manifestar su interés.
+
+En este punto adquiere importancia la generación de contactos. Un formulario, una suscripción o el acceso a un recurso pueden facilitar ese primer intercambio, siempre que exista una razón clara para solicitar los datos y que la experiencia resulte proporcionada.
+
+La calidad de una oportunidad no depende únicamente del número de registros obtenidos. También importa conocer si existe correspondencia entre el interés manifestado y los servicios o productos que ofrece la empresa.
+
+Un sistema de captación mal planteado puede reunir numerosos contactos que nunca tuvieron una relación real con la propuesta comercial. Por el contrario, un proceso más selectivo puede facilitar conversaciones con personas cuyas necesidades se encuentran mejor alineadas con la oferta.
+
+La información solicitada debe limitarse a lo necesario y gestionarse de manera responsable. La confianza que se pretende construir mediante la comunicación también debe reflejarse en el tratamiento de los datos personales.
+
+### H2: La continuidad de la comunicación después del primer contacto
+
+ID: `continuidad-comunicacion`
+
+La relación con un posible cliente no termina cuando deja sus datos. Ese momento abre una nueva etapa en la que la empresa necesita decidir cómo mantener una comunicación útil y pertinente.
+
+El correo electrónico puede desempeñar una función importante porque permite desarrollar conversaciones informativas más allá de la visita inicial. Sin embargo, su eficacia no depende de enviar mensajes con frecuencia indiscriminada. Necesita una planificación que considere el interés de la persona, el contexto de su registro y la utilidad de cada comunicación.
+
+Una secuencia de mensajes puede ayudar a presentar información complementaria, aclarar cuestiones frecuentes y explicar aspectos de la propuesta comercial. Su contenido debe guardar relación con la razón por la que se estableció el contacto.
+
+También conviene evitar que cada mensaje tenga como único propósito solicitar una compra. Una relación comercial puede necesitar tiempo para madurar y las comunicaciones deberían aportar valor durante ese proceso.
+
+La continuidad requiere respetar las preferencias de los destinatarios, gestionar adecuadamente las suscripciones y ofrecer mecanismos claros para modificar o retirar el consentimiento cuando corresponda. Una estrategia organizada no puede separarse de una gestión responsable de la comunicación.
+
+### H2: La coordinación entre personas, información y herramientas
+
+ID: `coordinacion-herramientas`
+
+A medida que aumenta la actividad comercial, mantener el seguimiento de cada contacto mediante procedimientos improvisados se vuelve complicado. La información puede quedar dispersa, las conversaciones perder continuidad y distintas personas de un equipo pueden trabajar con datos incompletos.
+
+Un sistema de gestión de relaciones con clientes, conocido como CRM, puede ayudar a organizar esa información. Su utilidad consiste en proporcionar una visión más ordenada de las interacciones, las oportunidades y el estado de las relaciones comerciales.
+
+No obstante, incorporar una plataforma no resuelve automáticamente los problemas de gestión. Antes de elegir una herramienta, conviene identificar qué información necesita conservar el negocio, qué procesos desea organizar y quién será responsable de mantener los registros actualizados.
+
+La automatización puede complementar esa estructura al facilitar determinadas tareas repetitivas, como la distribución de comunicaciones o la actualización de ciertos procesos. Pero necesita responder a reglas claras y mantener mecanismos de supervisión.
+
+Para un negocio pequeño, la mejor solución no siempre es la más compleja. Una estructura sencilla que el equipo pueda utilizar correctamente suele aportar más valor que una plataforma sofisticada cuya configuración y mantenimiento superen las necesidades reales de la empresa.
+
+### H2: Medir para comprender, no solo para acumular cifras
+
+ID: `medir-resultados`
+
+Una estrategia digital genera información sobre las visitas, las interacciones, los contactos y las respuestas comerciales. El desafío consiste en interpretar esos datos sin confundir actividad con progreso.
+
+Un incremento del tráfico puede parecer positivo, pero necesita analizarse junto con la procedencia de las visitas y su relación con los objetivos del negocio. De la misma manera, un mayor número de contactos no significa necesariamente que hayan aumentado las oportunidades relevantes.
+
+La analítica permite observar cómo se comportan las distintas partes de la estrategia. Puede ayudar a reconocer qué contenidos reciben atención, qué páginas facilitan determinadas acciones y en qué momentos aparecen dificultades dentro de la experiencia del usuario.
+
+La optimización de conversiones parte de esa observación. En lugar de modificar elementos por intuición, permite formular hipótesis, introducir cambios razonados y evaluar si producen una mejora en el comportamiento que interesa.
+
+No todas las decisiones pueden resolverse mediante una cifra. Los datos muestran tendencias y posibles problemas, pero necesitan interpretarse considerando el tipo de negocio, el contexto de la audiencia y las características de cada canal.
+
+Medir con propósito significa seleccionar indicadores que ayuden a tomar decisiones, no convertir el seguimiento estadístico en una actividad independiente de la estrategia.
+
+### H2: La experiencia del cliente como parte del crecimiento
+
+ID: `experiencia-cliente`
+
+La captación suele recibir mucha atención porque sus resultados son visibles en forma de visitas y nuevos contactos. Sin embargo, la relación con una persona no debería considerarse terminada cuando realiza una compra.
+
+La experiencia posterior influye en la percepción que el cliente desarrolla sobre la empresa y en su disposición a mantener una relación. La claridad de la información, la atención recibida y la capacidad de responder ante dificultades forman parte de esa experiencia.
+
+Un negocio que conoce las necesidades de sus clientes puede identificar oportunidades para mejorar sus servicios, aclarar aspectos de su propuesta y desarrollar comunicaciones más relevantes. También puede reconocer qué expectativas no se están cumpliendo y dónde conviene introducir ajustes.
+
+La fidelización no se consigue simplemente mediante mensajes periódicos o incentivos. Necesita que la relación conserve su utilidad y que la empresa mantenga una atención coherente con lo que prometió.
+
+Cuando esta dimensión se integra en la estrategia, el crecimiento deja de depender exclusivamente de conseguir nuevos compradores. La calidad de las relaciones existentes también puede contribuir al desarrollo y a la reputación del negocio.
+
+### H2: Adaptar la metodología a la capacidad de un negocio pequeño
+
+ID: `adaptar-metodologia`
+
+Una estrategia de inbound marketing no debería comenzar con una acumulación de plataformas, campañas y procesos que el negocio todavía no puede gestionar. Su aplicación necesita considerar el tamaño del equipo, los recursos disponibles, la complejidad de la oferta y el nivel de organización existente.
+
+Una empresa pequeña puede necesitar primero una propuesta comercial más clara, una presencia web bien estructurada y contenidos que respondan a las preguntas más importantes de su público. En otra situación, la prioridad podría estar en ordenar los contactos, mejorar la comunicación posterior o comprender por qué las oportunidades no avanzan.
+
+La tecnología debe incorporarse en función de esas necesidades. Las herramientas de automatización, CRM y analítica pueden ampliar las capacidades de trabajo, pero no sustituyen la definición de objetivos ni la comprensión del mercado.
+
+También es importante reconocer que una metodología no se aplica de una vez y para siempre. Las necesidades de los clientes cambian, las condiciones de los canales evolucionan y los negocios atraviesan distintas etapas. La estrategia debe conservar suficiente flexibilidad para responder a esas circunstancias sin perder su dirección.
+
+El crecimiento responsable comienza por construir una estructura que pueda mantenerse. Resulta más útil desarrollar procesos comprensibles y revisables que intentar reproducir modelos diseñados para organizaciones con recursos y equipos muy diferentes.
+
+### H2: Una estrategia conectada en lugar de acciones aisladas
+
+ID: `estrategia-conectada`
+
+El inbound marketing alcanza su sentido cuando las diferentes actividades dejan de funcionar como iniciativas independientes. La comunicación, la visibilidad, la captación, el seguimiento y la experiencia del cliente necesitan compartir una orientación.
+
+Si cada área trabaja con objetivos distintos, el negocio puede generar contenidos que no se relacionan con su oferta, conseguir contactos que no reciben atención adecuada o incorporar herramientas que no aportan información útil a las decisiones.
+
+La coordinación permite comprender cómo contribuye cada actividad al conjunto. También facilita reconocer dónde se interrumpe la relación con el público y qué cambios podrían mejorar el funcionamiento general.
+
+Esta visión no elimina la necesidad de experimentar ni de adaptar las acciones a cada contexto. Al contrario, proporciona un marco para evaluar las iniciativas con mayor criterio y evitar que las novedades tecnológicas o las tendencias de marketing desplacen las prioridades reales del negocio.
+
+Para una pequeña empresa, disponer de una estrategia conectada puede representar una forma más ordenada de utilizar sus recursos y desarrollar su presencia digital. No supone una garantía de ventas ni una promesa de crecimiento automático. Es una manera de trabajar con mayor comprensión de las personas, de los procesos y de las decisiones que intervienen en la actividad comercial.
+
+El propósito final no es atraer visitantes por atraerlos, sino construir una relación entre lo que un negocio sabe ofrecer y aquello que sus posibles clientes necesitan comprender, valorar y elegir.
+
+---
+
+## 7. REQUISITOS EDITORIALES Y DE DISEÑO
+
+Mantener la identidad visual general de FG Perspectiva:
+
+- Fondo y paleta cromática global existentes.
+- Tipografías actuales.
+- Jerarquía editorial clara.
+- Lectura cómoda en escritorio y móvil.
+- Portada oficial del libro.
+- Diseño coherente con el resto de fichas, pero sin copiar su arquitectura interna.
+
+La página debe tener una presentación editorial limpia, sin elementos decorativos innecesarios.
+
+No incorporar:
+
+- Fotografías de stock.
+- Ilustraciones genéricas.
+- Imágenes de categorías.
+- Iconos decorativos para sustituir contenido.
+- Estadísticas inventadas.
+- Valoraciones ficticias.
+- Testimonios no confirmados.
+- Promesas de resultados.
+- Sección «Sobre el libro».
+
+No repetir el subtítulo en la línea editorial complementaria.
+
+Mantener un único H1 y los doce H2 indicados.
+
+No modificar el texto aprobado para intentar aumentar artificialmente su extensión.
+
+---
+
+## 8. METADATOS SEO
+
+Crear metadatos exclusivos para esta ficha.
+
+### SEO Title
+
+`Guía Completa de Inbound Marketing: negocios pequeños | FG Perspectiva`
+
+### Meta description
+
+`Comprende cómo organizar una estrategia de inbound marketing para atraer clientes, gestionar contactos, mejorar la comunicación y desarrollar relaciones comerciales.`
+
+### Palabra clave principal
+
+`inbound marketing para negocios pequeños`
+
+### Palabras clave secundarias
+
+- estrategia de inbound marketing
+- qué es el inbound marketing
+- marketing de atracción
+- atraer clientes para pequeños negocios
+- estrategia de contenidos
+- generación de contactos
+- gestión de relaciones con clientes
+- automatización del marketing
+- fidelización de clientes
+- marketing digital para pequeñas empresas
+
+Estas expresiones son una propuesta semántica inicial. No afirmar que sus volúmenes de búsqueda o niveles de competencia han sido verificados externamente.
+
+No repetir palabras clave de forma artificial.
+
+Implementar:
+
+- Title único.
+- Meta description única.
+- Canonical con la ruta real comprobada.
+- Open Graph.
+- Twitter Cards.
+- Imagen social con la portada oficial.
+- Idioma español.
+
+Las etiquetas SEO deben permanecer en el `<head>`. No introducir metadatos como texto visible en el contenido.
+
+No alterar metadatos de otras fichas.
+
+---
+
+## 9. DATOS ESTRUCTURADOS JSON-LD
+
+Incorporar datos estructurados específicos para esta obra.
+
+### Book
+
+Utilizar únicamente datos confirmados:
+
+- `@type`: `Book`.
+- `name`: `Guía Completa de Inbound Marketing`.
+- `alternateName`: `Atrae a tus clientes ideales con esta guía para negocios pequeños`.
+- `description`: descripción editorial breve, original y coherente con la nueva ficha.
+- `image`: URL de la portada oficial existente.
+- `url`: URL canónica real.
+- `inLanguage`: `es`.
+- `author`: objeto `Person`, nombre `Francisco González`.
+
+No inventar:
+
+- ISBN.
+- Editorial.
+- Fecha de publicación.
+- Número de páginas.
+- Valoraciones.
+- Reseñas.
+- Precios.
+- Ofertas.
+- Disponibilidad.
+- Datos de ventas.
+
+No añadir propiedades comerciales que no estén respaldadas por datos reales.
+
+### BreadcrumbList
+
+Representar la jerarquía real:
+
+Inicio → Biblioteca → Iniciación → Guía Completa de Inbound Marketing.
+
+Utilizar las rutas existentes y comprobar que cada URL sea válida.
+
+No duplicar JSON-LD.
+
+---
+
+## 10. PROTECCIÓN COMERCIAL ABSOLUTA
+
+Esta intervención editorial no autoriza cambios en la estructura comercial existente.
+
+Antes de comenzar, inspeccionar la ficha actual y registrar:
+
+- Ubicación de los bloques comerciales.
+- Botones existentes.
+- Modal de compra.
+- Formatos de Amazon.
+- Enlaces de ClickBank y Payhip.
+- Textos, estilos y logotipos.
+- Comportamiento de apertura y cierre.
+- Botón de compra situado al final de la ficha.
+
+Conservar sin cambios:
+
+1. El bloque comercial superior.
+2. La ubicación de los botones de compra.
+3. El botón o enlace que abre el modal, si existe.
+4. El modal y sus funciones.
+5. Los enlaces comerciales y sus destinos.
+6. Los textos de los botones.
+7. Los estilos y la jerarquía visual comercial.
+8. El comportamiento de compra.
+9. El botón de compra inferior.
+10. Los enlaces de retorno a la categoría.
+
+La única operación comercial permitida es incorporar o corregir los destinos expresamente confirmados en esta instrucción, si la ficha actual todavía no los contiene correctamente, y ordenar las opciones dentro de la estructura comercial existente según la secuencia indicada.
+
+No mover, eliminar, duplicar, sustituir, ocultar ni reorganizar los bloques comerciales.
+
+No convertir un modal en botones individuales.
+
+No modificar los componentes compartidos:
+
+- `BookPurchaseBlock.tsx`
+- `BookPurchaseCTA.tsx`
+- `PurchaseModal.tsx`
+
+No cambiar globalmente el comportamiento de compra.
+
+No modificar enlaces de otras fichas.
+
+### Verificación específica del audiolibro
+
+Comprobar que el botón de Amazon/Audible utiliza exactamente:
+
+https://www.amazon.com/dp/B0HB6PYBMT
+
+Debe aparecer después de Kindle en la secuencia comercial de Amazon.
+
+No inventar una imagen o logotipo si no existe ya un recurso válido en el proyecto. Si la ficha utiliza el recurso de marca Amazon/Audible compartido, conservarlo.
+
+### Prueba obligatoria del botón inferior
+
+Comprobar expresamente que el botón inferior de compra:
+
+- Sigue presente.
+- Conserva su texto.
+- Conserva su estilo.
+- Mantiene su ubicación original.
+- Funciona correctamente.
+- No queda oculto por otros elementos.
+- Es visible y operativo en escritorio y móvil.
+
+El informe técnico deberá confirmar expresamente esta prueba.
+
+---
+
+## 11. BACKUP Y CONTROL DE CAMBIOS
+
+Antes de intervenir, crear:
+
+`/_backup_ficha_guia_completa_inbound_marketing/`
+
+Guardar copias de los archivos que vayan a modificarse y los elementos necesarios para recuperar el estado anterior.
+
+La intervención debe limitarse a:
+
+- Nueva vista independiente.
+- Conexión de la ruta en `App.tsx`.
+- Metadatos de la ficha en `seo.ts` o mecanismo equivalente.
+- Ajustes estrictamente necesarios para incorporar los enlaces confirmados en la estructura comercial propia de esta ficha, sin modificar componentes compartidos.
+
+No modificar:
+
+- `constants.tsx`, salvo necesidad imprescindible y previa documentación.
+- `BookDetailView.tsx`.
+- Componentes comerciales compartidos.
+- Otras fichas.
+- Otras categorías.
+- Home.
+- Biblioteca.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Header.
+- Navegación global.
+- Footer.
+
+El Footer está expresamente excluido de cualquier intervención.
+
+---
+
+## 12. PRUEBAS EDITORIALES Y DE NAVEGACIÓN
+
+### Integridad del contenido
+
+Verificar:
+
+- Hero completo.
+- Título exacto.
+- Subtítulo exacto.
+- Línea editorial complementaria.
+- Autor.
+- Introducción completa.
+- Índice después de la introducción.
+- Doce apartados H2 completos.
+- Ausencia de duplicaciones.
+- Ausencia de secciones no aprobadas.
+- Texto íntegro y sin modificaciones involuntarias.
+
+### Índice y anclas
+
+Probar individualmente los doce enlaces.
+
+Comprobar:
+
+- Correspondencia entre cada entrada y su H2.
+- IDs únicos.
+- Ausencia de enlaces rotos.
+- Desplazamiento correcto.
+- Margen superior suficiente para el encabezado fijo.
+- Funcionamiento en escritorio y móvil.
+
+No utilizar enlaces ficticios ni destinos aproximados.
+
+---
+
+## 13. PRUEBAS SEO Y DATOS ESTRUCTURADOS
+
+Comprobar:
+
+- Un único H1.
+- Doce H2.
+- Title correcto.
+- Meta description correcta.
+- Canonical correcto.
+- Open Graph.
+- Twitter Cards.
+- Imagen social oficial.
+- JSON-LD Book válido.
+- JSON-LD BreadcrumbList válido.
+- Ausencia de propiedades inventadas.
+- Ausencia de metadatos duplicados.
+- Ausencia de contenido SEO visible que no pertenezca a la ficha.
+
+---
+
+## 14. PRUEBAS RESPONSIVE
+
+Realizar pruebas en:
+
+- Escritorio: 1440 × 900.
+- Móvil: 390 × 844.
+
+Comprobar:
+
+- Portada correctamente cargada.
+- Hero equilibrado.
+- Índice en dos columnas en escritorio.
+- Índice en una columna en móvil.
+- Lectura cómoda de los párrafos.
+- Ausencia de desbordamiento horizontal.
+- Botones comerciales correctamente presentados.
+- Modal operativo.
+- Botón inferior visible y funcional.
+- Ausencia de solapamientos.
+- Ausencia de errores de consola.
+
+---
+
+## 15. PRUEBAS DE REGRESIÓN
+
+Verificar que la intervención no haya alterado:
+
+- Home `/`.
+- Biblioteca `/biblioteca/`.
+- Categoría `/iniciacion/`.
+- Categoría `/origen/`.
+- Categoría `/ingresos/`.
+- Categoría `/tecnologia/`.
+- Categoría `/crecimiento/`.
+- Categoría `/mindset/`.
+- Ficha de Experto en PLR Premium.
+- Ficha de El Manual del Solopreneur Moderno.
+- Ficha de El arte de atraer la abundancia.
+- Ficha de El Vendedor hipnótico.
+- Ficha de De la Pluma al Dinero.
+- Ficha de Cómo crear un Blog optimizado.
+- Ficha de Mi Blog y los Programas de Afiliados.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+
+La regresión es exclusivamente una comprobación. No autoriza modificaciones en esas páginas.
+
+---
+
+## 16. TYPESCRIPT, BUILD Y PRERENDERIZADO
+
+Ejecutar:
+
+- `tsc --noEmit`.
+- Build local.
+- Prerenderizado.
+- Inspección del HTML generado.
+
+Verificar que:
+
+- La ruta existente queda correctamente prerenderizada.
+- El contenido editorial aparece en el HTML generado.
+- El H1 y los doce H2 están presentes.
+- Los metadatos están incluidos.
+- El JSON-LD está presente.
+- Los enlaces comerciales están correctamente incorporados.
+- El contenido no depende exclusivamente de JavaScript para mostrarse.
+
+No finalizar con errores de compilación, build o prerenderizado.
+
+---
+
+## 17. INFORME TÉCNICO FINAL
+
+Al terminar, entregar un informe detallado que incluya:
+
+1. Archivos inspeccionados.
+2. Archivos creados.
+3. Archivos modificados.
+4. Ruta real de la ficha.
+5. Ubicación del backup.
+6. Confirmación de incorporación íntegra del texto.
+7. Confirmación de la ubicación del índice.
+8. Resultado de las doce anclas.
+9. Metadatos SEO implementados.
+10. Validación de los datos estructurados.
+11. Resultado de TypeScript.
+12. Resultado del build.
+13. Resultado del prerenderizado.
+14. Pruebas responsive.
+15. Comparación de los elementos comerciales antes y después.
+16. Confirmación de los seis enlaces comerciales y sus destinos.
+17. Confirmación de funcionamiento del modal.
+18. Confirmación expresa del botón inferior de compra.
+19. Confirmación de que no se modificaron otras fichas.
+20. Confirmación de que las categorías permanecen intactas.
+21. Confirmación de que el Footer no fue modificado.
+22. Confirmación de que no se realizó despliegue a Vercel.
+
+No declarar pruebas superadas si no se han ejecutado realmente.
+
+Si alguna comprobación no puede realizarse, identificarla expresamente y explicar el motivo.
+
+---
+
+## 18. CRITERIO FINAL DE ACEPTACIÓN
+
+La intervención se considera terminada únicamente cuando:
+
+- Existe una vista independiente para Guía Completa de Inbound Marketing.
+- Se conserva la ruta original.
+- Se utiliza la portada oficial.
+- Se incorpora el texto aprobado íntegramente.
+- El índice aparece después de la introducción.
+- Los doce enlaces funcionan.
+- Los metadatos SEO son específicos.
+- Los datos estructurados son válidos.
+- El diseño funciona en escritorio y móvil.
+- Los enlaces comerciales corresponden a los destinos confirmados.
+- Se conserva la ubicación original de todos los elementos comerciales.
+- El modal funciona correctamente.
+- El botón inferior de compra sigue presente y operativo.
+- TypeScript, build y prerenderizado finalizan correctamente.
+- No se han modificado otras fichas ni categorías.
+- El Footer permanece intacto.
+- No se ha realizado ningún despliegue.
+
+**EJECUTAR EXCLUSIVAMENTE ESTA INTERVENCIÓN EN EL ENTORNO LOCAL. NO DESPLEGAR A VERCEL.**

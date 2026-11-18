@@ -18,6 +18,7 @@ import DeLaPlumaAlDineroView from './components/views/DeLaPlumaAlDineroView.tsx'
 import ExpertoPlrPremiumView from './components/views/ExpertoPlrPremiumView.tsx';
 import HowToCreateOptimizedBlogView from './components/views/HowToCreateOptimizedBlogView.tsx';
 import MyBlogAffiliateProgramsView from './components/views/MyBlogAffiliateProgramsView.tsx';
+import InboundMarketingGuideView from './components/views/InboundMarketingGuideView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
@@ -102,6 +103,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/mi-blog-y-los-programas-de-afiliados/' && matchedBook) {
     return <MyBlogAffiliateProgramsView book={matchedBook} />;
+  }
+
+  if (currentPath === '/guia-completa-de-inbound-marketing/' && matchedBook) {
+    return <InboundMarketingGuideView book={matchedBook} />;
   }
 
   if (matchedBook) {

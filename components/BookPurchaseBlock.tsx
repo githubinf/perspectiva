@@ -69,7 +69,7 @@ export function resolvePurchaseTiles(book: BookItem): PurchaseTile[] {
           id: `amazon-audiolibro-${i}`,
           platform: 'Amazon',
           format: 'Audiolibro',
-          tooltip: 'Amazon · Audiolibro (Audible)',
+          tooltip: opt.tooltip || 'Amazon · Audiolibro (Audible)',
           logo: OFFICIAL_PLATFORM_LOGOS.amazonAudibleAudiolibro,
           url: opt.url,
           priority: 4

@@ -8,6 +8,7 @@ export interface PurchaseOption {
   isPrimary?: boolean;
   rel?: string;
   format?: string;
+  tooltip?: string;
 }
 
 export interface AudiobookOption {
