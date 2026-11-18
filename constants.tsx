@@ -947,33 +947,64 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'ingresos',
         title: 'Dinero con Clickbank en minutos',
         description: 'Cómo elegir productos rentables, promocionarlos y construir tu primer negocio de afiliados',
-        url: 'https://amzn.to/46yludn',
+        url: 'https://www.amazon.com/dp/B08LNL4FLG',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/2-dinero-con-clickbank-libro-400.jpg',
         purchaseOptions: [
-          { 
-            platform: 'Amazon', 
-            url: 'https://amzn.to/46yludn', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.png',
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B08LNL4FLG',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
             emoji: '🛒',
-            cta: 'Comprar en Amazon'
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
           },
-          { 
-            platform: 'Clickbank', 
-            url: 'https://dineroconclk.vercel.app/', 
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B09PHG8LYY',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B01LXJH88A',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            tooltip: 'Amazon/Audible',
+            url: 'https://www.amazon.com/dp/B0HB66GRCN',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Clickbank',
+            url: 'https://dineroconclk.vercel.app/',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.png',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
-          { 
-            platform: 'Payhip', 
-            url: 'https://payhip.com/b/DIuAq', 
+          {
+            platform: 'Payhip',
+            url: 'https://payhip.com/b/DIuAq',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.png',
             emoji: '💎',
             cta: 'Descarga Directa'
           },
-          { 
-            platform: 'Lulu', 
-            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/dinero-con-clickbank/ebook/product-958dkwn.html', 
+          {
+            platform: 'Lulu',
+            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/dinero-con-clickbank/ebook/product-958dkwn.html',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.png',
             emoji: '📚',
             cta: 'Ver en Lulu'

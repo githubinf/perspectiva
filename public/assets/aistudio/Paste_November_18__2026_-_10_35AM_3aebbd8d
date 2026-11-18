@@ -1,0 +1,579 @@
+# INSTRUCCIÓN INTEGRAL — NUEVA FICHA EDITORIAL Y SEO
+## DINERO CON CLICKBANK — FG PERSPECTIVA
+
+### 1. OBJETIVO GENERAL
+
+Implementar una nueva versión editorial y SEO de la ficha del libro **Dinero con ClickBank** dentro del proyecto FG Perspectiva.
+
+La intervención debe convertir la ficha en una página editorial especializada, con contenido original, intención de búsqueda propia y una arquitectura argumental diferenciada de las demás fichas del catálogo.
+
+No se trata de ampliar la descripción comercial ni de reproducir el índice del libro. Se debe incorporar íntegramente el texto editorial aprobado incluido en esta instrucción.
+
+La intervención debe respetar la arquitectura técnica, la identidad visual y los datos reales del proyecto.
+
+**El trabajo se limita exclusivamente a esta ficha. No modificar ninguna otra página, libro, categoría o componente compartido.**
+
+### 2. INSPECCIÓN PREVIA OBLIGATORIA
+
+Antes de realizar cualquier modificación:
+
+1. Localiza la ficha actual de Dinero con ClickBank.
+2. Identifica su ruta y slug reales.
+3. Localiza la portada oficial que utiliza actualmente.
+4. Inspecciona su implementación, componentes, estructura visual y metadatos.
+5. Identifica la ubicación exacta de todos los elementos comerciales.
+6. Comprueba cómo funcionan los botones de compra, los enlaces y el modal de ediciones, si existe.
+7. Identifica expresamente el botón de compra situado al final de la página.
+8. Revisa la implementación de las fichas editoriales ya actualizadas para mantener la coherencia técnica.
+9. Comprueba si existen datos estructurados previos que deban actualizarse.
+
+No inventes ni sustituyas la ruta, la portada o los datos comerciales.
+
+Utiliza los valores existentes en el proyecto cuando no se hayan proporcionado expresamente en esta instrucción.
+
+Si encuentras discrepancias entre los datos existentes y los confirmados aquí, no inventes una solución. Documenta la discrepancia y conserva los datos no autorizados para modificación.
+
+### 3. DATOS OFICIALES DEL LIBRO
+
+**Título:** Dinero con ClickBank
+
+**Subtítulo:** Cómo elegir productos rentables, promocionarlos y construir tu primer negocio de afiliados
+
+**Autor:** Francisco González
+
+**Categoría:** Ingresos
+
+**Ruta:** Conservar exactamente la ruta que ya existe en el proyecto. No crear un slug nuevo.
+
+**Portada:** Conservar la portada oficial existente. No sustituirla, generar otra ni modificar su URL.
+
+### 4. ENLACES COMERCIALES CONFIRMADOS
+
+Utilizar exclusivamente los siguientes enlaces, respetando su correspondencia con cada formato:
+
+**Amazon — Tapa blanda:**
+
+https://www.amazon.com/dp/B08LNL4FLG
+
+**Amazon — Tapa dura:**
+
+https://www.amazon.com/dp/B09PHG8LYY
+
+**Amazon — Ebook Kindle:**
+
+https://www.amazon.com/dp/B01LXJH88A
+
+**Amazon/Audible — Audiolibro:**
+
+https://www.amazon.com/dp/B0HB66GRCN
+
+**ClickBank:**
+
+https://dineroconclk.vercel.app/
+
+**Payhip:**
+
+https://payhip.com/b/DIuAq
+
+**Lulu:**
+
+https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/dinero-con-clickbank/ebook/product-958dkwn.html
+
+No inventar enlaces para Google Play, Books2Read ni otras plataformas.
+
+#### Orden comercial obligatorio
+
+Las opciones deben presentarse siguiendo el orden general establecido para las fichas de FG Perspectiva:
+
+1. Amazon — Tapa blanda.
+2. Amazon — Tapa dura.
+3. Amazon — Ebook Kindle.
+4. Amazon/Audible — Audiolibro.
+5. Google Play Books — Ebook, únicamente si existe.
+6. Google Play — Audiolibro, únicamente si existe.
+7. Books2Read, únicamente si existe.
+8. ClickBank.
+9. Payhip.
+10. Lulu.
+11. Otras plataformas confirmadas, si las hubiera.
+
+En esta ficha, al no existir enlaces confirmados para las posiciones 5, 6 y 7, deben omitirse.
+
+No crear botones vacíos, enlaces ficticios, opciones deshabilitadas ni espacios reservados.
+
+Los siete enlaces comerciales confirmados deben conservarse exactamente.
+
+### 5. CRITERIO EDITORIAL Y DIFERENCIACIÓN
+
+El enfoque editorial de esta ficha debe centrarse en **ClickBank como entorno comercial para desarrollar una actividad de afiliación**.
+
+La página debe desarrollar:
+
+- Evaluación de oportunidades comerciales dentro del catálogo.
+- Análisis de productos más allá del importe de las comisiones.
+- Investigación previa antes de dedicar recursos a una oferta.
+- Relación entre mercado, producto y público.
+- Identidad de una actividad de afiliación.
+- Contenido como intermediario de confianza.
+- Continuidad de la relación con la audiencia.
+- Publicidad como decisión económica.
+- Interpretación de indicadores y resultados.
+- Mejora progresiva antes de ampliar una actividad.
+
+Diferenciar expresamente esta ficha de:
+
+- **Dominando el Marketing de Afiliados:** trata el modelo de afiliación como actividad empresarial y sus fundamentos generales.
+- **Mi Blog y los Programas de Afiliados:** desarrolla la relación entre proyecto editorial, audiencia y recomendación comercial.
+- **CPA Marketing Fórmula Smartlink:** se centra en el uso de Smartlinks, la distribución de ofertas y la gestión de pruebas de tráfico CPA.
+
+No reutilizar textos, encabezados ni estructuras argumentales de esas páginas.
+
+No presentar esta ficha como una guía genérica de marketing digital ni como una promesa de ingresos.
+
+### 6. TEXTO EDITORIAL APROBADO — INCORPORACIÓN ÍNTEGRA
+
+Incorpora el siguiente contenido exactamente como está escrito.
+
+No resumirlo, no reescribirlo, no sustituirlo por una versión generada, no eliminar párrafos ni cambiar los encabezados.
+
+#### HERO EDITORIAL
+
+# Dinero con ClickBank
+
+**Cómo elegir productos rentables, promocionarlos y construir tu primer negocio de afiliados**
+
+*Una perspectiva práctica sobre la evaluación de oportunidades comerciales, la relación entre productos y mercados y la construcción de una actividad de afiliación organizada alrededor del ecosistema ClickBank.*
+
+**Autor: Francisco González**
+
+#### INTRODUCCIÓN
+
+Participar en un mercado de afiliación con miles de productos disponibles puede parecer una ventaja evidente. Sin embargo, disponer de muchas alternativas no significa que resulte sencillo encontrar una oportunidad adecuada. De hecho, cuando comenzamos sin experiencia, la abundancia de opciones puede dificultar las decisiones: no sabemos qué propuesta merece nuestra atención, qué información debemos consultar ni qué condiciones conviene examinar antes de dedicar tiempo a una promoción.
+
+ClickBank ofrece un entorno en el que vendedores y afiliados pueden relacionarse comercialmente mediante productos digitales y sistemas de seguimiento de comisiones. Su catálogo permite explorar distintas categorías y modelos de oferta, pero la plataforma no sustituye el criterio de quien decide promocionar un producto. La responsabilidad de evaluar una oportunidad sigue siendo nuestra.
+
+Esta diferencia es fundamental. Una comisión atractiva no basta para determinar si una propuesta merece ser promovida. También importa la calidad del producto, la coherencia entre su contenido y las expectativas del público, las condiciones comerciales y la capacidad de llegar a personas que puedan encontrarlo relevante. Una decisión aparentemente pequeña puede condicionar todo el trabajo posterior.
+
+Por otra parte, promocionar productos de terceros no debería reducirse a publicar enlaces en diferentes lugares. La afiliación necesita una relación comprensible entre el mercado al que nos dirigimos, la información que ofrecemos y la solución comercial que recomendamos. Cuando esos elementos están desconectados, podemos generar actividad sin construir una base sólida para el proyecto.
+
+El propósito de esta perspectiva es comprender cómo se relacionan las decisiones comerciales dentro de una actividad de afiliación vinculada a ClickBank. No se trata de buscar una fórmula que garantice resultados, sino de desarrollar criterios para evaluar productos, organizar la promoción, interpretar señales del mercado y mejorar el trabajo sin cambiar constantemente de dirección.
+
+#### ÍNDICE DE CONTENIDOS
+
+**Título:** Contenido de esta página
+
+**Texto introductorio:** Accede directamente al apartado que te interesa.
+
+Crear un índice visible con enlaces internos a los siguientes apartados:
+
+1. ClickBank como mercado de oportunidades digitales — `#clickbank-mercado-oportunidades`
+2. El valor de una oferta más allá de su comisión — `#valor-oferta-comision`
+3. Investigar antes de comprometer recursos — `#investigar-antes-invertir`
+4. Encontrar un mercado al que podamos aportar valor — `#mercado-aportar-valor`
+5. La promoción necesita una identidad reconocible — `#promocion-identidad-reconocible`
+6. El contenido como intermediario de confianza — `#contenido-intermediario-confianza`
+7. Construir una relación que no termine en el primer clic — `#relacion-primer-clic`
+8. La publicidad como decisión económica — `#publicidad-decision-economica`
+9. Interpretar las señales del negocio — `#interpretar-senales-negocio`
+10. Mejorar una actividad antes de ampliarla — `#mejorar-antes-ampliar`
+11. Construir continuidad en un mercado cambiante — `#continuidad-mercado-cambiante`
+
+**Ubicación obligatoria del índice:**
+
+Hero editorial → introducción completa → índice de contenidos → desarrollo temático.
+
+No colocar el índice inmediatamente después del Hero ni antes de la introducción.
+
+#### DESARROLLO EDITORIAL
+
+## ClickBank como mercado de oportunidades digitales
+
+Para comprender el potencial de ClickBank, primero debemos distinguir entre la plataforma y el negocio que podemos desarrollar dentro de ella. ClickBank proporciona una infraestructura comercial que facilita la conexión entre vendedores y afiliados. En ella podemos encontrar productos, consultar información de las ofertas y acceder a mecanismos que permiten atribuir determinadas ventas a nuestra actividad promocional.
+
+Sin embargo, la plataforma no determina por sí sola qué productos encajan con nuestros objetivos ni qué público puede estar interesado en ellos. Esa parte corresponde al trabajo de investigación y selección que realizamos antes de comenzar una campaña.
+
+El catálogo debe entenderse como un espacio de exploración, no como una lista de oportunidades que debamos promocionar indiscriminadamente. Dos productos de una misma categoría pueden dirigirse a públicos distintos, resolver necesidades diferentes y presentar condiciones comerciales que requieren evaluaciones separadas.
+
+También conviene comprender que la actividad de afiliación depende de las reglas de la plataforma y de los acuerdos asociados a cada oferta. La disponibilidad de un producto, sus condiciones de promoción y los criterios de atribución pueden cambiar. Por eso, familiarizarnos con el entorno operativo de ClickBank forma parte del trabajo, no es simplemente un trámite inicial.
+
+Una cuenta configurada correctamente facilita el acceso a las funciones de afiliación, pero el verdadero valor aparece cuando sabemos utilizar la información disponible para tomar decisiones. La plataforma proporciona herramientas; el criterio comercial determina cómo las aprovechamos.
+
+## El valor de una oferta más allá de su comisión
+
+Una de las tentaciones habituales al explorar un catálogo de afiliación es fijarnos primero en cuánto podríamos recibir por una venta. La comisión es importante porque determina una parte de la economía de la promoción, pero no debe convertirse en el único criterio de selección.
+
+Una remuneración elevada puede parecer atractiva y, aun así, corresponder a un producto difícil de posicionar, dirigido a un público muy específico o respaldado por una propuesta que no encaja con nuestra capacidad de promoción. En cambio, una oferta con una comisión menos llamativa puede resultar más coherente con el mercado al que tenemos acceso.
+
+La evaluación debe comenzar por el producto. ¿Qué necesidad aborda? ¿A qué tipo de persona se dirige? ¿La propuesta está explicada con claridad? ¿La presentación comercial permite comprender lo que se está ofreciendo? ¿Podemos recomendarlo con argumentos razonables?
+
+Después podemos examinar las condiciones económicas. Los indicadores disponibles en el entorno de afiliación, como los relacionados con el valor medio por venta o el comportamiento de las comisiones, pueden aportar información útil. No obstante, debemos interpretarlos con prudencia. Un indicador histórico no garantiza que obtengamos el mismo rendimiento ni describe necesariamente lo que ocurrirá con nuestro tráfico.
+
+También es importante valorar la experiencia posterior a la recomendación. Una oferta no termina en el momento en que alguien hace clic. La calidad del producto, la claridad de la información y la relación entre lo prometido y lo recibido influyen en la percepción del comprador y en la credibilidad de quien lo recomienda.
+
+Elegir bien implica considerar el conjunto. La comisión puede hacer viable una promoción, pero la coherencia comercial es lo que permite justificarla.
+
+## Investigar antes de comprometer recursos
+
+La investigación previa reduce la dependencia de las impresiones iniciales. Antes de dedicar semanas a promocionar un producto, necesitamos reunir información suficiente para determinar si merece una prueba.
+
+Esto empieza por examinar la propuesta comercial y comprender qué está comprando realmente el cliente. No debemos basar nuestra evaluación exclusivamente en el texto de venta del vendedor. Cuando sea posible, conviene conocer el producto, revisar sus características y comprobar si la presentación comercial transmite expectativas razonables.
+
+La investigación también requiere observar el mercado. Podemos estudiar qué preguntas plantea el público, qué problemas intenta resolver y qué alternativas existen. Esta información ayuda a distinguir una necesidad real de una oportunidad que solo parece atractiva por la forma en que se presenta.
+
+Los indicadores del catálogo pueden servir como referencias adicionales, pero no deben interpretarse fuera de contexto. Una cifra elevada puede reflejar actividad anterior y no necesariamente una oportunidad adecuada para un afiliado que comienza. Del mismo modo, la ausencia de un dato destacado no demuestra automáticamente que el producto carezca de posibilidades.
+
+La calidad de la investigación depende de las preguntas que nos hacemos. En lugar de buscar un producto que parezca ganador, resulta más útil comprobar si podemos explicar por qué una oferta podría interesar a un público determinado y qué necesitaríamos para llegar hasta él.
+
+Esta forma de trabajar evita convertir cada novedad del catálogo en una nueva apuesta. También nos permite descartar oportunidades sin sentir que estamos perdiendo una ocasión irrepetible.
+
+## Encontrar un mercado al que podamos aportar valor
+
+La selección de un producto adquiere sentido cuando se relaciona con un mercado concreto. No basta con identificar algo que se vende: necesitamos comprender a quién puede interesarle y qué circunstancias influyen en su decisión.
+
+Un mercado está formado por personas con necesidades, expectativas y diferentes niveles de conocimiento. Algunas buscan información inicial; otras comparan alternativas y otras están preparadas para valorar una solución específica. La comunicación que puede resultar útil para una persona que apenas conoce un problema no necesariamente será adecuada para alguien que ya está evaluando una compra.
+
+Por eso, antes de elegir cómo promocionar un producto, debemos estudiar el contexto de sus posibles compradores. ¿Qué dificultades intentan resolver? ¿Qué dudas aparecen antes de tomar una decisión? ¿Qué información necesitan para comparar propuestas? ¿Qué objeciones pueden surgir?
+
+Estas preguntas ayudan a construir una conexión entre la oferta y el público. También permiten identificar si tenemos capacidad para desarrollar contenidos o comunicaciones que respondan a esas necesidades.
+
+La especialización puede resultar más útil que intentar abarcar numerosos mercados simultáneamente. Trabajar sobre un ámbito reconocible facilita comprender sus particularidades, identificar preguntas frecuentes y desarrollar una comunicación coherente. No significa que debamos permanecer siempre en una única categoría, sino que conviene construir una base antes de dispersar los esfuerzos.
+
+Un producto adquiere relevancia cuando encuentra un contexto en el que su propuesta puede comprenderse y valorarse.
+
+## La promoción necesita una identidad reconocible
+
+Promocionar productos de terceros no debería significar que nuestra actividad carezca de identidad propia. Cuando dependemos únicamente de enlaces distribuidos sin contexto, resulta difícil que las personas reconozcan quién comunica, qué criterio sigue o por qué deberían prestar atención a sus recomendaciones.
+
+Una identidad editorial o temática proporciona continuidad. Permite que los contenidos mantengan una orientación reconocible, que las recomendaciones respondan a un ámbito de interés y que la audiencia comprenda qué tipo de información puede encontrar.
+
+Esto no exige comenzar con una infraestructura compleja. Podemos desarrollar una presencia digital sencilla, siempre que exista una relación clara entre el tema elegido, el público y las propuestas que presentamos. Un proyecto centrado en una necesidad concreta suele ofrecer una base más comprensible que otro que promociona productos sin conexión entre sí.
+
+La coherencia también debe mantenerse al seleccionar las ofertas. Si nuestra comunicación aborda un problema determinado, recomendar productos ajenos a ese contexto puede debilitar la confianza. Una oportunidad comercial no se vuelve apropiada simplemente porque esté disponible dentro de ClickBank.
+
+La identidad no se construye únicamente con un nombre o una imagen. Se forma mediante decisiones repetidas: los temas que abordamos, la calidad de la información, los productos que consideramos adecuados y la manera en que explicamos nuestras recomendaciones.
+
+## El contenido como intermediario de confianza
+
+El contenido puede desempeñar una función decisiva en la relación entre una oferta y una posible compra. Su valor no consiste en colocar un enlace dentro de un artículo, sino en proporcionar información que ayude a comprender una necesidad y evaluar las alternativas disponibles.
+
+Una explicación, una comparación o un análisis pueden responder preguntas que una página comercial no desarrolla con suficiente detalle. Esto permite que la persona llegue a una decisión con mayor contexto y que la recomendación tenga una función reconocible.
+
+Para lograrlo, el contenido debe aportar algo más que una repetición de las características del producto. Podemos explicar el problema que intenta resolver, analizar qué criterios conviene considerar y señalar las circunstancias en las que una propuesta puede resultar adecuada o insuficiente.
+
+También es importante distinguir entre información y persuasión. Un contenido útil puede influir en una decisión, pero no necesita ocultar limitaciones ni presentar una solución como válida para todo el mundo. La transparencia sobre la relación de afiliación forma parte de una comunicación responsable.
+
+La calidad editorial contribuye a que la actividad no dependa exclusivamente de impactos publicitarios. Un contenido que responde a una consulta concreta puede seguir siendo útil mientras mantenga su vigencia y encuentre lectores interesados.
+
+Por eso, el contenido debe planificarse como parte de la estructura comercial, pero conservar una finalidad informativa propia.
+
+## Construir una relación que no termine en el primer clic
+
+La afiliación puede comenzar con una visita, pero una actividad organizada necesita pensar más allá de esa interacción. Cuando toda la promoción depende de conseguir clics aislados, el proyecto queda expuesto a las variaciones de cada canal y a la dificultad de mantener una relación continuada con las personas interesadas.
+
+La comunicación por correo electrónico, por ejemplo, puede ofrecer una vía para mantener el contacto con quienes deciden recibir información. No se trata de enviar mensajes comerciales constantemente, sino de desarrollar una relación basada en contenidos relevantes, expectativas claras y una frecuencia razonable.
+
+También podemos utilizar otros espacios digitales para mantener una presencia coherente. Un sitio web, una biblioteca de contenidos o una comunidad temática pueden contribuir a que las personas encuentren información relacionada con sus intereses.
+
+La elección de estos canales depende de la capacidad operativa y del tipo de mercado. No es necesario incorporar todas las herramientas disponibles. Una estructura sencilla, bien mantenida y conectada con las necesidades de la audiencia puede resultar más útil que una combinación de canales que no conseguimos gestionar.
+
+La continuidad también exige respetar las preferencias de los usuarios y las normas aplicables a la comunicación comercial y al tratamiento de datos. La confianza no se construye únicamente mediante mensajes atractivos; también depende de cómo gestionamos la relación.
+
+## La publicidad como decisión económica
+
+La publicidad de pago puede acelerar la llegada de visitantes, pero también introduce un compromiso financiero que debe evaluarse con cuidado. No es una obligación para comenzar ni una garantía de que una oferta vaya a producir comisiones suficientes.
+
+Antes de invertir, necesitamos comprender qué estamos intentando validar. Puede ser la respuesta de un público, el interés por una propuesta o el comportamiento de una página. Cada prueba debe tener un propósito identificable y unos límites de gasto que podamos asumir.
+
+También debemos diferenciar entre conseguir tráfico y generar resultados económicos. Una campaña puede producir numerosas visitas sin alcanzar el comportamiento que necesita la oferta. Por eso, las decisiones no deberían basarse únicamente en el volumen de clics o en el coste inicial de adquisición.
+
+Las plataformas publicitarias tienen políticas y restricciones que deben respetarse. Además, los productos de afiliación pueden establecer condiciones específicas sobre el uso de determinadas fuentes, mensajes o formatos. Ignorar estas reglas puede comprometer una campaña e incluso la relación con la plataforma.
+
+La inversión tiene sentido cuando existe una hipótesis que podemos evaluar y cuando disponemos de información suficiente para interpretar lo que ocurre. Si todavía no comprendemos el producto, el público o la propuesta, aumentar el gasto puede amplificar la incertidumbre en lugar de resolverla.
+
+## Interpretar las señales del negocio
+
+Una actividad de afiliación genera información que puede ayudarnos a comprender sus puntos fuertes y sus dificultades. El reto consiste en identificar qué datos responden a preguntas importantes y cuáles pueden distraernos.
+
+Las visitas indican que existe movimiento, pero no explican por sí solas si el público tiene interés comercial. Los clics sobre un enlace permiten observar una interacción, aunque tampoco demuestran que se haya producido una compra. Las ventas atribuidas y las comisiones registradas aportan información económica, pero deben examinarse teniendo en cuenta las condiciones de validación y los posibles ajustes.
+
+También debemos estudiar la relación entre los diferentes elementos. Si un contenido recibe visitas, pero pocas personas continúan hacia la oferta, quizá sea necesario revisar su enfoque o la correspondencia entre la información y la recomendación. Si existe interés en el producto, pero no se producen ventas, puede haber otros factores que convenga investigar.
+
+La interpretación requiere evitar conclusiones precipitadas. Una variación puntual no siempre representa una tendencia y un resultado favorable aislado no garantiza que el comportamiento se mantenga.
+
+El seguimiento adquiere valor cuando nos permite formular preguntas mejores. En lugar de acumular informes, debemos utilizarlos para comprender dónde se encuentra la dificultad y qué modificación merece una prueba.
+
+## Mejorar una actividad antes de ampliarla
+
+Cuando encontramos elementos que parecen funcionar, aparece la tentación de incorporar nuevos productos, abrir otros canales y aumentar la inversión. Sin embargo, ampliar una estructura que todavía no comprendemos puede multiplicar los problemas.
+
+Antes de crecer, conviene revisar qué parte de la actividad aporta valor y qué aspectos necesitan ajustes. Puede ser necesario mejorar la selección comercial, aclarar el mensaje de una página, reorganizar el contenido o revisar la procedencia de las visitas.
+
+Las mejoras pequeñas pueden acumularse cuando responden a una dificultad identificada. No necesitamos cambiar toda la estrategia cada vez que un resultado se aparta de nuestras expectativas. En muchos casos, una revisión concreta proporciona más información que comenzar un proyecto completamente distinto.
+
+También debemos reconocer cuándo una oportunidad ha dejado de ser adecuada. Mantener un producto únicamente porque ya hemos invertido tiempo en promocionarlo puede impedirnos tomar decisiones razonables. El trabajo realizado no obliga a continuar una actividad que ha perdido sentido comercial.
+
+La ampliación debe apoyarse en una base comprensible: un mercado identificado, una propuesta coherente, canales que podamos gestionar y datos que permitan evaluar el rendimiento. Solo entonces resulta razonable estudiar nuevas posibilidades.
+
+## Construir continuidad en un mercado cambiante
+
+ClickBank, como cualquier entorno comercial digital, está sujeto a cambios. Los productos pueden actualizarse, las condiciones de afiliación pueden modificarse y las preferencias de los compradores evolucionan. Una estrategia que funcionó en un periodo concreto no debe considerarse válida para siempre.
+
+Por eso, la continuidad depende de nuestra capacidad para revisar las decisiones. Debemos comprobar que las ofertas siguen disponibles, que las condiciones comerciales se mantienen y que los canales utilizados continúan siendo apropiados para la promoción.
+
+También necesitamos mantener una actitud de aprendizaje. Las herramientas pueden facilitar el trabajo, pero no sustituyen la comprensión del mercado ni la capacidad de evaluar una propuesta. Depender exclusivamente de una técnica, un canal o un producto nos deja expuestos cuando cambian las condiciones.
+
+La experiencia se construye al observar, comparar y corregir. Cada decisión debe ayudarnos a comprender mejor la relación entre el producto, la audiencia y la forma de comunicar su valor.
+
+Desarrollar una actividad de afiliación alrededor de ClickBank requiere algo más que encontrar una oferta y conseguir que alguien haga clic. Necesitamos construir una lógica de trabajo que conecte la selección comercial, la comunicación, la confianza y el análisis. Esa estructura no elimina la incertidumbre ni garantiza ingresos, pero permite tomar decisiones con mayor fundamento y desarrollar un proyecto con posibilidades de evolución.
+
+### 7. REQUISITOS DE DISEÑO Y PRESENTACIÓN
+
+La ficha debe conservar la identidad visual de FG Perspectiva y mantener la coherencia con las demás fichas editoriales ya actualizadas.
+
+Mantener:
+
+- Tipografías y jerarquía visual del proyecto.
+- Colores institucionales existentes.
+- Diseño responsive.
+- Espaciado, legibilidad y proporciones coherentes con el resto del sitio.
+- Presentación editorial del Hero.
+- Portada oficial existente.
+- Índice visible, claro y navegable.
+- Apartados H2 diferenciados y fáciles de recorrer.
+- Enlaces internos funcionales.
+
+No incorporar imágenes nuevas, ilustraciones, iconos decorativos, banners ni fotografías ajenas al libro. La portada oficial es el único recurso visual específico del libro que debe utilizarse.
+
+No modificar el diseño global ni introducir una plantilla argumental que obligue a repetir la misma estructura de contenido en otras fichas.
+
+### 8. SEO INDIVIDUAL
+
+Implementar los metadatos propios de esta ficha.
+
+**SEO Title propuesto:**
+
+Dinero con ClickBank: elegir productos de afiliados | FG Perspectiva
+
+**Meta Description propuesta:**
+
+Aprende a evaluar productos de ClickBank, comprender las comisiones, elegir mercados y organizar una estrategia de afiliación basada en contenido y análisis.
+
+**Palabra clave principal:**
+
+Dinero con ClickBank
+
+**Palabras clave secundarias:**
+
+- cómo ganar dinero con ClickBank
+- marketing de afiliados ClickBank
+- productos de ClickBank
+- elegir productos de ClickBank
+- afiliados de ClickBank
+- comisiones ClickBank
+- promocionar productos de ClickBank
+- negocio de afiliados
+- catálogo de ClickBank
+
+Utilizar las expresiones de forma natural. No forzar repeticiones de palabras clave ni crear bloques artificiales de keywords.
+
+La intención de búsqueda principal debe orientarse a usuarios que buscan comprender cómo seleccionar productos de ClickBank y desarrollar una actividad de afiliación alrededor de esta plataforma.
+
+No posicionar esta ficha como una guía genérica de marketing de afiliados ni hacerla competir innecesariamente con la categoría Ingresos o con las otras fichas relacionadas.
+
+**Canonical:** utilizar la URL absoluta correspondiente a la ruta real existente de esta ficha en el dominio oficial:
+
+`https://fgperspectiva.vercel.app/`
+
+Añadir a continuación el slug real existente. No inventar ni modificar la ruta.
+
+Implementar correctamente:
+
+- Title.
+- Meta description.
+- Canonical.
+- Open Graph.
+- Twitter Cards.
+- H1 único.
+- Jerarquía H2.
+- Breadcrumbs.
+- Enlaces internos pertinentes.
+
+Todos los metadatos deben estar en el `<head>`. No mostrar etiquetas SEO dentro del contenido visible.
+
+### 9. DATOS ESTRUCTURADOS
+
+Actualizar el JSON-LD de la ficha utilizando `Book` y `BreadcrumbList`, siguiendo las convenciones técnicas existentes en el proyecto.
+
+Datos confirmados para el objeto Book:
+
+- name: Dinero con ClickBank
+- author: Francisco González
+- bookFormat: utilizar únicamente formatos respaldados por los datos reales de las ediciones confirmadas.
+- image: URL de la portada oficial existente.
+- inLanguage: no asumir un idioma distinto del que pueda comprobarse en el libro o en la ficha actual.
+- url: URL canónica real de la ficha.
+
+No inventar ISBN, editorial, fecha de publicación, número de páginas, valoraciones, precios, disponibilidad, identificadores adicionales ni otros datos bibliográficos.
+
+No añadir `offers`, precios o estados de disponibilidad que no estén respaldados por información real y vigente.
+
+El `BreadcrumbList` debe representar la navegación real:
+
+Inicio → Biblioteca → Ingresos → Dinero con ClickBank.
+
+Usar las rutas existentes en el proyecto.
+
+Validar que el JSON-LD sea correcto y que no existan datos contradictorios entre los metadatos y el contenido visible.
+
+### 10. REGLA CRÍTICA: PROTECCIÓN ABSOLUTA DE LOS ELEMENTOS COMERCIALES
+
+La intervención editorial y SEO NO autoriza cambios en la estructura comercial de la ficha.
+
+Conservar íntegramente:
+
+- Ubicación original de los bloques de compra.
+- Todos los botones superiores existentes.
+- Botones de formatos y ediciones.
+- Modal de compra y su funcionamiento.
+- Textos de los botones.
+- Estilos, tamaños, colores y jerarquía visual.
+- Comportamiento de apertura y cierre del modal.
+- Todos los enlaces comerciales confirmados.
+- Botón de compra situado al final de la página.
+- Ubicación original del botón inferior.
+- Funcionamiento de todos los elementos comerciales.
+
+**Está terminantemente prohibido:**
+
+- Mover los botones de compra.
+- Eliminar botones.
+- Sustituir botones por enlaces de texto.
+- Duplicar botones.
+- Ocultar botones.
+- Cambiar los enlaces.
+- Cambiar el texto comercial sin autorización.
+- Eliminar el modal.
+- Convertir un modal existente en una lista de botones individuales.
+- Modificar componentes comerciales compartidos.
+- Cambiar la estructura de compra para adaptarla al diseño del nuevo contenido.
+- Alterar el botón inferior o su ubicación.
+
+La única modificación comercial autorizada es aplicar el orden de formatos y plataformas especificado en esta instrucción, exclusivamente dentro de la estructura comercial existente, sin alterar su ubicación ni su funcionamiento.
+
+**El botón de compra final debe seguir presente, visible y operativo en la misma posición que ocupa actualmente.**
+
+Si para incorporar el contenido editorial fuera necesario tocar un componente comercial compartido, no lo hagas. Busca una solución localizada en la vista de esta ficha.
+
+### 11. AISLAMIENTO DE CAMBIOS
+
+La intervención debe quedar aislada en la ficha Dinero con ClickBank.
+
+No modificar:
+
+- Home.
+- Biblioteca.
+- Categorías.
+- Otras fichas de libros.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Header.
+- Footer.
+- Navegación general.
+- Componentes comerciales compartidos.
+- Datos globales del catálogo, salvo que resulte estrictamente necesario para conectar la vista existente y sin alterar los valores actuales.
+
+El Footer está expresamente excluido. No modificarlo en ningún aspecto.
+
+Si es posible, implementar la ficha mediante una vista independiente siguiendo el patrón técnico de las fichas ya actualizadas. No imponer un nombre de archivo si el proyecto utiliza otra convención.
+
+### 12. BACKUP OBLIGATORIO
+
+Antes de modificar cualquier archivo, crear una copia de seguridad completa de todos los archivos que vayan a cambiar.
+
+Utilizar como referencia de nombre:
+
+`/_backup_ficha_dinero_con_clickbank/`
+
+La copia debe permitir recuperar el estado anterior de la ficha.
+
+No sobrescribir backups anteriores.
+
+### 13. PRUEBAS Y VALIDACIÓN
+
+Una vez implementada la ficha, realizar las siguientes comprobaciones:
+
+**Contenido**
+- Verificar que se haya incorporado íntegramente el texto aprobado.
+- Comprobar que no falten párrafos.
+- Confirmar que no se hayan introducido fragmentos generados o sustituidos.
+- Revisar que no haya contenido duplicado dentro de la propia ficha.
+- Comprobar que el índice esté después de la introducción y antes del desarrollo principal.
+- Verificar que las once entradas del índice enlacen a los once H2 reales.
+- Comprobar que todos los identificadores sean únicos y funcionales.
+
+**SEO**
+- Revisar title y meta description.
+- Confirmar canonical correcto.
+- Revisar Open Graph y Twitter Cards.
+- Comprobar H1 único y jerarquía de encabezados.
+- Validar JSON-LD Book y BreadcrumbList.
+- Confirmar que no se hayan inventado datos bibliográficos.
+- Verificar que la ficha no compita innecesariamente con otras páginas del catálogo.
+
+**Diseño y responsive**
+- Probar escritorio.
+- Probar móvil.
+- Comprobar legibilidad del texto.
+- Verificar el índice en ambas resoluciones.
+- Revisar que la portada oficial se muestre correctamente.
+- Confirmar que no existan desbordamientos horizontales ni problemas de navegación.
+
+**Compra y elementos comerciales**
+- Comparar la estructura comercial anterior y posterior.
+- Confirmar que los siete enlaces proporcionados están presentes y corresponden a sus formatos o plataformas.
+- Comprobar el orden de las opciones.
+- Verificar todos los botones superiores.
+- Probar apertura y cierre del modal.
+- Comprobar el botón inferior de compra.
+- Confirmar que el botón inferior conserva su posición y funciona.
+- Confirmar que ningún enlace comercial se haya perdido, duplicado o sustituido.
+
+**Integridad del proyecto**
+- Ejecutar TypeScript.
+- Ejecutar build.
+- Ejecutar prerender de las rutas.
+- Comprobar que la ruta de esta ficha responde correctamente.
+- Comprobar que el resto de las rutas no presenta regresiones.
+- Confirmar que Footer y componentes compartidos permanecen intactos.
+
+### 14. INFORME FINAL OBLIGATORIO
+
+Al terminar, entregar un informe técnico que incluya:
+
+1. Archivos creados.
+2. Archivos modificados.
+3. Ubicación del backup.
+4. Ruta real de la ficha intervenida.
+5. Confirmación de que la portada oficial se conservó.
+6. Confirmación de incorporación íntegra del contenido aprobado.
+7. Número de secciones H2 y enlaces del índice comprobados.
+8. SEO implementado.
+9. JSON-LD implementado y validado.
+10. Resultado de las pruebas responsive.
+11. Resultado de TypeScript, build y prerender.
+12. Confirmación de que todos los enlaces comerciales siguen presentes.
+13. Confirmación expresa de que el modal y los botones superiores se conservan.
+14. Confirmación expresa de que el botón inferior de compra está presente, conserva su posición y funciona.
+15. Confirmación de que el Footer no fue modificado.
+16. Confirmación de que ninguna otra ficha o categoría fue alterada.
+17. Cualquier incidencia detectada y su resolución.
+
+Si alguna comprobación no se ha realizado, indicarlo expresamente. No declarar una prueba como superada si no se ha ejecutado.
+
+### 15. RESTRICCIÓN FINAL: NO DESPLEGAR
+
+Esta intervención debe realizarse exclusivamente en el entorno de trabajo local del proyecto.
+
+**No desplegar a Vercel. No publicar cambios. No ejecutar ninguna acción de despliegue.**
+
+El trabajo se considerará terminado cuando la ficha esté implementada, las pruebas estén realizadas y el informe técnico esté disponible para su revisión y aprobación.

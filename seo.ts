@@ -1700,6 +1700,88 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6r. Ficha editorial dedicada: Dinero con ClickBank
+  if (path === '/dinero-con-clickbank/') {
+    const clickbankBook = ALL_BOOKS.find(
+      (b) =>
+        b.path === '/dinero-con-clickbank/' ||
+        b.slug === 'dinero-con-clickbank'
+    );
+    const clickbankMetaDescription =
+      'Aprende a evaluar productos de ClickBank, comprender las comisiones, elegir mercados y organizar una estrategia de afiliación basada en contenido y análisis.';
+    const clickbankSchemaDescription =
+      'Una perspectiva práctica sobre la evaluación de oportunidades comerciales, la relación entre productos y mercados y la construcción de una actividad de afiliación organizada alrededor del ecosistema ClickBank.';
+    const clickbankCover =
+      clickbankBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/2-dinero-con-clickbank-libro-400.jpg';
+    const clickbankUrl = `${BASE_URL}/dinero-con-clickbank/`;
+
+    const clickbankBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Dinero con ClickBank',
+      alternateName:
+        'Cómo elegir productos rentables, promocionarlos y construir tu primer negocio de afiliados',
+      description: clickbankSchemaDescription,
+      image: clickbankCover,
+      url: clickbankUrl,
+      inLanguage: 'es',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      },
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
+        'https://schema.org/EBook',
+        'https://schema.org/AudiobookFormat'
+      ]
+    };
+
+    return {
+      path: '/dinero-con-clickbank/',
+      title: 'Dinero con ClickBank: elegir productos de afiliados | FG Perspectiva',
+      description: clickbankMetaDescription,
+      canonical: clickbankUrl,
+      ogImage: clickbankCover,
+      ogType: 'book',
+      h1: 'Dinero con ClickBank',
+      schema: [
+        clickbankBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Ingresos',
+              item: `${BASE_URL}/ingresos/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Dinero con ClickBank',
+              item: clickbankUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {
