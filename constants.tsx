@@ -434,6 +434,15 @@ export const FEATURED_BOOKS: BookCategory[] = [
             rel: 'nofollow noopener noreferrer'
           },
           { 
+            platform: 'Amazon', 
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            url: 'https://www.amazon.com/dp/B0HB6GXLF2', 
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
+            rel: 'nofollow noopener noreferrer'
+          },
+          { 
             platform: 'Clickbank', 
             cta: 'ClickBank',
             url: 'https://bloggingopt.lovable.app/', 
