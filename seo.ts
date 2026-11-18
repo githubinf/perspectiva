@@ -1541,6 +1541,83 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6p. Ficha editorial dedicada: Marketing CPA Para Emprendedores y Profesionales Digitales
+  if (path === '/marketing-cpa-para-emprendedores/') {
+    const cpaBook = ALL_BOOKS.find(
+      (b) =>
+        b.path === '/marketing-cpa-para-emprendedores/' ||
+        b.slug === 'marketing-cpa-para-emprendedores'
+    );
+    const cpaMetaDescription =
+      'Comprende cómo funciona el marketing CPA, cómo evaluar ofertas, captar tráfico, medir conversiones y optimizar campañas mediante decisiones fundamentadas.';
+    const cpaSchemaDescription =
+      'Una visión estratégica del marketing CPA como sistema de adquisición medible, donde la relación entre oferta, tráfico, conversión y coste determina las decisiones de una campaña.';
+    const cpaCover =
+      cpaBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/21-marketing-cpa-libro-400-2.jpg';
+    const cpaUrl = `${BASE_URL}/marketing-cpa-para-emprendedores/`;
+
+    const cpaBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Marketing CPA Para Emprendedores y Profesionales Digitales',
+      alternateName:
+        'Este manual práctico te guía paso a paso en el mundo del marketing basado en acciones, desde la selección de ofertas hasta la optimización avanzada.',
+      description: cpaSchemaDescription,
+      image: cpaCover,
+      url: cpaUrl,
+      inLanguage: 'es',
+      genre: 'Ingresos',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      }
+    };
+
+    return {
+      path: '/marketing-cpa-para-emprendedores/',
+      title: 'Marketing CPA: campañas, conversiones y optimización | FG Perspectiva',
+      description: cpaMetaDescription,
+      canonical: cpaUrl,
+      ogImage: cpaCover,
+      ogType: 'book',
+      h1: 'Marketing CPA Para Emprendedores y Profesionales Digitales',
+      schema: [
+        cpaBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Ingresos',
+              item: `${BASE_URL}/ingresos/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Marketing CPA Para Emprendedores y Profesionales Digitales',
+              item: cpaUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {

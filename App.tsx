@@ -20,6 +20,7 @@ import HowToCreateOptimizedBlogView from './components/views/HowToCreateOptimize
 import MyBlogAffiliateProgramsView from './components/views/MyBlogAffiliateProgramsView.tsx';
 import InboundMarketingGuideView from './components/views/InboundMarketingGuideView.tsx';
 import MasteringAffiliateMarketingView from './components/views/MasteringAffiliateMarketingView.tsx';
+import MarketingCpaEntrepreneursView from './components/views/MarketingCpaEntrepreneursView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
@@ -112,6 +113,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/dominando-el-marketing-de-afiliados/' && matchedBook) {
     return <MasteringAffiliateMarketingView book={matchedBook} />;
+  }
+
+  if (currentPath === '/marketing-cpa-para-emprendedores/' && matchedBook) {
+    return <MarketingCpaEntrepreneursView book={matchedBook} />;
   }
 
   if (matchedBook) {
