@@ -873,26 +873,57 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'ingresos',
         title: 'CPA Marketing Fórmula Smartlink',
         description: 'Optimización avanzada de enlaces inteligentes.',
-        url: 'https://amzn.to/3PF2oMd',
+        url: 'https://www.amazon.com/dp/B09TDPTMJV',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/6-cpa-marketing-smartlink-libro-400.jpg',
         purchaseOptions: [
-          { 
-            platform: 'Amazon', 
-            url: 'https://amzn.to/3PF2oMd', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.png',
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B09TDPTMJV',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
             emoji: '🛒',
-            cta: 'Comprar en Amazon'
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
           },
-          { 
-            platform: 'Clickbank', 
-            url: 'https://cpamarketingformula.vercel.app/', 
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B09TG5L18G',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B07KBF4W9N',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            tooltip: 'Amazon/Audible',
+            url: 'https://www.amazon.com/dp/B0HB64GP8J',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Clickbank',
+            url: 'https://cpamarketingformula.vercel.app/',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.png',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
-          { 
-            platform: 'Payhip', 
-            url: 'https://payhip.com/b/U84n0', 
+          {
+            platform: 'Payhip',
+            url: 'https://payhip.com/b/U84n0',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.png',
             emoji: '💎',
             cta: 'Descarga Directa'

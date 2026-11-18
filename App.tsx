@@ -21,6 +21,7 @@ import MyBlogAffiliateProgramsView from './components/views/MyBlogAffiliateProgr
 import InboundMarketingGuideView from './components/views/InboundMarketingGuideView.tsx';
 import MasteringAffiliateMarketingView from './components/views/MasteringAffiliateMarketingView.tsx';
 import MarketingCpaEntrepreneursView from './components/views/MarketingCpaEntrepreneursView.tsx';
+import CpaSmartlinkFormulaView from './components/views/CpaSmartlinkFormulaView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
@@ -117,6 +118,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/marketing-cpa-para-emprendedores/' && matchedBook) {
     return <MarketingCpaEntrepreneursView book={matchedBook} />;
+  }
+
+  if (currentPath === '/cpa-marketing-formula-smartlink/' && matchedBook) {
+    return <CpaSmartlinkFormulaView book={matchedBook} />;
   }
 
   if (matchedBook) {

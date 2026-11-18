@@ -1,0 +1,543 @@
+# INSTRUCCIÓN INTEGRAL — NUEVA FICHA EDITORIAL Y SEO
+## CPA Marketing Fórmula Smartlink — FG PERSPECTIVA
+
+### 1. OBJETIVO GENERAL
+
+Implementar una nueva versión editorial y SEO de la ficha del libro **CPA Marketing Fórmula Smartlink** dentro del proyecto FG Perspectiva.
+
+La intervención debe crear una página editorial especializada, con contenido original, arquitectura propia y optimización SEO individual.
+
+No se trata de ampliar la descripción comercial ni de reproducir el índice del libro. Se debe incorporar íntegramente el texto editorial aprobado que aparece en esta instrucción.
+
+La implementación debe respetar la arquitectura general del proyecto, los datos reales del catálogo y todos los elementos comerciales existentes.
+
+**La tarea se limita a esta ficha. No modificar ninguna otra página, libro, categoría o componente compartido.**
+
+### 2. INSPECCIÓN PREVIA OBLIGATORIA
+
+Antes de realizar cambios:
+
+1. Localiza la ficha actual de CPA Marketing Fórmula Smartlink.
+2. Identifica su ruta y slug reales.
+3. Localiza la portada oficial que utiliza actualmente.
+4. Inspecciona su implementación, componentes, estructura visual y metadatos.
+5. Identifica la ubicación exacta de los elementos comerciales.
+6. Comprueba cómo funcionan los botones de compra, los enlaces y el modal de ediciones, si existe.
+7. Identifica el botón de compra situado al final de la página.
+8. Revisa cómo están implementadas las fichas editoriales ya actualizadas para respetar la arquitectura técnica del proyecto.
+
+No inventes ni sustituyas la ruta, la portada o los datos comerciales. Utiliza los valores existentes en el proyecto cuando no se hayan proporcionado expresamente en esta instrucción.
+
+Si encuentras discrepancias entre los datos actuales y los aquí confirmados, no inventes una solución: documenta la discrepancia y conserva los datos existentes que no estén expresamente autorizados para modificarse.
+
+### 3. DATOS OFICIALES DEL LIBRO
+
+**Título:** CPA Marketing Fórmula Smartlink
+
+**Subtítulo:** Una guía de Marketing para principiantes para ganar dinero con las redes CPA
+
+**Autor:** Francisco González
+
+**Categoría:** Ingresos
+
+**Ruta:** Conservar exactamente la ruta que ya existe en el proyecto. No crear un slug nuevo.
+
+**Portada:** Conservar la portada oficial existente. No sustituirla, generar otra ni modificar su URL.
+
+### 4. ENLACES COMERCIALES CONFIRMADOS
+
+Utilizar exclusivamente los siguientes enlaces, respetando su correspondencia con cada formato:
+
+**Amazon — Tapa blanda:**
+https://www.amazon.com/dp/B09TDPTMJV
+
+**Amazon — Tapa dura:**
+https://www.amazon.com/dp/B09TG5L18G
+
+**Amazon — Ebook Kindle:**
+https://www.amazon.com/dp/B07KBF4W9N
+
+**Amazon/Audible — Audiolibro:**
+https://www.amazon.com/dp/B0HB64GP8J
+
+**ClickBank:**
+https://cpamarketingformula.vercel.app/
+
+**Payhip:**
+https://payhip.com/b/U84n0
+
+No inventar enlaces para Google Play, Books2Read, Lulu ni otras plataformas.
+
+#### Orden comercial obligatorio
+
+Las opciones deben presentarse siguiendo el orden general establecido para las fichas de FG Perspectiva:
+
+1. Amazon — Tapa blanda.
+2. Amazon — Tapa dura.
+3. Amazon — Ebook Kindle.
+4. Amazon/Audible — Audiolibro.
+5. Google Play Books — Ebook, únicamente si existe.
+6. Google Play — Audiolibro, únicamente si existe.
+7. Books2Read, únicamente si existe.
+8. ClickBank.
+9. Payhip.
+10. Lulu, únicamente si existe.
+11. Otras plataformas confirmadas, si las hubiera.
+
+En esta ficha, al no existir enlaces confirmados para las posiciones 5, 6, 7 y 10, deben omitirse. No crear botones vacíos, enlaces ficticios ni espacios reservados.
+
+Los seis enlaces comerciales confirmados deben conservarse exactamente.
+
+### 5. CRITERIO EDITORIAL Y DIFERENCIACIÓN
+
+La nueva ficha debe centrarse en el funcionamiento de los Smartlinks como mecanismo de distribución de ofertas CPA y en la organización de campañas mediante pruebas controladas.
+
+El enfoque editorial debe diferenciarse claramente de otras fichas del catálogo, especialmente de:
+
+- **Marketing CPA Para Emprendedores y Profesionales Digitales:** aborda el marketing CPA desde una perspectiva general de adquisición, campañas y economía de las acciones.
+- **Dominando el Marketing de Afiliados:** aborda la actividad afiliada como modelo de negocio.
+- **Mi Blog y los Programas de Afiliados:** desarrolla la relación entre contenido editorial, audiencia y recomendación comercial.
+
+En esta ficha, el elemento diferenciador es la utilización del Smartlink, la distribución de ofertas, la relación entre tráfico y presupuesto, el seguimiento y la interpretación de resultados.
+
+No reutilizar textos, encabezados ni estructuras argumentales de las otras fichas.
+
+### 6. TEXTO EDITORIAL APROBADO — INCORPORACIÓN ÍNTEGRA
+
+Incorpora el siguiente contenido exactamente como está escrito. No lo resumas, no lo reescribas, no lo sustituyas por una versión generada y no elimines apartados.
+
+#### HERO EDITORIAL
+
+# CPA Marketing Fórmula Smartlink
+
+**Una guía de Marketing para principiantes para ganar dinero con las redes CPA.**
+
+*Cómo comprender la lógica de los enlaces inteligentes, organizar pruebas de tráfico y tomar decisiones de campaña sin perder de vista el presupuesto ni la calidad de los resultados.*
+
+**Autor: Francisco González**
+
+#### INTRODUCCIÓN
+
+Uno de los principales obstáculos al comenzar en el marketing CPA no es la falta de ofertas, sino la dificultad de saber qué hacer con ellas. Las redes presentan diferentes posibilidades de promoción, cada una con condiciones, públicos y requisitos particulares. A esto se suma la necesidad de encontrar tráfico adecuado, interpretar los resultados y evitar que las primeras pruebas consuman recursos sin aportar información útil.
+
+En ese escenario, los Smartlinks introducen una forma distinta de abordar la distribución de ofertas. En lugar de depender exclusivamente de una selección manual para cada visitante, un enlace inteligente puede dirigir al usuario hacia distintas propuestas según criterios de la plataforma, como su ubicación geográfica y las posibilidades de conversión disponibles. Esta característica permite simplificar determinadas decisiones iniciales, aunque no elimina la necesidad de comprender el funcionamiento de las campañas.
+
+La tecnología, por sí sola, tampoco resuelve los problemas de adquisición. Un enlace dinámico necesita recibir visitantes adecuados, trabajar con ofertas compatibles y formar parte de una estrategia que permita interpretar lo que sucede después del clic. Sin seguimiento, control del gasto y criterios para evaluar los resultados, incluso una herramienta diseñada para facilitar el proceso puede convertirse en una fuente de incertidumbre.
+
+Por eso, abordar el CPA mediante Smartlinks requiere una combinación de sencillez operativa y disciplina. El objetivo no debería ser gastar lo mínimo posible para conseguir resultados inmediatos, sino utilizar los recursos disponibles para aprender cómo responde el tráfico, reconocer las condiciones que favorecen una conversión y decidir qué merece la pena continuar probando.
+
+Esta perspectiva permite entender el Smartlink como una herramienta dentro de un sistema de experimentación. Su utilidad depende de cómo se integra con las fuentes de visitantes, las condiciones de las ofertas y la información que obtenemos de cada campaña.
+
+#### ÍNDICE DE CONTENIDOS
+
+**Título:** Contenido de esta página
+
+**Texto introductorio:** Accede directamente al apartado que te interesa.
+
+Crear un índice visible con enlaces internos a los siguientes apartados:
+
+1. El Smartlink como mecanismo de distribución — `#smartlink-mecanismo-distribucion`
+2. La relación entre redes, ofertas y condiciones — `#redes-ofertas-condiciones`
+3. Elegir tráfico sin confundir precio y calidad — `#trafico-precio-calidad`
+4. El presupuesto como instrumento de aprendizaje — `#presupuesto-aprendizaje`
+5. La geografía y el comportamiento de la audiencia — `#geografia-comportamiento-audiencia`
+6. La arquitectura de una campaña controlada — `#arquitectura-campana-controlada`
+7. Cuando una campaña necesita una página intermedia — `#pagina-intermedia-campana`
+8. El seguimiento como herramienta de comprensión — `#seguimiento-comprension`
+9. Interpretar resultados y reconocer los límites — `#interpretar-resultados-limites`
+10. Pasar de las pruebas a una estrategia más amplia — `#pruebas-estrategia-amplia`
+11. Desarrollar criterio en un entorno cambiante — `#criterio-entorno-cambiante`
+
+**Ubicación obligatoria del índice:**
+
+Hero editorial → introducción completa → índice de contenidos → desarrollo temático.
+
+No colocar el índice inmediatamente después del Hero. Tampoco situarlo antes de la introducción.
+
+#### DESARROLLO EDITORIAL
+
+## El Smartlink como mecanismo de distribución
+
+Un Smartlink modifica la manera de relacionar el tráfico con las ofertas disponibles. En una promoción convencional, el responsable de la campaña suele seleccionar una propuesta concreta y dirigir hacia ella a los visitantes. Con un enlace inteligente, la plataforma puede distribuir las visitas entre distintas ofertas de acuerdo con los criterios que utiliza para determinar cuál resulta más adecuada para cada usuario.
+
+La ubicación geográfica es uno de los factores que pueden intervenir en esa distribución. Una persona que accede desde un país puede recibir una propuesta diferente de otra que llega desde una región distinta. Esto resulta relevante porque las ofertas CPA no tienen necesariamente la misma disponibilidad ni las mismas condiciones en todos los mercados.
+
+La principal ventaja operativa de este mecanismo es que reduce parte de la complejidad asociada a mantener numerosos enlaces individuales. En determinados escenarios, permite comenzar con una estructura más sencilla y observar cómo responde el tráfico sin tener que seleccionar manualmente una oferta distinta para cada segmento geográfico.
+
+Sin embargo, conviene comprender sus límites. El Smartlink no crea demanda, no transforma visitantes irrelevantes en usuarios interesados y tampoco garantiza que todas las ofertas distribuidas sean rentables. Su funcionamiento depende de las opciones disponibles en la red, de los criterios de asignación y de las características del tráfico recibido.
+
+Por tanto, debemos entenderlo como un mecanismo de distribución, no como una estrategia completa. Su utilidad aumenta cuando conocemos qué tráfico estamos enviando, qué condiciones tiene la plataforma y qué información podemos obtener de los resultados.
+
+## La relación entre redes, ofertas y condiciones
+
+Las redes CPA actúan como intermediarias entre anunciantes y afiliados. Dentro de sus plataformas encontramos diferentes propuestas, requisitos de participación y mecanismos para registrar las acciones que pueden generar una remuneración.
+
+Para quien comienza, comprender esta estructura es más importante que intentar registrarse en todas las redes disponibles. Cada plataforma puede tener procedimientos de aprobación, condiciones de promoción y criterios de validación distintos. Una cuenta aceptada no significa que cualquier actividad publicitaria esté permitida ni que todas las ofertas estén disponibles para cualquier fuente de tráfico.
+
+También debemos distinguir entre la oferta individual y el conjunto de propuestas que puede utilizar un Smartlink. Cuando trabajamos con una oferta específica, conocemos directamente qué acción buscamos y cuáles son sus condiciones. Cuando utilizamos un enlace inteligente, parte de esa selección se realiza mediante el sistema de distribución de la red.
+
+Esta diferencia afecta a la forma de interpretar los resultados. No siempre estaremos observando una única propuesta comercial, sino el comportamiento de un mecanismo que puede relacionar distintos visitantes con diferentes oportunidades.
+
+Antes de comenzar, es importante conocer las restricciones de cada red, los mercados admitidos, las fuentes de tráfico autorizadas y las condiciones de pago. Una campaña puede generar actividad sin que todas sus acciones sean reconocidas. Comprender las reglas desde el principio evita confundir el movimiento registrado con un resultado comercial definitivo.
+
+## Elegir tráfico sin confundir precio y calidad
+
+El tráfico es el recurso que permite poner a prueba una campaña. Sin visitantes no podemos observar el comportamiento del enlace, pero conseguir visitas a un precio reducido tampoco garantiza que estemos avanzando.
+
+Una fuente económica puede proporcionar un volumen considerable de impresiones o accesos y, aun así, generar pocas oportunidades de conversión. Esto sucede cuando la audiencia no tiene relación suficiente con las propuestas que recibe, cuando el contexto de navegación no favorece la interacción o cuando las expectativas del usuario no coinciden con la oferta.
+
+Los formatos publicitarios tienen características diferentes. El tráfico popunder, por ejemplo, puede aportar volumen y facilitar pruebas iniciales, pero requiere prestar atención a la calidad de las visitas y a las condiciones de cada red. No debemos asumir que una fuente económica será adecuada para cualquier tipo de campaña.
+
+La elección debe responder a una pregunta concreta: ¿qué información esperamos obtener de esta fuente y qué condiciones necesitamos comprobar? Esta forma de pensar evita seleccionar tráfico exclusivamente por su precio y ayuda a relacionar la inversión con un objetivo de aprendizaje.
+
+También es necesario comprobar que la fuente elegida esté permitida por la red CPA y que no existan restricciones específicas para el Smartlink o las ofertas que pueda distribuir. Una campaña correctamente configurada desde el punto de vista técnico puede seguir siendo inadecuada si incumple las condiciones comerciales de la plataforma.
+
+## El presupuesto como instrumento de aprendizaje
+
+Cuando comenzamos con recursos limitados, cada decisión de inversión tiene importancia. La dificultad consiste en utilizar el presupuesto para obtener información suficiente sin asumir gastos que no podemos controlar.
+
+Una prueba pequeña puede ayudar a descubrir si una fuente genera visitas, si el enlace recibe actividad y si aparecen señales que merecen una investigación adicional. Pero debemos evitar interpretar cualquier primera conversión como evidencia definitiva de que hemos encontrado una campaña rentable.
+
+El presupuesto de prueba debe tener una función concreta. Necesitamos establecer qué queremos comprobar, cuánto estamos dispuestos a invertir y qué circunstancias justificarían detener la actividad. Esta organización permite aprender incluso cuando una prueba no produce el resultado económico esperado.
+
+Un gasto reducido no elimina el riesgo. Si la configuración es incorrecta, el tráfico no corresponde al objetivo o los límites de inversión no están bien definidos, una cantidad pequeña también puede desperdiciarse sin aportar conclusiones útiles.
+
+Por eso, conviene separar dos conceptos: el dinero destinado a explorar una posibilidad y el dinero que se asignaría a una campaña después de haber obtenido información favorable. El segundo paso requiere una justificación más sólida que la simple expectativa de que un resultado inicial se repetirá.
+
+La disciplina presupuestaria no consiste únicamente en gastar poco. Consiste en saber qué estamos intentando averiguar con cada cantidad invertida.
+
+## La geografía y el comportamiento de la audiencia
+
+La ubicación de los usuarios puede influir considerablemente en el comportamiento de una campaña CPA. Las diferencias entre países no se limitan al idioma o a la moneda: también pueden intervenir la disponibilidad de ofertas, las condiciones comerciales y las características de los mercados a los que se dirige la publicidad.
+
+En una estrategia basada en Smartlinks, esta dimensión tiene especial importancia porque el sistema puede utilizar la ubicación para distribuir las visitas entre propuestas diferentes. Sin embargo, no debemos interpretar esa capacidad como una garantía de que cualquier país generará conversiones.
+
+Un mercado puede recibir una oferta y producir pocas acciones válidas. Otro puede mostrar una respuesta distinta debido a las condiciones del público, la competencia o la disponibilidad de propuestas. Estas diferencias deben analizarse a partir de los datos y no de suposiciones generales.
+
+La segmentación geográfica permite observar cómo se comporta el tráfico en distintos territorios. Para que esa información resulte útil, necesitamos identificar correctamente la procedencia de las visitas y relacionarla con las acciones registradas.
+
+También debemos comprobar que la configuración de la campaña no limite accidentalmente mercados que podrían ser relevantes o incluya ubicaciones que la oferta no admite. La geografía es una variable de gestión, no una clasificación automática de países buenos y malos.
+
+## La arquitectura de una campaña controlada
+
+Una campaña necesita una estructura comprensible. Aunque utilicemos un enlace inteligente, debemos saber desde dónde llegan los visitantes, qué configuración publicitaria los conduce hasta él y qué límites se han establecido para controlar la actividad.
+
+La organización comienza con la relación entre fuente de tráfico, enlace de destino y parámetros de campaña. Cada elemento debe cumplir una función identificable. Si no podemos distinguir el origen de las visitas o reconocer qué configuración estaba activa, será difícil interpretar los resultados posteriores.
+
+También es importante configurar con prudencia los parámetros de entrega y gasto. Los límites de velocidad, la distribución del tráfico y las pujas pueden influir en la rapidez con la que se consume el presupuesto. Una configuración demasiado agresiva puede agotar los recursos antes de que hayamos obtenido información suficiente.
+
+La estructura debe permitir realizar pruebas sin confundir sus resultados. Si modificamos simultáneamente la fuente, la ubicación, las pujas y otras condiciones, perderemos capacidad para reconocer qué variable ha influido en el comportamiento observado.
+
+Una campaña controlada no necesita una arquitectura compleja. Necesita que sus componentes estén identificados, que sus límites sean conocidos y que podamos relacionar cada decisión con la información que produce.
+
+## Cuando una campaña necesita una página intermedia
+
+No todas las estrategias CPA necesitan enviar al visitante directamente al enlace de destino. En determinados casos, una página intermedia puede ayudar a presentar una propuesta, explicar su contexto y preparar al usuario antes de que continúe hacia la oferta.
+
+Los advertoriales y las páginas de aterrizaje cumplen funciones diferentes, aunque ambos pueden formar parte de un proceso de adquisición. Su elección depende de la naturaleza de la campaña, de las características del tráfico y de las condiciones de promoción establecidas por las plataformas y los anunciantes.
+
+Una página intermedia también puede aportar una oportunidad para construir una experiencia más coherente. El mensaje publicitario, la información presentada y la propuesta final deben mantener una relación clara. Si existe una diferencia importante entre lo que se anuncia y lo que encuentra el visitante, la experiencia puede deteriorarse.
+
+Sin embargo, incorporar una página adicional también introduce trabajo y posibles puntos de abandono. No debemos asumir que una estructura más elaborada producirá necesariamente mejores resultados. La decisión debe responder a una necesidad concreta y poder evaluarse mediante información suficiente.
+
+La construcción de activos complementarios adquiere mayor relevancia cuando la estrategia evoluciona. Una página propia puede servir para organizar información y facilitar otras formas de comunicación, pero debe integrarse respetando las normas de publicidad, privacidad y promoción correspondientes.
+
+## El seguimiento como herramienta de comprensión
+
+Una campaña sin seguimiento ofrece una visión incompleta de su funcionamiento. Podemos observar que llegan visitantes o que existe actividad en la red, pero sin información organizada resulta difícil saber qué está ocurriendo entre el origen del tráfico y la acción registrada.
+
+El tracking permite relacionar las visitas con sus fuentes y con diferentes parámetros de campaña. Esta información facilita la identificación de patrones y ayuda a comprender qué configuraciones merecen una revisión.
+
+Herramientas especializadas, como los trackers utilizados en el entorno CPA, pueden aportar información sobre procedencia, ubicación y comportamiento de los visitantes. Su utilidad no reside en acumular registros, sino en ofrecer una base para interpretar los resultados.
+
+Para aprovechar esos datos necesitamos una configuración coherente. Si los parámetros no se registran correctamente o las fuentes no están identificadas, las conclusiones pueden ser incompletas. Una medición defectuosa puede llevarnos a modificar una campaña por razones equivocadas.
+
+También debemos diferenciar entre las conversiones que aparecen inicialmente y aquellas que cumplen las condiciones de validación de la red. Esta distinción permite evaluar la actividad con mayor rigor y evita confundir una señal preliminar con un resultado económico confirmado.
+
+## Interpretar resultados y reconocer los límites
+
+Los datos adquieren valor cuando podemos convertirlos en decisiones. Una campaña puede mostrar visitas, clics y conversiones, pero ninguna cifra debe interpretarse de manera aislada.
+
+El volumen de tráfico necesita relacionarse con su procedencia. Las conversiones deben examinarse teniendo en cuenta las condiciones de la oferta. El gasto debe compararse con el valor económico de las acciones reconocidas. Solo así podemos construir una imagen más completa del rendimiento.
+
+También debemos reconocer que no todos los problemas tienen la misma causa. Una campaña sin conversiones puede estar recibiendo tráfico poco adecuado, utilizar una configuración incorrecta o encontrarse con una oferta que no responde al comportamiento de esa audiencia. Cambiar elementos al azar no permite identificar el origen de la dificultad.
+
+Saber cuándo detener una prueba forma parte de la gestión. Mantener una campaña únicamente porque ya hemos invertido dinero en ella puede aumentar las pérdidas sin aportar información adicional. Es preferible establecer límites y revisar los resultados antes de comprometer nuevos recursos.
+
+La interpretación requiere prudencia. Una muestra pequeña puede ofrecer señales interesantes, pero no siempre permite extraer conclusiones definitivas. El objetivo es aprender a distinguir entre una variación ocasional y un comportamiento que merece una nueva prueba.
+
+## Pasar de las pruebas a una estrategia más amplia
+
+Cuando una campaña ofrece señales favorables y los resultados pueden explicarse mediante información fiable, podemos estudiar formas de ampliar el sistema. Este paso no debería consistir en aumentar automáticamente el gasto, sino en comprobar qué elementos han contribuido al rendimiento y cuáles podrían mantenerse en otras condiciones.
+
+Los advertoriales, el email marketing y otras modalidades de adquisición pueden formar parte de una estrategia más amplia. Cada alternativa introduce necesidades diferentes y debe evaluarse según su función. Una lista de correo, por ejemplo, puede proporcionar un canal de comunicación que no dependa exclusivamente de una visita aislada, mientras que otras fuentes pueden ayudar a explorar nuevas oportunidades de captación.
+
+La ampliación también exige revisar la capacidad operativa. Cuantos más canales y configuraciones incorporamos, mayor puede ser la dificultad de seguimiento. Si no podemos distinguir el origen de los resultados, la complejidad añadida puede perjudicar la gestión.
+
+Por eso, conviene desarrollar el sistema progresivamente. Primero necesitamos comprender el comportamiento de la actividad inicial; después podemos estudiar qué elementos tienen posibilidades de ampliación y qué recursos adicionales requieren.
+
+El crecimiento debe apoyarse en resultados interpretables, no en la expectativa de que una campaña pequeña se convierta automáticamente en una operación de mayor escala.
+
+## Desarrollar criterio en un entorno cambiante
+
+El marketing CPA depende de redes, anunciantes, fuentes de tráfico y plataformas tecnológicas que pueden modificar sus condiciones. Las ofertas pueden cambiar, las restricciones pueden actualizarse y los costes publicitarios pueden variar. Una configuración que funcionaba en un momento determinado no tiene por qué conservar las mismas condiciones indefinidamente.
+
+Esta realidad exige mantener una actitud de revisión. Antes de continuar una actividad, debemos comprobar que las ofertas siguen disponibles, que las fuentes están autorizadas y que las condiciones comerciales no han cambiado.
+
+También debemos evitar depender completamente de una única herramienta. El Smartlink puede simplificar la distribución de propuestas, pero el conocimiento del funcionamiento general de las campañas sigue siendo necesario. Entender cómo se relacionan el tráfico, las condiciones de una oferta y los datos permite adaptarse cuando una plataforma deja de ofrecer las mismas posibilidades.
+
+El aprendizaje más importante no consiste en memorizar una configuración, sino en comprender por qué se toman determinadas decisiones. Cuando podemos explicar qué estamos probando, qué información esperamos obtener y qué condiciones justifican continuar, dejamos de depender exclusivamente de instrucciones mecánicas.
+
+El Smartlink puede ser un punto de entrada accesible para explorar el modelo CPA, pero su utilización responsable requiere análisis, control presupuestario y capacidad para reconocer los límites de cada prueba. La diferencia no está en disponer de un enlace especial, sino en saber integrarlo dentro de una actividad que pueda observarse, evaluarse y mejorarse.
+
+### 7. REQUISITOS DE DISEÑO Y PRESENTACIÓN
+
+La ficha debe conservar la identidad visual de FG Perspectiva y la coherencia con las demás fichas editoriales ya actualizadas.
+
+Mantener:
+
+- Tipografías y jerarquía visual del proyecto.
+- Colores institucionales existentes.
+- Diseño responsive.
+- Espaciado, legibilidad y proporciones coherentes con el resto del sitio.
+- Presentación editorial del Hero.
+- Portada oficial existente.
+- Índice visible, claro y navegable.
+- Apartados H2 diferenciados y fáciles de recorrer.
+- Enlaces internos funcionales.
+
+No incorporar imágenes nuevas, ilustraciones, iconos decorativos, banners ni fotografías ajenas al libro. La portada oficial es el único recurso visual específico del libro que debe utilizarse.
+
+No modificar el diseño global ni introducir una plantilla argumental que obligue a repetir la misma estructura de contenido en otras fichas.
+
+### 8. SEO INDIVIDUAL
+
+Implementar los metadatos propios de esta ficha.
+
+**SEO Title propuesto:**
+
+CPA Marketing Fórmula Smartlink: guía CPA | FG Perspectiva
+
+**Meta Description propuesta:**
+
+Comprende cómo funcionan los Smartlinks en CPA, organizar pruebas de tráfico, controlar el presupuesto y analizar campañas para tomar mejores decisiones.
+
+**Palabra clave principal:**
+
+CPA Marketing Fórmula Smartlink
+
+**Palabras clave secundarias:**
+
+- Smartlink CPA
+- marketing CPA para principiantes
+- cómo funciona un Smartlink
+- redes CPA
+- tráfico para CPA
+- campañas CPA
+- tracking CPA
+- ofertas CPA
+- enlaces inteligentes CPA
+
+Utilizar las expresiones de forma natural. No forzar repeticiones de palabras clave ni crear bloques artificiales de keywords.
+
+La intención de búsqueda principal debe orientarse a usuarios que quieren comprender el funcionamiento de Smartlinks dentro del marketing CPA y cómo organizar campañas iniciales.
+
+No posicionar esta ficha como una guía genérica de marketing de afiliados ni hacerla competir innecesariamente con la página de categoría Ingresos o con las otras fichas CPA.
+
+**Canonical:** utilizar la URL absoluta correspondiente a la ruta real existente de esta ficha en el dominio oficial:
+
+`https://fgperspectiva.vercel.app/`
+
+Añadir a continuación el slug real existente. No inventar ni modificar la ruta.
+
+Implementar correctamente:
+
+- Title.
+- Meta description.
+- Canonical.
+- Open Graph.
+- Twitter Cards.
+- H1 único.
+- Jerarquía H2.
+- Breadcrumbs.
+- Enlaces internos pertinentes.
+
+Todos los metadatos deben estar en el `<head>`. No mostrar etiquetas SEO dentro del contenido visible.
+
+### 9. DATOS ESTRUCTURADOS
+
+Actualizar el JSON-LD de la ficha utilizando `Book` y `BreadcrumbList`, siguiendo las convenciones técnicas existentes en el proyecto.
+
+Datos confirmados para el objeto Book:
+
+- name: CPA Marketing Fórmula Smartlink
+- author: Francisco González
+- bookFormat: utilizar únicamente formatos respaldados por los datos reales del proyecto y de las ediciones confirmadas.
+- image: URL de la portada oficial existente.
+- inLanguage: no asumir un idioma distinto del que pueda comprobarse en el libro o en la ficha actual.
+- url: URL canónica real de la ficha.
+
+No inventar ISBN, editorial, fecha de publicación, número de páginas, valoraciones, precios, disponibilidad, identificadores adicionales ni otros datos bibliográficos.
+
+No añadir `offers`, precios o estados de disponibilidad que no estén respaldados por información real y vigente.
+
+El `BreadcrumbList` debe representar la navegación real:
+
+Inicio → Biblioteca → Ingresos → CPA Marketing Fórmula Smartlink.
+
+Usar las rutas existentes en el proyecto.
+
+Validar que el JSON-LD sea correcto y que no existan datos contradictorios entre los metadatos y el contenido visible.
+
+### 10. REGLA CRÍTICA: PROTECCIÓN ABSOLUTA DE LOS ELEMENTOS COMERCIALES
+
+La intervención editorial y SEO NO autoriza cambios en la estructura comercial de la ficha.
+
+Conservar íntegramente:
+
+- Ubicación original de los bloques de compra.
+- Todos los botones superiores existentes.
+- Botones de formatos y ediciones.
+- Modal de compra y su funcionamiento.
+- Textos de los botones.
+- Estilos, tamaños, colores y jerarquía visual.
+- Comportamiento de apertura y cierre del modal.
+- Todos los enlaces comerciales confirmados.
+- Botón de compra situado al final de la página.
+- Ubicación original del botón inferior.
+- Funcionamiento de todos los elementos comerciales.
+
+**Está terminantemente prohibido:**
+
+- Mover los botones de compra.
+- Eliminar botones.
+- Sustituir botones por enlaces de texto.
+- Duplicar botones.
+- Ocultar botones.
+- Cambiar los enlaces.
+- Cambiar el texto comercial sin autorización.
+- Eliminar el modal.
+- Convertir un modal existente en una lista de botones individuales.
+- Modificar componentes comerciales compartidos.
+- Cambiar la estructura de compra para adaptarla al diseño del nuevo contenido.
+- Alterar el botón inferior o su ubicación.
+
+La única modificación comercial autorizada es aplicar el orden de formatos y plataformas especificado en esta instrucción, exclusivamente dentro de la estructura comercial existente, sin alterar su ubicación ni su funcionamiento.
+
+**El botón de compra final debe seguir presente, visible y operativo en la misma posición que ocupa actualmente.**
+
+Si para incorporar el contenido editorial fuera necesario tocar un componente comercial compartido, no lo hagas. Busca una solución localizada en la vista de esta ficha.
+
+### 11. AISLAMIENTO DE CAMBIOS
+
+La intervención debe quedar aislada en la ficha CPA Marketing Fórmula Smartlink.
+
+No modificar:
+
+- Home.
+- Biblioteca.
+- Categorías.
+- Otras fichas de libros.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Header.
+- Footer.
+- Navegación general.
+- Componentes comerciales compartidos.
+- Datos globales del catálogo, salvo que resulte estrictamente necesario para conectar la vista existente y sin alterar los valores actuales.
+
+El Footer está expresamente excluido. No modificarlo en ningún aspecto.
+
+Si es posible, implementar la ficha mediante una vista independiente siguiendo el patrón técnico de las fichas ya actualizadas. No imponer un nombre de archivo si el proyecto utiliza otra convención.
+
+### 12. BACKUP OBLIGATORIO
+
+Antes de modificar cualquier archivo, crear una copia de seguridad completa de todos los archivos que vayan a cambiar.
+
+Utilizar como referencia de nombre:
+
+`/_backup_ficha_cpa_marketing_formula_smartlink/`
+
+La copia debe permitir recuperar el estado anterior de la ficha.
+
+No sobrescribir backups anteriores.
+
+### 13. PRUEBAS Y VALIDACIÓN
+
+Una vez implementada la ficha, realizar las siguientes comprobaciones:
+
+**Contenido**
+- Verificar que se haya incorporado íntegramente el texto aprobado.
+- Comprobar que no falten párrafos.
+- Confirmar que no se hayan introducido fragmentos generados o sustituidos.
+- Revisar que no haya contenido duplicado dentro de la propia ficha.
+- Comprobar que el índice esté después de la introducción y antes del desarrollo principal.
+- Verificar que las once entradas del índice enlacen a los once H2 reales.
+- Comprobar que todos los identificadores sean únicos y funcionales.
+
+**SEO**
+- Revisar title y meta description.
+- Confirmar canonical correcto.
+- Revisar Open Graph y Twitter Cards.
+- Comprobar H1 único y jerarquía de encabezados.
+- Validar JSON-LD Book y BreadcrumbList.
+- Confirmar que no se hayan inventado datos bibliográficos.
+- Verificar que la ficha no compita innecesariamente con otras páginas del catálogo.
+
+**Diseño y responsive**
+- Probar escritorio.
+- Probar móvil.
+- Comprobar legibilidad del texto.
+- Verificar el índice en ambas resoluciones.
+- Revisar que la portada oficial se muestre correctamente.
+- Confirmar que no existan desbordamientos horizontales ni problemas de navegación.
+
+**Compra y elementos comerciales**
+- Comparar la estructura comercial anterior y posterior.
+- Confirmar que los seis enlaces proporcionados están presentes y corresponden a sus formatos.
+- Comprobar el orden de las opciones.
+- Verificar todos los botones superiores.
+- Probar apertura y cierre del modal.
+- Comprobar el botón inferior de compra.
+- Confirmar que el botón inferior conserva su posición y funciona.
+- Confirmar que ningún enlace comercial se haya perdido, duplicado o sustituido.
+
+**Integridad del proyecto**
+- Ejecutar TypeScript.
+- Ejecutar build.
+- Ejecutar prerender de las rutas.
+- Comprobar que la ruta de esta ficha responde correctamente.
+- Comprobar que el resto de las rutas no presenta regresiones.
+- Confirmar que Footer y componentes compartidos permanecen intactos.
+
+### 14. INFORME FINAL OBLIGATORIO
+
+Al terminar, entregar un informe técnico que incluya:
+
+1. Archivos creados.
+2. Archivos modificados.
+3. Ubicación del backup.
+4. Ruta real de la ficha intervenida.
+5. Confirmación de que la portada oficial se conservó.
+6. Confirmación de incorporación íntegra del contenido aprobado.
+7. Número de secciones H2 y enlaces del índice comprobados.
+8. SEO implementado.
+9. JSON-LD implementado y validado.
+10. Resultado de las pruebas responsive.
+11. Resultado de TypeScript, build y prerender.
+12. Confirmación de que todos los enlaces comerciales siguen presentes.
+13. Confirmación expresa de que el modal y los botones superiores se conservan.
+14. Confirmación expresa de que el botón inferior de compra está presente, conserva su posición y funciona.
+15. Confirmación de que el Footer no fue modificado.
+16. Confirmación de que ninguna otra ficha o categoría fue alterada.
+17. Cualquier incidencia detectada y su resolución.
+
+Si alguna comprobación no se ha realizado, indicarlo expresamente. No declarar una prueba como superada si no se ha ejecutado.
+
+### 15. RESTRICCIÓN FINAL: NO DESPLEGAR
+
+Esta intervención debe realizarse exclusivamente en el entorno de trabajo local del proyecto.
+
+**No desplegar a Vercel. No publicar cambios. No ejecutar ninguna acción de despliegue.**
+
+El trabajo se considerará terminado cuando la ficha esté implementada, las pruebas estén realizadas y el informe técnico esté disponible para su revisión y aprobación.

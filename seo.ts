@@ -1618,6 +1618,88 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6q. Ficha editorial dedicada: CPA Marketing Fórmula Smartlink
+  if (path === '/cpa-marketing-formula-smartlink/') {
+    const smartlinkBook = ALL_BOOKS.find(
+      (b) =>
+        b.path === '/cpa-marketing-formula-smartlink/' ||
+        b.slug === 'cpa-marketing-formula-smartlink'
+    );
+    const smartlinkMetaDescription =
+      'Comprende cómo funcionan los Smartlinks en CPA, organizar pruebas de tráfico, controlar el presupuesto y analizar campañas para tomar mejores decisiones.';
+    const smartlinkSchemaDescription =
+      'Cómo comprender la lógica de los enlaces inteligentes, organizar pruebas de tráfico y tomar decisiones de campaña sin perder de vista el presupuesto ni la calidad de los resultados.';
+    const smartlinkCover =
+      smartlinkBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/6-cpa-marketing-smartlink-libro-400.jpg';
+    const smartlinkUrl = `${BASE_URL}/cpa-marketing-formula-smartlink/`;
+
+    const smartlinkBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'CPA Marketing Fórmula Smartlink',
+      alternateName:
+        'Una guía de Marketing para principiantes para ganar dinero con las redes CPA',
+      description: smartlinkSchemaDescription,
+      image: smartlinkCover,
+      url: smartlinkUrl,
+      inLanguage: 'es',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      },
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
+        'https://schema.org/EBook',
+        'https://schema.org/AudiobookFormat'
+      ]
+    };
+
+    return {
+      path: '/cpa-marketing-formula-smartlink/',
+      title: 'CPA Marketing Fórmula Smartlink: guía CPA | FG Perspectiva',
+      description: smartlinkMetaDescription,
+      canonical: smartlinkUrl,
+      ogImage: smartlinkCover,
+      ogType: 'book',
+      h1: 'CPA Marketing Fórmula Smartlink',
+      schema: [
+        smartlinkBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Ingresos',
+              item: `${BASE_URL}/ingresos/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'CPA Marketing Fórmula Smartlink',
+              item: smartlinkUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {
