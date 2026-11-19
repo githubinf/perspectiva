@@ -1,0 +1,563 @@
+# INSTRUCCIÓN INTEGRAL — REDISEÑO SEO Y EDITORIAL DE «DESBLOQUEA TU INSPIRACIÓN CON CHATGPT»
+
+## 1. Objetivo
+
+Implementar una ficha editorial completa, original, optimizada para SEO y coherente con la identidad de FG Perspectiva para el libro **Desbloquea tu inspiración con ChatGPT**, utilizando exclusivamente el texto editorial aprobado que se incluye íntegramente en esta instrucción.
+
+La página debe presentar el libro como una obra orientada a escritores y autores que desean explorar nuevas posibilidades creativas mediante ChatGPT, experimentar con ideas, ampliar perspectivas, desarrollar posibilidades narrativas y recuperar el impulso de escritura.
+
+La inteligencia artificial debe presentarse como una herramienta de exploración y apoyo creativo, nunca como sustituta de la imaginación, el criterio, la sensibilidad o la identidad del autor.
+
+## 2. Reglas de ejecución
+
+Antes de modificar el proyecto:
+
+- Examina la ficha actual y sus componentes.
+- Identifica su ruta, estructura, imagen oficial, sistema de compra, modal y componentes SEO.
+- Trabaja exclusivamente sobre la ficha de este libro y los archivos estrictamente necesarios para implementarla.
+- No modifiques otras fichas, páginas de categorías, Biblioteca, Home, Sistemas Digitales, navegación global ni Footer.
+- No refactorices componentes compartidos si no es imprescindible.
+- No alteres estilos globales ni elementos que puedan generar regresiones en otras páginas.
+- No crees copias de seguridad internas del proyecto para esta modificación individual. GitHub es el sistema de control de versiones.
+- No despliegues cambios en Vercel.
+- No publiques, sincronices ni ejecutes ninguna acción remota.
+
+## 3. Identidad editorial de la ficha
+
+### Título
+
+Desbloquea tu inspiración con ChatGPT
+
+Mantén el título que actualmente utiliza el proyecto, respetando su presentación y capitalización editorial existente.
+
+### Subtítulo
+
+Más potencia y creatividad para los autores
+
+### Autor
+
+Francisco González
+
+### Categoría
+
+Tecnología
+
+### Enfoque editorial
+
+Esta ficha debe abordar la relación entre la imaginación humana y la inteligencia artificial conversacional dentro del proceso de escritura.
+
+El contenido debe desarrollar una perspectiva basada en:
+
+- La exploración de ideas.
+- La ampliación de perspectivas.
+- El pensamiento creativo.
+- La experimentación con posibilidades narrativas.
+- La construcción y evolución de ideas.
+- El contexto y la sensibilidad.
+- La exploración del lenguaje.
+- La conversación como estímulo creativo.
+- La recuperación del impulso de escritura.
+- La protección de la voz y la identidad del autor.
+- La responsabilidad y el criterio humano.
+- La incorporación consciente de nuevas herramientas al proceso creativo.
+
+No debe convertirse en una guía para ganar dinero con ChatGPT, crear negocios, monetizar servicios, desarrollar productos digitales ni automatizar procesos comerciales. Ese enfoque corresponde a otra ficha del catálogo.
+
+## 4. Diferenciación editorial
+
+La ficha debe mantener una identidad propia dentro de la categoría Tecnología.
+
+Su intención principal es explorar cómo ChatGPT puede acompañar el pensamiento creativo de autores y escritores.
+
+La perspectiva editorial debe centrarse en la relación entre la herramienta y el proceso de creación, no en una enumeración de funciones técnicas ni en una colección de instrucciones genéricas.
+
+No reutilices la estructura, los encabezados, los argumentos ni las secciones de otras fichas.
+
+No añadas secciones genéricas como:
+
+- Qué aprenderás.
+- Para quién es este libro.
+- Beneficios del libro.
+- Sobre el libro.
+
+El texto aprobado constituye el contenido editorial definitivo y no debe ser reescrito, resumido, sustituido, ampliado artificialmente ni dividido en nuevas secciones.
+
+## 5. Estructura de la página
+
+Mantén una experiencia editorial coherente con FG Perspectiva y con las fichas de libros ya aprobadas.
+
+### Hero
+
+Debe contener:
+
+- Título del libro.
+- Subtítulo oficial.
+- Autor Francisco González.
+- Imagen oficial de portada ya existente en el proyecto.
+- Presentación editorial breve, utilizando la línea de posicionamiento aprobada:
+
+«Una exploración de la imaginación, el pensamiento creativo y las nuevas posibilidades de escritura que surgen cuando la tecnología se convierte en un interlocutor para nuestras ideas.»
+
+Mantén los elementos comerciales actuales del hero, incluidos los botones de compra que correspondan.
+
+No inventes una portada ni sustituyas la imagen oficial.
+
+### Introducción
+
+Utiliza íntegramente la introducción aprobada incluida en el contenido editorial de esta instrucción.
+
+### Índice de contenidos
+
+El índice debe aparecer después de la introducción y antes del desarrollo editorial.
+
+Título:
+
+**Contenido de esta página**
+
+Texto introductorio:
+
+Accede directamente al apartado que te interesa.
+
+Debe ser visible, funcional y permitir desplazarse directamente a cada uno de los 12 apartados reales del texto.
+
+En escritorio, conserva una distribución visual equilibrada de dos columnas cuando el diseño actual lo permita. En móvil, utiliza una sola columna.
+
+Cada enlace debe utilizar exactamente el identificador del encabezado al que apunta.
+
+### Desarrollo editorial
+
+Utiliza íntegramente el texto proporcionado en el apartado 10.
+
+Mantén los 12 encabezados, su orden, sus identificadores y todos los párrafos.
+
+No añadas nuevos apartados ni elimines contenido.
+
+## 6. Índice y anclas obligatorias
+
+Implementa los siguientes enlaces con sus respectivos identificadores:
+
+1. La creatividad no siempre sigue un camino previsible  
+   `#creatividad-camino-imprevisible`
+
+2. Pensar a través de nuevas perspectivas  
+   `#pensar-nuevas-perspectivas`
+
+3. El valor de las ideas imperfectas  
+   `#valor-ideas-imperfectas`
+
+4. Explorar sin perder la dirección de nuestra obra  
+   `#explorar-sin-perder-direccion`
+
+5. La imaginación necesita contexto y sensibilidad  
+   `#imaginacion-contexto-sensibilidad`
+
+6. Encontrar posibilidades dentro de una historia  
+   `#posibilidades-dentro-historia`
+
+7. El lenguaje como espacio de experimentación  
+   `#lenguaje-espacio-experimentacion`
+
+8. Cuando una conversación ayuda a avanzar  
+   `#conversacion-ayuda-avanzar`
+
+9. Recuperar el impulso creativo  
+   `#recuperar-impulso-creativo`
+
+10. La voz del autor no puede delegarse  
+    `#voz-autor-no-delegable`
+
+11. Crear en una época de nuevas herramientas  
+    `#crear-epoca-nuevas-herramientas`
+
+12. Una creatividad más abierta, pero también más consciente  
+    `#creatividad-abierta-consciente`
+
+Los IDs deben coincidir exactamente con los enlaces del índice.
+
+## 7. SEO
+
+Implementa metadatos específicos para esta ficha.
+
+### Meta title
+
+Desbloquea tu inspiración con ChatGPT: creatividad para autores | FG Perspectiva
+
+### Meta description
+
+Explora cómo utilizar ChatGPT para estimular la creatividad, desarrollar ideas, superar bloqueos y experimentar con nuevas posibilidades de escritura sin perder tu voz como autor.
+
+### Intención de búsqueda principal
+
+Desbloquea tu inspiración con ChatGPT
+
+### Temáticas secundarias
+
+- ChatGPT para escritores.
+- Inteligencia artificial para escritores.
+- Creatividad con ChatGPT.
+- Inspiración para escritores.
+- Escritura creativa con inteligencia artificial.
+- Ideas para escribir.
+- Bloqueo creativo.
+- ChatGPT para autores.
+- IA y escritura.
+- Herramientas de creatividad.
+
+Utiliza estas temáticas de forma natural, sin sobreoptimización ni repetición artificial.
+
+No modifiques la intención editorial del texto aprobado para intentar incorporar palabras clave.
+
+### SEO técnico
+
+Comprueba y actualiza, cuando corresponda:
+
+- Title.
+- Meta description.
+- Canonical absoluto y correcto.
+- Open Graph.
+- Twitter Cards.
+- Datos estructurados JSON-LD.
+- Schema Book.
+- BreadcrumbList.
+- Nombre del autor.
+- URL de la ficha.
+- Imagen oficial del libro.
+
+Utiliza la ruta real y la portada que ya existen en el proyecto.
+
+No inventes URLs, identificadores editoriales, ISBN, valoraciones, precios ni datos bibliográficos.
+
+## 8. Enlaces comerciales
+
+Utiliza únicamente los enlaces existentes y confirmados para esta ficha.
+
+### Amazon Kindle
+
+https://www.amazon.com/dp/B0CXZC4XLL
+
+### Amazon Paperback
+
+https://www.amazon.com/-/es/dp/B0CY211RSP
+
+### Amazon Hardcover
+
+https://www.amazon.com/dp/B0CY1XYJS7
+
+### Audiobook
+
+https://www.amazon.com/dp/B0HB6KFDPK
+
+No añadas ClickBank, Payhip, Google Play, Lulu, Books2Read ni otras plataformas porque no se han proporcionado enlaces confirmados para esta ficha.
+
+### Orden de presentación comercial
+
+Si la ficha cuenta con varios botones de compra, organiza los enlaces según el orden editorial establecido para el catálogo:
+
+1. Paperback.
+2. Hardcover.
+3. Kindle.
+4. Audiobook.
+
+Conserva exactamente las URLs facilitadas.
+
+No inventes botones, enlaces, formatos ni destinos.
+
+## 9. Protección de los componentes comerciales
+
+Esta modificación no autoriza a reconstruir ni simplificar el sistema de compra.
+
+Preserva íntegramente:
+
+- Los botones de compra.
+- Sus estilos.
+- Sus textos funcionales.
+- Sus enlaces.
+- La ubicación del bloque comercial.
+- La funcionalidad del modal de compra.
+- Los eventos y comportamientos actuales.
+- El CTA inferior de compra, si existe.
+- Los elementos que permiten al lector acceder a las diferentes ediciones.
+
+No elimines botones de compra.
+
+No sustituyas el modal por enlaces simples.
+
+No alteres el funcionamiento de los componentes comerciales compartidos.
+
+No cambies los destinos de los enlaces.
+
+No conviertas los botones de compra en elementos decorativos.
+
+## 10. TEXTO EDITORIAL COMPLETO Y DEFINITIVO
+
+El siguiente contenido es el texto aprobado. Debe implementarse íntegramente, respetando sus párrafos, encabezados, orden, redacción y sentido.
+
+---
+
+# Desbloquea tu inspiración con ChatGPT
+
+**Más potencia y creatividad para los autores**
+
+*Una exploración de la imaginación, el pensamiento creativo y las nuevas posibilidades de escritura que surgen cuando la tecnología se convierte en un interlocutor para nuestras ideas.*
+
+**Autor: Francisco González**
+
+## Introducción
+
+Escribir no siempre consiste en saber qué queremos decir. En ocasiones, conocemos el tema, tenemos una historia que contar o sentimos que existe una idea esperando ser desarrollada, pero no conseguimos encontrar el camino que nos permita avanzar. Otras veces, comenzamos con entusiasmo y descubrimos que nuestras posibilidades iniciales parecen demasiado limitadas, que los personajes no evolucionan como esperábamos o que el texto necesita una perspectiva diferente.
+
+La creatividad no es un proceso constante ni responde siempre a nuestra voluntad. Podemos tener momentos de extraordinaria claridad y otros en los que cualquier intento de avanzar parece conducirnos al mismo lugar. En estas circunstancias, disponer de un recurso con el que contrastar pensamientos, explorar alternativas y observar nuestras ideas desde otros ángulos puede resultar especialmente interesante.
+
+ChatGPT nos ofrece una forma diferente de interactuar con el lenguaje. Podemos utilizarlo para explorar posibilidades, plantear escenarios, cuestionar planteamientos, desarrollar asociaciones y experimentar con enfoques que quizá no habíamos considerado. Su utilidad creativa no consiste en sustituir nuestra imaginación, sino en proporcionarnos estímulos con los que podamos trabajar.
+
+El verdadero potencial de esta colaboración aparece cuando aprendemos a distinguir entre generar posibilidades y tomar decisiones creativas. La herramienta puede ofrecernos caminos, pero somos nosotros quienes elegimos cuáles merecen ser recorridos, qué emociones queremos transmitir y qué significado tendrá finalmente nuestra obra.
+
+## Contenido de esta página
+
+Accede directamente al apartado que te interesa.
+
+1. [La creatividad no siempre sigue un camino previsible](#creatividad-camino-imprevisible)
+2. [Pensar a través de nuevas perspectivas](#pensar-nuevas-perspectivas)
+3. [El valor de las ideas imperfectas](#valor-ideas-imperfectas)
+4. [Explorar sin perder la dirección de nuestra obra](#explorar-sin-perder-direccion)
+5. [La imaginación necesita contexto y sensibilidad](#imaginacion-contexto-sensibilidad)
+6. [Encontrar posibilidades dentro de una historia](#posibilidades-dentro-historia)
+7. [El lenguaje como espacio de experimentación](#lenguaje-espacio-experimentacion)
+8. [Cuando una conversación ayuda a avanzar](#conversacion-ayuda-avanzar)
+9. [Recuperar el impulso creativo](#recuperar-impulso-creativo)
+10. [La voz del autor no puede delegarse](#voz-autor-no-delegable)
+11. [Crear en una época de nuevas herramientas](#crear-epoca-nuevas-herramientas)
+12. [Una creatividad más abierta, pero también más consciente](#creatividad-abierta-consciente)
+
+## La creatividad no siempre sigue un camino previsible
+
+La escritura suele llevarnos por caminos que no podemos anticipar completamente. Una idea aparentemente sencilla puede convertirse en el centro de una obra, mientras que un planteamiento que inicialmente parecía prometedor termina perdiendo interés. En este proceso, no siempre necesitamos más información; a veces necesitamos una forma diferente de observar aquello que ya tenemos.
+
+El pensamiento creativo se alimenta de conexiones, asociaciones, experiencias y preguntas. Cuando permanecemos demasiado tiempo dentro de una misma perspectiva, podemos dejar de percibir alternativas. Un personaje empieza a comportarse de manera previsible, una escena parece carecer de fuerza o una temática nos conduce repetidamente a las mismas conclusiones.
+
+ChatGPT puede ayudarnos a interrumpir esa repetición. Podemos presentar una situación, explicar dónde encontramos dificultades y solicitar que explore distintas interpretaciones. No todas sus propuestas serán interesantes, pero algunas pueden ofrecernos un punto de partida inesperado o permitirnos reconocer con mayor claridad aquello que realmente queremos expresar.
+
+La utilidad no está necesariamente en aceptar una respuesta. A veces, una propuesta que descartamos nos ayuda a descubrir por qué preferimos otra dirección. Incluso una alternativa que no encaja puede revelar algo sobre nuestra intención original.
+
+## Pensar a través de nuevas perspectivas
+
+Una de las dificultades de desarrollar una idea consiste en permanecer demasiado cerca de ella. Cuando llevamos tiempo trabajando en un texto, conocemos cada detalle y podemos perder la capacidad de observarlo con cierta distancia. Esto afecta tanto a la escritura de ficción como a la elaboración de textos de carácter reflexivo, divulgativo o creativo.
+
+Una herramienta conversacional puede servirnos para examinar una misma cuestión desde perspectivas distintas. Podemos explorar cómo interpretaría una situación alguien con otra experiencia, qué elementos podrían resultar contradictorios o qué consecuencias tendría una decisión diferente.
+
+Este ejercicio no pretende que la inteligencia artificial determine cuál es la mejor interpretación. Su función es ampliar el campo de observación para que nosotros podamos comparar, cuestionar y decidir.
+
+Cambiar de perspectiva también puede ayudarnos a descubrir matices. Una escena puede adquirir mayor profundidad si comprendemos mejor las motivaciones de quienes participan en ella. Un argumento puede resultar más interesante cuando reconocemos sus puntos débiles. Una idea puede transformarse cuando dejamos de tratarla como una conclusión definitiva y comenzamos a examinarla como una posibilidad.
+
+## El valor de las ideas imperfectas
+
+Muchas ideas creativas no llegan completamente formadas. Aparecen como imágenes aisladas, fragmentos de diálogo, preguntas, sensaciones o intuiciones que todavía no sabemos cómo utilizar. Intentar convertir inmediatamente cada una de ellas en algo coherente puede limitar nuestra exploración.
+
+En esta etapa, ChatGPT puede ayudarnos a desarrollar posibilidades sin exigir que tengamos una dirección definitiva. Podemos partir de una frase, una escena incompleta, una situación cotidiana o una combinación de elementos que aparentemente no guardan relación entre sí.
+
+El trabajo consiste en utilizar esas propuestas como material de exploración. Una respuesta puede sugerir caminos que después combinamos, modificamos o descartamos. Otra puede ayudarnos a desarrollar una idea que inicialmente parecía demasiado pequeña para sostener un texto.
+
+Es importante mantener una actitud abierta durante este proceso. Si evaluamos cada propuesta exclusivamente por su calidad final, podemos cerrar demasiado pronto posibilidades que todavía necesitan desarrollarse. La exploración tiene un propósito distinto de la revisión: primero ampliamos el terreno, después seleccionamos y trabajamos aquello que realmente merece formar parte de nuestra obra.
+
+## Explorar sin perder la dirección de nuestra obra
+
+La posibilidad de generar numerosas alternativas puede convertirse también en una dificultad. Cuando disponemos de demasiadas ideas, resulta fácil dispersarnos, cambiar constantemente de enfoque o abandonar una estructura que ya habíamos desarrollado.
+
+La creatividad necesita libertad, pero también una cierta dirección. Antes de explorar nuevas posibilidades, conviene comprender qué estamos intentando conseguir con nuestro texto, qué elementos son esenciales y qué aspectos podemos modificar.
+
+ChatGPT puede ayudarnos a examinar opciones sin necesidad de reconstruir toda nuestra obra. Podemos utilizarlo para explorar una escena concreta, reconsiderar un conflicto, desarrollar una transición o buscar alternativas para un fragmento que no funciona. De este modo, la experimentación permanece vinculada al proyecto y no se convierte en una sucesión interminable de ideas desconectadas.
+
+También podemos establecer límites. Si estamos desarrollando una historia, quizá queramos conservar la personalidad de un protagonista, el tono general, el contexto o una determinada intención narrativa. Aportar estas referencias permite que la exploración sea más útil y evita que las propuestas se alejen de aquello que estamos construyendo.
+
+## La imaginación necesita contexto y sensibilidad
+
+Las ideas adquieren sentido dentro de un contexto. Una propuesta que funciona en una historia puede resultar completamente inadecuada en otra. Un tono humorístico puede enriquecer un texto o destruir una atmósfera cuidadosamente construida. Una decisión de un personaje puede resultar creíble cuando conocemos sus circunstancias y artificial cuando ignoramos su historia.
+
+Por eso, el uso creativo de ChatGPT mejora cuando no nos limitamos a plantear peticiones aisladas. Podemos explicar el mundo en el que se desarrolla nuestra obra, las características de los personajes, las emociones que queremos transmitir o las restricciones que debemos respetar.
+
+El contexto nos permite evaluar las respuestas con mayor criterio. No buscamos únicamente alternativas llamativas, sino posibilidades que tengan sentido dentro de nuestro universo creativo.
+
+La sensibilidad también desempeña un papel fundamental. La tecnología puede proponer descripciones o situaciones, pero la comprensión de determinados matices emocionales, culturales o personales requiere una evaluación cuidadosa. Nuestra experiencia y nuestra manera de interpretar el mundo siguen siendo fundamentales para construir textos que conecten con los lectores.
+
+## Encontrar posibilidades dentro de una historia
+
+Una historia puede contener elementos que todavía no hemos aprovechado completamente. Un conflicto secundario, una decisión aparentemente insignificante o una característica de un personaje pueden abrir nuevas posibilidades de desarrollo.
+
+Cuando sentimos que una narración se ha detenido, podemos utilizar ChatGPT como un espacio de exploración. En lugar de pedirle que continúe la historia por nosotros, podemos analizar las circunstancias que hemos creado y examinar qué alternativas existen.
+
+¿Qué ocurriría si un personaje interpretara de manera diferente una información? ¿Qué consecuencias tendría una decisión que hasta ahora no habíamos considerado? ¿Qué tensión podría surgir de una contradicción entre lo que alguien desea y lo que está dispuesto a hacer?
+
+Este tipo de interacción nos permite investigar la lógica interna de una historia. Podemos descubrir inconsistencias, explorar consecuencias y encontrar elementos que aporten mayor profundidad. La decisión final permanece en nuestras manos, porque no todas las alternativas son compatibles con el significado que queremos construir.
+
+## El lenguaje como espacio de experimentación
+
+El lenguaje no es únicamente un vehículo para transmitir información. También determina el ritmo, la atmósfera, la personalidad y la experiencia que el lector tendrá al recorrer un texto.
+
+En ocasiones, sabemos lo que queremos expresar, pero no encontramos la forma adecuada. Una frase parece demasiado rígida, una descripción carece de fuerza o un párrafo no transmite la sensación que imaginábamos. En estos momentos, experimentar con diferentes formulaciones puede ayudarnos a comprender mejor nuestras propias preferencias.
+
+ChatGPT puede servirnos para comparar posibilidades de expresión, examinar el efecto de diferentes tonos o encontrar alternativas cuando una formulación se ha vuelto demasiado familiar. Podemos explorar cómo cambia una misma idea cuando utilizamos un lenguaje más directo, una construcción más evocadora o una perspectiva diferente.
+
+Sin embargo, la experimentación debe estar al servicio de nuestra intención. No necesitamos que cada frase sea más sofisticada ni que cada descripción contenga recursos llamativos. La claridad, la sencillez y la precisión también pueden ser decisiones estilísticas. El objetivo es encontrar el lenguaje que mejor represente aquello que queremos comunicar.
+
+## Cuando una conversación ayuda a avanzar
+
+Una de las características más interesantes de trabajar con una herramienta conversacional es que podemos desarrollar una idea progresivamente. No necesitamos resolver todas las cuestiones en una única interacción. Podemos plantear una primera posibilidad, examinarla, corregir las condiciones y continuar a partir de lo que hemos descubierto.
+
+Este proceso se parece a una conversación exploratoria en la que las preguntas pueden resultar tan importantes como las respuestas. Cuando conseguimos identificar aquello que no nos convence, podemos dirigir mejor el siguiente paso.
+
+También podemos utilizar la interacción para poner a prueba nuestras propias decisiones. Explicar una idea nos obliga a organizarla y hacer explícitos aspectos que quizá permanecían confusos. Las respuestas pueden ayudarnos a detectar vacíos, contradicciones o posibilidades que no habíamos considerado.
+
+La herramienta no necesita convertirse en la autoridad de nuestro proceso creativo. Su valor está en proporcionar un espacio de intercambio que podamos dirigir, interrumpir, modificar o abandonar cuando deja de ser útil.
+
+## Recuperar el impulso creativo
+
+Los bloqueos creativos no siempre tienen la misma causa. En ocasiones, necesitamos descansar. Otras veces, hemos perdido interés en una idea, estamos intentando resolver demasiadas cuestiones simultáneamente o nos exigimos un nivel de perfección que dificulta cualquier avance.
+
+Utilizar ChatGPT puede ayudarnos a identificar qué tipo de dificultad estamos experimentando. Si no sabemos cómo continuar, quizá podamos explorar diferentes caminos. Si una escena no funciona, podemos examinar sus elementos. Si una idea parece demasiado amplia, podemos delimitarla. Si estamos atrapados en una formulación, podemos buscar alternativas.
+
+Pero no debemos convertir la herramienta en una obligación de productividad permanente. La creatividad también necesita pausas, observación, experiencias, lectura y tiempo para que las ideas maduren. No todas las dificultades deben resolverse generando más contenido.
+
+En ocasiones, avanzar significa dejar de escribir durante un tiempo. En otras, significa reducir nuestras expectativas, recuperar una parte del proyecto que todavía nos interesa o realizar una pequeña tarea que nos permita volver a entrar en el proceso.
+
+## La voz del autor no puede delegarse
+
+La facilidad para generar textos plantea una cuestión importante: ¿qué hace que una obra sea nuestra? La respuesta no depende únicamente de las palabras que utilizamos, sino también de nuestras decisiones, experiencias, observaciones, sensibilidad y manera de interpretar aquello que queremos expresar.
+
+ChatGPT puede ofrecer formulaciones, desarrollar posibilidades y sugerir caminos. Sin embargo, la identidad de una obra se construye a través de elecciones. Qué incluimos, qué omitimos, qué consideramos importante, cómo tratamos a nuestros personajes y qué perspectiva adoptamos son decisiones que definen nuestra relación con el texto.
+
+Utilizar la inteligencia artificial no implica renunciar a nuestra voz. Podemos emplearla como apoyo para explorar, cuestionar o mejorar determinados aspectos de la escritura, manteniendo el control sobre el resultado final.
+
+La revisión personal es indispensable. Debemos comprobar que el texto representa nuestras intenciones, que no contiene elementos que no comprendemos y que su lenguaje responde a nuestra manera de escribir. La herramienta puede facilitar el proceso, pero la responsabilidad creativa continúa siendo nuestra.
+
+## Crear en una época de nuevas herramientas
+
+La incorporación de inteligencia artificial al ámbito creativo está modificando las posibilidades de trabajo de escritores, autores y profesionales vinculados al lenguaje. Estas herramientas permiten experimentar con nuevas formas de interacción, explorar procesos diferentes y reconsiderar algunas tareas que tradicionalmente realizábamos de manera individual.
+
+Esta transformación también genera preguntas sobre originalidad, autoría, formación, criterios de calidad y relación entre tecnología y creación humana. No todas las respuestas están definidas, y probablemente algunas cambiarán a medida que evolucionen las herramientas y las prácticas de escritura.
+
+Más que intentar anticipar todas las consecuencias, podemos desarrollar una actitud consciente de experimentación. Aprender a utilizar la tecnología, comprender sus límites y evaluar sus resultados nos permitirá tomar decisiones más informadas.
+
+La novedad tecnológica no debe obligarnos a cambiar nuestra manera de escribir si no encontramos una razón para hacerlo. Podemos incorporar aquello que realmente nos aporta valor y mantener los métodos que continúan siendo importantes para nuestra creatividad.
+
+## Una creatividad más abierta, pero también más consciente
+
+La posibilidad de dialogar con una herramienta capaz de generar respuestas abre nuevas formas de explorar el lenguaje y las ideas. Podemos experimentar sin necesidad de tener todas las respuestas, examinar posibilidades que inicialmente no habíamos considerado y encontrar estímulos para continuar trabajando.
+
+Sin embargo, la amplitud de estas posibilidades no garantiza una obra significativa. La creatividad necesita intención, selección, sensibilidad, conocimiento y una relación personal con aquello que escribimos. La tecnología puede ampliar el espacio de exploración, pero no determina qué merece ser expresado.
+
+Cuando utilizamos ChatGPT con criterio, podemos convertirlo en un recurso que nos ayude a observar nuestras ideas desde otros ángulos, superar determinadas dificultades y experimentar con mayor libertad. Su valor no reside en producir una obra en nuestro lugar, sino en contribuir a que descubramos posibilidades que podamos hacer nuestras.
+
+Escribir sigue siendo un acto de elección. Cada texto refleja una manera de mirar, de comprender y de organizar aquello que queremos compartir. La inteligencia artificial puede acompañarnos en ese recorrido, pero la dirección creativa, la identidad y el significado de nuestra obra continúan perteneciendo a quien escribe.
+
+---
+
+## 11. Diseño y presentación
+
+Mantén el diseño visual coherente con FG Perspectiva y con las fichas editoriales ya implementadas.
+
+Utiliza los estilos, colores, tipografías, jerarquías, espacios y componentes existentes.
+
+La ficha debe transmitir:
+
+- Creatividad.
+- Reflexión.
+- Imaginación.
+- Claridad.
+- Modernidad.
+- Identidad editorial.
+- Profesionalidad.
+
+Evita:
+
+- Decoraciones innecesarias.
+- Iconografía ornamental.
+- Imágenes de stock.
+- Banners añadidos.
+- Bloques visuales que interrumpan la lectura.
+- Elementos que compitan con la portada.
+- Exceso de tarjetas o cajas.
+- Cambios que hagan la página visualmente recargada.
+
+No agregues imágenes nuevas. La portada oficial del libro es el único recurso gráfico editorial que debe incorporarse a la ficha.
+
+## 12. Responsive y accesibilidad
+
+Verifica:
+
+- Escritorio.
+- Tablet.
+- Móvil.
+
+El índice debe ser fácil de utilizar en todas las resoluciones.
+
+Los enlaces de anclaje deben funcionar correctamente.
+
+La tipografía debe ser legible.
+
+Los botones deben conservar sus dimensiones y comportamiento funcional.
+
+Evita desbordamientos horizontales, superposición de elementos, saltos visuales y problemas de espaciado.
+
+Respeta las buenas prácticas de accesibilidad existentes, incluidos contraste, navegación mediante teclado y semántica HTML.
+
+## 13. Validación técnica obligatoria
+
+Después de implementar la ficha:
+
+1. Comprueba que la ruta original sigue funcionando.
+2. Verifica que no se haya creado una URL nueva innecesariamente.
+3. Confirma que el título y subtítulo son correctos.
+4. Confirma que la portada oficial es la misma.
+5. Comprueba que la introducción está íntegra.
+6. Verifica la ubicación del índice.
+7. Comprueba los 12 enlaces del índice.
+8. Verifica los 12 encabezados y sus IDs.
+9. Confirma que el contenido editorial está completo y no ha sufrido alteraciones.
+10. Comprueba el meta title.
+11. Comprueba la meta description.
+12. Comprueba la canonical.
+13. Comprueba Open Graph y Twitter Cards.
+14. Comprueba los datos estructurados Book y BreadcrumbList.
+15. Comprueba que los enlaces comerciales son correctos.
+16. Comprueba el orden de los botones comerciales.
+17. Comprueba que no se ha eliminado ningún botón.
+18. Comprueba que el modal de compra sigue funcionando.
+19. Comprueba que el CTA inferior continúa funcionando.
+20. Comprueba que no se han producido cambios en otras fichas.
+21. Ejecuta las comprobaciones TypeScript pertinentes.
+22. Ejecuta el build.
+23. Comprueba el prerenderizado y la generación de rutas, si forman parte del flujo habitual del proyecto.
+24. Verifica el diseño responsive.
+25. Revisa posibles errores de consola, navegación o enlaces.
+
+## 14. Informe final
+
+Al finalizar, entrega un informe concreto que indique:
+
+- Archivos modificados.
+- Componentes creados o actualizados.
+- Implementación del contenido editorial.
+- Implementación del índice y sus anclas.
+- Metadatos SEO.
+- Datos estructurados.
+- Estado de los enlaces comerciales.
+- Estado de los botones de compra.
+- Estado del modal.
+- Resultado de las comprobaciones TypeScript.
+- Resultado del build.
+- Resultado de las pruebas de navegación y responsive.
+- Cualquier incidencia detectada.
+
+No afirmes que una comprobación se ha realizado si no se ha ejecutado realmente.
+
+No despliegues el proyecto.
+
+No modifiques Vercel.
+
+No realices acciones sobre GitHub.
+
+La implementación debe quedar exclusivamente en el proyecto local de Google AI Studio, preparada para su posterior revisión.
+
+## RESULTADO ESPERADO
+
+Una ficha de libro completa, profesional, editorialmente diferenciada, fiel al texto aprobado, correctamente optimizada para SEO, con navegación interna funcional, botones comerciales intactos y sin regresiones en el resto de FG Perspectiva.

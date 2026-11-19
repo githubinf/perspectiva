@@ -1954,6 +1954,88 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6u. Ficha editorial dedicada: Desbloquea tu inspiración con ChatGPT
+  if (path === '/desbloquea-tu-inspiracion-con-chatgpt/') {
+    const inspirationBook = ALL_BOOKS.find(
+      (b) =>
+        b.path === '/desbloquea-tu-inspiracion-con-chatgpt/' ||
+        b.slug === 'desbloquea-tu-inspiracion-con-chatgpt'
+    );
+    const inspirationMetaDescription =
+      'Explora cómo utilizar ChatGPT para estimular la creatividad, desarrollar ideas, superar bloqueos y experimentar con nuevas posibilidades de escritura sin perder tu voz como autor.';
+    const inspirationSchemaDescription =
+      'Una exploración de la imaginación, el pensamiento creativo y las nuevas posibilidades de escritura que surgen cuando la tecnología se convierte en un interlocutor para nuestras ideas.';
+    const inspirationCover =
+      inspirationBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/16-chatgpt-para-escritores-libro-400.jpg';
+    const inspirationUrl = `${BASE_URL}/desbloquea-tu-inspiracion-con-chatgpt/`;
+
+    const inspirationBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Desbloquea tu inspiración con ChatGPT',
+      alternateName: 'Más potencia y creatividad para los autores',
+      description: inspirationSchemaDescription,
+      image: inspirationCover,
+      url: inspirationUrl,
+      inLanguage: 'es',
+      genre: 'Tecnología',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      },
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
+        'https://schema.org/EBook',
+        'https://schema.org/AudiobookFormat'
+      ]
+    };
+
+    return {
+      path: '/desbloquea-tu-inspiracion-con-chatgpt/',
+      title: 'Desbloquea tu inspiración con ChatGPT: creatividad para autores | FG Perspectiva',
+      description: inspirationMetaDescription,
+      canonical: inspirationUrl,
+      ogImage: inspirationCover,
+      ogType: 'book',
+      h1: 'Desbloquea tu inspiración con ChatGPT',
+      schema: [
+        inspirationBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Tecnología',
+              item: `${BASE_URL}/tecnologia/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Desbloquea tu inspiración con ChatGPT',
+              item: inspirationUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {

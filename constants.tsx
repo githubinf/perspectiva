@@ -1203,8 +1203,48 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'tecnologia',
         title: 'Desbloquea tu inspiración con ChatGPT',
         description: 'Utiliza la IA como motor creativo para contenidos y productos digitales.',
-        url: 'https://amzn.to/3VhmpME',
+        url: 'https://www.amazon.com/-/es/dp/B0CY211RSP',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/16-chatgpt-para-escritores-libro-400.jpg',
+        purchaseOptions: [
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/-/es/dp/B0CY211RSP',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
+            emoji: '🛒',
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B0CY1XYJS7',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B0CXZC4XLL',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            tooltip: 'Amazon/Audible',
+            url: 'https://www.amazon.com/dp/B0HB6KFDPK',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
+            rel: 'nofollow noopener noreferrer'
+          }
+        ],
         extraInfo: [
           'El bloqueo creativo es uno de los mayores enemigos de los creadores digitales. Pasar horas mirando una pantalla en blanco, esperando que llegue la "idea perfecta", es una experiencia frustrante que retrasa proyectos y genera ansiedad. Pero, ¿y si pudieras tener un "motor de inspiración" disponible las 24 horas del día, los 7 días de la semana?',
           'ChatGPT no solo sirve para automatizar tareas o generar contenido; también es una herramienta excepcional para desbloquear tu creatividad. Este libro te enseña a usar la IA no como un sustituto de tu creatividad, sino como un catalizador que la potencia y la amplifica.',
