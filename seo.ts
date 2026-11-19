@@ -874,27 +874,34 @@ export const getPageMeta = (rawPath: string): PageMeta => {
       },
       bookFormat: [
         'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
         'https://schema.org/EBook',
-        'https://schema.org/Hardcover'
+        'https://schema.org/AudiobookFormat'
       ],
       workExample: [
         {
           '@type': 'Book',
           name: 'El arte de atraer la abundancia (Tapa blanda)',
           bookFormat: 'https://schema.org/Paperback',
-          url: 'https://www.amazon.com/-/es/dp/B0CY211RSP'
-        },
-        {
-          '@type': 'Book',
-          name: 'El arte de atraer la abundancia (Kindle)',
-          bookFormat: 'https://schema.org/EBook',
-          url: 'https://www.amazon.com/dp/B0CXZC4XLL'
+          url: 'https://www.amazon.com/dp/B0C9S4VJ4K'
         },
         {
           '@type': 'Book',
           name: 'El arte de atraer la abundancia (Tapa dura)',
           bookFormat: 'https://schema.org/Hardcover',
-          url: 'https://www.amazon.com/dp/B0CY1XYJS7'
+          url: 'https://www.amazon.com/dp/B0D44HTXDV'
+        },
+        {
+          '@type': 'Book',
+          name: 'El arte de atraer la abundancia (Kindle)',
+          bookFormat: 'https://schema.org/EBook',
+          url: 'https://www.amazon.com/dp/B0CB73FZ8R'
+        },
+        {
+          '@type': 'Book',
+          name: 'El arte de atraer la abundancia (Audiolibro)',
+          bookFormat: 'https://schema.org/AudiobookFormat',
+          url: 'https://www.amazon.com/dp/B0H6X46DCR'
         }
       ]
     };

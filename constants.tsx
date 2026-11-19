@@ -1386,14 +1386,14 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'mindset',
         title: 'El arte de atraer la abundancia',
         description: 'Despierta tu potencial ilimitado y crea una vida de riqueza, éxito y plenitud total',
-        url: 'https://www.amazon.com/-/es/dp/B0CY211RSP',
+        url: 'https://www.amazon.com/dp/B0C9S4VJ4K',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/14-el-arte-de-atraer-la-abundancia-ebook-libro-400.jpg',
         purchaseOptions: [
           {
             platform: 'Amazon',
             cta: 'Tapa blanda',
             format: 'Tapa blanda',
-            url: 'https://www.amazon.com/-/es/dp/B0CY211RSP',
+            url: 'https://www.amazon.com/dp/B0C9S4VJ4K',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
             emoji: '🛒',
             isPrimary: true,
@@ -1403,7 +1403,7 @@ export const FEATURED_BOOKS: BookCategory[] = [
             platform: 'Amazon',
             cta: 'Tapa dura',
             format: 'Tapa dura',
-            url: 'https://www.amazon.com/dp/B0CY1XYJS7',
+            url: 'https://www.amazon.com/dp/B0D44HTXDV',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
             emoji: '📖',
             rel: 'nofollow noopener noreferrer'
@@ -1412,9 +1412,19 @@ export const FEATURED_BOOKS: BookCategory[] = [
             platform: 'Amazon',
             cta: 'Kindle ebook',
             format: 'Kindle',
-            url: 'https://www.amazon.com/dp/B0CXZC4XLL',
+            url: 'https://www.amazon.com/dp/B0CB73FZ8R',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
             emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            tooltip: 'Amazon/Audible',
+            url: 'https://www.amazon.com/dp/B0H6X46DCR',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
             rel: 'nofollow noopener noreferrer'
           },
           {
