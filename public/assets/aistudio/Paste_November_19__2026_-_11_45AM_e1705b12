@@ -1,0 +1,654 @@
+# INSTRUCCIÓN PARA GOOGLE AI STUDIO — FICHA EDITORIAL
+## Ideas y Consejos de Tráfico Web — FG Perspectiva
+
+### 1. OBJETIVO DE LA IMPLEMENTACIÓN
+
+Implementar y actualizar exclusivamente la página individual del libro **Ideas y Consejos de Tráfico Web** dentro del proyecto FG Perspectiva.
+
+Esta página debe convertirse en una ficha editorial independiente, optimizada para SEO, con contenido original, profundidad editorial, estructura semántica clara y una experiencia de navegación cómoda.
+
+No se trata de crear una página comercial convencional ni de reproducir la descripción original del libro. El contenido aprobado debe funcionar como una página editorial que aporte valor por sí misma, desarrollando una perspectiva propia sobre la distribución digital, el descubrimiento de contenidos y la generación de visitantes.
+
+Trabajar exclusivamente sobre esta ficha. No modificar otras páginas, categorías, la Home, Biblioteca, Sistemas Digitales, Sobre FG Perspectiva ni Footer.
+
+---
+
+### 2. IDENTIFICACIÓN DEL LIBRO
+
+**Título:**
+Ideas y Consejos de Tráfico Web
+
+**Subtítulo:**
+Existen otras formas de generar tráfico para tu web además de los buscadores que puedes aplicar inmediatamente.
+
+**Categoría:**
+Crecimiento
+
+**URL:**
+Conservar exactamente la ruta existente del libro. No crear una ruta nueva, no modificar el slug ni alterar las URLs canónicas.
+
+**Portada:**
+Conservar la portada original que actualmente utiliza esta ficha. No sustituirla, rediseñarla ni buscar otra imagen.
+
+**Autor:**
+Francisco González.
+
+---
+
+### 3. CRITERIO EDITORIAL OBLIGATORIO
+
+El contenido debe desarrollar la temática desde una perspectiva editorial propia.
+
+El eje central de la página será:
+
+**El tráfico web como un sistema de distribución, descubrimiento, circulación de contenidos, conexión entre plataformas y generación de oportunidades.**
+
+El desarrollo debe centrarse en:
+
+- La diferencia entre publicar y ser descubierto.
+- La distribución como parte del trabajo editorial.
+- Los espacios digitales donde ya existe atención.
+- Las oportunidades que surgen al transformar y distribuir contenidos.
+- La circulación y el efecto acumulativo.
+- La curiosidad como punto de entrada.
+- La participación útil en comunidades.
+- Las conexiones entre plataformas y propiedad digital.
+- La relevancia de las visitas frente a su cantidad.
+- La recuperación y aprovechamiento de contenidos existentes.
+- La construcción de un sistema de descubrimiento sostenible.
+- La relación entre visitantes, oportunidades y crecimiento.
+
+El texto aprobado no debe transformarse en una descripción comercial del libro.
+
+#### Prohibiciones editoriales
+
+- No copiar la descripción original del libro.
+- No parafrasear la descripción original párrafo por párrafo.
+- No reutilizar la estructura del índice original del libro.
+- No crear contenido duplicado de Amazon, ClickBank u otras plataformas.
+- No reemplazar el texto aprobado por otro generado automáticamente.
+- No resumir ni recortar el desarrollo editorial.
+- No añadir secciones genéricas de relleno.
+- No repetir artificialmente palabras clave.
+- No utilizar encabezados genéricos como «Qué aprenderás», «Beneficios», «Para quién es» o «Por qué comprar este libro».
+- No reutilizar una arquitectura editorial de otras fichas.
+- No introducir afirmaciones, estadísticas o resultados inventados.
+
+El texto aprobado debe implementarse íntegramente, manteniendo sus párrafos, títulos, argumentos y orden.
+
+---
+
+### 4. SEO DE LA PÁGINA
+
+Implementar los siguientes metadatos específicos:
+
+**SEO Title:**
+
+Ideas y Consejos de Tráfico Web: cómo atraer visitantes | FG Perspectiva
+
+**Meta Description:**
+
+Descubre nuevas formas de atraer visitantes a tu sitio web, ampliar su visibilidad, aprovechar diferentes canales de distribución y generar oportunidades de tráfico.
+
+**Keyword principal:**
+
+Ideas y consejos de tráfico web
+
+**Temas y palabras clave secundarias:**
+
+- Cómo generar visitas a una página web.
+- Fuentes alternativas de tráfico.
+- Aumentar la visibilidad de un sitio.
+- Distribución de contenidos digitales.
+- Promoción de páginas web.
+- Conseguir visitantes sin depender exclusivamente de Google.
+
+Las palabras clave deben incorporarse de forma natural. No realizar keyword stuffing ni repetir frases con fines exclusivamente SEO.
+
+Implementar correctamente:
+
+- Title.
+- Meta description.
+- Canonical correspondiente a la URL actual.
+- Open Graph.
+- Twitter Card.
+- H1 único.
+- Jerarquía semántica H2 y H3, cuando corresponda.
+- JSON-LD Book.
+- JSON-LD BreadcrumbList.
+
+No inventar ISBN, fechas de publicación, precios, puntuaciones, valoraciones ni datos editoriales inexistentes.
+
+---
+
+### 5. ESTRUCTURA Y UBICACIÓN DEL ÍNDICE
+
+La página debe seguir la estructura editorial ya aprobada para las fichas de libros de FG Perspectiva.
+
+Orden obligatorio:
+
+1. Hero y presentación de la ficha.
+2. Introducción editorial.
+3. Índice visible de navegación.
+4. Desarrollo completo del contenido.
+5. Cierre editorial.
+6. Los componentes comerciales existentes, respetando su ubicación actual.
+7. CTA inferior existente, sin alterar su funcionamiento.
+
+El índice debe ubicarse después de la introducción y antes del desarrollo principal.
+
+Título del índice:
+
+**Contenido de esta página**
+
+Texto introductorio:
+
+**Accede directamente al apartado que te interesa.**
+
+El índice debe enlazar mediante anclas HTML reales a los doce apartados del contenido.
+
+Los IDs deben ser únicos, válidos y coincidir exactamente con los enlaces del índice.
+
+---
+
+### 6. ÍNDICE Y ANCLAS
+
+Utilizar los siguientes textos y anchors:
+
+1. Publicar no significa ser descubierto  
+   `publicar-no-significa-ser-descubierto`
+
+2. La distribución también forma parte del trabajo editorial  
+   `distribucion-trabajo-editorial`
+
+3. Encontrar lugares donde ya existe atención  
+   `lugares-donde-existe-atencion`
+
+4. Convertir una pieza de contenido en múltiples oportunidades  
+   `contenido-multiples-oportunidades`
+
+5. La circulación del contenido y el efecto acumulativo  
+   `circulacion-efecto-acumulativo`
+
+6. La curiosidad como punto de entrada  
+   `curiosidad-punto-entrada`
+
+7. Participar sin convertirse en ruido  
+   `participar-sin-ruido`
+
+8. Construir conexiones entre plataformas y propiedad digital  
+   `conexiones-plataformas-propiedad-digital`
+
+9. El tráfico que llega no siempre es el tráfico que necesitamos  
+   `trafico-relevante`
+
+10. Recuperar el valor de los recursos que ya tenemos  
+    `recuperar-valor-recursos`
+
+11. Crear un sistema de descubrimiento que podamos sostener  
+    `sistema-descubrimiento-sostenible`
+
+12. Cada visitante puede abrir una nueva oportunidad  
+    `visitante-nueva-oportunidad`
+
+El índice debe ser funcional, visualmente integrado en el diseño actual y accesible tanto en desktop como en dispositivos móviles.
+
+No crear un índice que duplique innecesariamente todos los encabezados fuera del contenido.
+
+---
+
+### 7. TEXTO EDITORIAL COMPLETO APROBADO
+
+Implementar exactamente el siguiente contenido, sin modificaciones, omisiones, resúmenes ni sustituciones.
+
+# Publicar no significa ser descubierto
+
+Internet nos ha acostumbrado a pensar que crear una página, publicar un artículo o poner en marcha un proyecto digital es suficiente para comenzar a recibir visitantes. Sin embargo, entre la existencia de un contenido y su descubrimiento hay una distancia que no siempre sabemos cómo recorrer.
+
+Podemos tener una web bien organizada, información útil y una propuesta interesante, pero si nadie encuentra una razón para llegar hasta ella, todos esos recursos permanecen prácticamente invisibles. El problema no reside necesariamente en la calidad de lo que hemos creado, sino en la ausencia de conexiones que permitan que otras personas lo descubran.
+
+Cuando analizamos un proyecto digital, solemos dedicar gran parte de nuestra atención a la producción. Elegimos temas, redactamos, diseñamos páginas y revisamos detalles. Es un trabajo necesario, pero no representa la totalidad de la actividad. Una publicación también necesita un contexto de circulación.
+
+El visitante no aparece espontáneamente porque hayamos terminado una página. Llega desde algún lugar, motivado por una necesidad, una recomendación, una curiosidad, una conversación o una oportunidad que ha despertado su interés.
+
+Comprender esta diferencia nos permite cambiar nuestra perspectiva. En lugar de preguntarnos únicamente qué debemos publicar, comenzamos a pensar dónde puede encontrarse ese contenido, quién podría beneficiarse de él y qué caminos facilitarían su descubrimiento.
+
+# La distribución también forma parte del trabajo editorial
+
+Crear contenido y conseguir que circule son dos actividades relacionadas, pero no idénticas. La primera consiste en desarrollar algo que merezca la atención de otras personas. La segunda implica encontrar los espacios, mecanismos y circunstancias que permitan que esa atención se produzca.
+
+Esta distinción tiene importantes consecuencias para la gestión de una web. Si todo nuestro esfuerzo termina cuando pulsamos el botón de publicar, estamos dejando sin desarrollar una parte fundamental del potencial de cada pieza.
+
+Un artículo puede tener varias posibilidades de exposición. Puede servir como respuesta dentro de una conversación, convertirse en material de referencia, utilizarse para explicar un concepto, compartirse en una comunidad especializada o funcionar como punto de partida para otros contenidos.
+
+No todas las publicaciones necesitan el mismo recorrido. Un tutorial técnico puede encontrar su público en un espacio dedicado a resolver problemas concretos. Un análisis puede despertar interés en comunidades profesionales. Una idea breve puede adquirir mayor alcance cuando se presenta en un formato visual o cuando se conecta con una discusión que ya está en marcha.
+
+Por eso, la distribución no debería ser una tarea improvisada que realizamos únicamente cuando necesitamos aumentar las visitas. Conviene considerarla desde el momento en que concebimos el contenido, pensando en sus posibles contextos de descubrimiento.
+
+# Encontrar lugares donde ya existe atención
+
+Una de las ventajas de Internet es que no necesitamos construir una audiencia desde cero para cada proyecto. Existen comunidades, plataformas, publicaciones, grupos especializados y espacios de intercambio donde las personas ya se reúnen alrededor de intereses concretos.
+
+La dificultad consiste en reconocer cuáles de esos lugares tienen sentido para nuestro contenido.
+
+Una plataforma puede reunir millones de usuarios y, aun así, resultar poco apropiada para una página determinada. En cambio, un espacio mucho más pequeño puede ofrecer una audiencia especialmente interesada en el tema que estamos desarrollando.
+
+El valor de un canal no depende exclusivamente de su tamaño. También debemos considerar el contexto, la afinidad, la calidad de la interacción y las expectativas de quienes participan.
+
+Cuando buscamos oportunidades de distribución, podemos observar qué preguntas se repiten, qué problemas generan conversaciones, qué recursos se recomiendan y qué tipo de información parece faltar. Estas señales nos ayudan a identificar lugares donde nuestro contenido puede contribuir de manera legítima.
+
+No se trata de entrar en cualquier espacio para colocar enlaces. Se trata de comprender su dinámica y determinar si nuestra aportación puede ser útil. Cuando existe esa conexión, la visibilidad puede surgir de forma más natural y, sobre todo, puede atraer personas con un interés real.
+
+# Convertir una pieza de contenido en múltiples oportunidades
+
+El contenido que publicamos no tiene por qué limitarse a su formato original. Una página extensa puede contener ideas que merecen ser desarrolladas de manera independiente, explicadas con otro lenguaje o presentadas desde una perspectiva diferente.
+
+Esto no significa duplicar el artículo en múltiples plataformas. La oportunidad está en identificar sus componentes y adaptarlos a las características de cada contexto.
+
+Un estudio puede dar lugar a una explicación breve de uno de sus hallazgos. Una guía puede proporcionar material para una serie de publicaciones. Una página de referencia puede convertirse en una respuesta específica a una pregunta recurrente. Una experiencia desarrollada en un artículo puede servir para iniciar una conversación.
+
+Esta transformación requiere algo más que recortar párrafos. Debemos comprender qué valor tiene cada fragmento, cuál es su propósito y cómo puede funcionar de manera independiente sin perder sentido.
+
+Cuando aprendemos a trabajar así, el esfuerzo de creación deja de depender exclusivamente de producir nuevas páginas constantemente. Comenzamos a aprovechar mejor los recursos que ya hemos desarrollado, ampliando su alcance sin sacrificar la calidad ni convertir nuestras publicaciones en copias repetitivas.
+
+La verdadera ventaja no está en multiplicar indiscriminadamente el contenido, sino en aumentar las posibilidades de que una misma idea encuentre a las personas adecuadas en diferentes circunstancias.
+
+# La circulación del contenido y el efecto acumulativo
+
+El tráfico puede parecer una sucesión de resultados aislados: hoy recibimos algunas visitas, mañana otras y pasado mañana quizá ninguna. Sin embargo, los proyectos que desarrollan una presencia consistente pueden generar relaciones entre sus diferentes publicaciones, canales y recursos.
+
+Una persona descubre una página. Otra encuentra una publicación relacionada en una plataforma externa. Un visitante guarda un recurso para consultarlo más tarde. Alguien recomienda una página dentro de una conversación. Con el tiempo, estos pequeños acontecimientos pueden contribuir a crear una red de descubrimiento.
+
+El efecto acumulativo no significa que cada acción vaya a producir un resultado inmediato ni que todas las publicaciones terminen generando visitas. Significa que las oportunidades de exposición pueden aumentar cuando el proyecto deja de depender de una única acción o de una única ubicación.
+
+Para favorecer ese proceso, necesitamos continuidad. No basta con compartir algo una vez y olvidarnos de ello. Debemos encontrar una forma razonable de mantener la presencia, revisar qué recursos siguen siendo relevantes y reconocer cuándo una publicación merece una nueva oportunidad de circulación.
+
+La consistencia, en este contexto, no implica estar permanentemente conectado ni publicar de forma compulsiva. Significa disponer de una dinámica que podamos mantener sin deteriorar el trabajo principal del proyecto.
+
+# La curiosidad como punto de entrada
+
+Gran parte del descubrimiento digital comienza con una pequeña interrupción en la rutina. Una pregunta, una imagen, una afirmación interesante, un problema que no habíamos considerado o una explicación que promete aclarar algo.
+
+La curiosidad puede funcionar como un puente entre una persona y un contenido, pero no debe confundirse con la utilización de titulares engañosos. Despertar interés y satisfacerlo son dos partes de una misma responsabilidad.
+
+Si presentamos una idea de forma atractiva, debemos asegurarnos de que la página a la que conduce realmente desarrolla esa idea. Una discrepancia entre lo que prometemos y lo que ofrecemos puede generar clics momentáneos, pero perjudica la confianza y reduce las posibilidades de que el visitante quiera continuar explorando.
+
+Podemos pensar en la curiosidad como una invitación. El contenido debe estar preparado para responder a ella, aportar contexto y ofrecer algo que justifique el tiempo dedicado a la lectura.
+
+Este planteamiento influye tanto en la forma de compartir una página como en la selección de los temas. Una publicación que conecta con una inquietud real tiene más posibilidades de iniciar una interacción significativa que otra cuyo único objetivo sea conseguir un clic.
+
+# Participar sin convertirse en ruido
+
+Las comunidades digitales pueden representar oportunidades de visibilidad, pero su aprovechamiento depende de cómo participamos en ellas. Cuando entramos en un espacio únicamente para promocionar nuestro sitio, es fácil que nuestra presencia resulte poco relevante para los demás.
+
+La participación requiere observar antes de intervenir. Debemos comprender qué temas se consideran importantes, qué tipo de respuestas son bien recibidas y cuáles son las normas que regulan cada espacio. Esa información nos permite decidir si tenemos algo que aportar.
+
+En ocasiones, la mejor contribución será una explicación completa que no necesita enlazar a nuestra web. En otras, podremos compartir un recurso porque responde directamente a una pregunta. También habrá situaciones en las que lo más adecuado sea participar, aprender y no promocionar nada.
+
+Este tipo de comportamiento ayuda a construir una presencia reconocible. La confianza no surge de repetir nuestro nombre o nuestro enlace, sino de la calidad de las aportaciones y de la coherencia entre lo que decimos y lo que ofrecemos.
+
+Cuando existe una relación auténtica entre nuestra actividad y una comunidad, la posibilidad de atraer visitantes deja de depender exclusivamente de la promoción. El interés puede surgir de la propia interacción y de la percepción de que nuestro proyecto tiene algo valioso que aportar.
+
+# Construir conexiones entre plataformas y propiedad digital
+
+Las plataformas externas pueden facilitar el descubrimiento, pero no todas ofrecen las mismas condiciones ni garantizan que nuestra presencia permanezca estable. Sus reglas, mecanismos de distribución y prioridades pueden cambiar, afectando a la exposición que conseguimos.
+
+Por esta razón, resulta conveniente pensar en las plataformas como puntos de conexión, no como el destino final de toda nuestra actividad digital.
+
+Nuestro sitio web puede desempeñar el papel de centro organizador. Allí reunimos las publicaciones, los recursos, las páginas de referencia y las diferentes líneas de contenido que forman el proyecto. Los canales externos permiten conectar ese núcleo con otros entornos donde se encuentran potenciales visitantes.
+
+Esta relación debe construirse de forma equilibrada. No necesitamos estar presentes en todos los lugares ni intentar mantener perfiles que no podemos gestionar adecuadamente. Es preferible desarrollar unas pocas vías de descubrimiento que podamos atender, comprender y mejorar.
+
+La independencia digital no significa aislamiento. Significa tener un espacio propio y utilizar las conexiones externas para ampliar sus posibilidades, sin depender por completo de las decisiones de una sola plataforma.
+
+# El tráfico que llega no siempre es el tráfico que necesitamos
+
+Recibir visitantes puede resultar estimulante, especialmente cuando un proyecto lleva tiempo sin mostrar crecimiento. Sin embargo, el número de visitas por sí solo no explica si estamos avanzando en la dirección correcta.
+
+Una página puede recibir una gran cantidad de visitantes que abandonan rápidamente el sitio porque el contenido no responde a sus expectativas. Otra puede tener menos entradas, pero generar lecturas más profundas, consultas, suscripciones o recorridos hacia otras publicaciones.
+
+Por eso, debemos interpretar el tráfico en relación con el propósito de cada página. Si queremos informar, nos interesa saber si las personas encuentran la información que necesitan. Si presentamos una colección de recursos, podemos observar si los visitantes continúan explorando. Si desarrollamos una propuesta comercial, necesitaremos comprender qué acciones realizan después de llegar.
+
+Esta perspectiva evita perseguir cifras que no necesariamente representan progreso. Nos ayuda a distinguir entre exposición y relevancia, entre atraer a alguien y ofrecerle una experiencia que realmente tenga sentido.
+
+La calidad de las visitas también influye en las decisiones que tomamos. Puede ser más útil mejorar la conexión con una audiencia específica que intentar aumentar indiscriminadamente el alcance.
+
+# Recuperar el valor de los recursos que ya tenemos
+
+En muchos proyectos digitales existe una cantidad considerable de contenido que apenas se aprovecha después de su publicación. Algunas páginas siguen siendo útiles, otras necesitan actualización y muchas contienen ideas que podrían conectarse mejor con el resto del sitio.
+
+Antes de producir continuamente material nuevo, podemos revisar lo que ya hemos creado. Esta revisión permite identificar publicaciones que merecen mayor exposición, temas que pueden ampliarse, páginas que necesitan una mejor conexión interna y recursos que podrían presentarse de una forma más accesible.
+
+No todos los contenidos antiguos deben recuperarse. Algunos habrán perdido vigencia o ya no representan la dirección del proyecto. Otros, sin embargo, pueden seguir resolviendo problemas y conservar un valor importante para los visitantes.
+
+La revisión también nos permite descubrir oportunidades que no habíamos considerado. Dos publicaciones relacionadas pueden complementarse. Una página muy completa puede servir como referencia para desarrollar contenidos más específicos. Un tema que recibió poca atención puede encontrar un nuevo contexto en otra plataforma.
+
+De esta manera, el catálogo de contenidos deja de ser un conjunto de publicaciones independientes y comienza a funcionar como un recurso que podemos gestionar, reorganizar y utilizar de manera más estratégica.
+
+# Crear un sistema de descubrimiento que podamos sostener
+
+Una estrategia de tráfico no necesita convertirse en una actividad interminable. De hecho, cuando cada publicación exige una cantidad excesiva de tareas de promoción, es probable que terminemos abandonando el sistema.
+
+La sostenibilidad depende de que las acciones elegidas sean compatibles con nuestros recursos, tiempo y objetivos. Un proyecto pequeño puede funcionar con una dinámica sencilla, mientras que otro con mayor capacidad quizá necesite procesos más organizados.
+
+Lo importante es que exista una lógica. Podemos decidir qué contenidos merecen distribución adicional, cuáles son los canales más apropiados, cuánto tiempo dedicaremos a cada acción y cuándo revisaremos los resultados.
+
+También debemos permitir que el sistema evolucione. Si una vía de descubrimiento deja de ser relevante, podemos reducir su prioridad. Si encontramos una comunidad donde nuestras publicaciones generan interés, quizá tenga sentido profundizar nuestra participación. Si un formato resulta demasiado costoso, podemos buscar una alternativa más sencilla.
+
+La planificación aporta dirección, pero la observación aporta información. Combinar ambas nos permite construir un proceso que no dependa de la improvisación y que tampoco se convierta en una rutina rígida.
+
+# Cada visitante puede abrir una nueva oportunidad
+
+El crecimiento de un proyecto digital no siempre comienza con una gran campaña ni con una publicación que alcanza miles de personas. En ocasiones, empieza con una conexión pequeña, una página que alguien descubre en el momento adecuado o un recurso que responde a una necesidad concreta.
+
+Cuando ampliamos nuestras vías de descubrimiento, cambiamos la relación que mantenemos con la visibilidad. Dejamos de esperar que un único mecanismo decida cuándo y cómo llegarán las personas. Comenzamos a desarrollar posibilidades que dependen de nuestras decisiones, de nuestra capacidad de observar y de la utilidad que aportamos.
+
+No todos los caminos producirán resultados. Algunos requerirán demasiado esfuerzo, otros atraerán visitantes poco interesados y habrá acciones que simplemente no encajen con nuestro proyecto. Esa experiencia forma parte del proceso de aprendizaje.
+
+Lo importante es mantener una perspectiva abierta, utilizar los recursos con criterio y comprender que atraer visitantes no es un objetivo aislado. Es una forma de conectar nuestro trabajo con personas que pueden encontrar valor en él.
+
+Una web adquiere nuevas posibilidades cuando deja de ser un lugar donde simplemente publicamos y se convierte en un proyecto que participa activamente en diferentes espacios de descubrimiento. Es en esa capacidad de conexión, adaptación y continuidad donde podemos encontrar una forma más equilibrada de desarrollar su crecimiento.
+
+---
+
+### 8. IMPLEMENTACIÓN DEL ÍNDICE EN EL CONTENIDO
+
+Crear un índice navegable real, no decorativo.
+
+Cada elemento debe enlazar a su correspondiente sección dentro de la misma página.
+
+Utilizar los anchors definidos anteriormente.
+
+El índice debe:
+
+- Aparecer después de la introducción.
+- Ser visualmente coherente con el diseño actual de FG Perspectiva.
+- Ser cómodo de leer.
+- Tener una jerarquía visual clara.
+- Permitir navegación fluida.
+- Funcionar correctamente en dispositivos móviles.
+- No generar errores de anclaje.
+- Evitar que los encabezados queden ocultos debajo del header fijo, si existe.
+
+Si el proyecto ya dispone de un componente de índice reutilizable, utilizarlo siempre que sea compatible con la ficha, sin alterar su comportamiento en otras páginas.
+
+No crear un componente global nuevo innecesariamente.
+
+---
+
+### 9. METADATOS Y DATOS ESTRUCTURADOS
+
+Implementar los metadatos específicos de esta ficha, respetando el sistema SEO existente.
+
+Incluir:
+
+- SEO Title.
+- Meta Description.
+- Canonical.
+- Open Graph Title.
+- Open Graph Description.
+- Open Graph Image utilizando la portada existente.
+- Twitter Card.
+- JSON-LD Book.
+- JSON-LD BreadcrumbList.
+
+El objeto Book debe utilizar exclusivamente datos reales disponibles en el proyecto.
+
+No inventar:
+
+- ISBN.
+- Fecha de publicación.
+- Precio.
+- Rating.
+- Número de reseñas.
+- Datos inexistentes del autor.
+- Disponibilidades no verificadas.
+
+Mantener la relación correcta con la categoría Crecimiento y las breadcrumbs reales del sitio.
+
+---
+
+### 10. ENLACES COMERCIALES — PRESERVACIÓN O ACTUALIZACIÓN
+
+La ficha dispone de los siguientes enlaces comerciales que deben estar presentes y correctamente asociados.
+
+#### Amazon Kindle
+
+https://www.amazon.com/dp/B08ZJTYM5N
+
+#### Amazon tapa blanda
+
+https://www.amazon.com/dp/B08ZB91HVX
+
+#### Amazon tapa dura
+
+https://www.amazon.com/dp/B09SFRGC47
+
+#### Audiolibro
+
+https://www.amazon.com/dp/B0HB6ZJC53
+
+#### ClickBank
+
+https://traficoweb.vercel.app/
+
+#### Payhip
+
+https://payhip.com/b/kyY9j
+
+Utilizar los componentes comerciales existentes del proyecto.
+
+No crear un nuevo sistema de compra.
+
+No cambiar los textos de los botones si ya están definidos correctamente.
+
+No eliminar enlaces disponibles.
+
+No inventar nuevas plataformas de venta.
+
+No utilizar enlaces de otros libros.
+
+No alterar los destinos comerciales.
+
+Los enlaces externos de compra deben conservar los atributos de seguridad y SEO que el proyecto ya utiliza, incluyendo target y rel cuando corresponda.
+
+---
+
+### 11. PRESERVACIÓN DE LA ESTRUCTURA COMERCIAL Y VISUAL
+
+Es absolutamente obligatorio preservar:
+
+- La portada actual.
+- El Hero existente.
+- El diseño de la ficha.
+- Los botones de compra superiores.
+- Su ubicación actual.
+- El orden actual de los componentes comerciales, respetando el estándar global ya establecido.
+- Los textos de botones existentes.
+- La PurchaseModal.
+- El comportamiento de la PurchaseModal.
+- El CTA inferior de compra.
+- Los enlaces comerciales.
+- El Header.
+- El Footer.
+- La identidad visual global.
+- La tipografía.
+- Los colores.
+- El sistema responsive.
+- Las rutas.
+- El comportamiento de navegación.
+
+No eliminar botones.
+
+No mover botones de compra a otras ubicaciones.
+
+No sustituir botones por enlaces de texto.
+
+No crear botones duplicados.
+
+No eliminar la llamada comercial inferior.
+
+No cambiar los estilos globales.
+
+No realizar refactorizaciones innecesarias.
+
+No alterar componentes compartidos de otras fichas.
+
+No modificar el Footer.
+
+No modificar ninguna otra página.
+
+---
+
+### 12. IMPLEMENTACIÓN TÉCNICA
+
+Antes de realizar cambios:
+
+1. Identificar la ruta actual de Ideas y Consejos de Tráfico Web.
+2. Identificar su componente React o archivo de vista.
+3. Revisar cómo se implementan actualmente las fichas de libros.
+4. Identificar el sistema SEO existente.
+5. Identificar cómo se implementan los índices navegables en las fichas que ya han sido actualizadas.
+6. Identificar los componentes comerciales y modal actuales.
+7. Trabajar exclusivamente sobre la ficha de este libro.
+
+Implementar el contenido dentro del componente correspondiente.
+
+Si la arquitectura requiere modificaciones en App.tsx, router, seo.ts o prerender, realizar exclusivamente los cambios mínimos necesarios para esta ficha.
+
+No reescribir ni reorganizar el proyecto completo.
+
+No cambiar otras rutas.
+
+No modificar los textos, metadatos ni índices de otros libros.
+
+No crear respaldos internos innecesarios para esta modificación rutinaria. El proyecto dispone de control de versiones.
+
+---
+
+### 13. RESPONSIVE Y EXPERIENCIA DE USUARIO
+
+Verificar el comportamiento de la ficha en escritorio, tablet y móvil.
+
+Comprobar:
+
+- Que el texto no desborde.
+- Que los encabezados tengan jerarquía adecuada.
+- Que el índice sea legible.
+- Que los anchors funcionen.
+- Que el espaciado sea consistente.
+- Que la portada mantenga su proporción.
+- Que los botones comerciales sigan siendo accesibles.
+- Que los elementos interactivos no se solapen.
+- Que la lectura de un contenido largo sea cómoda.
+- Que no existan elementos duplicados.
+- Que no se introduzcan problemas de navegación.
+
+Mantener el estilo editorial de FG Perspectiva, sin introducir una estética nueva.
+
+---
+
+### 14. VALIDACIÓN OBLIGATORIA
+
+Una vez implementada la ficha, realizar las verificaciones disponibles.
+
+#### Contenido
+
+- Confirmar que se han implementado los 12 apartados.
+- Confirmar que el texto completo está presente.
+- Confirmar que no se ha resumido.
+- Confirmar que no se han omitido párrafos.
+- Confirmar que el índice corresponde al contenido real.
+
+#### SEO
+
+- Revisar Title.
+- Revisar Meta Description.
+- Revisar Canonical.
+- Revisar Open Graph.
+- Revisar Twitter Card.
+- Revisar H1.
+- Revisar H2.
+- Revisar JSON-LD Book.
+- Revisar JSON-LD BreadcrumbList.
+- Confirmar que no hay errores de metadatos.
+
+#### Navegación
+
+- Probar todos los enlaces del índice.
+- Confirmar que los anchors funcionan.
+- Confirmar que el header no tapa los encabezados al navegar.
+- Confirmar que la navegación interna es correcta.
+
+#### Comercial
+
+- Probar Kindle.
+- Probar tapa blanda.
+- Probar tapa dura.
+- Probar audiolibro.
+- Probar ClickBank.
+- Probar Payhip.
+- Verificar PurchaseModal.
+- Verificar CTA inferior.
+- Confirmar que ningún botón ha desaparecido o cambiado de ubicación.
+
+#### Técnico
+
+- Ejecutar build.
+- Ejecutar prerender si el proyecto lo requiere.
+- Verificar que la ruta actual sigue funcionando.
+- Confirmar que no hay errores de compilación.
+- Confirmar que no se han alterado otras páginas.
+- Revisar responsive.
+
+---
+
+### 15. LIMITACIONES DE ESTA IMPLEMENTACIÓN
+
+Esta tarea no autoriza:
+
+- Modificar otras fichas de libros.
+- Modificar páginas de categorías.
+- Modificar la Home.
+- Modificar Biblioteca.
+- Modificar Sistemas Digitales.
+- Modificar Sobre FG Perspectiva.
+- Modificar Footer.
+- Modificar el sistema global de navegación.
+- Cambiar el diseño global.
+- Cambiar URLs.
+- Crear nuevas páginas.
+- Eliminar componentes comerciales.
+- Eliminar botones.
+- Modificar enlaces comerciales de otros libros.
+- Realizar una refactorización general.
+- Crear copias de seguridad internas innecesarias.
+- Desplegar en Vercel.
+- Publicar cambios en producción.
+
+Trabajar exclusivamente en el entorno actual de Google AI Studio.
+
+---
+
+### 16. INFORME FINAL
+
+Al finalizar, presentar un informe claro y verificable que incluya:
+
+1. Archivos modificados.
+2. Ruta de la ficha actualizada.
+3. Confirmación de que el contenido completo aprobado ha sido implementado.
+4. Confirmación del número de secciones y anchors.
+5. SEO implementado.
+6. JSON-LD implementado.
+7. Resultado del build.
+8. Resultado del prerender.
+9. Validación responsive.
+10. Verificación de los enlaces comerciales.
+11. Verificación de los botones superiores y CTA inferior.
+12. Confirmación de que PurchaseModal funciona.
+13. Confirmación de que no se han modificado otras páginas.
+14. Confirmación de que no se ha realizado ningún despliegue.
+
+No afirmar que una prueba ha sido superada si realmente no se ha ejecutado.
+
+La implementación debe finalizar únicamente cuando la ficha esté correctamente integrada, el contenido aprobado permanezca intacto y todos los elementos técnicos y comerciales existentes funcionen correctamente.

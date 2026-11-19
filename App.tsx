@@ -28,6 +28,7 @@ import ChatGptDineroView from './components/views/ChatGptDineroView.tsx';
 import ChatGptInspirationView from './components/views/ChatGptInspirationView.tsx';
 import InteligenciaArtificialView from './components/views/InteligenciaArtificialView.tsx';
 import ElFuturoDelMarketingIaView from './components/views/ElFuturoDelMarketingIaView.tsx';
+import IdeasTraficoWebView from './components/views/IdeasTraficoWebView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
@@ -152,6 +153,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/el-futuro-del-marketing-ia/' && matchedBook) {
     return <ElFuturoDelMarketingIaView book={matchedBook} />;
+  }
+
+  if (currentPath === '/ideas-y-consejos-de-trafico-web/' && matchedBook) {
+    return <IdeasTraficoWebView book={matchedBook} />;
   }
 
   if (matchedBook) {

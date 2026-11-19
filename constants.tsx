@@ -1367,26 +1367,57 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'crecimiento',
         title: 'Ideas y consejos de Tráfico Web',
         description: 'Aprende a atraer visitantes de forma constante con métodos probados.',
-        url: 'https://amzn.to/3Flv3QS',
+        url: 'https://www.amazon.com/dp/B08ZB91HVX',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/13-ideas-y-consejos-de-trafico-web-libro-400.jpg',
         purchaseOptions: [
-          { 
-            platform: 'Amazon', 
-            url: 'https://amzn.to/3Flv3QS', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.png',
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B08ZB91HVX',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
             emoji: '🛒',
-            cta: 'Comprar en Amazon'
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
           },
-          { 
-            platform: 'Clickbank', 
-            url: 'https://traficoweb.vercel.app/', 
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B09SFRGC47',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B08ZJTYM5N',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            tooltip: 'Amazon/Audible',
+            url: 'https://www.amazon.com/dp/B0HB6ZJC53',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Clickbank',
+            url: 'https://traficoweb.vercel.app/',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.png',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
-          { 
-            platform: 'Payhip', 
-            url: 'https://payhip.com/b/kyY9j', 
+          {
+            platform: 'Payhip',
+            url: 'https://payhip.com/b/kyY9j',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.png',
             emoji: '💎',
             cta: 'Descarga Directa'

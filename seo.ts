@@ -2214,6 +2214,98 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6x. Ficha editorial dedicada: Ideas y Consejos de Tráfico Web
+  if (path === '/ideas-y-consejos-de-trafico-web/') {
+    const trafficBook = ALL_BOOKS.find(
+      (b) =>
+        b.path === '/ideas-y-consejos-de-trafico-web/' ||
+        b.slug === 'ideas-y-consejos-de-trafico-web'
+    );
+    const trafficMetaDescription =
+      'Descubre nuevas formas de atraer visitantes a tu sitio web, ampliar su visibilidad, aprovechar diferentes canales de distribución y generar oportunidades de tráfico.';
+    const trafficSchemaDescription =
+      'Una perspectiva editorial sobre el tráfico web como sistema de distribución, descubrimiento, circulación de contenidos, conexión entre plataformas y generación de oportunidades sostenibles.';
+    const trafficCover =
+      trafficBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/13-ideas-y-consejos-de-trafico-web-libro-400.jpg';
+    const trafficUrl = `${BASE_URL}/ideas-y-consejos-de-trafico-web/`;
+    const trafficSameAs = [
+      'https://www.amazon.com/dp/B08ZB91HVX',
+      'https://www.amazon.com/dp/B09SFRGC47',
+      'https://www.amazon.com/dp/B08ZJTYM5N',
+      'https://www.amazon.com/dp/B0HB6ZJC53',
+      'https://traficoweb.vercel.app/',
+      'https://payhip.com/b/kyY9j'
+    ];
+
+    const trafficBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Ideas y Consejos de Tráfico Web',
+      alternateName:
+        'Existen otras formas de generar tráfico para tu web además de los buscadores que puedes aplicar inmediatamente.',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      },
+      description: trafficSchemaDescription,
+      url: trafficUrl,
+      image: trafficCover,
+      inLanguage: 'es',
+      genre: 'Crecimiento',
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
+        'https://schema.org/EBook',
+        'https://schema.org/AudiobookFormat'
+      ],
+      sameAs: trafficSameAs
+    };
+
+    return {
+      path: '/ideas-y-consejos-de-trafico-web/',
+      title: 'Ideas y Consejos de Tráfico Web: cómo atraer visitantes | FG Perspectiva',
+      description: trafficMetaDescription,
+      canonical: trafficUrl,
+      ogImage: trafficCover,
+      ogType: 'book',
+      h1: 'Ideas y Consejos de Tráfico Web',
+      schema: [
+        trafficBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Crecimiento',
+              item: `${BASE_URL}/crecimiento/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Ideas y Consejos de Tráfico Web',
+              item: trafficUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {
