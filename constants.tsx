@@ -1233,16 +1233,6 @@ export const FEATURED_BOOKS: BookCategory[] = [
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
             emoji: '📱',
             rel: 'nofollow noopener noreferrer'
-          },
-          {
-            platform: 'Amazon',
-            cta: 'Audiolibro',
-            format: 'Audiolibro',
-            tooltip: 'Amazon/Audible',
-            url: 'https://www.amazon.com/dp/B0HB6KFDPK',
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
-            emoji: '🎧',
-            rel: 'nofollow noopener noreferrer'
           }
         ],
         extraInfo: [

@@ -1987,8 +1987,7 @@ export const getPageMeta = (rawPath: string): PageMeta => {
       bookFormat: [
         'https://schema.org/Paperback',
         'https://schema.org/Hardcover',
-        'https://schema.org/EBook',
-        'https://schema.org/AudiobookFormat'
+        'https://schema.org/EBook'
       ]
     };
 
