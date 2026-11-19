@@ -1,0 +1,799 @@
+# INSTRUCCIÓN INTEGRAL PARA GOOGLE AI STUDIO
+## Implementación editorial, SEO y estructural de la ficha «El futuro del marketing (IA)»
+
+Implementar la ficha editorial completa del libro **El futuro del marketing (IA)** dentro del proyecto FG Perspectiva.
+
+Esta tarea consiste en sustituir y optimizar el contenido actual de la ficha mediante la incorporación del texto editorial aprobado, un índice de navegación funcional, SEO on-page completo y datos estructurados, manteniendo intactos el diseño general, la identidad visual, la ruta existente y todos los componentes comerciales.
+
+Trabajar exclusivamente sobre esta ficha.
+
+No modificar otras páginas, categorías, libros, componentes globales ni elementos ajenos a esta tarea.
+
+---
+
+# 1. DATOS OFICIALES DEL LIBRO
+
+**Título:** El futuro del marketing (IA)
+
+**Subtítulo:** El poder disruptivo de la inteligencia artificial y el impacto transformador en el marketing digital
+
+**Autor:** Francisco González
+
+**Categoría:** Tecnología
+
+**Amazon Kindle:**
+https://www.amazon.com/dp/B0C7G28KTZ
+
+**Amazon Paperback:**
+https://www.amazon.com/dp/B0C7DXCT37
+
+**Amazon Hardcover:**
+https://www.amazon.com/dp/B0D3V5HF3C
+
+**ClickBank:**
+https://elfuturodelmarketingia.vercel.app/
+
+Conservar la ruta actual del libro, la portada existente, su categoría, la posición dentro del catálogo y todos los datos válidos que ya estén correctamente implementados.
+
+No inventar ISBN, precios, valoraciones, fechas, disponibilidad, enlaces adicionales ni datos comerciales.
+
+---
+
+# 2. OBJETIVO Y POSICIONAMIENTO EDITORIAL
+
+La ficha debe posicionar el libro como una obra sobre la transformación del marketing a partir de la inteligencia artificial.
+
+El enfoque editorial no debe centrarse en explicar la inteligencia artificial de manera general, sino en analizar cómo está modificando la forma en que comprendemos el mercado, interpretamos al consumidor, organizamos la actividad comercial, desarrollamos estrategias, evaluamos información y construimos relaciones.
+
+La página debe transmitir una visión contemporánea del marketing, en la que la tecnología amplía las capacidades de análisis y ejecución, pero no sustituye la estrategia, la creatividad, el criterio ni la comprensión humana.
+
+El contenido debe abordar el marketing desde una perspectiva estratégica y reflexiva, evitando que se convierta en un catálogo de herramientas, una colección de tutoriales o una exposición genérica de funcionalidades de IA.
+
+## Diferenciación respecto a otros libros del catálogo
+
+Esta ficha debe conservar una identidad editorial claramente diferenciada de:
+
+- **Cómo ganar dinero con ChatGPT:** oportunidades de negocio, aplicaciones, productividad, servicios y posibilidades de monetización.
+- **Desbloquea tu inspiración con ChatGPT:** creatividad, escritura, exploración de ideas, inspiración y procesos creativos.
+- **Inteligencia Artificial: Más Allá de la Imaginación y de los Límites:** evolución tecnológica, alcance de la IA, sociedad, capacidades humanas, límites y transformación.
+- **El futuro del marketing (IA):** transformación de la disciplina del marketing, mercado, consumidores, relevancia, estrategia, automatización, experiencia comercial y evolución del profesional.
+
+No convertir esta ficha en una versión de otro libro.
+
+No centrar el texto en ganar dinero con inteligencia artificial.
+
+No desarrollar tutoriales de ChatGPT.
+
+No introducir contenido específico sobre creación de ebooks, afiliación, CPA, blogging o monetización, salvo que ya forme parte de algún elemento comercial existente que deba conservarse sin modificaciones.
+
+---
+
+# 3. CRITERIOS EDITORIALES OBLIGATORIOS
+
+El texto debe:
+
+- Ser original.
+- Tener un mínimo de 900 palabras; se recomienda superar ampliamente ese mínimo.
+- Mantener una redacción profesional, fluida y natural.
+- Evitar repeticiones de ideas, párrafos y argumentos.
+- Desarrollar cada apartado con profundidad suficiente.
+- Evitar secciones genéricas que podrían utilizarse en cualquier libro.
+- Mantener una perspectiva estratégica, comercial y humana.
+- Evitar el keyword stuffing.
+- No exagerar las capacidades de la inteligencia artificial.
+- No presentar la tecnología como una solución automática a cualquier problema.
+- No utilizar afirmaciones absolutas o futuristas sin fundamento.
+- Evitar que el contenido parezca escrito exclusivamente para buscadores.
+- No repetir continuamente la palabra inteligencia artificial de forma artificial.
+- Mantener coherencia entre introducción, índice, desarrollo y cierre.
+
+La página debe ofrecer una experiencia editorial real, no una ficha comercial superficial.
+
+---
+
+# 4. TEXTO EDITORIAL APROBADO
+
+Implementar el siguiente contenido como base editorial definitiva de la ficha.
+
+No sustituirlo por un resumen.
+
+No reducirlo a párrafos breves.
+
+No reorganizar arbitrariamente los apartados.
+
+Mantener los argumentos, el sentido, la profundidad y la identidad del texto.
+
+## INTRODUCCIÓN
+
+El marketing está atravesando una transformación que no depende únicamente de la aparición de nuevas herramientas, sino de un cambio en la manera de interpretar el mercado, comprender a las personas y organizar las decisiones comerciales. Durante años, muchas estrategias digitales se construyeron a partir de datos históricos, campañas planificadas, segmentos relativamente estables y procesos que requerían tiempo para evaluar sus resultados. Hoy, la inteligencia artificial introduce una dinámica diferente: la posibilidad de trabajar con información a mayor escala, detectar relaciones con rapidez y adaptar determinadas acciones a circunstancias que cambian constantemente.
+
+Este nuevo escenario no significa que las estrategias tradicionales hayan perdido todo su valor. Significa que sus fundamentos deben revisarse para comprender cómo pueden evolucionar. La tecnología está modificando las herramientas disponibles, pero también las expectativas de los consumidores, la competencia entre empresas y la manera en que se distribuye el esfuerzo dentro de una actividad de marketing.
+
+Comprender esta transformación exige mirar más allá de la automatización. La verdadera cuestión no es cuántas tareas podemos delegar en una máquina, sino cómo podemos construir una actividad comercial más consciente de su entorno, mejor preparada para interpretar información y capaz de responder sin perder su identidad ni su relación con las personas.
+
+---
+
+## 1. El marketing ya no puede depender únicamente de la experiencia acumulada
+
+La experiencia sigue siendo uno de los recursos más valiosos de cualquier profesional del marketing. Permite interpretar situaciones, reconocer patrones, comprender comportamientos y evitar errores que pueden resultar costosos. Sin embargo, un mercado digital cada vez más dinámico puede generar una cantidad de señales difícil de observar mediante métodos exclusivamente manuales.
+
+Las preferencias cambian, los intereses se desplazan, aparecen nuevos competidores y los consumidores interactúan con marcas a través de múltiples canales. En estas circunstancias, tomar decisiones basándonos únicamente en experiencias anteriores puede limitar nuestra capacidad de reconocer lo que está ocurriendo en el presente.
+
+La inteligencia artificial permite incorporar nuevas formas de analizar esa realidad. Puede ayudarnos a examinar información, descubrir relaciones, identificar variaciones y encontrar indicios que merecen una investigación más profunda. Su valor no consiste en reemplazar la experiencia, sino en ofrecerle una perspectiva más amplia.
+
+El profesional del marketing necesita combinar lo que ya sabe con aquello que puede descubrir a través de los datos. Esta combinación resulta especialmente importante cuando las condiciones del mercado cambian con rapidez y las decisiones deben revisarse antes de que una oportunidad pierda relevancia.
+
+La experiencia aporta contexto. La tecnología amplía nuestra capacidad de observación. El criterio profesional permite transformar ambas cosas en decisiones que tengan sentido.
+
+---
+
+## 2. De los segmentos estáticos a las situaciones cambiantes del consumidor
+
+Durante mucho tiempo, la segmentación del mercado se apoyó en características relativamente estables, como la edad, la ubicación, determinados intereses o los hábitos de consumo. Estos criterios continúan siendo útiles para comprender grupos de personas, pero no siempre reflejan lo que cada consumidor necesita en un momento concreto.
+
+Una misma persona puede tener motivaciones diferentes dependiendo de la situación, la urgencia, el contexto o la etapa en la que se encuentre. Alguien que habitualmente compara precios puede priorizar la rapidez en otra circunstancia. Un consumidor interesado en una categoría puede no estar preparado para comprar, mientras que otro que apenas había mostrado interés puede encontrarse ante una necesidad inmediata.
+
+La inteligencia artificial abre la posibilidad de interpretar señales más variadas y reconocer cambios en determinados patrones de comportamiento. Esto permite que las estrategias de marketing evolucionen desde una clasificación relativamente rígida hacia una comprensión más contextual del consumidor.
+
+Sin embargo, interpretar comportamiento no equivale a conocer completamente a una persona. Los datos ofrecen indicios, no una representación total de sus motivaciones. Una estrategia responsable debe evitar convertir las inferencias tecnológicas en certezas y mantener una perspectiva respetuosa sobre las circunstancias individuales.
+
+La oportunidad está en comprender mejor el contexto de una interacción y responder con mayor pertinencia, no en perseguir al consumidor mediante una personalización excesiva.
+
+---
+
+## 3. La relevancia como nueva medida de la comunicación comercial
+
+En un entorno saturado de mensajes, captar atención se ha convertido en una tarea cada vez más difícil. Las personas reciben estímulos comerciales continuamente y desarrollan mecanismos para ignorar aquello que no consideran útil, oportuno o interesante.
+
+El problema ya no consiste únicamente en producir más contenido o aumentar la frecuencia de nuestras comunicaciones. También debemos preguntarnos si el mensaje tiene una razón legítima para aparecer, si responde a una necesidad y si aporta algo que el destinatario pueda valorar.
+
+La inteligencia artificial puede contribuir a mejorar esa relevancia al facilitar la interpretación de información contextual, la organización de contenidos y la adaptación de determinadas comunicaciones. Esto permite reconsiderar el marketing desde una perspectiva menos centrada en la cantidad de impactos y más orientada a la calidad de las interacciones.
+
+Una comunicación relevante no necesariamente es la más sofisticada. Puede ser simplemente la que llega en el momento adecuado, explica algo con claridad o ayuda a resolver una duda sin añadir ruido.
+
+La tecnología puede mejorar nuestra capacidad de identificar oportunidades para comunicarnos, pero el mensaje continúa dependiendo de la comprensión del producto, de la audiencia y de la intención que existe detrás de la interacción.
+
+Cuando la personalización se utiliza para aportar valor, puede fortalecer una relación. Cuando se emplea únicamente para presionar o aumentar la frecuencia de los estímulos, corre el riesgo de deteriorarla.
+
+---
+
+## 4. La velocidad de ejecución cambia la manera de competir
+
+En marketing, muchas oportunidades dependen de nuestra capacidad para actuar en el momento adecuado. Una campaña puede perder relevancia si tarda demasiado en adaptarse, una tendencia puede desaparecer antes de que consigamos aprovecharla y una decisión comercial puede quedar obsoleta cuando las condiciones del mercado cambian.
+
+La inteligencia artificial puede reducir el tiempo necesario para determinadas actividades, facilitar la preparación de materiales, apoyar la exploración de alternativas y acelerar el análisis de información. Esto modifica la relación entre planificación y ejecución.
+
+La rapidez, sin embargo, no debe confundirse con precipitación. Poder generar muchas campañas, mensajes o variantes en poco tiempo no significa que todas merezcan ser utilizadas. La facilidad de producción puede aumentar el volumen de decisiones que necesitamos tomar y, si no existe una dirección clara, también puede incrementar la dispersión.
+
+La ventaja competitiva no estará necesariamente en producir más que los demás, sino en aprovechar mejor el tiempo disponible. Una organización que identifica una oportunidad, formula una hipótesis, la evalúa y aprende de sus resultados puede desarrollar una capacidad de adaptación más valiosa que otra que simplemente acumula actividad.
+
+La inteligencia artificial puede acelerar el trabajo. La estrategia debe decidir qué merece esa velocidad y hacia dónde dirigirla.
+
+---
+
+## 5. Una nueva relación entre creatividad y estrategia
+
+La creatividad siempre ha ocupado un lugar importante en el marketing, pero su función no se limita a diseñar anuncios, escribir textos atractivos o desarrollar ideas originales. También consiste en encontrar nuevas maneras de interpretar un problema, descubrir oportunidades y construir propuestas que tengan sentido para un público determinado.
+
+La inteligencia artificial introduce nuevas posibilidades en ese proceso. Puede ayudarnos a explorar enfoques, comparar conceptos, ampliar una lluvia de ideas, identificar alternativas y trabajar sobre materiales iniciales que después necesitan criterio y refinamiento.
+
+Esta capacidad puede resultar especialmente valiosa cuando el equipo necesita explorar diferentes perspectivas antes de comprometer recursos con una campaña.
+
+No obstante, la creatividad no se mide por la cantidad de propuestas que somos capaces de generar. Una idea adquiere valor cuando responde a un propósito, comprende el contexto y ofrece una perspectiva que puede resultar significativa para las personas.
+
+El riesgo de utilizar la tecnología sin una dirección creativa es producir mensajes técnicamente correctos, pero intercambiables. Si todos utilizamos los mismos recursos de manera similar, la abundancia de contenido puede hacer que las marcas pierdan personalidad.
+
+La inteligencia artificial puede ampliar el espacio de exploración, pero la identidad, la intención y la selección de aquello que merece desarrollarse continúan siendo responsabilidades fundamentales del equipo de marketing.
+
+---
+
+## 6. El consumidor no es un conjunto de datos
+
+Los datos pueden ayudarnos a comprender determinadas acciones, preferencias y tendencias. Sin embargo, detrás de cada registro existe una persona que no puede reducirse completamente a su comportamiento digital.
+
+Las decisiones de compra están condicionadas por circunstancias, expectativas, emociones, experiencias previas, prioridades y factores que no siempre quedan registrados en una plataforma. Por esta razón, una interpretación exclusivamente cuantitativa puede ofrecer una visión incompleta de la realidad.
+
+La inteligencia artificial puede encontrar patrones que resulten útiles, pero esos patrones necesitan ser interpretados dentro de un contexto más amplio. Un cambio en el comportamiento puede tener múltiples explicaciones y no todas pueden identificarse mediante los datos disponibles.
+
+El marketing debe utilizar la información para comprender mejor a las personas, no para tratarlas como mecanismos previsibles.
+
+Esto exige revisar la manera en que diseñamos nuestras estrategias. Una personalización eficaz no consiste en demostrar cuánto sabemos sobre alguien, sino en ofrecer una experiencia que resulte apropiada, respetuosa y útil.
+
+La confianza puede convertirse en un factor diferenciador precisamente porque la tecnología permite realizar acciones cada vez más sofisticadas. En un entorno donde la capacidad de intervenir aumenta, también aumenta la importancia de saber cuándo hacerlo y cuándo dejar espacio al consumidor.
+
+---
+
+## 7. Las decisiones necesitan algo más que indicadores
+
+El marketing digital ha desarrollado una cultura de medición que permite evaluar campañas, comparar resultados y analizar diferentes variables. Esta capacidad es fundamental para comprender el rendimiento de nuestras acciones y mejorar la utilización de los recursos.
+
+La inteligencia artificial puede facilitar el análisis de grandes cantidades de información y ayudar a reconocer patrones que no resultan evidentes en una revisión convencional. También puede contribuir a formular hipótesis, detectar cambios y explorar posibles escenarios.
+
+Pero medir no es lo mismo que comprender.
+
+Un indicador puede mostrar que una campaña ha generado determinados resultados, sin explicar completamente por qué ocurrió. Una variación puede estar relacionada con múltiples factores y no necesariamente con el cambio que estamos evaluando. Una correlación puede ofrecer una pista, pero no siempre demuestra una relación causal.
+
+Por eso, las decisiones de marketing necesitan combinar la observación cuantitativa con el conocimiento del contexto, la formulación de hipótesis y la evaluación de las consecuencias.
+
+La inteligencia artificial puede ayudarnos a organizar la evidencia y ampliar el análisis, pero no debemos confundir sus conclusiones con una explicación definitiva.
+
+El valor de la información aumenta cuando sabemos interpretarla, cuestionarla y utilizarla para tomar decisiones mejor fundamentadas.
+
+---
+
+## 8. La automatización debe tener una dirección
+
+Automatizar determinadas actividades puede mejorar la organización, reducir tareas repetitivas y facilitar la continuidad de una estrategia. Sin embargo, la automatización no constituye por sí misma un objetivo comercial.
+
+Una empresa puede automatizar numerosos procesos y continuar teniendo problemas de posicionamiento, una propuesta de valor poco clara o una comunicación que no responde a las necesidades de su mercado.
+
+La inteligencia artificial amplía las posibilidades de automatización al facilitar determinadas tareas que anteriormente requerían más intervención manual. Esto puede modificar la forma en que organizamos campañas, administramos información y coordinamos actividades.
+
+Para que estos cambios produzcan valor, necesitamos identificar qué procesos merecen automatizarse, cuáles requieren supervisión y cuáles deberían mantenerse bajo intervención directa.
+
+También es importante comprender que un proceso automatizado puede amplificar tanto los aciertos como los errores. Si las condiciones iniciales son inadecuadas, la tecnología puede reproducir problemas con mayor rapidez y alcance.
+
+La automatización inteligente comienza con una estructura bien definida, objetivos claros y mecanismos que permitan revisar el funcionamiento del sistema.
+
+No se trata de conseguir que el marketing funcione sin personas, sino de organizar mejor el trabajo para que los recursos humanos puedan concentrarse en las actividades que requieren comprensión, creatividad y dirección.
+
+---
+
+## 9. La experiencia del cliente se construye en cada interacción
+
+La relación entre una marca y un consumidor no depende únicamente de una campaña publicitaria. Se construye a través de múltiples interacciones que pueden incluir búsquedas, consultas, visitas, compras, entregas, atención, seguimiento y experiencias posteriores.
+
+Cada contacto puede influir en la percepción que una persona desarrolla sobre una empresa. Por eso, mejorar la experiencia del cliente requiere observar la relación completa, no únicamente el rendimiento de una acción aislada.
+
+La inteligencia artificial puede ayudar a identificar dificultades, organizar consultas, facilitar respuestas, reconocer necesidades frecuentes y mejorar la coordinación entre determinados puntos de contacto.
+
+Estas capacidades pueden contribuir a reducir fricciones, pero una experiencia satisfactoria no depende exclusivamente de la rapidez. También importa que la respuesta sea adecuada, que la información sea correcta y que exista una solución cuando las circunstancias se salen de lo previsto.
+
+La tecnología puede facilitar la atención, pero no debe convertirse en una barrera que impida a las personas resolver problemas reales.
+
+Una estrategia de marketing más madura entiende que la experiencia del cliente no termina cuando se consigue una conversión. La relación continúa y puede influir en la confianza, la satisfacción, la recomendación y la continuidad comercial.
+
+---
+
+## 10. El profesional del marketing necesita una nueva perspectiva
+
+La incorporación de inteligencia artificial modifica algunas de las capacidades que resultan importantes dentro de una actividad de marketing. Conocer herramientas puede ser útil, pero su valor depende de la capacidad para integrarlas en una estrategia.
+
+El profesional necesita comprender el mercado, formular preguntas relevantes, interpretar resultados, evaluar propuestas y reconocer cuándo una solución tecnológica no responde al problema planteado.
+
+También adquiere importancia la capacidad de coordinar diferentes recursos. El marketing puede integrar información, creatividad, comunicación, tecnología y análisis, pero esa integración requiere una visión que evite que cada elemento funcione de manera aislada.
+
+La evolución tecnológica no elimina la necesidad de aprender los fundamentos de la disciplina. Al contrario, comprender el comportamiento del consumidor, la propuesta de valor, el posicionamiento, la comunicación y los objetivos comerciales permite utilizar herramientas con mayor sentido.
+
+El conocimiento superficial de múltiples plataformas puede resultar menos valioso que una comprensión sólida de los problemas que debemos resolver.
+
+La inteligencia artificial amplía las capacidades disponibles. El criterio profesional determina cómo combinarlas, qué resultados aceptar y qué decisiones necesitan una revisión más profunda.
+
+---
+
+## 11. La confianza, la privacidad y los límites de la personalización
+
+La posibilidad de utilizar información para adaptar experiencias comerciales plantea una cuestión fundamental: ¿hasta qué punto una comunicación personalizada resulta beneficiosa para el consumidor?
+
+La relevancia puede mejorar una interacción, pero la utilización excesiva de datos, la falta de transparencia o determinadas formas de influencia pueden generar incomodidad y deteriorar la confianza.
+
+Las marcas necesitan comprender que la capacidad tecnológica no justifica automáticamente cualquier práctica. El hecho de que un sistema permita inferir determinadas preferencias no significa que siempre sea apropiado utilizar esa información.
+
+La protección de los datos, la transparencia, el respeto por las decisiones individuales y la responsabilidad en el uso de las tecnologías deben formar parte de la estrategia, no aparecer únicamente como obligaciones secundarias.
+
+Una relación comercial sostenible necesita que el consumidor pueda comprender, aceptar y confiar en la forma en que una empresa se comunica con él.
+
+La inteligencia artificial puede facilitar una personalización más precisa, pero el verdadero valor de esa capacidad dependerá de la manera en que se utilice.
+
+La confianza no se construye únicamente mediante mensajes atractivos o experiencias eficientes. También depende de aquello que una marca decide no hacer.
+
+---
+
+## 12. El marketing del futuro será una combinación de adaptación y criterio
+
+La evolución de la inteligencia artificial continuará modificando las herramientas, los canales y las posibilidades disponibles para los profesionales del marketing. Algunas prácticas actuales cambiarán, otras perderán relevancia y aparecerán nuevas formas de relacionarse con los consumidores.
+
+Ante este escenario, intentar anticipar cada tecnología puede convertirse en una tarea interminable. Lo más importante será desarrollar una capacidad de adaptación que permita comprender los cambios sin perder de vista los fundamentos de la actividad.
+
+Una estrategia necesita dirección, objetivos, una propuesta de valor y una comprensión del público al que pretende servir. Las herramientas pueden facilitar su ejecución, pero no sustituyen la necesidad de construir una visión coherente.
+
+El marketing del futuro no dependerá exclusivamente de quién dispone de la tecnología más avanzada. También dependerá de quién sabe interpretar mejor su mercado, utilizar la información con responsabilidad, construir relaciones de confianza y adaptar sus decisiones sin perder su identidad.
+
+La inteligencia artificial puede cambiar la manera de hacer marketing, pero no elimina la necesidad de comprender por qué lo hacemos, para quién trabajamos y qué valor pretendemos aportar.
+
+La verdadera transformación comienza cuando dejamos de considerar la tecnología como una novedad aislada y aprendemos a integrarla en una forma de pensar, decidir y actuar que tenga sentido a largo plazo.
+
+---
+
+# 5. ÍNDICE VISIBLE Y NAVEGACIÓN POR ANCLAS
+
+Implementar un índice de contenidos visible dentro de la ficha.
+
+### Título del índice
+
+Contenido de esta página
+
+### Texto introductorio
+
+Accede directamente al apartado que te interesa y explora las diferentes perspectivas sobre la transformación del marketing impulsada por la inteligencia artificial.
+
+### Elementos del índice y sus IDs
+
+| Texto del índice | ID de destino |
+|---|---|
+| El marketing ya no puede depender únicamente de la experiencia acumulada | `marketing-experiencia-acumulada` |
+| De los segmentos estáticos a las situaciones cambiantes del consumidor | `segmentos-situaciones-consumidor` |
+| La relevancia como nueva medida de la comunicación comercial | `relevancia-comunicacion-comercial` |
+| La velocidad de ejecución cambia la manera de competir | `velocidad-ejecucion-competencia` |
+| Una nueva relación entre creatividad y estrategia | `creatividad-estrategia-ia` |
+| El consumidor no es un conjunto de datos | `consumidor-no-es-datos` |
+| Las decisiones necesitan algo más que indicadores | `decisiones-mas-que-indicadores` |
+| La automatización debe tener una dirección | `automatizacion-direccion` |
+| La experiencia del cliente se construye en cada interacción | `experiencia-cada-interaccion` |
+| El profesional del marketing necesita una nueva perspectiva | `profesional-marketing-nueva-perspectiva` |
+| La confianza, la privacidad y los límites de la personalización | `confianza-privacidad-personalizacion` |
+| El marketing del futuro será una combinación de adaptación y criterio | `marketing-futuro-adaptacion-criterio` |
+
+Cada apartado debe utilizar el ID exacto correspondiente.
+
+El índice debe:
+
+- Estar situado después de la presentación introductoria.
+- Aparecer antes del desarrollo editorial.
+- Ser visible y fácil de utilizar.
+- Permitir navegar a cada apartado.
+- Mantener una presentación visual coherente con FG Perspectiva.
+- Funcionar correctamente en escritorio, tablet y móvil.
+- Evitar duplicar innecesariamente el título completo de la ficha.
+- No interferir con los botones de compra.
+- No ocupar una cantidad desproporcionada de espacio en móvil.
+
+Los enlaces deben ser anclas reales, no botones que simulen navegación sin funcionalidad.
+
+---
+
+# 6. SEO ON-PAGE
+
+Actualizar los metadatos de esta ficha utilizando la siguiente configuración.
+
+### SEO Title
+
+El futuro del marketing con IA: estrategia y transformación | FG Perspectiva
+
+### Meta Description
+
+Descubre cómo la inteligencia artificial está transformando el marketing, la relación con los consumidores, la creatividad, la estrategia y las decisiones comerciales.
+
+### Keyword principal
+
+El futuro del marketing con IA
+
+### Keywords secundarias
+
+- inteligencia artificial en marketing
+- marketing digital e inteligencia artificial
+- transformación del marketing
+- marketing con inteligencia artificial
+- IA aplicada al marketing
+- marketing del futuro
+- estrategia de marketing con IA
+- inteligencia artificial y consumidores
+- automatización del marketing
+- marketing y tecnología
+
+Integrar estas expresiones de forma natural y semánticamente coherente.
+
+No forzar su utilización.
+
+No utilizar keyword stuffing.
+
+No crear textos SEO adicionales sin valor editorial.
+
+El SEO debe surgir del contenido y de su estructura, no de la repetición artificial de términos.
+
+---
+
+# 7. METADATOS SOCIALES Y CANONICAL
+
+Actualizar y verificar:
+
+- `title`
+- `meta description`
+- `canonical`
+- `og:title`
+- `og:description`
+- `og:image`
+- `og:url`
+- `og:type`
+- `twitter:card`
+- `twitter:title`
+- `twitter:description`
+- `twitter:image`
+
+Utilizar la portada oficial del libro para las imágenes sociales, si el sistema existente ya contempla este recurso.
+
+No generar una nueva portada.
+
+No alterar la imagen del libro.
+
+No modificar la ruta actual.
+
+La canonical debe apuntar a la URL raíz correspondiente a la ficha, respetando el sistema de trailing slash existente en FG Perspectiva.
+
+No duplicar etiquetas SEO.
+
+No introducir metadata contradictoria.
+
+---
+
+# 8. DATOS ESTRUCTURADOS JSON-LD
+
+Implementar o actualizar los datos estructurados de la ficha utilizando información real.
+
+## Book
+
+Utilizar `Book` como tipo principal.
+
+Incluir, cuando corresponda y exista información válida:
+
+- `@context`
+- `@type`
+- `name`
+- `author`
+- `description`
+- `url`
+- `image`
+- `inLanguage`
+- `genre`
+- `bookFormat`
+- `sameAs`
+
+Utilizar el autor:
+
+Francisco González
+
+La descripción estructurada debe ser original, coherente con la ficha y no una copia literal de la descripción comercial de Amazon.
+
+No inventar:
+
+- ISBN.
+- Fecha de publicación.
+- Precio.
+- Rating.
+- AggregateRating.
+- Reviews.
+- Offers.
+- Disponibilidad.
+- Editorial, si no está confirmada.
+- Número de páginas, si no está confirmado.
+
+No utilizar datos ficticios para completar el esquema.
+
+## BreadcrumbList
+
+Implementar BreadcrumbList de acuerdo con la jerarquía real:
+
+Inicio → Biblioteca → Tecnología → El futuro del marketing (IA).
+
+Utilizar URLs reales del proyecto.
+
+No crear rutas nuevas.
+
+---
+
+# 9. ENLACES INTERNOS Y BREADCRUMBS
+
+Conservar los breadcrumbs existentes y verificar que funcionen correctamente.
+
+La ficha debe mantener navegación hacia:
+
+- Inicio.
+- Biblioteca.
+- Tecnología.
+
+Utilizar la estructura de rutas existente.
+
+No crear enlaces redundantes.
+
+No modificar la página Tecnología.
+
+No modificar el catálogo.
+
+No alterar las rutas de otros libros.
+
+No introducir interlinking artificial únicamente para incorporar keywords.
+
+---
+
+# 10. BLOQUE COMERCIAL Y BOTONES DE COMPRA
+
+Esta parte es de máxima importancia.
+
+Preservar íntegramente los componentes comerciales que ya existen en la ficha.
+
+Mantener los siguientes enlaces oficiales:
+
+### Kindle
+
+https://www.amazon.com/dp/B0C7G28KTZ
+
+### Paperback
+
+https://www.amazon.com/dp/B0C7DXCT37
+
+### Hardcover
+
+https://www.amazon.com/dp/B0D3V5HF3C
+
+### ClickBank
+
+https://elfuturodelmarketingia.vercel.app/
+
+No eliminar ninguno de estos enlaces.
+
+No cambiar sus destinos.
+
+No sustituirlos por enlaces de texto.
+
+No modificar sus textos visibles si ya están correctamente implementados.
+
+No alterar:
+
+- Posición de los botones.
+- Orden de los botones.
+- Diseño.
+- Colores.
+- Tipografía.
+- Iconos.
+- Tamaños.
+- Espaciado.
+- Modal de compra.
+- Apertura y cierre del modal.
+- CTA inferior.
+- Ubicación de los CTA.
+- Comportamiento responsive.
+- Funcionamiento de los enlaces externos.
+
+No eliminar el botón de compra principal.
+
+No eliminar el CTA inferior.
+
+No modificar componentes compartidos para realizar esta tarea.
+
+Si el bloque comercial ya funciona correctamente, conservarlo sin cambios y limitar la intervención al contenido, SEO y navegación.
+
+---
+
+# 11. DISEÑO VISUAL
+
+Mantener la identidad visual actual de FG Perspectiva.
+
+El diseño debe transmitir:
+
+- Profesionalidad.
+- Estrategia.
+- Marketing.
+- Tecnología.
+- Evolución.
+- Claridad.
+- Conocimiento.
+
+No introducir diseños genéricos de inteligencia artificial.
+
+No añadir imágenes de stock.
+
+No crear nuevos banners.
+
+No añadir iconos decorativos innecesarios.
+
+No utilizar efectos excesivos.
+
+No alterar la paleta de colores.
+
+No cambiar tipografías.
+
+No modificar el header.
+
+No modificar el footer.
+
+No cambiar el sistema general de cards.
+
+No rediseñar la ficha desde cero.
+
+El contenido editorial debe ser el protagonista.
+
+---
+
+# 12. RESPONSIVE DESIGN
+
+Verificar el comportamiento de la ficha en escritorio, tablet y móvil.
+
+### Escritorio
+
+- Portada correctamente proporcionada.
+- Título y subtítulo bien jerarquizados.
+- Introducción legible.
+- Índice correctamente integrado.
+- Apartados bien separados.
+- Bloque comercial intacto.
+- CTA visible y funcional.
+
+### Tablet
+
+- Correcta distribución de columnas.
+- Portada adaptada.
+- Índice funcional.
+- Navegación accesible.
+- Espaciado equilibrado.
+
+### Móvil
+
+- Portada bien dimensionada.
+- Título sin desbordamientos.
+- Subtítulo legible.
+- Índice cómodo de utilizar.
+- Anclas funcionales.
+- Texto con ancho apropiado.
+- Botones comerciales accesibles.
+- Modal funcional.
+- CTA correctamente ubicado.
+- Sin desplazamiento horizontal.
+- Sin solapamientos.
+
+No sacrificar la legibilidad para conservar una distribución de escritorio.
+
+---
+
+# 13. IMPLEMENTACIÓN TÉCNICA
+
+Antes de realizar cambios:
+
+1. Localizar la ruta existente de esta ficha.
+2. Identificar el componente que la renderiza.
+3. Localizar los metadatos SEO actuales.
+4. Identificar el sistema de JSON-LD.
+5. Verificar los breadcrumbs.
+6. Localizar el bloque comercial.
+7. Identificar el modal de compra.
+8. Comprobar la estructura de prerendering.
+9. Revisar los estilos específicos de la ficha.
+10. Determinar los archivos estrictamente necesarios para implementar la modificación.
+
+Modificar únicamente los archivos necesarios.
+
+No refactorizar componentes globales.
+
+No crear componentes duplicados.
+
+No modificar el router.
+
+No cambiar la arquitectura general.
+
+No cambiar la configuración de Vercel.
+
+No modificar el sistema de prerendering.
+
+No modificar la página de inicio.
+
+No modificar Biblioteca.
+
+No modificar Tecnología.
+
+No modificar Sistemas Digitales.
+
+No modificar Sobre FG Perspectiva.
+
+No modificar otras fichas.
+
+No modificar el footer.
+
+No realizar despliegue.
+
+No crear backups internos para esta modificación rutinaria.
+
+---
+
+# 14. CONTROL DE CALIDAD Y VALIDACIÓN
+
+Una vez implementada la ficha, comprobar:
+
+## Contenido
+
+- [ ] Introducción implementada.
+- [ ] Los 12 apartados implementados.
+- [ ] Texto completo, no resumido.
+- [ ] Cierre editorial correcto.
+- [ ] Sin repeticiones excesivas.
+- [ ] Sin contenido genérico.
+- [ ] Sin duplicación de párrafos.
+- [ ] Diferenciación respecto a otros libros de IA.
+- [ ] Buena lectura y coherencia editorial.
+
+## Índice
+
+- [ ] Índice visible.
+- [ ] Posición correcta.
+- [ ] 12 enlaces.
+- [ ] 12 anclas.
+- [ ] IDs exactos.
+- [ ] Sin IDs duplicados.
+- [ ] Navegación funcional.
+- [ ] Scroll correcto hacia cada apartado.
+- [ ] Correcta adaptación móvil.
+
+## SEO
+
+- [ ] Title.
+- [ ] Meta description.
+- [ ] Canonical.
+- [ ] Open Graph.
+- [ ] Twitter metadata.
+- [ ] JSON-LD Book.
+- [ ] JSON-LD BreadcrumbList.
+- [ ] URL correcta.
+- [ ] Sin metadata duplicada.
+- [ ] Sin datos inventados.
+
+## Compra
+
+- [ ] Kindle correcto.
+- [ ] Paperback correcto.
+- [ ] Hardcover correcto.
+- [ ] ClickBank correcto.
+- [ ] Todos los botones presentes.
+- [ ] Todos los enlaces funcionales.
+- [ ] Modal funcional.
+- [ ] CTA inferior intacto.
+- [ ] Posiciones conservadas.
+- [ ] No se alteraron los estilos.
+
+## Técnico
+
+- [ ] Build correcto.
+- [ ] Prerendering correcto.
+- [ ] Ruta existente funcional.
+- [ ] Sin errores de TypeScript.
+- [ ] Sin errores de renderizado.
+- [ ] Sin problemas de hidratación.
+- [ ] Sin errores de consola relacionados con esta ficha.
+- [ ] Responsive comprobado.
+- [ ] No se modificaron otras páginas.
+
+---
+
+# 15. INFORME FINAL
+
+Al finalizar, entregar un informe de ejecución concreto indicando:
+
+1. Archivos modificados.
+2. Componente principal de la ficha.
+3. Número aproximado de palabras implementadas.
+4. Confirmación de la estructura editorial.
+5. Confirmación del índice.
+6. Confirmación de las 12 anclas.
+7. Metadatos SEO implementados.
+8. JSON-LD implementado.
+9. Canonical verificada.
+10. Estado del build.
+11. Estado del prerendering.
+12. Verificación de los cuatro enlaces comerciales.
+13. Verificación de botones, modal y CTA.
+14. Comprobación responsive.
+15. Confirmación de que otras páginas y componentes no fueron modificados.
+16. Cualquier problema o pendiente real.
+
+No afirmar que algo ha sido comprobado si no se ha ejecutado la comprobación correspondiente.
+
+No realizar despliegue.
+
+---
+
+# RESULTADO FINAL ESPERADO
+
+La ficha **El futuro del marketing (IA)** debe convertirse en una página editorial completa, profesional y optimizada para SEO, con identidad propia dentro del catálogo FG Perspectiva.
+
+Debe reflejar cómo la inteligencia artificial está transformando el marketing desde una perspectiva estratégica, abordando el mercado, el consumidor, la relevancia, la creatividad, la velocidad, la automatización, la experiencia, la confianza y la adaptación profesional.
+
+La página debe ofrecer profundidad editorial, estructura clara, navegación funcional y una intención SEO independiente.
+
+Implementar exclusivamente esta ficha, conservar todos los elementos comerciales y estructurales existentes, verificar el resultado y entregar el informe final de ejecución.

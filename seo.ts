@@ -2127,6 +2127,93 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6w. Ficha editorial dedicada: El futuro del marketing (IA)
+  if (path === '/el-futuro-del-marketing-ia/') {
+    const futuroBook = ALL_BOOKS.find(
+      (b) =>
+        b.path === '/el-futuro-del-marketing-ia/' ||
+        b.slug === 'el-futuro-del-marketing-ia'
+    );
+    const futuroMetaDescription =
+      'Descubre cómo la inteligencia artificial está transformando el marketing, la relación con los consumidores, la creatividad, la estrategia y las decisiones comerciales.';
+    const futuroSchemaDescription =
+      'Un análisis estratégico sobre cómo la inteligencia artificial transforma el marketing digital, la comprensión del consumidor, la relevancia comunicativa, la creatividad, la automatización y el criterio profesional.';
+    const futuroCover =
+      futuroBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/7-marketing-IA-futuro-libro-400.jpg';
+    const futuroUrl = `${BASE_URL}/el-futuro-del-marketing-ia/`;
+    const futuroSameAs = [
+      'https://www.amazon.com/dp/B0C7DXCT37',
+      'https://www.amazon.com/dp/B0D3V5HF3C',
+      'https://www.amazon.com/dp/B0C7G28KTZ',
+      'https://elfuturodelmarketingia.vercel.app/'
+    ];
+
+    const futuroBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'El futuro del marketing (IA)',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      },
+      description: futuroSchemaDescription,
+      url: futuroUrl,
+      image: futuroCover,
+      inLanguage: 'es',
+      genre: 'Tecnología',
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
+        'https://schema.org/EBook'
+      ],
+      sameAs: futuroSameAs
+    };
+
+    return {
+      path: '/el-futuro-del-marketing-ia/',
+      title: 'El futuro del marketing con IA: estrategia y transformación | FG Perspectiva',
+      description: futuroMetaDescription,
+      canonical: futuroUrl,
+      ogImage: futuroCover,
+      ogType: 'book',
+      h1: 'El futuro del marketing (IA)',
+      schema: [
+        futuroBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Tecnología',
+              item: `${BASE_URL}/tecnologia/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'El futuro del marketing (IA)',
+              item: futuroUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {

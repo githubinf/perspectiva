@@ -1299,8 +1299,45 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'tecnologia',
         title: 'El futuro del marketing (IA)',
         description: 'Adelántate a los cambios del marketing impulsado por inteligencia artificial.',
-        url: 'https://amzn.to/400t0eP',
+        url: 'https://www.amazon.com/dp/B0C7DXCT37',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/7-marketing-IA-futuro-libro-400.jpg',
+        purchaseOptions: [
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B0C7DXCT37',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
+            emoji: '🛒',
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B0D3V5HF3C',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B0C7G28KTZ',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Clickbank',
+            url: 'https://elfuturodelmarketingia.vercel.app/',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.png',
+            emoji: '⚡',
+            cta: 'Oferta Clickbank'
+          }
+        ],
         extraInfo: [
           'El marketing digital está experimentando una transformación sin precedentes gracias a la inteligencia artificial. Lo que hace cinco años parecía ciencia ficción (contenido generado automáticamente, personalización masiva, predicción de comportamientos) ya es una realidad que está cambiando las reglas del juego. Pero la mayoría de los profesionales y emprendedores digitales reaccionan a estos cambios cuando ya son inevitables, perdiendo la oportunidad de posicionarse como líderes en su nicho.',
           'Este libro no es una predicción abstracta; es una guía estratégica para entender hacia dónde se dirige el marketing y cómo puedes prepararte hoy para no quedarte atrás mañana. Está basado en tendencias actuales, investigaciones de mercado y casos prácticos de empresas que ya están utilizando IA de forma avanzada.',
