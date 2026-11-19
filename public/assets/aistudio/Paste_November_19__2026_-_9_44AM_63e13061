@@ -1,0 +1,803 @@
+# INSTRUCCIÓN INTEGRAL PARA GOOGLE AI STUDIO
+## Implementación SEO y editorial de la ficha: Inteligencia Artificial: Más Allá de la Imaginación y de los Límites
+
+Implementar la ficha editorial completa del libro **Inteligencia Artificial: Más Allá de la Imaginación y de los Límites** en el proyecto FG Perspectiva, respetando estrictamente la arquitectura, el diseño, el sistema de navegación y los componentes existentes.
+
+El trabajo consiste en reemplazar y optimizar el contenido de la ficha del libro, integrando un desarrollo editorial original, una estructura SEO completa y una navegación interna mediante índice de contenidos.
+
+No realizar cambios en páginas, componentes o elementos ajenos a esta tarea.
+
+---
+
+# 1. DATOS OFICIALES DEL LIBRO
+
+**Título:** Inteligencia Artificial: Más Allá de la Imaginación y de los Límites
+
+**Subtítulo:** Descubre el viaje de la inteligencia artificial desde la ciencia ficción hasta la realidad, desafiando las expectativas y superando los límites impuestos por la imaginación humana.
+
+**Autor:** Francisco González
+
+**Categoría:** Tecnología
+
+**Amazon Kindle:**
+https://www.amazon.com/dp/B0CW1JX11M
+
+**Amazon Paperback:**
+https://www.amazon.com/dp/B0CZ46RJGK
+
+**Amazon Hardcover:**
+https://www.amazon.com/dp/B0CZ63Z1KH
+
+No inventar enlaces a otras plataformas, audiolibros, ISBN, precios, valoraciones, disponibilidad ni información comercial que no esté proporcionada.
+
+Mantener exactamente la portada actual del libro, su ruta, su categoría, su posición dentro de la Biblioteca y sus enlaces comerciales.
+
+---
+
+# 2. OBJETIVO EDITORIAL Y POSICIONAMIENTO
+
+Esta ficha debe presentar la inteligencia artificial como una transformación tecnológica que está modificando nuestra forma de comprender el conocimiento, desarrollar actividades, tomar decisiones, relacionarnos con la tecnología y afrontar los cambios de nuestro entorno.
+
+El enfoque editorial debe ser amplio, reflexivo, contemporáneo y práctico, pero sin convertir el contenido en un tutorial de herramientas, un manual de prompts, una guía para ganar dinero con IA o un texto excesivamente técnico.
+
+El libro debe posicionarse como una obra que invita a comprender la inteligencia artificial más allá de sus aplicaciones inmediatas, explorando las implicaciones de su evolución en el mundo actual y en el futuro de las capacidades humanas.
+
+### Diferenciación obligatoria dentro del catálogo
+
+Esta ficha debe mantener una identidad editorial independiente de los siguientes libros:
+
+- **Cómo ganar dinero con ChatGPT:** enfocado en aplicaciones, oportunidades, productividad y posibilidades de negocio.
+- **Desbloquea tu inspiración con ChatGPT:** enfocado en creatividad, escritura, exploración de ideas, inspiración y procesos creativos del autor.
+- **Inteligencia Artificial: Más Allá de la Imaginación y de los Límites:** enfocado en la evolución, comprensión, alcance, transformación, impacto, responsabilidad y relación entre la inteligencia artificial y las capacidades humanas.
+
+No utilizar la inteligencia artificial únicamente como una oportunidad económica.
+
+No centrar el contenido en ChatGPT, prompts, generación de ebooks, marketing, afiliación, creación de contenido o herramientas específicas.
+
+El tema principal debe ser la inteligencia artificial como fenómeno tecnológico y como fuerza transformadora de nuestra época.
+
+---
+
+# 3. REQUISITOS EDITORIALES
+
+El contenido debe cumplir las siguientes condiciones:
+
+- Redacción original, profesional, fluida y editorialmente sólida.
+- Desarrollo sustancial, con un mínimo de 900 palabras, preferiblemente superior a 1.500 palabras.
+- Evitar frases genéricas, introducciones vacías y conclusiones repetitivas.
+- Cada sección debe aportar una perspectiva, reflexión o argumento diferente.
+- No utilizar una estructura comercial agresiva.
+- No convertir el texto en una sucesión de listas superficiales.
+- No exagerar las capacidades actuales de la inteligencia artificial.
+- Evitar afirmaciones de ciencia ficción presentadas como hechos.
+- Diferenciar claramente capacidades actuales, posibilidades futuras y especulación.
+- Mantener un lenguaje accesible para lectores no especializados, sin sacrificar profundidad.
+- Utilizar ejemplos cuando ayuden a explicar conceptos, pero sin convertir la ficha en un manual de instrucciones.
+- Evitar repetir la misma idea en distintas secciones con palabras diferentes.
+- Mantener una perspectiva humana, equilibrada, crítica y constructiva.
+
+La ficha debe sentirse como una obra editorial independiente y no como una página SEO creada únicamente para posicionar una palabra clave.
+
+---
+
+# 4. CONTENIDO EDITORIAL QUE DEBE IMPLEMENTARSE
+
+Utilizar el siguiente desarrollo como base editorial de la ficha.
+
+No resumirlo excesivamente. Mantener la profundidad, los argumentos y la diferenciación entre secciones.
+
+## Introducción
+
+Durante mucho tiempo, la inteligencia artificial perteneció al territorio de las ideas, la ciencia ficción y los experimentos que parecían demasiado complejos para formar parte de nuestra vida cotidiana. Sin embargo, ese escenario ha cambiado. Hoy convivimos con sistemas capaces de procesar información, reconocer patrones, generar contenido, interpretar datos y realizar tareas que hace apenas unos años parecían reservadas exclusivamente a las capacidades humanas.
+
+La inteligencia artificial ha dejado de ser una promesa distante para convertirse en una tecnología presente en múltiples ámbitos de nuestra sociedad. Su evolución no solo plantea nuevas posibilidades, sino que también modifica la forma en que entendemos el conocimiento, el trabajo, la creatividad, la comunicación y la toma de decisiones.
+
+Este cambio invita a mirar más allá de las herramientas que utilizamos diariamente. Comprender la inteligencia artificial implica explorar qué está transformando realmente, cuáles son sus posibilidades, dónde se encuentran sus límites y qué papel debemos asumir las personas en un entorno cada vez más influido por sistemas inteligentes.
+
+El verdadero desafío no consiste únicamente en aprender a utilizar nuevas tecnologías. También consiste en desarrollar criterio para comprenderlas, integrarlas de forma consciente y decidir cómo queremos que contribuyan a nuestro futuro.
+
+## Índice de contenidos
+
+Crear un índice visible titulado:
+
+**Contenido de esta página**
+
+Texto introductorio del índice:
+
+*Accede directamente al apartado que te interesa y explora las diferentes perspectivas sobre la evolución, el alcance y las implicaciones de la inteligencia artificial.*
+
+El índice debe incluir enlaces funcionales a los siguientes apartados:
+
+1. Una tecnología que ha cambiado de escala
+2. Comprender la inteligencia sin confundirla con la humana
+3. El conocimiento en un entorno de posibilidades ilimitadas
+4. La tecnología dentro de nuestras decisiones cotidianas
+5. Transformar procesos sin perder el propósito
+6. El valor de la colaboración entre capacidades
+7. Cuando la innovación también exige responsabilidad
+8. La confianza como condición para avanzar
+9. Un nuevo escenario para el trabajo y las capacidades humanas
+10. La evolución tecnológica y sus límites reales
+11. Prepararnos para un mundo que todavía está cambiando
+12. El futuro también depende de nuestras decisiones
+
+Cada elemento debe enlazar a su correspondiente sección mediante un identificador HTML único y funcional.
+
+---
+
+## 1. Una tecnología que ha cambiado de escala
+
+La inteligencia artificial no apareció de repente con las herramientas que hoy conocemos. Su desarrollo es el resultado de décadas de investigación, experimentación y avances en distintas disciplinas. Lo que ha cambiado en los últimos años es la escala de sus posibilidades, la disponibilidad de recursos computacionales y la capacidad de acercar determinados sistemas a millones de personas.
+
+Durante mucho tiempo, muchas aplicaciones de inteligencia artificial permanecieron limitadas a entornos especializados. Su utilización requería conocimientos técnicos, infraestructura y recursos que dificultaban su adopción generalizada. La evolución de los modelos, el acceso a grandes cantidades de datos y la mejora de los sistemas de procesamiento han permitido que nuevas capacidades lleguen a ámbitos cotidianos.
+
+Esta expansión ha cambiado nuestra percepción de la tecnología. Ya no hablamos únicamente de automatización industrial o sistemas experimentales, sino de herramientas capaces de intervenir en actividades relacionadas con la información, la comunicación, el análisis y la producción intelectual.
+
+El cambio de escala también modifica nuestras expectativas. Cuando una tecnología se vuelve accesible, las personas comienzan a explorar aplicaciones que no fueron necesariamente previstas por sus desarrolladores. Surgen nuevas formas de utilización, nuevos problemas y nuevas oportunidades de adaptación.
+
+La inteligencia artificial representa, por tanto, mucho más que una evolución técnica. Su presencia creciente obliga a reconsiderar cómo nos relacionamos con las herramientas digitales y qué posibilidades aparecen cuando determinadas capacidades tecnológicas dejan de estar reservadas a especialistas.
+
+---
+
+## 2. Comprender la inteligencia sin confundirla con la humana
+
+Uno de los mayores desafíos al hablar de inteligencia artificial consiste en comprender lo que realmente hacen estos sistemas. Su capacidad para producir respuestas coherentes, interpretar información y realizar tareas complejas puede generar la impresión de que poseen una comprensión equivalente a la humana.
+
+Sin embargo, la capacidad de procesar información, identificar patrones y generar resultados no debe confundirse automáticamente con la experiencia, la conciencia, la intención o el razonamiento humano en su sentido más amplio.
+
+Los sistemas de inteligencia artificial funcionan a partir de modelos, datos, mecanismos de procesamiento y objetivos definidos por sus arquitecturas. Pueden ofrecer resultados extraordinariamente útiles, pero también presentar errores, producir información incorrecta o interpretar de manera inadecuada determinados contextos.
+
+Comprender esta diferencia es fundamental para utilizar la tecnología con criterio. La utilidad de un sistema no depende de que lo consideremos humano, sino de que sepamos identificar qué puede hacer, en qué condiciones funciona mejor y cuándo necesitamos intervenir.
+
+La inteligencia artificial puede ampliar nuestras capacidades de análisis y ejecución, pero la interpretación de sus resultados continúa exigiendo atención, conocimiento contextual y responsabilidad.
+
+Cuanto mejor comprendamos la naturaleza de estos sistemas, más posibilidades tendremos de aprovecharlos sin atribuirles capacidades que no necesariamente poseen.
+
+---
+
+## 3. El conocimiento en un entorno de posibilidades ilimitadas
+
+La información siempre ha sido un recurso importante para el desarrollo humano. Sin embargo, disponer de información no significa necesariamente comprenderla, organizarla o utilizarla correctamente.
+
+La inteligencia artificial está modificando la manera en que podemos acceder a determinados conocimientos, explorar conceptos y establecer relaciones entre grandes cantidades de información. Esto puede reducir barreras, facilitar procesos de investigación y permitir que personas con diferentes niveles de experiencia se aproximen a temas que anteriormente resultaban más difíciles de abordar.
+
+El cambio no consiste únicamente en encontrar respuestas con mayor rapidez. También está relacionado con la posibilidad de explorar preguntas, comparar perspectivas y descubrir conexiones que pueden pasar desapercibidas durante una búsqueda convencional.
+
+No obstante, la abundancia de información plantea un nuevo problema: saber qué merece nuestra atención.
+
+Cuando podemos obtener respuestas de manera inmediata, la capacidad de formular preguntas relevantes, evaluar fuentes y distinguir entre información fiable y resultados poco precisos se vuelve todavía más importante.
+
+El conocimiento no puede reducirse a la acumulación de respuestas. Comprender exige interpretar, relacionar, cuestionar y construir una visión propia.
+
+La inteligencia artificial puede facilitar el acceso a información y ampliar nuestras posibilidades de exploración, pero el valor final de ese proceso dependerá de nuestra capacidad para convertir los datos y las respuestas en conocimiento útil.
+
+---
+
+## 4. La tecnología dentro de nuestras decisiones cotidianas
+
+La presencia de la inteligencia artificial está comenzando a modificar muchas decisiones que anteriormente dependían de procesos manuales, consultas, análisis individuales o sistemas tradicionales de información.
+
+En algunos contextos, puede ayudarnos a organizar datos, identificar alternativas, resumir información, reconocer tendencias o preparar escenarios que faciliten una evaluación. Estas capacidades pueden resultar útiles tanto en actividades personales como profesionales.
+
+Sin embargo, la rapidez con la que un sistema proporciona una respuesta no garantiza que esa respuesta sea la más adecuada.
+
+Las decisiones importantes suelen depender de circunstancias particulares, prioridades, consecuencias y factores que no siempre pueden expresarse mediante datos. Una recomendación puede parecer lógica desde una perspectiva general, pero resultar inapropiada cuando se consideran las condiciones específicas de una persona, empresa o situación.
+
+Por esta razón, utilizar inteligencia artificial en nuestros procesos de decisión requiere algo más que aceptar resultados.
+
+Necesitamos comprender el contexto, evaluar las alternativas, identificar posibles errores y reconocer cuándo una decisión exige experiencia especializada o una valoración humana más profunda.
+
+La tecnología puede ayudarnos a pensar con mayor amplitud, pero no debería convertirse en un sustituto automático de nuestra capacidad de decidir.
+
+---
+
+## 5. Transformar procesos sin perder el propósito
+
+Una de las posibilidades más interesantes de la inteligencia artificial consiste en modificar la manera en que se desarrollan determinadas actividades.
+
+Procesos que antes requerían múltiples tareas manuales pueden reorganizarse. Algunas operaciones pueden automatizarse, otras pueden simplificarse y determinadas actividades pueden realizarse de manera diferente gracias a nuevas capacidades de análisis y generación de información.
+
+Esta transformación no consiste necesariamente en hacer todo más rápido. En muchos casos, la verdadera oportunidad se encuentra en revisar la estructura de un proceso, eliminar pasos innecesarios y concentrar los recursos en aquellas actividades que realmente aportan valor.
+
+Adoptar una tecnología sin comprender el proceso que pretendemos mejorar puede producir resultados decepcionantes. Automatizar una actividad desorganizada no garantiza que obtengamos un sistema más eficiente. Incluso puede aumentar la complejidad si incorporamos herramientas sin una finalidad clara.
+
+Por eso, la transformación debe comenzar con una pregunta fundamental: ¿qué queremos mejorar realmente?
+
+La inteligencia artificial puede facilitar nuevas formas de trabajar, pero el propósito debe preceder a la herramienta. Cuando sabemos qué resultado buscamos, podemos evaluar mejor qué capacidades tecnológicas necesitamos, qué tareas deben mantenerse bajo supervisión y cómo medir si el cambio está produciendo beneficios reales.
+
+---
+
+## 6. El valor de la colaboración entre capacidades
+
+El debate sobre la inteligencia artificial suele presentar dos posiciones aparentemente opuestas: la tecnología como sustituto de las capacidades humanas o la tecnología como herramienta complementaria.
+
+Una perspectiva más equilibrada consiste en analizar cómo pueden combinarse diferentes capacidades.
+
+Los sistemas de inteligencia artificial pueden procesar información, explorar alternativas, reconocer patrones y ejecutar determinadas tareas con rapidez. Las personas, por su parte, aportan experiencia, interpretación, sensibilidad contextual, juicio, valores y comprensión de las consecuencias.
+
+Esta combinación puede generar nuevas formas de trabajo. En lugar de concentrar todo el esfuerzo en tareas repetitivas o en la búsqueda inicial de información, podemos dedicar más atención a evaluar resultados, formular mejores preguntas, desarrollar estrategias y resolver problemas que requieren una comprensión más amplia.
+
+La colaboración no significa delegar indiscriminadamente. Significa comprender qué parte de una actividad puede beneficiarse de la tecnología y qué parte necesita continuar dependiendo de nuestra intervención.
+
+Cuando existe una distribución adecuada de responsabilidades, la inteligencia artificial puede convertirse en una extensión de nuestras capacidades sin eliminar la importancia de nuestro criterio.
+
+El resultado más valioso no siempre será una máquina capaz de realizar más tareas por sí sola, sino un entorno en el que las personas puedan trabajar de manera más consciente, eficiente y creativa gracias a nuevas herramientas.
+
+---
+
+## 7. Cuando la innovación también exige responsabilidad
+
+Toda tecnología capaz de influir significativamente en la sociedad plantea cuestiones relacionadas con su utilización, sus consecuencias y los límites que deben establecerse.
+
+La inteligencia artificial no es una excepción. Su capacidad para generar contenido, procesar información, intervenir en sistemas de decisión y automatizar determinadas actividades abre oportunidades, pero también exige considerar riesgos.
+
+Entre las cuestiones más importantes se encuentran la privacidad, la utilización de datos, los errores, los sesgos, la transparencia, la seguridad y las consecuencias de delegar determinadas decisiones en sistemas automatizados.
+
+La responsabilidad no debe recaer únicamente en quienes desarrollan estas tecnologías. También involucra a las organizaciones que las implementan, a las personas que las utilizan y a los entornos que establecen las condiciones para su funcionamiento.
+
+Una herramienta puede ser técnicamente capaz de realizar una tarea, pero eso no significa que todas sus aplicaciones sean apropiadas.
+
+La innovación responsable requiere evaluar no solamente lo que podemos hacer, sino también las consecuencias de hacerlo. Esta perspectiva resulta especialmente importante cuando los resultados pueden afectar a otras personas, sus oportunidades, sus derechos o su bienestar.
+
+El progreso tecnológico adquiere mayor valor cuando está acompañado por una comprensión consciente de sus implicaciones.
+
+---
+
+## 8. La confianza como condición para avanzar
+
+La confianza es uno de los factores que determinará la manera en que la inteligencia artificial se integra en nuestras actividades.
+
+Para confiar en una tecnología no basta con que parezca avanzada. Necesitamos comprender su funcionamiento general, conocer sus limitaciones y disponer de mecanismos que nos permitan evaluar los resultados que produce.
+
+La confianza excesiva puede llevarnos a aceptar información incorrecta, delegar decisiones sin suficiente análisis o utilizar sistemas en situaciones para las que no están preparados. En el extremo opuesto, una desconfianza absoluta puede impedirnos aprovechar capacidades que realmente podrían mejorar determinadas actividades.
+
+El desafío consiste en desarrollar una confianza razonada.
+
+Esto implica verificar información cuando sea necesario, proteger los datos que utilizamos, comprender el alcance de las herramientas y mantener una actitud crítica ante resultados que parecen convincentes.
+
+La confianza también depende de la transparencia. Cuanto más claramente podamos identificar cómo se utiliza una tecnología, qué información interviene y qué responsabilidades existen, más fácil será integrarla de manera consciente.
+
+La inteligencia artificial puede convertirse en una herramienta valiosa, pero su utilidad a largo plazo dependerá de la relación que construyamos con ella. Esa relación necesita conocimiento, prudencia y una evaluación constante de sus resultados.
+
+---
+
+## 9. Un nuevo escenario para el trabajo y las capacidades humanas
+
+La evolución de la inteligencia artificial está generando cambios en la manera en que entendemos determinadas actividades profesionales.
+
+Algunas tareas pueden automatizarse, otras pueden transformarse y también pueden surgir nuevas funciones relacionadas con la supervisión, la interpretación, la integración tecnológica y el desarrollo de soluciones.
+
+Estos cambios no necesariamente ocurren de manera uniforme. Diferentes sectores, organizaciones y profesiones pueden experimentar transformaciones a ritmos distintos, dependiendo de sus necesidades, recursos, características y posibilidades de implementación.
+
+En este contexto, la adaptación se convierte en una capacidad importante.
+
+No se trata únicamente de aprender a utilizar herramientas. También necesitamos desarrollar habilidades que nos permitan comprender problemas, analizar información, comunicarnos con claridad, evaluar resultados y trabajar en entornos donde las tecnologías cambian con rapidez.
+
+La inteligencia artificial puede modificar el valor de determinadas tareas, pero también puede aumentar la importancia de capacidades que requieren comprensión, creatividad, responsabilidad y perspectiva.
+
+El futuro del trabajo no debe analizarse únicamente desde la posibilidad de sustituir actividades. También debemos considerar cómo pueden reorganizarse los procesos, qué nuevas oportunidades pueden aparecer y de qué manera las personas pueden prepararse para participar en un entorno diferente.
+
+---
+
+## 10. La evolución tecnológica y sus límites reales
+
+El desarrollo de la inteligencia artificial genera expectativas muy elevadas. En ocasiones, estas expectativas pueden llevarnos a imaginar capacidades que todavía no existen, interpretar avances experimentales como soluciones completamente maduras o asumir que los problemas actuales desaparecerán con una nueva generación de sistemas.
+
+Sin embargo, toda tecnología tiene limitaciones.
+
+Los sistemas de inteligencia artificial pueden depender de la calidad de los datos, presentar dificultades ante situaciones inesperadas, producir resultados incorrectos o carecer de información contextual suficiente para interpretar determinados problemas.
+
+También existen limitaciones relacionadas con los recursos, la infraestructura, la seguridad, los costes, la integración y la necesidad de supervisión.
+
+Comprender estas limitaciones no significa negar el potencial de la tecnología. Significa establecer expectativas realistas y tomar mejores decisiones.
+
+Una innovación puede ser extraordinaria y, al mismo tiempo, necesitar ajustes, controles y condiciones específicas para funcionar correctamente.
+
+La evolución tecnológica no sigue siempre una trayectoria uniforme. Existen avances, obstáculos, cambios de dirección y períodos de adaptación.
+
+Por eso, mantener una perspectiva equilibrada nos permite distinguir entre las posibilidades reales de la inteligencia artificial y las expectativas que todavía dependen de desarrollos futuros.
+
+---
+
+## 11. Prepararnos para un mundo que todavía está cambiando
+
+La velocidad de evolución de la inteligencia artificial hace difícil anticipar con precisión cómo serán determinadas actividades dentro de unos años.
+
+Algunas herramientas pueden consolidarse, otras pueden desaparecer y muchas capacidades pueden evolucionar hasta adquirir funciones diferentes de las que conocemos actualmente.
+
+En lugar de intentar predecir cada cambio, quizá sea más útil desarrollar una actitud de adaptación permanente.
+
+Prepararnos significa mantener la curiosidad, aprender de manera continua, comprender los principios que se encuentran detrás de las tecnologías y evitar depender exclusivamente de herramientas específicas.
+
+También implica reconocer que la adaptación no consiste en aceptar todas las novedades. Saber evaluar una tecnología, determinar si realmente aporta valor y decidir cuándo no utilizarla puede ser tan importante como aprender a implementarla.
+
+Un entorno cambiante exige flexibilidad, pero también estabilidad en nuestros criterios.
+
+La tecnología puede evolucionar con rapidez. Nuestra capacidad para comprender los problemas, actuar con responsabilidad y establecer prioridades continúa siendo fundamental.
+
+Prepararnos para el futuro no significa intentar adelantarnos a cada novedad, sino construir una base de conocimiento y criterio que nos permita responder mejor cuando los cambios se produzcan.
+
+---
+
+## 12. El futuro también depende de nuestras decisiones
+
+La inteligencia artificial continuará evolucionando, pero su impacto no dependerá exclusivamente de los avances técnicos.
+
+También estará condicionado por las decisiones que tomemos como personas, organizaciones y sociedad.
+
+Las herramientas que desarrollamos, los problemas que decidimos resolver, los límites que establecemos y la manera en que utilizamos las capacidades disponibles influirán en el tipo de entorno tecnológico que construiremos.
+
+La inteligencia artificial puede contribuir a ampliar nuestras posibilidades, facilitar actividades, mejorar procesos y abrir nuevas perspectivas. Sin embargo, estas oportunidades no garantizan automáticamente resultados positivos.
+
+Necesitamos participar activamente en la definición de sus usos, comprender sus consecuencias y mantener una visión que coloque a las personas y sus necesidades en el centro de la transformación.
+
+La tecnología no debería convertirse en un objetivo por sí misma. Su verdadero valor reside en aquello que nos permite mejorar, comprender, construir o resolver.
+
+A medida que los sistemas se vuelvan más capaces, la importancia de nuestras decisiones también aumentará. Saber utilizar una herramienta será relevante, pero saber por qué la utilizamos, cuándo debemos confiar en ella y qué consecuencias puede tener será todavía más importante.
+
+El futuro de la inteligencia artificial no se construirá únicamente a partir de máquinas más capaces. También dependerá de la manera en que decidamos convivir con ellas, de los valores que orienten su desarrollo y de nuestra disposición a utilizar la tecnología como un medio para ampliar las posibilidades humanas, sin perder de vista aquello que realmente importa.
+
+---
+
+# 5. CONCLUSIÓN EDITORIAL
+
+La ficha debe finalizar con un cierre integrado al último apartado, evitando añadir una conclusión genérica, un resumen repetitivo o una sección comercial innecesaria.
+
+La idea central que debe permanecer en el lector es que comprender la inteligencia artificial no significa únicamente conocer sus herramientas y capacidades. Significa aprender a interpretar una transformación tecnológica, reconocer sus posibilidades y limitaciones, y asumir un papel activo en las decisiones que determinarán cómo la utilizamos.
+
+---
+
+# 6. SEO ON-PAGE
+
+Implementar los siguientes metadatos, respetando el sistema SEO existente y asegurando que se rendericen correctamente dentro de la etiqueta `<head>`.
+
+### SEO Title
+
+Inteligencia Artificial: Más Allá de la Imaginación | FG Perspectiva
+
+### Meta Description
+
+Explora la evolución de la inteligencia artificial, sus posibilidades, límites, impacto en la sociedad y la relación entre tecnología y capacidades humanas.
+
+### Keyword principal
+
+Inteligencia Artificial
+
+### Keywords secundarias y conceptos relacionados
+
+- evolución de la inteligencia artificial
+- impacto de la inteligencia artificial
+- inteligencia artificial y sociedad
+- futuro de la inteligencia artificial
+- tecnología e inteligencia artificial
+- capacidades humanas e inteligencia artificial
+- transformación tecnológica
+- aplicaciones de la inteligencia artificial
+- límites de la inteligencia artificial
+- colaboración entre humanos e inteligencia artificial
+
+No realizar keyword stuffing.
+
+No introducir todas las palabras clave de manera forzada.
+
+El contenido debe conservar naturalidad, coherencia semántica y calidad editorial.
+
+---
+
+# 7. ESTRUCTURA DE LA FICHA Y NAVEGACIÓN
+
+La página debe mantener el diseño y la estructura general de las fichas de libros existentes en FG Perspectiva.
+
+Orden editorial recomendado:
+
+1. Breadcrumbs.
+2. Hero de la ficha.
+3. Portada oficial.
+4. Título del libro.
+5. Subtítulo original.
+6. Presentación editorial introductoria.
+7. Índice de contenidos visible.
+8. Desarrollo completo de los 12 apartados.
+9. Cierre editorial.
+10. Bloque comercial de compra existente.
+11. CTA inferior existente.
+
+El índice debe aparecer después de la presentación introductoria y antes del desarrollo principal.
+
+No situar el índice por encima del título o del hero.
+
+### Índice de navegación
+
+El índice debe funcionar con enlaces internos mediante anclas `#`.
+
+Cada elemento debe conducir directamente al apartado correspondiente.
+
+Utilizar los siguientes IDs:
+
+- `tecnologia-cambio-escala`
+- `comprender-inteligencia`
+- `conocimiento-posibilidades`
+- `tecnologia-decisiones-cotidianas`
+- `transformar-procesos-proposito`
+- `colaboracion-capacidades`
+- `innovacion-responsabilidad`
+- `confianza-avance`
+- `trabajo-capacidades-humanas`
+- `evolucion-limites-reales`
+- `prepararnos-cambio`
+- `futuro-nuestras-decisiones`
+
+Verificar que todos los enlaces del índice coincidan exactamente con los identificadores de los apartados.
+
+El índice debe ser útil tanto en escritorio como en móvil, sin ocupar excesivo espacio ni comprometer la experiencia de lectura.
+
+---
+
+# 8. JERARQUÍA DE ENCABEZADOS
+
+Utilizar una jerarquía semántica correcta.
+
+- H1: título principal del libro, único en la página.
+- H2: los 12 apartados principales.
+- H3: solamente cuando sea editorialmente necesario y aporte una subdivisión real.
+
+No utilizar encabezados únicamente para aumentar el tamaño de las letras.
+
+No crear secciones artificiales para añadir palabras clave.
+
+No repetir el título principal en varios H1.
+
+---
+
+# 9. DATOS ESTRUCTURADOS
+
+Actualizar o adaptar los datos estructurados de la ficha para que reflejen correctamente el libro.
+
+Implementar JSON-LD de tipo `Book`, junto con `BreadcrumbList`, utilizando únicamente información real disponible en el proyecto.
+
+### Book
+
+Incluir, cuando los datos existentes lo permitan:
+
+- `@type: Book`
+- `name`
+- `author`
+- `description`
+- `url`
+- `image`
+- `inLanguage`
+- `genre`
+- `publisher`, solamente si está disponible y confirmado
+- `bookFormat`, únicamente cuando corresponda a información real
+- `sameAs`, únicamente cuando existan enlaces válidos y pertinentes
+
+No inventar:
+
+- ISBN
+- Ratings
+- Review
+- AggregateRating
+- Offers
+- Precios
+- Disponibilidad
+- Fechas de publicación
+
+No crear datos comerciales ficticios para completar el esquema.
+
+### BreadcrumbList
+
+Implementar la jerarquía de navegación correspondiente:
+
+Inicio → Biblioteca → Tecnología → Inteligencia Artificial: Más Allá de la Imaginación y de los Límites.
+
+Utilizar las URLs canónicas reales del proyecto.
+
+---
+
+# 10. CANONICAL Y METADATOS SOCIALES
+
+Verificar y actualizar:
+
+- Canonical URL.
+- Meta title.
+- Meta description.
+- Open Graph title.
+- Open Graph description.
+- Open Graph image.
+- Open Graph URL.
+- Twitter/X card.
+- Twitter title.
+- Twitter description.
+- Twitter image.
+
+Todos los metadatos deben corresponder exclusivamente a esta ficha.
+
+La imagen social debe utilizar la portada oficial existente, siempre que sea compatible con el sistema actual.
+
+No generar nuevas imágenes ni cambiar la portada.
+
+---
+
+# 11. INTERLINKING
+
+Mantener correctamente la navegación existente.
+
+La ficha debe incluir:
+
+- Breadcrumbs hacia Inicio, Biblioteca y Tecnología.
+- Enlaces internos que ya formen parte del sistema de fichas.
+- Navegación hacia la categoría correspondiente.
+- Enlaces comerciales actuales.
+
+No introducir enlaces artificiales a otras fichas únicamente para crear interlinking.
+
+No modificar las páginas de categoría ni otros libros.
+
+No duplicar enlaces innecesariamente.
+
+---
+
+# 12. PRESERVACIÓN ABSOLUTA DEL SISTEMA COMERCIAL
+
+Esta sección es crítica.
+
+No modificar, eliminar, reorganizar, sustituir ni rediseñar los componentes comerciales existentes.
+
+Preservar íntegramente:
+
+- Botón de compra principal.
+- Botones de formatos.
+- Enlaces de Amazon.
+- Textos actuales de los botones.
+- Orden actual de los botones, salvo que la ficha ya utilice el orden estándar vigente.
+- Estilos.
+- Colores.
+- Tamaños.
+- Espaciados.
+- Iconos.
+- Modal de compra.
+- Comportamiento de apertura y cierre del modal.
+- CTA inferior.
+- Ubicación del bloque comercial.
+- Funcionalidad de todos los enlaces.
+- Comportamiento responsive de los elementos comerciales.
+
+Los enlaces oficiales que deben conservarse son:
+
+**Kindle:**
+https://www.amazon.com/dp/B0CW1JX11M
+
+**Paperback:**
+https://www.amazon.com/dp/B0CZ46RJGK
+
+**Hardcover:**
+https://www.amazon.com/dp/B0CZ63Z1KH
+
+No agregar plataformas nuevas.
+
+No eliminar botones existentes que tengan enlaces válidos.
+
+No convertir los botones comerciales en enlaces de texto.
+
+No sustituir el modal por un sistema diferente.
+
+No alterar el componente de compra compartido si no es absolutamente necesario.
+
+---
+
+# 13. DISEÑO Y EXPERIENCIA DE USUARIO
+
+Mantener la identidad visual actual de FG Perspectiva.
+
+La ficha debe transmitir:
+
+- Tecnología.
+- Conocimiento.
+- Claridad.
+- Evolución.
+- Profundidad.
+- Profesionalidad editorial.
+
+No introducir:
+
+- Nuevos colores ajenos a la identidad.
+- Fondos llamativos innecesarios.
+- Animaciones excesivas.
+- Iconos decorativos que no aporten.
+- Nuevas ilustraciones.
+- Imágenes de stock.
+- Banners promocionales.
+- Elementos visuales que distraigan del contenido.
+- Diseño excesivamente tecnológico o futurista que perjudique la lectura.
+
+La prioridad es la lectura cómoda y la percepción de una obra editorial profesional.
+
+Mantener:
+
+- Tipografía existente.
+- Sistema de espaciado.
+- Colores de marca.
+- Diseño de cards.
+- Componentes globales.
+- Responsive design.
+- Estilo de breadcrumbs.
+- Estilo del índice.
+- Estructura de los botones comerciales.
+
+---
+
+# 14. RESPONSIVE DESIGN
+
+Verificar la ficha en diferentes tamaños de pantalla.
+
+### Escritorio
+
+- Correcta distribución entre portada y texto.
+- Buena legibilidad del título y subtítulo.
+- Índice correctamente integrado.
+- Separación visual adecuada entre apartados.
+- Bloque comercial bien distribuido.
+- Sin desbordamientos ni espacios innecesarios.
+
+### Tablet
+
+- Adaptación de columnas.
+- Correcta proporción de la portada.
+- Índice accesible.
+- Navegación clara.
+
+### Móvil
+
+- Portada correctamente dimensionada.
+- Título y subtítulo legibles.
+- Índice fácil de recorrer.
+- Anclas funcionales.
+- Texto con ancho y espaciado adecuados.
+- Botones comerciales accesibles.
+- Modal funcional.
+- Sin desbordamiento horizontal.
+- Sin botones superpuestos.
+- Sin problemas de scroll.
+
+No sacrificar la legibilidad del contenido para mantener una composición de escritorio.
+
+---
+
+# 15. RESTRICCIONES TÉCNICAS
+
+Antes de modificar archivos:
+
+1. Identificar la ruta actual de la ficha.
+2. Localizar su componente.
+3. Identificar cómo se implementa el SEO.
+4. Identificar cómo funcionan los datos estructurados.
+5. Localizar los componentes comerciales.
+6. Verificar cómo se construyen los breadcrumbs.
+7. Comprobar cómo funciona el prerendering.
+8. Identificar los estilos específicos de la ficha.
+
+Modificar únicamente los archivos estrictamente necesarios.
+
+No realizar refactorizaciones globales.
+
+No modificar:
+
+- Header.
+- Footer.
+- Biblioteca.
+- Página Tecnología.
+- Página Sistemas Digitales.
+- Página de Inicio.
+- Componentes globales.
+- Otras fichas de libros.
+- Rutas ajenas.
+- Configuración general de Vercel.
+- Router.
+- Sistema de prerendering.
+- Sitemap global, salvo que el sistema requiera automáticamente una actualización por el contenido ya existente.
+
+La ficha ya dispone de una ruta. No crear una nueva URL.
+
+Mantener la URL canónica existente y la estructura de rutas de FG Perspectiva.
+
+No crear carpetas, componentes o archivos duplicados si ya existen equivalentes.
+
+---
+
+# 16. CONTROL SEO Y CALIDAD FINAL
+
+Antes de dar por finalizada la tarea, verificar:
+
+### Contenido
+
+- [ ] El texto completo está implementado.
+- [ ] La introducción está presente.
+- [ ] Los 12 apartados están presentes.
+- [ ] El cierre editorial está integrado.
+- [ ] No hay contenido duplicado.
+- [ ] No hay párrafos genéricos.
+- [ ] No se repiten excesivamente las palabras clave.
+- [ ] El contenido mantiene una identidad diferenciada respecto a las otras fichas de IA.
+
+### Índice
+
+- [ ] El índice aparece en la ubicación correcta.
+- [ ] Tiene los 12 apartados.
+- [ ] Todos los enlaces funcionan.
+- [ ] Todas las anclas existen.
+- [ ] No hay IDs duplicados.
+- [ ] La navegación funciona en móvil y escritorio.
+
+### SEO
+
+- [ ] Title correcto.
+- [ ] Meta description correcta.
+- [ ] Canonical correcto.
+- [ ] Open Graph completo.
+- [ ] Twitter metadata completa.
+- [ ] JSON-LD Book válido.
+- [ ] BreadcrumbList válida.
+- [ ] No existen datos inventados.
+- [ ] El contenido se renderiza correctamente.
+
+### Comercial
+
+- [ ] Botones de compra conservados.
+- [ ] Kindle correcto.
+- [ ] Paperback correcto.
+- [ ] Hardcover correcto.
+- [ ] Modal funcional.
+- [ ] CTA inferior conservado.
+- [ ] No se han perdido enlaces.
+- [ ] No se han modificado estilos ni posiciones comerciales.
+
+### Técnico
+
+- [ ] Build exitoso.
+- [ ] Prerendering exitoso.
+- [ ] Ruta existente funcional.
+- [ ] No existen errores de TypeScript.
+- [ ] No existen errores de consola relacionados con la ficha.
+- [ ] No existen problemas de hidratación.
+- [ ] Responsive comprobado.
+- [ ] No se modificaron otras páginas.
+
+---
+
+# 17. INFORME FINAL OBLIGATORIO
+
+Al terminar, proporcionar un informe concreto indicando:
+
+1. Archivos modificados.
+2. Componentes utilizados.
+3. Número aproximado de palabras implementadas.
+4. Estructura editorial incorporada.
+5. SEO actualizado.
+6. Datos estructurados implementados.
+7. Índice y anclas verificadas.
+8. Estado del build.
+9. Estado del prerendering.
+10. Verificación de enlaces comerciales.
+11. Verificación del modal y CTA.
+12. Comprobación responsive.
+13. Cualquier problema detectado o pendiente.
+
+No afirmar que una comprobación se ha realizado si realmente no se ha ejecutado.
+
+No realizar despliegue en Vercel.
+
+No modificar el footer.
+
+No crear backups internos para esta modificación rutinaria.
+
+---
+
+# RESULTADO ESPERADO
+
+La ficha **Inteligencia Artificial: Más Allá de la Imaginación y de los Límites** debe convertirse en una página editorial completa, sólida y optimizada para SEO, capaz de posicionarse por su propia intención de búsqueda y de ofrecer una experiencia de lectura coherente con FG Perspectiva.
+
+Debe transmitir una visión amplia de la inteligencia artificial, sus posibilidades, su evolución, sus limitaciones y su relación con las capacidades humanas.
+
+El resultado debe ser una ficha independiente, con profundidad editorial, identidad propia y una arquitectura clara, sin parecer una versión repetida de otras páginas del catálogo.
+
+Implementar exclusivamente esta ficha, preservar el sistema existente y comprobar el resultado antes de entregar el informe final.

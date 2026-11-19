@@ -26,6 +26,7 @@ import DineroConClickbankView from './components/views/DineroConClickbankView.ts
 import TipsAffiliateMarketingView from './components/views/TipsAffiliateMarketingView.tsx';
 import ChatGptDineroView from './components/views/ChatGptDineroView.tsx';
 import ChatGptInspirationView from './components/views/ChatGptInspirationView.tsx';
+import InteligenciaArtificialView from './components/views/InteligenciaArtificialView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
@@ -142,6 +143,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/desbloquea-tu-inspiracion-con-chatgpt/' && matchedBook) {
     return <ChatGptInspirationView book={matchedBook} />;
+  }
+
+  if (currentPath === '/inteligencia-artificial/' && matchedBook) {
+    return <InteligenciaArtificialView book={matchedBook} />;
   }
 
   if (matchedBook) {

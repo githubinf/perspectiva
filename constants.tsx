@@ -1254,8 +1254,38 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'tecnologia',
         title: 'Inteligencia Artificial',
         description: 'Comprende los fundamentos de la IA y su impacto en los negocios digitales.',
-        url: 'https://amzn.to/3PAxt3y',
+        url: 'https://www.amazon.com/dp/B0CZ46RJGK',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/15-inteligencia-artificial-libro-400.jpg',
+        purchaseOptions: [
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B0CZ46RJGK',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
+            emoji: '🛒',
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B0CZ63Z1KH',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B0CW1JX11M',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          }
+        ],
         extraInfo: [
           'La Inteligencia Artificial está transformando todos los sectores, pero para la mayoría de las personas sigue siendo un concepto abstracto y lejano. Este libro desmitifica la IA y te la presenta como una herramienta práctica que puedes integrar en tu negocio digital hoy mismo, sin necesidad de ser programador o experto en tecnología.',
           'Aprenderás qué es realmente el machine learning, el procesamiento del lenguaje natural y las redes neuronales, pero explicado de forma sencilla y con ejemplos aplicados al marketing, la creación de contenido y la atención al cliente. También explorarás el panorama actual y las tendencias futuras para que puedas anticiparte a los cambios.',

@@ -2035,6 +2035,98 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6v. Ficha editorial dedicada: Inteligencia Artificial: Más Allá de la Imaginación y de los Límites
+  if (path === '/inteligencia-artificial/') {
+    const aiBook = ALL_BOOKS.find(
+      (b) =>
+        b.path === '/inteligencia-artificial/' ||
+        b.slug === 'inteligencia-artificial'
+    );
+    const aiMetaDescription =
+      'Explora la evolución de la inteligencia artificial, sus posibilidades, límites, impacto en la sociedad y la relación entre tecnología y capacidades humanas.';
+    const aiSubtitle =
+      'Descubre el viaje de la inteligencia artificial desde la ciencia ficción hasta la realidad, desafiando las expectativas y superando los límites impuestos por la imaginación humana.';
+    const aiCover =
+      aiBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/15-inteligencia-artificial-libro-400.jpg';
+    const aiUrl = `${BASE_URL}/inteligencia-artificial/`;
+    const aiSameAs = [
+      'https://www.amazon.com/dp/B0CZ46RJGK',
+      'https://www.amazon.com/dp/B0CZ63Z1KH',
+      'https://www.amazon.com/dp/B0CW1JX11M'
+    ];
+
+    const aiBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Inteligencia Artificial: Más Allá de la Imaginación y de los Límites',
+      alternateName: aiSubtitle,
+      description: aiMetaDescription,
+      image: aiCover,
+      url: aiUrl,
+      inLanguage: 'es',
+      genre: 'Tecnología',
+      publisher: {
+        '@type': 'Organization',
+        name: 'FG Perspectiva',
+        url: `${BASE_URL}/`
+      },
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      },
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
+        'https://schema.org/EBook'
+      ],
+      sameAs: aiSameAs
+    };
+
+    return {
+      path: '/inteligencia-artificial/',
+      title: 'Inteligencia Artificial: Más Allá de la Imaginación | FG Perspectiva',
+      description: aiMetaDescription,
+      canonical: aiUrl,
+      ogImage: aiCover,
+      ogType: 'book',
+      h1: 'Inteligencia Artificial: Más Allá de la Imaginación y de los Límites',
+      schema: [
+        aiBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Tecnología',
+              item: `${BASE_URL}/tecnologia/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Inteligencia Artificial: Más Allá de la Imaginación y de los Límites',
+              item: aiUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {
