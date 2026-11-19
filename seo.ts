@@ -2392,6 +2392,92 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6z. Ficha editorial dedicada: El Poder del Marketing de Contenidos
+  if (path === '/el-poder-del-marketing-de-contenidos/') {
+    const contenidosBook = ALL_BOOKS.find(
+      (b) =>
+        b.path === '/el-poder-del-marketing-de-contenidos/' ||
+        b.slug === 'el-poder-del-marketing-de-contenidos'
+    );
+    const contenidosMetaDescription =
+      'Descubre cómo transformar tus contenidos en una herramienta de comunicación, identidad, confianza y conexión con las personas que forman tu audiencia.';
+    const contenidosCover =
+      contenidosBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/18-marketing-de-contenidos-libro-400.jpg';
+    const contenidosUrl = `${BASE_URL}/el-poder-del-marketing-de-contenidos/`;
+    const contenidosSameAs = [
+      'https://www.amazon.com/dp/B0FQTKZZY8',
+      'https://www.amazon.com/dp/B0FQP97WHW',
+      'https://www.amazon.com/dp/B0FQK516WC'
+    ];
+
+    const contenidosBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'El Poder del Marketing de Contenidos',
+      alternateName:
+        'Cómo cautivar a tu audiencia y alcanzar el éxito en una era digital tan activa',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      },
+      description: contenidosMetaDescription,
+      url: contenidosUrl,
+      image: contenidosCover,
+      inLanguage: 'es',
+      genre: 'Crecimiento',
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
+        'https://schema.org/EBook'
+      ],
+      sameAs: contenidosSameAs
+    };
+
+    return {
+      path: '/el-poder-del-marketing-de-contenidos/',
+      title: 'El Poder del Marketing de Contenidos: comunicación que conecta | FG Perspectiva',
+      description: contenidosMetaDescription,
+      canonical: contenidosUrl,
+      ogImage: contenidosCover,
+      ogType: 'book',
+      h1: 'El Poder del Marketing de Contenidos',
+      schema: [
+        contenidosBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Crecimiento',
+              item: `${BASE_URL}/crecimiento/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'El Poder del Marketing de Contenidos',
+              item: contenidosUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {

@@ -1,0 +1,670 @@
+# INSTRUCCIÓN INTEGRAL PARA GOOGLE AI STUDIO — FG PERSPECTIVA
+## Implementación editorial y SEO: El Poder del Marketing de Contenidos
+
+Vamos a realizar la implementación editorial, SEO y estructural de la ficha del libro **El Poder del Marketing de Contenidos** dentro del proyecto FG Perspectiva.
+
+El objetivo es convertir la ficha en una página editorial independiente, sólida, original, con profundidad suficiente, una intención de búsqueda definida y un contenido que aporte valor real al visitante.
+
+Esta implementación debe respetar íntegramente el contenido editorial aprobado. No se debe resumir, modificar, reescribir, ampliar artificialmente ni sustituir ninguna parte del texto.
+
+Trabajaremos exclusivamente sobre esta ficha. No modificaremos otras páginas, categorías, componentes compartidos ni elementos globales del sitio.
+
+---
+
+# 1. ALCANCE DEL TRABAJO
+
+**Título del libro:** El Poder del Marketing de Contenidos
+
+**Subtítulo original:**
+
+Cómo cautivar a tu audiencia y alcanzar el éxito en una era digital tan activa
+
+**Categoría:**
+
+Crecimiento
+
+**Ruta existente:**
+
+`/el-poder-del-marketing-de-contenidos/`
+
+La descripción original de Amazon y el índice proporcionados por el usuario sirven exclusivamente como referencias temáticas para comprender el libro.
+
+No se deben copiar, reproducir, parafrasear de forma cercana ni utilizar como estructura editorial. El texto que debe implementarse es el contenido completo aprobado incluido en esta instrucción.
+
+---
+
+# 2. OBJETIVO EDITORIAL Y DIFERENCIACIÓN
+
+Esta ficha debe mantener una identidad editorial propia dentro del catálogo FG Perspectiva.
+
+Su enfoque central es:
+
+**El contenido como instrumento de comunicación, construcción de significado, percepción de marca, confianza y relación con las personas.**
+
+No convertir esta ficha en un manual convencional de marketing de contenidos, ni en una recopilación de técnicas para producir publicaciones, posicionar palabras clave, distribuir artículos, automatizar campañas o conseguir visitas.
+
+El contenido debe desarrollar una perspectiva sobre:
+
+- El contenido como expresión de identidad y posicionamiento.
+- La importancia de tener algo relevante que comunicar.
+- La relación entre conocimiento, interpretación y percepción.
+- La construcción de una voz reconocible.
+- La confianza que se desarrolla mediante la coherencia.
+- La utilidad como fundamento de la comunicación.
+- El equilibrio entre creatividad, intención y objetivos comerciales.
+- La responsabilidad de comunicar en un entorno saturado de información.
+- El valor de construir un patrimonio comunicativo propio.
+
+Mantener la diferenciación frente a las fichas:
+
+- Ideas y Consejos de Tráfico Web.
+- Ideas Maestras de Tráfico Web.
+- Dominando el Arte del Email Marketing.
+- Otras páginas relacionadas con tráfico, adquisición de visitantes, contenidos o crecimiento digital.
+
+No reutilizar estructuras, párrafos, encabezados ni secuencias editoriales de otras fichas.
+
+La diferenciación debe conservarse en la intención de búsqueda, arquitectura editorial, encabezados, desarrollo argumental, lenguaje y experiencia de lectura.
+
+---
+
+# 3. METADATOS SEO
+
+Implementar los siguientes datos:
+
+## Title SEO
+
+El Poder del Marketing de Contenidos: comunicación que conecta | FG Perspectiva
+
+## Meta description
+
+Descubre cómo transformar tus contenidos en una herramienta de comunicación, identidad, confianza y conexión con las personas que forman tu audiencia.
+
+## Palabra clave principal
+
+El Poder del Marketing de Contenidos
+
+## Palabras clave secundarias
+
+- Marketing de contenidos para empresas.
+- Estrategia de comunicación digital.
+- Contenido de valor para una audiencia.
+- Crear una identidad de marca.
+- Comunicación de marcas en Internet.
+- Contenidos para negocios digitales.
+- Construir confianza mediante contenidos.
+- Marketing de contenidos estratégico.
+
+Utilizar las palabras clave de forma natural cuando corresponda. No forzar su inclusión, no acumular keywords ni sacrificar la calidad de lectura por densidad.
+
+Implementar correctamente:
+
+- Title SEO exclusivo.
+- Meta description exclusiva.
+- Canonical correspondiente a la ruta existente.
+- Open Graph title.
+- Open Graph description.
+- Open Graph URL.
+- Twitter Card metadata, respetando el sistema existente.
+- H1 único.
+- Jerarquía H2 coherente.
+- Breadcrumbs.
+- Datos estructurados JSON-LD.
+
+No duplicar títulos ni generar varias etiquetas H1.
+
+No inventar ISBN, fechas de publicación, puntuaciones, reseñas, precios, información editorial ni datos bibliográficos inexistentes.
+
+---
+
+# 4. ESTRUCTURA EDITORIAL E ÍNDICE DE NAVEGACIÓN
+
+Incorporar un índice visible después de la introducción editorial y antes del desarrollo de los apartados.
+
+Utilizar el siguiente título:
+
+**Contenido de esta página**
+
+Texto introductorio:
+
+Accede directamente al apartado que te interesa.
+
+Implementar el índice con los siguientes títulos, respetando exactamente su orden y sus identificadores:
+
+1. El contenido es la forma en que una marca se hace presente  
+   Anchor: `contenido-forma-presente`
+
+2. Antes de comunicar, necesitamos saber qué representamos  
+   Anchor: `saber-que-representamos`
+
+3. La diferencia entre informar y dejar una huella  
+   Anchor: `informar-dejar-huella`
+
+4. La voz que hace reconocible una marca  
+   Anchor: `voz-reconocible`
+
+5. El valor de explicar sin complicar  
+   Anchor: `explicar-sin-complicar`
+
+6. La confianza no se consigue con una sola publicación  
+   Anchor: `confianza-no-una-publicacion`
+
+7. Comunicar también significa saber qué no decir  
+   Anchor: `saber-que-no-decir`
+
+8. El contenido como experiencia, no solamente como información  
+   Anchor: `contenido-como-experiencia`
+
+9. La creatividad necesita una dirección  
+   Anchor: `creatividad-con-direccion`
+
+10. Cuando el contenido deja de ser efímero  
+    Anchor: `contenido-no-efimero`
+
+11. Una comunicación que evoluciona con su audiencia  
+    Anchor: `comunicacion-evoluciona`
+
+12. El contenido como parte del valor de un negocio  
+    Anchor: `contenido-valor-negocio`
+
+## Requisitos del índice
+
+- Debe ser visible para el usuario.
+- Debe estar integrado visualmente con el diseño actual.
+- Todos los enlaces deben funcionar.
+- Cada enlace debe dirigirse al encabezado correspondiente.
+- Los identificadores deben ser únicos.
+- No utilizar enlaces vacíos.
+- No añadir apartados que no existan en el contenido aprobado.
+- Mantener buena accesibilidad y legibilidad.
+- Evitar que el índice parezca un bloque ajeno a la ficha.
+- Comprobar su funcionamiento en móvil, tablet y escritorio.
+
+---
+
+# 5. TEXTO EDITORIAL APROBADO — IMPLEMENTAR ÍNTEGRAMENTE
+
+El siguiente texto debe incorporarse completo, respetando su redacción, secuencia, encabezados, párrafos y contenido.
+
+No resumir.
+
+No eliminar párrafos.
+
+No reescribir.
+
+No sustituir expresiones.
+
+No cambiar los títulos.
+
+No añadir contenido editorial generado adicional.
+
+## Introducción
+
+En el entorno digital, una marca puede estar presente en numerosos espacios y, aun así, resultar prácticamente invisible en la memoria de las personas. Podemos publicar información, compartir novedades, presentar productos y mantener una actividad constante, pero si nuestra comunicación carece de una identidad reconocible, será difícil construir algo que perdure más allá del momento en que alguien encuentra una de nuestras publicaciones.
+
+El contenido es una de las formas mediante las cuales damos a conocer nuestra manera de pensar, nuestros conocimientos, nuestras prioridades y el valor que podemos aportar. Cada mensaje contribuye, de alguna manera, a formar una percepción. Algunos despiertan interés, otros ayudan a comprender una necesidad y otros permiten que una persona se identifique con lo que representamos.
+
+Por eso, cuando hablamos de marketing de contenidos, debemos ir más allá de la producción de materiales digitales. La verdadera cuestión consiste en comprender qué queremos comunicar, por qué debería importarle a alguien y cómo podemos desarrollar una relación entre nuestra propuesta y las personas que podrían encontrarla relevante.
+
+Una comunicación bien construida no necesita competir permanentemente por llamar la atención. Puede convertirse en una referencia, una fuente de conocimiento, un punto de encuentro o una razón para regresar. Cuando aprendemos a utilizar el contenido con intención, dejamos de considerarlo una tarea aislada y comenzamos a entenderlo como una parte esencial del valor que desarrollamos en nuestro negocio.
+
+## H2: El contenido es la forma en que una marca se hace presente
+
+ID: `contenido-forma-presente`
+
+Una marca no se construye únicamente mediante un nombre, un logotipo o una identidad visual. También se desarrolla a través de lo que comunica, las ideas que comparte, las conversaciones que mantiene y la manera en que responde a las necesidades de su entorno.
+
+El contenido nos permite expresar esa identidad sin depender exclusivamente de una presentación comercial. Cuando compartimos conocimientos, explicamos situaciones, ofrecemos perspectivas o abordamos problemas que preocupan a nuestra audiencia, estamos dando forma a una presencia que puede ser reconocida por algo más que sus productos.
+
+Esta presencia se construye gradualmente. Una publicación puede despertar curiosidad, otra aportar claridad y una tercera mostrar una perspectiva que no habíamos considerado. Aunque cada pieza tenga un propósito individual, juntas pueden transmitir una imagen mucho más completa de lo que representa nuestro proyecto.
+
+Por eso, no deberíamos medir todo lo que comunicamos únicamente por su capacidad de producir una respuesta inmediata. Algunas ideas pueden influir en la percepción de una persona mucho antes de que exista una intención de compra. Su valor reside en contribuir a que nuestro nombre, nuestra propuesta y nuestra manera de trabajar ocupen un lugar significativo en su experiencia digital.
+
+Cuando el contenido refleja de forma consistente lo que somos, deja de ser una sucesión de publicaciones y se convierte en una expresión de identidad.
+
+## H2: Antes de comunicar, necesitamos saber qué representamos
+
+ID: `saber-que-representamos`
+
+Crear contenido resulta mucho más sencillo cuando tenemos claridad sobre aquello que queremos defender, explicar o aportar. Sin esa orientación, podemos terminar reaccionando constantemente a tendencias, imitando formatos populares o publicando temas que no guardan una relación real con nuestro proyecto.
+
+La identidad comunicativa comienza con preguntas que no siempre tienen una respuesta inmediata. ¿Qué queremos que las personas comprendan cuando conocen nuestra marca? ¿Qué perspectiva podemos aportar? ¿Qué tipo de problemas nos interesa ayudar a resolver? ¿Qué principios deberían reconocerse en nuestra manera de expresarnos?
+
+No se trata de construir una imagen artificial ni de buscar frases que suenen atractivas. Se trata de reconocer las características que hacen que nuestra propuesta tenga sentido y utilizarlas como referencia para decidir qué merece ser comunicado.
+
+Cuando tenemos esa claridad, podemos desarrollar contenidos diferentes sin perder coherencia. Un artículo, una reflexión, una explicación o una presentación comercial pueden abordar asuntos distintos y, aun así, compartir una misma orientación.
+
+Esta definición también nos ayuda a descartar. No todas las ideas merecen convertirse en contenido para nuestra marca. Algunas pueden ser interesantes, pero no contribuir a nuestra identidad ni a los objetivos que perseguimos. Aprender a elegir es una parte fundamental de la comunicación estratégica.
+
+## H2: La diferencia entre informar y dejar una huella
+
+ID: `informar-dejar-huella`
+
+Internet nos ofrece una cantidad extraordinaria de información. Podemos encontrar explicaciones, tutoriales, opiniones, noticias y respuestas sobre prácticamente cualquier asunto. En este contexto, repetir datos que ya están disponibles puede resultar insuficiente para conseguir que nuestro contenido sea verdaderamente significativo.
+
+Informar consiste en transmitir conocimiento, pero comunicar de manera memorable implica ayudar a que ese conocimiento sea comprendido, interpretado o relacionado con una experiencia concreta.
+
+Podemos explicar una idea utilizando un ejemplo cercano, mostrar las consecuencias de una decisión, comparar diferentes perspectivas o plantear una pregunta que invite a reflexionar. Estas formas de presentar la información permiten que el lector no se limite a recibir datos, sino que participe intelectualmente en lo que estamos comunicando.
+
+La huella que dejamos no depende necesariamente de la originalidad absoluta de un tema. Muchas cuestiones importantes ya han sido tratadas por numerosos autores. Lo que puede diferenciarnos es la manera en que organizamos las ideas, las conexiones que establecemos, la claridad con la que explicamos y la perspectiva desde la que abordamos una situación.
+
+Un contenido adquiere mayor significado cuando ayuda a alguien a comprender algo que antes parecía confuso, a reconsiderar una decisión o a descubrir una posibilidad. Esa capacidad de aportar una experiencia intelectual útil es una de las cualidades más valiosas de la comunicación digital.
+
+## H2: La voz que hace reconocible una marca
+
+ID: `voz-reconocible`
+
+Cuando diferentes marcas hablan sobre asuntos similares, la manera de comunicar puede convertirse en uno de los factores que permiten distinguirlas. No siempre recordamos todos los detalles de un contenido, pero sí podemos recordar cómo nos hizo sentir, si nos resultó claro, si nos pareció honesto o si reconocimos una perspectiva particular.
+
+Desarrollar una voz propia no significa utilizar expresiones llamativas en cada publicación ni adoptar un estilo exageradamente informal. Significa encontrar una forma de comunicarnos que sea coherente con nuestra identidad y adecuada para las personas a las que nos dirigimos.
+
+Algunas marcas transmiten serenidad y precisión. Otras utilizan un lenguaje cercano, reflexivo, técnico o provocador. Ninguno de estos estilos es universalmente mejor. Su eficacia depende de que exista una relación natural entre lo que representamos, el mensaje que queremos transmitir y las expectativas de nuestra audiencia.
+
+La consistencia también es importante. Si cada contenido parece proceder de una identidad diferente, las personas pueden tener dificultades para reconocer nuestra personalidad. No necesitamos repetir las mismas palabras ni mantener una estructura idéntica, pero sí conservar ciertos principios que definan nuestra comunicación.
+
+Una voz reconocible facilita que nuestro contenido tenga continuidad. Con el tiempo, puede contribuir a que las personas identifiquen nuestra manera de explicar, nuestra perspectiva y aquello que pueden esperar cuando encuentran una nueva publicación.
+
+## H2: El valor de explicar sin complicar
+
+ID: `explicar-sin-complicar`
+
+La complejidad de un tema no debería convertirse en una barrera para comprenderlo. En ocasiones, quienes dominamos una materia tendemos a utilizar términos, conceptos o explicaciones que resultan evidentes para nosotros, pero que dificultan la experiencia de alguien que se aproxima por primera vez.
+
+Comunicar con claridad exige algo más que simplificar palabras. Necesitamos comprender suficientemente bien el tema para reconocer qué información es esencial, qué detalles pueden esperar y qué ejemplos ayudarán a construir una comprensión progresiva.
+
+Una explicación eficaz no elimina la profundidad. La organiza. Podemos abordar cuestiones complejas utilizando situaciones cotidianas, analogías, ejemplos concretos y una secuencia que permita al lector avanzar sin sentirse perdido.
+
+También debemos respetar el tiempo de nuestra audiencia. Una explicación extensa tiene sentido cuando el tema lo requiere, pero la longitud por sí sola no garantiza calidad. Del mismo modo, una respuesta breve puede resultar insuficiente si omite información indispensable.
+
+La claridad es una forma de consideración hacia las personas que nos leen. Cuando hacemos el esfuerzo de comunicar con precisión, reducimos la distancia entre lo que sabemos y lo que otros pueden comprender. Esa capacidad puede convertirse en una característica distintiva de nuestra marca y en una razón para que la audiencia valore nuestros contenidos.
+
+## H2: La confianza no se consigue con una sola publicación
+
+ID: `confianza-no-una-publicacion`
+
+La confianza es un elemento difícil de construir porque no depende únicamente de lo que afirmamos sobre nosotros mismos. Se desarrolla a partir de la experiencia que las personas acumulan cuando entran en contacto con nuestra marca.
+
+Una publicación puede generar una primera impresión positiva, pero la percepción posterior dependerá de la coherencia entre nuestros mensajes, nuestras acciones y la calidad de lo que ofrecemos. Si prometemos demasiado, ocultamos limitaciones o presentamos soluciones como si fueran universales, podemos comprometer esa relación incluso cuando nuestro contenido consiga captar atención.
+
+La credibilidad también está relacionada con reconocer los límites de nuestro conocimiento. No siempre tenemos una respuesta definitiva, y comunicarlo con honestidad puede ser más valioso que aparentar una autoridad absoluta. Las personas no necesitan que cada mensaje sea una afirmación categórica; necesitan razones para considerar que nuestra comunicación es fiable.
+
+Por otra parte, debemos evitar que cada interacción se convierta en un intento de vender. El contenido puede proporcionar valor sin exigir una recompensa inmediata. Cuando la audiencia percibe que existe una intención genuina de ayudar, explicar o compartir conocimiento, se crean condiciones favorables para desarrollar una relación más equilibrada.
+
+La confianza no puede garantizarse mediante una fórmula. Es el resultado de una conducta sostenida, de expectativas razonables y de una comunicación que no contradice aquello que la marca representa.
+
+## H2: Comunicar también significa saber qué no decir
+
+ID: `saber-que-no-decir`
+
+La facilidad para publicar ha multiplicado las posibilidades de comunicación, pero también ha creado una presión constante por mantenerse activo. En ocasiones, esa presión nos lleva a compartir información sin suficiente reflexión, participar en conversaciones que no aportan o desarrollar mensajes únicamente para evitar que nuestra marca parezca inactiva.
+
+Sin embargo, comunicar más no siempre significa comunicar mejor. Una publicación innecesaria puede distraer de nuestros temas centrales, diluir nuestra identidad o contribuir a una saturación que dificulta que otros mensajes sean comprendidos.
+
+Seleccionar lo que comunicamos requiere establecer criterios. Podemos preguntarnos si una idea es relevante para nuestra audiencia, si aporta algo que merece su atención, si se relaciona con nuestra identidad y si estamos en condiciones de desarrollarla con suficiente calidad.
+
+También debemos considerar el contexto. Un mensaje puede ser apropiado en determinadas circunstancias y resultar inoportuno en otras. La sensibilidad hacia el momento, la situación y las expectativas de las personas forma parte de una comunicación responsable.
+
+La capacidad de guardar silencio, esperar, investigar o descartar una idea también puede mejorar nuestro trabajo. Cuando no sentimos la obligación de llenar cada espacio con contenido, podemos concentrarnos en aquellos mensajes que realmente merecen ser compartidos.
+
+## H2: El contenido como experiencia, no solamente como información
+
+ID: `contenido-como-experiencia`
+
+La manera en que una persona experimenta nuestro contenido influye en su percepción tanto como la información que recibe. La lectura puede resultar agradable, confusa, agotadora, inspiradora o frustrante, dependiendo de cómo organizamos y presentamos el mensaje.
+
+Por esta razón, debemos considerar la experiencia completa. La estructura, el ritmo, el lenguaje, la presentación visual, los ejemplos y la relación entre las diferentes partes contribuyen a que el contenido sea más fácil de utilizar.
+
+No todos los formatos funcionan de la misma manera. Una explicación detallada puede necesitar un artículo organizado, mientras que una idea sencilla quizá se comunique mejor mediante una presentación visual o una breve demostración. El formato debería facilitar la comprensión, no convertirse en una decisión puramente estética.
+
+También podemos considerar el contexto en el que se consume el contenido. Una persona que consulta información desde el móvil durante unos minutos tiene circunstancias diferentes de otra que se sienta a estudiar un recurso completo. Adaptar la experiencia no significa reducir el valor, sino reconocer que existen distintas formas de acercarse al conocimiento.
+
+Cuando cuidamos estos aspectos, el contenido deja de ser una simple transferencia de información y se convierte en una experiencia que puede resultar útil, agradable y memorable.
+
+## H2: La creatividad necesita una dirección
+
+ID: `creatividad-con-direccion`
+
+La creatividad es una de las grandes posibilidades del marketing de contenidos, pero no debería confundirse con la búsqueda constante de ideas originales. Podemos producir propuestas llamativas y, aun así, no contribuir a nuestros objetivos si carecen de una relación clara con la identidad del proyecto.
+
+Una dirección creativa nos permite explorar sin perder coherencia. Podemos probar nuevas formas de explicar, desarrollar conceptos, utilizar diferentes recursos narrativos o abordar temas desde perspectivas inesperadas, siempre que esas decisiones tengan sentido dentro de nuestra comunicación.
+
+La creatividad también puede surgir de observar. Las preguntas que recibimos, las dificultades que encontramos en nuestro trabajo, las conversaciones de nuestra audiencia y los cambios que se producen en nuestro entorno pueden convertirse en fuentes de inspiración.
+
+No debemos exigir que cada contenido sea extraordinario. En ocasiones, una explicación sencilla, bien construida y oportuna puede tener más valor que una idea compleja que no consigue comunicar su propósito.
+
+La creatividad adquiere mayor fuerza cuando se combina con criterio. En lugar de intentar sorprender continuamente, podemos concentrarnos en encontrar formas interesantes de hacer que nuestras ideas sean más comprensibles, relevantes y cercanas a las personas.
+
+## H2: Cuando el contenido deja de ser efímero
+
+ID: `contenido-no-efimero`
+
+Una parte de la comunicación digital está diseñada para consumirse rápidamente. Algunas publicaciones tienen sentido durante unas horas, mientras que otras pueden perder relevancia en pocos días. Sin embargo, también podemos desarrollar contenidos cuyo valor permanezca mucho más tiempo.
+
+Una explicación bien organizada, un recurso de consulta, una reflexión fundamentada o una guía útil pueden seguir aportando valor después de su publicación inicial. Estos materiales no dependen exclusivamente del momento en que fueron compartidos y pueden convertirse en referencias a las que regresar.
+
+Para conseguirlo, necesitamos cuidar su utilidad, evitar información innecesariamente condicionada por circunstancias pasajeras y revisar aquellos elementos que puedan quedar desactualizados. La permanencia no significa que un contenido deba conservarse intacto para siempre, sino que tenga una base suficientemente sólida para seguir siendo relevante.
+
+Este tipo de recursos puede contribuir a formar una biblioteca de conocimiento propia. En lugar de comenzar continuamente desde cero, podemos desarrollar un conjunto de materiales que reflejen nuestra experiencia, respondan a preguntas importantes y representen el valor que hemos acumulado.
+
+Con el tiempo, esa biblioteca puede convertirse en una parte significativa de nuestra identidad digital. No solo muestra lo que publicamos, sino también el conocimiento que hemos desarrollado y la manera en que lo ponemos al alcance de los demás.
+
+## H2: Una comunicación que evoluciona con su audiencia
+
+ID: `comunicacion-evoluciona`
+
+Las personas que se relacionan con nuestra marca no permanecen necesariamente en el mismo punto. Sus necesidades, conocimientos, expectativas y circunstancias pueden cambiar. Por eso, nuestra comunicación no debería tratar a la audiencia como un grupo estático.
+
+Una persona que acaba de descubrirnos puede necesitar una explicación básica, mientras que alguien que lleva tiempo siguiendo nuestro trabajo quizá valore una perspectiva más avanzada, una reflexión diferente o un recurso que le permita profundizar.
+
+Reconocer estas diferencias nos ayuda a desarrollar una comunicación más relevante. No significa que debamos crear un mensaje individual para cada persona, sino que podemos considerar diferentes niveles de conocimiento, intereses y momentos de relación.
+
+También debemos estar dispuestos a escuchar. Los comentarios, las preguntas, las respuestas y las conversaciones pueden revelar aspectos que no habíamos considerado. Esta información permite revisar nuestras ideas, identificar temas que merecen mayor atención y comprender mejor cómo se interpreta lo que comunicamos.
+
+Una marca que aprende de su audiencia puede evolucionar sin perder su identidad. Mantener una dirección no significa permanecer inmóvil, sino conservar los principios que nos definen mientras adaptamos nuestra manera de expresarlos a una realidad cambiante.
+
+## H2: El contenido como parte del valor de un negocio
+
+ID: `contenido-valor-negocio`
+
+El contenido puede desempeñar un papel mucho más amplio que el de apoyar una campaña o presentar una oferta. Cuando desarrollamos conocimiento, experiencias, explicaciones y recursos de manera organizada, estamos creando materiales que pueden contribuir al valor de nuestro negocio a largo plazo.
+
+Ese valor puede manifestarse de diferentes maneras. Un contenido puede ayudar a que una persona comprenda mejor un producto, facilitar una decisión, reducir dudas, mejorar la experiencia de un cliente o permitir que nuestra marca sea reconocida por una determinada especialidad.
+
+También puede servir como punto de partida para desarrollar otros recursos. Una idea bien investigada puede convertirse en una referencia interna, una herramienta de formación, un material de consulta o una base para futuras iniciativas. El conocimiento que generamos no tiene por qué agotarse en su primera publicación.
+
+Sin embargo, debemos distinguir entre acumular materiales y construir un patrimonio comunicativo. Una colección de contenidos desordenados puede resultar difícil de aprovechar. Para que tenga valor, necesitamos conservar su calidad, facilitar su consulta, mantener una relación coherente entre los recursos y reconocer cuáles siguen siendo relevantes.
+
+El marketing de contenidos adquiere una dimensión estratégica cuando deja de depender únicamente de lo que publicamos hoy y comienza a contribuir a lo que nuestro negocio puede desarrollar mañana. Las ideas, la experiencia y el conocimiento pueden convertirse en activos cuando los trabajamos con intención, los organizamos y los ponemos al servicio de una propuesta que tenga sentido.
+
+En última instancia, comunicar no consiste simplemente en conseguir que alguien nos preste atención. Consiste en ofrecer razones para que esa atención tenga valor. Cuando nuestra marca tiene algo relevante que aportar, sabe cómo expresarlo y mantiene una relación coherente con las personas, el contenido puede convertirse en una de las bases más importantes de su desarrollo digital.
+
+---
+
+# 6. IMPLEMENTACIÓN DEL ÍNDICE
+
+El índice debe aparecer inmediatamente después de la introducción y antes del primer apartado de desarrollo.
+
+Utilizar los doce apartados reales del contenido.
+
+Implementar los siguientes anchors:
+
+- `#contenido-forma-presente`
+- `#saber-que-representamos`
+- `#informar-dejar-huella`
+- `#voz-reconocible`
+- `#explicar-sin-complicar`
+- `#confianza-no-una-publicacion`
+- `#saber-que-no-decir`
+- `#contenido-como-experiencia`
+- `#creatividad-con-direccion`
+- `#contenido-no-efimero`
+- `#comunicacion-evoluciona`
+- `#contenido-valor-negocio`
+
+Comprobar que:
+
+- Los doce enlaces funcionan.
+- Cada enlace dirige al apartado correcto.
+- Los IDs no están duplicados.
+- El desplazamiento funciona correctamente.
+- Los encabezados no quedan ocultos por el header fijo, si existe.
+- No se generan errores de navegación.
+
+---
+
+# 7. ENLACES COMERCIALES
+
+Utilizar exclusivamente los siguientes enlaces:
+
+## Kindle
+
+https://www.amazon.com/dp/B0FQK516WC
+
+## Tapa blanda
+
+https://www.amazon.com/dp/B0FQTKZZY8
+
+## Tapa dura
+
+https://www.amazon.com/dp/B0FQP97WHW
+
+No inventar ediciones ni destinos comerciales.
+
+Mantener los botones de compra existentes, sus ubicaciones, sus estilos, sus comportamientos, el modal de compra si existe y los CTA inferiores.
+
+No eliminar botones.
+
+No sustituir enlaces por destinos genéricos.
+
+No cambiar el sistema comercial compartido del sitio.
+
+Si los botones existentes ya corresponden a estas ediciones, actualizar únicamente los destinos necesarios y conservar el funcionamiento.
+
+Respetar el orden y la presentación comercial del sistema existente en FG Perspectiva. No introducir nuevas plataformas de venta sin enlaces verificados.
+
+Los enlaces externos de Amazon deben conservar los atributos de seguridad y SEO correspondientes, cuando proceda:
+
+`target="_blank"`
+
+`rel="nofollow noopener noreferrer"`
+
+No alterar la ubicación de los botones de compra superior e inferior respecto al contenido.
+
+---
+
+# 8. DATOS ESTRUCTURADOS JSON-LD
+
+Implementar los datos estructurados de la ficha mediante el sistema SEO existente del proyecto.
+
+## Book
+
+Incluir únicamente los datos verificables:
+
+- Name: El Poder del Marketing de Contenidos.
+- Author: Francisco González.
+- URL de la ficha.
+- Imagen de portada, si ya existe una imagen válida vinculada a esta ficha.
+- Formatos disponibles, únicamente si el sistema existente permite declararlos correctamente y con información real.
+
+No inventar:
+
+- ISBN.
+- Fecha de publicación.
+- Precio.
+- Rating.
+- Review.
+- Número de páginas.
+- Editorial.
+- Offers no verificadas.
+- Datos bibliográficos no proporcionados.
+
+## BreadcrumbList
+
+Implementar la jerarquía real:
+
+Inicio → Biblioteca → Crecimiento → El Poder del Marketing de Contenidos.
+
+Utilizar las URL reales existentes en el proyecto.
+
+No crear rutas nuevas para categorías ni cambiar la estructura de URLs.
+
+---
+
+# 9. DISEÑO Y EXPERIENCIA DE USUARIO
+
+Conservar íntegramente la identidad visual actual de FG Perspectiva.
+
+Mantener:
+
+- Paleta de colores.
+- Tipografías.
+- Header.
+- Navegación.
+- Breadcrumbs.
+- Hero.
+- Imagen de portada existente.
+- Botones de compra.
+- Modal de compra.
+- CTA inferior.
+- Footer.
+- Componentes compartidos.
+- Espaciados.
+- Diseño responsive.
+- Comportamiento en escritorio, tablet y móvil.
+
+El nuevo texto debe integrarse naturalmente en la ficha actual, respetando la identidad visual del sitio.
+
+No añadir imágenes, ilustraciones, iconos, banners, bloques decorativos ni componentes nuevos innecesarios.
+
+No crear una nueva plantilla visual.
+
+No alterar el diseño global.
+
+El contenido debe ser cómodo de leer, con párrafos bien espaciados, encabezados claros y un índice accesible.
+
+---
+
+# 10. RESTRICCIONES TÉCNICAS
+
+Trabajar exclusivamente sobre la ficha de El Poder del Marketing de Contenidos.
+
+No modificar:
+
+- Homepage.
+- Biblioteca.
+- Categoría Crecimiento.
+- Otras fichas de libros.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Contacto.
+- Header compartido.
+- Footer.
+- Componentes comerciales globales.
+- Sistema de rutas.
+- Configuración SEO global.
+- Diseño global.
+- Funcionalidades ajenas a esta ficha.
+
+No realizar refactorizaciones generales.
+
+No reemplazar componentes compartidos por nuevas implementaciones.
+
+No crear rutas duplicadas.
+
+No modificar canonicals de otras páginas.
+
+No alterar el sitemap general más allá de lo que corresponda automáticamente a esta ruta.
+
+No realizar despliegues en Vercel.
+
+No crear copias de respaldo manuales innecesarias antes de esta modificación.
+
+---
+
+# 11. COMPROBACIONES OBLIGATORIAS
+
+Una vez finalizada la implementación, comprobar:
+
+## Contenido
+
+- [ ] Texto editorial completo.
+- [ ] No se han eliminado párrafos.
+- [ ] No se ha modificado la redacción aprobada.
+- [ ] Introducción presente.
+- [ ] Los doce apartados presentes.
+- [ ] Encabezados correctos.
+- [ ] Índice coincidente con el contenido.
+- [ ] No existe contenido duplicado accidental.
+- [ ] No se han añadido textos editoriales no autorizados.
+
+## SEO
+
+- [ ] Title correcto.
+- [ ] Meta description correcta.
+- [ ] Canonical correcto.
+- [ ] Open Graph correcto.
+- [ ] Twitter metadata correcta.
+- [ ] H1 único.
+- [ ] Jerarquía de encabezados correcta.
+- [ ] JSON-LD Book válido.
+- [ ] JSON-LD BreadcrumbList válido.
+- [ ] Sin datos inventados.
+- [ ] Sin errores SEO introducidos.
+
+## Navegación
+
+- [ ] Los doce enlaces del índice funcionan.
+- [ ] IDs únicos y correctos.
+- [ ] Desplazamiento a los apartados correcto.
+- [ ] Sin enlaces internos rotos.
+- [ ] Breadcrumbs funcionales.
+
+## Comercial
+
+- [ ] Kindle dirige al destino correcto.
+- [ ] Tapa blanda dirige al destino correcto.
+- [ ] Tapa dura dirige al destino correcto.
+- [ ] Botones de compra visibles.
+- [ ] Botones en su ubicación original.
+- [ ] Modal de compra funcional, si existe.
+- [ ] CTA superior conservado.
+- [ ] CTA inferior conservado.
+- [ ] No se han eliminado funcionalidades comerciales.
+
+## Diseño y responsive
+
+- [ ] Escritorio correcto.
+- [ ] Tablet correcto.
+- [ ] Móvil correcto.
+- [ ] Índice legible.
+- [ ] Texto legible.
+- [ ] Sin desbordamientos horizontales.
+- [ ] Sin superposiciones.
+- [ ] Sin cambios visuales globales no solicitados.
+
+## Técnico
+
+- [ ] Build completado correctamente.
+- [ ] Prerender/SSG funcionando.
+- [ ] Ruta correcta.
+- [ ] HTML generado correctamente.
+- [ ] Sin errores relevantes de consola.
+- [ ] Sin errores de hidratación.
+- [ ] Sin regresiones en el router.
+
+---
+
+# 12. INFORME FINAL DE IMPLEMENTACIÓN
+
+Cuando finalices, entrega un informe claro indicando:
+
+1. Archivos modificados.
+2. Componentes creados o actualizados.
+3. Ruta implementada.
+4. Metadatos SEO aplicados.
+5. Datos estructurados implementados.
+6. Índice y anchors comprobados.
+7. Enlaces comerciales comprobados.
+8. Estado de botones, modal y CTA.
+9. Resultado del build.
+10. Resultado del prerender.
+11. Resultado de las comprobaciones responsive.
+12. Posibles errores o incidencias.
+13. Confirmación expresa de que no se modificaron otras fichas, categorías ni componentes globales.
+14. Confirmación de que no se realizó ningún despliegue.
+
+Si alguna comprobación no puede realizarse, indicarlo expresamente. No afirmar que se ha realizado una prueba si no se ha comprobado realmente.
+
+---
+
+# RESULTADO ESPERADO
+
+Queremos que **El Poder del Marketing de Contenidos** se convierta en una ficha editorial sólida, original, profunda y diferenciada dentro del catálogo FG Perspectiva.
+
+La prioridad es preservar el contenido aprobado, construir una página técnicamente correcta, mantener la estructura comercial, mejorar su SEO y garantizar que funcione como una URL independiente sin provocar regresiones en el resto del proyecto.
+
+Implementa exclusivamente lo solicitado en esta instrucción.
+
+No tomes decisiones adicionales que alteren el contenido, el diseño global, las rutas o las funcionalidades existentes.
+
+Al finalizar, entrega el informe de implementación solicitado.

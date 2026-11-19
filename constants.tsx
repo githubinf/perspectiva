@@ -1491,8 +1491,38 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'crecimiento',
         title: 'El Poder Del Marketing De Contenidos',
         description: 'Convierte tu contenido en la base principal de tu crecimiento online.',
-        url: 'https://amzn.to/47MbpgC',
+        url: 'https://www.amazon.com/dp/B0FQTKZZY8',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/18-marketing-de-contenidos-libro-400.jpg',
+        purchaseOptions: [
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B0FQTKZZY8',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
+            emoji: '🛒',
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B0FQP97WHW',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B0FQK516WC',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          }
+        ],
         extraInfo: [
           'El marketing de contenidos es el pilar fundamental de cualquier estrategia digital exitosa. No se trata de "publicar artículos" por cumplir, sino de crear contenido estratégico que eduque, atraiga y convierta a tu audiencia en clientes leales. Sin una estrategia de contenidos clara, todo el tráfico que atraigas será en vano.',
           'Este libro es una guía completa para dominar el arte y la ciencia del marketing de contenidos, desde la planificación hasta la ejecución y la medición. Aprenderás a crear contenido que no solo informe, sino que genere confianza, autoridad y, finalmente, ventas recurrentes.',

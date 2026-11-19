@@ -30,6 +30,7 @@ import InteligenciaArtificialView from './components/views/InteligenciaArtificia
 import ElFuturoDelMarketingIaView from './components/views/ElFuturoDelMarketingIaView.tsx';
 import IdeasTraficoWebView from './components/views/IdeasTraficoWebView.tsx';
 import IdeasMaestrasTraficoWebView from './components/views/IdeasMaestrasTraficoWebView.tsx';
+import PoderMarketingContenidosView from './components/views/PoderMarketingContenidosView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
@@ -162,6 +163,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/ideas-maestras-de-trafico-web/' && matchedBook) {
     return <IdeasMaestrasTraficoWebView book={matchedBook} />;
+  }
+
+  if (currentPath === '/el-poder-del-marketing-de-contenidos/' && matchedBook) {
+    return <PoderMarketingContenidosView book={matchedBook} />;
   }
 
   if (matchedBook) {
