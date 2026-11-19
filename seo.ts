@@ -1782,6 +1782,88 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6s. Ficha editorial dedicada: Tips de Marketing para Afiliados
+  if (path === '/tips-de-marketing-para-afiliados/') {
+    const tipsBook = ALL_BOOKS.find(
+      (b) =>
+        b.path === '/tips-de-marketing-para-afiliados/' ||
+        b.slug === 'tips-de-marketing-para-afiliados'
+    );
+    const tipsMetaDescription =
+      'Descubre cómo desarrollar una actividad de marketing de afiliados basada en la confianza, la autoridad, las recomendaciones responsables y el crecimiento sostenible.';
+    const tipsSchemaDescription =
+      'Una perspectiva sobre las decisiones, los hábitos profesionales y los criterios que permiten desarrollar una actividad de afiliación reconocible, responsable y preparada para evolucionar.';
+    const tipsCover =
+      tipsBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/5-tips-de-marketing-para-afiliados-libro-400.jpg';
+    const tipsUrl = `${BASE_URL}/tips-de-marketing-para-afiliados/`;
+
+    const tipsBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Tips de Marketing para Afiliados',
+      alternateName:
+        'Estrategias éticas, técnicas y sostenibles para construir autoridad y generar ingresos a largo plazo',
+      description: tipsSchemaDescription,
+      image: tipsCover,
+      url: tipsUrl,
+      inLanguage: 'es',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      },
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
+        'https://schema.org/EBook',
+        'https://schema.org/AudiobookFormat'
+      ]
+    };
+
+    return {
+      path: '/tips-de-marketing-para-afiliados/',
+      title: 'Tips de Marketing para Afiliados: estrategias sostenibles | FG Perspectiva',
+      description: tipsMetaDescription,
+      canonical: tipsUrl,
+      ogImage: tipsCover,
+      ogType: 'book',
+      h1: 'Tips de Marketing para Afiliados',
+      schema: [
+        tipsBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Ingresos',
+              item: `${BASE_URL}/ingresos/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Tips de Marketing para Afiliados',
+              item: tipsUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {

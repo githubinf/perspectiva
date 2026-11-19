@@ -23,6 +23,7 @@ import MasteringAffiliateMarketingView from './components/views/MasteringAffilia
 import MarketingCpaEntrepreneursView from './components/views/MarketingCpaEntrepreneursView.tsx';
 import CpaSmartlinkFormulaView from './components/views/CpaSmartlinkFormulaView.tsx';
 import DineroConClickbankView from './components/views/DineroConClickbankView.tsx';
+import TipsAffiliateMarketingView from './components/views/TipsAffiliateMarketingView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
@@ -127,6 +128,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/dinero-con-clickbank/' && matchedBook) {
     return <DineroConClickbankView book={matchedBook} />;
+  }
+
+  if (currentPath === '/tips-de-marketing-para-afiliados/' && matchedBook) {
+    return <TipsAffiliateMarketingView book={matchedBook} />;
   }
 
   if (matchedBook) {

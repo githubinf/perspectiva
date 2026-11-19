@@ -1028,40 +1028,71 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'ingresos',
         title: 'Tips de Marketing para Afiliados',
         description: 'Consejos accionables para maximizar conversiones.',
-        url: 'https://amzn.to/405AkFR',
+        url: 'https://www.amazon.com/dp/B09WZ29BM8',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/5-tips-de-marketing-para-afiliados-libro-400.jpg',
         purchaseOptions: [
-          { 
-            platform: 'Amazon', 
-            url: 'https://amzn.to/405AkFR', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.png',
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B09WZ29BM8',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
             emoji: '🛒',
-            cta: 'Comprar en Amazon'
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
           },
-          { 
-            platform: 'Draft2Digital', 
-            url: 'https://books2read.com/u/m28gXr', 
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B09WRX485S',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B09X3JK6JD',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            tooltip: 'Amazon/Audible',
+            url: 'https://www.amazon.com/dp/B0HB61P5JK',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Books2Read',
+            url: 'https://books2read.com/u/m28gXr',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/books2read_logo.png',
             emoji: '📖',
-            cta: 'Ver en Draft2Digital'
+            cta: 'Ver en Books2Read'
           },
-          { 
-            platform: 'Clickbank', 
-            url: 'https://tips-marketing-de-afiliados.vercel.app/', 
+          {
+            platform: 'Clickbank',
+            url: 'https://tips-marketing-de-afiliados.vercel.app/',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.png',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
-          { 
-            platform: 'Payhip', 
-            url: 'https://payhip.com/b/bCMT3', 
+          {
+            platform: 'Payhip',
+            url: 'https://payhip.com/b/bCMT3',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.png',
             emoji: '💎',
             cta: 'Descarga Directa'
           },
-          { 
-            platform: 'Lulu', 
-            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/tips-de-marketing-para-afiliados/ebook/product-jej9vm4.html', 
+          {
+            platform: 'Lulu',
+            url: 'https://www.lulu.com/es/shop/francisco-gonz%C3%A1lez/tips-de-marketing-para-afiliados/ebook/product-jej9vm4.html',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/lulu-logo.png',
             emoji: '📚',
             cta: 'Ver en Lulu'
