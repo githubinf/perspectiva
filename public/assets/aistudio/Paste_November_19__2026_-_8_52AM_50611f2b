@@ -1,0 +1,645 @@
+# INSTRUCCIÓN INTEGRAL — REDISEÑO EDITORIAL Y SEO DE LA FICHA «CÓMO GANAR DINERO CON CHATGPT»
+
+## PROYECTO
+FG Perspectiva — Editorial digital centrada en libros.
+
+## OBJETIVO
+
+Rediseñar y actualizar exclusivamente la ficha del libro **Cómo ganar dinero con ChatGPT**, convirtiéndola en una página editorial independiente, optimizada para SEO, con contenido original, profundidad temática, arquitectura propia y una experiencia de lectura coherente con el proyecto FG Perspectiva.
+
+La página debe funcionar como una pieza editorial especializada, no como una simple página comercial ampliada ni como una reformulación de la descripción de Amazon.
+
+La nueva ficha debe aportar contenido útil, original y sustancial, con una intención de búsqueda definida y una perspectiva claramente diferenciada de las demás publicaciones de la categoría Tecnología.
+
+---
+
+# 1. REVISIÓN PREVIA DEL PROYECTO
+
+Antes de realizar cualquier modificación:
+
+1. Inspecciona la estructura actual del proyecto.
+2. Localiza la ficha existente de «Cómo ganar dinero con ChatGPT».
+3. Identifica su ruta, componente, archivo de datos, portada, enlaces comerciales, sistema de compra y configuración SEO.
+4. Comprueba cómo funcionan actualmente las fichas individuales de libros.
+5. Identifica los componentes de presentación, navegación, breadcrumbs, SEO, modal de compra y CTA inferior que utiliza esta ficha.
+6. Utiliza la estructura y los componentes existentes cuando sean adecuados, sin crear sistemas paralelos innecesarios.
+7. Comprueba el estado actual del proyecto antes de comenzar para identificar posibles errores previos.
+
+No inventes una ruta, un nombre de archivo, una portada, un enlace comercial ni datos editoriales. Utiliza los datos existentes en el proyecto y los datos confirmados en esta instrucción.
+
+---
+
+# 2. DATOS OFICIALES DEL LIBRO
+
+**Título:** Cómo ganar dinero con ChatGPT
+
+**Subtítulo oficial:** y aprovechar al máximo la máquina que está revolucionando el mundo
+
+**Autor:** Francisco González
+
+**Categoría:** Tecnología
+
+Conserva la categoría, ruta, portada oficial y demás datos identificativos que ya existen en el proyecto.
+
+No modifiques el título ni el subtítulo oficiales.
+
+---
+
+# 3. ENFOQUE EDITORIAL Y DIFERENCIACIÓN
+
+La nueva ficha debe desarrollar la relación entre ChatGPT, la productividad, las aplicaciones comerciales, los productos digitales, los servicios profesionales y el desarrollo de proyectos.
+
+El enfoque editorial es:
+
+**Transformar la capacidad de ChatGPT en aplicaciones prácticas que puedan integrarse en proyectos digitales, servicios profesionales y modelos de negocio.**
+
+La página no debe convertirse en:
+
+- Una explicación genérica de qué es ChatGPT.
+- Un artículo introductorio sobre inteligencia artificial.
+- Una lista superficial de ideas para ganar dinero con IA.
+- Una recopilación de prompts sin contexto.
+- Una página de promesas de ingresos fáciles.
+- Una repetición de la descripción comercial original.
+- Un texto que compita directamente con las demás fichas de la categoría Tecnología.
+
+La perspectiva debe ser práctica, analítica, editorial y orientada a comprender cómo la tecnología puede integrarse en actividades con utilidad real.
+
+Diferencia esta página de las demás fichas de FG Perspectiva:
+
+- **Cómo ganar dinero con ChatGPT:** aplicaciones productivas, oportunidades comerciales, servicios, productos, procesos y desarrollo de actividades económicas mediante ChatGPT.
+- **Desbloquea tu inspiración con ChatGPT:** creatividad, ideas, inspiración y apoyo al pensamiento creativo.
+- **Inteligencia Artificial:** comprensión más amplia de la IA, sus fundamentos, posibilidades y aplicaciones.
+- **El futuro del marketing (IA):** evolución y transformación de las actividades de marketing mediante inteligencia artificial.
+
+No reutilices la arquitectura editorial, los encabezados ni los textos de otras fichas.
+
+---
+
+# 4. TEXTO EDITORIAL DEFINITIVO
+
+Incorpora íntegramente el siguiente texto editorial. No lo resumas, no lo acortes, no sustituyas párrafos y no lo reescribas. Respeta el contenido, los títulos, la estructura y el sentido de cada sección.
+
+## HERO EDITORIAL
+
+### Cómo ganar dinero con ChatGPT
+
+**y aprovechar al máximo la máquina que está revolucionando el mundo**
+
+Una perspectiva práctica sobre cómo integrar ChatGPT en actividades productivas, desarrollar soluciones digitales, crear nuevas propuestas comerciales y convertir las capacidades de la inteligencia artificial en recursos aplicables a proyectos reales.
+
+**Autor: Francisco González**
+
+## INTRODUCCIÓN
+
+La aparición de herramientas capaces de interpretar instrucciones, elaborar textos, analizar información y participar en procesos de trabajo ha cambiado nuestra relación con la tecnología. Ya no necesitamos interactuar exclusivamente con programas que funcionan mediante menús rígidos o procedimientos técnicos. Podemos plantear problemas, describir objetivos, aportar contexto y trabajar con sistemas que nos ayudan a desarrollar respuestas, explorar posibilidades y construir soluciones.
+
+Sin embargo, disponer de una herramienta avanzada no significa saber cómo aprovecharla comercialmente. La diferencia entre utilizar ChatGPT ocasionalmente y convertirlo en un recurso productivo reside en nuestra capacidad para identificar necesidades, encontrar aplicaciones concretas y conectar sus funcionalidades con actividades que aporten valor a otras personas.
+
+La inteligencia artificial puede ayudarnos a desarrollar contenidos, organizar información, preparar materiales, diseñar procesos, mejorar servicios y explorar productos digitales. Su utilidad no depende únicamente de lo que es capaz de generar, sino de la forma en que integramos sus resultados en un proyecto con objetivos definidos, destinatarios reales y una lógica de funcionamiento.
+
+El desafío consiste en pasar de la experimentación a la aplicación. En lugar de acumular conversaciones, instrucciones o ideas sin continuidad, podemos utilizar ChatGPT como un recurso de apoyo para desarrollar iniciativas, tomar decisiones mejor fundamentadas y construir una actividad digital con una dirección reconocible.
+
+## ÍNDICE DE CONTENIDOS
+
+Título del índice: **Contenido de esta página**
+
+Texto introductorio: **Accede directamente al apartado que te interesa.**
+
+El índice debe aparecer después de la introducción y antes del desarrollo editorial principal.
+
+Utiliza los siguientes enlaces de navegación y sus identificadores correspondientes:
+
+1. El valor económico de resolver problemas — `#valor-economico-problemas`
+2. La capacidad humana detrás de la inteligencia artificial — `#capacidad-humana-ia`
+3. Encontrar oportunidades donde la tecnología aporta utilidad — `#oportunidades-utilidad-tecnologia`
+4. El conocimiento como materia prima de nuevos productos — `#conocimiento-materia-prima`
+5. Desarrollar servicios con una capacidad de entrega diferente — `#desarrollar-servicios-diferentes`
+6. El contenido como recurso de posicionamiento — `#contenido-posicionamiento`
+7. Diseñar procesos que aprovechen el trabajo asistido — `#procesos-trabajo-asistido`
+8. La importancia de convertir una idea en una oferta — `#idea-convertir-oferta`
+9. Organizar un proyecto alrededor de sus recursos reales — `#organizar-proyecto-recursos`
+10. La calidad como elemento de diferenciación — `#calidad-diferenciacion`
+11. La evolución de las actividades impulsadas por IA — `#evolucion-actividades-ia`
+12. Construir una iniciativa con continuidad — `#iniciativa-continuidad`
+
+El índice debe ser funcional. Cada enlace debe conducir al encabezado H2 real de su apartado. No deben existir anclas duplicadas.
+
+## DESARROLLO EDITORIAL
+
+### El valor económico de resolver problemas
+
+En cualquier actividad comercial, el valor de una propuesta está relacionado con su capacidad para responder a una necesidad. Podemos disponer de herramientas sofisticadas, conocimientos técnicos o una enorme cantidad de recursos, pero si no existe una utilidad reconocible para alguien, resulta difícil convertirlos en una actividad económicamente viable.
+
+ChatGPT amplía las posibilidades de abordar determinados trabajos. Nos permite explorar información, desarrollar borradores, organizar conceptos, generar alternativas y acelerar algunas tareas que anteriormente exigían más tiempo. Estas capacidades pueden resultar especialmente interesantes cuando identificamos procesos que consumen recursos, actividades que necesitan una mejor organización o necesidades que todavía no están atendidas de manera satisfactoria.
+
+La oportunidad comercial no aparece simplemente porque utilicemos inteligencia artificial. Aparece cuando conseguimos conectar una capacidad tecnológica con una necesidad concreta. Un negocio puede valorar una mejor organización de sus consultas, un profesional puede necesitar documentación más clara o un creador puede encontrar útil desarrollar materiales de trabajo con mayor agilidad.
+
+Por eso, nuestra primera pregunta no debería ser qué podemos producir con ChatGPT, sino qué problema merece la pena resolver. Este cambio de perspectiva permite alejarnos de la generación indiscriminada de resultados y concentrarnos en aplicaciones que tengan una finalidad, un destinatario y un contexto de utilización.
+
+### La capacidad humana detrás de la inteligencia artificial
+
+La tecnología puede procesar instrucciones y producir respuestas, pero la dirección del trabajo continúa dependiendo de nuestras decisiones. Somos quienes determinamos qué queremos conseguir, qué información resulta pertinente, qué resultado es aceptable y qué debe modificarse antes de utilizarlo.
+
+Una petición demasiado general suele generar respuestas igualmente generales. Cuando aportamos contexto, delimitamos el problema, definimos criterios y explicamos el propósito de una tarea, el trabajo asistido puede adquirir mayor utilidad. No se trata de encontrar una frase secreta que garantice resultados, sino de desarrollar una forma de colaboración en la que cada interacción tenga sentido dentro de un proceso.
+
+También debemos aprender a revisar lo que recibimos. Una respuesta convincente puede contener errores, omisiones, interpretaciones equivocadas o información que necesita verificarse. La fluidez del lenguaje no constituye una prueba de exactitud. En aplicaciones comerciales, esta distinción es especialmente importante porque la calidad de lo que entregamos afecta directamente a nuestra credibilidad.
+
+La experiencia, el criterio y el conocimiento del contexto son elementos que nos permiten utilizar la herramienta con mayor responsabilidad. ChatGPT puede ayudarnos a trabajar, pero no sustituye la obligación de comprender aquello que ofrecemos ni de asumir las consecuencias de nuestras decisiones.
+
+### Encontrar oportunidades donde la tecnología aporta utilidad
+
+Las oportunidades relacionadas con la inteligencia artificial no siempre se encuentran en la creación de negocios completamente nuevos. En ocasiones, surgen al observar una actividad existente y descubrir que determinados procesos pueden mejorarse, simplificarse o reorganizarse.
+
+Un comercio puede necesitar descripciones de productos más consistentes. Un profesional puede dedicar demasiado tiempo a preparar propuestas. Un creador puede encontrar dificultades para estructurar sus materiales. Una pequeña empresa puede tener información dispersa que necesita convertirse en documentación accesible.
+
+Estos escenarios nos permiten identificar posibles aplicaciones sin depender de ideas extraordinarias. La utilidad puede encontrarse en tareas cotidianas que, aunque no parezcan especialmente innovadoras, generan costes de tiempo, problemas de coordinación o dificultades de comunicación.
+
+Para evaluar una oportunidad, conviene comprender quién experimenta esa necesidad, cómo la resuelve actualmente, qué limitaciones encuentra y si una solución mejor tendría suficiente valor. La tecnología debe formar parte de la respuesta, pero no ser el motivo artificial por el que intentamos crear una oferta.
+
+Una oportunidad razonable es aquella en la que podemos explicar con claridad qué mejora, para quién y bajo qué condiciones. Esta definición nos ayuda a evitar proyectos construidos únicamente alrededor de la fascinación por una herramienta.
+
+### El conocimiento como materia prima de nuevos productos
+
+La producción de recursos digitales es una de las áreas en las que ChatGPT puede desempeñar un papel interesante. La elaboración de materiales educativos, documentos de apoyo, recursos especializados o contenidos estructurados requiere organizar ideas, establecer relaciones entre conceptos y adaptar la información a una finalidad determinada.
+
+La herramienta puede participar en distintas etapas del proceso, desde explorar enfoques hasta desarrollar una estructura inicial o mejorar la claridad de una explicación. Sin embargo, el valor de un producto digital no se mide por la cantidad de páginas que conseguimos generar, sino por la utilidad de su contenido, su organización y su capacidad para responder a una necesidad.
+
+Un material creado rápidamente puede seguir siendo superficial. Por el contrario, un recurso que combina conocimiento especializado, experiencia, revisión y una presentación adecuada puede convertirse en una propuesta mucho más valiosa. La inteligencia artificial nos permite explorar y producir con mayor flexibilidad, pero la selección, la coherencia y la validación siguen siendo determinantes.
+
+Cuando trabajamos con conocimiento propio o con información que tenemos derecho a utilizar, podemos encontrar nuevas formas de organizarlo y presentarlo. El objetivo no debería ser multiplicar productos sin criterio, sino desarrollar recursos que tengan una identidad, una utilidad y una razón para existir.
+
+### Desarrollar servicios con una capacidad de entrega diferente
+
+La prestación de servicios también puede beneficiarse de la incorporación de inteligencia artificial. Muchas actividades profesionales incluyen tareas de preparación, clasificación, documentación, investigación preliminar o elaboración de materiales que pueden recibir apoyo tecnológico.
+
+Esto no significa que debamos automatizar indiscriminadamente todo lo que hacemos. En determinados servicios, la atención personal, la interpretación de circunstancias particulares y la experiencia profesional constituyen precisamente aquello que el cliente valora. El uso de ChatGPT puede ayudarnos a mejorar la preparación y organización del trabajo, mientras reservamos nuestra atención para las decisiones que requieren conocimiento, sensibilidad o responsabilidad.
+
+La diferencia puede reflejarse en nuestra capacidad para atender mejor una actividad, organizar entregas, desarrollar una propuesta más completa o reducir el tiempo dedicado a tareas auxiliares. También puede permitirnos revisar cómo estructuramos nuestros servicios, qué incluye cada prestación y qué procesos necesitan una intervención humana directa.
+
+Una aplicación comercial responsable debe tener límites claros. Debemos saber qué tareas podemos delegar a la herramienta, cuáles necesitan revisión y cuáles no deberían ejecutarse sin nuestra participación. Esa delimitación contribuye a mantener la calidad y evita que la rapidez se convierta en un problema.
+
+### El contenido como recurso de posicionamiento
+
+El contenido digital continúa siendo un recurso importante para comunicar conocimientos, establecer una presencia y facilitar que las personas descubran una propuesta. La inteligencia artificial puede ayudarnos a desarrollar materiales, explorar diferentes perspectivas y organizar una producción editorial más consistente.
+
+No obstante, publicar más no garantiza que consigamos una mayor atención ni que nuestro proyecto se diferencie. Cuando utilizamos ChatGPT para generar contenido sin una perspectiva definida, podemos terminar produciendo materiales demasiado similares a los que ya existen, con explicaciones previsibles y poca personalidad.
+
+La ventaja de trabajar con esta tecnología debería estar en nuestra capacidad para mejorar el proceso creativo y editorial. Podemos utilizarla para identificar preguntas, ordenar información, examinar argumentos o revisar la claridad de un texto, pero necesitamos aportar una perspectiva propia que determine qué merece ser publicado.
+
+El contenido adquiere mayor valor cuando responde a una intención concreta, mantiene coherencia con el proyecto y ofrece una experiencia útil. La tecnología puede facilitar su elaboración, mientras que nuestra dirección editorial permite convertirlo en una expresión reconocible de conocimiento, criterio y especialización.
+
+### Diseñar procesos que aprovechen el trabajo asistido
+
+Una utilización aislada de ChatGPT puede resolver una tarea puntual. Sin embargo, cuando identificamos actividades que se repiten, resulta más interesante pensar en procesos que permitan aprovechar sus capacidades de forma organizada.
+
+Un proceso comienza con una finalidad, establece qué información necesita, determina las etapas de trabajo y define cómo se revisará el resultado. De esta manera, podemos evitar depender de conversaciones improvisadas que obligan a empezar de nuevo cada vez que abordamos una actividad.
+
+La organización también nos ayuda a reconocer dónde se producen errores, qué instrucciones deben mejorarse y qué partes del trabajo requieren mayor atención. Si un proceso genera resultados inconsistentes, podemos revisar sus entradas, sus criterios o las tareas que hemos asignado a la herramienta.
+
+No todos los trabajos necesitan automatización completa. En ocasiones, una intervención parcial es suficiente para mejorar la eficiencia sin perder control. Lo importante es que el sistema responda a las necesidades de la actividad y no se convierta en una estructura innecesariamente compleja.
+
+### La importancia de convertir una idea en una oferta
+
+Una idea puede resultar atractiva desde el punto de vista tecnológico y, aun así, no constituir una propuesta comercial. Para que podamos plantearla como una oferta, necesitamos definir qué recibe la persona, qué problema aborda, qué alcance tiene y por qué podría resultar útil.
+
+ChatGPT puede ayudarnos a explorar distintas maneras de presentar una solución, organizar sus componentes o preparar materiales explicativos. Pero la construcción de una oferta requiere decisiones que no podemos delegar completamente: el público al que nos dirigimos, las condiciones del servicio, el valor que aportamos y la forma en que nos responsabilizamos de su entrega.
+
+También es importante comprender que no todas las aplicaciones de inteligencia artificial necesitan convertirse en un producto independiente. Algunas pueden mejorar nuestra actividad actual, fortalecer un servicio existente o facilitar la gestión de un proyecto. En otros casos, puede tener sentido desarrollar una solución que se comercialice de manera autónoma.
+
+La claridad de la propuesta es más importante que su complejidad. Cuando podemos explicar con sencillez qué ofrecemos y qué utilidad tiene, contamos con una base más sólida para evaluar su viabilidad y comunicarla al mercado.
+
+### Organizar un proyecto alrededor de sus recursos reales
+
+Todo proyecto necesita una estructura compatible con los recursos disponibles. El tiempo, los conocimientos, la capacidad de atención, las herramientas y el presupuesto condicionan lo que podemos desarrollar y mantener.
+
+La inteligencia artificial puede ayudarnos a ampliar determinadas capacidades, pero no elimina las limitaciones de una actividad. Un proyecto con demasiadas líneas de trabajo, productos, servicios o canales puede terminar siendo difícil de gestionar, incluso cuando disponemos de herramientas que facilitan algunas tareas.
+
+Por eso, conviene establecer prioridades y concentrar nuestros esfuerzos en aquello que tenga mayor relevancia. Podemos comenzar con una aplicación concreta, comprobar cómo funciona y decidir después si merece la pena ampliar el proyecto. Esta forma de avanzar reduce la necesidad de asumir compromisos excesivos antes de comprender las exigencias reales de la actividad.
+
+La organización también implica mantener una relación equilibrada entre producción y mantenimiento. Crear recursos es solo una parte del trabajo; revisar, actualizar, atender necesidades y gestionar la actividad requiere continuidad. Un sistema útil es aquel que podemos sostener, no solamente aquel que parece eficiente durante sus primeras etapas.
+
+### La calidad como elemento de diferenciación
+
+A medida que las herramientas de inteligencia artificial se vuelven accesibles, producir determinados materiales resulta cada vez más sencillo. Esta facilidad puede aumentar la competencia y hacer que muchos resultados se parezcan entre sí.
+
+En ese entorno, la calidad adquiere una importancia particular. La precisión, la profundidad, la utilidad, la adaptación al contexto y la experiencia que ofrecemos pueden marcar diferencias que no dependen de la velocidad de producción.
+
+La revisión debe formar parte del proceso, no ser una tarea opcional que realizamos cuando sobra tiempo. Necesitamos comprobar la información, detectar afirmaciones que no podemos respaldar, corregir inconsistencias y asegurarnos de que el resultado cumple su propósito.
+
+También debemos prestar atención a la originalidad y al uso responsable de la información. La IA puede ayudar a producir materiales, pero no debemos utilizarla para presentar como experiencia propia aquello que no hemos vivido, atribuirnos conocimientos que no poseemos ni ofrecer resultados que no podemos garantizar.
+
+Una actividad comercial sólida necesita confianza. Esa confianza se construye mediante decisiones coherentes, transparencia y un compromiso real con aquello que ponemos a disposición de otras personas.
+
+### La evolución de las actividades impulsadas por IA
+
+La inteligencia artificial no permanece estática. Las herramientas, sus capacidades, las formas de interacción y las posibilidades de integración cambian continuamente. Esto significa que las aplicaciones que hoy resultan útiles pueden transformarse, y que algunas oportunidades dejarán de tener sentido mientras aparezcan otras.
+
+Mantener una actividad vinculada a esta tecnología exige observar su evolución sin caer en la obligación de perseguir cada novedad. Incorporar herramientas nuevas simplemente porque están disponibles puede generar más complejidad que valor. Necesitamos evaluar si una incorporación mejora realmente nuestro trabajo, resuelve una limitación o permite ofrecer algo que antes no podíamos desarrollar.
+
+La adaptación también implica aprender. Podemos revisar nuestros procesos, experimentar de forma controlada, comparar resultados y actualizar los conocimientos que utilizamos en el proyecto. No es necesario modificar toda nuestra estructura cada vez que aparece una nueva funcionalidad.
+
+La continuidad depende de nuestra capacidad para mantener una dirección mientras adaptamos los recursos. La tecnología puede cambiar con rapidez, pero los principios de utilidad, claridad, confianza y responsabilidad siguen siendo importantes para cualquier actividad que aspire a mantenerse.
+
+### Construir una iniciativa con continuidad
+
+Utilizar ChatGPT con una finalidad económica requiere algo más que aprender a formular instrucciones. Necesitamos comprender el contexto en el que trabajamos, reconocer necesidades, desarrollar propuestas y organizar una actividad capaz de ofrecer resultados útiles.
+
+La herramienta puede ayudarnos a explorar posibilidades que antes exigían más recursos, facilitar determinados procesos y ampliar nuestras capacidades de producción. Sin embargo, su aprovechamiento depende de cómo la incorporamos a nuestro trabajo y de las decisiones que tomamos a lo largo del proceso.
+
+No existe una única aplicación válida para todos los perfiles. Un profesional puede utilizarla para mejorar sus servicios, un creador para desarrollar recursos digitales, un emprendedor para organizar procesos y un proyecto editorial para ampliar su capacidad de investigación y producción. Cada iniciativa necesita encontrar su propia relación entre tecnología, conocimiento y propósito comercial.
+
+La mejor manera de avanzar es comenzar por una necesidad concreta, desarrollar una solución razonable, evaluar su utilidad y aprender de su aplicación. De este modo, dejamos de considerar ChatGPT únicamente como una novedad tecnológica y empezamos a utilizarlo como un recurso integrado en una actividad que tiene dirección, estructura y posibilidades de evolución.
+
+---
+
+# 5. SEO ON-PAGE
+
+Implementa los metadatos SEO específicos de esta ficha. Todos los metadatos deben estar técnicamente en el `<head>`, no visibles dentro del contenido editorial.
+
+### SEO Title
+
+Cómo ganar dinero con ChatGPT: oportunidades digitales | FG Perspectiva
+
+### Meta Description
+
+Descubre cómo utilizar ChatGPT para desarrollar productos digitales, mejorar servicios, organizar procesos y explorar oportunidades de negocio con inteligencia artificial.
+
+### Palabra clave principal
+
+Cómo ganar dinero con ChatGPT
+
+### Palabras clave secundarias
+
+- ganar dinero con inteligencia artificial
+- negocios con ChatGPT
+- ChatGPT para emprendedores
+- productos digitales con IA
+- servicios con inteligencia artificial
+- automatización de tareas con ChatGPT
+- oportunidades de negocio con IA
+- inteligencia artificial aplicada a negocios
+- productividad con ChatGPT
+- monetizar herramientas de inteligencia artificial
+
+Utiliza las palabras clave de forma natural, sin sobreoptimización, repeticiones artificiales ni listas de keywords visibles para el lector.
+
+La página debe responder a la intención de búsqueda de una persona interesada en descubrir cómo aplicar ChatGPT en actividades que puedan tener utilidad comercial, sin prometer resultados económicos garantizados.
+
+---
+
+# 6. URL, CANONICAL Y METADATOS SOCIALES
+
+1. Conserva la ruta actual de esta ficha.
+2. No cambies el slug.
+3. Utiliza la URL canónica absoluta correspondiente a la ruta existente.
+4. Actualiza Open Graph con el título, descripción, URL y portada oficial.
+5. Actualiza Twitter Cards con la información correcta.
+6. Comprueba que no existan títulos, descripciones ni canonicals duplicados o incorrectos.
+7. No alteres los metadatos globales de otras páginas.
+
+---
+
+# 7. DATOS ESTRUCTURADOS
+
+Implementa o actualiza los datos estructurados específicos de esta página utilizando JSON-LD.
+
+Utiliza:
+
+- `Book`
+- `BreadcrumbList`
+
+En el objeto Book utiliza únicamente información confirmada y disponible en el proyecto:
+
+- Nombre oficial del libro.
+- Autor Francisco González.
+- Portada oficial existente.
+- URL canónica de la ficha.
+- Descripción editorial adecuada, original y coherente con el libro.
+- Categoría o género cuando corresponda y esté respaldado por los datos reales.
+
+No inventes ISBN, precios, ratings, reseñas, fechas de publicación, editorial ni otros atributos que no estén confirmados.
+
+Evita duplicar esquemas o generar conflictos con el sistema estructurado existente.
+
+---
+
+# 8. ENLACES COMERCIALES OFICIALES
+
+Conserva los enlaces comerciales existentes de esta ficha y verifica que correspondan exactamente a los siguientes destinos.
+
+## Amazon
+
+**Ebook Kindle**
+
+https://www.amazon.com/dp/B0C932SFX7
+
+**Tapa blanda**
+
+https://www.amazon.com/dp/B0C91X9ZVZ
+
+**Tapa dura**
+
+https://www.amazon.com/dp/B0D44SHVWJ
+
+**Audiolibro**
+
+https://www.amazon.com/dp/B0HB6KFDPK
+
+## ClickBank
+
+https://dineroconchatgpt.vercel.app/
+
+## Payhip
+
+https://payhip.com/b/FuLo0
+
+No inventes enlaces de Google Play, Books2Read, Lulu ni otras plataformas.
+
+### Orden comercial
+
+Dentro del sistema comercial existente, utiliza el orden de presentación general establecido para las fichas de FG Perspectiva:
+
+1. Amazon — Tapa blanda.
+2. Amazon — Tapa dura.
+3. Amazon — Ebook Kindle.
+4. Amazon/Audible — Audiolibro.
+5. Google Play Books — Ebook, únicamente si existe.
+6. Google Play — Audiolibro, únicamente si existe.
+7. Books2Read, únicamente si existe.
+8. ClickBank.
+9. Payhip.
+10. Lulu, únicamente si existe.
+11. Otros enlaces comerciales confirmados, al final.
+
+Los formatos o plataformas inexistentes deben omitirse completamente. No crear botones vacíos, ficticios, deshabilitados ni espacios reservados.
+
+---
+
+# 9. PRESERVACIÓN ABSOLUTA DEL SISTEMA COMERCIAL
+
+Este apartado es crítico.
+
+La intervención editorial NO autoriza a rediseñar, simplificar, reestructurar ni eliminar los componentes comerciales de la ficha.
+
+Preserva:
+
+- Los botones de compra superiores.
+- La ubicación original del bloque comercial.
+- El sistema de apertura del modal.
+- El modal de compra.
+- Todos los formatos disponibles.
+- Los enlaces de Amazon.
+- Los enlaces de ClickBank.
+- El enlace de Payhip.
+- Los textos de los botones.
+- Los estilos actuales.
+- El comportamiento responsive.
+- El CTA inferior «Comprar ahora» o su denominación actual.
+- La funcionalidad de cierre y apertura del modal.
+- Cualquier mecanismo actual de selección de formato.
+
+No conviertas el modal en botones individuales.
+
+No elimines el botón de compra inferior.
+
+No muevas los bloques comerciales a otras secciones.
+
+No modifiques componentes compartidos de compra para resolver esta ficha.
+
+No alteres enlaces, formatos, eventos, estados, acciones ni comportamiento comercial.
+
+Comprueba que los botones superiores y el CTA inferior continúan funcionando exactamente como antes.
+
+---
+
+# 10. DISEÑO Y EXPERIENCIA VISUAL
+
+La ficha debe integrarse en el sistema visual actual de FG Perspectiva.
+
+Mantén:
+
+- Identidad visual de la editorial.
+- Paleta cromática vigente.
+- Tipografías existentes.
+- Jerarquía tipográfica editorial.
+- Espaciado coherente.
+- Presentación de la portada oficial.
+- Diseño responsive.
+- Breadcrumbs.
+- Navegación general.
+- Sistema de compra actual.
+
+El diseño debe transmitir una experiencia editorial de calidad, sobria, moderna y profesional.
+
+No introducir elementos decorativos que distraigan del contenido.
+
+No utilizar banners, ilustraciones, imágenes de stock, fotografías adicionales, iconos decorativos ni gráficos que no formen parte del sistema existente.
+
+La única imagen relacionada con el libro debe ser su portada oficial ya existente.
+
+Evita:
+
+- Sobrecargar la página.
+- Crear demasiadas tarjetas.
+- Convertir cada sección editorial en un componente visual independiente sin necesidad.
+- Repetir elementos visuales innecesariamente.
+- Introducir efectos, animaciones o recursos externos que dificulten la lectura.
+- Alterar la identidad visual general del proyecto.
+
+Prioriza la lectura, la claridad, la jerarquía y la navegación.
+
+---
+
+# 11. ESTRUCTURA DE LA PÁGINA
+
+Organiza la ficha siguiendo este orden:
+
+1. Breadcrumbs.
+2. Hero editorial con título oficial, subtítulo oficial, línea editorial, autor y portada.
+3. Introducción editorial.
+4. Índice de contenidos visible.
+5. Desarrollo editorial completo con los 12 apartados.
+6. Elementos comerciales en su ubicación original.
+7. CTA comercial inferior existente.
+8. Footer actual sin modificaciones.
+
+El índice debe situarse después de la introducción y antes del desarrollo principal.
+
+No coloques el índice inmediatamente debajo del Hero.
+
+No lo coloques antes de la introducción.
+
+No dupliques títulos, subtítulos, párrafos ni apartados para generar contenido adicional.
+
+No añadas una sección «Sobre el libro».
+
+No añadas una sección genérica «Qué aprenderás».
+
+No añadas contenido editorial que no esté incluido en el texto aprobado.
+
+---
+
+# 12. IMPLEMENTACIÓN TÉCNICA
+
+Realiza la intervención de manera localizada.
+
+Utiliza la arquitectura existente y, si corresponde, crea o actualiza el componente específico de esta ficha, respetando las convenciones del proyecto.
+
+No realices refactorizaciones globales.
+
+No modifiques:
+
+- Home.
+- Biblioteca.
+- Páginas de categorías.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Otras fichas de libros.
+- Header global.
+- Footer.
+- Navegación general.
+- Router global, salvo que sea estrictamente imprescindible para conservar la ruta existente y esté justificado.
+- Componentes compartidos de compra.
+- Catálogo general.
+- Datos de otros libros.
+- Sitemap general, salvo actualización automática derivada del mecanismo existente que sea realmente necesaria.
+
+No modifiques archivos compartidos para introducir cambios que puedan afectar a otras fichas.
+
+---
+
+# 13. POLÍTICA DE COPIAS DE SEGURIDAD Y CONTROL DE VERSIONES
+
+No crear carpetas de backup, duplicados de archivos, directorios de recuperación ni copias internas del proyecto como parte rutinaria de esta intervención.
+
+El proyecto dispone de un sistema externo de control de versiones mediante GitHub. Antes de modificar archivos, trabajar sobre la estructura existente y realizar una comprobación de los archivos que se van a intervenir.
+
+Solo se permite crear una copia de seguridad interna cuando la intervención implique un riesgo excepcionalmente elevado, como una reestructuración arquitectónica global, una modificación crítica del sistema de navegación, cambios importantes en el router, alteraciones de componentes compartidos o una operación que afecte a una parte sustancial del proyecto.
+
+En esta intervención, que se limita a una ficha individual, **no crees ninguna carpeta de backup**.
+
+Prioriza un proyecto limpio, una estructura de archivos organizada, la ausencia de duplicados innecesarios y el uso de GitHub como sistema principal de recuperación de versiones.
+
+---
+
+# 14. COMPROBACIONES Y AUDITORÍA
+
+Después de implementar los cambios, realiza las siguientes comprobaciones:
+
+### Contenido editorial
+
+- El título y subtítulo oficiales son correctos.
+- El texto editorial completo está presente.
+- No se ha omitido ni resumido ningún apartado.
+- No existen párrafos duplicados.
+- El índice aparece después de la introducción.
+- El índice tiene 12 entradas.
+- Las 12 anclas conducen a sus encabezados correspondientes.
+- No existen identificadores duplicados.
+- No aparece una sección «Sobre el libro».
+- No se ha añadido contenido ajeno al texto aprobado.
+
+### SEO
+
+- SEO Title correcto.
+- Meta description correcta.
+- H1 único.
+- Jerarquía H2/H3 coherente.
+- Canonical correcta.
+- Open Graph correcto.
+- Twitter Cards correctas.
+- JSON-LD válido.
+- Book correctamente configurado.
+- BreadcrumbList correctamente configurado.
+- No hay datos ficticios.
+- No hay metadatos duplicados.
+- No se han alterado metadatos de otras páginas.
+
+### Enlaces comerciales
+
+- Amazon Kindle abre el destino correcto.
+- Amazon tapa blanda abre el destino correcto.
+- Amazon tapa dura abre el destino correcto.
+- Audiolibro abre el destino correcto.
+- ClickBank abre el destino correcto.
+- Payhip abre el destino correcto.
+- Los enlaces funcionan correctamente.
+- No se han eliminado formatos.
+- El modal sigue funcionando.
+- Los botones superiores se mantienen.
+- El botón inferior de compra sigue presente y funcional.
+
+### Diseño y responsive
+
+- Vista desktop correcta.
+- Vista móvil correcta.
+- Portada correctamente presentada.
+- Índice usable en móvil.
+- Anclas funcionales.
+- Texto legible.
+- No existe desbordamiento horizontal.
+- No se han introducido elementos decorativos innecesarios.
+
+### Regresión
+
+Comprueba que la intervención no ha alterado otras páginas, componentes globales, categorías, navegación, footer ni fichas de otros libros.
+
+### Build y prerender
+
+Si el proyecto dispone de build, TypeScript, prerender o pruebas automatizadas, ejecútalas y confirma sus resultados.
+
+No afirmes que una prueba se ha superado si no se ha ejecutado realmente.
+
+---
+
+# 15. RESTRICCIONES FINALES
+
+- No cambiar el contenido aprobado.
+- No reescribir la ficha.
+- No resumir el contenido.
+- No eliminar párrafos.
+- No alterar título ni subtítulo.
+- No inventar portada, ruta, ISBN, precios ni enlaces.
+- No modificar enlaces comerciales.
+- No eliminar botones.
+- No modificar el modal de compra.
+- No modificar el CTA inferior.
+- No cambiar otras páginas.
+- No alterar el footer.
+- No crear backups internos.
+- No realizar refactorizaciones globales.
+- No desplegar a Vercel.
+- No publicar.
+- No modificar el repositorio remoto.
+- No ejecutar operaciones externas de publicación.
+
+---
+
+# 16. INFORME FINAL OBLIGATORIO
+
+Al finalizar, proporciona un informe técnico claro, verificable y conciso, indicando:
+
+1. Archivos creados.
+2. Archivos modificados.
+3. Ruta exacta de la ficha intervenida.
+4. Confirmación de que el texto editorial se incorporó íntegramente.
+5. Confirmación de la ubicación del índice y funcionamiento de sus 12 anclas.
+6. SEO implementado.
+7. JSON-LD implementado y validado.
+8. Enlaces comerciales preservados.
+9. Confirmación de botones superiores y CTA inferior.
+10. Funcionamiento del modal de compra.
+11. Resultado de pruebas responsive.
+12. Resultado de build, TypeScript, prerender y pruebas, según corresponda.
+13. Confirmación de que no se creó ninguna carpeta de backup.
+14. Confirmación de que no se modificaron otras fichas ni páginas.
+15. Confirmación explícita de que no se realizó ningún despliegue a Vercel.
+
+Si alguna comprobación no pudo realizarse, indícalo expresamente. No des por verificado aquello que no hayas probado.
+
+## RESULTADO ESPERADO
+
+La ficha de «Cómo ganar dinero con ChatGPT» debe convertirse en una página editorial SEO independiente, con contenido original, arquitectura propia, utilidad real para el lector, identidad visual FG Perspectiva y un sistema comercial intacto.
+
+La intervención debe ser precisa, localizada, limpia y técnicamente verificable, sin duplicación de archivos ni backups internos innecesarios.

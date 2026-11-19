@@ -1128,26 +1128,57 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'tecnologia',
         title: 'Cómo ganar dinero con CHATGPT',
         description: 'Aplica ChatGPT a proyectos reales y crea flujos de ingresos asistidos por IA.',
-        url: 'https://amzn.to/3Q13TUi',
+        url: 'https://www.amazon.com/dp/B0C91X9ZVZ',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/12-dinero-con-chatgpt-libro-400.jpg',
         purchaseOptions: [
-          { 
-            platform: 'Amazon', 
-            url: 'https://amzn.to/3Q13TUi', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.png',
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B0C91X9ZVZ',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
             emoji: '🛒',
-            cta: 'Comprar en Amazon'
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
           },
-          { 
-            platform: 'Clickbank', 
-            url: 'https://dineroconchatgpt.vercel.app/', 
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B0D44SHVWJ',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B0C932SFX7',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            tooltip: 'Amazon/Audible',
+            url: 'https://www.amazon.com/dp/B0HB6KFDPK',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Clickbank',
+            url: 'https://dineroconchatgpt.vercel.app/',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.png',
             emoji: '⚡',
             cta: 'Oferta Clickbank'
           },
-          { 
-            platform: 'Payhip', 
-            url: 'https://payhip.com/b/FuLo0', 
+          {
+            platform: 'Payhip',
+            url: 'https://payhip.com/b/FuLo0',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.png',
             emoji: '💎',
             cta: 'Descarga Directa'

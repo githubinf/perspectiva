@@ -24,6 +24,7 @@ import MarketingCpaEntrepreneursView from './components/views/MarketingCpaEntrep
 import CpaSmartlinkFormulaView from './components/views/CpaSmartlinkFormulaView.tsx';
 import DineroConClickbankView from './components/views/DineroConClickbankView.tsx';
 import TipsAffiliateMarketingView from './components/views/TipsAffiliateMarketingView.tsx';
+import ChatGptDineroView from './components/views/ChatGptDineroView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
@@ -132,6 +133,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/tips-de-marketing-para-afiliados/' && matchedBook) {
     return <TipsAffiliateMarketingView book={matchedBook} />;
+  }
+
+  if (currentPath === '/como-ganar-dinero-con-chatgpt/' && matchedBook) {
+    return <ChatGptDineroView book={matchedBook} />;
   }
 
   if (matchedBook) {

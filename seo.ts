@@ -1864,6 +1864,89 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6t. Ficha editorial dedicada: Cómo ganar dinero con ChatGPT
+  if (path === '/como-ganar-dinero-con-chatgpt/') {
+    const chatGptBook = ALL_BOOKS.find(
+      (b) =>
+        b.path === '/como-ganar-dinero-con-chatgpt/' ||
+        b.slug === 'como-ganar-dinero-con-chatgpt'
+    );
+    const chatGptMetaDescription =
+      'Descubre cómo utilizar ChatGPT para desarrollar productos digitales, mejorar servicios, organizar procesos y explorar oportunidades de negocio con inteligencia artificial.';
+    const chatGptSchemaDescription =
+      'Una perspectiva práctica sobre cómo integrar ChatGPT en actividades productivas, desarrollar soluciones digitales, crear nuevas propuestas comerciales y convertir las capacidades de la inteligencia artificial en recursos aplicables a proyectos reales.';
+    const chatGptCover =
+      chatGptBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/12-dinero-con-chatgpt-libro-400.jpg';
+    const chatGptUrl = `${BASE_URL}/como-ganar-dinero-con-chatgpt/`;
+
+    const chatGptBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Cómo ganar dinero con ChatGPT',
+      alternateName:
+        'y aprovechar al máximo la máquina que está revolucionando el mundo',
+      description: chatGptSchemaDescription,
+      image: chatGptCover,
+      url: chatGptUrl,
+      inLanguage: 'es',
+      genre: 'Tecnología',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      },
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
+        'https://schema.org/EBook',
+        'https://schema.org/AudiobookFormat'
+      ]
+    };
+
+    return {
+      path: '/como-ganar-dinero-con-chatgpt/',
+      title: 'Cómo ganar dinero con ChatGPT: oportunidades digitales | FG Perspectiva',
+      description: chatGptMetaDescription,
+      canonical: chatGptUrl,
+      ogImage: chatGptCover,
+      ogType: 'book',
+      h1: 'Cómo ganar dinero con ChatGPT',
+      schema: [
+        chatGptBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Tecnología',
+              item: `${BASE_URL}/tecnologia/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Cómo ganar dinero con ChatGPT',
+              item: chatGptUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {
