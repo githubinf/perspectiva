@@ -2306,6 +2306,92 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6y. Ficha editorial dedicada: Ideas Maestras de Tráfico Web
+  if (path === '/ideas-maestras-de-trafico-web/') {
+    const maestrasBook = ALL_BOOKS.find(
+      (b) =>
+        b.path === '/ideas-maestras-de-trafico-web/' ||
+        b.slug === 'ideas-maestras-de-trafico-web'
+    );
+    const maestrasMetaDescription =
+      'Descubre cómo desarrollar una estrategia de tráfico web, conectar diferentes canales de captación y construir una presencia digital capaz de generar oportunidades sostenibles.';
+    const maestrasCover =
+      maestrasBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/27-ideas-maestras-de-trafico-web-libro-400.jpg';
+    const maestrasUrl = `${BASE_URL}/ideas-maestras-de-trafico-web/`;
+    const maestrasSameAs = [
+      'https://www.amazon.com/dp/B0CZ46BDX9',
+      'https://www.amazon.com/dp/B0CZ4192V8',
+      'https://www.amazon.com/dp/B0CX5V4WN7'
+    ];
+
+    const maestrasBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Ideas Maestras de Tráfico Web',
+      alternateName:
+        'Acelera tu presencia en línea con estrategias revolucionarias que van más allá de las Visitas',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      },
+      description: maestrasMetaDescription,
+      url: maestrasUrl,
+      image: maestrasCover,
+      inLanguage: 'es',
+      genre: 'Crecimiento',
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
+        'https://schema.org/EBook'
+      ],
+      sameAs: maestrasSameAs
+    };
+
+    return {
+      path: '/ideas-maestras-de-trafico-web/',
+      title: 'Ideas Maestras de Tráfico Web: estrategias de crecimiento | FG Perspectiva',
+      description: maestrasMetaDescription,
+      canonical: maestrasUrl,
+      ogImage: maestrasCover,
+      ogType: 'book',
+      h1: 'Ideas Maestras de Tráfico Web',
+      schema: [
+        maestrasBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Crecimiento',
+              item: `${BASE_URL}/crecimiento/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Ideas Maestras de Tráfico Web',
+              item: maestrasUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {

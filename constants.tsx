@@ -1441,8 +1441,38 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'crecimiento',
         title: 'Ideas Maestras de Tráfico Web',
         description: 'Construye sistemas de tráfico que alimenten tus activos digitales.',
-        url: 'https://amzn.to/3vjVwNB',
+        url: 'https://www.amazon.com/dp/B0CZ46BDX9',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/27-ideas-maestras-de-trafico-web-libro-400.jpg',
+        purchaseOptions: [
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B0CZ46BDX9',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
+            emoji: '🛒',
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B0CZ4192V8',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B0CX5V4WN7',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          }
+        ],
         extraInfo: [
           'Tener ideas sueltas para generar tráfico está bien, pero si quieres construir un negocio digital sostenible, necesitas ir un paso más allá: necesitas un sistema de tráfico que funcione de forma continua, sin depender de tu esfuerzo diario ni de la suerte. Eso es exactamente lo que encontrarás en este libro.',
           'Mientras que "Ideas y consejos de Tráfico Web" te da las bases y las primeras estrategias, este libro profundiza en la construcción de sistemas de tráfico multicanal, diseñados para alimentar tus activos digitales de forma constante y escalable. Está pensado para quienes ya tienen algo de tráfico y quieren multiplicarlo.',

@@ -1,0 +1,639 @@
+# INSTRUCCIÓN INTEGRAL PARA GOOGLE AI STUDIO — FG PERSPECTIVA
+## Ficha editorial y SEO: Ideas Maestras de Tráfico Web
+
+Vamos a realizar la implementación editorial, SEO y estructural de la ficha del libro **Ideas Maestras de Tráfico Web** dentro del proyecto FG Perspectiva.
+
+El objetivo es transformar la ficha actual en una página editorial independiente, con contenido original, profundidad suficiente, intención de búsqueda definida y una estructura que aporte valor real al visitante.
+
+Trabajaremos exclusivamente sobre esta ficha. No modificaremos otras páginas, categorías, componentes compartidos ni elementos globales del sitio.
+
+---
+
+## 1. ALCANCE DEL TRABAJO
+
+Implementar y optimizar exclusivamente la página correspondiente a:
+
+**Título:** Ideas Maestras de Tráfico Web
+
+**Ruta:**
+`/ideas-maestras-de-trafico-web/`
+
+**Categoría:**
+Crecimiento
+
+**Subtítulo original:**
+
+Acelera tu presencia en línea con estrategias revolucionarias que van más allá de las Visitas
+
+La descripción original y el índice proporcionados anteriormente sirven únicamente como referencias temáticas para conocer el contenido general del libro.
+
+No se deben copiar, reutilizar, parafrasear de forma cercana ni reconstruir sus apartados. El contenido editorial aprobado para esta ficha es el que se proporciona íntegramente en esta instrucción.
+
+---
+
+## 2. OBJETIVO EDITORIAL Y DIFERENCIACIÓN
+
+Esta ficha debe mantener una identidad editorial claramente diferenciada de otras páginas de FG Perspectiva, especialmente de:
+
+- Ideas y Consejos de Tráfico Web.
+- El Poder del Marketing de Contenidos.
+- Dominando el Arte del Email Marketing.
+- Cualquier otra ficha relacionada con marketing digital, adquisición de visitantes o crecimiento de proyectos online.
+
+El enfoque de esta página es **la construcción de un sistema estratégico de adquisición de tráfico y crecimiento digital**.
+
+El contenido debe abordar la adquisición de visitantes desde una perspectiva de planificación, organización, toma de decisiones, coordinación de canales, desarrollo de audiencias, análisis y aprendizaje.
+
+No convertir esta página en un manual genérico de técnicas para conseguir visitas, ni en una lista de consejos de SEO, redes sociales, publicidad, email marketing o creación de contenidos.
+
+La diferenciación debe conservarse en:
+
+- La intención de búsqueda.
+- La arquitectura editorial.
+- Los encabezados.
+- El desarrollo argumental.
+- El lenguaje.
+- El enfoque estratégico.
+- La experiencia de lectura.
+
+No crear contenido adicional ni modificar el texto aprobado para intentar ampliar artificialmente la página.
+
+---
+
+## 3. SEO ON-PAGE
+
+Implementar los siguientes metadatos:
+
+### Title
+
+Ideas Maestras de Tráfico Web: estrategias de crecimiento | FG Perspectiva
+
+### Meta description
+
+Descubre cómo desarrollar una estrategia de tráfico web, conectar diferentes canales de captación y construir una presencia digital capaz de generar oportunidades sostenibles.
+
+### Palabra clave principal
+
+Ideas Maestras de Tráfico Web
+
+### Palabras clave secundarias de referencia
+
+- Estrategias para aumentar el tráfico web.
+- Cómo atraer visitantes a un sitio web.
+- Plan de crecimiento digital.
+- Captación de audiencia online.
+- Canales de adquisición de tráfico.
+- Estrategia de visibilidad digital.
+- Crecimiento de una página web.
+- Sistemas de adquisición de visitantes.
+
+Utilizar estas expresiones de manera natural cuando corresponda. No forzar su inclusión, no acumular keywords y no sacrificar la calidad de la lectura por criterios de densidad.
+
+Implementar correctamente:
+
+- Title SEO exclusivo.
+- Meta description exclusiva.
+- URL canonical correspondiente a la ruta existente.
+- Open Graph title.
+- Open Graph description.
+- Open Graph URL.
+- Twitter Card metadata, respetando el sistema existente.
+- H1 único y correctamente relacionado con el título del libro.
+- Jerarquía H2 coherente.
+- Breadcrumbs funcionales.
+- Datos estructurados JSON-LD.
+
+No duplicar títulos ni crear varias etiquetas H1.
+
+No inventar ISBN, fechas de publicación, puntuaciones, reseñas, precios, información editorial ni datos bibliográficos inexistentes.
+
+---
+
+## 4. ESTRUCTURA EDITORIAL Y NAVEGACIÓN INTERNA
+
+La ficha debe incorporar un índice de contenidos visible, colocado después de la introducción editorial y antes del desarrollo de los apartados.
+
+El índice debe utilizar el siguiente título:
+
+**Contenido de esta página**
+
+Texto introductorio del índice:
+
+Accede directamente al apartado que te interesa.
+
+Implementar los enlaces internos utilizando exactamente los siguientes identificadores y encabezados:
+
+1. El tráfico no es un objetivo aislado  
+   Anchor: `trafico-no-es-objetivo-aislado`
+
+2. La visibilidad comienza antes de la publicación  
+   Anchor: `visibilidad-antes-publicacion`
+
+3. Construir una propuesta que merezca atención  
+   Anchor: `propuesta-merece-atencion`
+
+4. Diseñar un sistema de adquisición, no una colección de acciones  
+   Anchor: `sistema-adquisicion`
+
+5. La importancia de elegir dónde competir  
+   Anchor: `elegir-donde-competir`
+
+6. El valor estratégico de las audiencias acumuladas  
+   Anchor: `audiencias-acumuladas`
+
+7. Coordinar los canales para multiplicar oportunidades  
+   Anchor: `coordinar-canales`
+
+8. Medir el movimiento, no solamente las cifras  
+   Anchor: `medir-movimiento`
+
+9. Cuando las visitas no producen resultados  
+   Anchor: `visitas-sin-resultados`
+
+10. La experimentación como herramienta de crecimiento  
+    Anchor: `experimentacion-crecimiento`
+
+11. Crear una estructura que no dependa de una sola fuente  
+    Anchor: `estructura-independiente`
+
+12. El crecimiento digital como proceso de aprendizaje  
+    Anchor: `crecimiento-proceso-aprendizaje`
+
+### Requisitos del índice
+
+- El índice debe ser visible para el usuario.
+- Todos los enlaces deben funcionar.
+- Cada enlace debe dirigir al encabezado correspondiente.
+- Los identificadores deben ser únicos.
+- No utilizar enlaces vacíos.
+- No crear apartados adicionales que no estén presentes en el texto aprobado.
+- Mantener un diseño coherente con el estilo actual de FG Perspectiva.
+- Evitar que el índice parezca un bloque ajeno a la ficha.
+- Mantener una buena experiencia en dispositivos móviles.
+
+---
+
+## 5. TEXTO EDITORIAL APROBADO
+
+Incorporar el siguiente texto íntegramente, respetando su redacción, párrafos, títulos y secuencia.
+
+No resumir.
+
+No eliminar párrafos.
+
+No reescribir.
+
+No sustituir expresiones.
+
+No añadir contenido generado que altere la línea editorial aprobada.
+
+### Introducción
+
+Conseguir que un proyecto digital llegue a las personas adecuadas es uno de los desafíos más importantes que podemos afrontar cuando trabajamos en Internet. Podemos disponer de una página bien diseñada, productos interesantes, información valiosa o una propuesta comercial perfectamente definida, pero nada de ello garantiza que exista un flujo de visitantes capaz de descubrir lo que ofrecemos.
+
+La presencia digital no se construye únicamente creando páginas y publicando información. También requiere comprender cómo se mueve la atención, qué motivos llevan a una persona a interesarse por una propuesta, dónde se producen los encuentros entre contenidos y audiencias y qué podemos hacer para que esos encuentros sucedan con mayor frecuencia.
+
+El tráfico web representa mucho más que un número registrado en una herramienta de estadísticas. Detrás de cada visita existe una decisión, una necesidad, una curiosidad o una circunstancia que ha llevado a alguien hasta nuestro espacio digital. Comprender esas motivaciones nos permite abandonar la búsqueda de cifras vacías y empezar a trabajar con una perspectiva más estratégica.
+
+A lo largo de estas páginas desarrollaremos una visión que nos ayudará a pensar el tráfico como parte de un sistema de crecimiento. No se trata de perseguir visitantes mediante acciones desconectadas, sino de aprender a relacionar nuestra propuesta, los canales disponibles, las expectativas de las personas y las oportunidades que podemos generar a partir de cada contacto.
+
+### H2: El tráfico no es un objetivo aislado
+
+ID: `trafico-no-es-objetivo-aislado`
+
+Cuando comenzamos un proyecto digital, es habitual que las visitas se conviertan en una de nuestras primeras preocupaciones. Observamos las estadísticas, comparamos períodos, buscamos aumentar las cifras y sentimos que cualquier incremento representa un avance. Sin embargo, esta perspectiva puede llevarnos a confundir actividad con progreso.
+
+Una página puede recibir miles de visitas sin generar suscripciones, consultas, ventas ni una comunidad interesada. También puede suceder lo contrario: un sitio pequeño, con una audiencia limitada pero bien definida, puede conseguir resultados mucho más valiosos que otro con una cantidad considerable de visitantes.
+
+Por eso, antes de establecer objetivos de adquisición, necesitamos comprender qué función cumplen las visitas dentro de nuestro proyecto. ¿Queremos dar a conocer una marca? ¿Presentar un producto? ¿Construir una audiencia? ¿Generar confianza? ¿Conseguir que las personas regresen? Cada respuesta implica una forma diferente de interpretar el tráfico y de decidir qué acciones merecen nuestra atención.
+
+El crecimiento comienza cuando dejamos de considerar las visitas como un trofeo y las utilizamos como una señal que nos ayuda a evaluar si estamos conectando con las personas correctas. La cantidad importa, pero su significado depende del propósito que hayamos establecido.
+
+### H2: La visibilidad comienza antes de la publicación
+
+ID: `visibilidad-antes-publicacion`
+
+Un error frecuente consiste en pensar que la difusión debe comenzar cuando el contenido, la página o el producto ya están terminados. En realidad, podemos preparar el terreno mucho antes de publicar.
+
+Cuando desarrollamos una idea, también podemos identificar los espacios donde podría despertar interés, las conversaciones relacionadas con ella y las personas que probablemente encontrarían útil nuestra propuesta. Esta información permite orientar el trabajo desde el principio, en lugar de terminar una pieza de contenido y comenzar después a preguntarnos cómo conseguir que alguien la vea.
+
+La preparación también nos ayuda a reconocer posibles obstáculos. Quizá estamos desarrollando algo para un público que utiliza otros formatos, frecuenta plataformas diferentes o necesita una explicación previa para comprender su utilidad. Detectar esas circunstancias anticipadamente puede cambiar tanto el planteamiento del proyecto como la manera de presentarlo.
+
+La visibilidad no depende únicamente de que algo exista. También está relacionada con las condiciones que creamos para que pueda ser encontrado, reconocido y considerado relevante. Cuando incorporamos esta perspectiva desde la planificación, la difusión deja de ser una tarea improvisada y se convierte en una parte natural del desarrollo digital.
+
+### H2: Construir una propuesta que merezca atención
+
+ID: `propuesta-merece-atencion`
+
+Internet está lleno de información, ofertas, publicaciones y recursos que compiten por el tiempo de las personas. En este escenario, conseguir que alguien se detenga ante nuestra propuesta no depende solamente de aparecer en un lugar determinado. Necesitamos ofrecer una razón suficientemente clara para despertar su interés.
+
+Esa razón puede estar relacionada con resolver una dificultad, facilitar una tarea, explicar algo complejo, ofrecer una perspectiva diferente o presentar una posibilidad que la persona todavía no había considerado. No siempre necesitamos inventar algo completamente nuevo. En ocasiones, el valor reside en organizar mejor una información existente, relacionarla con una necesidad concreta o presentarla de una forma más accesible.
+
+También debemos aprender a comunicar la utilidad de lo que hacemos. Una página que obliga al visitante a interpretar por sí mismo qué encontrará puede perder oportunidades incluso cuando contiene información valiosa. La claridad acerca del propósito, el enfoque y la utilidad del recurso reduce esa incertidumbre.
+
+Cuando nuestra propuesta tiene una identidad reconocible, resulta más sencillo que las personas recuerden lo que ofrecemos, lo compartan con otros o decidan regresar. La atención inicial puede ser breve, pero una propuesta bien definida aumenta las posibilidades de convertirla en un vínculo más duradero.
+
+### H2: Diseñar un sistema de adquisición, no una colección de acciones
+
+ID: `sistema-adquisicion`
+
+Realizar diferentes acciones promocionales no significa necesariamente que estemos desarrollando una estrategia. Podemos publicar en varias plataformas, enviar mensajes, participar en comunidades y crear materiales continuamente sin que exista una conexión entre esas actividades.
+
+Un sistema de adquisición necesita una lógica. Cada acción debería cumplir una función dentro de un proceso más amplio y contribuir, de alguna manera, al resultado que perseguimos. Algunas actividades pueden ayudarnos a descubrir nuevas audiencias; otras, a despertar interés, profundizar una relación o facilitar una decisión.
+
+Para organizar este proceso podemos comenzar identificando nuestro punto de partida, los recursos disponibles y las oportunidades que queremos aprovechar. A partir de ahí, seleccionamos las acciones que tienen sentido, establecemos prioridades y determinamos qué señales nos permitirán evaluar su utilidad.
+
+La ventaja de trabajar con un sistema es que nos permite aprender de lo realizado. Si una actividad genera interés, podemos estudiar cómo mejorarla o ampliar su alcance. Si otra consume demasiado tiempo y produce escasos resultados, podemos reconsiderarla. No necesitamos mantener todas las acciones por costumbre ni añadir nuevas únicamente porque otras personas las recomienden.
+
+Una estrategia bien organizada nos ayuda a utilizar mejor nuestros recursos y a evitar que el crecimiento dependa de una sucesión interminable de tareas improvisadas.
+
+### H2: La importancia de elegir dónde competir
+
+ID: `elegir-donde-competir`
+
+No todos los espacios digitales ofrecen las mismas oportunidades, ni todas las audiencias se comportan de igual manera. Un canal puede ser excelente para un proyecto y completamente inadecuado para otro. Por eso, la selección de nuestros espacios de actuación debería responder a criterios concretos, en lugar de basarse únicamente en su popularidad.
+
+Podemos evaluar diferentes entornos considerando el perfil de sus usuarios, la relación que mantienen con los contenidos, el nivel de competencia, las posibilidades de participación y el esfuerzo que requiere mantener una presencia activa. También conviene analizar si podemos aportar algo significativo en ese espacio o si nuestra participación quedaría diluida entre numerosas propuestas similares.
+
+Elegir dónde competir supone aceptar que no podemos estar en todas partes. Esta decisión no limita necesariamente nuestro crecimiento; puede permitirnos concentrar nuestra energía en lugares donde tenemos mayores posibilidades de establecer conexiones reales.
+
+Una presencia bien desarrollada en determinados espacios puede resultar más efectiva que una actividad superficial en numerosas plataformas. La clave no es acumular canales, sino encontrar aquellos que favorezcan nuestra propuesta y nos permitan llegar a una audiencia con intereses compatibles.
+
+### H2: El valor estratégico de las audiencias acumuladas
+
+ID: `audiencias-acumuladas`
+
+Cada vez que conseguimos que una persona vuelva a nuestro sitio, reconozca nuestra marca o mantenga algún tipo de contacto con nosotros, estamos construyendo un activo que puede adquirir valor con el tiempo.
+
+La primera visita no siempre coincide con el momento en que alguien necesita nuestra propuesta. Es posible que un visitante descubra un recurso, lo considere interesante y continúe con sus actividades sin realizar ninguna acción inmediata. Si no existe una manera de mantener el contacto o facilitar un nuevo descubrimiento, esa oportunidad puede desaparecer.
+
+Por esta razón, resulta importante desarrollar mecanismos que permitan mantener una relación más allá de una visita ocasional. Una suscripción voluntaria, una comunidad, una biblioteca de recursos, una comunicación periódica o una experiencia que invite a regresar pueden contribuir a crear continuidad.
+
+No debemos interpretar esta relación como una obligación de enviar mensajes constantemente. La frecuencia, el contenido y el propósito de cada contacto deben respetar el interés de la audiencia. Construir una comunidad implica aportar razones para permanecer, no simplemente acumular contactos.
+
+Una audiencia que nos reconoce, comprende nuestra propuesta y decide seguir conectada puede convertirse en una fuente de oportunidades mucho más estable que la dependencia de encuentros aislados.
+
+### H2: Coordinar los canales para multiplicar oportunidades
+
+ID: `coordinar-canales`
+
+Cada canal digital posee características particulares. Algunos permiten explicar una idea con profundidad; otros facilitan conversaciones, descubrimientos rápidos, demostraciones o interacciones personales. Cuando comprendemos esas diferencias, podemos utilizarlos de forma complementaria.
+
+No necesitamos publicar exactamente el mismo mensaje en todos los lugares. Una idea central puede adaptarse a diferentes formatos y situaciones, conservando su sentido, pero respetando la manera en que las personas utilizan cada plataforma.
+
+Por ejemplo, una investigación desarrollada para nuestro sitio puede convertirse en una explicación breve, una reflexión, una presentación visual o una conversación alrededor de una pregunta específica. Cada formato puede acercar el tema a personas diferentes y, cuando existe una conexión natural, facilitar que algunas de ellas profundicen en el contenido original.
+
+La coordinación también permite que los canales se apoyen mutuamente. Una persona puede conocernos a través de una publicación, encontrar posteriormente un recurso más completo y, finalmente, decidir mantener el contacto. No siempre podremos identificar cada recorrido, pero sí podemos diseñar experiencias que faciliten esa progresión.
+
+El resultado no depende de estar presentes en todas las plataformas, sino de establecer relaciones coherentes entre los espacios que realmente utilizamos.
+
+### H2: Medir el movimiento, no solamente las cifras
+
+ID: `medir-movimiento`
+
+Las estadísticas pueden ayudarnos a comprender lo que sucede, pero debemos evitar convertirlas en una colección de números sin contexto. Una métrica adquiere utilidad cuando nos permite interpretar un comportamiento, identificar un problema o tomar una decisión.
+
+Además del volumen de visitantes, podemos observar cómo llegan, qué páginas consultan, cuánto interés muestran en determinados recursos, si regresan y qué acciones realizan durante su recorrido. Estas señales nos ayudan a distinguir entre una visita accidental y una oportunidad que merece mayor atención.
+
+También es importante comparar resultados con objetivos realistas. Un canal que genera pocas visitas puede tener un valor considerable si esas personas muestran un interés elevado. Otro que produce grandes cantidades de tráfico puede no contribuir de manera significativa al propósito del proyecto.
+
+No todas las decisiones necesitan una herramienta sofisticada. En ocasiones, revisar periódicamente un conjunto reducido de indicadores, registrar cambios y analizar tendencias puede proporcionarnos información suficiente para mejorar.
+
+Medir no consiste en demostrar que estamos trabajando, sino en descubrir qué merece la pena seguir haciendo, qué necesitamos modificar y dónde podemos encontrar nuevas oportunidades.
+
+### H2: Cuando las visitas no producen resultados
+
+ID: `visitas-sin-resultados`
+
+Recibir visitantes y conseguir que realicen una acción son procesos relacionados, pero diferentes. Si una página atrae atención y no consigue avanzar hacia el resultado esperado, aumentar el tráfico puede no solucionar el problema.
+
+En primer lugar, debemos comprobar si existe coherencia entre lo que prometemos antes de la visita y lo que encontramos cuando llegamos al sitio. Si la expectativa generada no coincide con el contenido, la experiencia puede producir decepción.
+
+También debemos revisar la claridad de nuestra propuesta, la facilidad para navegar, la comprensión del mensaje y la presencia de obstáculos innecesarios. Una página confusa, una oferta difícil de interpretar o un proceso demasiado complicado pueden impedir que el interés se transforme en una acción.
+
+Otro aspecto importante es la adecuación de la audiencia. Tal vez estamos atrayendo personas que encuentran nuestro contenido interesante, pero que no necesitan lo que ofrecemos. En ese caso, el problema no está necesariamente en la cantidad de visitantes, sino en la conexión entre nuestro proyecto y las expectativas de quienes llegan.
+
+Antes de buscar más tráfico, conviene comprender qué ocurre con el que ya tenemos. Esa revisión puede revelar oportunidades de mejora que pasan desapercibidas cuando nos concentramos exclusivamente en conseguir nuevas visitas.
+
+### H2: La experimentación como herramienta de crecimiento
+
+ID: `experimentacion-crecimiento`
+
+En el entorno digital, muchas decisiones se toman inicialmente a partir de hipótesis. Podemos pensar que determinado enfoque despertará interés, que un formato será más efectivo o que una propuesta resultará especialmente atractiva para un público. Sin embargo, nuestras suposiciones no siempre coinciden con la realidad.
+
+Experimentar nos permite convertir esas ideas en oportunidades de aprendizaje. En lugar de modificar numerosos elementos al mismo tiempo, podemos introducir cambios concretos, observar sus efectos y utilizar los resultados para orientar nuestras siguientes decisiones.
+
+Esto no significa que todos los experimentos deban producir un éxito inmediato. Una acción que no consigue el resultado esperado también puede ayudarnos a comprender mejor a nuestra audiencia, identificar limitaciones o descartar una alternativa que parecía prometedora.
+
+Para que la experimentación sea útil, necesitamos evitar cambios impulsivos. Debemos tener claro qué queremos comprobar, qué resultado sería significativo y qué circunstancias podrían influir en la interpretación. También conviene registrar las conclusiones para no repetir indefinidamente las mismas pruebas.
+
+El crecimiento digital no siempre surge de encontrar una gran idea. En ocasiones, aparece después de una sucesión de pequeños ajustes que nos permiten comprender mejor cómo funciona nuestro proyecto.
+
+### H2: Crear una estructura que no dependa de una sola fuente
+
+ID: `estructura-independiente`
+
+Depender excesivamente de un único canal puede convertirse en una vulnerabilidad. Los cambios en las condiciones de una plataforma, sus políticas, la competencia o el comportamiento de los usuarios pueden afectar nuestra capacidad para mantener la visibilidad.
+
+Diversificar no significa utilizar indiscriminadamente todos los medios disponibles. Significa desarrollar una estructura en la que diferentes fuentes puedan aportar oportunidades, reduciendo la dependencia de una sola vía de adquisición.
+
+Para conseguirlo, podemos combinar canales de descubrimiento con mecanismos que favorezcan la continuidad de las relaciones. De esta forma, una parte de nuestra audiencia puede llegar por una vía, mientras que otras personas descubren el proyecto en espacios diferentes.
+
+También debemos prestar atención a los recursos que controlamos directamente. Nuestro sitio, los contenidos que desarrollamos, las relaciones que establecemos y los sistemas de comunicación que gestionamos pueden proporcionar mayor autonomía frente a los cambios externos.
+
+La independencia digital no consiste en eliminar cualquier dependencia, algo difícil de conseguir en Internet, sino en evitar que una única circunstancia determine por completo el futuro de nuestro proyecto.
+
+### H2: El crecimiento digital como proceso de aprendizaje
+
+ID: `crecimiento-proceso-aprendizaje`
+
+Desarrollar una estrategia de tráfico web no es una tarea que podamos completar definitivamente y abandonar. Las audiencias evolucionan, los espacios digitales cambian, aparecen nuevas oportunidades y nuestras propias prioridades pueden transformarse.
+
+Por eso, necesitamos una forma de trabajo que permita revisar lo que hacemos sin perder la dirección. Podemos establecer períodos de evaluación, analizar los resultados, identificar las acciones que merecen continuidad y reorganizar aquellas que ya no responden a nuestros objetivos.
+
+La experiencia acumulada tiene un valor especial. Cada campaña, publicación, colaboración, lanzamiento o iniciativa nos proporciona información que puede mejorar nuestras decisiones futuras. Si aprendemos a conservar ese conocimiento, evitaremos comenzar desde cero cada vez que intentemos desarrollar una nueva estrategia.
+
+También debemos reconocer que el crecimiento no siempre es lineal. Habrá períodos de actividad intensa, momentos de resultados modestos y circunstancias que exigirán adaptar nuestro planteamiento. La capacidad de mantener una visión clara y responder con criterio puede ser más importante que la búsqueda constante de resultados inmediatos.
+
+Un proyecto digital sólido se construye mediante decisiones que se refuerzan mutuamente. Cuando sabemos qué queremos conseguir, comprendemos a quién nos dirigimos, elegimos los espacios adecuados, coordinamos nuestras acciones y aprendemos de los resultados, estamos creando condiciones más favorables para que la visibilidad se transforme en crecimiento.
+
+El verdadero potencial de una estrategia de tráfico no reside únicamente en conseguir que más personas lleguen a nuestro sitio. Reside en desarrollar una estructura capaz de generar descubrimiento, despertar interés, construir relaciones y abrir nuevas posibilidades a lo largo del tiempo. Esa es la diferencia entre perseguir visitas y construir una presencia digital con sentido.
+
+---
+
+## 6. IMPLEMENTACIÓN DEL ÍNDICE
+
+El índice debe aparecer inmediatamente después de la introducción y antes del primer apartado de desarrollo.
+
+Utilizar los doce apartados reales del contenido.
+
+Implementar los enlaces con sus respectivos IDs:
+
+- `#trafico-no-es-objetivo-aislado`
+- `#visibilidad-antes-publicacion`
+- `#propuesta-merece-atencion`
+- `#sistema-adquisicion`
+- `#elegir-donde-competir`
+- `#audiencias-acumuladas`
+- `#coordinar-canales`
+- `#medir-movimiento`
+- `#visitas-sin-resultados`
+- `#experimentacion-crecimiento`
+- `#estructura-independiente`
+- `#crecimiento-proceso-aprendizaje`
+
+Comprobar que el índice no genere errores, que los enlaces funcionen en el navegador y que los desplazamientos no dejen los encabezados ocultos detrás del header fijo, si existe.
+
+---
+
+## 7. ENLACES COMERCIALES
+
+Utilizar exclusivamente los siguientes enlaces para las ediciones de este libro:
+
+### Kindle
+
+https://www.amazon.com/dp/B0CX5V4WN7
+
+### Tapa blanda
+
+https://www.amazon.com/dp/B0CZ46BDX9
+
+### Tapa dura
+
+https://www.amazon.com/dp/B0CZ4192V8
+
+No inventar otras ediciones ni enlaces.
+
+Mantener los botones comerciales existentes, sus ubicaciones, sus estilos, sus comportamientos, el modal de compra si existe y los CTA inferiores.
+
+No eliminar botones de compra.
+
+No sustituir los enlaces por enlaces genéricos.
+
+No cambiar el sistema comercial compartido de la web.
+
+Si los botones existentes ya corresponden a estas ediciones, actualizar únicamente los destinos necesarios y conservar su funcionamiento.
+
+Respetar el orden y la presentación comercial que utiliza actualmente la ficha y el sistema del proyecto. No introducir nuevas plataformas de venta sin enlaces verificados.
+
+Los enlaces externos de Amazon deben mantener los atributos de seguridad y SEO utilizados en el proyecto, cuando corresponda:
+
+`target="_blank"`
+
+`rel="nofollow noopener noreferrer"`
+
+No alterar la posición de los botones superior e inferior respecto al contenido de la página.
+
+---
+
+## 8. DATOS ESTRUCTURADOS
+
+Implementar correctamente los datos estructurados JSON-LD de la ficha, utilizando el sistema SEO existente del proyecto.
+
+### Book
+
+Incluir los datos que puedan verificarse:
+
+- Name: Ideas Maestras de Tráfico Web.
+- Author: Francisco González.
+- URL de la ficha.
+- Imagen de portada, únicamente si ya existe una imagen válida asociada a esta ficha.
+- Formatos disponibles, únicamente si el sistema actual permite declararlos con datos reales.
+
+No inventar:
+
+- ISBN.
+- Fecha de publicación.
+- Precio.
+- Rating.
+- Review.
+- Número de páginas.
+- Editorial.
+- Offers no verificadas.
+- Datos bibliográficos no proporcionados.
+
+### BreadcrumbList
+
+Implementar la jerarquía real de navegación:
+
+Inicio → Biblioteca → Crecimiento → Ideas Maestras de Tráfico Web.
+
+Utilizar las URL reales y existentes en el proyecto.
+
+No crear rutas nuevas para categorías ni cambiar la estructura de URLs.
+
+---
+
+## 9. DISEÑO Y EXPERIENCIA DE USUARIO
+
+La ficha debe conservar el diseño visual de FG Perspectiva.
+
+Mantener:
+
+- Identidad visual.
+- Paleta de colores.
+- Tipografías.
+- Diseño responsive.
+- Header.
+- Navegación.
+- Breadcrumbs.
+- Hero.
+- Imagen de portada existente.
+- Botones de compra.
+- Modal de compra.
+- CTA inferior.
+- Footer.
+- Estilos compartidos.
+- Espaciados.
+- Comportamiento en escritorio, tablet y móvil.
+
+El nuevo contenido debe integrarse de manera natural en la ficha actual, respetando la identidad visual y evitando una página sobrecargada.
+
+No añadir imágenes, ilustraciones, iconos decorativos, banners o componentes nuevos que no sean necesarios.
+
+No modificar el diseño global ni crear una nueva plantilla visual para este libro.
+
+El contenido debe ser cómodo de leer, con párrafos bien espaciados, encabezados claros y un índice accesible.
+
+---
+
+## 10. RESTRICCIONES TÉCNICAS
+
+Trabajar exclusivamente sobre la ficha de Ideas Maestras de Tráfico Web.
+
+No modificar:
+
+- Homepage.
+- Biblioteca.
+- Categoría Crecimiento.
+- Otras fichas de libros.
+- Sistemas Digitales.
+- Sobre FG Perspectiva.
+- Contacto.
+- Header compartido.
+- Footer.
+- Componentes comerciales globales.
+- Sistema de rutas.
+- Configuración global SEO.
+- Diseño global.
+- Otras funcionalidades ajenas a esta ficha.
+
+No realizar refactorizaciones generales.
+
+No reemplazar componentes compartidos por nuevas implementaciones.
+
+No crear rutas duplicadas.
+
+No modificar canonical de otras páginas.
+
+No alterar el sitemap general más allá de lo que corresponda automáticamente a la ruta existente.
+
+No realizar despliegues en Vercel.
+
+No crear copias de respaldo manuales innecesarias antes de esta modificación.
+
+---
+
+## 11. COMPROBACIONES OBLIGATORIAS
+
+Una vez finalizada la implementación, verificar:
+
+### Contenido
+
+- [ ] El texto editorial está completo.
+- [ ] No se han eliminado párrafos.
+- [ ] No se ha modificado la redacción aprobada.
+- [ ] La introducción está presente.
+- [ ] Los doce apartados están presentes.
+- [ ] Los encabezados son correctos.
+- [ ] No existe contenido duplicado accidental.
+- [ ] El índice coincide con el contenido real.
+
+### SEO
+
+- [ ] Title correcto.
+- [ ] Meta description correcta.
+- [ ] Canonical correcto.
+- [ ] Open Graph correcto.
+- [ ] Twitter metadata correcta.
+- [ ] H1 único.
+- [ ] Jerarquía de encabezados correcta.
+- [ ] JSON-LD Book válido.
+- [ ] JSON-LD BreadcrumbList válido.
+- [ ] Sin datos inventados.
+- [ ] Sin errores de SEO introducidos.
+
+### Navegación
+
+- [ ] Los doce enlaces del índice funcionan.
+- [ ] Los IDs son correctos y únicos.
+- [ ] Los desplazamientos a secciones son correctos.
+- [ ] No existen enlaces internos rotos.
+- [ ] Breadcrumbs funcionan correctamente.
+
+### Comercial
+
+- [ ] Kindle dirige al enlace correcto.
+- [ ] Tapa blanda dirige al enlace correcto.
+- [ ] Tapa dura dirige al enlace correcto.
+- [ ] Los botones siguen visibles.
+- [ ] Los botones no han cambiado de ubicación.
+- [ ] El modal, si existe, funciona.
+- [ ] CTA superior y CTA inferior conservados.
+- [ ] No se han eliminado funcionalidades comerciales.
+
+### Diseño y responsive
+
+- [ ] Escritorio correcto.
+- [ ] Tablet correcto.
+- [ ] Móvil correcto.
+- [ ] Índice legible.
+- [ ] Texto legible.
+- [ ] Sin desbordamientos horizontales.
+- [ ] Sin elementos superpuestos.
+- [ ] Sin cambios visuales globales no solicitados.
+
+### Técnico
+
+- [ ] Build completado correctamente.
+- [ ] Prerender/SSG funcionando.
+- [ ] Ruta correcta.
+- [ ] HTML generado correctamente.
+- [ ] Sin errores de consola relevantes.
+- [ ] Sin errores de hidratación.
+- [ ] Sin regresiones en el router.
+
+---
+
+## 12. INFORME FINAL DE IMPLEMENTACIÓN
+
+Cuando termines, entrega un informe claro indicando:
+
+1. Archivos modificados.
+2. Componentes creados o actualizados.
+3. Ruta implementada.
+4. Metadatos SEO aplicados.
+5. Datos estructurados implementados.
+6. Índice y anchors comprobados.
+7. Enlaces comerciales comprobados.
+8. Estado de botones, modal y CTA.
+9. Resultado del build.
+10. Resultado del prerender.
+11. Resultado de las comprobaciones responsive.
+12. Posibles errores o incidencias.
+13. Confirmación expresa de que no se modificaron otras fichas, categorías ni componentes globales.
+14. Confirmación de que no se realizó ningún despliegue.
+
+Si alguna comprobación no puede realizarse, indicarlo claramente. No afirmar que una prueba se ha realizado si no se ha comprobado realmente.
+
+---
+
+## RESULTADO ESPERADO
+
+Queremos que Ideas Maestras de Tráfico Web se convierta en una ficha editorial sólida, original, profunda y diferenciada dentro de FG Perspectiva.
+
+La prioridad es preservar el texto aprobado, construir una página técnicamente correcta, mantener su estructura comercial, mejorar su SEO y garantizar que funcione como una URL independiente sin producir regresiones en el resto del proyecto.
+
+Implementa exclusivamente lo solicitado en esta instrucción. No tomes decisiones adicionales que alteren el contenido, el diseño global, las rutas o las funcionalidades existentes.
+
+Al finalizar, entrega el informe de implementación solicitado.
