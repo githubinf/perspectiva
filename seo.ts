@@ -2478,6 +2478,92 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6aa. Ficha editorial dedicada: Dominando el Arte del Email Marketing
+  if (path === '/dominando-el-arte-del-email-marketing/') {
+    const emailBook = ALL_BOOKS.find(
+      (b) =>
+        b.path === '/dominando-el-arte-del-email-marketing/' ||
+        b.slug === 'dominando-el-arte-del-email-marketing'
+    );
+    const emailMetaDescription =
+      'Comprendamos el valor del email marketing como canal de comunicación directa, continuidad, confianza y desarrollo de relaciones duraderas con nuestra audiencia.';
+    const emailCover =
+      emailBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/26-dominando-el-arte-del-email-marketing-libro-400.jpg';
+    const emailUrl = `${BASE_URL}/dominando-el-arte-del-email-marketing/`;
+    const emailSameAs = [
+      'https://www.amazon.com/dp/B0CXLVD19F',
+      'https://www.amazon.com/dp/B0CXMF6DWY',
+      'https://www.amazon.com/dp/B0CW1BLLV6'
+    ];
+
+    const emailBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Dominando el Arte del Email Marketing',
+      alternateName:
+        'Estrategias efectivas para maximizar tu alcance y crecimiento en el mercado digital actual.',
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      },
+      description: emailMetaDescription,
+      url: emailUrl,
+      image: emailCover,
+      inLanguage: 'es',
+      genre: 'Crecimiento',
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
+        'https://schema.org/EBook'
+      ],
+      sameAs: emailSameAs
+    };
+
+    return {
+      path: '/dominando-el-arte-del-email-marketing/',
+      title: 'Dominando el Arte del Email Marketing: relaciones digitales | FG Perspectiva',
+      description: emailMetaDescription,
+      canonical: emailUrl,
+      ogImage: emailCover,
+      ogType: 'book',
+      h1: 'Dominando el Arte del Email Marketing',
+      schema: [
+        emailBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Crecimiento',
+              item: `${BASE_URL}/crecimiento/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Dominando el Arte del Email Marketing',
+              item: emailUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 7. Individual Book pages
   const matchedBook = ALL_BOOKS.find((b) => b.path === path || `/${b.slug}/` === path);
   if (matchedBook) {

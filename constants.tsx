@@ -1542,8 +1542,38 @@ export const FEATURED_BOOKS: BookCategory[] = [
         categorySlug: 'crecimiento',
         title: 'Dominando el Arte del Email Marketing',
         description: 'Crea relaciones duraderas y ventas recurrentes con email estratégico.',
-        url: 'https://amzn.to/4cbywRd',
+        url: 'https://www.amazon.com/dp/B0CXLVD19F',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/26-dominando-el-arte-del-email-marketing-libro-400.jpg',
+        purchaseOptions: [
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B0CXLVD19F',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
+            emoji: '🛒',
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B0CXMF6DWY',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B0CW1BLLV6',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          }
+        ],
         extraInfo: [
           'El email marketing es, con diferencia, el canal de marketing con el mayor retorno de inversión (ROI) para cualquier negocio digital. Pero la mayoría de las personas lo hace mal: envían correos genéricos, spam o promociones agresivas que terminan en la papelera (o en la carpeta de spam). El email marketing efectivo no es enviar correos; es construir relaciones.',
           'Este libro te enseña a utilizar el email como un sistema de comunicación estratégica que te permite conectar con tu audiencia a un nivel más profundo, construir confianza y generar ventas recurrentes de forma ética y sostenible. No es un manual de tácticas puntuales; es una guía para construir un sistema de email marketing que funcione solo.',

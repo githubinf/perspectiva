@@ -31,6 +31,7 @@ import ElFuturoDelMarketingIaView from './components/views/ElFuturoDelMarketingI
 import IdeasTraficoWebView from './components/views/IdeasTraficoWebView.tsx';
 import IdeasMaestrasTraficoWebView from './components/views/IdeasMaestrasTraficoWebView.tsx';
 import PoderMarketingContenidosView from './components/views/PoderMarketingContenidosView.tsx';
+import DominandoEmailMarketingView from './components/views/DominandoEmailMarketingView.tsx';
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
@@ -167,6 +168,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/el-poder-del-marketing-de-contenidos/' && matchedBook) {
     return <PoderMarketingContenidosView book={matchedBook} />;
+  }
+
+  if (currentPath === '/dominando-el-arte-del-email-marketing/' && matchedBook) {
+    return <DominandoEmailMarketingView book={matchedBook} />;
   }
 
   if (matchedBook) {
