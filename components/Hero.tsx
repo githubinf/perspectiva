@@ -1,14 +1,22 @@
 
 import React from 'react';
 import { Link } from '../router.tsx';
+import { BookItem } from '../types.ts';
+import HomeBookSearch from './HomeBookSearch.tsx';
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  onOpenPurchaseModal?: (e: React.MouseEvent, book: BookItem) => void;
+}
+
+const Hero: React.FC<HeroProps> = ({ onOpenPurchaseModal }) => {
   return (
-    <section id="home-inicio" tabIndex={-1} className="relative pt-20 pb-20 md:pt-28 md:pb-32 overflow-hidden bg-white scroll-mt-20 outline-none">
+    <section id="home-inicio" tabIndex={-1} className="relative pt-28 pb-20 md:pt-24 md:pb-32 overflow-hidden bg-white scroll-mt-20 outline-none">
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[#dae7df]/30 -skew-x-12 -z-10 translate-x-1/3"></div>
       
       <div className="max-w-5xl mx-auto px-6">
-        <div className="inline-flex items-center gap-3 mb-8 animate-fade-in">
+        <HomeBookSearch onOpenPurchaseModal={onOpenPurchaseModal || (() => {})} />
+
+        <div className="inline-flex items-center gap-3 mb-6 animate-fade-in">
           <span className="w-8 h-[1px] bg-[#f4b925]"></span>
           <span className="text-[11.5px] uppercase tracking-wider text-[#174532] font-semibold">
             Editorial de Sistemas Digitales

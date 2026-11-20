@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Hero from '../Hero.tsx';
-import HomeBookSearch from '../HomeBookSearch.tsx';
 import Manifesto from '../Manifesto.tsx';
 import Features from '../Features.tsx';
 import HomeSystems from '../HomeSystems.tsx';
@@ -76,8 +75,7 @@ const HomeView: React.FC = () => {
 
   return (
     <>
-      <Hero />
-      <HomeBookSearch onOpenPurchaseModal={openPurchaseModal} />
+      <Hero onOpenPurchaseModal={openPurchaseModal} />
       <Manifesto />
       <Features />
 

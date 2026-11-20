@@ -6,6 +6,11 @@ import { ArrowRight, BookOpen, Search, X } from 'lucide-react';
 
 interface HomeBookSearchProps {
   onOpenPurchaseModal: (e: React.MouseEvent, book: BookItem) => void;
+  headingText?: string;
+  headingAs?: 'p' | 'h2';
+  subtitleText?: string | null;
+  idPrefix?: string;
+  containerClassName?: string;
 }
 
 interface IndexedCatalogBook {
@@ -219,7 +224,14 @@ function searchCatalogBooks(rawQuery: string): SearchMatch[] {
 
 const MIN_USEFUL_SEARCH_CHARS = 2;
 
-const HomeBookSearch: React.FC<HomeBookSearchProps> = ({ onOpenPurchaseModal }) => {
+const HomeBookSearch: React.FC<HomeBookSearchProps> = ({
+  onOpenPurchaseModal,
+  headingText = '¿Buscas conocimientos sobre un tema específico?',
+  headingAs = 'p',
+  subtitleText = 'Explora nuestra biblioteca y encuentra libros sobre marketing, inteligencia artificial, negocios digitales, tráfico web, creación de contenidos y otras disciplinas.',
+  idPrefix = 'home',
+  containerClassName = 'mb-8 md:mb-10',
+}) => {
   const [inputValue, setInputValue] = useState<string>('');
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -241,41 +253,48 @@ const HomeBookSearch: React.FC<HomeBookSearchProps> = ({ onOpenPurchaseModal }) 
     inputRef.current?.focus();
   };
 
+  const regionId = `${idPrefix}-buscador`;
+  const headingId = `${idPrefix}-search-heading`;
+  const inputId = `${idPrefix}-book-search-input`;
+  const resultsId = `${idPrefix}-search-results`;
+  const HeadingTag = headingAs;
+
   return (
-    <section
-      id="home-buscador"
-      aria-labelledby="home-search-heading"
-      className="py-12 md:py-16 bg-[#f9fbfa] border-y border-[#dae7df]/70"
+    <div
+      id={regionId}
+      role="region"
+      aria-labelledby={headingId}
+      className={containerClassName}
     >
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="bg-white border border-[#174532]/15 rounded-xl p-6 sm:p-8 md:p-10 shadow-sm">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-3 mb-3">
-              <span className="w-6 h-[1px] bg-[#f4b925]" aria-hidden="true"></span>
-              <span className="text-[11px] uppercase tracking-[0.14em] font-semibold text-[#1f513a]">
-                Explora la biblioteca
-              </span>
-            </div>
-
-            <h2
-              id="home-search-heading"
-              className="text-[22px] sm:text-[26px] font-bold font-serif text-[#174532] leading-snug mb-3"
-            >
-              ¿Buscas conocimientos sobre un tema específico?
-            </h2>
-
-            <p className="text-body-sm md:text-body text-[#1b1b1b]/75 leading-relaxed mb-6">
-              Explora nuestra biblioteca y encuentra libros sobre marketing, inteligencia artificial, negocios digitales, tráfico web, creación de contenidos y otras disciplinas.
-            </p>
-          </div>
-
-          <form
-            onSubmit={handleSubmit}
-            role="search"
-            aria-label="Buscador de libros de FG Perspectiva"
-            className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center"
+      <div className="bg-white/95 border border-[#174532]/15 rounded-xl p-4 sm:p-5 md:p-6 shadow-sm">
+        <div className="max-w-3xl">
+          <HeadingTag
+            id={headingId}
+            className={`${
+              headingAs === 'h2'
+                ? 'text-[19px] sm:text-[22px]'
+                : 'text-[17px] sm:text-[19px]'
+            } font-bold font-serif text-[#174532] leading-snug ${
+              subtitleText ? 'mb-1.5' : 'mb-4'
+            }`}
           >
-            <label htmlFor="home-book-search-input" className="sr-only">
+            {headingText}
+          </HeadingTag>
+
+          {subtitleText && (
+            <p className="text-[13.5px] sm:text-[14px] text-[#1b1b1b]/75 leading-relaxed mb-4">
+              {subtitleText}
+            </p>
+          )}
+        </div>
+
+        <form
+          onSubmit={handleSubmit}
+          role="search"
+          aria-label="Buscador de libros de FG Perspectiva"
+          className="flex flex-col sm:flex-row gap-2.5 items-stretch sm:items-center"
+        >
+            <label htmlFor={inputId} className="sr-only">
               ¿Qué te gustaría aprender o descubrir?
             </label>
 
@@ -286,7 +305,7 @@ const HomeBookSearch: React.FC<HomeBookSearchProps> = ({ onOpenPurchaseModal }) 
               />
               <input
                 ref={inputRef}
-                id="home-book-search-input"
+                id={inputId}
                 type="text"
                 inputMode="search"
                 enterKeyHint="search"
@@ -294,14 +313,16 @@ const HomeBookSearch: React.FC<HomeBookSearchProps> = ({ onOpenPurchaseModal }) 
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 placeholder="¿Qué te gustaría aprender o descubrir?"
-                className="w-full min-h-[48px] pl-11 pr-10 py-3 bg-[#f9fbfa] border border-[#174532]/25 rounded-md text-[15px] text-[#1b1b1b] placeholder:text-[#1b1b1b]/55 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#174532] focus:border-[#174532] transition-colors"
+                className={`w-full min-h-[44px] pl-10 sm:pl-11 ${
+                  inputValue.length > 0 ? 'pr-10' : 'pr-3.5 sm:pr-4'
+                } py-2.5 bg-[#f9fbfa] border border-[#174532]/25 rounded-md text-[13.5px] sm:text-[14.5px] text-[#1b1b1b] placeholder:text-[#1b1b1b]/55 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#174532] focus:border-[#174532] transition-colors`}
               />
               {inputValue.length > 0 && (
                 <button
                   type="button"
                   onClick={handleClear}
                   aria-label="Limpiar búsqueda"
-                  className="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 text-[#174532]/75 hover:text-[#174532] hover:bg-[#dae7df]/45 rounded-sm transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#174532]"
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 p-1.5 text-[#174532]/75 hover:text-[#174532] hover:bg-[#dae7df]/45 rounded-sm transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#174532]"
                 >
                   <X className="w-4 h-4" aria-hidden="true" />
                 </button>
@@ -310,7 +331,7 @@ const HomeBookSearch: React.FC<HomeBookSearchProps> = ({ onOpenPurchaseModal }) 
 
             <button
               type="submit"
-              className="min-h-[48px] px-6 py-3 bg-[#174532] hover:bg-[#1f513a] text-white font-semibold text-[15px] rounded-md transition-colors shadow-sm cursor-pointer inline-flex items-center justify-center gap-2 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#174532] focus-visible:ring-offset-2"
+              className="min-h-[44px] px-5 py-2.5 bg-[#174532] hover:bg-[#1f513a] text-white font-semibold text-[14.5px] rounded-md transition-colors shadow-sm cursor-pointer inline-flex items-center justify-center gap-2 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#174532] focus-visible:ring-offset-2"
             >
               <Search className="w-4 h-4" aria-hidden="true" />
               <span>Buscar libros</span>
@@ -319,7 +340,7 @@ const HomeBookSearch: React.FC<HomeBookSearchProps> = ({ onOpenPurchaseModal }) 
 
           {hasSearched && (
             <div
-              id="home-search-results"
+              id={resultsId}
               aria-live="polite"
               className="mt-8 pt-7 border-t border-[#dae7df]/70"
             >
@@ -382,7 +403,7 @@ const HomeBookSearch: React.FC<HomeBookSearchProps> = ({ onOpenPurchaseModal }) 
                               src={book.coverUrl}
                               alt={`Portada de ${book.title}`}
                               className="w-32 md:w-36 h-auto object-cover shadow-md group-hover:scale-105 transition-transform rounded-sm"
-                              loading="lazy"
+                              loading="eager"
                               width={300}
                               height={435}
                             />
@@ -433,9 +454,8 @@ const HomeBookSearch: React.FC<HomeBookSearchProps> = ({ onOpenPurchaseModal }) 
               )}
             </div>
           )}
-        </div>
       </div>
-    </section>
+    </div>
   );
 };
 

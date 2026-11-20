@@ -2716,17 +2716,17 @@ export const getPageMeta = (rawPath: string): PageMeta => {
   // 8. 404 / NotFound
   return {
     path,
-    title: 'Página no encontrada (404) | FG Perspectiva',
-    description: 'La página solicitada no existe o ha sido reubicada dentro de la biblioteca de FG Perspectiva.',
+    title: 'Esta página no está disponible (404) | FG Perspectiva',
+    description: 'Parece que la dirección que buscas no existe, ha cambiado o ya no está disponible. Descubre otros libros en la biblioteca de FG Perspectiva.',
     canonical: `${BASE_URL}${path}`,
     ogImage: DEFAULT_IMAGE,
     ogType: 'website',
-    h1: 'Página no encontrada',
+    h1: 'Esta página no está disponible',
     noindex: true,
     schema: {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      name: 'Página no encontrada (404)',
+      name: 'Esta página no está disponible (404)',
       url: `${BASE_URL}${path}`
     }
   };
