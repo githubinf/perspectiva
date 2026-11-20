@@ -14,6 +14,8 @@ export const LEGAL_PATHS: string[] = [
   '/politica-de-cookies/',
 ];
 
+export const HTML_SITEMAP_PATH = '/mapa-del-sitio/';
+
 export const FEATURED_BOOKS: BookCategory[] = [
   {
     id: 'star',

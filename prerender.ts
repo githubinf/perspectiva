@@ -3,7 +3,7 @@ import path from 'node:path';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import App from './App.tsx';
-import { CANONICAL_URLS, LEGAL_PATHS } from './constants.tsx';
+import { CANONICAL_URLS, HTML_SITEMAP_PATH, LEGAL_PATHS } from './constants.tsx';
 import { getPageMeta, PageMeta } from './seo.ts';
 import { generateSitemapXml, getIndexableSitemapUrls } from './sitemap.ts';
 
@@ -169,19 +169,19 @@ export async function prerender() {
     console.log(`  ✓ Prerenderizado: ${routePath} -> dist/${path.relative(DIST_DIR, targetFilePath)} (${renderedFilesInventory[renderedFilesInventory.length - 1].sizeKb} KB)`);
   }
 
-  // Prerender non-indexable legal pages for direct URL access (robots: noindex, follow; NOT in sitemap.xml)
-  for (const legalPath of LEGAL_PATHS) {
-    const legalMeta = getPageMeta(legalPath);
-    const legalAppHtml = ReactDOMServer.renderToString(
-      React.createElement(App, { initialPath: legalPath })
+  // Prerender non-indexable legal and utility pages for direct URL access (robots: noindex, follow; NOT in sitemap.xml)
+  for (const utilityPath of [...LEGAL_PATHS, HTML_SITEMAP_PATH]) {
+    const utilityMeta = getPageMeta(utilityPath);
+    const utilityAppHtml = ReactDOMServer.renderToString(
+      React.createElement(App, { initialPath: utilityPath })
     );
-    const legalHtml = injectMetaAndContent(rawTemplate, legalAppHtml, legalMeta);
-    const cleanSubdir = legalPath.replace(/^\//, '').replace(/\/$/, '');
-    const legalDir = path.join(DIST_DIR, cleanSubdir);
-    fs.mkdirSync(legalDir, { recursive: true });
-    const legalFilePath = path.join(legalDir, 'index.html');
-    fs.writeFileSync(legalFilePath, legalHtml, 'utf-8');
-    console.log(`  ✓ Prerenderizado legal (noindex, follow): ${legalPath} -> dist/${path.relative(DIST_DIR, legalFilePath)}`);
+    const utilityHtml = injectMetaAndContent(rawTemplate, utilityAppHtml, utilityMeta);
+    const cleanSubdir = utilityPath.replace(/^\//, '').replace(/\/$/, '');
+    const utilityDir = path.join(DIST_DIR, cleanSubdir);
+    fs.mkdirSync(utilityDir, { recursive: true });
+    const utilityFilePath = path.join(utilityDir, 'index.html');
+    fs.writeFileSync(utilityFilePath, utilityHtml, 'utf-8');
+    console.log(`  ✓ Prerenderizado auxiliar (noindex, follow): ${utilityPath} -> dist/${path.relative(DIST_DIR, utilityFilePath)}`);
   }
 
   // Also Prerender 404 page (dist/404.html)

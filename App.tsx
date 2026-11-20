@@ -38,6 +38,7 @@ import ContactView from './components/views/ContactView.tsx';
 import LegalNoticeView from './components/views/LegalNoticeView.tsx';
 import PrivacyPolicyView from './components/views/PrivacyPolicyView.tsx';
 import CookiesPolicyView from './components/views/CookiesPolicyView.tsx';
+import HtmlSitemapView from './components/views/HtmlSitemapView.tsx';
 import NotFoundView from './components/views/NotFoundView.tsx';
 import SeoHead from './components/SeoHead.tsx';
 import BackToTopButton from './components/BackToTopButton.tsx';
@@ -75,6 +76,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/politica-de-cookies/') {
     return <CookiesPolicyView />;
+  }
+
+  if (currentPath === '/mapa-del-sitio/') {
+    return <HtmlSitemapView />;
   }
 
   if (currentPath === '/origen/' && matchedCategory) {

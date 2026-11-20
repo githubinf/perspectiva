@@ -425,6 +425,53 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  if (path === '/mapa-del-sitio/') {
+    const htmlSitemapUrl = `${BASE_URL}/mapa-del-sitio/`;
+    return {
+      path: '/mapa-del-sitio/',
+      title: 'Mapa del sitio | FG Perspectiva',
+      description: 'Explora FG Perspectiva y accede directamente a nuestras páginas principales, categorías y libros publicados.',
+      canonical: htmlSitemapUrl,
+      ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
+      ogType: 'website',
+      h1: 'Mapa del sitio',
+      noindex: true,
+      robotsContent: 'noindex, follow',
+      schema: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          name: 'Mapa del sitio | FG Perspectiva',
+          description: 'Explora FG Perspectiva y accede directamente a nuestras páginas principales, categorías y libros publicados.',
+          url: htmlSitemapUrl,
+          isPartOf: {
+            '@type': 'WebSite',
+            name: 'FG Perspectiva',
+            url: `${BASE_URL}/`
+          }
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Mapa del sitio',
+              item: htmlSitemapUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 6a. Categoría Origen (vista editorial dedicada)
   if (path === '/origen/') {
     const originCategory = FEATURED_BOOKS.find((c) => c.path === '/origen/');

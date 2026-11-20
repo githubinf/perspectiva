@@ -3,7 +3,7 @@ import path from 'node:path';
 import { defineConfig, loadEnv, Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
-import { CANONICAL_URLS, LEGAL_PATHS } from './constants.tsx';
+import { CANONICAL_URLS, HTML_SITEMAP_PATH, LEGAL_PATHS } from './constants.tsx';
 import { getPageMeta } from './seo.ts';
 import { generateSitemapXml } from './sitemap.ts';
 
@@ -19,9 +19,13 @@ const normalizeRoutePath = (raw: string): string => {
 const VALID_ROUTE_PATHS = new Set<string>([
   ...CANONICAL_URLS.map((url) => normalizeRoutePath(url.replace(BASE_URL, ''))),
   ...LEGAL_PATHS.map((p) => normalizeRoutePath(p)),
+  normalizeRoutePath(HTML_SITEMAP_PATH),
 ]);
 
-const LEGAL_ROUTE_SET = new Set<string>(LEGAL_PATHS.map((p) => normalizeRoutePath(p)));
+const LEGAL_ROUTE_SET = new Set<string>([
+  ...LEGAL_PATHS.map((p) => normalizeRoutePath(p)),
+  normalizeRoutePath(HTML_SITEMAP_PATH),
+]);
 
 const shouldHandleAsUnknownHtmlRoute = (url?: string, method?: string, accept?: string): boolean => {
   if (!url || (method !== 'GET' && method !== 'HEAD')) return false;
