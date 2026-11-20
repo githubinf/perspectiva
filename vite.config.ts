@@ -3,7 +3,8 @@ import path from 'node:path';
 import { defineConfig, loadEnv, Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
-import { CANONICAL_URLS } from './constants.tsx';
+import { CANONICAL_URLS, LEGAL_PATHS } from './constants.tsx';
+import { getPageMeta } from './seo.ts';
 import { generateSitemapXml } from './sitemap.ts';
 
 const BASE_URL = 'https://fgperspectiva.vercel.app';
@@ -15,9 +16,12 @@ const normalizeRoutePath = (raw: string): string => {
   return withLeading.endsWith('/') ? withLeading : `${withLeading}/`;
 };
 
-const VALID_ROUTE_PATHS = new Set<string>(
-  CANONICAL_URLS.map((url) => normalizeRoutePath(url.replace(BASE_URL, '')))
-);
+const VALID_ROUTE_PATHS = new Set<string>([
+  ...CANONICAL_URLS.map((url) => normalizeRoutePath(url.replace(BASE_URL, ''))),
+  ...LEGAL_PATHS.map((p) => normalizeRoutePath(p)),
+]);
+
+const LEGAL_ROUTE_SET = new Set<string>(LEGAL_PATHS.map((p) => normalizeRoutePath(p)));
 
 const shouldHandleAsUnknownHtmlRoute = (url?: string, method?: string, accept?: string): boolean => {
   if (!url || (method !== 'GET' && method !== 'HEAD')) return false;
@@ -56,6 +60,41 @@ function realHttp404Plugin(): Plugin {
           res.setHeader('Content-Type', 'application/xml; charset=utf-8');
           res.end(req.method === 'HEAD' ? '' : xml);
           return;
+        }
+
+        const normalized = normalizeRoutePath(pathname);
+        if (
+          (req.method === 'GET' || req.method === 'HEAD') &&
+          LEGAL_ROUTE_SET.has(normalized) &&
+          (!req.headers.accept || req.headers.accept.includes('text/html') || req.headers.accept.includes('*/*'))
+        ) {
+          try {
+            const indexPath = path.resolve(__dirname, 'index.html');
+            const rawHtml = fs.readFileSync(indexPath, 'utf-8');
+            const transformedHtml = await server.transformIndexHtml(req.url || normalized, rawHtml);
+            const meta = getPageMeta(normalized);
+            const legalHtml = transformedHtml
+              .replace(/<title>.*?<\/title>/is, `<title>${meta.title}</title>`)
+              .replace(
+                /<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i,
+                `<meta name="description" content="${meta.description}">`
+              )
+              .replace(
+                /<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i,
+                `<link rel="canonical" href="${meta.canonical}">`
+              )
+              .replace(
+                /<meta\s+name="robots"\s+content="[^"]*"\s*\/?>/i,
+                `<meta name="robots" content="${meta.robotsContent || 'noindex, follow'}">`
+              );
+
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'text/html; charset=utf-8');
+            res.end(req.method === 'HEAD' ? '' : legalHtml);
+            return;
+          } catch (err) {
+            return next(err as Error);
+          }
         }
 
         if (!shouldHandleAsUnknownHtmlRoute(req.url, req.method, req.headers.accept)) {

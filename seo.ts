@@ -18,6 +18,7 @@ export interface PageMeta {
   twitterImageAlt?: string;
   h1: string;
   noindex?: boolean;
+  robotsContent?: string;
   schema: Record<string, any> | Record<string, any>[];
 }
 
@@ -275,6 +276,148 @@ export const getPageMeta = (rawPath: string): PageMeta => {
               position: 2,
               name: 'Contacto',
               item: `${BASE_URL}/contacto/`
+            }
+          ]
+        }
+      ]
+    };
+  }
+
+  // 5b. Páginas legales (NO INDEXABLES — noindex, follow)
+  if (path === '/aviso-legal/') {
+    const legalUrl = `${BASE_URL}/aviso-legal/`;
+    return {
+      path: '/aviso-legal/',
+      title: 'Aviso legal | FG Perspectiva',
+      description: 'Información legal, condiciones de uso, propiedad intelectual y relaciones comerciales de FG Perspectiva.',
+      canonical: legalUrl,
+      ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
+      ogType: 'website',
+      h1: 'Aviso legal',
+      noindex: true,
+      robotsContent: 'noindex, follow',
+      schema: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'Aviso legal | FG Perspectiva',
+          description: 'Información legal, condiciones de uso, propiedad intelectual y relaciones comerciales de FG Perspectiva.',
+          url: legalUrl,
+          isPartOf: {
+            '@type': 'WebSite',
+            name: 'FG Perspectiva',
+            url: `${BASE_URL}/`
+          }
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Aviso legal',
+              item: legalUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
+  if (path === '/politica-de-privacidad/') {
+    const privacyUrl = `${BASE_URL}/politica-de-privacidad/`;
+    return {
+      path: '/politica-de-privacidad/',
+      title: 'Política de privacidad | FG Perspectiva',
+      description: 'Conoce cómo FG Perspectiva trata y protege los datos personales, las finalidades del tratamiento y los derechos de los usuarios.',
+      canonical: privacyUrl,
+      ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
+      ogType: 'website',
+      h1: 'Política de privacidad',
+      noindex: true,
+      robotsContent: 'noindex, follow',
+      schema: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'Política de privacidad | FG Perspectiva',
+          description: 'Conoce cómo FG Perspectiva trata y protege los datos personales, las finalidades del tratamiento y los derechos de los usuarios.',
+          url: privacyUrl,
+          isPartOf: {
+            '@type': 'WebSite',
+            name: 'FG Perspectiva',
+            url: `${BASE_URL}/`
+          }
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Política de privacidad',
+              item: privacyUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
+  if (path === '/politica-de-cookies/') {
+    const cookiesUrl = `${BASE_URL}/politica-de-cookies/`;
+    return {
+      path: '/politica-de-cookies/',
+      title: 'Política de cookies | FG Perspectiva',
+      description: 'Información sobre cookies, tecnologías de navegación, herramientas de terceros y gestión de preferencias en FG Perspectiva.',
+      canonical: cookiesUrl,
+      ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
+      ogType: 'website',
+      h1: 'Política de cookies',
+      noindex: true,
+      robotsContent: 'noindex, follow',
+      schema: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'Política de cookies | FG Perspectiva',
+          description: 'Información sobre cookies, tecnologías de navegación, herramientas de terceros y gestión de preferencias en FG Perspectiva.',
+          url: cookiesUrl,
+          isPartOf: {
+            '@type': 'WebSite',
+            name: 'FG Perspectiva',
+            url: `${BASE_URL}/`
+          }
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Política de cookies',
+              item: cookiesUrl
             }
           ]
         }

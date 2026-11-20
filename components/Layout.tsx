@@ -60,6 +60,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     <li><a href="https://afiliados-fgperspectiva.vercel.app/" target="_blank" rel="noopener noreferrer nofollow" className="text-slate-300 hover:text-white transition-colors py-0.5 block">Afiliados</a></li>
                   </ul>
                </div>
+               <div>
+                  <h4 className="text-[#4db380] text-[14px] md:text-[14.5px] uppercase tracking-[0.05em] font-semibold mb-5 block">Legal</h4>
+                  <ul className="space-y-3 text-[14px]">
+                    <li><Link href="/aviso-legal/" className="text-slate-300 hover:text-white transition-colors py-0.5 block">Aviso legal</Link></li>
+                    <li><Link href="/politica-de-privacidad/" className="text-slate-300 hover:text-white transition-colors py-0.5 block">Política de privacidad</Link></li>
+                    <li><Link href="/politica-de-cookies/" className="text-slate-300 hover:text-white transition-colors py-0.5 block">Política de cookies</Link></li>
+                  </ul>
+               </div>
             </div>
           </div>
           

@@ -1,4 +1,4 @@
-import { ALL_BOOKS, CANONICAL_URLS, FEATURED_BOOKS, NAV_ITEMS } from './constants.tsx';
+import { ALL_BOOKS, CANONICAL_URLS, FEATURED_BOOKS, LEGAL_PATHS, NAV_ITEMS } from './constants.tsx';
 import { getPageMeta } from './seo.ts';
 
 export const SITE_BASE_URL = 'https://fgperspectiva.vercel.app';
@@ -8,6 +8,7 @@ const EXCLUDED_SYSTEM_PATHS = new Set<string>([
   '/search/',
   '/buscar/',
   '/busqueda/',
+  ...LEGAL_PATHS,
 ]);
 
 const escapeXml = (str: string): string =>

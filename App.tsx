@@ -35,6 +35,9 @@ import DominandoEmailMarketingView from './components/views/DominandoEmailMarket
 import SystemsView from './components/views/SystemsView.tsx';
 import AboutView from './components/views/AboutView.tsx';
 import ContactView from './components/views/ContactView.tsx';
+import LegalNoticeView from './components/views/LegalNoticeView.tsx';
+import PrivacyPolicyView from './components/views/PrivacyPolicyView.tsx';
+import CookiesPolicyView from './components/views/CookiesPolicyView.tsx';
 import NotFoundView from './components/views/NotFoundView.tsx';
 import SeoHead from './components/SeoHead.tsx';
 import BackToTopButton from './components/BackToTopButton.tsx';
@@ -60,6 +63,18 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/contacto/') {
     return <ContactView />;
+  }
+
+  if (currentPath === '/aviso-legal/') {
+    return <LegalNoticeView />;
+  }
+
+  if (currentPath === '/politica-de-privacidad/') {
+    return <PrivacyPolicyView />;
+  }
+
+  if (currentPath === '/politica-de-cookies/') {
+    return <CookiesPolicyView />;
   }
 
   if (currentPath === '/origen/' && matchedCategory) {

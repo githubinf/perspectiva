@@ -8,6 +8,12 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Contacto', href: '/contacto/' },
 ];
 
+export const LEGAL_PATHS: string[] = [
+  '/aviso-legal/',
+  '/politica-de-privacidad/',
+  '/politica-de-cookies/',
+];
+
 export const FEATURED_BOOKS: BookCategory[] = [
   {
     id: 'star',

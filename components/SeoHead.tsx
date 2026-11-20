@@ -88,18 +88,16 @@ export const SeoHead: React.FC = () => {
       removeMeta('meta[name="twitter:image:alt"]');
     }
 
-    // Update robots if noindex
+    // Update robots meta directive without duplicating tags
     let robotsEl = document.querySelector('meta[name="robots"]');
-    if (meta.noindex) {
-      if (!robotsEl) {
-        robotsEl = document.createElement('meta');
-        robotsEl.setAttribute('name', 'robots');
-        document.head.appendChild(robotsEl);
-      }
-      robotsEl.setAttribute('content', 'noindex, nofollow');
-    } else if (robotsEl) {
-      robotsEl.setAttribute('content', 'index, follow');
+    const resolvedRobots =
+      meta.robotsContent || (meta.noindex ? 'noindex, nofollow' : 'index, follow');
+    if (!robotsEl) {
+      robotsEl = document.createElement('meta');
+      robotsEl.setAttribute('name', 'robots');
+      document.head.appendChild(robotsEl);
     }
+    robotsEl.setAttribute('content', resolvedRobots);
 
     // Update JSON-LD structured data script
     let schemaScript = document.getElementById('schema-org-jsonld');

@@ -3,7 +3,7 @@ import path from 'node:path';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import App from './App.tsx';
-import { CANONICAL_URLS } from './constants.tsx';
+import { CANONICAL_URLS, LEGAL_PATHS } from './constants.tsx';
 import { getPageMeta, PageMeta } from './seo.ts';
 import { generateSitemapXml, getIndexableSitemapUrls } from './sitemap.ts';
 
@@ -47,7 +47,8 @@ function injectMetaAndContent(templateHtml: string, appHtml: string, meta: PageM
   }
 
   // 4. Inject Robots
-  const robotsContent = meta.noindex ? 'noindex, nofollow' : 'index, follow';
+  const robotsContent =
+    meta.robotsContent || (meta.noindex ? 'noindex, nofollow' : 'index, follow');
   if (html.includes('<meta name="robots"')) {
     html = html.replace(
       /<meta\s+name="robots"\s+content="[^"]*"\s*\/?>/i,
@@ -166,6 +167,21 @@ export async function prerender() {
     });
 
     console.log(`  ✓ Prerenderizado: ${routePath} -> dist/${path.relative(DIST_DIR, targetFilePath)} (${renderedFilesInventory[renderedFilesInventory.length - 1].sizeKb} KB)`);
+  }
+
+  // Prerender non-indexable legal pages for direct URL access (robots: noindex, follow; NOT in sitemap.xml)
+  for (const legalPath of LEGAL_PATHS) {
+    const legalMeta = getPageMeta(legalPath);
+    const legalAppHtml = ReactDOMServer.renderToString(
+      React.createElement(App, { initialPath: legalPath })
+    );
+    const legalHtml = injectMetaAndContent(rawTemplate, legalAppHtml, legalMeta);
+    const cleanSubdir = legalPath.replace(/^\//, '').replace(/\/$/, '');
+    const legalDir = path.join(DIST_DIR, cleanSubdir);
+    fs.mkdirSync(legalDir, { recursive: true });
+    const legalFilePath = path.join(legalDir, 'index.html');
+    fs.writeFileSync(legalFilePath, legalHtml, 'utf-8');
+    console.log(`  ✓ Prerenderizado legal (noindex, follow): ${legalPath} -> dist/${path.relative(DIST_DIR, legalFilePath)}`);
   }
 
   // Also Prerender 404 page (dist/404.html)

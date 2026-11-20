@@ -1,0 +1,706 @@
+# INSTRUCCIÓN INTEGRAL PARA GOOGLE AI STUDIO
+## Creación de las páginas legales de FG Perspectiva
+
+### 1. OBJETIVO GENERAL
+
+Crear tres páginas legales independientes dentro de FG Perspectiva:
+
+1. Aviso legal.
+2. Política de privacidad.
+3. Política de cookies.
+
+Las páginas deben integrarse en la arquitectura actual de la web, respetando su identidad visual, sistema de rutas, componentes, tipografía, colores, estructura técnica y navegación.
+
+Se trata de una implementación de contenido y estructura legal. No se debe realizar ningún rediseño general ni alterar páginas que no formen parte de esta tarea.
+
+**IMPORTANTE: Las tres páginas deben ser NO INDEXABLES.**
+
+Todas deben incorporar correctamente las directivas SEO `noindex, follow`, sus metadatos correspondientes y estar excluidas del sitemap XML.
+
+---
+
+# 2. RUTAS DE LAS PÁGINAS
+
+Crear las siguientes rutas raíz, respetando el sistema actual de URLs y las barras finales:
+
+- Aviso legal: `/aviso-legal/`
+- Política de privacidad: `/politica-de-privacidad/`
+- Política de cookies: `/politica-de-cookies/`
+
+Cada página debe ser independiente, accesible directamente mediante su URL y funcionar correctamente con el sistema de rutas actual.
+
+No utilizar rutas anidadas como `/legal/aviso-legal/`, `/politicas/privacidad/` ni otras estructuras diferentes a las especificadas.
+
+---
+
+# 3. REQUISITOS SEO OBLIGATORIOS
+
+Las tres páginas deben tener configurada la misma política de indexación:
+
+`noindex, follow`
+
+La directiva debe estar presente en el HTML renderizado de cada página, mediante la meta robots correspondiente:
+
+`<meta name="robots" content="noindex, follow">`
+
+Debe utilizarse el mecanismo SEO existente en el proyecto, evitando duplicar etiquetas o generar conflictos con el componente SEO actual.
+
+### Metadatos del Aviso legal
+
+SEO Title:
+
+`Aviso legal | FG Perspectiva`
+
+Meta Description:
+
+`Información legal, condiciones de uso, propiedad intelectual y relaciones comerciales de FG Perspectiva.`
+
+Robots:
+
+`noindex, follow`
+
+### Metadatos de la Política de privacidad
+
+SEO Title:
+
+`Política de privacidad | FG Perspectiva`
+
+Meta Description:
+
+`Conoce cómo FG Perspectiva trata y protege los datos personales, las finalidades del tratamiento y los derechos de los usuarios.`
+
+Robots:
+
+`noindex, follow`
+
+### Metadatos de la Política de cookies
+
+SEO Title:
+
+`Política de cookies | FG Perspectiva`
+
+Meta Description:
+
+`Información sobre cookies, tecnologías de navegación, herramientas de terceros y gestión de preferencias en FG Perspectiva.`
+
+Robots:
+
+`noindex, follow`
+
+### Reglas SEO adicionales
+
+- Cada página debe disponer de una URL canónica correspondiente a su propia ruta.
+- No debe utilizar la canonical de la página de inicio ni de otra página.
+- Mantener las meta descriptions únicas.
+- No generar contenido SEO adicional destinado a posicionar estas páginas.
+- No incorporar las páginas al sitemap XML.
+- No alterar `robots.txt` para resolver la exclusión.
+- No bloquear estas páginas mediante robots.txt, porque los buscadores deben poder rastrearlas para descubrir y procesar la directiva `noindex`.
+- Mantener los enlaces internos normales hacia las páginas.
+- No utilizar `nofollow` global en los enlaces de estas páginas.
+- Evitar duplicar etiquetas meta robots.
+- Verificar que `noindex, follow` se renderiza correctamente en el HTML final de cada ruta.
+
+Estas páginas deben ser accesibles para usuarios, pero no deben formar parte de las páginas destinadas a posicionamiento orgánico.
+
+---
+
+# 4. DISEÑO Y PRESENTACIÓN
+
+Utilizar el diseño visual actual de FG Perspectiva.
+
+Mantener:
+
+- Identidad visual existente.
+- Paleta de colores.
+- Tipografías.
+- Header.
+- Footer.
+- Ancho de contenido habitual.
+- Sistema de espaciado.
+- Componentes actuales.
+- Diseño responsive.
+- Navegación existente.
+- Breadcrumbs, si el proyecto los utiliza habitualmente.
+
+Las páginas legales deben tener una presentación editorial limpia y profesional, adecuada para textos extensos.
+
+### Estructura visual
+
+Cada página debe incluir:
+
+1. Breadcrumbs, si corresponde al sistema actual.
+2. H1 con el nombre de la página.
+3. Introducción breve.
+4. Contenido legal organizado en secciones con H2.
+5. Fecha de última actualización al final.
+6. Footer general del sitio.
+
+No utilizar tarjetas excesivas, elementos decorativos innecesarios, banners promocionales, libros destacados ni llamadas comerciales dentro de estas páginas.
+
+La prioridad es la legibilidad, especialmente en dispositivos móviles.
+
+---
+
+# 5. PÁGINA 1: AVISO LEGAL
+
+Ruta:
+
+`/aviso-legal/`
+
+SEO:
+
+- Title: Aviso legal | FG Perspectiva
+- Meta Description: Información legal, condiciones de uso, propiedad intelectual y relaciones comerciales de FG Perspectiva.
+- Robots: noindex, follow
+- Canonical: URL absoluta de esta página.
+
+## CONTENIDO
+
+# Aviso legal
+
+### 1. Identificación del sitio web
+
+FG Perspectiva es una editorial digital dedicada a la publicación, divulgación y organización de libros y contenidos relacionados con el marketing digital, los negocios digitales, la inteligencia artificial, la creación de contenidos, la productividad y el desarrollo de proyectos digitales.
+
+El presente sitio web tiene como finalidad ofrecer información sobre nuestras publicaciones, facilitar el acceso a nuestra biblioteca de libros y presentar contenidos, recursos e ideas relacionados con el conocimiento y los sistemas digitales.
+
+**Titular del sitio web:** Francisco González
+
+**Nombre del proyecto:** FG Perspectiva
+
+**URL:** https://fgperspectiva.vercel.app/
+
+Los datos adicionales de identificación y contacto del titular podrán facilitarse a través de los medios de contacto habilitados en el sitio web.
+
+No inventar domicilios, números de teléfono, registros empresariales, identificaciones fiscales ni otros datos que no estén disponibles en el proyecto.
+
+### 2. Condiciones generales de uso
+
+El acceso y la navegación por FG Perspectiva atribuyen la condición de usuario e implican la aceptación de las disposiciones recogidas en este Aviso legal.
+
+El usuario se compromete a utilizar el sitio web de manera responsable, respetando la legislación aplicable, los derechos de terceros y las condiciones establecidas en este documento.
+
+El uso de FG Perspectiva no autoriza la realización de actividades que puedan perjudicar su funcionamiento, comprometer su seguridad, interferir en sus servicios o utilizar sus contenidos de forma ilícita.
+
+### 3. Propiedad intelectual e industrial
+
+Los contenidos publicados en FG Perspectiva, incluidos textos, libros, descripciones editoriales, elementos gráficos, imágenes, identidad visual, estructura de contenidos y demás materiales propios, están protegidos por los derechos de propiedad intelectual que resulten aplicables.
+
+Salvo autorización expresa o disposición legal que permita su utilización, no está permitida la reproducción, distribución, modificación, publicación, comercialización o explotación de estos contenidos, total o parcialmente, sin autorización del titular de los derechos correspondientes.
+
+La visualización, lectura o acceso a los contenidos del sitio web no implica la cesión de derechos de propiedad intelectual ni concede licencias de explotación sobre los materiales publicados.
+
+### 4. Información y contenidos
+
+Los contenidos de FG Perspectiva tienen carácter editorial, informativo y educativo.
+
+Los libros y materiales publicados abordan distintas disciplinas y áreas de conocimiento relacionadas con los negocios digitales, el marketing, la tecnología, la inteligencia artificial, la creación de contenidos y otras materias.
+
+Aunque procuramos ofrecer información útil, clara y actualizada, no garantizamos que todos los contenidos sean aplicables a cualquier situación particular, ni que permanezcan permanentemente actualizados ante cambios tecnológicos, comerciales, normativos o de otra naturaleza.
+
+El usuario es responsable de valorar y aplicar la información de acuerdo con sus propias circunstancias.
+
+### 5. Enlaces externos y plataformas de terceros
+
+FG Perspectiva puede incluir enlaces a sitios web, plataformas, servicios, productos o recursos gestionados por terceros.
+
+Estos enlaces se ofrecen para facilitar el acceso a información adicional, publicaciones, productos o servicios relacionados con los contenidos de nuestro sitio.
+
+FG Perspectiva no controla necesariamente los contenidos, políticas, disponibilidad, seguridad, condiciones comerciales ni prácticas de privacidad de los sitios externos.
+
+El acceso a dichos sitios se realiza bajo la responsabilidad del usuario, quien deberá consultar sus condiciones de uso y políticas aplicables.
+
+### 6. Enlaces de afiliación y relaciones comerciales
+
+FG Perspectiva puede incluir enlaces de afiliación a productos, libros, herramientas, plataformas o servicios de terceros.
+
+En particular, FG Perspectiva puede participar en el Programa de Afiliados de Amazon, mediante el cual podemos obtener ingresos por compras que cumplan las condiciones aplicables y que se realicen a través de determinados enlaces de nuestro sitio web.
+
+Como asociado de Amazon, obtenemos ingresos por las compras adscritas que cumplen los requisitos aplicables.
+
+La presencia de enlaces de afiliación no implica necesariamente un coste adicional para el usuario.
+
+La relación de afiliación no implica que Amazon gestione, redacte o respalde todos los contenidos editoriales de FG Perspectiva.
+
+Las compras, transacciones, pagos, entregas, devoluciones y demás operaciones realizadas en Amazon están sujetas a las condiciones y políticas de dicha plataforma.
+
+### 7. Responsabilidad
+
+FG Perspectiva procura mantener el sitio web operativo, accesible y con contenidos adecuados. No obstante, no garantiza la ausencia de interrupciones, errores técnicos, fallos de disponibilidad o circunstancias ajenas a nuestro control.
+
+No nos responsabilizamos de los daños o perjuicios derivados de circunstancias que legalmente no nos sean imputables, del uso inadecuado de los contenidos, de decisiones adoptadas por el usuario a partir de la información publicada ni de las actuaciones de terceros.
+
+Esta disposición no excluye ni limita las responsabilidades que legalmente no puedan excluirse o limitarse.
+
+### 8. Modificaciones
+
+Podemos actualizar, modificar o sustituir los contenidos del sitio web, así como este Aviso legal, cuando resulte necesario para adaptarlo a cambios operativos, editoriales, técnicos o normativos.
+
+Las modificaciones serán publicadas en esta misma página.
+
+### 9. Legislación aplicable
+
+Este Aviso legal se interpretará de conformidad con la legislación que resulte aplicable al titular del sitio web y a su actividad, sin perjuicio de las normas imperativas de protección de los usuarios que puedan resultar aplicables en otros territorios.
+
+### 10. Contacto
+
+Para consultas relacionadas con FG Perspectiva, el sitio web, sus contenidos o este Aviso legal, el usuario podrá utilizar los medios de contacto disponibles en la página de contacto.
+
+**Última actualización: 20 de noviembre de 2026.**
+
+---
+
+# 6. PÁGINA 2: POLÍTICA DE PRIVACIDAD
+
+Ruta:
+
+`/politica-de-privacidad/`
+
+SEO:
+
+- Title: Política de privacidad | FG Perspectiva
+- Meta Description: Conoce cómo FG Perspectiva trata y protege los datos personales, las finalidades del tratamiento y los derechos de los usuarios.
+- Robots: noindex, follow
+- Canonical: URL absoluta de esta página.
+
+## CONTENIDO
+
+# Política de privacidad
+
+### 1. Introducción
+
+En FG Perspectiva respetamos la privacidad de nuestros usuarios y nos comprometemos a tratar sus datos personales de forma responsable, transparente y conforme a la legislación aplicable en materia de protección de datos.
+
+Esta Política de privacidad explica cómo pueden tratarse los datos personales cuando los usuarios visitan nuestro sitio web, utilizan sus funcionalidades, se comunican con nosotros o acceden a recursos y servicios de terceros a través de nuestros enlaces.
+
+Nuestro objetivo es ofrecer información clara sobre el tratamiento de datos personales, sus finalidades, los derechos de los usuarios y los medios disponibles para ejercerlos.
+
+### 2. Responsable del tratamiento
+
+El responsable del tratamiento de los datos personales relacionados con FG Perspectiva es:
+
+**Responsable:** Francisco González
+
+**Proyecto:** FG Perspectiva
+
+**Sitio web:** https://fgperspectiva.vercel.app/
+
+Para consultas relacionadas con la privacidad o el tratamiento de datos personales, los usuarios podrán ponerse en contacto a través de los medios de contacto habilitados en nuestro sitio web.
+
+### 3. Datos que pueden ser tratados
+
+Dependiendo de la interacción del usuario con FG Perspectiva y de las funcionalidades habilitadas, pueden tratarse las siguientes categorías de datos:
+
+#### Datos proporcionados voluntariamente
+
+Cuando el usuario se comunica con nosotros, puede proporcionar datos como su nombre, dirección de correo electrónico y la información incluida en su mensaje.
+
+Estos datos se utilizan para gestionar la comunicación, responder consultas y atender las solicitudes recibidas.
+
+#### Datos técnicos y de navegación
+
+Durante la navegación, determinados servicios técnicos o proveedores pueden recopilar información relacionada con el dispositivo, navegador, dirección IP, páginas visitadas, fecha y hora de acceso, información de conexión y datos técnicos necesarios para el funcionamiento, la seguridad o el análisis del sitio web.
+
+La recopilación de estos datos dependerá de las tecnologías y servicios efectivamente utilizados.
+
+#### Datos relacionados con enlaces externos
+
+Cuando el usuario accede a enlaces de terceros, estos proveedores pueden recopilar y tratar información conforme a sus propias políticas de privacidad, tecnologías y condiciones de uso.
+
+FG Perspectiva no controla directamente el tratamiento realizado por dichos terceros.
+
+### 4. Finalidades del tratamiento
+
+Los datos personales pueden ser tratados, cuando corresponda, para las siguientes finalidades:
+
+- Garantizar el funcionamiento, la disponibilidad y la seguridad del sitio web.
+- Atender consultas, mensajes y solicitudes de los usuarios.
+- Gestionar las comunicaciones relacionadas con FG Perspectiva.
+- Detectar incidencias técnicas, usos abusivos o actividades que puedan comprometer la seguridad.
+- Comprender el funcionamiento y el rendimiento del sitio web, cuando se utilicen herramientas de medición o analítica.
+- Mejorar nuestros contenidos, funcionalidades y experiencia de navegación.
+- Cumplir obligaciones legales y atender solicitudes de autoridades competentes, cuando corresponda.
+
+Los datos no serán utilizados para finalidades incompatibles con aquellas para las que fueron recopilados, salvo que exista una base legal que lo permita.
+
+### 5. Bases legales del tratamiento
+
+El tratamiento de datos personales se realizará sobre la base legal que corresponda a cada situación, conforme a la legislación aplicable.
+
+Estas bases pueden incluir, según el tratamiento concreto:
+
+- El consentimiento del titular.
+- El cumplimiento de obligaciones legales.
+- La ejecución de procedimientos solicitados por el titular.
+- El ejercicio regular de derechos.
+- El interés legítimo del responsable, cuando resulte aplicable y respetando los derechos y libertades del titular.
+
+Cuando el tratamiento dependa del consentimiento, el usuario podrá revocarlo en los términos previstos por la legislación aplicable.
+
+### 6. Analítica y medición del sitio web
+
+Actualmente, FG Perspectiva no utiliza Google Analytics ni Google Tag Manager para la recopilación de datos analíticos de navegación.
+
+No obstante, podemos incorporar en el futuro herramientas de medición, análisis y gestión de etiquetas con el objetivo de comprender el funcionamiento del sitio web, analizar su rendimiento y mejorar la experiencia de navegación.
+
+Si incorporamos estas herramientas, actualizaremos esta Política de privacidad para informar sobre los servicios utilizados, los datos que puedan recopilarse, las finalidades del tratamiento y las opciones disponibles para los usuarios, cuando corresponda.
+
+El tratamiento de datos asociado a estas herramientas se realizará conforme a la legislación aplicable en materia de protección de datos personales.
+
+### 7. Comunicación y acceso por terceros
+
+FG Perspectiva puede utilizar servicios de terceros necesarios para el funcionamiento, alojamiento, seguridad, mantenimiento, análisis o prestación de determinadas funcionalidades del sitio web.
+
+Cuando estos proveedores intervengan en el tratamiento de datos personales, su acceso estará relacionado con las finalidades correspondientes y sujeto a las condiciones y obligaciones aplicables.
+
+Los datos también podrán comunicarse cuando exista una obligación legal, una solicitud válida de una autoridad competente o una necesidad relacionada con el ejercicio o defensa de derechos.
+
+No vendemos deliberadamente los datos personales de nuestros usuarios.
+
+### 8. Enlaces a terceros
+
+Nuestro sitio web puede contener enlaces a Amazon, plataformas editoriales, herramientas digitales, servicios de terceros y otras páginas externas.
+
+Cuando el usuario abandona FG Perspectiva y accede a otro sitio, el tratamiento de sus datos pasa a estar sujeto a las políticas, condiciones y tecnologías de ese proveedor.
+
+Recomendamos consultar las políticas de privacidad de cada plataforma antes de facilitar información personal o realizar una compra.
+
+### 9. Conservación de los datos
+
+Los datos personales se conservarán durante el tiempo necesario para cumplir las finalidades para las que fueron recopilados, atender solicitudes, mantener la seguridad, cumplir obligaciones legales o ejercer y defender derechos.
+
+Cuando los datos dejen de ser necesarios y no exista una obligación legal de conservarlos, se procederá a su eliminación, anonimización o bloqueo, según corresponda y de acuerdo con la legislación aplicable.
+
+### 10. Derechos de los titulares
+
+Los usuarios podrán ejercer los derechos reconocidos por la legislación aplicable en materia de protección de datos personales, que pueden incluir:
+
+- Confirmar la existencia de tratamiento de datos personales.
+- Acceder a sus datos.
+- Solicitar la corrección de datos incompletos, inexactos o desactualizados.
+- Solicitar la anonimización, bloqueo o eliminación de datos cuando proceda.
+- Solicitar la portabilidad, en los casos previstos legalmente.
+- Solicitar información sobre el uso compartido de sus datos.
+- Revocar el consentimiento, cuando el tratamiento se base en él.
+- Presentar reclamaciones ante la autoridad competente.
+
+Las solicitudes relacionadas con datos personales podrán realizarse a través de los medios de contacto disponibles en FG Perspectiva.
+
+### 11. Seguridad
+
+Adoptamos medidas razonables de carácter técnico y organizativo para proteger los datos personales frente a accesos no autorizados, pérdidas, alteraciones, divulgaciones indebidas y otras situaciones que puedan comprometer su seguridad.
+
+Sin embargo, ningún sistema de transmisión o almacenamiento electrónico puede garantizar una seguridad absoluta.
+
+### 12. Privacidad de menores
+
+FG Perspectiva no está específicamente dirigido a la recopilación de datos personales de menores.
+
+Si detectamos que se han recopilado datos personales de menores de manera incompatible con la legislación aplicable, adoptaremos las medidas que correspondan.
+
+### 13. Modificaciones de esta política
+
+Esta Política de privacidad puede actualizarse cuando resulte necesario para reflejar cambios en nuestras prácticas, funcionalidades, servicios utilizados o requisitos legales.
+
+La versión vigente estará disponible en esta página.
+
+### 14. Contacto y consultas de privacidad
+
+Para consultas relacionadas con esta Política de privacidad, el tratamiento de datos personales o el ejercicio de derechos, los usuarios podrán ponerse en contacto con FG Perspectiva a través de los medios disponibles en la página de contacto.
+
+**Última actualización: 20 de noviembre de 2026.**
+
+---
+
+# 7. PÁGINA 3: POLÍTICA DE COOKIES
+
+Ruta:
+
+`/politica-de-cookies/`
+
+SEO:
+
+- Title: Política de cookies | FG Perspectiva
+- Meta Description: Información sobre cookies, tecnologías de navegación, herramientas de terceros y gestión de preferencias en FG Perspectiva.
+- Robots: noindex, follow
+- Canonical: URL absoluta de esta página.
+
+## CONTENIDO
+
+# Política de cookies
+
+### 1. ¿Qué son las cookies?
+
+Las cookies son pequeños archivos o identificadores que pueden almacenarse en el dispositivo del usuario cuando visita un sitio web.
+
+Estas tecnologías permiten recordar determinadas preferencias, facilitar el funcionamiento de páginas, mantener funcionalidades, obtener información sobre la navegación o realizar mediciones relacionadas con el uso del sitio.
+
+Además de las cookies, pueden utilizarse tecnologías similares, como almacenamiento local, píxeles, etiquetas o identificadores técnicos.
+
+### 2. ¿Cómo utilizamos estas tecnologías?
+
+FG Perspectiva puede utilizar cookies y tecnologías similares para las siguientes finalidades, dependiendo de los servicios y funcionalidades que se encuentren habilitados:
+
+#### Cookies técnicas o necesarias
+
+Permiten el funcionamiento básico del sitio web, la navegación, la seguridad y determinadas funcionalidades esenciales.
+
+Estas tecnologías no deben utilizarse para finalidades incompatibles con su función técnica.
+
+#### Cookies de preferencias
+
+Pueden permitir recordar determinadas elecciones o configuraciones del usuario para facilitar futuras visitas.
+
+#### Cookies de análisis o medición
+
+Cuando se utilizan herramientas de analítica, pueden permitir obtener información sobre el uso del sitio, las páginas visitadas, el rendimiento, los errores y las interacciones, con el objetivo de comprender y mejorar su funcionamiento.
+
+#### Cookies de terceros
+
+Algunas funcionalidades, contenidos, enlaces o servicios externos pueden incorporar tecnologías gestionadas por terceros, que pueden recopilar información conforme a sus propias políticas.
+
+La utilización efectiva de cada categoría dependerá de las tecnologías instaladas y habilitadas en FG Perspectiva.
+
+### 3. Herramientas de analítica
+
+Actualmente, FG Perspectiva no utiliza Google Analytics ni Google Tag Manager para recopilar datos analíticos de navegación.
+
+Está prevista la posible incorporación futura de herramientas de analítica y gestión de etiquetas para evaluar el rendimiento del sitio web y comprender cómo los usuarios interactúan con sus contenidos.
+
+Cuando estas herramientas se incorporen, esta política será actualizada para identificar las tecnologías utilizadas, sus finalidades y las opciones de gestión disponibles para los usuarios.
+
+### 4. Cookies de terceros y enlaces externos
+
+FG Perspectiva puede enlazar a plataformas externas, como Amazon, u otros servicios que ofrecen productos, herramientas, contenidos o funcionalidades.
+
+La visita a estas plataformas puede implicar el uso de cookies u otras tecnologías de seguimiento gestionadas por sus respectivos proveedores.
+
+FG Perspectiva no controla directamente las cookies que dichos terceros utilizan en sus propios sitios web.
+
+Recomendamos consultar sus políticas de privacidad y cookies para obtener información específica.
+
+### 5. Gestión de cookies
+
+Los usuarios pueden gestionar determinadas cookies y tecnologías de seguimiento a través de las opciones que el sitio web habilite, cuando corresponda, así como mediante la configuración de su navegador.
+
+Los navegadores habituales permiten revisar, bloquear, restringir o eliminar cookies almacenadas.
+
+La desactivación de determinadas cookies puede afectar al funcionamiento de algunas funcionalidades o servicios.
+
+Cuando se utilicen cookies no esenciales sujetas a consentimiento, su gestión deberá permitir al usuario tomar una decisión informada conforme a la normativa aplicable.
+
+### 6. Cómo desactivar las cookies desde el navegador
+
+El usuario puede consultar la configuración de privacidad de su navegador para administrar las cookies.
+
+Las opciones disponibles pueden variar según el navegador y su versión. Generalmente, es posible:
+
+- Eliminar cookies almacenadas.
+- Bloquear cookies de determinados sitios.
+- Restringir cookies de terceros.
+- Configurar avisos antes de almacenar cookies.
+- Gestionar datos de navegación.
+
+La desactivación de cookies debe realizarse teniendo en cuenta que algunas funcionalidades del sitio podrían dejar de estar disponibles o funcionar correctamente.
+
+### 7. Protección de datos personales
+
+Cuando las cookies u otras tecnologías recopilen o permitan identificar información relacionada con una persona, su tratamiento estará sujeto a la legislación aplicable en materia de protección de datos personales.
+
+Para obtener información sobre los datos que pueden tratarse, las finalidades, los derechos de los usuarios y los medios de contacto, puede consultarse nuestra Política de privacidad.
+
+### 8. Actualizaciones de esta política
+
+Esta Política de cookies puede actualizarse para reflejar cambios en las tecnologías utilizadas, funcionalidades, servicios de terceros o requisitos legales.
+
+La versión vigente estará disponible en esta página.
+
+**Última actualización: 20 de noviembre de 2026.**
+
+---
+
+# 8. INTEGRACIÓN EN EL FOOTER
+
+Añadir al footer actual, dentro de la sección de enlaces legales, los siguientes enlaces:
+
+- Aviso legal → `/aviso-legal/`
+- Política de privacidad → `/politica-de-privacidad/`
+- Política de cookies → `/politica-de-cookies/`
+
+Utilizar el sistema de enlaces y estilos ya existente.
+
+No crear un nuevo footer.
+
+No eliminar, reordenar ni modificar los enlaces existentes del footer que no sean necesarios para esta tarea.
+
+Los tres enlaces deben ser accesibles desde todas las páginas de la web, conforme al comportamiento actual del footer.
+
+---
+
+# 9. INTEGRACIÓN CON EL SISTEMA DE RUTAS
+
+Registrar las tres páginas en el sistema de rutas actual.
+
+Cada ruta debe:
+
+- Renderizar su propia página.
+- Funcionar al acceder directamente a su URL.
+- Permitir navegación interna sin errores.
+- Mantener el comportamiento del router actual.
+- Respetar la configuración de trailing slash.
+- Utilizar el layout general de FG Perspectiva.
+- No provocar conflictos con otras rutas.
+- No generar páginas duplicadas.
+- No interferir con la página 404.
+
+No cambiar la arquitectura general del router.
+
+---
+
+# 10. EXCLUSIÓN DEL SITEMAP XML
+
+Las tres páginas legales deben quedar excluidas del sitemap XML.
+
+No incluir:
+
+- `/aviso-legal/`
+- `/politica-de-privacidad/`
+- `/politica-de-cookies/`
+
+No basta con aplicar `noindex` en sus metadatos. Comprobar también que la lógica de generación automática del sitemap no las incorpora.
+
+Si el sitemap se genera dinámicamente a partir de las páginas indexables, estas páginas deben quedar fuera de manera automática al tener configurada su condición de no indexación.
+
+No modificar las demás URLs del sitemap.
+
+---
+
+# 11. RESPONSIVE Y LEGIBILIDAD
+
+Comprobar que las tres páginas funcionan correctamente en:
+
+- Escritorio.
+- Tablet.
+- Móvil.
+
+Los textos largos deben:
+
+- Mantener un ancho de lectura cómodo.
+- Presentar separación visual suficiente entre apartados.
+- Evitar párrafos excesivamente densos.
+- Utilizar H2 y H3 de forma jerárquica y coherente.
+- No generar desbordamientos horizontales.
+- Mantener el tamaño de fuente y la legibilidad del sitio.
+
+No utilizar texto diminuto ni reducir el contenido legal para que ocupe menos espacio.
+
+---
+
+# 12. RESTRICCIONES DE IMPLEMENTACIÓN
+
+Esta tarea se limita exclusivamente a la creación e integración de las tres páginas legales.
+
+NO:
+
+- Rediseñar FG Perspectiva.
+- Modificar la homepage.
+- Modificar la Biblioteca.
+- Modificar las páginas de categorías.
+- Modificar las fichas de libros.
+- Modificar Sistemas Digitales.
+- Modificar Sobre FG Perspectiva.
+- Modificar Contacto.
+- Modificar el buscador.
+- Modificar la página 404.
+- Alterar los textos editoriales existentes.
+- Modificar URLs existentes.
+- Modificar las canonical de otras páginas.
+- Modificar la estrategia SEO de otras páginas.
+- Cambiar robots.txt.
+- Alterar la configuración general del sitemap, excepto la exclusión de las tres páginas legales.
+- Instalar Google Analytics.
+- Instalar Google Tag Manager.
+- Instalar cookies analíticas.
+- Instalar sistemas de publicidad.
+- Añadir herramientas de consentimiento no solicitadas en esta tarea.
+- Instalar dependencias innecesarias.
+- Realizar refactorizaciones generales.
+- Desplegar el proyecto.
+
+No realizar ningún cambio fuera del alcance de esta instrucción.
+
+---
+
+# 13. VERIFICACIÓN FINAL
+
+Una vez implementadas las páginas, comprobar:
+
+### Contenido
+
+- Las tres páginas existen.
+- Los textos corresponden a la página correcta.
+- No se han omitido apartados.
+- No se ha inventado información sobre el titular.
+- No se han inventado herramientas instaladas.
+- La referencia a Google Analytics y Google Tag Manager indica correctamente que todavía no están activos.
+- La afiliación a Amazon está reflejada.
+- No hay textos duplicados o fragmentos de contenido accidentalmente repetidos.
+
+### SEO
+
+- Cada página tiene su title correcto.
+- Cada página tiene su meta description.
+- Las tres páginas incluyen `noindex, follow`.
+- Cada página tiene su canonical propia.
+- No existen etiquetas robots duplicadas o contradictorias.
+- Ninguna de las tres páginas aparece en el sitemap XML.
+- Los buscadores pueden rastrear las páginas y encontrar el `noindex`.
+- No se ha modificado la indexabilidad de ninguna página existente.
+
+### Navegación
+
+- Los tres enlaces aparecen en el footer.
+- Los enlaces conducen a sus rutas correctas.
+- Las páginas funcionan con acceso directo.
+- El comportamiento del footer permanece consistente.
+- Los breadcrumbs, si se utilizan, son correctos.
+
+### Integridad del proyecto
+
+- El resto de la web mantiene su funcionamiento.
+- No se han modificado páginas ajenas a esta tarea.
+- No se han alterado libros, categorías, contenidos ni metadatos existentes.
+- No se han instalado herramientas analíticas.
+- No se ha realizado ningún despliegue.
+
+---
+
+# 14. INFORME FINAL
+
+Al finalizar, presentar un informe breve que indique:
+
+1. Las tres páginas creadas.
+2. Sus rutas.
+3. Los archivos modificados.
+4. Los metadatos SEO implementados.
+5. Confirmación de `noindex, follow`.
+6. Confirmación de exclusión del sitemap XML.
+7. Confirmación de los enlaces en el footer.
+8. Resultado de las verificaciones.
+9. Cualquier dato legal o contacto que siga pendiente de confirmación.
+10. Confirmación expresa de que no se ha desplegado la web.
+
+No realizar el despliegue. Dejar los cambios preparados para su posterior revisión.
+
+---
+
+# INSTRUCCIÓN FINAL
+
+Implementar únicamente las tres páginas legales especificadas en esta instrucción.
+
+Respetar rigurosamente el diseño, arquitectura, contenidos y funcionamiento actual de FG Perspectiva.
+
+No tomar decisiones adicionales fuera del alcance definido.
+
+No modificar ninguna otra página ni realizar el despliegue del proyecto.
