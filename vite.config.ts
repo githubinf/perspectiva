@@ -4,6 +4,7 @@ import { defineConfig, loadEnv, Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { CANONICAL_URLS } from './constants.tsx';
+import { generateSitemapXml } from './sitemap.ts';
 
 const BASE_URL = 'https://fgperspectiva.vercel.app';
 
@@ -48,6 +49,15 @@ function realHttp404Plugin(): Plugin {
     name: 'real-http-404-middleware',
     configureServer(server) {
       server.middlewares.use(async (req, res, next) => {
+        const pathname = (req.url || '').split('?')[0].split('#')[0];
+        if ((req.method === 'GET' || req.method === 'HEAD') && pathname === '/sitemap.xml') {
+          const xml = generateSitemapXml();
+          res.statusCode = 200;
+          res.setHeader('Content-Type', 'application/xml; charset=utf-8');
+          res.end(req.method === 'HEAD' ? '' : xml);
+          return;
+        }
+
         if (!shouldHandleAsUnknownHtmlRoute(req.url, req.method, req.headers.accept)) {
           return next();
         }
@@ -71,6 +81,18 @@ function realHttp404Plugin(): Plugin {
     },
     configurePreviewServer(server) {
       server.middlewares.use((req, res, next) => {
+        const pathname = (req.url || '').split('?')[0].split('#')[0];
+        if ((req.method === 'GET' || req.method === 'HEAD') && pathname === '/sitemap.xml') {
+          const distSitemapPath = path.resolve(__dirname, 'dist', 'sitemap.xml');
+          const xml = fs.existsSync(distSitemapPath)
+            ? fs.readFileSync(distSitemapPath, 'utf-8')
+            : generateSitemapXml();
+          res.statusCode = 200;
+          res.setHeader('Content-Type', 'application/xml; charset=utf-8');
+          res.end(req.method === 'HEAD' ? '' : xml);
+          return;
+        }
+
         if (!shouldHandleAsUnknownHtmlRoute(req.url, req.method, req.headers.accept)) {
           return next();
         }

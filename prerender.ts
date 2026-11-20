@@ -3,8 +3,9 @@ import path from 'node:path';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import App from './App.tsx';
-import { CANONICAL_URLS, ALL_BOOKS, FEATURED_BOOKS } from './constants.tsx';
+import { CANONICAL_URLS } from './constants.tsx';
 import { getPageMeta, PageMeta } from './seo.ts';
+import { generateSitemapXml, getIndexableSitemapUrls } from './sitemap.ts';
 
 const DIST_DIR = path.resolve(process.cwd(), 'dist');
 const TEMPLATE_FILE = path.join(DIST_DIR, 'index.html');
@@ -177,41 +178,14 @@ export async function prerender() {
   fs.writeFileSync(target404Path, notFoundHtml, 'utf-8');
   console.log(`  ✓ Generado dist/404.html para gestión de errores HTTP 404`);
 
-  // Generate sitemap.xml with exactly the 34 canonical URLs (NO 404 included)
-  // Reflects the real modification date of the catalog data, not artificially generated per build
-  const constantsStat = fs.statSync(path.resolve(process.cwd(), 'constants.tsx'));
-  const realLastmod = constantsStat.mtime.toISOString().split('T')[0];
-
-  const sitemapEntries = canonicalPaths.map((p) => {
-    let priority = '0.8';
-    let changefreq = 'weekly';
-    if (p === '/') {
-      priority = '1.0';
-      changefreq = 'daily';
-    } else if (p === '/biblioteca/') {
-      priority = '0.9';
-      changefreq = 'daily';
-    } else if (['/sistemas-digitales/', '/sobre-fg-perspectiva/', '/contacto/'].includes(p)) {
-      priority = '0.7';
-      changefreq = 'monthly';
-    }
-
-    return `  <url>
-    <loc>${BASE_URL}${p}</loc>
-    <lastmod>${realLastmod}</lastmod>
-    <changefreq>${changefreq}</changefreq>
-    <priority>${priority}</priority>
-  </url>`;
-  }).join('\n');
-
-  const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${sitemapEntries}
-</urlset>`;
+  // Generate sitemap.xml dynamically from real project sources & SEO indexability rules
+  // (excludes 404, noindex, duplicates, non-canonical URLs; omits artificial priority/changefreq/lastmod)
+  const indexableSitemapUrls = getIndexableSitemapUrls();
+  const sitemapXml = generateSitemapXml();
 
   const sitemapPath = path.join(DIST_DIR, 'sitemap.xml');
   fs.writeFileSync(sitemapPath, sitemapXml, 'utf-8');
-  console.log(`  ✓ Generado dist/sitemap.xml con exactamente ${canonicalPaths.length} URLs canónicas`);
+  console.log(`  ✓ Generado dist/sitemap.xml con exactamente ${indexableSitemapUrls.length} URLs canónicas indexables`);
 
   // Generate robots.txt
   const robotsTxt = `User-agent: *
