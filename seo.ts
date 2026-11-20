@@ -8,6 +8,14 @@ export interface PageMeta {
   canonical: string;
   ogImage: string;
   ogType: 'website' | 'book' | 'article';
+  ogTitle?: string;
+  ogDescription?: string;
+  ogLocale?: string;
+  ogImageAlt?: string;
+  twitterTitle?: string;
+  twitterDescription?: string;
+  twitterImage?: string;
+  twitterImageAlt?: string;
   h1: string;
   noindex?: boolean;
   schema: Record<string, any> | Record<string, any>[];
@@ -41,11 +49,19 @@ export const getPageMeta = (rawPath: string): PageMeta => {
   if (path === '/') {
     return {
       path: '/',
-      title: 'FG Perspectiva — Libros y sistemas prácticos para activos digitales',
-      description: 'Editorial digital de sistemas, marketing, afiliados, inteligencia artificial y mentalidad estratégica. Convierte conocimiento en activos digitales duraderos.',
+      title: 'FG Perspectiva | Editorial Digital de Libros y Sistemas Digitales',
+      description: 'FG Perspectiva es una editorial digital de libros prácticos sobre marketing, inteligencia artificial y negocios digitales. Conecta conocimientos y desarrolla proyectos con visión estratégica.',
       canonical: `${BASE_URL}/`,
-      ogImage: DEFAULT_IMAGE,
+      ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
       ogType: 'website',
+      ogTitle: 'FG Perspectiva | Conocimiento para construir proyectos digitales',
+      ogDescription: 'Libros prácticos, conocimientos digitales y una perspectiva estratégica para conectar ideas, desarrollar proyectos y construir activos digitales.',
+      ogLocale: 'es_ES',
+      ogImageAlt: 'FG Perspectiva — Ideas que florecen',
+      twitterTitle: 'FG Perspectiva | Conocimiento para construir proyectos digitales',
+      twitterDescription: 'Libros prácticos, conocimientos digitales y una perspectiva estratégica para conectar ideas, desarrollar proyectos y construir activos digitales.',
+      twitterImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
+      twitterImageAlt: 'FG Perspectiva — Ideas que florecen',
       h1: 'Cambia tu forma de ver. Cambia tus resultados. Construye sistemas digitales que generen ingresos reales.',
       schema: [
         {

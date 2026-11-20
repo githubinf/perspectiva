@@ -42,12 +42,27 @@ export const SeoHead: React.FC = () => {
       el.setAttribute('content', content);
     };
 
-    updateOg('og:title', meta.title);
-    updateOg('og:description', meta.description);
+    const removeMeta = (selector: string) => {
+      const el = document.querySelector(selector);
+      if (el) el.remove();
+    };
+
+    updateOg('og:title', meta.ogTitle || meta.title);
+    updateOg('og:description', meta.ogDescription || meta.description);
     updateOg('og:url', meta.canonical);
     updateOg('og:type', meta.ogType);
     if (meta.ogImage) {
       updateOg('og:image', meta.ogImage);
+    }
+    if (meta.ogImageAlt) {
+      updateOg('og:image:alt', meta.ogImageAlt);
+    } else {
+      removeMeta('meta[property="og:image:alt"]');
+    }
+    if (meta.ogLocale) {
+      updateOg('og:locale', meta.ogLocale);
+    } else {
+      removeMeta('meta[property="og:locale"]');
     }
 
     // Update Twitter tags
@@ -61,10 +76,16 @@ export const SeoHead: React.FC = () => {
       el.setAttribute('content', content);
     };
 
-    updateTwitter('twitter:title', meta.title);
-    updateTwitter('twitter:description', meta.description);
-    if (meta.ogImage) {
-      updateTwitter('twitter:image', meta.ogImage);
+    updateTwitter('twitter:title', meta.twitterTitle || meta.ogTitle || meta.title);
+    updateTwitter('twitter:description', meta.twitterDescription || meta.ogDescription || meta.description);
+    const twitterImg = meta.twitterImage || meta.ogImage;
+    if (twitterImg) {
+      updateTwitter('twitter:image', twitterImg);
+    }
+    if (meta.twitterImageAlt) {
+      updateTwitter('twitter:image:alt', meta.twitterImageAlt);
+    } else {
+      removeMeta('meta[name="twitter:image:alt"]');
     }
 
     // Update robots if noindex

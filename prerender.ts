@@ -57,13 +57,17 @@ function injectMetaAndContent(templateHtml: string, appHtml: string, meta: PageM
   }
 
   // 5. Inject Open Graph Tags
+  const resolvedOgTitle = meta.ogTitle || meta.title;
+  const resolvedOgDesc = meta.ogDescription || meta.description;
   const ogTags = [
     `<meta property="og:type" content="${meta.ogType}">`,
-    `<meta property="og:title" content="${escapeHtml(meta.title)}">`,
-    `<meta property="og:description" content="${escapeHtml(meta.description)}">`,
+    `<meta property="og:title" content="${escapeHtml(resolvedOgTitle)}">`,
+    `<meta property="og:description" content="${escapeHtml(resolvedOgDesc)}">`,
     `<meta property="og:url" content="${meta.canonical}">`,
     `<meta property="og:site_name" content="FG Perspectiva">`,
-    meta.ogImage ? `<meta property="og:image" content="${meta.ogImage}">` : ''
+    meta.ogLocale ? `<meta property="og:locale" content="${escapeHtml(meta.ogLocale)}">` : '',
+    meta.ogImage ? `<meta property="og:image" content="${meta.ogImage}">` : '',
+    meta.ogImageAlt ? `<meta property="og:image:alt" content="${escapeHtml(meta.ogImageAlt)}">` : ''
   ].filter(Boolean).join('\n  ');
 
   // Clean existing og tags to avoid duplicates
@@ -71,11 +75,15 @@ function injectMetaAndContent(templateHtml: string, appHtml: string, meta: PageM
   html = html.replace('</head>', `  ${ogTags}\n</head>`);
 
   // 6. Inject Twitter Tags
+  const resolvedTwitterTitle = meta.twitterTitle || resolvedOgTitle;
+  const resolvedTwitterDesc = meta.twitterDescription || resolvedOgDesc;
+  const resolvedTwitterImage = meta.twitterImage || meta.ogImage;
   const twitterTags = [
     `<meta name="twitter:card" content="summary_large_image">`,
-    `<meta name="twitter:title" content="${escapeHtml(meta.title)}">`,
-    `<meta name="twitter:description" content="${escapeHtml(meta.description)}">`,
-    meta.ogImage ? `<meta name="twitter:image" content="${meta.ogImage}">` : ''
+    `<meta name="twitter:title" content="${escapeHtml(resolvedTwitterTitle)}">`,
+    `<meta name="twitter:description" content="${escapeHtml(resolvedTwitterDesc)}">`,
+    resolvedTwitterImage ? `<meta name="twitter:image" content="${resolvedTwitterImage}">` : '',
+    meta.twitterImageAlt ? `<meta name="twitter:image:alt" content="${escapeHtml(meta.twitterImageAlt)}">` : ''
   ].filter(Boolean).join('\n  ');
 
   html = html.replace(/<meta\s+name="twitter:[^"]+"\s+content="[^"]*"\s*\/?>\n?/gi, '');
