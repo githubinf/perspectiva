@@ -11,27 +11,44 @@ const NON_INDEXABLE_SYSTEM_PATHS = new Set<string>([
   '/mapa-del-sitio/',
 ]);
 
+const CATEGORY_THEMATIC_DESCRIPTIONS: Record<string, string> = {
+  origen:
+    'El punto de partida para comprender la creación, transformación y aprovechamiento de recursos digitales.',
+  iniciacion:
+    'Fundamentos para comenzar a construir una presencia digital, desarrollar un blog y comprender las estrategias de marketing online.',
+  ingresos:
+    'Estrategias de afiliación, monetización, marketing CPA y modelos de generación de ingresos en el entorno digital.',
+  tecnologia:
+    'Herramientas, inteligencia artificial y nuevas posibilidades tecnológicas aplicadas a la creación y desarrollo de proyectos digitales.',
+  crecimiento:
+    'Estrategias de tráfico web, marketing de contenidos, email marketing y crecimiento de proyectos digitales.',
+  mindset:
+    'Mentalidad, creatividad, escritura, desarrollo personal y creación de productos digitales.',
+};
+
 export interface HtmlSitemapMainPage {
   path: string;
   title: string;
 }
 
-export interface HtmlSitemapCategory {
-  path: string;
-  title: string;
-  bookCount: number;
-}
-
 export interface HtmlSitemapBook {
   path: string;
   title: string;
-  categoryName: string;
+}
+
+export interface HtmlSitemapCategory {
+  number: string;
+  slug: string;
+  path: string;
+  title: string;
+  description: string;
+  books: HtmlSitemapBook[];
 }
 
 export interface HtmlSitemapData {
   mainPages: HtmlSitemapMainPage[];
   categories: HtmlSitemapCategory[];
-  books: HtmlSitemapBook[];
+  totalBooks: number;
   totalUrls: number;
 }
 
@@ -112,17 +129,15 @@ const resolveMainPageTitle = (path: string, meta: PageMeta): string => {
 /**
  * Generates structured, strictly indexable HTML sitemap sections dynamically
  * from centralized project data (`NAV_ITEMS`, `FEATURED_BOOKS`, `ALL_BOOKS`,
- * `CANONICAL_URLS`) validated against real `seo.ts` indexability rules.
+ * `CANONICAL_URLS`), grouping active books under their canonical categories.
  */
 export function getHtmlSitemapData(): HtmlSitemapData {
   const seenPaths = new Set<string>();
 
   const knownCategoryPaths = new Set<string>();
-  const categoryNameBySlug = new Map<string, string>();
   for (const cat of FEATURED_BOOKS) {
     const catPath = normalizeInternalPath(cat.path || (cat.slug ? `/${cat.slug}/` : ''));
     if (catPath) knownCategoryPaths.add(catPath);
-    if (cat.slug) categoryNameBySlug.set(cat.slug, cat.category);
   }
 
   const knownBookPaths = new Set<string>();
@@ -154,52 +169,52 @@ export function getHtmlSitemapData(): HtmlSitemapData {
     });
   }
 
-  // B. Categorías activas e indexables de la Biblioteca
+  // B. Biblioteca de libros: categorías activas con sus libros activos y canónicos
   const categories: HtmlSitemapCategory[] = [];
+  let totalBooks = 0;
+
   for (const cat of FEATURED_BOOKS) {
-    const activeBooks = Array.isArray(cat.books)
-      ? cat.books.filter((b) => b.isAvailable !== false)
-      : [];
-    if (activeBooks.length === 0) continue;
-
     const rawCatPath = cat.path || (cat.slug ? `/${cat.slug}/` : '');
-    const validated = validateIndexableMeta(rawCatPath);
-    if (!validated || seenPaths.has(validated.path)) continue;
+    const validatedCat = validateIndexableMeta(rawCatPath);
+    if (!validatedCat || seenPaths.has(validatedCat.path)) continue;
 
-    seenPaths.add(validated.path);
+    const categoryBooks: HtmlSitemapBook[] = [];
+    const sourceBooks = Array.isArray(cat.books) ? cat.books : [];
+
+    for (const book of sourceBooks) {
+      if (book.isAvailable === false) continue;
+
+      const rawBookPath = book.path || (book.slug ? `/${book.slug}/` : '');
+      const validatedBook = validateIndexableMeta(rawBookPath);
+      if (!validatedBook || seenPaths.has(validatedBook.path)) continue;
+
+      seenPaths.add(validatedBook.path);
+      categoryBooks.push({
+        path: validatedBook.path,
+        title: book.title,
+      });
+    }
+
+    if (categoryBooks.length === 0) continue;
+
+    seenPaths.add(validatedCat.path);
+    totalBooks += categoryBooks.length;
+
+    const slug = cat.slug || validatedCat.path.replace(/\//g, '');
     categories.push({
-      path: validated.path,
+      number: String(categories.length + 1).padStart(2, '0'),
+      slug,
+      path: validatedCat.path,
       title: cat.category,
-      bookCount: activeBooks.length,
-    });
-  }
-
-  // C. Libros publicados, activos e indexables
-  const books: HtmlSitemapBook[] = [];
-  for (const book of ALL_BOOKS) {
-    if (book.isAvailable === false) continue;
-
-    const rawBookPath = book.path || (book.slug ? `/${book.slug}/` : '');
-    const validated = validateIndexableMeta(rawBookPath);
-    if (!validated || seenPaths.has(validated.path)) continue;
-
-    seenPaths.add(validated.path);
-    const parentCategory =
-      (book.categorySlug && categoryNameBySlug.get(book.categorySlug)) ||
-      FEATURED_BOOKS.find((c) => c.books.some((b) => b.slug === book.slug))?.category ||
-      '';
-
-    books.push({
-      path: validated.path,
-      title: book.title,
-      categoryName: parentCategory,
+      description: CATEGORY_THEMATIC_DESCRIPTIONS[slug] || cat.intro,
+      books: categoryBooks,
     });
   }
 
   return {
     mainPages,
     categories,
-    books,
-    totalUrls: mainPages.length + categories.length + books.length,
+    totalBooks,
+    totalUrls: mainPages.length + categories.length + totalBooks,
   };
 }

@@ -58,6 +58,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     <li><Link href="/contacto/" className="text-slate-300 hover:text-white transition-colors py-0.5 block">Contacto</Link></li>
                     <li><a href="https://despertarindomable.blogspot.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-slate-300 hover:text-white transition-colors py-0.5 block">Blog</a></li>
                     <li><a href="https://afiliados-fgperspectiva.vercel.app/" target="_blank" rel="noopener noreferrer nofollow" className="text-slate-300 hover:text-white transition-colors py-0.5 block">Afiliados</a></li>
+                    <li><Link href="/mapa-del-sitio/" className="text-slate-300 hover:text-white transition-colors py-0.5 block">Mapa del sitio</Link></li>
                   </ul>
                </div>
                <div>

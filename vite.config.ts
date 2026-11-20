@@ -89,7 +89,7 @@ function realHttp404Plugin(): Plugin {
               )
               .replace(
                 /<meta\s+name="robots"\s+content="[^"]*"\s*\/?>/i,
-                `<meta name="robots" content="${meta.robotsContent || 'noindex, follow'}">`
+                `<meta name="robots" content="${meta.robotsContent || (meta.noindex ? 'noindex, nofollow' : 'index, follow')}">`
               );
 
             res.statusCode = 200;

@@ -1,132 +1,127 @@
 import React, { useMemo } from 'react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from '../../router.tsx';
 import Breadcrumbs from '../Breadcrumbs.tsx';
 import { getHtmlSitemapData } from '../../htmlSitemap.ts';
-import { ArrowRight } from 'lucide-react';
 
 const HtmlSitemapView: React.FC = () => {
-  const { mainPages, categories, books } = useMemo(() => getHtmlSitemapData(), []);
+  const { mainPages, categories } = useMemo(() => getHtmlSitemapData(), []);
 
   return (
     <div className="pt-28 bg-white text-[#1b1b1b]">
-      <header className="bg-[#dae7df]/20 border-b border-[#174532]/12 pb-10 md:pb-12">
-        <div className="max-w-4xl mx-auto px-6">
+      {/* A. Cabecera editorial */}
+      <header className="bg-[#dae7df]/20 border-b border-[#174532]/12 pb-12 md:pb-14">
+        <div className="max-w-[820px] mx-auto px-6">
           <Breadcrumbs items={[{ label: 'Mapa del sitio' }]} />
 
-          <div className="mt-4 max-w-[65ch]">
-            <h1 className="text-h1 font-bold font-serif text-[#174532] leading-tight mb-4">
+          <div className="mt-4 max-w-[66ch]">
+            <h1 className="text-[36px] sm:text-[44px] lg:text-[48px] font-bold font-serif text-[#174532] leading-[1.15] tracking-[-0.02em] text-balance mb-5">
               Mapa del sitio
             </h1>
-            <p className="text-subtitle text-[#1b1b1b]/80 font-normal leading-relaxed">
-              Explora FG Perspectiva y accede directamente a nuestras páginas, categorías y libros. Aquí encontrarás una visión organizada de los contenidos disponibles en nuestra web.
+            <p className="text-[17px] sm:text-[18px] lg:text-[19px] text-[#1b1b1b]/80 font-normal leading-[1.65]">
+              Explora FG Perspectiva y descubre nuestra biblioteca de libros, categorías temáticas y contenidos sobre conocimiento, marketing, tecnología y proyectos digitales. Desde este índice puedes acceder directamente a las diferentes secciones de la editorial.
             </p>
           </div>
         </div>
       </header>
 
-      <div className="py-12 md:py-16">
-        <div className="max-w-4xl mx-auto px-6 space-y-12 md:space-y-14">
-          {/* Bloque A: Páginas principales */}
+      <div className="py-14 md:py-20">
+        <div className="max-w-[820px] mx-auto px-6 space-y-16 md:space-y-20">
+          {/* B. Páginas principales */}
           <section aria-labelledby="sitemap-main-pages">
             <h2
               id="sitemap-main-pages"
-              className="text-h3 md:text-h2 font-bold font-serif text-[#174532] pb-2.5 border-b border-[#dae7df] mb-6"
+              className="text-[24px] sm:text-[28px] lg:text-[30px] font-bold font-serif text-[#174532] leading-[1.25] tracking-[-0.01em] pb-3.5 border-b border-[#dae7df] mb-3"
             >
               Páginas principales
             </h2>
 
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1">
-              {mainPages.map((page) => (
-                <li
-                  key={page.path}
-                  className="border-b border-[#dae7df]/55"
-                >
-                  <Link
-                    href={page.path}
-                    className="group flex items-center justify-between gap-3 py-3 text-[15.5px] font-medium text-[#174532] hover:text-[#1f513a] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#174532] rounded-xs"
-                  >
-                    <span>{page.title}</span>
-                    <ArrowRight
-                      className="w-4 h-4 text-[#4db380] shrink-0 group-hover:translate-x-0.5 transition-transform"
-                      aria-hidden="true"
-                    />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </section>
-
-          {/* Bloque B: Categorías de la Biblioteca */}
-          <section aria-labelledby="sitemap-categories">
-            <h2
-              id="sitemap-categories"
-              className="text-h3 md:text-h2 font-bold font-serif text-[#174532] pb-2.5 border-b border-[#dae7df] mb-6"
-            >
-              Categorías de la Biblioteca
-            </h2>
-
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1">
-              {categories.map((cat) => (
-                <li
-                  key={cat.path}
-                  className="border-b border-[#dae7df]/55"
-                >
-                  <Link
-                    href={cat.path}
-                    className="group flex items-center justify-between gap-3 py-3 text-[15.5px] font-medium text-[#174532] hover:text-[#1f513a] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#174532] rounded-xs"
-                  >
-                    <span>{cat.title}</span>
-                    <span className="inline-flex items-center gap-2 text-[13px] font-normal text-[#1b1b1b]/60 shrink-0">
-                      <span>
-                        {cat.bookCount} {cat.bookCount === 1 ? 'libro' : 'libros'}
+            <nav aria-label="Páginas principales">
+              <ul className="divide-y divide-[#dae7df]/65 border-b border-[#dae7df]/65">
+                {mainPages.map((page) => (
+                  <li key={page.path}>
+                    <Link
+                      href={page.path}
+                      className="group flex items-center justify-between gap-4 min-h-[48px] py-3.5 px-3 -mx-3 text-[17px] lg:text-[18px] font-medium leading-[1.5] text-[#174532] hover:text-[#1f513a] hover:bg-[#dae7df]/20 rounded-xs transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#174532]"
+                    >
+                      <span className="group-hover:underline underline-offset-4 decoration-[#4db380]/70">
+                        {page.title}
                       </span>
                       <ArrowRight
-                        className="w-4 h-4 text-[#4db380] group-hover:translate-x-0.5 transition-transform"
+                        className="w-4 h-4 text-[#4db380] shrink-0 transition-transform duration-150 group-hover:translate-x-0.5"
                         aria-hidden="true"
                       />
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </section>
 
-          {/* Bloque C: Libros */}
-          <section aria-labelledby="sitemap-books">
-            <div className="flex flex-wrap items-baseline justify-between gap-2 pb-2.5 border-b border-[#dae7df] mb-6">
+          {/* C. Biblioteca de libros */}
+          <section aria-labelledby="sitemap-library">
+            <div className="pb-6 border-b border-[#dae7df] mb-10">
               <h2
-                id="sitemap-books"
-                className="text-h3 md:text-h2 font-bold font-serif text-[#174532]"
+                id="sitemap-library"
+                className="text-[24px] sm:text-[28px] lg:text-[30px] font-bold font-serif text-[#174532] leading-[1.25] tracking-[-0.01em] mb-4"
               >
-                Libros
+                Biblioteca de libros
               </h2>
-              <span className="text-[13px] font-medium text-[#1b1b1b]/65">
-                {books.length} {books.length === 1 ? 'título disponible' : 'títulos disponibles'}
-              </span>
+              <p className="text-[17px] sm:text-[18px] lg:text-[19px] text-[#1b1b1b]/80 font-normal leading-[1.65] max-w-[66ch]">
+                Explora nuestra colección de libros organizados por temática. Accede a cada categoría y descubre títulos relacionados con marketing, inteligencia artificial, creación de contenidos, negocios digitales y desarrollo de proyectos.
+              </p>
             </div>
 
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1">
-              {books.map((book) => (
-                <li
-                  key={book.path}
-                  className="border-b border-[#dae7df]/55"
+            <div className="space-y-12 md:space-y-14">
+              {categories.map((category, idx) => (
+                <section
+                  key={category.path}
+                  aria-labelledby={`sitemap-cat-${category.slug}`}
+                  className={idx === 0 ? 'pt-0' : 'pt-10 border-t border-[#dae7df]'}
                 >
-                  <Link
-                    href={book.path}
-                    className="group flex items-start justify-between gap-3 py-3 text-[15px] leading-snug text-[#174532] hover:text-[#1f513a] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#174532] rounded-xs"
-                  >
-                    <span className="font-medium group-hover:underline underline-offset-4">
-                      {book.title}
-                    </span>
-                    {book.categoryName && (
-                      <span className="text-[11.5px] uppercase tracking-wider font-semibold text-[#1f513a]/80 shrink-0 pt-0.5">
-                        {book.categoryName}
-                      </span>
-                    )}
-                  </Link>
-                </li>
+                  <div className="mb-5">
+                    <h3
+                      id={`sitemap-cat-${category.slug}`}
+                      className="text-[22px] sm:text-[23px] lg:text-[25px] font-bold font-serif text-[#174532] leading-[1.3]"
+                    >
+                      <Link
+                        href={category.path}
+                        className="group inline-flex items-baseline gap-3 text-[#174532] hover:text-[#1f513a] transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#174532] rounded-xs"
+                      >
+                        <span className="text-[13px] font-sans font-semibold tracking-[0.12em] text-[#4db380] tabular-nums shrink-0">
+                          {category.number}
+                        </span>
+                        <span className="group-hover:underline underline-offset-4 decoration-[#4db380]/75">
+                          {category.title}
+                        </span>
+                        <ArrowRight
+                          className="w-4 h-4 text-[#4db380] self-center shrink-0 transition-transform duration-150 group-hover:translate-x-0.5"
+                          aria-hidden="true"
+                        />
+                      </Link>
+                    </h3>
+                    <p className="text-[15.5px] lg:text-[16.5px] leading-[1.6] text-[#1b1b1b]/75 mt-2.5 max-w-[65ch]">
+                      {category.description}
+                    </p>
+                  </div>
+
+                  <ul className="divide-y divide-[#dae7df]/55 border-t border-b border-[#dae7df]/55">
+                    {category.books.map((book) => (
+                      <li key={book.path}>
+                        <Link
+                          href={book.path}
+                          className="group flex items-center min-h-[46px] py-3.5 px-3 -mx-3 text-[17px] lg:text-[18px] font-medium leading-[1.5] text-[#174532] hover:text-[#1f513a] hover:bg-[#dae7df]/18 rounded-xs transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#174532]"
+                        >
+                          <span className="underline decoration-[#4db380]/50 underline-offset-[5px] group-hover:decoration-[#174532] transition-colors">
+                            {book.title}
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
               ))}
-            </ul>
+            </div>
           </section>
         </div>
       </div>

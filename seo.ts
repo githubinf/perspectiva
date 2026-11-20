@@ -427,22 +427,23 @@ export const getPageMeta = (rawPath: string): PageMeta => {
 
   if (path === '/mapa-del-sitio/') {
     const htmlSitemapUrl = `${BASE_URL}/mapa-del-sitio/`;
+    const htmlSitemapDescription =
+      'Mapa del sitio de FG Perspectiva. Explora nuestra biblioteca de libros, categorías temáticas, sistemas digitales y páginas principales desde un índice organizado.';
     return {
       path: '/mapa-del-sitio/',
       title: 'Mapa del sitio | FG Perspectiva',
-      description: 'Explora FG Perspectiva y accede directamente a nuestras páginas principales, categorías y libros publicados.',
+      description: htmlSitemapDescription,
       canonical: htmlSitemapUrl,
       ogImage: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/fg_perspectiva_%20ideas_que_florecen.png',
       ogType: 'website',
       h1: 'Mapa del sitio',
-      noindex: true,
-      robotsContent: 'noindex, follow',
+      robotsContent: 'index, follow',
       schema: [
         {
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
           name: 'Mapa del sitio | FG Perspectiva',
-          description: 'Explora FG Perspectiva y accede directamente a nuestras páginas principales, categorías y libros publicados.',
+          description: htmlSitemapDescription,
           url: htmlSitemapUrl,
           isPartOf: {
             '@type': 'WebSite',
