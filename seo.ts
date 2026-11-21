@@ -2436,7 +2436,8 @@ export const getPageMeta = (rawPath: string): PageMeta => {
       bookFormat: [
         'https://schema.org/Paperback',
         'https://schema.org/Hardcover',
-        'https://schema.org/EBook'
+        'https://schema.org/EBook',
+        'https://schema.org/AudiobookFormat'
       ]
     };
 
@@ -2502,7 +2503,8 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     const aiSameAs = [
       'https://www.amazon.com/dp/B0CZ46RJGK',
       'https://www.amazon.com/dp/B0CZ63Z1KH',
-      'https://www.amazon.com/dp/B0CW1JX11M'
+      'https://www.amazon.com/dp/B0CW1JX11M',
+      'https://www.amazon.com/dp/B0F3BSN6WN'
     ];
 
     const aiBookSchema: Record<string, any> = {
@@ -2527,7 +2529,8 @@ export const getPageMeta = (rawPath: string): PageMeta => {
       bookFormat: [
         'https://schema.org/Paperback',
         'https://schema.org/Hardcover',
-        'https://schema.org/EBook'
+        'https://schema.org/EBook',
+        'https://schema.org/AudiobookFormat'
       ],
       sameAs: aiSameAs
     };
@@ -2595,6 +2598,7 @@ export const getPageMeta = (rawPath: string): PageMeta => {
       'https://www.amazon.com/dp/B0C7DXCT37',
       'https://www.amazon.com/dp/B0D3V5HF3C',
       'https://www.amazon.com/dp/B0C7G28KTZ',
+      'https://www.amazon.com/dp/B0HS988HFW',
       'https://elfuturodelmarketingia.vercel.app/'
     ];
 
@@ -2614,7 +2618,8 @@ export const getPageMeta = (rawPath: string): PageMeta => {
       bookFormat: [
         'https://schema.org/Paperback',
         'https://schema.org/Hardcover',
-        'https://schema.org/EBook'
+        'https://schema.org/EBook',
+        'https://schema.org/AudiobookFormat'
       ],
       sameAs: futuroSameAs
     };

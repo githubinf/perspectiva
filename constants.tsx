@@ -1241,6 +1241,15 @@ export const FEATURED_BOOKS: BookCategory[] = [
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
             emoji: '📱',
             rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            url: 'https://www.amazon.com/dp/B0HS8CVVLF',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
+            rel: 'nofollow noopener noreferrer'
           }
         ],
         extraInfo: [
@@ -1292,6 +1301,15 @@ export const FEATURED_BOOKS: BookCategory[] = [
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
             emoji: '📱',
             rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            url: 'https://www.amazon.com/dp/B0F3BSN6WN',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
+            rel: 'nofollow noopener noreferrer'
           }
         ],
         extraInfo: [
@@ -1336,6 +1354,15 @@ export const FEATURED_BOOKS: BookCategory[] = [
             url: 'https://www.amazon.com/dp/B0C7G28KTZ',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
             emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            url: 'https://www.amazon.com/dp/B0HS988HFW',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
             rel: 'nofollow noopener noreferrer'
           },
           {
