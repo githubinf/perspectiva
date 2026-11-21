@@ -1386,6 +1386,128 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6j-ter. Ficha editorial dedicada: Cómo Crear Ebooks
+  if (path === '/como-crear-ebooks-de-no-ficcion/') {
+    const comoCrearBook = ALL_BOOKS.find(
+      (b) =>
+        b.path === '/como-crear-ebooks-de-no-ficcion/' ||
+        b.slug === 'como-crear-ebooks-de-no-ficcion'
+    );
+    const comoCrearDescription =
+      'Explora el valor de convertir conocimientos en publicaciones digitales, desarrollar proyectos editoriales y crear ebooks como activos dentro de un ecosistema digital.';
+    const comoCrearCover =
+      comoCrearBook?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/9-como-crear-ebooks-de-no-ficcion-libro-400.jpg';
+    const comoCrearUrl = `${BASE_URL}/como-crear-ebooks-de-no-ficcion/`;
+    const validCatalogOptions = (comoCrearBook?.purchaseOptions || []).filter(
+      (opt) => opt.url && opt.url !== '#'
+    );
+
+    const comoCrearBookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Cómo Crear Ebooks',
+      alternateName:
+        '…de no ficción, en menos tiempo del que imaginas y cobrar por tus conocimientos',
+      description: comoCrearDescription,
+      image: comoCrearCover,
+      url: comoCrearUrl,
+      inLanguage: 'es',
+      publisher: {
+        '@type': 'Organization',
+        name: 'FG Perspectiva',
+        url: `${BASE_URL}/`
+      },
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      },
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
+        'https://schema.org/EBook',
+        'https://schema.org/AudiobookFormat'
+      ],
+      workExample: [
+        {
+          '@type': 'Book',
+          name: 'Cómo Crear Ebooks (Tapa blanda)',
+          bookFormat: 'https://schema.org/Paperback',
+          url: 'https://www.amazon.com/dp/B09SBYC5YG'
+        },
+        {
+          '@type': 'Book',
+          name: 'Cómo Crear Ebooks (Tapa dura)',
+          bookFormat: 'https://schema.org/Hardcover',
+          url: 'https://www.amazon.com/dp/B09SHHQ231'
+        },
+        {
+          '@type': 'Book',
+          name: 'Cómo Crear Ebooks (Kindle)',
+          bookFormat: 'https://schema.org/EBook',
+          url: 'https://www.amazon.com/dp/B078BDZBTX'
+        },
+        {
+          '@type': 'Book',
+          name: 'Cómo Crear Ebooks (Audiolibro)',
+          bookFormat: 'https://schema.org/AudiobookFormat',
+          url: 'https://www.amazon.com/dp/B0HB5RWGDZ'
+        }
+      ]
+    };
+
+    if (validCatalogOptions.length > 0) {
+      comoCrearBookSchema.offers = validCatalogOptions.map((opt) => ({
+        '@type': 'Offer',
+        url: opt.url.trim()
+      }));
+    }
+
+    return {
+      path: '/como-crear-ebooks-de-no-ficcion/',
+      title: 'Cómo Crear Ebooks: convertir conocimiento en libros digitales | FG Perspectiva',
+      description: comoCrearDescription,
+      canonical: comoCrearUrl,
+      ogImage: comoCrearCover,
+      ogType: 'book',
+      robotsContent: 'index, follow',
+      h1: 'Cómo Crear Ebooks',
+      schema: [
+        comoCrearBookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Mindset',
+              item: `${BASE_URL}/mindset/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Cómo Crear Ebooks',
+              item: comoCrearUrl
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 6j-bis. Ficha editorial dedicada: Ebook en 24 horas
   if (path === '/ebook-en-24-horas/') {
     const ebook24Book = ALL_BOOKS.find(

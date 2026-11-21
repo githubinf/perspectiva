@@ -1893,44 +1893,67 @@ export const FEATURED_BOOKS: BookCategory[] = [
         slug: 'como-crear-ebooks-de-no-ficcion',
         path: '/como-crear-ebooks-de-no-ficcion/',
         categorySlug: 'mindset',
-        title: 'Cómo crear Ebooks (de no ficción)',
-        description: 'Diseña ebooks útiles que aporten valor y generen ingresos.',
-        url: 'https://amzn.to/3xfCrNa',
+        title: 'Cómo Crear Ebooks',
+        subtitle: '…de no ficción, en menos tiempo del que imaginas y cobrar por tus conocimientos',
+        metaTitle: 'Cómo Crear Ebooks: convertir conocimiento en libros digitales | FG Perspectiva',
+        metaDescription: 'Explora el valor de convertir conocimientos en publicaciones digitales, desarrollar proyectos editoriales y crear ebooks como activos dentro de un ecosistema digital.',
+        description: '…de no ficción, en menos tiempo del que imaginas y cobrar por tus conocimientos',
+        url: 'https://www.amazon.com/dp/B09SBYC5YG',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/9-como-crear-ebooks-de-no-ficcion-libro-400.jpg',
         purchaseOptions: [
-          { 
-            platform: 'Amazon', 
-            url: 'https://amzn.to/3xfCrNa', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.png',
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B09SBYC5YG',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
             emoji: '🛒',
-            cta: 'Comprar en Amazon'
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
           },
-          { 
-            platform: 'Clickbank', 
-            url: 'https://comocrearebooksdeno-ficcion.vercel.app', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.png',
-            emoji: '⚡',
-            cta: 'Oferta Clickbank'
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B09SHHQ231',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
           },
-          { 
-            platform: 'Payhip', 
-            url: 'https://payhip.com/b/DwRge', 
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B078BDZBTX',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            url: 'https://www.amazon.com/dp/B0HB5RWGDZ',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Payhip',
+            cta: 'Descarga directa',
+            url: 'https://payhip.com/b/DwRge',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.png',
             emoji: '💎',
-            cta: 'Descarga Directa'
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Web',
+            cta: 'Web',
+            url: 'https://comocrearebooksdeno-ficcion.vercel.app',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/icono1-fgperspectiva.png',
+            emoji: '🌐',
+            rel: 'nofollow noopener noreferrer'
           }
-        ],
-        extraInfo: [
-          'El ebook es uno de los productos digitales más accesibles y rentables para cualquier creador. Pero no cualquier ebook funciona. La mayoría de los ebooks que se publican en Amazon u otras plataformas apenas venden unas decenas de copias porque están mal estructurados, mal diseñados o no aportan el valor que el lector espera.',
-          'Este libro es una guía completa para diseñar y publicar ebooks de no ficción que realmente aporten valor y generen ingresos. No se trata de escribir por escribir, sino de crear un producto que resuelva un problema concreto para una audiencia concreta. Es el manual práctico para quienes quieren dar el salto de "leer ebooks" a "escribir ebooks".',
-          'Aprenderás a:',
-          'Validar tu idea antes de escribir: cómo asegurarte de que hay demanda para tu ebook antes de invertir tiempo y esfuerzo.',
-          'Estructurar tu ebook para maximizar el valor: desde la introducción hasta el cierre, pasando por ejercicios prácticos y recursos complementarios.',
-          'Diseñar una portada profesional (sin ser diseñador): herramientas y recursos para crear una portada que atraiga clics y ventas.',
-          'Darle formato a tu ebook para las principales plataformas: Amazon Kindle, PDF, Apple Books y otras, sin complicaciones técnicas.',
-          'Crear materiales complementarios: listas de verificación, plantillas, hojas de trabajo y otros recursos que aumenten el valor percibido.',
-          'Publicar y promocionar tu ebook: estrategias para que no sea un producto invisible en el mar de libros digitales.',
-          'Este libro es el cuarto pilar de la Ruta Mindset. Es el complemento práctico de "De la Pluma al Dinero", enfocado específicamente en el formato ebook.'
         ]
       },
       {
@@ -1984,20 +2007,20 @@ export const FEATURED_BOOKS: BookCategory[] = [
             rel: 'nofollow noopener noreferrer'
           },
           {
+            platform: 'Clickbank',
+            cta: 'Oferta Clickbank',
+            url: 'https://ebook24.vercel.app/',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.png',
+            emoji: '⚡',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
             platform: 'Payhip',
             cta: 'Descarga directa',
             url: 'https://payhip.com/b/8prkL',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.png',
             emoji: '💎',
             rel: 'nofollow noopener noreferrer'
-          },
-          {
-            platform: 'Web oficial del ebook',
-            cta: 'Web oficial del ebook',
-            url: 'https://ebook24.vercel.app/',
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/icono1-fgperspectiva.png',
-            emoji: '🌐',
-            rel: 'noopener noreferrer'
           }
         ]
       }
