@@ -1739,6 +1739,15 @@ export const FEATURED_BOOKS: BookCategory[] = [
             url: 'https://www.amazon.com/dp/B0HKPHYRYX',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.png',
             emoji: '📱'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            url: 'https://www.amazon.com/dp/B0FHWD32BM',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
+            rel: 'nofollow noopener noreferrer'
           }
         ],
         extraInfo: [
@@ -1966,19 +1975,19 @@ export const FEATURED_BOOKS: BookCategory[] = [
             rel: 'nofollow noopener noreferrer'
           },
           {
+            platform: 'Clickbank',
+            cta: 'Oferta Clickbank',
+            url: 'https://comocrearebooksdeno-ficcion.vercel.app',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.png',
+            emoji: '⚡',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
             platform: 'Payhip',
             cta: 'Descarga directa',
             url: 'https://payhip.com/b/DwRge',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.png',
             emoji: '💎',
-            rel: 'nofollow noopener noreferrer'
-          },
-          {
-            platform: 'Web',
-            cta: 'Web',
-            url: 'https://comocrearebooksdeno-ficcion.vercel.app',
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/icono1-fgperspectiva.png',
-            emoji: '🌐',
             rel: 'nofollow noopener noreferrer'
           }
         ]

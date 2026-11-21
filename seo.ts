@@ -994,7 +994,8 @@ export const getPageMeta = (rawPath: string): PageMeta => {
           bookFormat: [
             'https://schema.org/Paperback',
             'https://schema.org/EBook',
-            'https://schema.org/Hardcover'
+            'https://schema.org/Hardcover',
+            'https://schema.org/AudiobookFormat'
           ],
           workExample: [
             {
@@ -1014,6 +1015,12 @@ export const getPageMeta = (rawPath: string): PageMeta => {
               name: 'El Manual del Solopreneur Moderno (Tapa dura)',
               bookFormat: 'https://schema.org/Hardcover',
               url: 'https://www.amazon.com/dp/B0HKPZMYJ6'
+            },
+            {
+              '@type': 'Book',
+              name: 'El Manual del Solopreneur Moderno (Audiolibro)',
+              bookFormat: 'https://schema.org/AudiobookFormat',
+              url: 'https://www.amazon.com/dp/B0FHWD32BM'
             }
           ]
         },
