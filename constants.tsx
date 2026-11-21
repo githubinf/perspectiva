@@ -1939,43 +1939,66 @@ export const FEATURED_BOOKS: BookCategory[] = [
         path: '/ebook-en-24-horas/',
         categorySlug: 'mindset',
         title: 'Ebook en 24 horas',
+        subtitle: 'Cómo escribir un ebook de no ficción y publicarlo en tiempo récord (menos de 24 horas) ¿Te atreves?',
+        metaTitle: 'Ebook en 24 horas: escribir y publicar un libro | FG Perspectiva',
+        metaDescription: 'Descubre cómo organizar la creación de un ebook, desarrollar tus ideas, preparar el manuscrito y convertir tus conocimientos en una publicación digital.',
         description: 'Cómo escribir un ebook de no ficción y publicarlo en tiempo récord (menos de 24 horas) ¿Te atreves?',
-        url: 'https://amzn.to/3TqQl6o',
+        url: 'https://www.amazon.com/dp/B09TDPL36B',
         coverUrl: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/10-ebook-en-24-horas-libro-400.jpg',
         purchaseOptions: [
-          { 
-            platform: 'Amazon', 
-            url: 'https://amzn.to/3TqQl6o', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-logo.png',
+          {
+            platform: 'Amazon',
+            cta: 'Tapa blanda',
+            format: 'Tapa blanda',
+            url: 'https://www.amazon.com/dp/B09TDPL36B',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-blanda.png',
             emoji: '🛒',
-            cta: 'Comprar en Amazon'
+            isPrimary: true,
+            rel: 'nofollow noopener noreferrer'
           },
-          { 
-            platform: 'Clickbank', 
-            url: 'https://ebook24.vercel.app/', 
-            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/clickbank-logo.png',
-            emoji: '⚡',
-            cta: 'Oferta Clickbank'
+          {
+            platform: 'Amazon',
+            cta: 'Tapa dura',
+            format: 'Tapa dura',
+            url: 'https://www.amazon.com/dp/B09TF6S76D',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-tapa-dura.png',
+            emoji: '📖',
+            rel: 'nofollow noopener noreferrer'
           },
-          { 
-            platform: 'Payhip', 
-            url: 'https://payhip.com/b/8prkL', 
+          {
+            platform: 'Amazon',
+            cta: 'Kindle ebook',
+            format: 'Kindle',
+            url: 'https://www.amazon.com/dp/B084P97J1G',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon-kindle-ebook.png',
+            emoji: '📱',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Amazon',
+            cta: 'Audiolibro',
+            format: 'Audiolibro',
+            url: 'https://www.amazon.com/dp/B0HB65WH2G',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/amazon_audible_audiolibro3.png',
+            emoji: '🎧',
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Payhip',
+            cta: 'Descarga directa',
+            url: 'https://payhip.com/b/8prkL',
             logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/payhip-logo.png',
             emoji: '💎',
-            cta: 'Descarga Directa'
+            rel: 'nofollow noopener noreferrer'
+          },
+          {
+            platform: 'Web oficial del ebook',
+            cta: 'Web oficial del ebook',
+            url: 'https://ebook24.vercel.app/',
+            logo: 'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/icono1-fgperspectiva.png',
+            emoji: '🌐',
+            rel: 'noopener noreferrer'
           }
-        ],
-        extraInfo: [
-          'El perfeccionismo es uno de los mayores enemigos de los creadores digitales. Pasan semanas, meses o incluso años "preparando" su primer ebook, corrigiendo detalles menores, reescribiendo párrafos y posponiendo la publicación. Al final, el ebook nunca ve la luz. Este libro es la respuesta a ese bloqueo: un método probado para escribir y publicar un ebook de no ficción en menos de 24 horas.',
-          'No se trata de escribir un ebook de baja calidad. Se trata de aplicar un sistema de creación rápida que prioriza lo esencial: un contenido útil y bien estructurado, sin caer en la trampa del perfeccionismo que paraliza. Es el antídoto contra la procrastinación y el "síndrome del impostor".',
-          'Aprenderás a:',
-          'Aplicar un método paso a paso para escribir rápido y con calidad: un flujo de trabajo que te permite publicar en tiempo récord sin sacrificar el valor del contenido.',
-          'Superar el bloqueo del "folio en blanco": técnicas para empezar a escribir sin dudas ni vacilaciones, desde el primer minuto.',
-          'Estructurar tu ebook en tiempo récord: cómo definir el índice, los capítulos y los ejercicios prácticos en cuestión de minutos.',
-          'Dar formato y publicar en el menor tiempo posible: herramientas y atajos para no perder horas en aspectos técnicos.',
-          'Mantener la calidad mientras publicas rápido: el equilibrio entre rapidez y valor, para que tu ebook sea útil y profesional.',
-          'Validar tu ebook en el mercado rápidamente: cómo publicar para recibir feedback y mejorar ediciones futuras.',
-          'Este libro es el quinto y último pilar de la Ruta Mindset. Es la culminación de todo el trabajo de mentalidad y creación: pasar de la idea a la acción en tiempo récord. ¿Te atreves?'
         ]
       }
     ]

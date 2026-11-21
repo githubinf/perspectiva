@@ -1386,6 +1386,126 @@ export const getPageMeta = (rawPath: string): PageMeta => {
     };
   }
 
+  // 6j-bis. Ficha editorial dedicada: Ebook en 24 horas
+  if (path === '/ebook-en-24-horas/') {
+    const ebook24Book = ALL_BOOKS.find(
+      (b) => b.path === '/ebook-en-24-horas/' || b.slug === 'ebook-en-24-horas'
+    );
+    const ebook24Description =
+      'Descubre cómo organizar la creación de un ebook, desarrollar tus ideas, preparar el manuscrito y convertir tus conocimientos en una publicación digital.';
+    const ebook24Cover =
+      ebook24Book?.coverUrl ||
+      'https://ik.imagekit.io/ywyqvhnoc/fg-perspectiva/10-ebook-en-24-horas-libro-400.jpg';
+    const ebook24Url = `${BASE_URL}/ebook-en-24-horas/`;
+    const validCatalogOptions = (ebook24Book?.purchaseOptions || []).filter(
+      (opt) => opt.url && opt.url !== '#'
+    );
+
+    const ebook24BookSchema: Record<string, any> = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'Ebook en 24 horas',
+      alternateName:
+        'Cómo escribir un ebook de no ficción y publicarlo en tiempo récord (menos de 24 horas) ¿Te atreves?',
+      description: ebook24Description,
+      image: ebook24Cover,
+      url: ebook24Url,
+      inLanguage: 'es',
+      publisher: {
+        '@type': 'Organization',
+        name: 'FG Perspectiva',
+        url: `${BASE_URL}/`
+      },
+      author: {
+        '@type': 'Person',
+        name: 'Francisco González'
+      },
+      bookFormat: [
+        'https://schema.org/Paperback',
+        'https://schema.org/Hardcover',
+        'https://schema.org/EBook',
+        'https://schema.org/AudiobookFormat'
+      ],
+      workExample: [
+        {
+          '@type': 'Book',
+          name: 'Ebook en 24 horas (Tapa blanda)',
+          bookFormat: 'https://schema.org/Paperback',
+          url: 'https://www.amazon.com/dp/B09TDPL36B'
+        },
+        {
+          '@type': 'Book',
+          name: 'Ebook en 24 horas (Tapa dura)',
+          bookFormat: 'https://schema.org/Hardcover',
+          url: 'https://www.amazon.com/dp/B09TF6S76D'
+        },
+        {
+          '@type': 'Book',
+          name: 'Ebook en 24 horas (Kindle)',
+          bookFormat: 'https://schema.org/EBook',
+          url: 'https://www.amazon.com/dp/B084P97J1G'
+        },
+        {
+          '@type': 'Book',
+          name: 'Ebook en 24 horas (Audiolibro)',
+          bookFormat: 'https://schema.org/AudiobookFormat',
+          url: 'https://www.amazon.com/dp/B0HB65WH2G'
+        }
+      ]
+    };
+
+    if (validCatalogOptions.length > 0) {
+      ebook24BookSchema.offers = validCatalogOptions.map((opt) => ({
+        '@type': 'Offer',
+        url: opt.url.trim()
+      }));
+    }
+
+    return {
+      path: '/ebook-en-24-horas/',
+      title: 'Ebook en 24 horas: escribir y publicar un libro | FG Perspectiva',
+      description: ebook24Description,
+      canonical: ebook24Url,
+      ogImage: ebook24Cover,
+      ogType: 'book',
+      robotsContent: 'index, follow',
+      h1: 'Ebook en 24 horas',
+      schema: [
+        ebook24BookSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Inicio',
+              item: `${BASE_URL}/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Biblioteca',
+              item: `${BASE_URL}/biblioteca/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Mindset',
+              item: `${BASE_URL}/mindset/`
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: 'Ebook en 24 horas',
+              item: ebook24Url
+            }
+          ]
+        }
+      ]
+    };
+  }
+
   // 6k. Ficha editorial dedicada: Experto en PLR Premium
   if (path === '/experto-en-plr-premium/') {
     const plrBook = ALL_BOOKS.find(

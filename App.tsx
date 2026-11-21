@@ -15,6 +15,7 @@ import SolopreneurManualView from './components/views/SolopreneurManualView.tsx'
 import AbundanceView from './components/views/AbundanceView.tsx';
 import HypnoticSellerView from './components/views/HypnoticSellerView.tsx';
 import DeLaPlumaAlDineroView from './components/views/DeLaPlumaAlDineroView.tsx';
+import EbookEn24HorasView from './components/views/EbookEn24HorasView.tsx';
 import ExpertoPlrPremiumView from './components/views/ExpertoPlrPremiumView.tsx';
 import HowToCreateOptimizedBlogView from './components/views/HowToCreateOptimizedBlogView.tsx';
 import MyBlogAffiliateProgramsView from './components/views/MyBlogAffiliateProgramsView.tsx';
@@ -192,6 +193,10 @@ const AppContent: React.FC = () => {
 
   if (currentPath === '/dominando-el-arte-del-email-marketing/' && matchedBook) {
     return <DominandoEmailMarketingView book={matchedBook} />;
+  }
+
+  if (currentPath === '/ebook-en-24-horas/' && matchedBook) {
+    return <EbookEn24HorasView book={matchedBook} />;
   }
 
   if (matchedBook) {
